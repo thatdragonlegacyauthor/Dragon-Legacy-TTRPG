@@ -9,113 +9,45 @@
     "skills": "15 points, max 5 per skill",
     "starting_aspects": "Choose 1 innate Aspect (e.g., Fire)",
     "starting_gear": [
-      "One weapon",
-      "One set of armor",
       "Adventurer’s kit"
     ]
   },
   "current_status": {
-    "level": 3,
+    "age": 14,
+    "level": 1,
     "current_resources": {
-      "vitality": 43,
-      "resolve": 25,
-      "legacy_points": 1
+      "vitality": 18,
+      "resolve": 18,
+      "legacy_points": 3
     },
     "insight_points": {
       "current": 0,
-      "spent": 15,
-      "total_earned": 15
+      "spent": 0,
+      "total_earned": 0
     },
     "inventory": {
-      "equipped": [
-        "Earth-Wrought Blade",
-        "Leather Armor",
-        "Work Clothes"
-      ],
+      "equipped": [],
       "unequipped": [
-        "Sword",
-        "Shield",
-        "Adventurer's kit",
-        "310 Zenny",
-        "Gold Goo",
-        "Gold Goo",
-        "Woven Sapling Staff",
-        "Elysian Tome of Order",
-        "Wyndian Quill Bow",
-        "Map of Wyndia",
-        "Compass",
-        "Healing Salve",
-        "Healing Salve",
-        "Obsidian Shard",
-        "Patrol Roster and Route Map",
-        "Frostfang Charm",
-        "Wyndian Disguise",
-        "Sun-Kissed Petal",
-        "Gloomcap Spore Vial",
-        "Silver Key (Wyndian Lifts)",
-        "Gonghead Metal Shard"
+        "Adventurer’s kit"
       ]
     },
     "active_effects": [],
     "stats": {
-      "Might": 5,
-      "Agility": 3,
-      "Mind": 6,
-      "Spirit": 5,
+      "Might": 4,
+      "Agility": 4,
+      "Mind": 4,
+      "Spirit": 4,
       "Essence": 4
     },
     "skills": {
-      "Combat": 4,
+      "Combat": 3,
       "Lore": 3,
-      "Athletics": 4,
+      "Athletics": 3,
       "Survival": 3,
-      "Arcana": 2
+      "Arcana": 3
     },
-    "unlocked_aspects": [
-      "Fire",
-      "Earth",
-      "Void"
-    ],
-    "aspect_abilities": [
-      {
-        "name": "Flame Burst",
-        "status": "Awakened"
-      },
-      {
-        "name": "Cinder Step",
-        "status": "Awakened"
-      },
-      {
-        "name": "Earthen Aegis",
-        "status": "Awakened"
-      },
-      {
-        "name": "Stone Skin",
-        "status": "Attuned"
-      },
-      {
-        "name": "Earthen Grasp",
-        "status": "Attuned"
-      },
-      {
-        "name": "Stone Shard",
-        "status": "Attuned"
-      },
-      {
-        "name": "Shadow Veil",
-        "status": "Attuned"
-      }
-    ],
-    "abilities": [
-      {
-        "name": "Heat Sense",
-        "effect": "Rya can sense the presence of living creatures within 30 ft by their body heat.",
-        "check": "Mind DC 10"
-      },
-      {
-        "name": "Purify",
-        "effect": "You can use a major action to remove one negative status effect (e.g., poisoned, blinded) from a target."
-      }
-    ]
+    "unlocked_aspects": [],
+    "aspect_abilities": [],
+    "abilities": []
   }
 }
