@@ -1,0 +1,176 @@
+{
+  "lineage_name": "Mist",
+  "description": "Dual paths of physical misdirection (Mirage) and tactical concealment (Zephyr).",
+  "abilities": [
+    {
+      "name": "Mist Veil",
+      "playstyle": "Zephyr",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Create a 15-foot cube of dense mist that lightly obscures the area for one round.",
+      "check": "Essence + Level vs. DC 11",
+      "bloodburn": "-2 Agility",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Blurred Form",
+      "playstyle": "Mirage",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "As a bonus action, wreathe yourself in a shimmering mist. Ranged attacks against you have a -2 penalty for 1 round.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Echoing Voice",
+      "playstyle": "Mirage",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "As a major action, you can throw your voice, making it sound like it is coming from any point you can see within 30 feet.",
+      "check": "Essence + Level vs. DC 11",
+      "bloodburn": "-1 Spirit",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Tailwind",
+      "playstyle": "Zephyr",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "As a bonus action, grant an ally within 10 feet a gust of wind, increasing their movement speed by 10 feet for their turn.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Displacing Image",
+      "playstyle": "Mirage",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "As a Reaction when targeted by an attack, create a visual distortion, forcing the attacker to subtract 1d4 from their attack roll.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Silent Veil",
+      "playstyle": "Zephyr",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Enhances Mist Veil. The area inside your Mist Veil is also magically silenced.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": "N/A"
+    },
+    {
+      "name": "Refracted Image",
+      "playstyle": "Mirage",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "As a Reaction when targeted by an attack, create a duplicate of bent light. The attacker must re-roll their attack against the duplicate, which then vanishes.",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-2 Mind",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Disorienting Fog",
+      "playstyle": "Zephyr",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Create a 20-foot radius sphere of dense fog. The area is heavily obscured and enemies inside cannot take Reactions.",
+      "check": "Essence + Level vs. DC 13",
+      "bloodburn": "-2 Mind",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Misty Step",
+      "playstyle": "Zephyr",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "As a bonus action, teleport up to 30 feet to an unoccupied space you can see.",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-2 Agility",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Bending Light",
+      "playstyle": "Mirage",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Enhances Blurred Form. The penalty it imposes on ranged attackers increases from -2 to -4.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": "N/A"
+    },
+    {
+      "name": "Spell Reflection",
+      "playstyle": "Mirage",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "As a Reaction when targeted by a single-target magical ability, you can make an opposed Essence + Arcana check to reflect it back at the caster.",
+      "check": "Opposed Check",
+      "bloodburn": "-3 Essence",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Gaseous Form",
+      "playstyle": "Zephyr",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Transform into a cloud of mist for up to 10 minutes. You gain resistance to physical damage, can fly, and can pass through small cracks.",
+      "check": "Essence + Level vs. DC 14",
+      "bloodburn": "-2 Essence",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Suffocating Mist",
+      "playstyle": "Zephyr",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Enhances Disorienting Fog. Enemies that end their turn inside your fog also take 2d8 acid damage.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": "N/A"
+    },
+    {
+      "name": "Mirage Arena",
+      "playstyle": "Mirage",
+      "rank": "Master",
+      "level_requirement": 15,
+      "effect": "For 1 minute, create a 40-foot radius area of warped light and sound. All creatures inside (except you) are 'Blinded' when targeting anyone more than 5 feet away.",
+      "check": "Essence + Level vs. DC 16",
+      "bloodburn": "-3 Mind",
+      "resolve_cost": 15
+    },
+    {
+      "name": "Ride the Wind",
+      "playstyle": "Zephyr",
+      "rank": "Master",
+      "level_requirement": 15,
+      "effect": "For 1 minute, you gain a flying speed of 60 feet and can hover.",
+      "check": "Essence + Level vs. DC 15",
+      "bloodburn": "-3 Agility",
+      "resolve_cost": 15
+    },
+    {
+      "name": "Prismatic Ward",
+      "playstyle": "Mirage",
+      "rank": "Archon",
+      "level_requirement": 20,
+      "effect": "For 3 rounds, you are encased in a sphere of light. Any magical ability that targets only you is automatically reflected back at the caster. Usable once per day.",
+      "check": "Essence + Level vs. DC 18",
+      "bloodburn": "-4 Essence",
+      "resolve_cost": 20
+    },
+    {
+      "name": "Eye of the Hurricane",
+      "playstyle": "Zephyr",
+      "rank": "Archon",
+      "level_requirement": 20,
+      "effect": "Create a massive hurricane with a calm eye for 3 rounds. The outer wall blocks movement and projectiles. You can move the entire storm 30 feet as a bonus action. Usable once per day.",
+      "check": "Essence + Level vs. DC 18",
+      "bloodburn": "-4 Agility",
+      "resolve_cost": 20
+    }
+  ]
+}
