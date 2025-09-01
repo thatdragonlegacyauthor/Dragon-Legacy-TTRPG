@@ -1,0 +1,1536 @@
+  "draconic_powers": {
+    "aspect_mastery_system": {
+      "description": "A three-step process for gaining control over Aspect Abilities.",
+      "steps": [
+        {
+          "step": 1,
+          "name": "Attuned",
+          "description": "The initial state when an ability is learned."
+        },
+        {
+          "step": 2,
+          "name": "Awakened",
+          "description": "After 3 successful uses, the ability's DC is reduced by 1."
+        },
+        {
+          "step": 3,
+          "name": "Mastered",
+          "description": "After 10 successful uses of an Awakened ability, its Bloodburn penalty is halved (a -2 penalty becomes -1)."
+        }
+      ]
+    },
+    "draconic_progression": {
+      "description": "The hero's personal journey of mastering their inner draconic power.",
+      "tier_1": {
+        "name": "Aspect Awakening",
+        "unlock": "Unlocked via significant narrative story beats."
+      },
+      "tier_2": {
+        "name": "Primal Whelp",
+        "unlock": "Master two Aspect Abilities from a single lineage."
+      },
+      "tier_3": {
+        "name": "Drake Manifestation",
+        "unlock": "Master four Aspect Abilities from a single lineage."
+      },
+      "tier_4": {
+        "name": "Wyrm Manifestation",
+        "unlock": "Master six Aspect Abilities from a single lineage."
+      },
+      "tier_5": {
+        "name": "Kaiser Manifestation",
+        "unlock": "Unlock the Wyrm Manifestation and use Draconic Unity with three companions."
+      }
+    },
+    "primal_whelp": {
+      "cost": "1 Legacy Point",
+      "duration": "3 rounds",
+      "effect": "Transform into a small dragon whelp, gain +1 to Might and Essence, and gain a simple breath weapon (e.g., 'Ember Spit' for Fire, deals 1d10 damage).",
+      "consequence": "Suffer 'Whelp Strain' (-1 to all attribute checks for 1 round) when it ends."
+    },
+    "drake_manifestation": {
+      "cost": "1 Legacy Point",
+      "duration": "3 rounds",
+      "effect": "Transform into an adolescent drake, gain +2 to a primary lineage Attribute (Might/Essence) and +1 to Agility. Unlocks an empowered breath weapon (e.g., 'Blazing Breath' for Fire, deals 2d8 damage).",
+      "consequence": "Suffer 'Drake Strain' (-2 to all attribute checks for 1 round) when it ends."
+    },
+    "wyrm_manifestation": {
+      "cost": "2 Legacy Points",
+      "duration": "3 rounds",
+      "effect": "Transform into a true dragon, gain +3 to a primary lineage Attribute (Might/Essence) and +2 to Agility. Unlocks a powerful breath weapon (e.g., 'Dragon's Inferno' for Fire, deals 3d10 damage).",
+      "consequence": "Suffer 'Wyrm Strain' (-3 to all attribute checks for 1 round) when it ends."
+    },
+    "kaiser_manifestation": {
+      "cost": "3 Legacy Points",
+      "duration": "3 rounds",
+      "effect": "Transform into a perfect draconic humanoid, gain +2 to all Attributes, and unlock an ultimate ability (e.g., 'Inferno Overdrive' for Fire, deals 4d10 damage).",
+      "consequence": "Suffer 'Kaiser Strain' (-4 to all attribute checks for 1 round) when it ends."
+    },
+    "draconic_unity": {
+      "description": "A parallel system of power based on bonds. The hero fuses with a companion.",
+      "requirement": "Bond Level 3 with a companion.",
+      "cost": "1 Legacy Point",
+      "duration": "3 rounds",
+      "consequence": "Both hero and companion suffer 'Fusion Strain' (-2 to all attributes for 1 round) when it ends.",
+      "fusion_forms": [
+        {
+          "partner": "Selra",
+          "form_name": "Valkyrie Form",
+          "ability": {
+            "name": "Divine Breath",
+            "effect": "15-ft cone, deals 2d8 holy damage to enemies and heals allies for 1d10 Vitality."
+          }
+        },
+        {
+          "partner": "Zael",
+          "form_name": "Wraith Form",
+          "ability": {
+            "name": "Void Gale",
+            "effect": "Deals 1d10 necrotic damage to a target and forces a Mind DC 13 check or their next successful action deals half damage."
+          }
+        }
+      ]
+    },
+    "lineages": {
+      "Fire": {
+        "description": "Dual paths of destruction (Conflagration) and support (Hearth).",
+        "abilities": [
+          {
+            "name": "Ember Aura",
+            "playstyle": "Hearth",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "+2 to resist physical attacks for 1 round",
+            "check": "Essence + Level vs. DC 10",
+            "bloodburn": "-2 Spirit",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Searing Lash",
+            "playstyle": "Conflagration",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Lash a target with a whip of flame, dealing 1d10 fire damage and inflicting 'Burning'.",
+            "check": "Essence + Level vs. DC 12",
+            "bloodburn": "-2 Agility",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Cinder Spark",
+            "playstyle": "Conflagration",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Hurl a spark of fire, dealing 1d8 fire damage. This ability has a lower DC.",
+            "check": "Essence + Level vs. DC 10",
+            "bloodburn": "-1 Agility",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Smoke Screen",
+            "playstyle": "Hearth",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Create a 15-foot cube of dense smoke, lightly obscuring the area.",
+            "check": "Essence + Level vs. DC 11",
+            "bloodburn": "-2 Mind",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Guiding Flame",
+            "playstyle": "Hearth",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Summon a harmless flame over an ally's shoulder for 3 rounds, shedding light and granting a +1 bonus to their next attack.",
+            "check": "Essence + Level vs. DC 11",
+            "bloodburn": "-2 Spirit",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Ignite",
+            "playstyle": "Conflagration",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Cause a flammable object to combust or inflict 'Burning' on a target for 2 rounds.",
+            "check": "Essence + Level vs. DC 12",
+            "bloodburn": "-1 Mind",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Flame Burst",
+            "playstyle": "Conflagration",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Deals 2d10 fire damage in a 15-ft cone.",
+            "check": "Essence + Level vs. DC 11",
+            "bloodburn": "-2 Might",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Combustion",
+            "playstyle": "Conflagration",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Cause a 'Burning' target to erupt, dealing 1d10 fire damage to all enemies within 5 feet.",
+            "check": "Essence + Level vs. DC 13",
+            "bloodburn": "-2 Mind",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Cauterize Wound",
+            "playstyle": "Hearth",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Deal 1d4 fire damage to an adjacent ally to end a 'Bleeding' effect and restore 3d8 Vitality.",
+            "check": "Essence + Level vs. DC 13",
+            "bloodburn": "-2 Spirit",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Ash Cloud",
+            "playstyle": "Hearth",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Fill a 20-foot radius with choking ash. The area is heavily obscured and enemies starting their turn inside can be 'Blinded' for 1 round (Might DC 13).",
+            "check": "Essence + Level vs. DC 12",
+            "bloodburn": "-2 Mind",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Lingering Embers",
+            "playstyle": "Hearth",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Enhances Ember Aura. While Ember Aura is active, adjacent allies also gain a +1 bonus to their defensive checks.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": "N/A"
+          },
+          {
+            "name": "Cinder Step",
+            "playstyle": "Conflagration",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "The hero teleports up to 15 ft in a puff of smoke and embers, which does not provoke an Attack of Opportunity. They leave a patch of fiery ground at their original location that deals 1d6 fire damage to anyone who enters it for 1 round.",
+            "check": "Essence + Level vs. DC 12",
+            "bloodburn": "-2 Agility",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Wall of Fire",
+            "playstyle": "Conflagration",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "Create a 30-foot-long wall of fire. Creatures entering or ending their turn within 5 feet take 3d8 fire damage.",
+            "check": "Essence + Level vs. DC 14",
+            "bloodburn": "-2 Mind",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Circle of Warmth",
+            "playstyle": "Hearth",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "Create a 15-foot radius circle where allies gain resistance to Cold damage and restore 1d6 Resolve each turn.",
+            "check": "Essence + Level vs. DC 14",
+            "bloodburn": "-2 Spirit",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Immolate",
+            "playstyle": "Conflagration",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "Engulf a single target in flames, dealing 4d8 fire damage and inflicting a severe 'Burning' status.",
+            "check": "Essence + Level vs. DC 15",
+            "bloodburn": "-3 Mind",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Flashpoint",
+            "playstyle": "Conflagration",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "Enhances Combustion. The target must also succeed on a Might DC 14 check or become 'Stunned' for 1 round.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": "N/A"
+          },
+          {
+            "name": "Firestorm",
+            "playstyle": "Conflagration",
+            "rank": "Master",
+            "level_requirement": 15,
+            "effect": "Create a 20-foot-radius storm of fire. Deals 4d10 initial fire damage, then 2d10 fire damage to enemies who start their turn inside.",
+            "check": "Essence + Level vs. DC 16",
+            "bloodburn": "-3 Spirit",
+            "resolve_cost": 15
+          },
+          {
+            "name": "Heart of the Phoenix",
+            "playstyle": "Hearth",
+            "rank": "Master",
+            "level_requirement": 15,
+            "effect": "Target one 'Downed' ally. That ally is immediately restored to half of their maximum Vitality. Usable once per day.",
+            "check": "Essence + Level vs. DC 15",
+            "bloodburn": "-4 Spirit",
+            "resolve_cost": 15
+          },
+          {
+            "name": "Supernova",
+            "playstyle": "Conflagration",
+            "rank": "Archon",
+            "level_requirement": 20,
+            "effect": "Deals 6d12 fire damage to all enemies you can see. Your Vitality is then reduced to 1. Usable once per day.",
+            "check": "Essence + Level vs. DC 18",
+            "bloodburn": "-4 Essence",
+            "resolve_cost": 20
+          },
+          {
+            "name": "Ashen Rebirth",
+            "playstyle": "Hearth",
+            "rank": "Archon",
+            "level_requirement": 20,
+            "effect": "Create a 30-foot aura. Allies inside are healed for 4d10 Vitality and cured of all status effects, and regenerate 2d10 Vitality for 3 rounds. Usable once per day.",
+            "check": "Essence + Level vs. DC 18",
+            "bloodburn": "-4 Spirit",
+            "resolve_cost": 20
+          }
+        ]
+      },
+      "Earth": {
+        "description": "Dual paths of unyielding defense (Mountain) and destructive force (Quake).",
+        "abilities": [
+          {
+            "name": "Stone Shard",
+            "playstyle": "Quake",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Hurl a rock at a single target, dealing 2d6 physical damage.",
+            "check": "Essence + Level vs. DC 12",
+            "bloodburn": "-2 Spirit",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Earthen Aegis",
+            "playstyle": "Mountain",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Gain a temporary shield that absorbs up to 10 physical damage.",
+            "check": "Essence + Level vs. DC 11",
+            "bloodburn": "-2 Agility",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Stone Fist",
+            "playstyle": "Quake",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "As a bonus action, encase your fists in rock. For 3 rounds, your unarmed strikes are magical and deal 1d6 bludgeoning damage.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Sense Tremor",
+            "playstyle": "Mountain",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "For 1 minute, automatically detect any creature moving on the ground within 30 feet.",
+            "check": "Essence + Level vs. DC 11",
+            "bloodburn": "-1 Mind",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Rooted Stance",
+            "playstyle": "Mountain",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "As a bonus action, gain Advantage on checks to resist being moved or knocked prone until you move.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Brace",
+            "playstyle": "Mountain",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "As a Reaction when hit by an effect that would move you, reduce the distance moved by 10 feet.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Stone Skin",
+            "playstyle": "Mountain",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Gain resistance to physical damage for one round.",
+            "check": "Essence + Level vs. DC 12",
+            "bloodburn": "-2 Agility",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Earthen Grasp",
+            "playstyle": "Mountain",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Attempt to 'Restrain' a target for 1 round.",
+            "check": "Essence + Level vs. DC 13",
+            "bloodburn": "-2 Might",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Tremor",
+            "playstyle": "Quake",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Slam the ground, forcing creatures in a 15-foot radius to make an Agility DC 13 check or be knocked prone.",
+            "check": "Essence + Level vs. DC 12",
+            "bloodburn": "-2 Spirit",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Spike Shotgun",
+            "playstyle": "Quake",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "A 15-foot cone of sharp stone spikes erupts from the ground, dealing 3d6 physical damage.",
+            "check": "Essence + Level vs. DC 13",
+            "bloodburn": "-2 Might",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Shattering Strike",
+            "playstyle": "Quake",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Enhances Stone Shard. The attack deals half damage, but the target's Damage Reduction is reduced by 2 for their next turn.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": "N/A"
+          },
+          {
+            "name": "Earthen Pillar",
+            "playstyle": "Mountain",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "Raise a 5-foot-wide, 10-foot-high pillar of solid earth. The pillar provides total cover and has 30 Vitality.",
+            "check": "Essence + Level vs. DC 13",
+            "bloodburn": "-2 Might",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Earthshatter",
+            "playstyle": "Quake",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "Create a shockwave in a 20-foot radius. All creatures on the ground take 4d8 physical damage and are knocked prone.",
+            "check": "Essence + Level vs. DC 15",
+            "bloodburn": "-3 Might",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Grasp of the Mountain",
+            "playstyle": "Mountain",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "Enhances Earthen Grasp. Your Earthen Grasp can now target up to two creatures within 10 feet of each other.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": "N/A"
+          },
+          {
+            "name": "Petrify",
+            "playstyle": "Mountain",
+            "rank": "Master",
+            "level_requirement": 15,
+            "effect": "Attempt to turn one creature to stone. The target is 'Incapacitated' on a failed Might DC 16 check.",
+            "check": "Essence + Level vs. DC 16",
+            "bloodburn": "-3 Spirit",
+            "resolve_cost": 15
+          },
+          {
+            "name": "Eruption",
+            "playstyle": "Quake",
+            "rank": "Master",
+            "level_requirement": 15,
+            "effect": "Create a mini-volcano that erupts for 3 rounds, dealing 3d10 initial damage in a 15-foot radius, then 2d10 damage on subsequent turns.",
+            "check": "Essence + Level vs. DC 16",
+            "bloodburn": "-3 Mind",
+            "resolve_cost": 15
+          },
+          {
+            "name": "Living Bastion",
+            "playstyle": "Mountain",
+            "rank": "Archon",
+            "level_requirement": 20,
+            "effect": "Become an immobile fortress for 3 rounds. Gain Damage Reduction 10 and immunity to being moved. Allies within 10 feet gain cover. Usable once per day.",
+            "check": "Essence + Level vs. DC 18",
+            "bloodburn": "-4 Might",
+            "resolve_cost": 20
+          },
+          {
+            "name": "Worldbreaker",
+            "playstyle": "Quake",
+            "rank": "Archon",
+            "level_requirement": 20,
+            "effect": "Create a massive earthquake. Deals 6d12 physical damage to all enemies on the ground and the entire battlefield becomes difficult terrain. Usable once per day.",
+            "check": "Essence + Level vs. DC 18",
+            "bloodburn": "-4 Essence",
+            "resolve_cost": 20
+          }
+        ]
+      },
+      "Ice": {
+        "description": "Dual paths of freezing control (Glacier) and shattering offense (Avalanche).",
+        "abilities": [
+          {
+            "name": "Ice Veil",
+            "playstyle": "Glacier",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "+2 to resist attacks for 1 round.",
+            "check": "Essence + Level vs. DC 11",
+            "bloodburn": "-2 Agility",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Frost Lance",
+            "playstyle": "Avalanche",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Hurl a lance of ice dealing 1d10 cold damage and slowing the target.",
+            "check": "Essence + Level vs. DC 12",
+            "bloodburn": "-2 Mind",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Frost Armor",
+            "playstyle": "Glacier",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "As a bonus action, coat your armor in frost. The next time you are hit with a melee attack, the attacker takes 1d6 cold damage.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Ice Shard",
+            "playstyle": "Avalanche",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Hurl a shard of magical ice, dealing 1d8 cold damage. This ability has a lower DC.",
+            "check": "Essence + Level vs. DC 10",
+            "bloodburn": "-1 Agility",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Chilling Touch",
+            "playstyle": "Avalanche",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Touch a creature. They must make a Might DC 12 check or have their movement speed halved for their next turn.",
+            "check": "Essence + Level vs. DC 12",
+            "bloodburn": "-1 Spirit",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Frozen Ground",
+            "playstyle": "Glacier",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "As a bonus action, freeze the 5-foot square you are standing on. It is difficult terrain for enemies, and you gain +2 to resist being moved.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Shatter",
+            "playstyle": "Avalanche",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Target a frozen or slowed enemy, dealing 2d6 physical damage and ending the effect.",
+            "check": "Essence + Level vs. DC 13",
+            "bloodburn": "-2 Might",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Hoarfrost",
+            "playstyle": "Glacier",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Cover a 15-foot square in slick ice. It is difficult terrain, and creatures entering must make an Agility DC 12 check or fall prone.",
+            "check": "Essence + Level vs. DC 12",
+            "bloodburn": "-2 Agility",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Hailstones",
+            "playstyle": "Avalanche",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Pelt a 15-foot radius area with magical hailstones, dealing 2d8 cold damage to all creatures.",
+            "check": "Essence + Level vs. DC 13",
+            "bloodburn": "-2 Mind",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Rime Veil",
+            "playstyle": "Glacier",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Enhances Ice Veil. While Ice Veil is active, you also gain resistance to Fire damage.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": "N/A"
+          },
+          {
+            "name": "Glacial Wall",
+            "playstyle": "Glacier",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "Raise a 5-foot-high, 15-foot-long wall of solid ice. The wall provides cover and has 20 Vitality.",
+            "check": "Essence + Level vs. DC 13",
+            "bloodburn": "-2 Might",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Frozen Prison",
+            "playstyle": "Glacier",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "Encase a single target in ice. The target must make a Might DC 14 check or become 'Incapacitated' for up to 3 rounds, re-attempting the check each turn.",
+            "check": "Essence + Level vs. DC 14",
+            "bloodburn": "-3 Spirit",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Avalanche",
+            "playstyle": "Avalanche",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "Enhances Shatter. When you use Shatter to defeat an enemy, creatures adjacent to the target take half of the damage dealt.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": "N/A"
+          },
+          {
+            "name": "Absolute Zero",
+            "playstyle": "Glacier",
+            "rank": "Master",
+            "level_requirement": 15,
+            "effect": "Drastically lower the temperature in a 30-foot radius. Enemies have their movement speed reduced to 0 and have disadvantage on Agility checks for 2 rounds.",
+            "check": "Essence + Level vs. DC 16",
+            "bloodburn": "-3 Mind",
+            "resolve_cost": 15
+          },
+          {
+            "name": "Blizzard",
+            "playstyle": "Avalanche",
+            "rank": "Master",
+            "level_requirement": 15,
+            "effect": "Create a 25-foot radius storm of ice and snow for 3 rounds. The area is heavily obscured. Deals 3d10 initial cold damage, then 2d10 cold damage to enemies who start their turn inside.",
+            "check": "Essence + Level vs. DC 16",
+            "bloodburn": "-3 Spirit",
+            "resolve_cost": 15
+          },
+          {
+            "name": "Glacial Tomb",
+            "playstyle": "Glacier",
+            "rank": "Archon",
+            "level_requirement": 20,
+            "effect": "Entomb one creature in impenetrable ice for up to 1 minute. The creature is 'Incapacitated' and cannot be targeted or damaged. Usable once per day.",
+            "check": "Essence + Level vs. DC 18",
+            "bloodburn": "-4 Essence",
+            "resolve_cost": 20
+          },
+          {
+            "name": "Comet",
+            "playstyle": "Avalanche",
+            "rank": "Archon",
+            "level_requirement": 20,
+            "effect": "Summon a comet of ice to crash down, dealing 6d12 cold damage to all creatures in a 20-foot radius. The area becomes difficult terrain. Usable once per day.",
+            "check": "Essence + Level vs. DC 18",
+            "bloodburn": "-4 Essence",
+            "resolve_cost": 20
+          }
+        ]
+      },
+      "Storm": {
+        "description": "Dual paths of electrical fury (Tempest) and wind control (Gale).",
+        "abilities": [
+          {
+            "name": "Gale Push",
+            "playstyle": "Gale",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Push all enemies in a 15-foot cone 10 feet away.",
+            "check": "Essence + Level vs. DC 12",
+            "bloodburn": "-2 Agility",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Static Charge",
+            "playstyle": "Tempest",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "As a bonus action, your next weapon hit this turn deals an additional 1d6 lightning damage.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Lightning Bolt",
+            "playstyle": "Tempest",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Fire a bolt of lightning, dealing 1d8 lightning damage. This ability has a lower DC.",
+            "check": "Essence + Level vs. DC 10",
+            "bloodburn": "-1 Agility",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Updraft",
+            "playstyle": "Gale",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "As a bonus action, your jump height and distance are tripled for your turn.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Feather Fall",
+            "playstyle": "Gale",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "As a Reaction when you or an ally are falling, negate the falling damage.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Charged Shot",
+            "playstyle": "Tempest",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Enhances Lightning Bolt. Take a -2 penalty to the check. If it hits, the target has disadvantage on its next action.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": "N/A"
+          },
+          {
+            "name": "Thunder Strike",
+            "playstyle": "Tempest",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Hit a target for 1d10 lightning damage, and adjacent foes take 1d10 splash lightning damage.",
+            "check": "Essence + Level vs. DC 13",
+            "bloodburn": "-2 Spirit",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Chain Lightning",
+            "playstyle": "Tempest",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "A bolt hits a target for 1d8 lightning damage, then jumps to a second target.",
+            "check": "Essence + Level vs. DC 13",
+            "bloodburn": "-2 Might",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Cyclone",
+            "playstyle": "Gale",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Create a 15-foot radius cyclone. The area is difficult terrain and ranged attacks through it have a -2 penalty.",
+            "check": "Essence + Level vs. DC 12",
+            "bloodburn": "-2 Mind",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Redirect",
+            "playstyle": "Gale",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Enhances Gale Push. You can now choose a different direction for each target to be pushed.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": "N/A"
+          },
+          {
+            "name": "Storm Flight",
+            "playstyle": "Gale",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "You gain the ability to fly for 1 minute.",
+            "check": "Essence + Level vs. DC 14",
+            "bloodburn": "-2 Agility",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Ball Lightning",
+            "playstyle": "Tempest",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "Summon a sphere of lightning that zaps the nearest enemy for 3d8 lightning damage at the end of your turn for 3 rounds.",
+            "check": "Essence + Level vs. DC 14",
+            "bloodburn": "-2 Mind",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Ride the Lightning",
+            "playstyle": "Tempest",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "Enhances Chain Lightning. After you cast it, you can teleport to the location of the last target struck.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": "N/A"
+          },
+          {
+            "name": "Eye of the Storm",
+            "playstyle": "Tempest",
+            "rank": "Master",
+            "level_requirement": 15,
+            "effect": "Create a 30-foot radius storm that moves with you. As a bonus action, call a lightning bolt on any target within the storm for 4d10 damage.",
+            "check": "Essence + Level vs. DC 16",
+            "bloodburn": "-3 Spirit",
+            "resolve_cost": 15
+          },
+          {
+            "name": "Hurricane",
+            "playstyle": "Gale",
+            "rank": "Master",
+            "level_requirement": 15,
+            "effect": "Summon a 40-foot radius hurricane. Enemies are pushed 20 feet from the center, and moving toward the center costs triple movement.",
+            "check": "Essence + Level vs. DC 16",
+            "bloodburn": "-3 Agility",
+            "resolve_cost": 15
+          },
+          {
+            "name": "Maelstrom",
+            "playstyle": "Tempest",
+            "rank": "Archon",
+            "level_requirement": 20,
+            "effect": "Deals 6d12 lightning damage to all enemies in a 60-foot radius and 'Deafens' them for 1 minute. Usable once per day.",
+            "check": "Essence + Level vs. DC 18",
+            "bloodburn": "-4 Spirit",
+            "resolve_cost": 20
+          },
+          {
+            "name": "Tornado",
+            "playstyle": "Gale",
+            "rank": "Archon",
+            "level_requirement": 20,
+            "effect": "Summon a mobile tornado for 3 rounds. Creatures it moves through must make a Might DC 18 check or be thrown 40 feet and take 5d10 bludgeoning damage. Usable once per day.",
+            "check": "Essence + Level vs. DC 18",
+            "bloodburn": "-4 Agility",
+            "resolve_cost": 20
+          }
+        ]
+      },
+      "Void": {
+        "description": "Dual paths of phantom-like deception (Shadow) and corrupting power (Entropy).",
+        "abilities": [
+          {
+            "name": "Shadow Veil",
+            "playstyle": "Shadow",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Grant Advantage on Stealth checks for 1 round.",
+            "check": "Essence + Level vs. DC 11",
+            "bloodburn": "-2 Mind",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Entropy Bolt",
+            "playstyle": "Entropy",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Deal 1d10 necrotic damage and reduce the target's next roll by 2.",
+            "check": "Essence + Level vs. DC 12",
+            "bloodburn": "-2 Spirit",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Muffle",
+            "playstyle": "Shadow",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "As a bonus action, gain Advantage on Stealth checks related to moving silently for 1 minute.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Minor Drain",
+            "playstyle": "Entropy",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Touch a creature, dealing 1d6 necrotic damage and regaining Vitality equal to half the damage dealt.",
+            "check": "Essence + Level vs. DC 12",
+            "bloodburn": "-1 Spirit",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Shadow's Grasp",
+            "playstyle": "Shadow",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "As a bonus action, manipulate a simple object up to 30 feet away with a tendril of shadow.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Leeching Bolt",
+            "playstyle": "Entropy",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Enhances Entropy Bolt. You can choose for it to deal no damage. If you do, you regain 1d6 Resolve.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": "N/A"
+          },
+          {
+            "name": "Void Blast",
+            "playstyle": "Entropy",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "A burst of entropic energy deals 2d8 necrotic damage to all enemies in a 10-foot radius.",
+            "check": "Essence + Level vs. DC 15",
+            "bloodburn": "-2 Essence",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Mirror Image",
+            "playstyle": "Shadow",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Create 1d4 illusory duplicates of yourself that last for 1 minute. Each time you are attacked, roll to see if the attack targets a duplicate instead.",
+            "check": "Essence + Level vs. DC 13",
+            "bloodburn": "-2 Mind",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Wither",
+            "playstyle": "Entropy",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Curse a target with decay. They have disadvantage on all Might-based checks and attacks for 3 rounds on a failed Might DC 13 check.",
+            "check": "Essence + Level vs. DC 13",
+            "bloodburn": "-2 Spirit",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Enveloping Veil",
+            "playstyle": "Shadow",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Enhances Shadow Veil. You can now target up to two allies (including yourself).",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": "N/A"
+          },
+          {
+            "name": "Abyssal Anchor",
+            "playstyle": "Shadow",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "As a Reaction, teleport up to 30 feet to a shadowed location, leaving a void field that slows enemies.",
+            "check": "Essence + Level vs. DC 14",
+            "bloodburn": "-2 Essence",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Life Siphon",
+            "playstyle": "Entropy",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "Create a life-draining beam for 3 rounds. At the start of your turn, the target takes 3d8 necrotic damage and you heal for half.",
+            "check": "Essence + Level vs. DC 15",
+            "bloodburn": "-3 Spirit",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Umbral Form",
+            "playstyle": "Shadow",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "Melt into a creature's shadow for up to 1 minute, becoming undetectable. You cannot take other actions while in this form.",
+            "check": "Essence + Level vs. DC 14",
+            "bloodburn": "-2 Agility",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Curse of the Void",
+            "playstyle": "Entropy",
+            "rank": "Master",
+            "level_requirement": 15,
+            "effect": "Place the ultimate curse on one enemy. On a failed Spirit DC 16 check, they become Vulnerable to all damage types for 3 rounds.",
+            "check": "Essence + Level vs. DC 16",
+            "bloodburn": "-3 Spirit",
+            "resolve_cost": 15
+          },
+          {
+            "name": "Hall of Mirrors",
+            "playstyle": "Shadow",
+            "rank": "Master",
+            "level_requirement": 15,
+            "effect": "Create a 30-foot radius of maddening illusions. Enemies inside must make a Mind DC 16 check or attack the nearest creature.",
+            "check": "Essence + Level vs. DC 16",
+            "bloodburn": "-3 Mind",
+            "resolve_cost": 15
+          },
+          {
+            "name": "Erase",
+            "playstyle": "Entropy",
+            "rank": "Archon",
+            "level_requirement": 20,
+            "effect": "Attempt to unravel a single creature from existence. On a failed Spirit DC 18 check, they take 10d10 necrotic damage. If this reduces them to 0 Vitality, they are destroyed. Usable once per day.",
+            "check": "Essence + Level vs. DC 18",
+            "bloodburn": "-4 Essence",
+            "resolve_cost": 20
+          },
+          {
+            "name": "Perfect Doppelganger",
+            "playstyle": "Shadow",
+            "rank": "Archon",
+            "level_requirement": 20,
+            "effect": "Create a perfect, solid duplicate of yourself with half your Vitality for 1 minute. It acts on its own turn. Usable once per day.",
+            "check": "Essence + Level vs. DC 18",
+            "bloodburn": "-4 Mind",
+            "resolve_cost": 20
+          }
+        ]
+      },
+      "Light": {
+        "description": "Dual paths of searing judgment (Radiance) and protective healing (Sanctuary).",
+        "abilities": [
+          {
+            "name": "Healing Aura",
+            "playstyle": "Sanctuary",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Restore 1d6 Vitality to all allies within a 10-foot radius.",
+            "check": "Essence + Level vs. DC 11",
+            "bloodburn": "-2 Spirit",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Glimmer",
+            "playstyle": "Radiance",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Create a flash of light. Enemies within 15 feet must make a Might DC 12 check or be 'Blinded' for 1 round.",
+            "check": "Essence + Level vs. DC 12",
+            "bloodburn": "-2 Agility",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Sacred Flame",
+            "playstyle": "Radiance",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Hurl a bolt of white-hot fire, dealing 1d8 light damage. This ability has a lower DC.",
+            "check": "Essence + Level vs. DC 10",
+            "bloodburn": "-1 Spirit",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Illuminate",
+            "playstyle": "Sanctuary",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "As a bonus action, touch an object and cause it to shed bright, magical sunlight for 1 hour.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Mending Light",
+            "playstyle": "Sanctuary",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Touch an ally and restore 2d6 Vitality.",
+            "check": "Essence + Level vs. DC 11",
+            "bloodburn": "-1 Spirit",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Soothing Aura",
+            "playstyle": "Sanctuary",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Enhances Healing Aura. You can choose for it to heal no Vitality to instead restore 1d8 Resolve to all affected allies.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": "N/A"
+          },
+          {
+            "name": "Sunray",
+            "playstyle": "Radiance",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "A beam of pure light strikes a single target, dealing 2d8 light damage.",
+            "check": "Essence + Level vs. DC 12",
+            "bloodburn": "-2 Mind",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Aura of Purity",
+            "playstyle": "Sanctuary",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Create a 10-foot aura that removes one negative status effect from all allies within.",
+            "check": "Essence + Level vs. DC 12",
+            "bloodburn": "-2 Might",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Searing Orb",
+            "playstyle": "Radiance",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Hurl an orb of sunlight that explodes, dealing 3d8 light damage in a 10-foot radius.",
+            "check": "Essence + Level vs. DC 13",
+            "bloodburn": "-2 Mind",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Shield of Faith",
+            "playstyle": "Sanctuary",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "As a Reaction when an ally is hit, reduce the damage taken by 1d10 + your Spirit attribute.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Divine Judgement",
+            "playstyle": "Radiance",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "A searing beam deals 2d10 radiant damage to a target and prevents them from taking a reaction.",
+            "check": "Essence + Level vs. DC 13",
+            "bloodburn": "-2 Agility",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Beacon of Hope",
+            "playstyle": "Sanctuary",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "Create a stationary beacon. Allies near it can end fear effects on themselves and regain 1d8 Resolve.",
+            "check": "Essence + Level vs. DC 14",
+            "bloodburn": "-2 Spirit",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Blinding Judgement",
+            "playstyle": "Radiance",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "Enhances Divine Judgement. The target must also succeed on a Might DC 15 check or become 'Blinded' for 1 round.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": "N/A"
+          },
+          {
+            "name": "Pillar of Dawn",
+            "playstyle": "Radiance",
+            "rank": "Master",
+            "level_requirement": 15,
+            "effect": "Call down a pillar of light, dealing 5d10 light damage to enemies and healing allies for 2d10 Vitality in a 15-foot radius.",
+            "check": "Essence + Level vs. DC 16",
+            "bloodburn": "-3 Mind",
+            "resolve_cost": 15
+          },
+          {
+            "name": "Guardian Spirit",
+            "playstyle": "Sanctuary",
+            "rank": "Master",
+            "level_requirement": 15,
+            "effect": "Summon a spirit to protect an ally. The first time that ally would be reduced to 0 Vitality, the attack is negated and they are healed for 4d10 Vitality.",
+            "check": "Essence + Level vs. DC 16",
+            "bloodburn": "-3 Spirit",
+            "resolve_cost": 15
+          },
+          {
+            "name": "Wrath of the Heavens",
+            "playstyle": "Radiance",
+            "rank": "Archon",
+            "level_requirement": 20,
+            "effect": "Deals 6d12 light damage to all enemies you can see and they must make a Spirit DC 18 check or be 'Stunned' for 1 round. Usable once per day.",
+            "check": "Essence + Level vs. DC 18",
+            "bloodburn": "-4 Mind",
+            "resolve_cost": 20
+          },
+          {
+            "name": "Genesis",
+            "playstyle": "Sanctuary",
+            "rank": "Archon",
+            "level_requirement": 20,
+            "effect": "For 3 rounds, all allies regain 3d10 Vitality at the start of your turn. Allies cannot be reduced below 1 Vitality. Usable once per day.",
+            "check": "Essence + Level vs. DC 18",
+            "bloodburn": "-4 Spirit",
+            "resolve_cost": 20
+          }
+        ]
+      },
+      "Mist": {
+        "description": "Dual paths of physical misdirection (Mirage) and tactical concealment (Zephyr).",
+        "abilities": [
+          {
+            "name": "Mist Veil",
+            "playstyle": "Zephyr",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Create a 15-foot cube of dense mist that lightly obscures the area for one round.",
+            "check": "Essence + Level vs. DC 11",
+            "bloodburn": "-2 Agility",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Blurred Form",
+            "playstyle": "Mirage",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "As a bonus action, wreathe yourself in a shimmering mist. Ranged attacks against you have a -2 penalty for 1 round.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Echoing Voice",
+            "playstyle": "Mirage",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "As a major action, you can throw your voice, making it sound like it is coming from any point you can see within 30 feet.",
+            "check": "Essence + Level vs. DC 11",
+            "bloodburn": "-1 Spirit",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Tailwind",
+            "playstyle": "Zephyr",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "As a bonus action, grant an ally within 10 feet a gust of wind, increasing their movement speed by 10 feet for their turn.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Displacing Image",
+            "playstyle": "Mirage",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "As a Reaction when targeted by an attack, create a visual distortion, forcing the attacker to subtract 1d4 from their attack roll.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Silent Veil",
+            "playstyle": "Zephyr",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Enhances Mist Veil. The area inside your Mist Veil is also magically silenced.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": "N/A"
+          },
+          {
+            "name": "Refracted Image",
+            "playstyle": "Mirage",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "As a Reaction when targeted by an attack, create a duplicate of bent light. The attacker must re-roll their attack against the duplicate, which then vanishes.",
+            "check": "Essence + Level vs. DC 12",
+            "bloodburn": "-2 Mind",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Disorienting Fog",
+            "playstyle": "Zephyr",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Create a 20-foot radius sphere of dense fog. The area is heavily obscured and enemies inside cannot take Reactions.",
+            "check": "Essence + Level vs. DC 13",
+            "bloodburn": "-2 Mind",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Misty Step",
+            "playstyle": "Zephyr",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "As a bonus action, teleport up to 30 feet to an unoccupied space you can see.",
+            "check": "Essence + Level vs. DC 12",
+            "bloodburn": "-2 Agility",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Bending Light",
+            "playstyle": "Mirage",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Enhances Blurred Form. The penalty it imposes on ranged attackers increases from -2 to -4.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": "N/A"
+          },
+          {
+            "name": "Spell Reflection",
+            "playstyle": "Mirage",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "As a Reaction when targeted by a single-target magical ability, you can make an opposed Essence + Arcana check to reflect it back at the caster.",
+            "check": "Opposed Check",
+            "bloodburn": "-3 Essence",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Gaseous Form",
+            "playstyle": "Zephyr",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "Transform into a cloud of mist for up to 10 minutes. You gain resistance to physical damage, can fly, and can pass through small cracks.",
+            "check": "Essence + Level vs. DC 14",
+            "bloodburn": "-2 Essence",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Suffocating Mist",
+            "playstyle": "Zephyr",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "Enhances Disorienting Fog. Enemies that end their turn inside your fog also take 2d8 acid damage.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": "N/A"
+          },
+          {
+            "name": "Mirage Arena",
+            "playstyle": "Mirage",
+            "rank": "Master",
+            "level_requirement": 15,
+            "effect": "For 1 minute, create a 40-foot radius area of warped light and sound. All creatures inside (except you) are 'Blinded' when targeting anyone more than 5 feet away.",
+            "check": "Essence + Level vs. DC 16",
+            "bloodburn": "-3 Mind",
+            "resolve_cost": 15
+          },
+          {
+            "name": "Ride the Wind",
+            "playstyle": "Zephyr",
+            "rank": "Master",
+            "level_requirement": 15,
+            "effect": "For 1 minute, you gain a flying speed of 60 feet and can hover.",
+            "check": "Essence + Level vs. DC 15",
+            "bloodburn": "-3 Agility",
+            "resolve_cost": 15
+          },
+          {
+            "name": "Prismatic Ward",
+            "playstyle": "Mirage",
+            "rank": "Archon",
+            "level_requirement": 20,
+            "effect": "For 3 rounds, you are encased in a sphere of light. Any magical ability that targets only you is automatically reflected back at the caster. Usable once per day.",
+            "check": "Essence + Level vs. DC 18",
+            "bloodburn": "-4 Essence",
+            "resolve_cost": 20
+          },
+          {
+            "name": "Eye of the Hurricane",
+            "playstyle": "Zephyr",
+            "rank": "Archon",
+            "level_requirement": 20,
+            "effect": "Create a massive hurricane with a calm eye for 3 rounds. The outer wall blocks movement and projectiles. You can move the entire storm 30 feet as a bonus action. Usable once per day.",
+            "check": "Essence + Level vs. DC 18",
+            "bloodburn": "-4 Agility",
+            "resolve_cost": 20
+          }
+        ]
+      },
+      "Tide": {
+        "description": "Dual paths of life-giving restoration (Flow) and crushing pressure (Depths).",
+        "abilities": [
+          {
+            "name": "Flowing Restoration",
+            "playstyle": "Flow",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Restore 1d8 Vitality to a target and move them up to 5 feet.",
+            "check": "Essence + Level vs. DC 11",
+            "bloodburn": "-2 Agility",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Crushing Wave",
+            "playstyle": "Depths",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Target must make a Might DC 12 check or be knocked back 10 feet and take 1d8 physical damage.",
+            "check": "Essence + Level vs. DC 12",
+            "bloodburn": "-2 Spirit",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Water Jet",
+            "playstyle": "Depths",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Fire a jet of water, dealing 1d8 physical damage. This ability has a lower DC.",
+            "check": "Essence + Level vs. DC 10",
+            "bloodburn": "-1 Agility",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Slipstream",
+            "playstyle": "Flow",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "As a bonus action, an ally's movement does not provoke Attacks of Opportunity for this turn.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": 1
+          },
+          {
+            "name": "Ink Cloud",
+            "playstyle": "Depths",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Create a 15-foot cube of magical ink, heavily obscuring the area for 3 rounds.",
+            "check": "Essence + Level vs. DC 11",
+            "bloodburn": "-2 Mind",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Mending Flow",
+            "playstyle": "Flow",
+            "rank": "Novice",
+            "level_requirement": 1,
+            "effect": "Enhances Flowing Restoration. The target is also cleansed of one minor negative physical effect (e.g., 'Blinded').",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": "N/A"
+          },
+          {
+            "name": "Crushing Undertow",
+            "playstyle": "Depths",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Enemies in a 15-foot cone must make a Might DC 13 check or be knocked prone.",
+            "check": "Essence + Level vs. DC 13",
+            "bloodburn": "-2 Mind",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Healing Flood",
+            "playstyle": "Flow",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Restore 1d10 Vitality to a single target and remove any lingering fire or poison effects.",
+            "check": "Essence + Level vs. DC 13",
+            "bloodburn": "-2 Agility",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Whirlpool",
+            "playstyle": "Depths",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Create a 15-foot radius whirlpool. The area is difficult terrain and creatures starting their turn inside are pulled 10 feet toward the center (Might DC 13).",
+            "check": "Essence + Level vs. DC 13",
+            "bloodburn": "-2 Might",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Ride the Current",
+            "playstyle": "Flow",
+            "rank": "Adept",
+            "level_requirement": 5,
+            "effect": "Move yourself and up to two allies up to 30 feet in a straight line without provoking Attacks of Opportunity.",
+            "check": "Essence + Level vs. DC 12",
+            "bloodburn": "-2 Agility",
+            "resolve_cost": 5
+          },
+          {
+            "name": "Pressure Spike",
+            "playstyle": "Depths",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "Hit a single target with a lance of high-pressure water, dealing 4d10 physical damage and pushing them back 20 feet (Might DC 15).",
+            "check": "Essence + Level vs. DC 15",
+            "bloodburn": "-3 Might",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Tidal Shield",
+            "playstyle": "Flow",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "Create a swirling shield of water around an ally. For 3 rounds, melee attackers are pushed back 10 feet.",
+            "check": "Essence + Level vs. DC 14",
+            "bloodburn": "-2 Spirit",
+            "resolve_cost": 10
+          },
+          {
+            "name": "Cleansing Flood",
+            "playstyle": "Flow",
+            "rank": "Expert",
+            "level_requirement": 10,
+            "effect": "Enhances Healing Flood. It now also affects all allies within 10 feet of the primary target, healing them for half the amount.",
+            "check": "N/A",
+            "bloodburn": "N/A",
+            "resolve_cost": "N/A"
+          },
+          {
+            "name": "Call the Kraken",
+            "playstyle": "Depths",
+            "rank": "Master",
+            "level_requirement": 15,
+            "effect": "Summon two massive tentacles for 3 rounds. As a bonus action, command each to attack, dealing 3d8 bludgeoning damage and attempting to 'Grapple' (Might DC 16).",
+            "check": "Essence + Level vs. DC 16",
+            "bloodburn": "-3 Might",
+            "resolve_cost": 15
+          },
+          {
+            "name": "Font of Life",
+            "playstyle": "Flow",
+            "rank": "Master",
+            "level_requirement": 15,
+            "effect": "Create a 20-foot radius spring. Allies who end their turn in the spring's pool regain 2d8 Vitality.",
+            "check": "Essence + Level vs. DC 16",
+            "bloodburn": "-3 Spirit",
+            "resolve_cost": 15
+          },
+          {
+            "name": "Tsunami",
+            "playstyle": "Depths",
+            "rank": "Archon",
+            "level_requirement": 20,
+            "effect": "Summon a massive wave in a 60-foot cone. Creatures take 6d12 bludgeoning damage and are pushed 60 feet on a failed Might DC 18 check (half damage and no push on success). Usable once per day.",
+            "check": "Essence + Level vs. DC 18",
+            "bloodburn": "-4 Essence",
+            "resolve_cost": 20
+          },
+          {
+            "name": "Blessing of the Sea",
+            "playstyle": "Flow",
+            "rank": "Archon",
+            "level_requirement": 20,
+            "effect": "For 1 minute, you and all allies are immune to being 'Restrained', 'Grappled', or 'Paralyzed', and can use a bonus action to move 10 feet. Usable once per day.",
+            "check": "Essence + Level vs. DC 18",
+            "bloodburn": "-4 Spirit",
+            "resolve_cost": 20
+          }
+        ]
+      }
+    }
+  },

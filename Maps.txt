@@ -1,0 +1,266 @@
+{
+  "maps": {
+    "world_map": {
+      "name": "Eryndor",
+      "description": "A comprehensive, text-based map of the known world.",
+      "content": "                                      ▲ Glacial Maw (Frostfang Den)\n                                      |\n                                      |\n▲ Sky-Reach Aerie --- ▲ Mount Dragnor --- The Shattered Lands --- The Void Chasm\n(Skyveil People)    | (Fire Temple)     | (Ruined Citadel)    (Zael's Lineage)\n        |           |                   |                     /\n        |           |                   |                    /\n Wyndia ----- Stonegard --------- Dragon's Graveyard --------\n(Ember Concord) | (Scalebound Clans)    (Earth Lineage)\n           |    |\n           |---- Stonekin Outpost\n           |\n      Port Myria --- The Azure Steppes --- Whispering Woods --- Tanglewood Reach\n(Ember Concord) | (Windmark Village)      (Gloomwood Heart)\n                |\n                |----------------------- The Well of Souls\n                |\n  Elysian Grand Cathedral --- Sunken City of Astora\n  (Champions of Order)       (Tide Lineage)",
+      "regions": [
+        {
+          "name": "The Azure Steppes",
+          "connections": [
+            "Windmark Village",
+            "The Whispering Woods",
+            "Serpent's Coil mountains"
+          ]
+        },
+        {
+          "name": "The Whispering Woods",
+          "connections": [
+            "Azure Steppes",
+            "Tanglewood Reach"
+          ]
+        },
+        {
+          "name": "Ember Concord",
+          "connections": [
+            "Wyndia",
+            "Port Myria"
+          ]
+        },
+        {
+          "name": "The Glacial Maw",
+          "connections": [
+            "Frostfang Den"
+          ]
+        },
+        {
+          "name": "Serpent's Coil mountains",
+          "connections": [
+            "The Azure Steppes",
+            "Sky-Reach Aerie"
+          ]
+        },
+        {
+          "name": "The Shattered Lands",
+          "connections": [
+            "The Void Chasm",
+            "Mount Dragnor"
+          ]
+        },
+        {
+          "name": "Scalebound Clans Territory",
+          "connections": [
+            "Stonegard",
+            "Dragon's Graveyard"
+          ]
+        },
+        {
+          "name": "Arcane Dominion Territory",
+          "connections": [
+            "Oasis of Zha'Vask",
+            "The Crystal Spire",
+            "The Arcanum Vaults"
+          ]
+        }
+      ]
+    },
+    "explorable_areas": {
+      "void_chasm": {
+        "start_room": "chasm_edge",
+        "rooms": {
+          "chasm_edge": {
+            "name": "Edge of the Void Chasm",
+            "description": "You stand on a precipice of cracked, black rock, staring into a bottomless abyss. The air is unnaturally still and cold. A narrow, treacherous path winds down into the darkness.",
+            "exits": [
+              {
+                "direction": "Down",
+                "destination": "fractured_path"
+              }
+            ]
+          },
+          "fractured_path": {
+            "name": "The Fractured Path",
+            "description": "The path is unstable, with chunks of rock floating in defiance of gravity. Leaping from one to the next requires careful timing. The oppressive silence of the chasm is broken by faint, sorrowful whispers that seem to come from the rock itself.",
+            "exits": [
+              {
+                "direction": "Up",
+                "destination": "chasm_edge"
+              },
+              {
+                "direction": "Across",
+                "destination": "crystal_cave"
+              }
+            ]
+          },
+          "crystal_cave": {
+            "name": "Whispering Crystal Cave",
+            "description": "The path opens into a cavern. The walls are lined with strange, purple crystals that pulse with a faint light. The whispers are louder here, echoing memories of sorrow and loss.",
+            "exits": [
+              {
+                "direction": "Back",
+                "destination": "fractured_path"
+              },
+              {
+                "direction": "Deeper",
+                "destination": "heart_of_the_void"
+              }
+            ]
+          },
+          "heart_of_the_void": {
+            "name": "Heart of the Void",
+            "description": "In the center of a vast, silent chamber floats a perfect sphere of absolute blackness, a miniature tear in reality. This is a powerful nexus of void energy, perfect for attuning to a new draconic aspect.",
+            "exits": [
+              {
+                "direction": "Back",
+                "destination": "crystal_cave"
+              }
+            ],
+            "events": [
+              {
+                "trigger": "meditate",
+                "action": "story_beat",
+                "details": "Opportunity to unlock the Void Aspect."
+              }
+            ]
+          }
+        }
+      },
+      "gemstone_crevice": {
+        "start_room": "entrance",
+        "rooms": {
+          "entrance": {
+            "name": "Crevice Entrance",
+            "description": "A narrow fissure in the mountainside. A faint, rhythmic crunching sound echoes from within, and the rock walls glitter with embedded, half-eaten crystals.",
+            "exits": [
+              {
+                "direction": "Deeper",
+                "destination": "nest"
+              }
+            ]
+          },
+          "nest": {
+            "name": "The Crawler's Nest",
+            "description": "The fissure opens into a wider cavern where a Crystal-back Crawler guards its territory amidst shimmering, cracked geodes.",
+            "exits": [
+              {
+                "direction": "Back",
+                "destination": "entrance"
+              },
+              {
+                "direction": "Through the rubble",
+                "destination": "collapsed_tunnel",
+                "status": "Hidden"
+              }
+            ]
+          },
+          "collapsed_tunnel": {
+            "name": "Collapsed Tunnel",
+            "description": "Behind a pile of rubble in the crawler's nest is an old mining tunnel, collapsed long ago. A faint, cool breeze issues from a small opening at the far end. Clearing the tunnel would require significant effort or a clever use of abilities.",
+            "exits": [
+              {
+                "direction": "Back to the nest",
+                "destination": "nest"
+              },
+              {
+                "direction": "Deeper into the mountain",
+                "destination": "PROC_GEN_MINE_SHAFT",
+                "type": "procedural"
+              }
+            ]
+          }
+        }
+      },
+      "elysian_grand_cathedral_dungeon": {
+        "start_room": "nave",
+        "rooms": {
+          "nave": {
+            "name": "Grand Nave",
+            "description": "The main hall of the Elysian Grand Cathedral. Massive stained-glass windows depict scenes of Elysia's benevolence, though the atmosphere is cold and sterile. Patrols of Champions of Order march with rigid precision.",
+            "exits": [
+              {
+                "direction": "Down",
+                "destination": "reliquary"
+              },
+              {
+                "direction": "Side Passage",
+                "destination": "sanctum"
+              }
+            ]
+          },
+          "sanctum": {
+            "name": "Sanctum of Doctrine",
+            "description": "This chamber serves as a library and study. Bookshelves line the walls, filled with Elysian scripture and heavily redacted histories. A high-ranking Champion pours over a map on a large table.",
+            "exits": [
+              {
+                "direction": "Back to the Nave",
+                "destination": "nave"
+              }
+            ]
+          },
+          "reliquary": {
+            "name": "Reliquary of Order",
+            "description": "This lower chamber is filled with relics the Champions have 'contained'. The air hums with suppressed magical energy. A large, ornate door, sealed with a glowing rune, leads to the detention levels.",
+            "exits": [
+              {
+                "direction": "Up",
+                "destination": "nave"
+              },
+              {
+                "direction": "Through Door",
+                "destination": "detention_block",
+                "status": "Locked"
+              }
+            ]
+          },
+          "detention_block": {
+            "name": "Detention Block",
+            "description": "The air here is cold and filled with despair. Cells line the walls, containing beings deemed 'chaotic'. In the central cell, you see Zael, weakened but defiant.",
+            "exits": [
+              {
+                "direction": "Back",
+                "destination": "reliquary"
+              }
+            ],
+            "key_characters": [
+              "Zael"
+            ]
+          }
+        }
+      },
+      "gloomwood_heart": {
+        "start_room": "entrance",
+        "rooms": {
+          "entrance": {
+            "name": "Edge of the Corruption",
+            "description": "You stand at the border of the Whispering Woods where the healthy, green foliage gives way to a dark, twisted corruption. The air is thick with a sickly sweet smell.",
+            "exits": [
+              {
+                "direction": "Deeper",
+                "destination": "heart"
+              }
+            ]
+          },
+          "heart": {
+            "name": "The Gloomwood Heart",
+            "description": "In the center of the corruption is a massive, pulsating tree of blackened wood. It exudes a powerful, negative energy that drains the life from the forest around it.",
+            "exits": [
+              {
+                "direction": "Back",
+                "destination": "entrance"
+              }
+            ],
+            "events": [
+              {
+                "trigger": "enter_room",
+                "action": "initiate_combat",
+                "combatants": [
+                  "Gloomwood Heart"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

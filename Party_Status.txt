@@ -1,0 +1,234 @@
+ "party_status": [
+    {
+      "name": "Rya",
+      "level": 3,
+      "current_resources": {
+        "vitality": 43,
+        "resolve": 25,
+        "legacy_points": 1
+      },
+      "insight_points": {
+        "current": 0,
+        "spent": 15,
+        "total_earned": 15
+      },
+      "inventory": {
+        "equipped": [
+          "Earth-Wrought Blade",
+          "Leather Armor",
+          "Work Clothes"
+        ],
+        "unequipped": [
+          "Sword",
+          "Shield",
+          "Adventurer's kit",
+          "310 Zenny",
+          "Gold Goo",
+          "Gold Goo",
+          "Woven Sapling Staff",
+          "Elysian Tome of Order",
+          "Wyndian Quill Bow",
+          "Map of Wyndia",
+          "Compass",
+          "Healing Salve",
+          "Healing Salve",
+          "Obsidian Shard",
+          "Patrol Roster and Route Map",
+          "Frostfang Charm",
+          "Wyndian Disguise",
+          "Sun-Kissed Petal",
+          "Gloomcap Spore Vial",
+          "Silver Key (Wyndian Lifts)",
+          "Gonghead Metal Shard"
+        ]
+      },
+      "active_effects": [],
+      "stats": {
+        "Might": 5,
+        "Agility": 3,
+        "Mind": 6,
+        "Spirit": 5,
+        "Essence": 4
+      },
+      "skills": {
+        "Combat": 4,
+        "Lore": 3,
+        "Athletics": 4,
+        "Survival": 3,
+        "Arcana": 2
+      },
+      "unlocked_aspects": [
+        "Fire",
+        "Earth",
+        "Void"
+      ],
+      "aspect_abilities": [
+        {
+          "name": "Flame Burst",
+          "status": "Awakened"
+        },
+        {
+          "name": "Cinder Step",
+          "status": "Awakened"
+        },
+        {
+          "name": "Earthen Aegis",
+          "status": "Awakened"
+        },
+        {
+          "name": "Stone Skin",
+          "status": "Attuned"
+        },
+        {
+          "name": "Earthen Grasp",
+          "status": "Attuned"
+        },
+        {
+          "name": "Stone Shard",
+          "status": "Attuned"
+        },
+        {
+          "name": "Shadow Veil",
+          "status": "Attuned"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Heat Sense",
+          "effect": "Rya can sense the presence of living creatures within 30 ft by their body heat.",
+          "check": "Mind DC 10"
+        },
+        {
+          "name": "Purify",
+          "effect": "You can use a major action to remove one negative status effect (e.g., poisoned, blinded) from a target."
+        }
+      ]
+    },
+    {
+      "name": "Zael",
+      "level": 2,
+      "current_resources": {
+        "vitality": 14,
+        "resolve": 25
+      },
+      "insight_points": {
+        "current": 1,
+        "spent": 9,
+        "total_earned": 10
+      },
+      "inventory": {
+        "equipped": [
+          "Shadow-Whisper Dagger",
+          "Leather Armor"
+        ],
+        "unequipped": [
+          "Frostfang Charm",
+          "Elysian Tome of Order"
+        ]
+      },
+      "active_effects": [],
+      "stats": {
+        "Might": 2,
+        "Agility": 5,
+        "Mind": 6,
+        "Spirit": 5
+      },
+      "skills": {
+        "Arcana": 6,
+        "Lore": 5,
+        "Stealth": 6,
+        "Combat": 1
+      },
+      "bond_level": 1,
+      "bond_points": "0/5",
+      "is_awakened": false,
+      "abilities": [
+        {
+          "name": "Shadow Veil",
+          "effect": "Advantage on Stealth for one ally",
+          "check": "Mind DC 12"
+        },
+        {
+          "name": "Wraith’s Insight",
+          "effect": "Reveal hidden truths or illusions",
+          "check": "Mind DC 11"
+        },
+        {
+          "name": "Void Step",
+          "effect": "A short-range teleportation of up to 15 ft to a shadowy area. This movement does not provoke an Attack of Opportunity."
+        },
+        {
+          "name": "Shadow Bind",
+          "effect": "An enemy's movement speed is halved for 1 round."
+        },
+        {
+          "name": "Chilling Whisper",
+          "effect": "A whispered word that forces a single target to make a Spirit DC 12 check or have Disadvantage on its next roll."
+        }
+      ]
+    },
+    {
+      "name": "Selra",
+      "level": 2,
+      "current_resources": {
+        "vitality": 24,
+        "resolve": 23
+      },
+      "insight_points": {
+        "current": 1,
+        "spent": 9,
+        "total_earned": 10
+      },
+      "inventory": {
+        "equipped": [
+          "Aegis Staff",
+          "Leather Armor",
+          "Sunken King's Crown",
+          "Aegis of the Elder Wyrm"
+        ],
+        "unequipped": [
+          "Glyphs for spells"
+        ]
+      },
+      "active_effects": [],
+      "stats": {
+        "Might": 2,
+        "Agility": 3,
+        "Mind": 5,
+        "Spirit": 9
+      },
+      "skills": {
+        "Lore": 5,
+        "Arcana": 5,
+        "Diplomacy": 4,
+        "Survival": 2
+      },
+      "bond_level": 2,
+      "bond_points": "8/10",
+      "abilities": [
+        {
+          "name": "Heal",
+          "effect": "Heal 1d10 Vitality",
+          "check": "Mind DC 12"
+        },
+        {
+          "name": "Inspire",
+          "effect": "Target gains +2 to next roll",
+          "check": "Spirit DC 11"
+        },
+        {
+          "name": "Divine Ward (Reaction)",
+          "effect": "Grants a temporary shield that absorbs up to 5 points of magical damage for 1 round.",
+          "check": "Spirit DC 11"
+        },
+        {
+          "name": "Summon Goo",
+          "effect": "Summons 1d4 Goo Balls to fight on your behalf."
+        },
+        {
+          "name": "Light of Truth",
+          "effect": "Shed a pure light that reveals hidden objects or forces an illusion to make a check to maintain its form."
+        }
+      ]
+    }
+  ],

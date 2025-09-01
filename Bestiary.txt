@@ -1,0 +1,2142 @@
+  "bestiary": {
+    "monsters": {
+      "tier_cr_1_5": [
+        {
+          "name": "Goo Ball",
+          "cr": 1,
+          "type": "Ooze",
+          "description": "A small, gelatinous blob of pure mana. They are the simplest of magical life forms, often found near mana-rich Ley Lines. They are naturally docile and only attack when threatened.",
+          "role": "Tank",
+          "behavior": {
+            "hostility": "Territorial",
+            "social": "Solitary, but will merge to form a King Goo when threatened.",
+            "tactics": "Bounces around the battlefield and splits when hit. It's a simple, unpredictable foe.",
+            "notes": "Vulnerable to most physical damage but can regenerate. They have no strong elemental ties."
+          },
+          "stats": {
+            "Might": 2,
+            "Agility": 2,
+            "Mind": 1,
+            "Spirit": 1
+          },
+          "resources": {
+            "vitality": 8
+          },
+          "abilities": [
+            {
+              "name": "Bounce",
+              "effect": "Deals 1d4 physical damage."
+            },
+            {
+              "name": "Split",
+              "effect": "The first time the Goo Ball is hit, it splits into two smaller Goo Balls, each with half the current Vitality."
+            }
+          ]
+        },
+        {
+          "name": "Eyepicker",
+          "cr": 1,
+          "type": "Beast",
+          "description": "A scavenger bird with a razor-sharp beak and a piercing caw. They often nest in rocky outcroppings and are known for their unnerving ability to pick out the eyes of their fallen prey.",
+          "role": "Harasser",
+          "behavior": {
+            "hostility": "Aggressive",
+            "social": "Flocks",
+            "tactics": "Works with its flock to surround and overwhelm enemies. They rely on their numbers and speed to win.",
+            "notes": "Avoids one-on-one fights and flees when its allies are defeated."
+          },
+          "stats": {
+            "Might": 1,
+            "Agility": 4,
+            "Mind": 2,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 6
+          },
+          "abilities": [
+            {
+              "name": "Peck",
+              "effect": "Deals 1d4 physical damage."
+            },
+            {
+              "name": "Flock Tactics (Passive)",
+              "effect": "Gains a +1 bonus to attack for each other Eyepicker adjacent to its target."
+            },
+            {
+              "name": "Distracting Caw",
+              "effect": "As a bonus action, the Eyepicker can caw loudly at a target, giving the next attack against that target a +1 bonus."
+            }
+          ]
+        },
+        {
+          "name": "Nut Trooper",
+          "cr": 2,
+          "type": "Plant",
+          "description": "A sentient plant that resembles a humanoid with a large, armored seed for a head. They are often found in forests, defending their territory with crude spears and hardened shells.",
+          "role": "Melee Defender",
+          "behavior": {
+            "hostility": "Territorial",
+            "social": "Groups",
+            "tactics": "Fights on the front lines, using its shell to resist damage.",
+            "notes": "Vulnerable to fire damage."
+          },
+          "stats": {
+            "Might": 3,
+            "Agility": 3,
+            "Mind": 2,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 12
+          },
+          "damage_reduction": 1,
+          "abilities": [
+            {
+              "name": "Spear Jab",
+              "effect": "Deals 1d6 physical damage."
+            },
+            {
+              "name": "Shell Defense (Reaction)",
+              "effect": "As a reaction when attacked, the Nut Trooper can withdraw into its shell, increasing its Damage Reduction to 3 for that single attack."
+            }
+          ]
+        },
+        {
+          "name": "Bandit",
+          "cr": 2,
+          "type": "Humanoid",
+          "description": "A common thug or cutthroat, often found in the wilds or the back alleys of major cities. They rely on numbers and dirty tricks to get what they want.",
+          "role": "Skirmisher",
+          "behavior": {
+            "hostility": "Aggressive",
+            "social": "Groups",
+            "tactics": "Tries to get a numerical advantage and use minor debuffs to gain an edge.",
+            "notes": "Will flee when outnumbered or severely wounded."
+          },
+          "stats": {
+            "Might": 3,
+            "Agility": 4,
+            "Mind": 2,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 15
+          },
+          "damage_reduction": 2,
+          "abilities": [
+            {
+              "name": "Crude Sword",
+              "effect": "Deals 1d8 physical damage."
+            },
+            {
+              "name": "Pocket Sand",
+              "effect": "As a bonus action, the Bandit can throw sand at a target's eyes. The target has a -2 penalty on their next attack roll."
+            }
+          ]
+        },
+        {
+          "name": "Sporeling",
+          "cr": 2,
+          "type": "Plant",
+          "description": "A walking fungus that releases clouds of spores to disorient its enemies. They are a passive creature that only attacks in self-defense.",
+          "role": "Support",
+          "behavior": {
+            "hostility": "Docile",
+            "social": "Solitary",
+            "tactics": "Uses its spores to protect itself and then roots itself to escape.",
+            "notes": "Is immune to being moved once it uses its root ability."
+          },
+          "stats": {
+            "Might": 2,
+            "Agility": 2,
+            "Mind": 1,
+            "Spirit": 3
+          },
+          "resources": {
+            "vitality": 10
+          },
+          "abilities": [
+            {
+              "name": "Headbutt",
+              "effect": "Deals 1d4 physical damage."
+            },
+            {
+              "name": "Confusing Spores (Reaction)",
+              "effect": "When hit by a melee attack, the attacker must make a Spirit DC 12 check or have a -1 penalty to their next roll."
+            },
+            {
+              "name": "Root",
+              "effect": "As a bonus action, the Sporeling can root itself to the ground, becoming immune to being moved until its next turn."
+            }
+          ]
+        },
+        {
+          "name": "Cinder Pup",
+          "cr": 2,
+          "type": "Elemental",
+          "description": "A small, fire-infused canine from the slopes of Mount Dragnor. They are playful, but their touch is hot enough to burn flesh.",
+          "role": "Harasser",
+          "behavior": {
+            "hostility": "Territorial",
+            "social": "Packs",
+            "tactics": "Charges in to inflict fire damage, then retreats to a safe distance.",
+            "notes": "They are immune to fire damage and can be found alongside other fire elementals."
+          },
+          "stats": {
+            "Might": 3,
+            "Agility": 4,
+            "Mind": 2,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 13
+          },
+          "abilities": [
+            {
+              "name": "Hot-headed (Passive)",
+              "effect": "A creature that hits the Cinder Pup with a melee attack takes 1d4 fire damage."
+            },
+            {
+              "name": "Ember Bite",
+              "effect": "Deals 1d6 fire damage."
+            },
+            {
+              "name": "Smoke Puff",
+              "effect": "As a bonus action, creates a 5-foot cube of smoke, lightly obscuring the area for 1 round."
+            }
+          ]
+        },
+        {
+          "name": "Hobgoblin",
+          "cr": 3,
+          "type": "Humanoid",
+          "description": "A highly organized and disciplined soldier of the goblinoid races. Hobgoblins are fiercely loyal to their commanders and fight with military precision. They are a sign that a major goblinoid force is nearby.",
+          "role": "Melee Commander",
+          "behavior": {
+            "hostility": "Aggressive",
+            "social": "Organized Groups",
+            "tactics": "Commands its allies from the front lines, focusing on tactical strikes and defensive maneuvers.",
+            "notes": "Often found with other goblins, including archers and shamans."
+          },
+          "stats": {
+            "Might": 4,
+            "Agility": 3,
+            "Mind": 3,
+            "Spirit": 3
+          },
+          "resources": {
+            "vitality": 22
+          },
+          "damage_reduction": 3,
+          "abilities": [
+            {
+              "name": "Longsword",
+              "effect": "Deals 1d8+4 physical damage."
+            },
+            {
+              "name": "Commander's Orders",
+              "effect": "As a bonus action, the Hobgoblin can grant an allied Goblin a free 5-foot movement."
+            },
+            {
+              "name": "Shield Bash",
+              "effect": "As a bonus action after attacking, can attempt to shove a target 5 feet."
+            }
+          ]
+        },
+        {
+          "name": "Thorn Creeper",
+          "cr": 3,
+          "type": "Plant",
+          "description": "An aggressive, carnivorous plant that uses thorny vines to ensnare its prey. They lie in wait, camouflaging themselves in dense foliage before attacking.",
+          "role": "Controller",
+          "behavior": {
+            "hostility": "Territorial",
+            "social": "Solitary",
+            "tactics": "Relies on its camouflage to get the drop on enemies. It uses its vines to restrain and damage a single target, letting it bleed out.",
+            "notes": "Vulnerable to fire damage."
+          },
+          "stats": {
+            "Might": 4,
+            "Agility": 3,
+            "Mind": 1,
+            "Spirit": 3
+          },
+          "resources": {
+            "vitality": 25
+          },
+          "abilities": [
+            {
+              "name": "Thorn Lash",
+              "effect": "Deals 1d10 physical damage."
+            },
+            {
+              "name": "Ensnare",
+              "effect": "On a successful hit, the target must make an Agility DC 13 check or become 'Restrained'."
+            },
+            {
+              "name": "Camouflage",
+              "effect": "If the Thorn Creeper has not moved this turn, attacks against it have a -1 penalty."
+            }
+          ]
+        },
+        {
+          "name": "Gloomfang Wolf",
+          "cr": 4,
+          "type": "Beast",
+          "description": "A vicious, pack-hunting wolf from the shadowed forests. They are known for their venomous fangs and their mournful howls that can chill a hero to the bone.",
+          "role": "Skirmisher",
+          "behavior": {
+            "hostility": "Aggressive",
+            "social": "Packs",
+            "tactics": "Focuses on poisoning and harassing targets before moving in for the kill.",
+            "notes": "Their howl can rally other wolves in the area."
+          },
+          "stats": {
+            "Might": 5,
+            "Agility": 5,
+            "Mind": 2,
+            "Spirit": 3
+          },
+          "resources": {
+            "vitality": 28
+          },
+          "abilities": [
+            {
+              "name": "Vicious Bite",
+              "effect": "Deals 1d10 physical damage."
+            },
+            {
+              "name": "Venomous Fangs",
+              "effect": "On a successful hit, the target must make a Might DC 12 check or become 'Poisoned' for 1 minute."
+            },
+            {
+              "name": "Pack Howl",
+              "effect": "As a major action, grants all allied wolves within 30 feet a +1 bonus to their next attack roll."
+            }
+          ]
+        },
+        {
+          "name": "Scalebound Skirmisher",
+          "cr": 4,
+          "type": "Humanoid",
+          "description": "A lizard-like warrior from the Scalebound Clans. They are master hunters and skirmishers, using their speed and agility to get the drop on their enemies.",
+          "role": "Ranged Striker",
+          "behavior": {
+            "hostility": "Territorial",
+            "social": "Groups",
+            "tactics": "Attacks from a distance, using its high agility to avoid close-range combat.",
+            "notes": "Will use its dagger as a last resort when enemies get too close."
+          },
+          "stats": {
+            "Might": 4,
+            "Agility": 6,
+            "Mind": 3,
+            "Spirit": 4
+          },
+          "resources": {
+            "vitality": 30
+          },
+          "damage_reduction": 2,
+          "abilities": [
+            {
+              "name": "Shortbow",
+              "effect": "Ranged attack dealing 1d6 physical damage."
+            },
+            {
+              "name": "Skirmish (Passive)",
+              "effect": "After making a ranged attack, the Skirmisher can immediately move up to 10 feet without provoking an Attack of Opportunity."
+            },
+            {
+              "name": "Quick Stab (Reaction)",
+              "effect": "If an enemy moves within 5 feet of the Skirmisher, it can use its reaction to make a single dagger attack (1d4 damage)."
+            }
+          ]
+        },
+        {
+          "name": "Red Goo",
+          "cr": 2,
+          "type": "Ooze",
+          "description": "A volatile ooze that radiates a faint heat. It's surprisingly aggressive.",
+          "stats": {
+            "Might": 2,
+            "Agility": 2,
+            "Mind": 1,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 12
+          },
+          "abilities": [
+            {
+              "name": "Singe",
+              "effect": "Deals 1d6 fire damage."
+            }
+          ]
+        },
+        {
+          "name": "Blue Goo",
+          "cr": 2,
+          "type": "Ooze",
+          "description": "A frigid ooze that slows its prey before consuming it.",
+          "stats": {
+            "Might": 1,
+            "Agility": 1,
+            "Mind": 2,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 11
+          },
+          "abilities": [
+            {
+              "name": "Chill Touch",
+              "effect": "Deals 1d4 physical damage and may slow the target."
+            }
+          ]
+        },
+        {
+          "name": "Mage Goo",
+          "cr": 3,
+          "type": "Ooze",
+          "description": "A rare ooze shimmering with arcane energy. It has rudimentary magical abilities.",
+          "stats": {
+            "Might": 1,
+            "Agility": 2,
+            "Mind": 4,
+            "Spirit": 3
+          },
+          "resources": {
+            "vitality": 16
+          },
+          "abilities": [
+            {
+              "name": "Spark",
+              "effect": "Deals 1d8 lightning damage."
+            }
+          ]
+        },
+        {
+          "name": "Poison Goo",
+          "cr": 2,
+          "type": "Ooze",
+          "description": "A sickly green ooze that leaks a foul-smelling toxin.",
+          "stats": {
+            "Might": 2,
+            "Agility": 2,
+            "Mind": 1,
+            "Spirit": 1
+          },
+          "resources": {
+            "vitality": 12
+          },
+          "abilities": [
+            {
+              "name": "Venom Spit",
+              "effect": "Deals 1d4 physical damage and may poison the target."
+            }
+          ]
+        },
+        {
+          "name": "King Goo",
+          "cr": 5,
+          "type": "Ooze",
+          "description": "A massive ooze that has absorbed countless smaller kin. It wears a rusty crown from a past victim.",
+          "stats": {
+            "Might": 5,
+            "Agility": 1,
+            "Mind": 2,
+            "Spirit": 3
+          },
+          "resources": {
+            "vitality": 35
+          },
+          "abilities": [
+            {
+              "name": "Crushing Leap",
+              "effect": "Deals 2d8 physical damage to all in a small area."
+            },
+            {
+              "name": "Summon Goo",
+              "effect": "Summons 1d4 Goo Balls."
+            }
+          ]
+        },
+        {
+          "name": "Metal Goo",
+          "cr": 3,
+          "type": "Ooze",
+          "description": "An ooze with a metallic sheen and incredibly tough hide. It is slow but very difficult to damage.",
+          "stats": {
+            "Might": 2,
+            "Agility": 1,
+            "Mind": 1,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 12
+          },
+          "abilities": [
+            {
+              "name": "High Defense",
+              "effect": "Resistant to physical damage."
+            }
+          ]
+        },
+        {
+          "name": "Gloomcap",
+          "cr": 3,
+          "type": "Plant",
+          "description": "A man-sized mushroom creature that wanders the darkest parts of the woods. When threatened, it releases a cloud of disorienting spores from its cap.",
+          "stats": {
+            "Might": 3,
+            "Agility": 2,
+            "Mind": 1,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 15
+          },
+          "abilities": [
+            {
+              "name": "Headbutt",
+              "effect": "Deals 1d8 physical damage."
+            },
+            {
+              "name": "Spore Cloud",
+              "effect": "All targets in a 10-ft radius must pass a Spirit DC 11 check or have Disadvantage on their next action."
+            }
+          ]
+        },
+        {
+          "name": "Barkmite",
+          "cr": 3,
+          "type": "Beast",
+          "description": "A large, six-legged insect whose carapace perfectly resembles the bark of ancient trees. It lies in wait for prey, relying on its incredible toughness to weather any initial assault.",
+          "stats": {
+            "Might": 4,
+            "Agility": 1,
+            "Mind": 2,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 20
+          },
+          "abilities": [
+            {
+              "name": "Pincer Crush",
+              "effect": "Deals 1d10 physical damage."
+            },
+            {
+              "name": "Iron Shell",
+              "effect": "Resistant to physical damage. Vulnerable to fire damage."
+            }
+          ]
+        },
+        {
+          "name": "Whisperwisp",
+          "cr": 2,
+          "type": "Ethereal",
+          "description": "A faint, glowing orb of mist that drifts silently through the woods. They are drawn to strong emotions and feed on willpower, leaving their victims feeling drained and hopeless.",
+          "stats": {
+            "Might": 1,
+            "Agility": 4,
+            "Mind": 3,
+            "Spirit": 4
+          },
+          "resources": {
+            "vitality": 12
+          },
+          "abilities": [
+            {
+              "name": "Draining Touch",
+              "effect": "Deals 1d4 Spirit damage (targets Resolve instead of Vitality)."
+            },
+            {
+              "name": "Fade",
+              "effect": "Can become invisible for one round as an action."
+            }
+          ]
+        },
+        {
+          "name": "Goblin Shaman",
+          "cr": 3,
+          "type": "Humanoid",
+          "description": "A goblin that has learned rudimentary magic, often used to aid its allies or hinder its foes.",
+          "stats": {
+            "Might": 2,
+            "Agility": 3,
+            "Mind": 4,
+            "Spirit": 3
+          },
+          "resources": {
+            "vitality": 17
+          },
+          "abilities": [
+            {
+              "name": "Hex",
+              "effect": "Target receives -1 to their next roll."
+            },
+            {
+              "name": "Spark",
+              "effect": "Deals 1d6 lightning damage."
+            }
+          ]
+        },
+        {
+          "name": "Ghoul",
+          "cr": 4,
+          "type": "Undead",
+          "description": "A swift and ravenous undead that can paralyze its victims with a touch.",
+          "stats": {
+            "Might": 3,
+            "Agility": 4,
+            "Mind": 2,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 18
+          },
+          "abilities": [
+            {
+              "name": "Paralyzing Claw",
+              "effect": "Deals 1d8 physical damage and may paralyze."
+            }
+          ]
+        },
+        {
+          "name": "Skeleton Warrior",
+          "cr": 2,
+          "type": "Undead",
+          "description": "The animated bones of a long-dead soldier, retaining some of its former martial skill.",
+          "stats": {
+            "Might": 3,
+            "Agility": 3,
+            "Mind": 1,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 13
+          },
+          "abilities": [
+            {
+              "name": "Rusty Sword",
+              "effect": "Deals 1d8 physical damage."
+            }
+          ]
+        },
+        {
+          "name": "Wraith",
+          "cr": 4,
+          "type": "Undead",
+          "description": "An incorporeal spirit filled with hatred for all life, capable of draining vitality.",
+          "stats": {
+            "Might": 1,
+            "Agility": 4,
+            "Mind": 3,
+            "Spirit": 4
+          },
+          "resources": {
+            "vitality": 21
+          },
+          "abilities": [
+            {
+              "name": "Life Drain",
+              "effect": "Deals 1d10 necrotic damage and heals the Wraith for half."
+            },
+            {
+              "name": "Incorporeal",
+              "effect": "Resistant to physical damage."
+            }
+          ]
+        },
+        {
+          "name": "Dire Wolf",
+          "cr": 3,
+          "type": "Beast",
+          "description": "A large and ferocious wolf that hunts in packs.",
+          "stats": {
+            "Might": 4,
+            "Agility": 5,
+            "Mind": 2,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 19
+          },
+          "abilities": [
+            {
+              "name": "Vicious Bite",
+              "effect": "Deals 1d10 physical damage."
+            }
+          ]
+        },
+        {
+          "name": "Giant Spider",
+          "cr": 3,
+          "type": "Beast",
+          "description": "A monstrous arachnid that spins thick webs to trap its prey.",
+          "stats": {
+            "Might": 3,
+            "Agility": 4,
+            "Mind": 2,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 18
+          },
+          "abilities": [
+            {
+              "name": "Venomous Bite",
+              "effect": "Deals 1d8 physical damage and may poison."
+            },
+            {
+              "name": "Web",
+              "effect": "May ensnare a target, reducing their Agility."
+            }
+          ]
+        },
+        {
+          "name": "Eye Spy",
+          "cr": 2,
+          "type": "Aberration",
+          "description": "A floating eyeball with small wings. It observes intruders and calls for powerful allies.",
+          "stats": {
+            "Might": 1,
+            "Agility": 4,
+            "Mind": 3,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 11
+          },
+          "abilities": [
+            {
+              "name": "Alarm",
+              "effect": "Attempts to summon stronger monsters to the battle."
+            }
+          ]
+        },
+        {
+          "name": "Beak",
+          "cr": 3,
+          "type": "Beast",
+          "description": "A large, aggressive bird with a razor-sharp beak. It attacks with surprising speed.",
+          "stats": {
+            "Might": 3,
+            "Agility": 5,
+            "Mind": 2,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 18
+          },
+          "abilities": [
+            {
+              "name": "Drill Peck",
+              "effect": "Deals 1d10 physical damage."
+            }
+          ]
+        },
+        {
+          "name": "Roach",
+          "cr": 2,
+          "type": "Beast",
+          "description": "A giant, disgusting cockroach that thrives in filth and darkness. Surprisingly resilient.",
+          "stats": {
+            "Might": 2,
+            "Agility": 3,
+            "Mind": 1,
+            "Spirit": 1
+          },
+          "resources": {
+            "vitality": 12
+          },
+          "abilities": [
+            {
+              "name": "Filth Cloud",
+              "effect": "May inflict disease or disadvantage on nearby foes."
+            }
+          ]
+        },
+        {
+          "name": "Gonghead",
+          "cr": 5,
+          "type": "Construct",
+          "description": "A bizarre, floating head with a metallic surface. When struck, it emits a deafening, disorienting clang.",
+          "stats": {
+            "Might": 4,
+            "Agility": 2,
+            "Mind": 2,
+            "Spirit": 4
+          },
+          "resources": {
+            "vitality": 24
+          },
+          "abilities": [
+            {
+              "name": "Sonic Boom",
+              "effect": "Deals 1d8 sonic damage and may stun."
+            }
+          ]
+        },
+        {
+          "name": "Bandit Thug",
+          "cr": 2,
+          "type": "Humanoid",
+          "description": "A common highway robber looking for an easy score.",
+          "stats": {
+            "Might": 3,
+            "Agility": 3,
+            "Mind": 2,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 13
+          },
+          "abilities": [
+            {
+              "name": "Crude Sword",
+              "effect": "Deals 1d8 physical damage."
+            }
+          ]
+        },
+        {
+          "name": "Order Acolyte",
+          "cr": 4,
+          "type": "Humanoid",
+          "description": "A new recruit to the Champions of Order, armed with a mace and zealous faith.",
+          "stats": {
+            "Might": 3,
+            "Agility": 2,
+            "Mind": 3,
+            "Spirit": 4
+          },
+          "resources": {
+            "vitality": 23
+          },
+          "abilities": [
+            {
+              "name": "Minor Heal",
+              "effect": "Can restore a small amount of vitality to an ally."
+            }
+          ]
+        },
+        {
+          "name": "Dominion Apprentice",
+          "cr": 4,
+          "type": "Humanoid",
+          "description": "A mage-in-training from the Arcane Dominion, eager to test their unethical spells.",
+          "stats": {
+            "Might": 2,
+            "Agility": 3,
+            "Mind": 5,
+            "Spirit": 3
+          },
+          "resources": {
+            "vitality": 22
+          },
+          "abilities": [
+            {
+              "name": "Magic Missile",
+              "effect": "Deals 1d10 arcane damage."
+            }
+          ]
+        },
+        {
+          "name": "Harpy",
+          "cr": 4,
+          "type": "Monstrosity",
+          "description": "A creature with the body of a bird and the head of a woman, whose enchanting song lures travelers to their doom.",
+          "stats": {
+            "Might": 3,
+            "Agility": 5,
+            "Mind": 3,
+            "Spirit": 4
+          },
+          "resources": {
+            "vitality": 23
+          },
+          "abilities": [
+            {
+              "name": "Luring Song",
+              "effect": "May charm or confuse targets who fail a Spirit check."
+            },
+            {
+              "name": "Sharp Talons",
+              "effect": "Deals 1d8 physical damage."
+            }
+          ]
+        },
+        {
+          "name": "Skeleton Archer",
+          "cr": 2,
+          "type": "Undead",
+          "description": "The skeletal remains of a hunter, mindlessly firing arrows at any living thing it sees.",
+          "stats": {
+            "Might": 2,
+            "Agility": 4,
+            "Mind": 1,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 12
+          },
+          "abilities": [
+            {
+              "name": "Bone Arrow",
+              "effect": "Deals 1d8 physical damage at range."
+            }
+          ]
+        },
+        {
+          "name": "Cave Bear",
+          "cr": 5,
+          "type": "Beast",
+          "description": "A massive bear that has adapted to life in the dark, with a powerful sense of smell and a ferocious temper.",
+          "stats": {
+            "Might": 6,
+            "Agility": 3,
+            "Mind": 2,
+            "Spirit": 3
+          },
+          "resources": {
+            "vitality": 31
+          },
+          "abilities": [
+            {
+              "name": "Maul",
+              "effect": "Deals 2d8 physical damage."
+            }
+          ]
+        },
+        {
+          "name": "Razor Boar",
+          "cr": 2,
+          "type": "Beast",
+          "description": "A wild boar with tusks as sharp as daggers.",
+          "stats": {
+            "Might": 4,
+            "Agility": 3,
+            "Mind": 1,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 14
+          },
+          "abilities": [
+            {
+              "name": "Gore",
+              "effect": "Deals 1d10 physical damage."
+            }
+          ]
+        },
+        {
+          "name": "Giant Wasp",
+          "cr": 3,
+          "type": "Beast",
+          "description": "A wasp the size of a dog with a painful, venomous sting.",
+          "stats": {
+            "Might": 2,
+            "Agility": 5,
+            "Mind": 1,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 17
+          },
+          "abilities": [
+            {
+              "name": "Venomous Stinger",
+              "effect": "Deals 1d6 damage and may poison."
+            }
+          ]
+        },
+        {
+          "name": "Rock Serpent",
+          "cr": 5,
+          "type": "Beast",
+          "description": "A snake with scales as hard as stone, capable of constricting with immense force.",
+          "stats": {
+            "Might": 5,
+            "Agility": 3,
+            "Mind": 2,
+            "Spirit": 3
+          },
+          "resources": {
+            "vitality": 30
+          },
+          "abilities": [
+            {
+              "name": "Constrict",
+              "effect": "Grapples a target, dealing damage each round."
+            }
+          ]
+        },
+        {
+          "name": "Corpse Eater",
+          "cr": 3,
+          "type": "Undead",
+          "description": "A monstrous form of ghoul that prefers to feast on the already dead, but will attack if its meal is disturbed.",
+          "stats": {
+            "Might": 4,
+            "Agility": 4,
+            "Mind": 1,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 19
+          },
+          "abilities": [
+            {
+              "name": "Foul Bite",
+              "effect": "Deals 1d8 damage and may inflict disease."
+            }
+          ]
+        },
+        {
+          "name": "Nut Mage",
+          "cr": 3,
+          "type": "Plant",
+          "description": "A wise-looking nut person who can channel the magic of the forest.",
+          "stats": {
+            "Might": 1,
+            "Agility": 3,
+            "Mind": 4,
+            "Spirit": 3
+          },
+          "resources": {
+            "vitality": 16
+          },
+          "abilities": [
+            {
+              "name": "Thorn Whip",
+              "effect": "Deals 1d8 damage and can pull a target closer."
+            }
+          ]
+        },
+        {
+          "name": "Nut Archer",
+          "cr": 3,
+          "type": "Plant",
+          "description": "A nut person armed with a bow made from a bent twig.",
+          "stats": {
+            "Might": 2,
+            "Agility": 4,
+            "Mind": 3,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 17
+          },
+          "abilities": [
+            {
+              "name": "Splinter Arrow",
+              "effect": "Deals 1d6 damage at range."
+            }
+          ]
+        },
+        {
+          "name": "Frostfang Wolf",
+          "cr": 4,
+          "type": "Beast",
+          "description": "A wolf native to the Glacial Maw, with a coat of pure white and breath that mists with cold.",
+          "stats": {
+            "Might": 4,
+            "Agility": 5,
+            "Mind": 3,
+            "Spirit": 3
+          },
+          "resources": {
+            "vitality": 24
+          },
+          "abilities": [
+            {
+              "name": "Frost Bite",
+              "effect": "Deals 1d8 physical damage and 1d4 cold damage."
+            }
+          ]
+        },
+        {
+          "name": "Stonekin Brawler",
+          "cr": 5,
+          "type": "Humanoid",
+          "description": "A powerful lizard-like warrior from Stonegard who fights with their bare fists.",
+          "stats": {
+            "Might": 6,
+            "Agility": 3,
+            "Mind": 2,
+            "Spirit": 3
+          },
+          "resources": {
+            "vitality": 26
+          },
+          "abilities": [
+            {
+              "name": "Pummel",
+              "effect": "Deals 1d10 physical damage."
+            }
+          ]
+        },
+        {
+          "name": "Hellhound",
+          "cr": 5,
+          "type": "Fiend",
+          "description": "A monstrous dog wreathed in flames that hunts for souls.",
+          "stats": {
+            "Might": 5,
+            "Agility": 5,
+            "Mind": 3,
+            "Spirit": 3
+          },
+          "resources": {
+            "vitality": 30
+          },
+          "abilities": [
+            {
+              "name": "Fire Breath",
+              "effect": "Deals 1d10 fire damage in a short cone."
+            }
+          ]
+        },
+        {
+          "name": "Grave Worm",
+          "cr": 5,
+          "type": "Undead",
+          "description": "A massive undead worm that burrows through graveyards, consuming corpses and growing ever larger.",
+          "stats": {
+            "Might": 5,
+            "Agility": 2,
+            "Mind": 1,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 30
+          },
+          "abilities": [
+            {
+              "name": "Acid Spit",
+              "effect": "Deals 1d10 acid damage."
+            }
+          ]
+        }
+      ]
+    },
+    "bosses_and_legends": {
+      "tier_cr_6_10_bosses": [
+        {
+          "name": "Sand Worm",
+          "cr": 6,
+          "type": "Beast",
+          "description": "A colossal worm that burrows beneath the desert sands, emerging to swallow its prey whole.",
+          "stats": {
+            "Might": 7,
+            "Agility": 2,
+            "Mind": 1,
+            "Spirit": 3
+          },
+          "resources": {
+            "vitality": 42
+          },
+          "abilities": [
+            {
+              "name": "Swallow",
+              "effect": "Attempts to engulf a target, dealing heavy damage each round."
+            },
+            {
+              "name": "Tunnel",
+              "effect": "Burrows underground and emerges elsewhere."
+            }
+          ]
+        },
+        {
+          "name": "Mimic",
+          "cr": 6,
+          "type": "Aberration",
+          "description": "A cunning predator that disguises itself as a treasure chest, lashing out at greedy adventurers.",
+          "stats": {
+            "Might": 5,
+            "Agility": 2,
+            "Mind": 3,
+            "Spirit": 3
+          },
+          "resources": {
+            "vitality": 30
+          },
+          "abilities": [
+            {
+              "name": "Surprise Attack",
+              "effect": "Deals high damage on the first round of combat."
+            }
+          ]
+        },
+        {
+          "name": "Order Knight",
+          "cr": 6,
+          "type": "Humanoid",
+          "description": "A disciplined warrior of the Champions of Order, clad in steel plate armor.",
+          "stats": {
+            "Might": 6,
+            "Agility": 3,
+            "Mind": 3,
+            "Spirit": 4
+          },
+          "resources": {
+            "vitality": 36
+          },
+          "abilities": [
+            {
+              "name": "Greatsword",
+              "effect": "Deals 2d8 physical damage."
+            },
+            {
+              "name": "Shield Bash",
+              "effect": "Can attempt to daze a target."
+            }
+          ]
+        },
+        {
+          "name": "Wyvern",
+          "cr": 7,
+          "type": "Dragonkin",
+          "description": "A lesser relative of dragons, with two legs and winged arms. It possesses a venomous stinger on its tail.",
+          "stats": {
+            "Might": 6,
+            "Agility": 5,
+            "Mind": 3,
+            "Spirit": 4
+          },
+          "resources": {
+            "vitality": 41
+          },
+          "abilities": [
+            {
+              "name": "Claw/Bite",
+              "effect": "Deals 1d10 physical damage."
+            },
+            {
+              "name": "Poison Stinger",
+              "effect": "Deals 1d8 physical damage and inflicts potent poison."
+            }
+          ]
+        },
+        {
+          "name": "Basilisk",
+          "cr": 7,
+          "type": "Monstrosity",
+          "description": "A reptilian beast whose gaze can turn living flesh to stone.",
+          "stats": {
+            "Might": 5,
+            "Agility": 3,
+            "Mind": 2,
+            "Spirit": 4
+          },
+          "resources": {
+            "vitality": 35
+          },
+          "abilities": [
+            {
+              "name": "Petrifying Gaze",
+              "effect": "A character who fails a Spirit check may be turned to stone."
+            }
+          ]
+        },
+        {
+          "name": "Ogre",
+          "cr": 6,
+          "type": "Giant",
+          "description": "A large, brutish giant that is dim-witted but incredibly strong.",
+          "stats": {
+            "Might": 7,
+            "Agility": 2,
+            "Mind": 1,
+            "Spirit": 2
+          },
+          "resources": {
+            "vitality": 37
+          },
+          "abilities": [
+            {
+              "name": "Greatclub",
+              "effect": "Deals 2d10 physical damage."
+            }
+          ]
+        },
+        {
+          "name": "Troll",
+          "cr": 7,
+          "type": "Giant",
+          "description": "A fearsome giant known for its incredible ability to regenerate from wounds.",
+          "gm_note": "CR is conditional. Without access to fire or acid to stop Regeneration, this encounter is closer to CR 8 or 9.",
+          "stats": {
+            "Might": 6,
+            "Agility": 3,
+            "Mind": 2,
+            "Spirit": 3
+          },
+          "resources": {
+            "vitality": 41
+          },
+          "abilities": [
+            {
+              "name": "Rending Claws",
+              "effect": "Deals 2d8 physical damage."
+            },
+            {
+              "name": "Regeneration",
+              "effect": "Heals a portion of its vitality each round unless struck by fire or acid."
+            }
+          ]
+        },
+        {
+          "name": "Dominion Sorcerer",
+          "cr": 7,
+          "type": "Humanoid",
+          "description": "An accomplished mage of the Arcane Dominion, wielding powerful and destructive elemental spells.",
+          "stats": {
+            "Might": 2,
+            "Agility": 3,
+            "Mind": 7,
+            "Spirit": 4
+          },
+          "resources": {
+            "vitality": 37
+          },
+          "abilities": [
+            {
+              "name": "Chain Lightning",
+              "effect": "Deals 2d8 lightning damage that can jump to other targets."
+            }
+          ]
+        },
+        {
+          "name": "Wyndian Royal Guard",
+          "cr": 7,
+          "type": "Humanoid",
+          "description": "An elite winged soldier from Wyndia, skilled with both sword and wind magic.",
+          "stats": {
+            "Might": 4,
+            "Agility": 6,
+            "Mind": 4,
+            "Spirit": 5
+          },
+          "resources": {
+            "vitality": 39
+          },
+          "abilities": [
+            {
+              "name": "Gale Slash",
+              "effect": "Deals 1d10 physical damage and can knock a target back."
+            }
+          ]
+        },
+        {
+          "name": "Banshee",
+          "cr": 8,
+          "type": "Undead",
+          "description": "The sorrowful spirit of a woman whose shriek can drain the will to live.",
+          "stats": {
+            "Might": 1,
+            "Agility": 4,
+            "Mind": 3,
+            "Spirit": 6
+          },
+          "resources": {
+            "vitality": 31
+          },
+          "abilities": [
+            {
+              "name": "Wail of Despair",
+              "effect": "All enemies in an area must make a Spirit check or suffer severe penalties."
+            }
+          ]
+        },
+        {
+          "name": "Minotaur",
+          "cr": 7,
+          "type": "Monstrosity",
+          "description": "A bull-headed humanoid of immense strength, often found in labyrinths.",
+          "stats": {
+            "Might": 7,
+            "Agility": 3,
+            "Mind": 2,
+            "Spirit": 3
+          },
+          "resources": {
+            "vitality": 42
+          },
+          "abilities": [
+            {
+              "name": "Greataxe",
+              "effect": "Deals 2d10 physical damage."
+            }
+          ]
+        },
+        {
+          "name": "Crystal Entity",
+          "cr": 7,
+          "type": "Elemental",
+          "description": "A being of living crystal animated by the power of the Crystal Spire. It reflects magical energy.",
+          "stats": {
+            "Might": 4,
+            "Agility": 2,
+            "Mind": 4,
+            "Spirit": 5
+          },
+          "resources": {
+            "vitality": 39
+          },
+          "abilities": [
+            {
+              "name": "Spell Reflection",
+              "effect": "Has a chance to reflect single-target spells back at the caster."
+            }
+          ]
+        },
+        {
+          "name": "Iron Golem",
+          "cr": 8,
+          "type": "Construct",
+          "description": "An upgraded golem forged from iron, nearly impervious to conventional weapons.",
+          "stats": {
+            "Might": 8,
+            "Agility": 1,
+            "Mind": 1,
+            "Spirit": 3
+          },
+          "resources": {
+            "vitality": 53
+          },
+          "abilities": [
+            {
+              "name": "Iron Fist",
+              "effect": "Deals 3d8 physical damage."
+            },
+            {
+              "name": "Magic Resistance",
+              "effect": "Has advantage on checks to resist spells."
+            }
+          ]
+        },
+        {
+          "name": "Spectre",
+          "cr": 7,
+          "type": "Undead",
+          "description": "A powerful, hateful ghost that can possess the living.",
+          "stats": {
+            "Might": 2,
+            "Agility": 5,
+            "Mind": 4,
+            "Spirit": 6
+          },
+          "resources": {
+            "vitality": 42
+          },
+          "abilities": [
+            {
+              "name": "Possession",
+              "effect": "Attempts to take control of a character for one round."
+            }
+          ]
+        },
+        {
+          "name": "Saberclaw Tiger",
+          "cr": 6,
+          "type": "Beast",
+          "description": "A prehistoric tiger with immense fangs, a patient and deadly predator.",
+          "stats": {
+            "Might": 6,
+            "Agility": 5,
+            "Mind": 2,
+            "Spirit": 3
+          },
+          "resources": {
+            "vitality": 36
+          },
+          "abilities": [
+            {
+              "name": "Pounce",
+              "effect": "Can leap a great distance to attack with advantage."
+            }
+          ]
+        },
+        {
+          "name": "Nightmare",
+          "cr": 7,
+          "type": "Fiend",
+          "description": "A terrifying horse-like creature with a mane of shadow and hooves of burning embers.",
+          "stats": {
+            "Might": 5,
+            "Agility": 6,
+            "Mind": 3,
+            "Spirit": 4
+          },
+          "resources": {
+            "vitality": 40
+          },
+          "abilities": [
+            {
+              "name": "Burning Hooves",
+              "effect": "Deals 1d8 physical and 1d8 fire damage on a charge."
+            }
+          ]
+        },
+        {
+          "name": "The Gloomwood Heart",
+          "cr": 8,
+          "type": "Plant (Corrupted)",
+          "description": "An ancient treant that was once the guardian of the woods, now twisted by a creeping blight. Its wooden body is covered in pulsating fungi and weeping sap, and its movements are unnaturally violent. It is the source of the corruption spreading through the Whispering Woods.",
+          "stats": {
+            "Might": 8,
+            "Agility": 2,
+            "Mind": 3,
+            "Spirit": 4
+          },
+          "resources": {
+            "vitality": 80
+          },
+          "abilities": [
+            {
+              "name": "Crushing Branch",
+              "effect": "Deals 2d10 physical damage to a single target."
+            },
+            {
+              "name": "Blight Spores",
+              "effect": "Area-of-effect attack that deals 1d10 poison damage per round to all party members for 3 rounds. A successful Mind (Survival) check can negate the effect for an individual."
+            },
+            {
+              "name": "Summon Saplings",
+              "effect": "Summons 1d4 Nut Troopers or Gloomcaps to join the fight."
+            }
+          ]
+        },
+        {
+          "name": "Inquisitor Valerius",
+          "cr": 9,
+          "type": "Humanoid",
+          "description": "A relentless and high-ranking member of the Champions of Order. Clad in blessed silver armor, he views draconic power not as a tool, but as a chaotic sin that must be purged from the world. He is a skilled tactician and duelist who has been personally tasked with capturing Rya.",
+          "stats": {
+            "Might": 5,
+            "Agility": 5,
+            "Mind": 6,
+            "Spirit": 7
+          },
+          "resources": {
+            "vitality": 65
+          },
+          "abilities": [
+            {
+              "name": "Consecrated Blade",
+              "effect": "Deals 2d10 physical damage. Deals an additional 1d10 damage to beings with 'chaotic' or 'draconic' lineage."
+            },
+            {
+              "name": "Elysian Judgment",
+              "effect": "A beam of light strikes a target, dealing 2d10 light damage and preventing them from using any special abilities on their next turn on a failed Spirit DC 14 check."
+            },
+            {
+              "name": "Shield of Order",
+              "effect": "Gains +4 to resist any magical or draconic ability for 1 round."
+            }
+          ]
+        },
+        {
+          "name": "Grove Warden",
+          "cr": 10,
+          "type": "Plant (Corrupted)",
+          "description": "Once a serene, ancient guardian of the wood, this colossal treant has been driven to madness. Its bark is blackened and cracked, weeping a foul, dark sap. Thorny, unnatural vines writhe across its body, and its roar is a sound of pure, unending anguish. It now attacks any living thing that enters its grove with mindless fury.",
+          "role": "Tragic Protector / Tank",
+          "behavior": {
+            "hostility": "Aggressive",
+            "social": "Solitary",
+            "tactics": "The Warden will use Grasping Roots to immobilize threats, then focus on eliminating the closest one with its Crushing Branch. It will use its Wail to debilitate the party when surrounded. Once its rage takes over in the second phase of the fight, it will abandon all tactics and simply attempt to pulverize the nearest target."
+          },
+          "stats": {
+            "Might": 8,
+            "Agility": 2,
+            "Mind": 3,
+            "Spirit": 6
+          },
+          "resources": {
+            "vitality": 90
+          },
+          "damage_reduction": 6,
+          "abilities": [
+            {
+              "name": "Crushing Branch",
+              "effect": "Melee attack dealing 2d12 physical damage."
+            },
+            {
+              "name": "Grasping Roots",
+              "effect": "As a major action, the Warden causes roots to erupt in a 20-foot radius. All enemies in the area must make an Agility DC 15 check or become 'Restrained' for 1 round."
+            },
+            {
+              "name": "Warden's Wail",
+              "effect": "The Warden lets out a sorrowful roar, forcing all enemies within 30 feet to make a Spirit DC 14 check. On a failure, they are struck by its psychic pain and suffer a -2 penalty on all attack rolls for 2 rounds. This ability cannot be used while Rampaging Fury is active."
+            },
+            {
+              "name": "Ironbark Skin (Passive)",
+              "effect": "The Warden has resistance to physical damage from non-magical sources. It is vulnerable to fire damage."
+            },
+            {
+              "name": "Rampaging Fury (Trigger)",
+              "effect": "When the Grove Warden is reduced to 45 Vitality or less, the corruption fully takes hold. Its Damage Reduction increases to 8, and its Crushing Branch attacks are now made with Advantage. However, it can no longer use its Warden's Wail ability."
+            }
+          ]
+        },
+        {
+          "name": "Runeforge Guardian",
+          "cr": "Scales with PPL",
+          "type": "Construct",
+          "description": "A bipedal construct of obsidian and brass, standing eight feet tall. Glowing runes pulse across its chassis, and its head is a single, unblinking crystalline lens. A relic of the pre-Shattering era, it is an unwavering sentinel that adapts its power to match any threat. It activates only to eliminate intruders with lethal efficiency.",
+          "role": "Elite Sentinel",
+          "behavior": {
+            "hostility": "Territorial",
+            "social": "Solitary or in pairs",
+            "tactics": "The Guardian uses its ranged attacks to suppress targets while advancing. It will use Containment Protocol on the most mobile or dangerous threat to isolate them, then focus on eliminating the remaining targets with its Siege Fist. When its structural integrity is compromised, it activates a volatile overload sequence."
+          },
+          "scaling_rules": {
+            "system_name": "Adaptive Sentinel",
+            "base_ppl": 7,
+            "formulas": {
+              "cr": "Set to current PPL.",
+              "vitality": "60 + 10 * (PPL - 7)",
+              "damage_reduction": "5 + floor((PPL - 7) / 3)",
+              "primary_attributes": {
+                "might": "7 + floor((PPL - 7) / 4)",
+                "mind": "5 + floor((PPL - 7) / 4)"
+              },
+              "secondary_attributes": {
+                "agility": "3",
+                "spirit": "4"
+              },
+              "attack_damage": "For every 4 PPL above 7, add one additional damage die to its Siege Fist and Arcane Bolt attacks.",
+              "ability_dc": "The DC for Containment Protocol is 14 + floor((PPL - 7) / 2).",
+              "overload_threshold": "The Vitality threshold for its Overload Sequence is 25% of its current maximum Vitality."
+            }
+          },
+          "base_abilities": [
+            {
+              "name": "Siege Fist",
+              "effect": "Melee attack dealing 2d10 physical damage."
+            },
+            {
+              "name": "Arcane Bolt",
+              "effect": "Ranged attack (Range 120 ft) dealing 2d8 arcane damage."
+            },
+            {
+              "name": "Containment Protocol",
+              "effect": "The Guardian fires a beam at one target. The target must succeed on an Agility check (see scaling DC) or become 'Restrained' inside a cage of solid light for 2 rounds. The Guardian can only have one target contained at a time."
+            },
+            {
+              "name": "Runic Plating (Passive)",
+              "effect": "The Guardian is resistant to all physical damage from non-magical sources and has resistance to lightning damage."
+            },
+            {
+              "name": "Overload Sequence (Trigger)",
+              "effect": "When the Guardian is reduced to its Overload Threshold, its runes flare violently. At the start of each of its turns, it deals arcane damage equal to its Mind attribute to all creatures within 10 feet. While in this state, its Damage Reduction is reduced to 0."
+            }
+          ]
+        }
+      ],
+      "tier_cr_11_20_legends": [
+        {
+          "name": "Cinder-Scale Tyrant",
+          "cr": 12,
+          "type": "Dragonkin",
+          "description": "A massive, four-legged drake whose scales are made of cooling magma and obsidian. It guards the inner sanctum of the temple on Mount Dragnor, treating it as its personal lair. It is a creature of pure rage and fire.",
+          "stats": {
+            "Might": 9,
+            "Agility": 4,
+            "Mind": 4,
+            "Spirit": 5
+          },
+          "resources": {
+            "vitality": 100
+          },
+          "abilities": [
+            {
+              "name": "Magma Maw",
+              "effect": "Deals 3d10 fire damage in a 30-ft cone. A successful Agility DC 13 check halves the damage."
+            },
+            {
+              "name": "Tail Swipe",
+              "effect": "Deals 2d8 physical damage to all characters in melee range."
+            },
+            {
+              "name": "Eruption",
+              "effect": "Causes a fissure to open under a target's feet, dealing 2d10 fire damage and immobilizing them for 1 round on a failed Agility DC 14 check."
+            },
+            {
+              "name": "Obsidian Scales",
+              "effect": "Immune to fire damage; resistant to physical damage."
+            }
+          ]
+        },
+        {
+          "name": "Lich",
+          "cr": 11,
+          "type": "Undead",
+          "description": "A powerful wizard who has achieved a form of immortality through undeath. Commands legions of lesser undead.",
+          "stats": {
+            "Might": 3,
+            "Agility": 3,
+            "Mind": 8,
+            "Spirit": 7
+          },
+          "resources": {
+            "vitality": 58
+          },
+          "abilities": [
+            {
+              "name": "Frost Lance",
+              "effect": "Deals 2d10 cold damage and slows the target."
+            },
+            {
+              "name": "Animate Dead",
+              "effect": "Summons 1d4 Skeleton Warriors."
+            }
+          ]
+        },
+        {
+          "name": "Hydra",
+          "cr": 9,
+          "type": "Monstrosity",
+          "description": "A multi-headed serpent. For each head that is severed, two more may grow in its place.",
+          "stats": {
+            "Might": 8,
+            "Agility": 3,
+            "Mind": 2,
+            "Spirit": 4
+          },
+          "resources": {
+            "vitality": 63
+          },
+          "abilities": [
+            {
+              "name": "Multi-Headed Bite",
+              "effect": "Attacks multiple times per round."
+            },
+            {
+              "name": "Regenerate Head",
+              "effect": "If a head is destroyed, it can regrow more unless the wound is cauterized with fire."
+            }
+          ]
+        },
+        {
+          "name": "Elder Treant",
+          "cr": 9,
+          "type": "Plant",
+          "description": "An ancient, walking tree of immense size and wisdom, a guardian of the forest.",
+          "stats": {
+            "Might": 8,
+            "Agility": 1,
+            "Mind": 5,
+            "Spirit": 6
+          },
+          "resources": {
+            "vitality": 63
+          },
+          "abilities": [
+            {
+              "name": "Colossal Slam",
+              "effect": "Deals 3d10 physical damage."
+            },
+            {
+              "name": "Animate Trees",
+              "effect": "Summons lesser plant monsters."
+            }
+          ]
+        },
+        {
+          "name": "Kraken Spawn",
+          "cr": 10,
+          "type": "Aberration",
+          "description": "A juvenile kraken, though still massive and deadly, with powerful tentacles.",
+          "stats": {
+            "Might": 8,
+            "Agility": 4,
+            "Mind": 4,
+            "Spirit": 5
+          },
+          "resources": {
+            "vitality": 63
+          },
+          "abilities": [
+            {
+              "name": "Tentacle Slam",
+              "effect": "Can attack multiple targets with its tentacles."
+            },
+            {
+              "name": "Ink Cloud",
+              "effect": "Creates an area of magical darkness in the water."
+            }
+          ]
+        }
+      ],
+      "tier_cr_21_100_super_legends": [
+        {
+          "name": "Goo King",
+          "cr": 21,
+          "type": "Ooze",
+          "stats": {
+            "Might": 8,
+            "Agility": 4,
+            "Mind": 9,
+            "Spirit": 10
+          },
+          "resources": {
+            "vitality": 250
+          },
+          "abilities": [
+            {
+              "name": "Goo Crush",
+              "effect": "Deals 3d12 bludgeoning damage."
+            },
+            {
+              "name": "Arcane Bolt",
+              "effect": "Deals 4d10 arcane damage."
+            },
+            {
+              "name": "Summon Horde",
+              "effect": "Summons 2d4 random Goo monsters."
+            }
+          ]
+        },
+        {
+          "name": "Archon of Order",
+          "cr": 21,
+          "type": "Celestial",
+          "stats": {
+            "Might": 10,
+            "Agility": 9,
+            "Mind": 8,
+            "Spirit": 12
+          },
+          "resources": {
+            "vitality": 220
+          },
+          "damage_reduction": 12,
+          "abilities": [
+            {
+              "name": "Lance of Light",
+              "effect": "Deals 3d10 light damage."
+            },
+            {
+              "name": "Divine Judgment",
+              "effect": "Deals 5d10 light damage and prevents target from using special abilities."
+            },
+            {
+              "name": "Flight (Passive)",
+              "effect": "The Archon has a permanent fly speed of 60 feet."
+            }
+          ]
+        },
+        {
+          "name": "Dread Worm",
+          "cr": 22,
+          "type": "Beast",
+          "stats": {
+            "Might": 16,
+            "Agility": 4,
+            "Mind": 2,
+            "Spirit": 8
+          },
+          "resources": {
+            "vitality": 350
+          },
+          "damage_reduction": 10,
+          "abilities": [
+            {
+              "name": "Swallow Whole",
+              "effect": "On a successful grapple, the target is swallowed, taking 5d10 acid damage per turn."
+            },
+            {
+              "name": "Tunnel",
+              "effect": "As a major action, the Dread Worm can burrow underground and re-emerge anywhere on the battlefield on its next turn."
+            }
+          ]
+        },
+        {
+          "name": "Void Behemoth",
+          "cr": 22,
+          "type": "Aberration",
+          "stats": {
+            "Might": 12,
+            "Agility": 8,
+            "Mind": 6,
+            "Spirit": 10
+          },
+          "resources": {
+            "vitality": 300
+          },
+          "abilities": [
+            {
+              "name": "Chaotic Strike",
+              "effect": "Deals 4d12 damage of a random elemental type."
+            },
+            {
+              "name": "Legacy Drain",
+              "effect": "On a hit, the target loses 1 Legacy Point."
+            }
+          ]
+        },
+        {
+          "name": "Cathedral Gargoyle",
+          "cr": 23,
+          "type": "Construct",
+          "stats": {
+            "Might": 11,
+            "Agility": 7,
+            "Mind": 5,
+            "Spirit": 9
+          },
+          "resources": {
+            "vitality": 280
+          },
+          "damage_reduction": 15,
+          "abilities": [
+            {
+              "name": "Holy Claw",
+              "effect": "Deals 3d10 light damage."
+            },
+            {
+              "name": "Sun-Bathed Regeneration",
+              "effect": "Heals 20 Vitality per turn while in bright light."
+            }
+          ]
+        },
+        {
+          "name": "Baron",
+          "cr": 23,
+          "type": "Fiend",
+          "stats": {
+            "Might": 12,
+            "Agility": 9,
+            "Mind": 10,
+            "Spirit": 11
+          },
+          "resources": {
+            "vitality": 320
+          },
+          "damage_reduction": 14,
+          "abilities": [
+            {
+              "name": "Hellfire Greatsword",
+              "effect": "Deals 4d12 fire damage."
+            },
+            {
+              "name": "Inferno",
+              "effect": "As a major action, creates a 30-foot radius of fire that burns for 3 rounds."
+            }
+          ]
+        },
+        {
+          "name": "Titan",
+          "cr": 24,
+          "type": "Giant",
+          "stats": {
+            "Might": 18,
+            "Agility": 3,
+            "Mind": 5,
+            "Spirit": 9
+          },
+          "resources": {
+            "vitality": 400
+          },
+          "damage_reduction": 8,
+          "abilities": [
+            {
+              "name": "Colossal Boulder",
+              "effect": "Ranged attack dealing 6d12 physical damage."
+            },
+            {
+              "name": "Earthquake",
+              "effect": "As a major action, stuns all enemies in a 60-foot radius on a failed Might DC 20 check."
+            }
+          ]
+        },
+        {
+          "name": "Ancient Gold Dragon",
+          "cr": 24,
+          "type": "Dragonkin",
+          "stats": {
+            "Might": 14,
+            "Agility": 7,
+            "Mind": 12,
+            "Spirit": 13
+          },
+          "resources": {
+            "vitality": 380
+          },
+          "damage_reduction": 12,
+          "abilities": [
+            {
+              "name": "Multi-Attack",
+              "effect": "Makes three attacks (one bite, two claws)."
+            },
+            {
+              "name": "Divine Breath",
+              "effect": "Breathes a 90-foot line of holy fire, dealing 12d10 light damage."
+            }
+          ]
+        },
+        {
+          "name": "The Twin Wardens of the Pinnacle",
+          "cr": 25,
+          "type": "Construct",
+          "description": "Two colossal golems guarding Elysia's domain. One absorbs physical, the other magical damage.",
+          "warden_of_form": {
+            "stats": {
+              "Might": 15
+            },
+            "resources": {
+              "vitality": 300
+            },
+            "damage_reduction": 20,
+            "abilities": [
+              "Annihilator Fist (5d12 physical damage)"
+            ],
+            "immunities": [
+              "All physical damage"
+            ]
+          },
+          "warden_of_thought": {
+            "stats": {
+              "Mind": 15
+            },
+            "resources": {
+              "vitality": 300
+            },
+            "damage_reduction": 0,
+            "abilities": [
+              "Psionic Blast (8d10 psychic damage)"
+            ],
+            "immunities": [
+              "All magical damage"
+            ]
+          }
+        },
+        {
+          "name": "The Firstborn of the Void",
+          "cr": 30,
+          "type": "Fiend",
+          "description": "A colossal entity of mouths, eyes, and tentacles that guards the very heart of the Void Chasm.",
+          "stats": {
+            "Might": 14,
+            "Agility": 10,
+            "Mind": 12,
+            "Spirit": 16
+          },
+          "resources": {
+            "vitality": 500
+          },
+          "abilities": [
+            {
+              "name": "Gaze of Madness",
+              "effect": "Forces a Spirit DC 22 check or become permanently Confused."
+            },
+            {
+              "name": "Tendril Swarm",
+              "effect": "Makes 6 attacks, each dealing 3d10 physical damage."
+            },
+            {
+              "name": "Unravel Reality",
+              "effect": "Can erase a 30-foot cube of the battlefield."
+            }
+          ]
+        },
+        {
+          "name": "The Dragon Lord",
+          "cr": 50,
+          "type": "Dragonkin",
+          "description": "The resurrected and empowered spirit of the greatest of the ancient dragon kings.",
+          "stats": {
+            "Might": 20,
+            "Agility": 12,
+            "Mind": 15,
+            "Spirit": 18
+          },
+          "resources": {
+            "vitality": 800
+          },
+          "damage_reduction": 15,
+          "abilities": [
+            {
+              "name": "Primal Breath",
+              "effect": "Deals 20d12 damage of a random elemental type."
+            },
+            {
+              "name": "Dragon's Decree",
+              "effect": "Can cast any Archon-level Aspect Ability as a major action."
+            },
+            {
+              "name": "King's Aura (Passive)",
+              "effect": "Allies have advantage on all rolls."
+            }
+          ]
+        },
+        {
+          "name": "The Unfettered, Awakened Zael",
+          "cr": 85,
+          "type": "Aberration",
+          "description": "Zael, having fully succumbed to the Void and achieved a dark apotheosis.",
+          "stats": {
+            "Might": 10,
+            "Agility": 18,
+            "Mind": 22,
+            "Spirit": 20
+          },
+          "resources": {
+            "vitality": 1200
+          },
+          "abilities": [
+            {
+              "name": "Whispers of Despair",
+              "effect": "Forces all characters to make a Spirit DC 25 check or lose their turn."
+            },
+            {
+              "name": "Oblivion's Gaze",
+              "effect": "A target takes 10d10 necrotic damage and their maximum Vitality is permanently reduced."
+            },
+            {
+              "name": "Summon Horror",
+              "effect": "Summons a Void Behemoth."
+            }
+          ]
+        },
+        {
+          "name": "Elysia, the Silent Goddess",
+          "cr": 100,
+          "type": "Celestial",
+          "description": "The final antagonist, a being of pure, conceptual energy who seeks to 'correct' the heroes by erasing their free will.",
+          "stats": {
+            "Might": 15,
+            "Agility": 15,
+            "Mind": 25,
+            "Spirit": 25
+          },
+          "resources": {
+            "vitality": 2000
+          },
+          "abilities": [
+            {
+              "name": "Decree: Inertia",
+              "effect": "All creatures within 100 feet must make a Might DC 30 check or their movement speed becomes 0."
+            },
+            {
+              "name": "Decree: Silence",
+              "effect": "All creatures within 100 feet must make a Spirit DC 30 check or they cannot cast spells or use abilities."
+            },
+            {
+              "name": "Decree: Entropy",
+              "effect": "A single target must make a Spirit DC 30 check or be erased from existence."
+            },
+            {
+              "name": "Perfect Order (Passive)",
+              "effect": "Elysia cannot be surprised or flanked. Any dice rolled against her have their result automatically set to the average (e.g., a d10 becomes a 5)."
+            }
+          ]
+        }
+      ]
+    }
+  },
