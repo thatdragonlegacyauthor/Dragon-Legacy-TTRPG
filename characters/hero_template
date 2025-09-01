@@ -5,49 +5,11 @@
     "background": "An orphan with distinctive blue hair, raised by Elder Elara in Windmark Village. She has a deep, unknown draconic heritage that is revealed during a cataclysmic attack. Her journey is about finding her lost identity and confronting her powerful legacy."
   },
   "character_creation_rules": {
-    "attributes": "20 points, max 8 per attribute, Essence >= 3",
-    "skills": "15 points, max 5 per skill",
+    "attributes": "15 points, max 5 per attribute, Essence >= 3",
+    "skills": "12 points, max 5 per skill",
     "starting_aspects": "Choose 1 innate Aspect (e.g., Fire)",
     "starting_gear": [
       "Adventurer’s kit"
     ]
-  },
-  "current_status": {
-    "age": 14,
-    "level": 1,
-    "current_resources": {
-      "vitality": 18,
-      "resolve": 18,
-      "legacy_points": 3
-    },
-    "insight_points": {
-      "current": 0,
-      "spent": 0,
-      "total_earned": 0
-    },
-    "inventory": {
-      "equipped": [],
-      "unequipped": [
-        "Adventurer’s kit"
-      ]
-    },
-    "active_effects": [],
-    "stats": {
-      "Might": 4,
-      "Agility": 4,
-      "Mind": 4,
-      "Spirit": 4,
-      "Essence": 4
-    },
-    "skills": {
-      "Combat": 3,
-      "Lore": 3,
-      "Athletics": 3,
-      "Survival": 3,
-      "Arcana": 3
-    },
-    "unlocked_aspects": [],
-    "aspect_abilities": [],
-    "abilities": []
   }
 }
