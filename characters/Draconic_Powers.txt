@@ -1,3 +1,4 @@
+{
   "draconic_powers": {
     "aspect_mastery_system": {
       "description": "A three-step process for gaining control over Aspect Abilities.",
@@ -1533,4 +1534,5 @@
         ]
       }
     }
-  },
+  }
+}
