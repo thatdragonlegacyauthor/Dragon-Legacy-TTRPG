@@ -3,7 +3,7 @@
     "description": "The master index for all core campaign and system data files. This file serves as the primary reference for locating information and understanding the purpose of each data file.",
     "files": [
       {
-        "file_name": "System_Core.json",
+        "file_name": "Core_Rules/Core_System.txt",
         "purpose": "The foundational rules and mechanics for the game system.",
         "key_objects": [
           "core_mechanics",
@@ -17,7 +17,7 @@
         ]
       },
       {
-        "file_name": "Draconic_Powers.json",
+        "file_name": "characters/Draconic_Powers.txt",
         "purpose": "The complete system for the hero's draconic abilities, lineages, and transformations.",
         "key_objects": [
           "aspect_mastery_system",
@@ -27,7 +27,7 @@
         ]
       },
       {
-        "file_name": "Talents.json",
+        "file_name": "characters/newfound_talents",
         "purpose": "A database of general talents and detailed companion-specific abilities.",
         "key_objects": [
           "newfound_talents_list",
@@ -35,7 +35,7 @@
         ]
       },
       {
-        "file_name": "Characters.json",
+        "file_name": "characters/hero_template",
         "purpose": "A database of all hero and companion character templates and their progression paths.",
         "key_objects": [
           "hero_template",
@@ -44,7 +44,7 @@
         ]
       },
       {
-        "file_name": "World_Codex.json",
+        "file_name": "world_codex/lore.txt",
         "purpose": "The lore bible for Eryndor, detailing its history, factions, and locations.",
         "key_objects": [
           "lore",
@@ -53,7 +53,7 @@
         ]
       },
       {
-        "file_name": "Item_Database.json",
+        "file_name": "Item_Database/mundane_items.txt",
         "purpose": "A comprehensive list of all mundane and magical items in the world.",
         "key_objects": [
           "mundane",
@@ -62,7 +62,7 @@
         ]
       },
       {
-        "file_name": "Bestiary.json",
+        "file_name": "bestiary/monsters",
         "purpose": "A monster manual containing stats and abilities for all creatures.",
         "key_objects": [
           "monsters",
@@ -70,7 +70,7 @@
         ]
       },
       {
-        "file_name": "Maps.json",
+        "file_name": "Explorable_Areas/Tanglewood-reach.txt",
         "purpose": "A database of all world and explorable area maps.",
         "key_objects": [
           "maps",
@@ -78,7 +78,7 @@
         ]
       },
       {
-        "file_name": "Campaign_State.json",
+        "file_name": "campaign_state/Campaign_State.txt",
         "purpose": "The narrative log of the campaign, including quests, world flags, and history.",
         "key_objects": [
           "campaign_state",
@@ -88,7 +88,7 @@
         ]
       },
       {
-        "file_name": "Party_Status.json",
+        "file_name": "campaign_state/Party_Status.txt",
         "purpose": "The active 'save file' tracking the party's current state, inventory, and resources.",
         "key_objects": [
           "party_status",
@@ -98,7 +98,7 @@
         ]
       },
       {
-        "file_name": "GM_AI_Tools.json",
+        "file_name": "tools/GMAI_Tools.txt",
         "purpose": "The operational logic and directives for running the game as the GM/AI partner.",
         "key_objects": [
           "ai_instructions",
@@ -106,7 +106,7 @@
         ]
       },
       {
-        "file_name": "Master_Index.json",
+        "file_name": "tools/Master_Index.txt",
         "purpose": "This file. Provides a manifest of all other core files in the project.",
         "key_objects": [
           "master_index"
