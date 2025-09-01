@@ -1,3 +1,4 @@
+{
   "master_index": {
     "description": "The master index for all core campaign and system data files. This file serves as the primary reference for locating information and understanding the purpose of each data file.",
     "files": [
@@ -69,14 +70,21 @@
         ]
       },
       {
+        "file_name": "Maps.json",
+        "purpose": "A database of all world and explorable area maps.",
+        "key_objects": [
+          "maps",
+          "explorable_areas"
+        ]
+      },
+      {
         "file_name": "Campaign_State.json",
-        "purpose": "The narrative log of the campaign, including quests, world flags, history, and maps.",
+        "purpose": "The narrative log of the campaign, including quests, world flags, and history.",
         "key_objects": [
           "campaign_state",
           "world_history",
           "quests",
-          "world_flags",
-          "maps"
+          "world_flags"
         ]
       },
       {
@@ -105,4 +113,5 @@
         ]
       }
     ]
-  },
+  }
+}
