@@ -1,0 +1,186 @@
+{
+  "lineage_name": "Earth",
+  "description": "Dual paths of unyielding defense (Mountain) and destructive force (Quake).",
+  "abilities": [
+    {
+      "name": "Stone Shard",
+      "playstyle": "Quake",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Hurl a rock at a single target, dealing 2d6 physical damage.",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-2 Spirit",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Earthen Aegis",
+      "playstyle": "Mountain",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Gain a temporary shield that absorbs up to 10 physical damage.",
+      "check": "Essence + Level vs. DC 11",
+      "bloodburn": "-2 Agility",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Stone Fist",
+      "playstyle": "Quake",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "As a bonus action, encase your fists in rock. For 3 rounds, your unarmed strikes are magical and deal 1d6 bludgeoning damage.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Sense Tremor",
+      "playstyle": "Mountain",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "For 1 minute, automatically detect any creature moving on the ground within 30 feet.",
+      "check": "Essence + Level vs. DC 11",
+      "bloodburn": "-1 Mind",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Rooted Stance",
+      "playstyle": "Mountain",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "As a bonus action, gain Advantage on checks to resist being moved or knocked prone until you move.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Brace",
+      "playstyle": "Mountain",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "As a Reaction when hit by an effect that would move you, reduce the distance moved by 10 feet.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Stone Skin",
+      "playstyle": "Mountain",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Gain resistance to physical damage for one round.",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-2 Agility",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Earthen Grasp",
+      "playstyle": "Mountain",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Attempt to 'Restrain' a target for 1 round.",
+      "check": "Essence + Level vs. DC 13",
+      "bloodburn": "-2 Might",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Tremor",
+      "playstyle": "Quake",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Slam the ground, forcing creatures in a 15-foot radius to make an Agility DC 13 check or be knocked prone.",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-2 Spirit",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Spike Shotgun",
+      "playstyle": "Quake",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "A 15-foot cone of sharp stone spikes erupts from the ground, dealing 3d6 physical damage.",
+      "check": "Essence + Level vs. DC 13",
+      "bloodburn": "-2 Might",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Shattering Strike",
+      "playstyle": "Quake",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Enhances Stone Shard. The attack deals half damage, but the target's Damage Reduction is reduced by 2 for their next turn.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": "N/A"
+    },
+    {
+      "name": "Earthen Pillar",
+      "playstyle": "Mountain",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Raise a 5-foot-wide, 10-foot-high pillar of solid earth. The pillar provides total cover and has 30 Vitality.",
+      "check": "Essence + Level vs. DC 13",
+      "bloodburn": "-2 Might",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Earthshatter",
+      "playstyle": "Quake",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Create a shockwave in a 20-foot radius. All creatures on the ground take 4d8 physical damage and are knocked prone.",
+      "check": "Essence + Level vs. DC 15",
+      "bloodburn": "-3 Might",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Grasp of the Mountain",
+      "playstyle": "Mountain",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Enhances Earthen Grasp. Your Earthen Grasp can now target up to two creatures within 10 feet of each other.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": "N/A"
+    },
+    {
+      "name": "Petrify",
+      "playstyle": "Mountain",
+      "rank": "Master",
+      "level_requirement": 15,
+      "effect": "Attempt to turn one creature to stone. The target is 'Incapacitated' on a failed Might DC 16 check.",
+      "check": "Essence + Level vs. DC 16",
+      "bloodburn": "-3 Spirit",
+      "resolve_cost": 15
+    },
+    {
+      "name": "Eruption",
+      "playstyle": "Quake",
+      "rank": "Master",
+      "level_requirement": 15,
+      "effect": "Create a mini-volcano that erupts for 3 rounds, dealing 3d10 initial damage in a 15-foot radius, then 2d10 damage on subsequent turns.",
+      "check": "Essence + Level vs. DC 16",
+      "bloodburn": "-3 Mind",
+      "resolve_cost": 15
+    },
+    {
+      "name": "Living Bastion",
+      "playstyle": "Mountain",
+      "rank": "Archon",
+      "level_requirement": 20,
+      "effect": "Become an immobile fortress for 3 rounds. Gain Damage Reduction 10 and immunity to being moved. Allies within 10 feet gain cover. Usable once per day.",
+      "check": "Essence + Level vs. DC 18",
+      "bloodburn": "-4 Might",
+      "resolve_cost": 20
+    },
+    {
+      "name": "Worldbreaker",
+      "playstyle": "Quake",
+      "rank": "Archon",
+      "level_requirement": 20,
+      "effect": "Create a massive earthquake. Deals 6d12 physical damage to all enemies on the ground and the entire battlefield becomes difficult terrain. Usable once per day.",
+      "check": "Essence + Level vs. DC 18",
+      "bloodburn": "-4 Essence",
+      "resolve_cost": 20
+    }
+  ]
+}
