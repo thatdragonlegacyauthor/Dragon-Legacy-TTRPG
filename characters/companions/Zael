@@ -27,39 +27,6 @@
     ],
     "chosen_playstyle": "Path of the Void-Touched (Pre-Awakening)"
   },
-  "current_status": {
-    "age": 15,
-    "level": 1,
-    "current_resources": {
-      "vitality": 12,
-      "resolve": 20
-    },
-    "insight_points": {
-      "current": 0,
-      "spent": 0,
-      "total_earned": 0
-    },
-    "inventory": {
-      "equipped": [],
-      "unequipped": []
-    },
-    "active_effects": [],
-    "stats": {
-      "Might": 1,
-      "Agility": 4,
-      "Mind": 6,
-      "Spirit": 5
-    },
-    "skills": {
-      "Arcana": 4,
-      "Lore": 4,
-      "Stealth": 3,
-      "Combat": 1
-    },
-    "bond_level": 1,
-    "bond_points": "0/5",
-    "is_awakened": false
-  },
   "playstyles": [
     {
       "path_name": "Path of the Void-Touched (Pre-Awakening)",
@@ -132,7 +99,7 @@
         }
       ]
     },
-    "post_awakening_path": {
+    {
       "path_name": "Path of the Dragon (Post-Awakening)",
       "description": "Once Zael's draconic heritage is fully awakened, this tree would replace his Void-Touched tree. He will gain access to a full, two-path lineage tree for the Void affinity.",
       "abilities": [
@@ -148,56 +115,8 @@
               "effect": "A basic, single-target damage and debuff ability."
             }
           ]
-        },
-        {
-          "tier": "Adept (Level 5+)",
-          "talents": [
-            {
-              "name": "Void Blast",
-              "effect": "A powerful area-of-effect necrotic damage ability that deals 2d8 damage to all enemies in a 10-foot radius. This costs 5 Resolve."
-            },
-            {
-              "name": "Wither",
-              "effect": "As a major action, you curse a target with decay. They must succeed on a Might DC 13 check or have disadvantage on all Might-based checks and attacks for 3 rounds. This costs 5 Resolve."
-            }
-          ]
-        },
-        {
-          "tier": "Expert (Level 10+)",
-          "talents": [
-            {
-              "name": "Life Siphon",
-              "effect": "As a major action, you create a beam of entropic energy between you and a target that lasts for 3 rounds. At the start of each of your turns, the target takes 3d8 necrotic damage, and you heal for half that amount. This costs 10 Resolve."
-            },
-            {
-              "name": "Curse of the Void (Modifies Entropy Bolt)",
-              "effect": "The penalty from your Entropy Bolt is now doubled to a -4 penalty."
-            }
-          ]
-        },
-        {
-          "tier": "Master (Level 15+)",
-          "talents": [
-            {
-              "name": "Corrupting Field",
-              "effect": "As a major action, you create a 30-foot radius field of entropic energy that lasts for 3 rounds. All enemies that end their turn in the field take 4d8 necrotic damage. This costs 15 Resolve."
-            },
-            {
-              "name": "Abyssal Anchor",
-              "effect": "An iconic reaction-based teleport for ultimate mobility. This costs 15 Resolve."
-            }
-          ]
-        },
-        {
-          "tier": "Archon (Level 20)",
-          "talents": [
-            {
-              "name": "Oblivion (Ultimate)",
-              "effect": "As a major action, you attempt to unravel a single creature from existence. The target must make a Spirit DC 18 check. On a failure, they take 10d10 necrotic damage. If this damage reduces the target to 0 Vitality, they are utterly destroyed and cannot be resurrected by normal means. This can only be used once per day and costs 20 Resolve."
-            }
-          ]
         }
       ]
     }
-  }
+  ]
 }
