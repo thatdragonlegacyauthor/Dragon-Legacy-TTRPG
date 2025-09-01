@@ -1,0 +1,121 @@
+{
+  "hero_template": {
+    "name": "Rya",
+    "type": "Human (Dragon-touched)",
+    "background": "An orphan with distinctive blue hair, raised by Elder Elara in Windmark Village. She has a deep, unknown draconic heritage that is revealed during a cataclysmic attack. Her journey is about finding her lost identity and confronting her powerful legacy."
+  },
+  "character_creation_rules": {
+    "attributes": "20 points, max 8 per attribute, Essence >= 3",
+    "skills": "15 points, max 5 per skill",
+    "starting_aspects": "Choose 1 innate Aspect (e.g., Fire)",
+    "starting_gear": [
+      "One weapon",
+      "One set of armor",
+      "Adventurer’s kit"
+    ]
+  },
+  "current_status": {
+    "level": 3,
+    "current_resources": {
+      "vitality": 43,
+      "resolve": 25,
+      "legacy_points": 1
+    },
+    "insight_points": {
+      "current": 0,
+      "spent": 15,
+      "total_earned": 15
+    },
+    "inventory": {
+      "equipped": [
+        "Earth-Wrought Blade",
+        "Leather Armor",
+        "Work Clothes"
+      ],
+      "unequipped": [
+        "Sword",
+        "Shield",
+        "Adventurer's kit",
+        "310 Zenny",
+        "Gold Goo",
+        "Gold Goo",
+        "Woven Sapling Staff",
+        "Elysian Tome of Order",
+        "Wyndian Quill Bow",
+        "Map of Wyndia",
+        "Compass",
+        "Healing Salve",
+        "Healing Salve",
+        "Obsidian Shard",
+        "Patrol Roster and Route Map",
+        "Frostfang Charm",
+        "Wyndian Disguise",
+        "Sun-Kissed Petal",
+        "Gloomcap Spore Vial",
+        "Silver Key (Wyndian Lifts)",
+        "Gonghead Metal Shard"
+      ]
+    },
+    "active_effects": [],
+    "stats": {
+      "Might": 5,
+      "Agility": 3,
+      "Mind": 6,
+      "Spirit": 5,
+      "Essence": 4
+    },
+    "skills": {
+      "Combat": 4,
+      "Lore": 3,
+      "Athletics": 4,
+      "Survival": 3,
+      "Arcana": 2
+    },
+    "unlocked_aspects": [
+      "Fire",
+      "Earth",
+      "Void"
+    ],
+    "aspect_abilities": [
+      {
+        "name": "Flame Burst",
+        "status": "Awakened"
+      },
+      {
+        "name": "Cinder Step",
+        "status": "Awakened"
+      },
+      {
+        "name": "Earthen Aegis",
+        "status": "Awakened"
+      },
+      {
+        "name": "Stone Skin",
+        "status": "Attuned"
+      },
+      {
+        "name": "Earthen Grasp",
+        "status": "Attuned"
+      },
+      {
+        "name": "Stone Shard",
+        "status": "Attuned"
+      },
+      {
+        "name": "Shadow Veil",
+        "status": "Attuned"
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Heat Sense",
+        "effect": "Rya can sense the presence of living creatures within 30 ft by their body heat.",
+        "check": "Mind DC 10"
+      },
+      {
+        "name": "Purify",
+        "effect": "You can use a major action to remove one negative status effect (e.g., poisoned, blinded) from a target."
+      }
+    ]
+  }
+}
