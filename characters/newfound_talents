@@ -1,6 +1,6 @@
 {
-  "newfound_talents_list": {
-    "Combat": [
+  "newfound_talents": {
+    "combat": [
       {
         "name": "Opportunist",
         "effect": "Once per round, you can make an Attack of Opportunity without expending your Reaction."
@@ -26,7 +26,7 @@
         "effect": "When an enemy misses you with a melee attack, you can use your Reaction to make one melee attack against them."
       }
     ],
-    "Support": [
+    "support": [
       {
         "name": "Coordinated Maneuver",
         "effect": "As a major action, grant one ally an immediate free movement action."
@@ -52,7 +52,7 @@
         "effect": "When you roll for Initiative, you can choose to take the last position in the turn order. If you do, you and all allies within 30 feet of you gain a +1 bonus to their first defensive roll of the combat."
       }
     ],
-    "Utility": [
+    "utility": [
       {
         "name": "Resourceful",
         "effect": "Once per session, you can produce a common, non-magical item from your pack."
