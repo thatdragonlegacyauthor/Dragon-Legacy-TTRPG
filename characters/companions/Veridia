@@ -94,7 +94,7 @@
         }
       ]
     },
-    "path_of_the_whispering_canopy": {
+    {
       "path_name": "Path of the Whispering Canopy",
       "description": "This path focuses on her command over the forest's more subtle and dangerous aspects, controlling the battlefield with vines, thorns, and debilitating spores.",
       "abilities": [
