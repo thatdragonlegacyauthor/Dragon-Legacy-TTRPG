@@ -1,0 +1,176 @@
+{
+  "lineage_name": "Tide",
+  "description": "Dual paths of life-giving restoration (Flow) and crushing pressure (Depths).",
+  "abilities": [
+    {
+      "name": "Flowing Restoration",
+      "playstyle": "Flow",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Restore 1d8 Vitality to a target and move them up to 5 feet.",
+      "check": "Essence + Level vs. DC 11",
+      "bloodburn": "-2 Agility",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Crushing Wave",
+      "playstyle": "Depths",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Target must make a Might DC 12 check or be knocked back 10 feet and take 1d8 physical damage.",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-2 Spirit",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Water Jet",
+      "playstyle": "Depths",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Fire a jet of water, dealing 1d8 physical damage. This ability has a lower DC.",
+      "check": "Essence + Level vs. DC 10",
+      "bloodburn": "-1 Agility",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Slipstream",
+      "playstyle": "Flow",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "As a bonus action, an ally's movement does not provoke Attacks of Opportunity for this turn.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Ink Cloud",
+      "playstyle": "Depths",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Create a 15-foot cube of magical ink, heavily obscuring the area for 3 rounds.",
+      "check": "Essence + Level vs. DC 11",
+      "bloodburn": "-2 Mind",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Mending Flow",
+      "playstyle": "Flow",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Enhances Flowing Restoration. The target is also cleansed of one minor negative physical effect (e.g., 'Blinded').",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": "N/A"
+    },
+    {
+      "name": "Crushing Undertow",
+      "playstyle": "Depths",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Enemies in a 15-foot cone must make a Might DC 13 check or be knocked prone.",
+      "check": "Essence + Level vs. DC 13",
+      "bloodburn": "-2 Mind",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Healing Flood",
+      "playstyle": "Flow",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Restore 1d10 Vitality to a single target and remove any lingering fire or poison effects.",
+      "check": "Essence + Level vs. DC 13",
+      "bloodburn": "-2 Agility",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Whirlpool",
+      "playstyle": "Depths",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Create a 15-foot radius whirlpool. The area is difficult terrain and creatures starting their turn inside are pulled 10 feet toward the center (Might DC 13).",
+      "check": "Essence + Level vs. DC 13",
+      "bloodburn": "-2 Might",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Ride the Current",
+      "playstyle": "Flow",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Move yourself and up to two allies up to 30 feet in a straight line without provoking Attacks of Opportunity.",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-2 Agility",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Pressure Spike",
+      "playstyle": "Depths",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Hit a single target with a lance of high-pressure water, dealing 4d10 physical damage and pushing them back 20 feet (Might DC 15).",
+      "check": "Essence + Level vs. DC 15",
+      "bloodburn": "-3 Might",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Tidal Shield",
+      "playstyle": "Flow",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Create a swirling shield of water around an ally. For 3 rounds, melee attackers are pushed back 10 feet.",
+      "check": "Essence + Level vs. DC 14",
+      "bloodburn": "-2 Spirit",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Cleansing Flood",
+      "playstyle": "Flow",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Enhances Healing Flood. It now also affects all allies within 10 feet of the primary target, healing them for half the amount.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": "N/A"
+    },
+    {
+      "name": "Call the Kraken",
+      "playstyle": "Depths",
+      "rank": "Master",
+      "level_requirement": 15,
+      "effect": "Summon two massive tentacles for 3 rounds. As a bonus action, command each to attack, dealing 3d8 bludgeoning damage and attempting to 'Grapple' (Might DC 16).",
+      "check": "Essence + Level vs. DC 16",
+      "bloodburn": "-3 Might",
+      "resolve_cost": 15
+    },
+    {
+      "name": "Font of Life",
+      "playstyle": "Flow",
+      "rank": "Master",
+      "level_requirement": 15,
+      "effect": "Create a 20-foot radius spring. Allies who end their turn in the spring's pool regain 2d8 Vitality.",
+      "check": "Essence + Level vs. DC 16",
+      "bloodburn": "-3 Spirit",
+      "resolve_cost": 15
+    },
+    {
+      "name": "Tsunami",
+      "playstyle": "Depths",
+      "rank": "Archon",
+      "level_requirement": 20,
+      "effect": "Summon a massive wave in a 60-foot cone. Creatures take 6d12 bludgeoning damage and are pushed 60 feet on a failed Might DC 18 check (half damage and no push on success). Usable once per day.",
+      "check": "Essence + Level vs. DC 18",
+      "bloodburn": "-4 Essence",
+      "resolve_cost": 20
+    },
+    {
+      "name": "Blessing of the Sea",
+      "playstyle": "Flow",
+      "rank": "Archon",
+      "level_requirement": 20,
+      "effect": "For 1 minute, you and all allies are immune to being 'Restrained', 'Grappled', or 'Paralyzed', and can use a bonus action to move 10 feet. Usable once per day.",
+      "check": "Essence + Level vs. DC 18",
+      "bloodburn": "-4 Spirit",
+      "resolve_cost": 20
+    }
+  ]
+}
