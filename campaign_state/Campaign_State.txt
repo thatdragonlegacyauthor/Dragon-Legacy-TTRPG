@@ -1,3 +1,4 @@
+{
   "campaign_state": {
     "last_updated": "2025-08-31T17:06:27-08:00",
     "session_number": 19,
@@ -5,7 +6,7 @@
     "party_power_level": 7,
     "active_prompt": "Having attuned to the Void and calmed the whispers in Zael's mind, you have emerged from the chasm into the desolate expanse of the Shattered Lands. The air is heavy with dust and chaotic magic, and the horizon shimmers with an unnatural haze. Your immediate goal is complete, but the larger threats of the Champions of Order and the Arcane Dominion still loom. What is your next move?",
     "world_history": {
-      "chronicle": "The party's journey began in Windmark Village, which was destroyed by the Champions of Order, leading to the death of Elder Elara and forcing Rya, Zael, and the newly met Selra to flee into the Whispering Woods. They found sanctuary in Tanglewood Reach, eventually cleansing the forest's corruption by defeating the Gloomwood Heart. Their path then led them to Wyndia for the first time, an expedition that ended in a chaotic escape. During the escape, Rya's Earth lineage was violently awakened, but Zael was captured and left behind. After earning the trust of the Stonekin, they mounted a second, \nsuccessful rescue mission to Wyndia, freeing Zael from the Elysian Grand Cathedral's detention block. Their quest for power led them to the Void Chasm, where Rya successfully attuned to the Void lineage, a process which had the unexpected side effect of silencing the chaotic whispers that had been plaguing Zael's mind. They now stand at the edge of the Shattered Lands, their purpose solidified."
+      "chronicle": "The party's journey began in Windmark Village, which was destroyed by the Champions of Order, leading to the death of Elder Elara and forcing Rya, Zael, and the newly met Selra to flee into the Whispering Woods. They found sanctuary in Tanglewood Reach, eventually cleansing the forest's corruption by defeating the Gloomwood Heart. Their path then led them to Wyndia for the first time, an expedition that ended in a chaotic escape. During the escape, Rya's Earth lineage was violently awakened, but Zael was captured and left behind. After earning the trust of the Stonekin, they mounted a second, successful rescue mission to Wyndia, freeing Zael from the Elysian Grand Cathedral's detention block. Their quest for power led them to the Void Chasm, where Rya successfully attuned to the Void lineage, a process which had the unexpected side effect of silencing the chaotic whispers that had been plaguing Zael's mind. They now stand at the edge of the Shattered Lands, their purpose solidified."
     },
     "quests": {
       "active_quests": [
@@ -68,7 +69,8 @@
       "world_map": {
         "name": "Eryndor",
         "description": "A comprehensive, text-based map of the known world.",
-        "content": "                                      ▲ Glacial Maw (Frostfang Den)\n                                      |\n                                       |\n▲ Sky-Reach Aerie --- ▲ Mount Dragnor --- The Shattered Lands --- The Void Chasm\n(Skyveil People)    | (Fire Temple)     | (Ruined Citadel)    (Zael's Lineage)\n        |           |                   |                     /\n        |           |                   |                    /\n Wyndia ----- Stonegard --------- Dragon's Graveyard --------\n(Ember Concord) | (Scalebound Clans)    (Earth Lineage)\n           |     |\n           |---- Stonekin Outpost\n           |\n      Port Myria --- The Azure Steppes --- Whispering Woods --- Tanglewood Reach\n(Ember Concord) | (Windmark Village)      (Gloomwood Heart)\n                |\n                |----------------------- The Well of Souls\n                           |\n  Elysian Grand Cathedral --- Sunken City of Astora\n  (Champions of Order)       (Tide Lineage)"
+        "content": "                                      ▲ Glacial Maw (Frostfang Den)\n                                      |\n                                      |\n▲ Sky-Reach Aerie --- ▲ Mount Dragnor --- The Shattered Lands --- The Void Chasm\n(Skyveil People)    | (Fire Temple)     | (Ruined Citadel)    (Zael's Lineage)\n        |           |                   |                     /\n        |           |                   |                    /\n Wyndia ----- Stonegard --------- Dragon's Graveyard --------\n(Ember Concord) | (Scalebound Clans)    (Earth Lineage)\n           |           |\n           |---- Stonekin Outpost\n           |\n      Port Myria --- The Azure Steppes --- Whispering Woods --- Tanglewood Reach\n(Ember Concord) | (Windmark Village)      (Gloomwood Heart)\n                |\n                |----------------------- The Well of Souls\n                           |\n  Elysian Grand Cathedral --- Sunken City of Astora\n  (Champions of Order)       (Tide Lineage)"
       }
     }
-  },
+  }
+}
