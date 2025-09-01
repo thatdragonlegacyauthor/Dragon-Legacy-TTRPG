@@ -95,7 +95,7 @@
         }
       ]
     },
-    "path_of_the_mistwraith": {
+    {
       "path_name": "Path of the Mistwraith",
       "description": "This path focuses on Eldra's ghostly form and her control over the ethereal mists. She becomes a master of battlefield repositioning and control, phasing through attacks, creating disorienting fog, and ensnaring foes with spectral energy.",
       "abilities": [
