@@ -1,0 +1,176 @@
+{
+  "lineage_name": "Light",
+  "description": "Dual paths of searing judgment (Radiance) and protective healing (Sanctuary).",
+  "abilities": [
+    {
+      "name": "Healing Aura",
+      "playstyle": "Sanctuary",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Restore 1d6 Vitality to all allies within a 10-foot radius.",
+      "check": "Essence + Level vs. DC 11",
+      "bloodburn": "-2 Spirit",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Glimmer",
+      "playstyle": "Radiance",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Create a flash of light. Enemies within 15 feet must make a Might DC 12 check or be 'Blinded' for 1 round.",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-2 Agility",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Sacred Flame",
+      "playstyle": "Radiance",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Hurl a bolt of white-hot fire, dealing 1d8 light damage. This ability has a lower DC.",
+      "check": "Essence + Level vs. DC 10",
+      "bloodburn": "-1 Spirit",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Illuminate",
+      "playstyle": "Sanctuary",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "As a bonus action, touch an object and cause it to shed bright, magical sunlight for 1 hour.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Mending Light",
+      "playstyle": "Sanctuary",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Touch an ally and restore 2d6 Vitality.",
+      "check": "Essence + Level vs. DC 11",
+      "bloodburn": "-1 Spirit",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Soothing Aura",
+      "playstyle": "Sanctuary",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Enhances Healing Aura. You can choose for it to heal no Vitality to instead restore 1d8 Resolve to all affected allies.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": "N/A"
+    },
+    {
+      "name": "Sunray",
+      "playstyle": "Radiance",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "A beam of pure light strikes a single target, dealing 2d8 light damage.",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-2 Mind",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Aura of Purity",
+      "playstyle": "Sanctuary",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Create a 10-foot aura that removes one negative status effect from all allies within.",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-2 Might",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Searing Orb",
+      "playstyle": "Radiance",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Hurl an orb of sunlight that explodes, dealing 3d8 light damage in a 10-foot radius.",
+      "check": "Essence + Level vs. DC 13",
+      "bloodburn": "-2 Mind",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Shield of Faith",
+      "playstyle": "Sanctuary",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "As a Reaction when an ally is hit, reduce the damage taken by 1d10 + your Spirit attribute.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Divine Judgement",
+      "playstyle": "Radiance",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "A searing beam deals 2d10 radiant damage to a target and prevents them from taking a reaction.",
+      "check": "Essence + Level vs. DC 13",
+      "bloodburn": "-2 Agility",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Beacon of Hope",
+      "playstyle": "Sanctuary",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Create a stationary beacon. Allies near it can end fear effects on themselves and regain 1d8 Resolve.",
+      "check": "Essence + Level vs. DC 14",
+      "bloodburn": "-2 Spirit",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Blinding Judgement",
+      "playstyle": "Radiance",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Enhances Divine Judgement. The target must also succeed on a Might DC 15 check or become 'Blinded' for 1 round.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": "N/A"
+    },
+    {
+      "name": "Pillar of Dawn",
+      "playstyle": "Radiance",
+      "rank": "Master",
+      "level_requirement": 15,
+      "effect": "Call down a pillar of light, dealing 5d10 light damage to enemies and healing allies for 2d10 Vitality in a 15-foot radius.",
+      "check": "Essence + Level vs. DC 16",
+      "bloodburn": "-3 Mind",
+      "resolve_cost": 15
+    },
+    {
+      "name": "Guardian Spirit",
+      "playstyle": "Sanctuary",
+      "rank": "Master",
+      "level_requirement": 15,
+      "effect": "Summon a spirit to protect an ally. The first time that ally would be reduced to 0 Vitality, the attack is negated and they are healed for 4d10 Vitality.",
+      "check": "Essence + Level vs. DC 16",
+      "bloodburn": "-3 Spirit",
+      "resolve_cost": 15
+    },
+    {
+      "name": "Wrath of the Heavens",
+      "playstyle": "Radiance",
+      "rank": "Archon",
+      "level_requirement": 20,
+      "effect": "Deals 6d12 light damage to all enemies you can see and they must make a Spirit DC 18 check or be 'Stunned' for 1 round. Usable once per day.",
+      "check": "Essence + Level vs. DC 18",
+      "bloodburn": "-4 Mind",
+      "resolve_cost": 20
+    },
+    {
+      "name": "Genesis",
+      "playstyle": "Sanctuary",
+      "rank": "Archon",
+      "level_requirement": 20,
+      "effect": "For 3 rounds, all allies regain 3d10 Vitality at the start of your turn. Allies cannot be reduced below 1 Vitality. Usable once per day.",
+      "check": "Essence + Level vs. DC 18",
+      "bloodburn": "-4 Spirit",
+      "resolve_cost": 20
+    }
+  ]
+}
