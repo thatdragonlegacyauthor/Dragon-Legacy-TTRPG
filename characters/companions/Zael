@@ -28,39 +28,32 @@
     "chosen_playstyle": "Path of the Void-Touched (Pre-Awakening)"
   },
   "current_status": {
-    "level": 2,
+    "age": 15,
+    "level": 1,
     "current_resources": {
-      "vitality": 14,
-      "resolve": 25,
-      "legacy_points": 0
+      "vitality": 12,
+      "resolve": 20
     },
     "insight_points": {
-      "current": 1,
-      "spent": 9,
-      "total_earned": 10
+      "current": 0,
+      "spent": 0,
+      "total_earned": 0
     },
     "inventory": {
-      "equipped": [
-        "Shadow-Whisper Dagger",
-        "Leather Armor"
-      ],
-      "unequipped": [
-        "Frostfang Charm",
-        "Elysian Tome of Order"
-      ]
+      "equipped": [],
+      "unequipped": []
     },
     "active_effects": [],
     "stats": {
-      "Might": 2,
-      "Agility": 5,
+      "Might": 1,
+      "Agility": 4,
       "Mind": 6,
-      "Spirit": 5,
-      "Essence": 0
+      "Spirit": 5
     },
     "skills": {
-      "Arcana": 6,
-      "Lore": 5,
-      "Stealth": 6,
+      "Arcana": 4,
+      "Lore": 4,
+      "Stealth": 3,
       "Combat": 1
     },
     "bond_level": 1,
