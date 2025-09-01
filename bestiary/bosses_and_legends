@@ -14,10 +14,10 @@
           "notes": null
         },
         "stats": {
-          "Might": 5,
-          "Agility": 2,
-          "Mind": 2,
-          "Spirit": 3
+          "might": 5,
+          "agility": 2,
+          "mind": 2,
+          "spirit": 3
         },
         "resources": {
           "vitality": 40
@@ -50,10 +50,10 @@
         "type": "Beast",
         "description": "A colossal worm that burrows beneath the desert sands, emerging to swallow its prey whole.",
         "stats": {
-          "Might": 7,
-          "Agility": 2,
-          "Mind": 1,
-          "Spirit": 3
+          "might": 7,
+          "agility": 2,
+          "mind": 1,
+          "spirit": 3
         },
         "resources": {
           "vitality": 42
@@ -75,10 +75,10 @@
         "type": "Aberration",
         "description": "A cunning predator that disguises itself as a treasure chest, lashing out at greedy adventurers.",
         "stats": {
-          "Might": 5,
-          "Agility": 2,
-          "Mind": 3,
-          "Spirit": 3
+          "might": 5,
+          "agility": 2,
+          "mind": 3,
+          "spirit": 3
         },
         "resources": {
           "vitality": 30
@@ -96,10 +96,10 @@
         "type": "Humanoid",
         "description": "A disciplined warrior of the Champions of Order, clad in steel plate armor.",
         "stats": {
-          "Might": 6,
-          "Agility": 3,
-          "Mind": 3,
-          "Spirit": 4
+          "might": 6,
+          "agility": 3,
+          "mind": 3,
+          "spirit": 4
         },
         "resources": {
           "vitality": 36
@@ -121,10 +121,10 @@
         "type": "Dragonkin",
         "description": "A lesser relative of dragons, with two legs and winged arms. It possesses a venomous stinger on its tail.",
         "stats": {
-          "Might": 6,
-          "Agility": 5,
-          "Mind": 3,
-          "Spirit": 4
+          "might": 6,
+          "agility": 5,
+          "mind": 3,
+          "spirit": 4
         },
         "resources": {
           "vitality": 41
@@ -146,10 +146,10 @@
         "type": "Monstrosity",
         "description": "A reptilian beast whose gaze can turn living flesh to stone.",
         "stats": {
-          "Might": 5,
-          "Agility": 3,
-          "Mind": 2,
-          "Spirit": 4
+          "might": 5,
+          "agility": 3,
+          "mind": 2,
+          "spirit": 4
         },
         "resources": {
           "vitality": 35
@@ -167,10 +167,10 @@
         "type": "Giant",
         "description": "A large, brutish giant that is dim-witted but incredibly strong.",
         "stats": {
-          "Might": 7,
-          "Agility": 2,
-          "Mind": 1,
-          "Spirit": 2
+          "might": 7,
+          "agility": 2,
+          "mind": 1,
+          "spirit": 2
         },
         "resources": {
           "vitality": 37
@@ -189,10 +189,10 @@
         "description": "A fearsome giant known for its incredible ability to regenerate from wounds.",
         "gm_note": "CR is conditional. Without access to fire or acid to stop Regeneration, this encounter is closer to CR 8 or 9.",
         "stats": {
-          "Might": 6,
-          "Agility": 3,
-          "Mind": 2,
-          "Spirit": 3
+          "might": 6,
+          "agility": 3,
+          "mind": 2,
+          "spirit": 3
         },
         "resources": {
           "vitality": 41
@@ -214,10 +214,10 @@
         "type": "Humanoid",
         "description": "An accomplished mage of the Arcane Dominion, wielding powerful and destructive elemental spells.",
         "stats": {
-          "Might": 2,
-          "Agility": 3,
-          "Mind": 7,
-          "Spirit": 4
+          "might": 2,
+          "agility": 3,
+          "mind": 7,
+          "spirit": 4
         },
         "resources": {
           "vitality": 37
@@ -235,10 +235,10 @@
         "type": "Humanoid",
         "description": "An elite winged soldier from Wyndia, skilled with both sword and wind magic.",
         "stats": {
-          "Might": 4,
-          "Agility": 6,
-          "Mind": 4,
-          "Spirit": 5
+          "might": 4,
+          "agility": 6,
+          "mind": 4,
+          "spirit": 5
         },
         "resources": {
           "vitality": 39
@@ -256,10 +256,10 @@
         "type": "Undead",
         "description": "The sorrowful spirit of a woman whose shriek can drain the will to live.",
         "stats": {
-          "Might": 1,
-          "Agility": 4,
-          "Mind": 3,
-          "Spirit": 6
+          "might": 1,
+          "agility": 4,
+          "mind": 3,
+          "spirit": 6
         },
         "resources": {
           "vitality": 31
@@ -277,10 +277,10 @@
         "type": "Monstrosity",
         "description": "A bull-headed humanoid of immense strength, often found in labyrinths.",
         "stats": {
-          "Might": 7,
-          "Agility": 3,
-          "Mind": 2,
-          "Spirit": 3
+          "might": 7,
+          "agility": 3,
+          "mind": 2,
+          "spirit": 3
         },
         "resources": {
           "vitality": 42
@@ -298,10 +298,10 @@
         "type": "Elemental",
         "description": "A being of living crystal animated by the power of the Crystal Spire. It reflects magical energy.",
         "stats": {
-          "Might": 4,
-          "Agility": 2,
-          "Mind": 4,
-          "Spirit": 5
+          "might": 4,
+          "agility": 2,
+          "mind": 4,
+          "spirit": 5
         },
         "resources": {
           "vitality": 39
@@ -319,10 +319,10 @@
         "type": "Construct",
         "description": "An upgraded golem forged from iron, nearly impervious to conventional weapons.",
         "stats": {
-          "Might": 8,
-          "Agility": 1,
-          "Mind": 1,
-          "Spirit": 3
+          "might": 8,
+          "agility": 1,
+          "mind": 1,
+          "spirit": 3
         },
         "resources": {
           "vitality": 53
@@ -344,10 +344,10 @@
         "type": "Undead",
         "description": "A powerful, hateful ghost that can possess the living.",
         "stats": {
-          "Might": 2,
-          "Agility": 5,
-          "Mind": 4,
-          "Spirit": 6
+          "might": 2,
+          "agility": 5,
+          "mind": 4,
+          "spirit": 6
         },
         "resources": {
           "vitality": 42
@@ -365,10 +365,10 @@
         "type": "Beast",
         "description": "A prehistoric tiger with immense fangs, a patient and deadly predator.",
         "stats": {
-          "Might": 6,
-          "Agility": 5,
-          "Mind": 2,
-          "Spirit": 3
+          "might": 6,
+          "agility": 5,
+          "mind": 2,
+          "spirit": 3
         },
         "resources": {
           "vitality": 36
@@ -386,10 +386,10 @@
         "type": "Fiend",
         "description": "A terrifying horse-like creature with a mane of shadow and hooves of burning embers.",
         "stats": {
-          "Might": 5,
-          "Agility": 6,
-          "Mind": 3,
-          "Spirit": 4
+          "might": 5,
+          "agility": 6,
+          "mind": 3,
+          "spirit": 4
         },
         "resources": {
           "vitality": 40
@@ -407,10 +407,10 @@
         "type": "Plant (Corrupted)",
         "description": "An ancient treant that was once the guardian of the woods, now twisted by a creeping blight. Its wooden body is covered in pulsating fungi and weeping sap, and its movements are unnaturally violent. It is the source of the corruption spreading through the Whispering Woods.",
         "stats": {
-          "Might": 8,
-          "Agility": 2,
-          "Mind": 3,
-          "Spirit": 4
+          "might": 8,
+          "agility": 2,
+          "mind": 3,
+          "spirit": 4
         },
         "resources": {
           "vitality": 80
@@ -436,10 +436,10 @@
         "type": "Humanoid",
         "description": "A relentless and high-ranking member of the Champions of Order. Clad in blessed silver armor, he views draconic power not as a tool, but as a chaotic sin that must be purged from the world. He is a skilled tactician and duelist who has been personally tasked with capturing Rya.",
         "stats": {
-          "Might": 5,
-          "Agility": 5,
-          "Mind": 6,
-          "Spirit": 7
+          "might": 5,
+          "agility": 5,
+          "mind": 6,
+          "spirit": 7
         },
         "resources": {
           "vitality": 65
@@ -472,10 +472,10 @@
           "notes": null
         },
         "stats": {
-          "Might": 8,
-          "Agility": 2,
-          "Mind": 3,
-          "Spirit": 6
+          "might": 8,
+          "agility": 2,
+          "mind": 3,
+          "spirit": 6
         },
         "resources": {
           "vitality": 90
@@ -567,10 +567,10 @@
         "type": "Dragonkin",
         "description": "A massive, four-legged drake whose scales are made of cooling magma and obsidian. It guards the inner sanctum of the temple on Mount Dragnor, treating it as its personal lair. It is a creature of pure rage and fire.",
         "stats": {
-          "Might": 9,
-          "Agility": 4,
-          "Mind": 4,
-          "Spirit": 5
+          "might": 9,
+          "agility": 4,
+          "mind": 4,
+          "spirit": 5
         },
         "resources": {
           "vitality": 100
@@ -600,10 +600,10 @@
         "type": "Undead",
         "description": "A powerful wizard who has achieved a form of immortality through undeath. Commands legions of lesser undead.",
         "stats": {
-          "Might": 3,
-          "Agility": 3,
-          "Mind": 8,
-          "Spirit": 7
+          "might": 3,
+          "agility": 3,
+          "mind": 8,
+          "spirit": 7
         },
         "resources": {
           "vitality": 58
@@ -625,10 +625,10 @@
         "type": "Monstrosity",
         "description": "A multi-headed serpent. For each head that is severed, two more may grow in its place.",
         "stats": {
-          "Might": 8,
-          "Agility": 3,
-          "Mind": 2,
-          "Spirit": 4
+          "might": 8,
+          "agility": 3,
+          "mind": 2,
+          "spirit": 4
         },
         "resources": {
           "vitality": 63
@@ -650,10 +650,10 @@
         "type": "Plant",
         "description": "An ancient, walking tree of immense size and wisdom, a guardian of the forest.",
         "stats": {
-          "Might": 8,
-          "Agility": 1,
-          "Mind": 5,
-          "Spirit": 6
+          "might": 8,
+          "agility": 1,
+          "mind": 5,
+          "spirit": 6
         },
         "resources": {
           "vitality": 63
@@ -675,10 +675,10 @@
         "type": "Aberration",
         "description": "A juvenile kraken, though still massive and deadly, with powerful tentacles.",
         "stats": {
-          "Might": 8,
-          "Agility": 4,
-          "Mind": 4,
-          "Spirit": 5
+          "might": 8,
+          "agility": 4,
+          "mind": 4,
+          "spirit": 5
         },
         "resources": {
           "vitality": 63
@@ -701,10 +701,10 @@
         "cr": 21,
         "type": "Ooze",
         "stats": {
-          "Might": 8,
-          "Agility": 4,
-          "Mind": 9,
-          "Spirit": 10
+          "might": 8,
+          "agility": 4,
+          "mind": 9,
+          "spirit": 10
         },
         "resources": {
           "vitality": 250
@@ -729,10 +729,10 @@
         "cr": 21,
         "type": "Celestial",
         "stats": {
-          "Might": 10,
-          "Agility": 9,
-          "Mind": 8,
-          "Spirit": 12
+          "might": 10,
+          "agility": 9,
+          "mind": 8,
+          "spirit": 12
         },
         "resources": {
           "vitality": 220
@@ -758,10 +758,10 @@
         "cr": 22,
         "type": "Beast",
         "stats": {
-          "Might": 16,
-          "Agility": 4,
-          "Mind": 2,
-          "Spirit": 8
+          "might": 16,
+          "agility": 4,
+          "mind": 2,
+          "spirit": 8
         },
         "resources": {
           "vitality": 350
@@ -783,10 +783,10 @@
         "cr": 22,
         "type": "Aberration",
         "stats": {
-          "Might": 12,
-          "Agility": 8,
-          "Mind": 6,
-          "Spirit": 10
+          "might": 12,
+          "agility": 8,
+          "mind": 6,
+          "spirit": 10
         },
         "resources": {
           "vitality": 300
@@ -807,10 +807,10 @@
         "cr": 23,
         "type": "Construct",
         "stats": {
-          "Might": 11,
-          "Agility": 7,
-          "Mind": 5,
-          "Spirit": 9
+          "might": 11,
+          "agility": 7,
+          "mind": 5,
+          "spirit": 9
         },
         "resources": {
           "vitality": 280
@@ -832,10 +832,10 @@
         "cr": 23,
         "type": "Fiend",
         "stats": {
-          "Might": 12,
-          "Agility": 9,
-          "Mind": 10,
-          "Spirit": 11
+          "might": 12,
+          "agility": 9,
+          "mind": 10,
+          "spirit": 11
         },
         "resources": {
           "vitality": 320
@@ -857,10 +857,10 @@
         "cr": 24,
         "type": "Giant",
         "stats": {
-          "Might": 18,
-          "Agility": 3,
-          "Mind": 5,
-          "Spirit": 9
+          "might": 18,
+          "agility": 3,
+          "mind": 5,
+          "spirit": 9
         },
         "resources": {
           "vitality": 400
@@ -882,10 +882,10 @@
         "cr": 24,
         "type": "Dragonkin",
         "stats": {
-          "Might": 14,
-          "Agility": 7,
-          "Mind": 12,
-          "Spirit": 13
+          "might": 14,
+          "agility": 7,
+          "mind": 12,
+          "spirit": 13
         },
         "resources": {
           "vitality": 380
@@ -909,7 +909,7 @@
         "description": "Two colossal golems guarding Elysia's domain. One absorbs physical, the other magical damage.",
         "warden_of_form": {
           "stats": {
-            "Might": 15
+            "might": 15
           },
           "resources": {
             "vitality": 300
@@ -924,7 +924,7 @@
         },
         "warden_of_thought": {
           "stats": {
-            "Mind": 15
+            "mind": 15
           },
           "resources": {
             "vitality": 300
@@ -944,10 +944,10 @@
         "type": "Fiend",
         "description": "A colossal entity of mouths, eyes, and tentacles that guards the very heart of the Void Chasm.",
         "stats": {
-          "Might": 14,
-          "Agility": 10,
-          "Mind": 12,
-          "Spirit": 16
+          "might": 14,
+          "agility": 10,
+          "mind": 12,
+          "spirit": 16
         },
         "resources": {
           "vitality": 500
@@ -973,10 +973,10 @@
         "type": "Dragonkin",
         "description": "The resurrected and empowered spirit of the greatest of the ancient dragon kings.",
         "stats": {
-          "Might": 20,
-          "Agility": 12,
-          "Mind": 15,
-          "Spirit": 18
+          "might": 20,
+          "agility": 12,
+          "mind": 15,
+          "spirit": 18
         },
         "resources": {
           "vitality": 800
@@ -1003,10 +1003,10 @@
         "type": "Aberration",
         "description": "Zael, having fully succumbed to the Void and achieved a dark apotheosis.",
         "stats": {
-          "Might": 10,
-          "Agility": 18,
-          "Mind": 22,
-          "Spirit": 20
+          "might": 10,
+          "agility": 18,
+          "mind": 22,
+          "spirit": 20
         },
         "resources": {
           "vitality": 1200
@@ -1032,10 +1032,10 @@
         "type": "Celestial",
         "description": "The final antagonist, a being of pure, conceptual energy who seeks to 'correct' the heroes by erasing their free will.",
         "stats": {
-          "Might": 15,
-          "Agility": 15,
-          "Mind": 25,
-          "Spirit": 25
+          "might": 15,
+          "agility": 15,
+          "mind": 25,
+          "spirit": 25
         },
         "resources": {
           "vitality": 2000
