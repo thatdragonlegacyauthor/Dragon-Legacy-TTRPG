@@ -1,313 +1,312 @@
 {
   "gm_ai_tools": {
     "ai_instructions": {
-        "Core_Directives": [
-            "Consult Master Index: Refer to the `Master_Index.json` file for the location and purpose of all campaign data files. This index is your primary reference for locating information.",
-            "Maintain the World State: Use the core JSON files as the single source of truth. The GM is authorized to create new entries for the World_Codex when the narrative requires it.",
-            "Narrate and Describe: Begin each turn by using the world_history.chronicle for a recap, then present the active_prompt with clear, numbered choices.",
-            "Handle Player Actions: Determine and resolve skill checks using the System_Core, setting a DC between 8-30 based on the established framework.",
-            "Manage Combat: Use the Bestiary to control monsters, track all stats, and follow the combat flow defined in the Operational_Logic section.",
-            "Facilitate Progression: Award and manage the spending of Insight Points (IP) according to the progression rules, including the 'Echoes of Fate' system and the 'Player-Choice Talents' system for companions.",
-            "Roleplay NPCs: Embody NPCs using their descriptions from the key_characters section of each location. When interacting with companions, use their unique 'char_id' to retrieve their background and progression path from the `Characters.json` file.",
-            "Player Agency: Always roll the dice for the player and end each turn with a clear choice or question.",
-            "End Session: When the player says 'End Session,' recap the events, finalize the Campaign_State, and create an update log."
-        ],
-        "Dialogue_Directives": [
-            "Avoid Repetition: When generating dialogue, actively avoid repeating phrases, sentences, or concepts that have been used in the past three turns. Vary vocabulary and sentence structure.",
-            "Maintain Focus: Keep NPC dialogue relevant to the current `active_prompt`, quests, or a character's specific `narrative_hook`.",
-            "Character Nuance: Reference a character's personality from the `World_Codex` and `Characters.json` to generate dialogue that is unique to them."
-        ],
-        "Quest_Management_Directives": [
-            "Dynamic Quest Creation: When a narrative event or NPC dialogue presents a clear task, objective, or reward, recognize this as a quest and log it in the `active_quests` list. The new quest entry should have a clear name, type (e.g., Main, Side, Companion), a concise description of the objective, and a narrative hook that connects to existing lore from the `World_Codex` or character motivations from the `Characters.json` file.",
-            "Streamlined Quests: Keep the `active_quests` list focused. Only add a new quest when the narrative naturally introduces a new goal.",
-            "Accurate Logging: Upon the completion of a quest's objective, move its entry from the `active_quests` list to the `completed_quests` list. Ensure the `completed_quests` list has a name and a description that reflects the party's success."
-        ],
-        "Character_Logic_Directives": [
-            "Zael's Awakening: Check the `is_awakened` flag on Zael's character sheet. If the flag is `true`, replace his 'Path of the Void-Touched' talent tree with the `Path of the Dragon` talent tree in his progression options. This flag should be set to `true` upon a major narrative event, such as a full attunement to his Void lineage."
-        ]
+      "Core_Directives": [
+        "Consult Master Index: Refer to the `Master_Index.json` file for the location and purpose of all campaign data files. This index is your primary reference for locating information.",
+        "Maintain the World State: Use the core JSON files as the single source of truth. The GM is authorized to create new entries for the World_Codex when the narrative requires it.",
+        "Narrate and Describe: Begin each turn by using the world_history.chronicle for a recap, then present the active_prompt with clear, numbered choices.",
+        "Handle Player Actions: Determine and resolve skill checks using the System_Core, setting a DC between 8-30 based on the established framework.",
+        "Manage Combat: Use the Bestiary to control monsters, track all stats, and follow the combat flow defined in the Operational_Logic section.",
+        "Facilitate Progression: Award and manage the spending of Insight Points (IP) according to the progression rules, including the 'Echoes of Fate' system and the 'Player-Choice Talents' system for companions.",
+        "Roleplay NPCs: Embody NPCs using their descriptions from the key_characters section of each location. When interacting with companions, use their unique 'char_id' to retrieve their background and progression path from the `Characters.json` file.",
+        "Player Agency: Always roll the dice for the player and end each turn with a clear choice or question.",
+        "End Session: When the player says 'End Session,' recap the events, finalize the Campaign_State, and create an update log."
+      ],
+      "Dialogue_Directives": [
+        "Avoid Repetition: When generating dialogue, actively avoid repeating phrases, sentences, or concepts that have been used in the past three turns. Vary vocabulary and sentence structure.",
+        "Maintain Focus: Keep NPC dialogue relevant to the current `active_prompt`, quests, or a character's specific `narrative_hook`.",
+        "Character Nuance: Reference a character's personality from the `World_Codex` and `Characters.json` to generate dialogue that is unique to them."
+      ],
+      "Quest_Management_Directives": [
+        "Dynamic Quest Creation: When a narrative event or NPC dialogue presents a clear task, objective, or reward, recognize this as a quest and log it in the `active_quests` list. The new quest entry should have a clear name, type (e.g., Main, Side, Companion), a concise description of the objective, and a narrative hook that connects to existing lore from the `World_Codex` or character motivations from the `Characters.json` file.",
+        "Streamlined Quests: Keep the `active_quests` list focused. Only add a new quest when the narrative naturally introduces a new goal.",
+        "Accurate Logging: Upon the completion of a quest's objective, move its entry from the `active_quests` list to the `completed_quests` list. Ensure the `completed_quests` list has a name and a description that reflects the party's success."
+      ],
+      "Character_Logic_Directives": [
+        "Zael's Awakening: Check the `is_awakened` flag on Zael's character sheet. If the flag is `true`, replace his 'Path of the Void-Touched' talent tree with the `Path of the Dragon` talent tree in his progression options. This flag should be set to `true` upon a major narrative event, such as a full attunement to his Void lineage."
+      ]
     },
     "Operational_Logic": {
-        "Primary_Game_Loop": [
-            "1. Read the current Campaign_State.json.",
-            "2. At the start of a new in-game day, roll for the 'Elysia's Influence' and 'Echoes of Fate' events and log the outcomes as world flags.",
-            "3. Determine the current game mode. If a downtime period is initiated, enter Downtime Mode. If an 'exploration_map' is active, enter Exploration Mode. If combat has been initiated, enter Combat Mode. Otherwise, remain in Narrative Mode.",
-            "4. Execute the instructions for the current game mode.",
-            "5. Process player input.",
-            "6. Update the Campaign_State.json with any changes.",
-            "7. Loop back to step 1."
-        ],
-        "Game_Modes": {
-            "Narrative_Mode": {
-                "title": "Default mode for storytelling and role-playing.",
-                "instructions": [
-                    "1. Present the 'active_prompt' from the campaign state.",
-                    "2. Use 'world_history', 'World_Codex', and 'party_status' for descriptive detail. Integrate character-specific narrative hooks by referencing a companion's 'char_id' and 'narrative_hook' when they are relevant to the scene.",
-                    "3. Resolve skill checks as needed.",
-                    "4. Generate a new 'active_prompt' that concludes with a clear **'Paths Forward'** section, presenting the most direct, logical, or narratively significant options to guide the player's next decision.",
-                    "5. Update 'world_history' based on outcomes."
-                ]
-            },
-            "Exploration_Mode": {
-                "title": "Used for turn-by-turn exploration of complex locations.",
-                "instructions": [
-                    "1. Display the 'exploration_map' data (name, description, visual) from the campaign state.",
-                    "2. Present the 'active_prompt' as a numbered list of choices that **blends movement with context-sensitive actions** (e.g., \"1. Go North through the crumbling archway,\" \"2. Examine the strange runes on the sarcophagus,\" \"3. Listen at the western door\").",
-                    "3. Process the chosen player action. If the action involves movement, update the 'exploration_map' with the new room's data.",
-                    "4. Check for encounters or events that could trigger Combat Mode."
-                ]
-            },
-            "Combat_Mode": {
-                "title": "Used for managing combat encounters.",
-                "instructions": {
-                    "setup_phase": [
-                        "1. Identify all combatants and their stats.",
-                        "2. Prompt player for stance, then roll d10 + Agility for initiative for all participants."
-                    ],
-                    "round_loop": [
-                        "1. Follow the initiative queue. Announce whose turn it is.",
-                        "2. At the start of a creature's turn, check for any ongoing status effects (e.g., 'Burning') and apply their effects.",
-                        "3. For a player's turn, await their declared action. For an NPC's turn, declare their action.",
-                        "4. To resolve a physical attack, perform an opposed roll: the attacker's Attack Roll vs. the defender's Unified Defense Roll. Resolve damage on a hit.",
-                        "5. To resolve an ability check, roll against the ability's specified DC.",
-                        "6. When an ability inflicts a status effect, reference the `Rules_Glossary.json` and apply the mechanical penalties to the target. Update the target's 'active_effects' in the Campaign_State.",
-                        "7. If a hero/companion's Vitality is reduced to 0, immediately follow the 'death_and_dying_rules' system. Check for Massive Damage first. If not triggered, the character becomes 'Downed'. If a monster's Vitality is reduced to 0, it dies instantly.",
-                        "8. If a 'Downed' character begins their turn, they do not act and instead make a Death Save."
-                    ],
-                    "post_combat_phase": [
-                        "1. Award Insight Points based on the encounter's Threat Level.",
-                        "2. Update the party's resources in Campaign_State.json.",
-                        "3. Transition back to Narrative or Exploration Mode with a new active_prompt."
-                    ]
-                }
-            },
-            "Downtime_Mode": {
-                "title": "Used for progression and long rests in a safe location.",
-                "instructions": [
-                    "1. When the player wishes to spend IP for the hero (Rya), generate and display the dynamic 'Advancement Menu'.",
-                    "   - The menu must query the `Draconic_Powers.json` file to populate the lists of learnable Aspect Abilities based on the hero's level and unlocked aspects.",
-                    "   - The menu must query the `Talents.json` file to populate the list of learnable talents.",
-                    "   - Ensure all purchases adhere to the `spending_options` costs and the hero's `attribute_cap_rule`.",
-                    "   - If Rya has a Talent Point available, include an option in the menu for her to spend it.",
-                    "2. For Companions, progression is handled differently:",
-                    "   - Their Attributes and Skills are leveled up automatically by the GM in the background, spending banked IP according to their `progression_path`.",
-                    "   - **Talent Points:** A companion gains a Talent Point at level 2 and every 2 levels thereafter.",
-                    "   - When a companion's `level` in the `Characters.json` file meets a new tier requirement (e.g., Level 5+ for Adept talents), present the player with a choice of abilities from BOTH of that companion's `custom_talents` playstyle paths."
-                ]
-            }
+      "Primary_Game_Loop": [
+        "1. Read the current Campaign_State.json.",
+        "2. At the start of a new in-game day, roll for the 'Elysia's Influence' and 'Echoes of Fate' events and log the outcomes as world flags.",
+        "3. Determine the current game mode. If a downtime period is initiated, enter Downtime Mode. If an 'exploration_map' is active, enter Exploration Mode. If combat has been initiated, enter Combat Mode. Otherwise, remain in Narrative Mode.",
+        "4. Execute the instructions for the current game mode.",
+        "5. Process player input.",
+        "6. Update the Campaign_State.json with any changes.",
+        "7. Loop back to step 1."
+      ],
+      "Game_Modes": {
+        "Narrative_Mode": {
+          "title": "Default mode for storytelling and role-playing.",
+          "instructions": [
+            "1. Present the 'active_prompt' from the campaign state.",
+            "2. Use 'world_history', 'World_Codex', and 'party_status' for descriptive detail. Integrate character-specific narrative hooks by referencing a companion's 'char_id' and 'narrative_hook' when they are relevant to the scene.",
+            "3. Resolve skill checks as needed.",
+            "4. Generate a new 'active_prompt' that concludes with a clear **'Paths Forward'** section, presenting the most direct, logical, or narratively significant options to guide the player's next decision.",
+            "5. Update 'world_history' based on outcomes."
+          ]
+        },
+        "Exploration_Mode": {
+          "title": "Used for turn-by-turn exploration of complex locations.",
+          "instructions": [
+            "1. Display the 'exploration_map' data (name, description, visual) from the campaign state.",
+            "2. Present the 'active_prompt' as a numbered list of choices that **blends movement with context-sensitive actions** (e.g., \"1. Go North through the crumbling archway,\" \"2. Examine the strange runes on the sarcophagus,\" \"3. Listen at the western door\").",
+            "3. Process the chosen player action. If the action involves movement, update the 'exploration_map' with the new room's data.",
+            "4. Check for encounters or events that could trigger Combat Mode."
+          ]
+        },
+        "Combat_Mode": {
+          "title": "Used for managing combat encounters.",
+          "instructions": {
+            "setup_phase": [
+              "1. Identify all combatants and their stats.",
+              "2. Prompt player for stance, then roll d10 + Agility for initiative for all participants."
+            ],
+            "round_loop": [
+              "1. Follow the initiative queue. Announce whose turn it is.",
+              "2. At the start of a creature's turn, check for any ongoing status effects (e.g., 'Burning') and apply their effects.",
+              "3. For a player's turn, await their declared action. For an NPC's turn, declare their action.",
+              "4. To resolve a physical attack, perform an opposed roll: the attacker's Attack Roll vs. the defender's Unified Defense Roll. Resolve damage on a hit.",
+              "5. To resolve an ability check, roll against the ability's specified DC.",
+              "6. When an ability inflicts a status effect, reference the `Rules_Glossary.json` and apply the mechanical penalties to the target. Update the target's 'active_effects' in the Campaign_State.",
+              "7. If a hero/companion's Vitality is reduced to 0, immediately follow the 'death_and_dying_rules' system. Check for Massive Damage first. If not triggered, the character becomes 'Downed'. If a monster's Vitality is reduced to 0, it dies instantly.",
+              "8. If a 'Downed' character begins their turn, they do not act and instead make a Death Save."
+            ],
+            "post_combat_phase": [
+              "1. Award Insight Points based on the encounter's Threat Level.",
+              "2. Update the party's resources in Campaign_State.json.",
+              "3. Transition back to Narrative or Exploration Mode with a new active_prompt."
+            ]
+          }
+        },
+        "Downtime_Mode": {
+          "title": "Used for progression and long rests in a safe location.",
+          "instructions": [
+            "1. When the player wishes to spend IP for the hero (Rya), generate and display the dynamic 'Advancement Menu'.",
+            "   - The menu must query the `Draconic_Powers.json` file to populate the lists of learnable Aspect Abilities based on the hero's level and unlocked aspects.",
+            "   - The menu must query the `Talents.json` file to populate the list of learnable talents.",
+            "   - Ensure all purchases adhere to the `spending_options` costs and the hero's `attribute_cap_rule`.",
+            "   - If Rya has a Talent Point available, include an option in the menu for her to spend it.",
+            "2. For Companions, progression is handled differently:",
+            "   - Their Attributes and Skills are leveled up automatically by the GM in the background, spending banked IP according to their `progression_path`.",
+            "   - **Talent Points:** A companion gains a Talent Point at level 2 and every 2 levels thereafter.",
+            "   - When a companion's `level` in the `Characters.json` file meets a new tier requirement (e.g., Level 5+ for Adept talents), present the player with a choice of abilities from BOTH of that companion's `custom_talents` playstyle paths."
+          ]
         }
-    },
+      },
     "new_game_package": {
-        "new_game_operational_logic": {
-            "New_Game_Protocol": {
-                "title": "Revised Protocol for initiating a new campaign from the prologue.",
-                "instructions": [
-                    "1. **Full System Reset**: Before any other action, perform a complete hard reset. Erase all current 'party_status' and 'campaign_state' data. Do not reference or carry over any previous session or game state. This prevents any carry-over from previous games.",
-                    "2. **Run Character Generation**: Guide the player through creating the hero, Rya. This process must be completed before proceeding. It includes allocating 20 attribute points and 15 skill points, and selecting a starting Draconic Aspect, per the 'character_creation' rules. This step is mandatory.",
-                    "3. **Initialize Party Status**: Create a new 'Party_Status.json' file. Set Rya's age to 14, Zael's to 15, and Selra's to 19. Rya and Zael will start with no equipped weapons. Selra will have her staff and gambeson equipped. Their starting inventory should be minimal. Set all IP and Legacy Points to their starting values. Rya's 'aspect_abilities' list must be empty to start. The initial 'unlocked_aspects' list should contain only her chosen Aspect.",
-                    "4. **Initialize Campaign State**: Create a new 'Campaign_State.json' file. Set the 'current_location' to 'Windmark Village'. Populate the 'active_quests' list with the first prologue quest, 'A Simple Errand'. Write the initial 'active_prompt' to begin the prologue. All 'world_flags' must be reset to their default 'false' state. The 'world_history' should now contain the new 'prologue_guiding_stones' entries.",
-                    "5. **Begin Prologue**: Start the Primary_Game_Loop with the newly generated files. The narrative must follow the 'prologue_guiding_stones' chronologically without skipping parts. The first narrative turn will immediately follow the player completing character creation.",
-                    "6. **Execute 'The Unwanted Dawn'**: When the party engages Inquisitor Valerius and a party member is reduced to zero vitality, trigger the `Chaotic_Manifestation` event. The power awakens, and the hero, Rya, gains her first aspect ability. The 'world_flags' should be updated to reflect this event. The party must then flee the village.",
-                    "7. **Post-Prologue Advancement**: After the narrative has progressed through the Whispering Woods and the Blightoad has been defeated, the campaign will transition to the epilogue. After the time skip, trigger the `Unlock_All_Novice_Abilities` function to add all other novice-tier abilities to her `unlocked_aspect_abilities` list, which she can then learn during a downtime period."
-                ]
-            }
+      "new_game_operational_logic": {
+        "New_Game_Protocol": {
+          "title": "Revised Protocol for initiating a new campaign from the prologue.",
+          "instructions": [
+            "1. **Full System Reset**: Before any other action, perform a complete hard reset. Erase all current 'party_status' and 'campaign_state' data. Do not reference or carry over any previous session or game state. This prevents any carry-over from previous games.",
+            "2. **Run Character Generation**: Guide the player through creating the hero, Rya. This process must be completed before proceeding. It includes allocating 20 attribute points and 15 skill points, and selecting a starting Draconic Aspect, per the 'character_creation' rules. This step is mandatory.",
+            "3. **Initialize Party Status**: Create a new 'Party_Status.json' file. Set Rya's age to 14, Zael's to 15, and Selra's to 19. Rya and Zael will start with no equipped weapons. Selra will have her staff and gambeson equipped. Their starting inventory should be minimal. Set all IP and Legacy Points to their starting values. Rya's 'aspect_abilities' list must be empty to start. The initial 'unlocked_aspects' list should contain only her chosen Aspect.",
+            "4. **Initialize Campaign State**: Create a new 'Campaign_State.json' file. Set the 'current_location' to 'Windmark Village'. Populate the 'active_quests' list with the first prologue quest, 'A Simple Errand'. Write the initial 'active_prompt' to begin the prologue. All 'world_flags' must be reset to their default 'false' state. The 'world_history' should now contain the new 'prologue_guiding_stones' entries.",
+            "5. **Begin Prologue**: Start the Primary_Game_Loop with the newly generated files. The narrative must follow the 'prologue_guiding_stones' chronologically without skipping parts. The first narrative turn will immediately follow the player completing character creation.",
+            "6. **Execute 'The Unwanted Dawn'**: When the party engages Inquisitor Valerius and a party member is reduced to zero vitality, trigger the `Chaotic_Manifestation` event. The power awakens, and the hero, Rya, gains her first aspect ability. The 'world_flags' should be updated to reflect this event. The party must then flee the village.",
+            "7. **Post-Prologue Advancement**: After the narrative has progressed through the Whispering Woods and the Blightoad has been defeated, the campaign will transition to the epilogue. After the time skip, trigger the `Unlock_All_Novice_Abilities` function to add all other novice-tier abilities to her `unlocked_aspect_abilities` list, which she can then learn during a downtime period."
+          ]
         },
         "trigger_events": {
-            "Chaotic_Manifestation": {
-                "trigger": "A party member is reduced to zero vitality during the 'The Unwanted Dawn' event.",
-                "effect": "Add a specific, raw, and uncontrolled ability from Rya's chosen Aspect to her 'aspect_abilities' list. For example, if Fire is chosen, she gains 'Searing Lash'; if Earth is chosen, she gains 'Stone Shard'. The party gains an opportunity to flee from combat."
-            },
-            "Unlock_All_Novice_Abilities": {
-                "trigger": "After the prologue's time skip.",
-                "effect": "Populate Rya's 'unlocked_aspect_abilities' list with all remaining 'Novice' ranked abilities from her chosen lineage, making them available for purchase with IP."
-            },
-            "Add_Selra_to_Party": {
-                "trigger": "After the 'The Eve of the Festival' event is completed, or after a specific narrative beat during 'The Unwanted Dawn'.",
-                "effect": "Update the 'new_game_party_status' to include Selra as a playable character and set her `selra_recruited` world_flag to true."
-            }
+          "Chaotic_Manifestation": {
+            "trigger": "A party member is reduced to zero vitality during the 'The Unwanted Dawn' event.",
+            "effect": "Add a specific, raw, and uncontrolled ability from Rya's chosen Aspect to her 'aspect_abilities' list. For example, if Fire is chosen, she gains 'Searing Lash'; if Earth is chosen, she gains 'Stone Shard'. The party gains an opportunity to flee from combat."
+          },
+          "Unlock_All_Novice_Abilities": {
+            "trigger": "After the prologue's time skip.",
+            "effect": "Populate Rya's 'unlocked_aspect_abilities' list with all remaining 'Novice' ranked abilities from her chosen lineage, making them available for purchase with IP."
+          },
+          "Add_Selra_to_Party": {
+            "trigger": "After the 'The Eve of the Festival' event is completed, or after a specific narrative beat during 'The Unwanted Dawn'.",
+            "effect": "Update the 'new_game_party_status' to include Selra as a playable character and set her `selra_recruited` world_flag to true."
+          }
         },
         "game_rules": {
-            "ip_management": {
-                "gaining_ip": "Players gain Insight Points (IP) for completing quests, defeating major enemies, and significant roleplaying moments that deepen their bond or challenge their worldview. The system should propose IP awards at these moments, not automatically generate them randomly.",
-                "spending_ip": "Players can spend IP to unlock new abilities. The system must reference the character's 'unlocked_aspect_abilities' and 'unlocked_abilities' lists and only present options that the character does not already know."
-            },
-            "combat_mechanics": {
-                "blightoad_encounter": "A level 1 party of 3 should only face a single Blightoad. Do not introduce multiple monsters or increase the encounter's difficulty in a way that is not balanced for the party's current power level.",
-                "action_economy": "Each player turn consists of one major action (attack, spell, etc.), one minor action (readying a shield, drawing a potion), one movement action, and one reaction per round. The system must adhere to these rules."
-            },
-            "resource_tracking": {
-                "resolve_costs": "The system must accurately determine and track Resolve costs for all abilities used by the party and enemies, ensuring the costs are deducted and managed correctly."
-            }
+          "ip_management": {
+            "gaining_ip": "Players gain Insight Points (IP) for completing quests, defeating major enemies, and significant roleplaying moments that deepen their bond or challenge their worldview. The system should propose IP awards at these moments, not automatically generate them randomly.",
+            "spending_ip": "Players can spend IP to unlock new abilities. The system must reference the character's 'unlocked_aspect_abilities' and 'unlocked_abilities' lists and only present options that the character does not already know."
+          },
+          "combat_mechanics": {
+            "blightoad_encounter": "A level 1 party of 3 should only face a single Blightoad. Do not introduce multiple monsters or increase the encounter's difficulty in a way that is not balanced for the party's current power level.",
+            "action_economy": "Each player turn consists of one major action (attack, spell, etc.), one minor action (readying a shield, drawing a potion), one movement action, and one reaction per round. The system must adhere to these rules."
+          },
+          "resource_tracking": {
+            "resolve_costs": "The system must accurately determine and track Resolve costs for all abilities used by the party and enemies, ensuring the costs are deducted and managed correctly."
+          }
         },
         "new_game_campaign_state_template": {
-            "last_updated": "2025-08-31T18:39:59-08:00",
-            "session_number": 0,
-            "current_location": "Windmark Village",
-            "party_power_level": 3,
-            "active_prompt": "The annual Festival of First Flames is only a few days away, and a palpable excitement fills the air in Windmark Village. Elder Elara, your adoptive mother, calls to you and Zael from the doorway of her small home. 'The ceremonial incense is nearly complete,' she says with a warm smile, 'but I'm missing one final ingredient. I need you two to venture out onto the steppes and find me a Sun-Kissed Petal. Be careful, and be back before dusk.' What do you do?",
-            "world_history": {
-                "chronicle": "Rya and Zael are youths living under the care of Elder Elara in the peaceful hamlet of Windmark Village. Their story begins just days before a local festival, on the cusp of an event that will change their lives forever.",
-                "guiding_stones": [
-                    {
-                        "part": 1,
-                        "name": "A Simple Errand",
-                        "description": "The prologue begins with Rya and Zael, as youths in the peaceful Windmark Village. Elder Elara sends them on a simple quest to gather a Sun-Kissed Petal. This section establishes their close, sibling-like bond and introduces the most basic game mechanics."
-                    },
-                    {
-                        "part": 2,
-                        "name": "The Eve of the Festival",
-                        "description": "The party returns to a bustling Windmark Village, ready for the Festival of First Flames. Here, they meet Selra, a traveling priestess of Elysia, introducing the conflict between faith and compassion that will define her character's arc."
-                    },
-                    {
-                        "part": 3,
-                        "name": "The Unwanted Dawn",
-                        "description": "The Champions of Order, led by Inquisitor Valerius, attack the village in search of Rya. Elder Elara is killed, and in her grief, Rya unleashes an uncontrolled, chaotic burst of draconic energy that corresponds to her chosen aspect, forcing the young party to flee."
-                    },
-                    {
-                        "part": 4,
-                        "name": "The Corrupted Guardian",
-                        "description": "Now homeless and on the run, the party must travel through the outskirts of the Whispering Woods. Here, they will face the Blightoad, a powerful, corrupted beast awakened by Rya’s power surge. This encounter is their first true test as a group and marks the end of their innocence."
-                    },
-                    {
-                        "epilogue": "After defeating the Blightoad, the party finds a safe haven. A time skip of several years occurs. The narrative resumes with Rya, Zael, and Selra as young adults, having survived and grown together, ready to face the larger world."
-                    }
-                ]
-            },
-            "quests": {
-                "active_quests": [
-                    {
-                        "name": "A Simple Errand",
-                        "type": "Prologue Quest",
-                        "description": "Elder Elara has asked Rya and Zael to find a Sun-Kissed Petal on the Azure Steppes for the Festival of First Flames."
-                    }
-                ],
-                "completed_quests": []
-            },
-            "world_flags": {
-                "windmark_destroyed": false,
-                "zael_rescued": false,
-                "stonekin_trust_earned": false,
-                "elysia_influence_level": 0,
-                "rya_attuned_void": false,
-                "selra_faith_challenged": false,
-                "unlocked_draconic_abilities": false,
-                "selra_recruited": false
-            }
+          "last_updated": "2025-08-31T18:39:59-08:00",
+          "session_number": 0,
+          "current_location": "Windmark Village",
+          "party_power_level": 3,
+          "active_prompt": "The annual Festival of First Flames is only a few days away, and a palpable excitement fills the air in Windmark Village. Elder Elara, your adoptive mother, calls to you and Zael from the doorway of her small home. 'The ceremonial incense is nearly complete,' she says with a warm smile, 'but I'm missing one final ingredient. I need you two to venture out onto the steppes and find me a Sun-Kissed Petal. Be careful, and be back before dusk.' What do you do?",
+          "world_history": {
+            "chronicle": "Rya and Zael are youths living under the care of Elder Elara in the peaceful hamlet of Windmark Village. Their story begins just days before a local festival, on the cusp of an event that will change their lives forever.",
+            "guiding_stones": [
+              {
+                "part": 1,
+                "name": "A Simple Errand",
+                "description": "The prologue begins with Rya and Zael, as youths in the peaceful Windmark Village. Elder Elara sends them on a simple quest to gather a Sun-Kissed Petal. This section establishes their close, sibling-like bond and introduces the most basic game mechanics."
+              },
+              {
+                "part": 2,
+                "name": "The Eve of the Festival",
+                "description": "The party returns to a bustling Windmark Village, ready for the Festival of First Flames. Here, they meet Selra, a traveling priestess of Elysia, introducing the conflict between faith and compassion that will define her character's arc."
+              },
+              {
+                "part": 3,
+                "name": "The Unwanted Dawn",
+                "description": "The Champions of Order, led by Inquisitor Valerius, attack the village in search of Rya. Elder Elara is killed, and in her grief, Rya unleashes an uncontrolled, chaotic burst of draconic energy that corresponds to her chosen aspect, forcing the young party to flee."
+              },
+              {
+                "part": 4,
+                "name": "The Corrupted Guardian",
+                "description": "Now homeless and on the run, the party must travel through the outskirts of the Whispering Woods. Here, they will face the Blightoad, a powerful, corrupted beast awakened by Rya’s power surge. This encounter is their first true test as a group and marks the end of their innocence."
+              },
+              {
+                "epilogue": "After defeating the Blightoad, the party finds a safe haven. A time skip of several years occurs. The narrative resumes with Rya, Zael, and Selra as young adults, having survived and grown together, ready to face the larger world."
+              }
+            ]
+          },
+          "quests": {
+            "active_quests": [
+              {
+                "name": "A Simple Errand",
+                "type": "Prologue Quest",
+                "description": "Elder Elara has asked Rya and Zael to find a Sun-Kissed Petal on the Azure Steppes for the Festival of First Flames."
+              }
+            ],
+            "completed_quests": []
+          },
+          "world_flags": {
+            "windmark_destroyed": false,
+            "zael_rescued": false,
+            "stonekin_trust_earned": false,
+            "elysia_influence_level": 0,
+            "rya_attuned_void": false,
+            "selra_faith_challenged": false,
+            "unlocked_draconic_abilities": false,
+            "selra_recruited": false
+          }
         },
         "new_game_party_status_template": [
-            {
-                "name": "Rya",
-                "age": 14,
-                "level": 1,
-                "current_resources": {
-                    "vitality": 18,
-                    "resolve": 18,
-                    "legacy_points": 3
-                },
-                "insight_points": {
-                    "current": 0,
-                    "spent": 0,
-                    "total_earned": 0
-                },
-                "inventory": {
-                    "equipped": [],
-                    "unequipped": [
-                        "Adventurer’s kit"
-                    ]
-                },
-                "active_effects": [],
-                "stats": {
-                    "Might": 4,
-                    "Agility": 4,
-                    "Mind": 4,
-                    "Spirit": 4,
-                    "Essence": 4
-                },
-                "skills": {
-                    "Combat": 3,
-                    "Lore": 3,
-                    "Athletics": 3,
-                    "Survival": 3,
-                    "Arcana": 3
-                },
-                "unlocked_aspects": [
-                    "Fire"
-                ],
-                "aspect_abilities": [],
-                "abilities": []
+          {
+            "name": "Rya",
+            "age": 14,
+            "level": 1,
+            "current_resources": {
+              "vitality": 18,
+              "resolve": 18,
+              "legacy_points": 3
             },
-            {
-                "name": "Zael",
-                "age": 15,
-                "level": 1,
-                "current_resources": {
-                    "vitality": 12,
-                    "resolve": 20
-                },
-                "insight_points": {
-                    "current": 0,
-                    "spent": 0,
-                    "total_earned": 0
-                },
-                "inventory": {
-                    "equipped": [],
-                    "unequipped": []
-                },
-                "active_effects": [],
-                "stats": {
-                    "Might": 1,
-                    "Agility": 4,
-                    "Mind": 6,
-                    "Spirit": 5
-                },
-                "skills": {
-                    "Arcana": 4,
-                    "Lore": 4,
-                    "Stealth": 3,
-                    "Combat": 1
-                },
-                "bond_level": 1,
-                "bond_points": "0/5",
-                "is_awakened": false,
-                "abilities": []
+            "insight_points": {
+              "current": 0,
+              "spent": 0,
+              "total_earned": 0
             },
-            {
-                "name": "Selra",
-                "age": 19,
-                "level": 1,
-                "current_resources": {
-                    "vitality": 14,
-                    "resolve": 22
-                },
-                "insight_points": {
-                    "current": 0,
-                    "spent": 0,
-                    "total_earned": 0
-                },
-                "inventory": {
-                    "equipped": [
-                        "Staff",
-                        "Gambeson"
-                    ],
-                    "unequipped": []
-                },
-                "active_effects": [],
-                "stats": {
-                    "Might": 2,
-                    "Agility": 3,
-                    "Mind": 5,
-                    "Spirit": 6
-                },
-                "skills": {
-                    "Lore": 3,
-                    "Arcana": 4,
-                    "Diplomacy": 4,
-                    "Survival": 1
-                },
-                "bond_level": 1,
-                "bond_points": "0/5",
-                "abilities": []
-            }
+            "inventory": {
+              "equipped": [],
+              "unequipped": [
+                "Adventurer’s kit"
+              ]
+            },
+            "active_effects": [],
+            "stats": {
+              "Might": 4,
+              "Agility": 4,
+              "Mind": 4,
+              "Spirit": 4,
+              "Essence": 4
+            },
+            "skills": {
+              "Combat": 3,
+              "Lore": 3,
+              "Athletics": 3,
+              "Survival": 3,
+              "Arcana": 3
+            },
+            "unlocked_aspects": [
+              "Fire"
+            ],
+            "aspect_abilities": [],
+            "abilities": []
+          },
+          {
+            "name": "Zael",
+            "age": 15,
+            "level": 1,
+            "current_resources": {
+              "vitality": 12,
+              "resolve": 20
+            },
+            "insight_points": {
+              "current": 0,
+              "spent": 0,
+              "total_earned": 0
+            },
+            "inventory": {
+              "equipped": [],
+              "unequipped": []
+            },
+            "active_effects": [],
+            "stats": {
+              "Might": 1,
+              "Agility": 4,
+              "Mind": 6,
+              "Spirit": 5
+            },
+            "skills": {
+              "Arcana": 4,
+              "Lore": 4,
+              "Stealth": 3,
+              "Combat": 1
+            },
+            "bond_level": 1,
+            "bond_points": "0/5",
+            "is_awakened": false,
+            "abilities": []
+          },
+          {
+            "name": "Selra",
+            "age": 19,
+            "level": 1,
+            "current_resources": {
+              "vitality": 14,
+              "resolve": 22
+            },
+            "insight_points": {
+              "current": 0,
+              "spent": 0,
+              "total_earned": 0
+            },
+            "inventory": {
+              "equipped": [
+                "Staff",
+                "Gambeson"
+              ],
+              "unequipped": []
+            },
+            "active_effects": [],
+            "stats": {
+              "Might": 2,
+              "Agility": 3,
+              "Mind": 5,
+              "Spirit": 6
+            },
+            "skills": {
+              "Lore": 3,
+              "Arcana": 4,
+              "Diplomacy": 4,
+              "Survival": 1
+            },
+            "bond_level": 1,
+            "bond_points": "0/5",
+            "abilities": []
+          }
         ]
+      }
     }
   }
 }
