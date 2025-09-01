@@ -31,7 +31,7 @@
   "playstyles": [
     {
       "path_name": "Path of the Ghost Panther",
-      "description": "This path is for the pure assassin. It focuses on maximizing Lirien's stealth and burst damage, allowing her to eliminate key targets from the shadows before they even know she's there.",
+      "description": "This path is for the pure assassin. It focuses on maximizing Lirien's stealth and burst damage, allowing him to eliminate key targets from the shadows before they even know he's there.",
       "abilities": [
         {
           "tier": "Novice (Level 1+)",
@@ -96,9 +96,9 @@
         }
       ]
     },
-    "path_of_the_rooftop_runner": {
+    {
       "path_name": "Path of the Rooftop Runner",
-      "description": "This path focuses on Lirien's incredible acrobatics and environmental awareness. She becomes a master of mobility, debuffs, and control, using her speed and cunning to outmaneuver foes and turn the battlefield to her advantage.",
+      "description": "This path focuses on Lirien's incredible acrobatics and environmental awareness. He becomes a master of mobility, debuffs, and control, using his speed and cunning to outmaneuver foes and turn the battlefield to his advantage.",
       "abilities": [
         {
           "tier": "Novice (Level 1+)",
