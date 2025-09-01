@@ -95,7 +95,7 @@
         }
       ]
     },
-    "path_of_the_master_craftsman": {
+    {
       "path_name": "Path of the Master Craftsman",
       "description": "This path highlights Torr's legendary skill as a blacksmith. He uses powerful, precise hammer blows to sunder armor and can use the heat of the forge to temporarily enhance his allies' weapons and armor in the heat of battle.",
       "abilities": [
