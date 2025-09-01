@@ -1,270 +1,302 @@
+{
   "world_codex": {
     "lore": {
-      "setting": "Eryndor is a world built upon the ruins of a forgotten age. The cataclysm known as 'The Shattering' was not merely a disaster, but the final, desperate act of the Dragonfall War. Before this time, the world was ruled by the Draconic Lords, who embodied raw, untamed power. While all were a force of chaos, they were divided into two opposing factions: the Lords of Light, who sought to protect the natural world with their primal energy, and the Lords of Darkness, who reveled in destruction and corruption. Their endless civil wars plunged the world into constant turmoil. It \nwas in this age of unending conflict that the Goddess Elysia, a being of pure light and absolute order, first descended upon Eryndor. She saw both factions as a single, dangerous threat to her vision of a perfect world. Her war to cleanse the world of draconic power, the Dragonfall, was swift and devastating. In their final moments of desperation, the surviving Draconic Lords of Light, along with a group of mortal heroes who had once fought alongside Elysia against the darker dragons, realized that Elysia's victory would mean the suppression of all free will.\nThey chose to betray her.\nUsing a \npowerful ritual that drew on the fragmented Essence of the defeated dragons, they sealed Elysia away in a hidden prison.\nThe release of this immense, chaotic energy in the final moments of the ritual was the cataclysm that destroyed the last of the Draconic Lords and violently remade the world.\nThis is the true nature of The Shattering, a moment of cosmic irony.\nHistory, rewritten by Elysia's remaining followers, now casts The Shattering as the moment of her benevolent return, a purging of a dark age.\nAll memory of the heroes who saved Eryndor from her tyranny has faded into myth, remembered only by \na few ancient creatures.",
-      "core_themes": [
-        "Legacy and Identity",
-        "Power vs. Responsibility",
-        "Exploration and Discovery",
-        "Elysia's Imposed Order vs. Free Will"
+      "setting": "The world of Eryndor is built on the ruins of a forgotten age, destroyed by a cataclysm known as 'The Shattering'. This event is widely believed to be the final, benevolent act of the Goddess Elysia, who purged the world of the chaotic and destructive Draconic Lords. Elysia's followers, the Champions of Order, have cast her as a savior and the dragons as a dangerous evil. The hero, Rya, and her companions live in a world where this history is the accepted truth. Her journey is one of self-discovery, where she will learn to harness her draconic power and seek to either embrace or reject her legacy. The themes of the campaign will explore the duality of power, the importance of companionship, and the conflict between Elysia's perceived order and the raw freedom of chaos."
+    },
+    "hidden_lore": {
+      "setting_true_history": "The Shattering was not a natural disaster but the final act of a war between the Draconic Lords and a celestial being of absolute order, the Goddess Elysia. The surviving dragons and a few mortal heroes sacrificed themselves to imprison Elysia, and the chaotic release of that power shattered the world, ending the war. Elysia's followers, the Champions of Order, have rewritten history, casting her as a savior who purged the world of draconic evil. The use of draconic power, which they consider a dangerous plague, slowly weakens her prison."
+    },
+    "new_game_prologue_structure": {
+      "prologue_guiding_stones": [
+        {
+          "part": 1,
+          "name": "A Simple Errand",
+          "description": "The prologue begins with Rya and Zael, as youths in the peaceful Windmark Village. Elder Elara sends them on a simple quest to gather a Sun-Kissed Petal. This section establishes their close, sibling-like bond and introduces the most basic game mechanics."
+        },
+        {
+          "part": 2,
+          "name": "The Eve of the Festival",
+          "description": "The party returns to a bustling Windmark Village, ready for the Festival of First Flames. Here, they meet Selra, a traveling priestess of Elysia, introducing the conflict between faith and compassion that will define her character's arc."
+        },
+        {
+          "part": 3,
+          "name": "The Unwanted Dawn",
+          "description": "The Champions of Order, led by Inquisitor Valerius, attack the village in search of Rya. Elder Elara is killed, and in her grief, Rya unleashes an uncontrolled, chaotic burst of draconic energy that corresponds to her chosen aspect, forcing the young party to flee."
+        },
+        {
+          "part": 4,
+          "name": "The Corrupted Guardian",
+          "description": "Now homeless and on the run, the party must travel through the outskirts of the Whispering Woods. Here, they will face the Blightoad, a powerful, corrupted beast awakened by Rya’s power surge. This encounter is their first true test as a group and marks the end of their innocence."
+        },
+        {
+          "epilogue": "After defeating the Blightoad, the party finds a safe haven. A time skip of several years occurs. The narrative resumes with Rya, Zael, and Selra as young adults, having survived and grown together, ready to face the larger world."
+        }
       ]
     },
+    "core_themes": [
+      "Legacy and Identity",
+      "Power vs. Responsibility",
+      "Exploration and Discovery",
+      "Elysia's Imposed Order vs. Free Will"
+    ],
     "factions": [
-      {
-        "name": "The Champions of Order",
-        "description": "Devout followers of Goddess Elysia, subtly working to suppress chaotic forces and impose order on the world. They believe draconic powers are a dangerous, uncontrollable threat. Their faith is absolute; they do not see their actions as propaganda, but as the righteous work of guiding a chaotic world toward what they consider salvation. From the lowest acolyte to the highest inquisitor, they genuinely believe the rewritten history that casts Elysia as a savior and see powers like Rya's not as a personal trait, but as a dangerous plague to be purged for the good of all."
-      },
-      {
-        "name": "Scalebound Clans",
-        "description": "A collection of tribal warriors, primarily the lizard-like Stonekin, bound by a sacred oath to guard the draconic relics and holy sites like the Dragon's Graveyard. Their society, centered in Stonegard, is built on honor and a deep-seated distrust of outsiders. However, a painful schism now grows within the clans, between traditionalists who protect their people and zealots who have begun prioritizing ancient relics over the safety of its people, a conflict that drove warriors like Vorran into exile."
-      },
-      {
-        "name": "Arcane Dominion",
-        "description": "A powerful mageocracy that governs its territory through the ruthless pursuit of knowledge, exploiting draconic artifacts often unethically. Led by Archon Malakor, the Dominion sees the world as a laboratory, capturing magical creatures and harnessing ancient power sources like The Crystal Spire. They present themselves as bringers of progress, but their ambition leaves a trail of depleted lands and twisted creatures in its wake."
-      },
-      {
-        "name": "Ember Concord",
-        "description": "A fragile political alliance of city-states seeking unity, formed after The Shattering for mutual defense and trade. While it presents a united front, the Concord is deeply divided by politics, with its most powerful members, the floating city of Wyndia and the trade hub of Port Myria, locked in a cold war of influence. Officially neutral, many factions within the Concord secretly deal with all sides to gain an advantage."
-      },
-      {
-        "name": "Goddess Elysia",
-        "description": "Elysia is not a goddess in the mortal sense, but a deific being, a conceptual entity that is the living embodiment of Absolute Order. To her followers, she is a benevolent savior who ended the chaotic age of dragons. The truth is that she views all free will—with its pain, strife, and passion—as a flaw in creation. Her goal is to give Eryndor the 'gift' of silence: a perfect, eternal world without choice or change. She was sealed away by the last dragons in a ritual that caused The Shattering, and her prison is the world itself. Her consciousness \nnow exists as a psychic signal, broadcast from her prison, amplified by her holy sites, and interpreted by her devout followers as divine will. Every major act of chaos, especially the use of draconic power, weakens the seal and allows her influence to grow, bringing the world one step closer to her perfect, silent order."
-      },
-      {
-        "name": "The Frostfang Packs",
-        "description": "Native to the vast, frozen tundra of the Glacial Maw, the Frostfang are wolf-like humanoids who live in tight-knit, traditionalist packs. They are master hunters and survivalists who are deeply suspicious of outsiders, especially the Arcane Dominion, whose expeditions they see as a desecration of their sacred hunting grounds."
-      },
-      {
-        "name": "The Runeforge Remnants",
-        "description": "A scattered and secretive guild of artisans, engineers, and scholars dedicated to uncovering and preserving the lost technologies of the pre-Shattering era. They are neutral in the world's conflicts, seeking only knowledge. They believe the Draconic Lords were masters of a kind of arcane science that has been lost to time."
-      },
-      {
-        "name": "The Astoran Conclave",
-        "description": "A reclusive society of amphibious, fish-like humanoids who are the last descendants of the pre-Shattering inhabitants of the Sunken City of Astora. They are patient scholars and powerful mystics who guard the secrets of the oceans and the Tide draconic lineage."
-      },
-      {
-        "name": "The Gilded Paw Caravan",
-        "description": "A sprawling, nomadic merchant guild comprised of various cat-like and fox-like beastfolk. Publicly neutral, their leaders operate one of the most extensive spy networks in the world, selling information to the highest bidder."
-      },
-      {
-        "name": "The Brood of Dragnor",
-        "description": "A fanatical and nihilistic cult of mortals who inhabit the scorched slopes of Mount Dragnor. They worship the memory of the defeated Draconic Lords of Darkness and seek to unleash chaotic forces to bring about a new age of fire."
-      }
+        {
+            "name": "The Champions of Order",
+            "description": "Devout followers of Goddess Elysia, subtly working to suppress chaotic forces and impose order on the world. They believe draconic powers are a dangerous, uncontrollable threat. Their faith is absolute; they do not see their actions as propaganda, but as the righteous work of guiding a chaotic world toward what they consider salvation. From the lowest acolyte to the highest inquisitor, they genuinely believe the rewritten history that casts Elysia as a savior and see powers like Rya's not as a personal trait, but as a dangerous plague to be purged for the good of all."
+        },
+        {
+            "name": "Scalebound Clans",
+            "description": "A collection of tribal warriors, primarily the lizard-like Stonekin, bound by a sacred oath to guard the draconic relics and holy sites like the Dragon's Graveyard. Their society, centered in Stonegard, is built on honor and a deep-seated distrust of outsiders. However, a painful schism now grows within the clans, between traditionalists who protect their people and zealots who have begun prioritizing ancient relics over the safety of its people, a conflict that drove warriors like Vorran into exile."
+        },
+        {
+            "name": "Arcane Dominion",
+            "description": "A powerful mageocracy that governs its territory through the ruthless pursuit of knowledge, exploiting draconic artifacts often unethically. Led by Archon Malakor, the Dominion sees the world as a laboratory, capturing magical creatures and harnessing ancient power sources like The Crystal Spire. They present themselves as bringers of progress, but their ambition leaves a trail of depleted lands and twisted creatures in its wake."
+        },
+        {
+            "name": "Ember Concord",
+            "description": "A fragile political alliance of city-states seeking unity, formed after The Shattering for mutual defense and trade. While it presents a united front, the Concord is deeply divided by politics, with its most powerful members, the floating city of Wyndia and the trade hub of Port Myria, locked in a cold war of influence. Officially neutral, many factions within the Concord secretly deal with all sides to gain an advantage."
+        },
+        {
+            "name": "Goddess Elysia",
+            "description": "Elysia is not a goddess in the mortal sense, but a deific being, a conceptual entity that is the living embodiment of Absolute Order. To her followers, she is a benevolent savior who ended the chaotic age of dragons. The truth is that she views all free will—with its pain, strife, and passion—as a flaw in creation. Her goal is to give Eryndor the 'gift' of silence: a perfect, eternal world without choice or change. She was sealed away by the last dragons in a ritual that caused The Shattering, and her prison is the world itself. Her consciousness now exists as a psychic signal, broadcast from her prison, amplified by her holy sites, and interpreted by her devout followers as divine will. Every major act of chaos, especially the use of draconic power, weakens the seal and allows her influence to grow, bringing the world one step closer to her perfect, silent order."
+        },
+        {
+            "name": "The Frostfang Packs",
+            "description": "Native to the vast, frozen tundra of the Glacial Maw, the Frostfang are wolf-like humanoids who live in tight-knit, traditionalist packs. They are master hunters and survivalists who are deeply suspicious of outsiders, especially the Arcane Dominion, whose expeditions they see as a desecration of their sacred hunting grounds."
+        },
+        {
+            "name": "The Runeforge Remnants",
+            "description": "A scattered and secretive guild of artisans, engineers, and scholars dedicated to uncovering and preserving the lost technologies of the pre-Shattering era. They are neutral in the world's conflicts, seeking only knowledge. They believe the Draconic Lords were masters of a kind of arcane science that has been lost to time."
+        },
+        {
+            "name": "The Astoran Conclave",
+            "description": "A reclusive society of amphibious, fish-like humanoids who are the last descendants of the pre-Shattering inhabitants of the Sunken City of Astora. They are patient scholars and powerful mystics who guard the secrets of the oceans and the Tide draconic lineage."
+        },
+        {
+            "name": "The Gilded Paw Caravan",
+            "description": "A sprawling, nomadic merchant guild comprised of various cat-like and fox-like beastfolk. Publicly neutral, their leaders operate one of the most extensive spy networks in the world, selling information to the highest bidder."
+        },
+        {
+            "name": "The Brood of Dragnor",
+            "description": "A fanatical and nihilistic cult of mortals who inhabit the scorched slopes of Mount Dragnor. They worship the memory of the defeated Draconic Lords of Darkness and seek to unleash chaotic forces to bring about a new age of fire."
+        }
     ],
     "locations": [
-      {
-        "name": "Windmark Village",
-        "type": "Village",
-        "description": "The hero's starting home, located on the Azure Steppes. Once known for its serene wind-chimes, it is now rebuilding after a devastating attack by the Champions of Order."
-      },
-      {
-        "name": "Wyndia",
-        "type": "City-State",
-        "description": "A majestic floating city, the jewel of the Ember Concord, ruled by a fae-like nobility with bird-like wings and powered by massive wind-magic spires.",
-        "key_characters": [
-          {
-            "name": "Lord Aerion",
-            "char_id": "WYNDIA_AERION",
-            "description": "The stern and pragmatic ruler of Wyndia. He values order and stability above all, viewing unchecked power like Zael's lineage as a threat to his city's delicate peace."
-          },
-          {
-            "char_id": "WYNDIA_NINA"
-          }
-        ]
-      },
-      {
-        "name": "Port Myria",
-        "type": "Town",
-        "description": "A bustling port town on the southern coast, a major trade hub for the Ember Concord. A melting pot of cultures, but rife with political intrigue and black markets."
-      },
-      {
-        "name": "Stonegard",
-        "type": "Fortress Town",
-        "description": "A settlement of the lizard-like Stonekin carved into a mountain face. A key bastion for the Scalebound Clans, it guards a sacred passage to the Dragon's Graveyard."
-      },
-      {
-        "name": "Stonekin Outpost",
-        "type": "Outpost",
-        "description": "A small, fortified outpost of the Scalebound Clans, located in the mountain pass. It serves as a temporary refuge and a place to find supplies, if the inhabitants are receptive to aid.",
-        "key_characters": [
-          {
-            "name": "Grak, the Gatewarden",
-            "char_id": "SCALEBOUND_GRAK",
-            "description": "A stout, powerfully built Stonekin with slate-grey scales and a stubborn set to his jaw. He is fiercely protective of his post and deeply suspicious of outsiders."
-          },
-          {
-            "name": "Karrus, the Master Smith",
-            "char_id": "SCALEBOUND_KARRUS",
-            "description": "A scarred and ancient Stonekin with a deep respect for powerful and resilient materials. As the master smith of the outpost, he takes a strong interest in Rya's draconic power, seeing it as a source of potential for forging legendary gear."
-          }
-        ]
-      },
-      {
-        "name": "Tanglewood Reach",
-        "type": "Village",
-        "description": "A secluded village built high in the canopy of the Whispering Woods. Its inhabitants are isolationists with deep knowledge of natural remedies and ancient forest spirits.",
-        "key_characters": [
-          {
-            "name": "Elder Briar",
-            "char_id": "TANGLEWOOD_BRIAR",
-            "role": "Village Leader",
-            "description": "The wise and cautious leader of Tanglewood. He will be deeply suspicious of Rya's draconic power, seeing it as a destructive, unnatural force."
-          },
-          {
-            "name": "Kaelen",
-            "char_id": "TANGLEWOOD_KAELEN",
-            "role": "Lead Scout",
-            "description": "A young, skilled hunter who is one of the few to venture to the forest floor. He is curious about the outside world and may be a crucial ally for the party."
-          },
-          {
-            "name": "Lyssa",
-            "char_id": "TANGLEWOOD_LYSSA",
-            "role": "Apothecary and Spirit-Speaker",
-            "description": "The village's primary healer and spiritual guide. She communes with the forest's spirits and has knowledge of ancient lore, potentially including fragments of information about the draconic lineages."
-          }
-        ]
-      },
-      {
-        "name": "The Shattered Lands",
-        "type": "Region",
-        "description": "A vast, desolate wasteland scarred by the cataclysm that ended the last age. The land is twisted, inhabited by mutated beasts, and permeated by chaotic magical energy."
-      },
-      {
-        "name": "The Crystal Spire",
-        "type": "Landmark",
-        "description": "A towering monolith of pulsating crystal in the desert, harnessed by the Arcane Dominion as a massive power source for their unethical experiments.",
-        "key_characters": [
-          {
-            "name": "Archon Malakor",
-            "char_id": "DOMINION_MALAKOR",
-            "description": "The enigmatic leader of the Arcane Dominion. Malakor is a brilliant, ancient mage who views morality as a limitation to the pursuit of ultimate knowledge and power, driving the Dominion's most unethical experiments from his sanctum atop the Spire."
-          }
-        ]
-      },
-      {
-        "name": "Sunken City of Astora",
-        "type": "Dungeon",
-        "description": "The ruins of a magnificent pre-Shattering city now lost beneath the waves. It is the true home of the Astoran Conclave and is rumored to hold secrets of the Tide draconic lineage."
-      },
-      {
-        "name": "Mount Dragnor",
-        "type": "Dungeon",
-        "description": "A dormant volcano where ancient followers of the Fire dragons built a grand temple. It is now a dangerous labyrinth of lava tubes and fire elementals, and serves as the primary base for the fanatical Brood of Dragnor cult."
-      },
-      {
-        "name": "The Whispering Woods",
-        "type": "Region",
-        "description": "An ancient, mist-shrouded forest where the trees are said to hold the memories of the world. A place of potent natural magic and home to Tanglewood Reach."
-      },
-      {
-        "name": "Elysia's Grand Cathedral",
-        "type": "Landmark",
-        "description": "The magnificent center of the Champions of Order's power. Publicly a place of healing and light, its hidden catacombs hold cells for those deemed 'chaotic'.",
-        "key_characters": [
-          {
-            "name": "Grand Inquisitor Valerius",
-            "char_id": "CHAMPIONS_VALERius",
-            "description": "A relentless and high-ranking commander of the Champions of Order. Utterly devoted to Elysia's cause, he is the primary antagonist pursuing the party, believing Rya's power is a plague that must be purged from the world."
-          }
-        ]
-      },
-      {
-        "name": "The Void Chasm",
-        "type": "Region",
-        "description": "A bottomless abyss that tears through the Shattered Lands. Reality is thin here, and creatures touched by entropy and shadow are drawn to its palpable silence."
-      },
-      {
-        "name": "The Glacial Maw",
-        "type": "Region",
-        "description": "A vast, frozen tundra in the far north, dominated by a colossal, moving glacier. It is the hunting ground of the Frostfang clans and a nexus of Ice lineage power."
-      },
-      {
-        "name": "Dragon's Graveyard",
-        "type": "Landmark",
-        "description": "A sacred and desolate valley littered with the fossilized bones of colossal dragons. The Scalebound Clans consider it their most holy site."
-      },
-      {
-        "name": "Tidewatch Spire",
-        "type": "Outpost",
-        "description": "The sole embassy of the Astoran Conclave to the surface world. This lone, coral-encrusted tower stands on a remote, mist-shrouded coastline, from which the Astorans observe the changing tides of power in Eryndor.",
-        "key_characters": [
-          {
-            "name": "Loremaster Oris",
-            "char_id": "ASTORAN_ORIS",
-            "description": "An ancient Astoran whose bioluminescent scales have faded to a pale white. As the keeper of prophecies, he may offer the party cryptic guidance in exchange for recovering lost Astorani artifacts."
-          }
-        ]
-      },
-      {
-        "name": "The Oasis of Zha'Vask",
-        "type": "Town",
-        "description": "A neutral, bustling trade hub deep within the southern deserts. The Oasis is the unofficial capital of the Gilded Paw Caravan and a haven for merchants, mercenaries, and spies.",
-        "key_characters": [
-          {
-            "name": "Farah, the 'Caravan Master'",
-            "char_id": "GILDEDPAW_FARAH",
-            "description": "A cunning and charismatic fox-like beastwoman who leads the Gilded Paw. She can procure nearly any item or piece of intelligence for the right price, but her loyalty is always to profit."
-          }
-        ]
-      },
-      {
-        "name": "Frostfang Den",
-        "type": "Village",
-        "description": "A fortified settlement carved into the ice of a massive glacier within the Glacial Maw, serving as the main den for Kael's pack.",
-        "key_characters": [
-          {
-            "name": "Vargus, the Iron-Fang",
-            "char_id": "FROSTFANG_VARGUS",
-            "description": "The usurper chieftain of Kael's pack. A large Frostfang with dark fur and crude cybernetic enhancements, he believes tradition makes his people weak and has allied with the Arcane Dominion for power."
-          }
-        ]
-      },
-      {
-        "name": "The Arcanum Vaults",
-        "type": "Dungeon",
-        "description": "A vast, pre-Shattering ruin in the Dominion's territory, filled with dangerous automated defenses and lost technology. A hidden enclave of the Runeforge Remnants has taken up residence here.",
-        "key_characters": [
-          {
-            "name": "Archivist Elara",
-            "char_id": "RUNEFORGE_ELARA",
-            "description": "The sharp-witted leader of the local Runeforge Remnant enclave. She seeks to reactivate a massive machine in the vaults and sees Rune as a priceless key to her research."
-          }
-        ]
-      },
-      {
-        "name": "The Well of Souls",
-        "type": "Landmark",
-        "description": "A place where the veil between the world of the living and the echoes of the dead is unnaturally thin. Located in a secluded grotto on the Azure Steppes, it appears as a pool of still, silvery water. It is a place of potent spiritual energy, used to commune with spirits who have unresolved attachments to the world.",
-        "key_characters": [
-          {
-            "name": "The Echo of Elara",
-            "char_id": "SPIRIT_ELARA",
-            "description": "The lingering spirit of Rya's adoptive mother, bound to the Well by her violent death and her connection to Rya's heritage. She can be communed with to provide clarity on Rya's forgotten past."
-          }
-        ]
-      },
-      {
-        "name": "Sky-Reach Aerie",
-        "type": "Village",
-        "description": "Carved into the highest peaks of the Serpent's Coil mountains, this is the ancestral home of the Skyveil people—a society of falcon-like humanoids. It is a city of vertical towers connected by rope bridges, and its people are proud, isolationist hunters who value freedom above all.",
-        "key_characters": [
-          {
-            "name": "Elder Vasha",
-            "char_id": "SKYVEIL_VASHA",
-            "description": "The matriarch of the Skyveil and Talia's former mentor. She is fiercely protective of her people's independence and may become an ally if the party can prove their goals align with protecting the Aerie from the Arcane Dominion."
-          }
-        ]
-      },
-      {
-        "name": "Havenwood",
-        "type": "Village",
-        "description": "A small, devout village on the edge of the Whispering Woods. Its people are pious and hardworking, but have been manipulated by the Champions of Order into fearing the 'old magic' of the woods.",
-        "key_characters": [
-          {
-            "name": "Mayor Theron",
-            "char_id": "HAVENWOOD_THERON",
-            "description": "The genuinely good-hearted but naive mayor of Havenwood. He has been convinced by a visiting Elysian priestess that a 'chaotic beast' is the source of his village's recent misfortunes and will hire the party to destroy it."
-          }
-        ]
-      }
+        {
+            "name": "Windmark Village",
+            "type": "Village",
+            "description": "The hero's starting home, located on the Azure Steppes. Once known for its serene wind-chimes, it is now rebuilding after a devastating attack by the Champions of Order."
+        },
+        {
+            "name": "Wyndia",
+            "type": "City-State",
+            "description": "A majestic floating city, the jewel of the Ember Concord, ruled by a fae-like nobility with bird-like wings and powered by massive wind-magic spires.",
+            "key_characters": [
+                {
+                    "name": "Lord Aerion",
+                    "char_id": "WYNDIA_AERION",
+                    "description": "The stern and pragmatic ruler of Wyndia. He values order and stability above all, viewing unchecked power like Zael's lineage as a threat to his city's delicate peace."
+                },
+                {
+                    "char_id": "WYNDIA_NINA"
+                }
+            ]
+        },
+        {
+            "name": "Port Myria",
+            "type": "Town",
+            "description": "A bustling port town on the southern coast, a major trade hub for the Ember Concord. A melting pot of cultures, but rife with political intrigue and black markets."
+        },
+        {
+            "name": "Stonegard",
+            "type": "Fortress Town",
+            "description": "A settlement of the lizard-like Stonekin carved into a mountain face. A key bastion for the Scalebound Clans, it guards a sacred passage to the Dragon's Graveyard."
+        },
+        {
+            "name": "Stonekin Outpost",
+            "type": "Outpost",
+            "description": "A small, fortified outpost of the Scalebound Clans, located in the mountain pass. It serves as a temporary refuge and a place to find supplies, if the inhabitants are receptive to aid.",
+            "key_characters": [
+                {
+                    "name": "Grak, the Gatewarden",
+                    "char_id": "SCALEBOUND_GRAK",
+                    "description": "A stout, powerfully built Stonekin with slate-grey scales and a stubborn set to his jaw. He is fiercely protective of his post and deeply suspicious of outsiders."
+                },
+                {
+                    "name": "Karrus, the Master Smith",
+                    "char_id": "SCALEBOUND_KARRUS",
+                    "description": "A scarred and ancient Stonekin with a deep respect for powerful and resilient materials. As the master smith of the outpost, he takes a strong interest in Rya's draconic power, seeing it as a source of potential for forging legendary gear."
+                }
+            ]
+        },
+        {
+            "name": "Tanglewood Reach",
+            "type": "Village",
+            "description": "A secluded village built high in the canopy of the Whispering Woods. Its inhabitants are isolationists with deep knowledge of natural remedies and ancient forest spirits.",
+            "key_characters": [
+                {
+                    "name": "Elder Briar",
+                    "char_id": "TANGLEWOOD_BRIAR",
+                    "role": "Village Leader",
+                    "description": "The wise and cautious leader of Tanglewood. He will be deeply suspicious of Rya's draconic power, seeing it as a destructive, unnatural force."
+                },
+                {
+                    "name": "Kaelen",
+                    "char_id": "TANGLEWOOD_KAELEN",
+                    "role": "Lead Scout",
+                    "description": "A young, skilled hunter who is one of the few to venture to the forest floor. He is curious about the outside world and may be a crucial ally for the party."
+                },
+                {
+                    "name": "Lyssa",
+                    "char_id": "TANGLEWOOD_LYSSA",
+                    "role": "Apothecary and Spirit-Speaker",
+                    "description": "The village's primary healer and spiritual guide. She communes with the forest's spirits and has knowledge of ancient lore, potentially including fragments of information about the draconic lineages."
+                }
+            ]
+        },
+        {
+            "name": "The Shattered Lands",
+            "type": "Region",
+            "description": "A vast, desolate wasteland scarred by the cataclysm that ended the last age. The land is twisted, inhabited by mutated beasts, and permeated by chaotic magical energy."
+        },
+        {
+            "name": "The Crystal Spire",
+            "type": "Landmark",
+            "description": "A towering monolith of pulsating crystal in the desert, harnessed by the Arcane Dominion as a massive power source for their unethical experiments.",
+            "key_characters": [
+                {
+                    "name": "Archon Malakor",
+                    "char_id": "DOMINION_MALAKOR",
+                    "description": "The enigmatic leader of the Arcane Dominion. Malakor is a brilliant, ancient mage who views morality as a limitation to the pursuit of ultimate knowledge and power, driving the Dominion's most unethical experiments from his sanctum atop the Spire."
+                }
+            ]
+        },
+        {
+            "name": "Sunken City of Astora",
+            "type": "Dungeon",
+            "description": "The ruins of a magnificent pre-Shattering city now lost beneath the waves. It is the true home of the Astoran Conclave and is rumored to hold secrets of the Tide draconic lineage."
+        },
+        {
+            "name": "Mount Dragnor",
+            "type": "Dungeon",
+            "description": "A dormant volcano where ancient followers of the Fire dragons built a grand temple. It is now a dangerous labyrinth of lava tubes and fire elementals, and serves as the primary base for the fanatical Brood of Dragnor cult."
+        },
+        {
+            "name": "The Whispering Woods",
+            "type": "Region",
+            "description": "An ancient, mist-shrouded forest where the trees are said to hold the memories of the world. A place of potent natural magic and home to Tanglewood Reach."
+        },
+        {
+            "name": "Elysia's Grand Cathedral",
+            "type": "Landmark",
+            "description": "The magnificent center of the Champions of Order's power. Publicly a place of healing and light, its hidden catacombs hold cells for those deemed 'chaotic'.",
+            "key_characters": [
+                {
+                    "name": "Grand Inquisitor Valerius",
+                    "char_id": "CHAMPIONS_VALERius",
+                    "description": "A relentless and high-ranking commander of the Champions of Order. Utterly devoted to Elysia's cause, he is the primary antagonist pursuing the party, believing Rya's power is a plague that must be purged from the world."
+                }
+            ]
+        },
+        {
+            "name": "The Void Chasm",
+            "type": "Region",
+            "description": "A bottomless abyss that tears through the Shattered Lands. Reality is thin here, and creatures touched by entropy and shadow are drawn to its palpable silence."
+        },
+        {
+            "name": "The Glacial Maw",
+            "type": "Region",
+            "description": "A vast, frozen tundra in the far north, dominated by a colossal, moving glacier. It is the hunting ground of the Frostfang clans and a nexus of Ice lineage power."
+        },
+        {
+            "name": "Dragon's Graveyard",
+            "type": "Landmark",
+            "description": "A sacred and desolate valley littered with the fossilized bones of colossal dragons. The Scalebound Clans consider it their most holy site."
+        },
+        {
+            "name": "Tidewatch Spire",
+            "type": "Outpost",
+            "description": "The sole embassy of the Astoran Conclave to the surface world. This lone, coral-encrusted tower stands on a remote, mist-shrouded coastline, from which the Astorans observe the changing tides of power in Eryndor.",
+            "key_characters": [
+                {
+                    "name": "Loremaster Oris",
+                    "char_id": "ASTORAN_ORIS",
+                    "description": "An ancient Astoran whose bioluminescent scales have faded to a pale white. As the keeper of prophecies, he may offer the party cryptic guidance in exchange for recovering lost Astorani artifacts."
+                }
+            ]
+        },
+        {
+            "name": "The Oasis of Zha'Vask",
+            "type": "Town",
+            "description": "A neutral, bustling trade hub deep within the southern deserts. The Oasis is the unofficial capital of the Gilded Paw Caravan and a haven for merchants, mercenaries, and spies.",
+            "key_characters": [
+                {
+                    "name": "Farah, the 'Caravan Master'",
+                    "char_id": "GILDEDPAW_FARAH",
+                    "description": "A cunning and charismatic fox-like beastwoman who leads the Gilded Paw. She can procure nearly any item or piece of intelligence for the right price, but her loyalty is always to profit."
+                }
+            ]
+        },
+        {
+            "name": "Frostfang Den",
+            "type": "Village",
+            "description": "A fortified settlement carved into the ice of a massive glacier within the Glacial Maw, serving as the main den for Kael's pack.",
+            "key_characters": [
+                {
+                    "name": "Vargus, the Iron-Fang",
+                    "char_id": "FROSTFANG_VARGUS",
+                    "description": "The usurper chieftain of Kael's pack. A large Frostfang with dark fur and crude cybernetic enhancements, he believes tradition makes his people weak and has allied with the Arcane Dominion for power."
+                }
+            ]
+        },
+        {
+            "name": "The Arcanum Vaults",
+            "type": "Dungeon",
+            "description": "A vast, pre-Shattering ruin in the Dominion's territory, filled with dangerous automated defenses and lost technology. A hidden enclave of the Runeforge Remnants has taken up residence here.",
+            "key_characters": [
+                {
+                    "name": "Archivist Elara",
+                    "char_id": "RUNEFORGE_ELARA",
+                    "description": "The sharp-witted leader of the local Runeforge Remnant enclave. She seeks to reactivate a massive machine in the vaults and sees Rune as a priceless key to her research."
+                }
+            ]
+        },
+        {
+            "name": "The Well of Souls",
+            "type": "Landmark",
+            "description": "A place where the veil between the world of the living and the echoes of the dead is unnaturally thin. Located in a secluded grotto on the Azure Steppes, it appears as a pool of still, silvery water. It is a place of potent spiritual energy, used to commune with spirits who have unresolved attachments to the world.",
+            "key_characters": [
+                {
+                    "name": "The Echo of Elara",
+                    "char_id": "SPIRIT_ELARA",
+                    "description": "The lingering spirit of Rya's adoptive mother, bound to the Well by her violent death and her connection to Rya's heritage. She can be communed with to provide clarity on Rya's forgotten past."
+                }
+            ]
+        },
+        {
+            "name": "Sky-Reach Aerie",
+            "type": "Village",
+            "description": "Carved into the highest peaks of the Serpent's Coil mountains, this is the ancestral home of the Skyveil people—a society of falcon-like humanoids. It is a city of vertical towers connected by rope bridges, and its people are proud, isolationist hunters who value freedom above all.",
+            "key_characters": [
+                {
+                    "name": "Elder Vasha",
+                    "char_id": "SKYVEIL_VASHA",
+                    "description": "The matriarch of the Skyveil and Talia's former mentor. She is fiercely protective of her people's independence and may become an ally if the party can prove their goals align with protecting the Aerie from the Arcane Dominion."
+                }
+            ]
+        },
+        {
+            "name": "Havenwood",
+            "type": "Village",
+            "description": "A small, devout village on the edge of the Whispering Woods. Its people are pious and hardworking, but have been manipulated by the Champions of Order into fearing the 'old magic' of the woods.",
+            "key_characters": [
+                {
+                    "name": "Mayor Theron",
+                    "char_id": "HAVENWOOD_THERON",
+                    "description": "The genuinely good-hearted but naive mayor of Havenwood. He has been convinced by a visiting Elysian priestess that a 'chaotic beast' is the source of his village's recent misfortunes and will hire the party to destroy it."
+                }
+            ]
+        }
     ]
-  },
+  }
+}
