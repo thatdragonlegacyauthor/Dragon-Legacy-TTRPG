@@ -1,5 +1,5 @@
 {
-  "wyndia": {
+  "wyndia_city": {
     "start_room": "landing_platform",
     "rooms": {
       "landing_platform": {
