@@ -3,13 +3,5 @@
     "name": "Rya",
     "type": "Human (Dragon-touched)",
     "background": "An orphan with distinctive blue hair, raised by Elder Elara in Windmark Village. She has a deep, unknown draconic heritage that is revealed during a cataclysmic attack. Her journey is about finding her lost identity and confronting her powerful legacy."
-  },
-  "character_creation_rules": {
-    "attributes": "15 points, max 5 per attribute, Essence >= 3",
-    "skills": "12 points, max 5 per skill",
-    "starting_aspects": "Choose 1 innate Aspect (e.g., Fire)",
-    "starting_gear": [
-      "Adventurer’s kit"
-    ]
   }
 }
