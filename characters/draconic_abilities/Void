@@ -1,1 +1,176 @@
-
+{
+  "lineage_name": "Void",
+  "description": "Dual paths of phantom-like deception (Shadow) and corrupting power (Entropy).",
+  "abilities": [
+    {
+      "name": "Shadow Veil",
+      "playstyle": "Shadow",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Grant Advantage on Stealth checks for 1 round.",
+      "check": "Essence + Level vs. DC 11",
+      "bloodburn": "-2 Mind",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Entropy Bolt",
+      "playstyle": "Entropy",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Deal 1d10 necrotic damage and reduce the target's next roll by 2.",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-2 Spirit",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Muffle",
+      "playstyle": "Shadow",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "As a bonus action, gain Advantage on Stealth checks related to moving silently for 1 minute.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Minor Drain",
+      "playstyle": "Entropy",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Touch a creature, dealing 1d6 necrotic damage and regaining Vitality equal to half the damage dealt.",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-1 Spirit",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Shadow's Grasp",
+      "playstyle": "Shadow",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "As a bonus action, manipulate a simple object up to 30 feet away with a tendril of shadow.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Leeching Bolt",
+      "playstyle": "Entropy",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Enhances Entropy Bolt. You can choose for it to deal no damage. If you do, you regain 1d6 Resolve.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": "N/A"
+    },
+    {
+      "name": "Void Blast",
+      "playstyle": "Entropy",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "A burst of entropic energy deals 2d8 necrotic damage to all enemies in a 10-foot radius.",
+      "check": "Essence + Level vs. DC 15",
+      "bloodburn": "-2 Essence",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Mirror Image",
+      "playstyle": "Shadow",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Create 1d4 illusory duplicates of yourself that last for 1 minute. Each time you are attacked, roll to see if the attack targets a duplicate instead.",
+      "check": "Essence + Level vs. DC 13",
+      "bloodburn": "-2 Mind",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Wither",
+      "playstyle": "Entropy",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Curse a target with decay. They have disadvantage on all Might-based checks and attacks for 3 rounds on a failed Might DC 13 check.",
+      "check": "Essence + Level vs. DC 13",
+      "bloodburn": "-2 Spirit",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Enveloping Veil",
+      "playstyle": "Shadow",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Enhances Shadow Veil. You can now target up to two allies (including yourself).",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": "N/A"
+    },
+    {
+      "name": "Abyssal Anchor",
+      "playstyle": "Shadow",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "As a Reaction, teleport up to 30 feet to a shadowed location, leaving a void field that slows enemies.",
+      "check": "Essence + Level vs. DC 14",
+      "bloodburn": "-2 Essence",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Life Siphon",
+      "playstyle": "Entropy",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Create a life-draining beam for 3 rounds. At the start of your turn, the target takes 3d8 necrotic damage and you heal for half.",
+      "check": "Essence + Level vs. DC 15",
+      "bloodburn": "-3 Spirit",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Umbral Form",
+      "playstyle": "Shadow",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Melt into a creature's shadow for up to 1 minute, becoming undetectable. You cannot take other actions while in this form.",
+      "check": "Essence + Level vs. DC 14",
+      "bloodburn": "-2 Agility",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Curse of the Void",
+      "playstyle": "Entropy",
+      "rank": "Master",
+      "level_requirement": 15,
+      "effect": "Place the ultimate curse on one enemy. On a failed Spirit DC 16 check, they become Vulnerable to all damage types for 3 rounds.",
+      "check": "Essence + Level vs. DC 16",
+      "bloodburn": "-3 Spirit",
+      "resolve_cost": 15
+    },
+    {
+      "name": "Hall of Mirrors",
+      "playstyle": "Shadow",
+      "rank": "Master",
+      "level_requirement": 15,
+      "effect": "Create a 30-foot radius of maddening illusions. Enemies inside must make a Mind DC 16 check or attack the nearest creature.",
+      "check": "Essence + Level vs. DC 16",
+      "bloodburn": "-3 Mind",
+      "resolve_cost": 15
+    },
+    {
+      "name": "Erase",
+      "playstyle": "Entropy",
+      "rank": "Archon",
+      "level_requirement": 20,
+      "effect": "Attempt to unravel a single creature from existence. On a failed Spirit DC 18 check, they take 10d10 necrotic damage. If this reduces them to 0 Vitality, they are destroyed. Usable once per day.",
+      "check": "Essence + Level vs. DC 18",
+      "bloodburn": "-4 Essence",
+      "resolve_cost": 20
+    },
+    {
+      "name": "Perfect Doppelganger",
+      "playstyle": "Shadow",
+      "rank": "Archon",
+      "level_requirement": 20,
+      "effect": "Create a perfect, solid duplicate of yourself with half your Vitality for 1 minute. It acts on its own turn. Usable once per day.",
+      "check": "Essence + Level vs. DC 18",
+      "bloodburn": "-4 Mind",
+      "resolve_cost": 20
+    }
+  ]
+}
