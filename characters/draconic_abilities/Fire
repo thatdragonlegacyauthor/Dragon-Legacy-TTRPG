@@ -1,0 +1,206 @@
+{
+  "lineage_name": "Fire",
+  "description": "Dual paths of destruction (Conflagration) and support (Hearth).",
+  "abilities": [
+    {
+      "name": "Ember Aura",
+      "playstyle": "Hearth",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "+2 to resist physical attacks for 1 round",
+      "check": "Essence + Level vs. DC 10",
+      "bloodburn": "-2 Spirit",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Searing Lash",
+      "playstyle": "Conflagration",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Lash a target with a whip of flame, dealing 1d10 fire damage and inflicting 'Burning'.",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-2 Agility",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Cinder Spark",
+      "playstyle": "Conflagration",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Hurl a spark of fire, dealing 1d8 fire damage. This ability has a lower DC.",
+      "check": "Essence + Level vs. DC 10",
+      "bloodburn": "-1 Agility",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Smoke Screen",
+      "playstyle": "Hearth",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Create a 15-foot cube of dense smoke, lightly obscuring the area.",
+      "check": "Essence + Level vs. DC 11",
+      "bloodburn": "-2 Mind",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Guiding Flame",
+      "playstyle": "Hearth",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Summon a harmless flame over an ally's shoulder for 3 rounds, shedding light and granting a +1 bonus to their next attack.",
+      "check": "Essence + Level vs. DC 11",
+      "bloodburn": "-2 Spirit",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Ignite",
+      "playstyle": "Conflagration",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Cause a flammable object to combust or inflict 'Burning' on a target for 2 rounds.",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-1 Mind",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Flame Burst",
+      "playstyle": "Conflagration",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Deals 2d10 fire damage in a 15-ft cone.",
+      "check": "Essence + Level vs. DC 11",
+      "bloodburn": "-2 Might",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Combustion",
+      "playstyle": "Conflagration",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Cause a 'Burning' target to erupt, dealing 1d10 fire damage to all enemies within 5 feet.",
+      "check": "Essence + Level vs. DC 13",
+      "bloodburn": "-2 Mind",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Cauterize Wound",
+      "playstyle": "Hearth",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Deal 1d4 fire damage to an adjacent ally to end a 'Bleeding' effect and restore 3d8 Vitality.",
+      "check": "Essence + Level vs. DC 13",
+      "bloodburn": "-2 Spirit",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Ash Cloud",
+      "playstyle": "Hearth",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Fill a 20-foot radius with choking ash. The area is heavily obscured and enemies starting their turn inside can be 'Blinded' for 1 round (Might DC 13).",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-2 Mind",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Lingering Embers",
+      "playstyle": "Hearth",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Enhances Ember Aura. While Ember Aura is active, adjacent allies also gain a +1 bonus to their defensive checks.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": "N/A"
+    },
+    {
+      "name": "Cinder Step",
+      "playstyle": "Conflagration",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "The hero teleports up to 15 ft in a puff of smoke and embers, which does not provoke an Attack of Opportunity. They leave a patch of fiery ground at their original location that deals 1d6 fire damage to anyone who enters it for 1 round.",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-2 Agility",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Wall of Fire",
+      "playstyle": "Conflagration",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Create a 30-foot-long wall of fire. Creatures entering or ending their turn within 5 feet take 3d8 fire damage.",
+      "check": "Essence + Level vs. DC 14",
+      "bloodburn": "-2 Mind",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Circle of Warmth",
+      "playstyle": "Hearth",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Create a 15-foot radius circle where allies gain resistance to Cold damage and restore 1d6 Resolve each turn.",
+      "check": "Essence + Level vs. DC 14",
+      "bloodburn": "-2 Spirit",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Immolate",
+      "playstyle": "Conflagration",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Engulf a single target in flames, dealing 4d8 fire damage and inflicting a severe 'Burning' status.",
+      "check": "Essence + Level vs. DC 15",
+      "bloodburn": "-3 Mind",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Flashpoint",
+      "playstyle": "Conflagration",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Enhances Combustion. The target must also succeed on a Might DC 14 check or become 'Stunned' for 1 round.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": "N/A"
+    },
+    {
+      "name": "Firestorm",
+      "playstyle": "Conflagration",
+      "rank": "Master",
+      "level_requirement": 15,
+      "effect": "Create a 20-foot-radius storm of fire. Deals 4d10 initial fire damage, then 2d10 fire damage to enemies who start their turn inside.",
+      "check": "Essence + Level vs. DC 16",
+      "bloodburn": "-3 Spirit",
+      "resolve_cost": 15
+    },
+    {
+      "name": "Heart of the Phoenix",
+      "playstyle": "Hearth",
+      "rank": "Master",
+      "level_requirement": 15,
+      "effect": "Target one 'Downed' ally. That ally is immediately restored to half of their maximum Vitality. Usable once per day.",
+      "check": "Essence + Level vs. DC 15",
+      "bloodburn": "-4 Spirit",
+      "resolve_cost": 15
+    },
+    {
+      "name": "Supernova",
+      "playstyle": "Conflagration",
+      "rank": "Archon",
+      "level_requirement": 20,
+      "effect": "Deals 6d12 fire damage to all enemies you can see. Your Vitality is then reduced to 1. Usable once per day.",
+      "check": "Essence + Level vs. DC 18",
+      "bloodburn": "-4 Essence",
+      "resolve_cost": 20
+    },
+    {
+      "name": "Ashen Rebirth",
+      "playstyle": "Hearth",
+      "rank": "Archon",
+      "level_requirement": 20,
+      "effect": "Create a 30-foot aura. Allies inside are healed for 4d10 Vitality and cured of all status effects, and regenerate 2d10 Vitality for 3 rounds. Usable once per day.",
+      "check": "Essence + Level vs. DC 18",
+      "bloodburn": "-4 Spirit",
+      "resolve_cost": 20
+    }
+  ]
+}
