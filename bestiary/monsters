@@ -14,10 +14,10 @@
           "notes": "Vulnerable to most physical damage but can regenerate. They have no strong elemental ties."
         },
         "stats": {
-          "Might": 2,
-          "Agility": 2,
-          "Mind": 1,
-          "Spirit": 1
+          "might": 2,
+          "agility": 2,
+          "mind": 1,
+          "spirit": 1
         },
         "resources": {
           "vitality": 8
@@ -46,10 +46,10 @@
           "notes": "Avoids one-on-one fights and flees when its allies are defeated."
         },
         "stats": {
-          "Might": 1,
-          "Agility": 4,
-          "Mind": 2,
-          "Spirit": 2
+          "might": 1,
+          "agility": 4,
+          "mind": 2,
+          "spirit": 2
         },
         "resources": {
           "vitality": 6
@@ -82,10 +82,10 @@
           "notes": "Vulnerable to fire damage."
         },
         "stats": {
-          "Might": 3,
-          "Agility": 3,
-          "Mind": 2,
-          "Spirit": 2
+          "might": 3,
+          "agility": 3,
+          "mind": 2,
+          "spirit": 2
         },
         "resources": {
           "vitality": 12
@@ -115,10 +115,10 @@
           "notes": "Will flee when outnumbered or severely wounded."
         },
         "stats": {
-          "Might": 3,
-          "Agility": 4,
-          "Mind": 2,
-          "Spirit": 2
+          "might": 3,
+          "agility": 4,
+          "mind": 2,
+          "spirit": 2
         },
         "resources": {
           "vitality": 15
@@ -148,10 +148,10 @@
           "notes": "Is immune to being moved once it uses its root ability."
         },
         "stats": {
-          "Might": 2,
-          "Agility": 2,
-          "Mind": 1,
-          "Spirit": 3
+          "might": 2,
+          "agility": 2,
+          "mind": 1,
+          "spirit": 3
         },
         "resources": {
           "vitality": 10
@@ -184,10 +184,10 @@
           "notes": "They are immune to fire damage and can be found alongside other fire elementals."
         },
         "stats": {
-          "Might": 3,
-          "Agility": 4,
-          "Mind": 2,
-          "Spirit": 2
+          "might": 3,
+          "agility": 4,
+          "mind": 2,
+          "spirit": 2
         },
         "resources": {
           "vitality": 13
@@ -220,10 +220,10 @@
           "notes": "Often found with other goblins, including archers and shamans."
         },
         "stats": {
-          "Might": 4,
-          "Agility": 3,
-          "Mind": 3,
-          "Spirit": 3
+          "might": 4,
+          "agility": 3,
+          "mind": 3,
+          "spirit": 3
         },
         "resources": {
           "vitality": 22
@@ -257,10 +257,10 @@
           "notes": "Vulnerable to fire damage."
         },
         "stats": {
-          "Might": 4,
-          "Agility": 3,
-          "Mind": 1,
-          "Spirit": 3
+          "might": 4,
+          "agility": 3,
+          "mind": 1,
+          "spirit": 3
         },
         "resources": {
           "vitality": 25
@@ -293,10 +293,10 @@
           "notes": "Their howl can rally other wolves in the area."
         },
         "stats": {
-          "Might": 5,
-          "Agility": 5,
-          "Mind": 2,
-          "Spirit": 3
+          "might": 5,
+          "agility": 5,
+          "mind": 2,
+          "spirit": 3
         },
         "resources": {
           "vitality": 28
@@ -329,10 +329,10 @@
           "notes": "Will use its dagger as a last resort when enemies get too close."
         },
         "stats": {
-          "Might": 4,
-          "Agility": 6,
-          "Mind": 3,
-          "Spirit": 4
+          "might": 4,
+          "agility": 6,
+          "mind": 3,
+          "spirit": 4
         },
         "resources": {
           "vitality": 30
@@ -359,10 +359,10 @@
         "type": "Ooze",
         "description": "A volatile ooze that radiates a faint heat. It's surprisingly aggressive.",
         "stats": {
-          "Might": 2,
-          "Agility": 2,
-          "Mind": 1,
-          "Spirit": 2
+          "might": 2,
+          "agility": 2,
+          "mind": 1,
+          "spirit": 2
         },
         "resources": {
           "vitality": 12
@@ -380,10 +380,10 @@
         "type": "Ooze",
         "description": "A frigid ooze that slows its prey before consuming it.",
         "stats": {
-          "Might": 1,
-          "Agility": 1,
-          "Mind": 2,
-          "Spirit": 2
+          "might": 1,
+          "agility": 1,
+          "mind": 2,
+          "spirit": 2
         },
         "resources": {
           "vitality": 11
@@ -401,10 +401,10 @@
         "type": "Ooze",
         "description": "A rare ooze shimmering with arcane energy. It has rudimentary magical abilities.",
         "stats": {
-          "Might": 1,
-          "Agility": 2,
-          "Mind": 4,
-          "Spirit": 3
+          "might": 1,
+          "agility": 2,
+          "mind": 4,
+          "spirit": 3
         },
         "resources": {
           "vitality": 16
@@ -422,10 +422,10 @@
         "type": "Ooze",
         "description": "A sickly green ooze that leaks a foul-smelling toxin.",
         "stats": {
-          "Might": 2,
-          "Agility": 2,
-          "Mind": 1,
-          "Spirit": 1
+          "might": 2,
+          "agility": 2,
+          "mind": 1,
+          "spirit": 1
         },
         "resources": {
           "vitality": 12
@@ -443,10 +443,10 @@
         "type": "Ooze",
         "description": "A massive ooze that has absorbed countless smaller kin. It wears a rusty crown from a past victim.",
         "stats": {
-          "Might": 5,
-          "Agility": 1,
-          "Mind": 2,
-          "Spirit": 3
+          "might": 5,
+          "agility": 1,
+          "mind": 2,
+          "spirit": 3
         },
         "resources": {
           "vitality": 35
@@ -468,10 +468,10 @@
         "type": "Ooze",
         "description": "An ooze with a metallic sheen and incredibly tough hide. It is slow but very difficult to damage.",
         "stats": {
-          "Might": 2,
-          "Agility": 1,
-          "Mind": 1,
-          "Spirit": 2
+          "might": 2,
+          "agility": 1,
+          "mind": 1,
+          "spirit": 2
         },
         "resources": {
           "vitality": 12
@@ -489,10 +489,10 @@
         "type": "Plant",
         "description": "A man-sized mushroom creature that wanders the darkest parts of the woods. When threatened, it releases a cloud of disorienting spores from its cap.",
         "stats": {
-          "Might": 3,
-          "Agility": 2,
-          "Mind": 1,
-          "Spirit": 2
+          "might": 3,
+          "agility": 2,
+          "mind": 1,
+          "spirit": 2
         },
         "resources": {
           "vitality": 15
@@ -514,10 +514,10 @@
         "type": "Beast",
         "description": "A large, six-legged insect whose carapace perfectly resembles the bark of ancient trees. It lies in wait for prey, relying on its incredible toughness to weather any initial assault.",
         "stats": {
-          "Might": 4,
-          "Agility": 1,
-          "Mind": 2,
-          "Spirit": 2
+          "might": 4,
+          "agility": 1,
+          "mind": 2,
+          "spirit": 2
         },
         "resources": {
           "vitality": 20
@@ -539,10 +539,10 @@
         "type": "Ethereal",
         "description": "A faint, glowing orb of mist that drifts silently through the woods. They are drawn to strong emotions and feed on willpower, leaving their victims feeling drained and hopeless.",
         "stats": {
-          "Might": 1,
-          "Agility": 4,
-          "Mind": 3,
-          "Spirit": 4
+          "might": 1,
+          "agility": 4,
+          "mind": 3,
+          "spirit": 4
         },
         "resources": {
           "vitality": 12
@@ -564,10 +564,10 @@
         "type": "Humanoid",
         "description": "A goblin that has learned rudimentary magic, often used to aid its allies or hinder its foes.",
         "stats": {
-          "Might": 2,
-          "Agility": 3,
-          "Mind": 4,
-          "Spirit": 3
+          "might": 2,
+          "agility": 3,
+          "mind": 4,
+          "spirit": 3
         },
         "resources": {
           "vitality": 17
@@ -589,10 +589,10 @@
         "type": "Undead",
         "description": "A swift and ravenous undead that can paralyze its victims with a touch.",
         "stats": {
-          "Might": 3,
-          "Agility": 4,
-          "Mind": 2,
-          "Spirit": 2
+          "might": 3,
+          "agility": 4,
+          "mind": 2,
+          "spirit": 2
         },
         "resources": {
           "vitality": 18
@@ -610,10 +610,10 @@
         "type": "Undead",
         "description": "The animated bones of a long-dead soldier, retaining some of its former martial skill.",
         "stats": {
-          "Might": 3,
-          "Agility": 3,
-          "Mind": 1,
-          "Spirit": 2
+          "might": 3,
+          "agility": 3,
+          "mind": 1,
+          "spirit": 2
         },
         "resources": {
           "vitality": 13
@@ -631,10 +631,10 @@
         "type": "Undead",
         "description": "An incorporeal spirit filled with hatred for all life, capable of draining vitality.",
         "stats": {
-          "Might": 1,
-          "Agility": 4,
-          "Mind": 3,
-          "Spirit": 4
+          "might": 1,
+          "agility": 4,
+          "mind": 3,
+          "spirit": 4
         },
         "resources": {
           "vitality": 21
@@ -656,10 +656,10 @@
         "type": "Beast",
         "description": "A large and ferocious wolf that hunts in packs.",
         "stats": {
-          "Might": 4,
-          "Agility": 5,
-          "Mind": 2,
-          "Spirit": 2
+          "might": 4,
+          "agility": 5,
+          "mind": 2,
+          "spirit": 2
         },
         "resources": {
           "vitality": 19
@@ -677,10 +677,10 @@
         "type": "Beast",
         "description": "A monstrous arachnid that spins thick webs to trap its prey.",
         "stats": {
-          "Might": 3,
-          "Agility": 4,
-          "Mind": 2,
-          "Spirit": 2
+          "might": 3,
+          "agility": 4,
+          "mind": 2,
+          "spirit": 2
         },
         "resources": {
           "vitality": 18
@@ -702,10 +702,10 @@
         "type": "Aberration",
         "description": "A floating eyeball with small wings. It observes intruders and calls for powerful allies.",
         "stats": {
-          "Might": 1,
-          "Agility": 4,
-          "Mind": 3,
-          "Spirit": 2
+          "might": 1,
+          "agility": 4,
+          "mind": 3,
+          "spirit": 2
         },
         "resources": {
           "vitality": 11
@@ -723,10 +723,10 @@
         "type": "Beast",
         "description": "A large, aggressive bird with a razor-sharp beak. It attacks with surprising speed.",
         "stats": {
-          "Might": 3,
-          "Agility": 5,
-          "Mind": 2,
-          "Spirit": 2
+          "might": 3,
+          "agility": 5,
+          "mind": 2,
+          "spirit": 2
         },
         "resources": {
           "vitality": 18
@@ -744,10 +744,10 @@
         "type": "Beast",
         "description": "A giant, disgusting cockroach that thrives in filth and darkness. Surprisingly resilient.",
         "stats": {
-          "Might": 2,
-          "Agility": 3,
-          "Mind": 1,
-          "Spirit": 1
+          "might": 2,
+          "agility": 3,
+          "mind": 1,
+          "spirit": 1
         },
         "resources": {
           "vitality": 12
@@ -765,10 +765,10 @@
         "type": "Construct",
         "description": "A bizarre, floating head with a metallic surface. When struck, it emits a deafening, disorienting clang.",
         "stats": {
-          "Might": 4,
-          "Agility": 2,
-          "Mind": 2,
-          "Spirit": 4
+          "might": 4,
+          "agility": 2,
+          "mind": 2,
+          "spirit": 4
         },
         "resources": {
           "vitality": 24
@@ -786,10 +786,10 @@
         "type": "Humanoid",
         "description": "A common highway robber looking for an easy score.",
         "stats": {
-          "Might": 3,
-          "Agility": 3,
-          "Mind": 2,
-          "Spirit": 2
+          "might": 3,
+          "agility": 3,
+          "mind": 2,
+          "spirit": 2
         },
         "resources": {
           "vitality": 13
@@ -807,10 +807,10 @@
         "type": "Humanoid",
         "description": "A new recruit to the Champions of Order, armed with a mace and zealous faith.",
         "stats": {
-          "Might": 3,
-          "Agility": 2,
-          "Mind": 3,
-          "Spirit": 4
+          "might": 3,
+          "agility": 2,
+          "mind": 3,
+          "spirit": 4
         },
         "resources": {
           "vitality": 23
@@ -828,10 +828,10 @@
         "type": "Humanoid",
         "description": "A mage-in-training from the Arcane Dominion, eager to test their unethical spells.",
         "stats": {
-          "Might": 2,
-          "Agility": 3,
-          "Mind": 5,
-          "Spirit": 3
+          "might": 2,
+          "agility": 3,
+          "mind": 5,
+          "spirit": 3
         },
         "resources": {
           "vitality": 22
@@ -849,10 +849,10 @@
         "type": "Monstrosity",
         "description": "A creature with the body of a bird and the head of a woman, whose enchanting song lures travelers to their doom.",
         "stats": {
-          "Might": 3,
-          "Agility": 5,
-          "Mind": 3,
-          "Spirit": 4
+          "might": 3,
+          "agility": 5,
+          "mind": 3,
+          "spirit": 4
         },
         "resources": {
           "vitality": 23
@@ -874,10 +874,10 @@
         "type": "Undead",
         "description": "The skeletal remains of a hunter, mindlessly firing arrows at any living thing it sees.",
         "stats": {
-          "Might": 2,
-          "Agility": 4,
-          "Mind": 1,
-          "Spirit": 2
+          "might": 2,
+          "agility": 4,
+          "mind": 1,
+          "spirit": 2
         },
         "resources": {
           "vitality": 12
@@ -895,10 +895,10 @@
         "type": "Beast",
         "description": "A massive bear that has adapted to life in the dark, with a powerful sense of smell and a ferocious temper.",
         "stats": {
-          "Might": 6,
-          "Agility": 3,
-          "Mind": 2,
-          "Spirit": 3
+          "might": 6,
+          "agility": 3,
+          "mind": 2,
+          "spirit": 3
         },
         "resources": {
           "vitality": 31
@@ -916,10 +916,10 @@
         "type": "Beast",
         "description": "A wild boar with tusks as sharp as daggers.",
         "stats": {
-          "Might": 4,
-          "Agility": 3,
-          "Mind": 1,
-          "Spirit": 2
+          "might": 4,
+          "agility": 3,
+          "mind": 1,
+          "spirit": 2
         },
         "resources": {
           "vitality": 14
@@ -937,10 +937,10 @@
         "type": "Beast",
         "description": "A wasp the size of a dog with a painful, venomous sting.",
         "stats": {
-          "Might": 2,
-          "Agility": 5,
-          "Mind": 1,
-          "Spirit": 2
+          "might": 2,
+          "agility": 5,
+          "mind": 1,
+          "spirit": 2
         },
         "resources": {
           "vitality": 17
@@ -958,10 +958,10 @@
         "type": "Beast",
         "description": "A snake with scales as hard as stone, capable of constricting with immense force.",
         "stats": {
-          "Might": 5,
-          "Agility": 3,
-          "Mind": 2,
-          "Spirit": 3
+          "might": 5,
+          "agility": 3,
+          "mind": 2,
+          "spirit": 3
         },
         "resources": {
           "vitality": 30
@@ -979,10 +979,10 @@
         "type": "Undead",
         "description": "A monstrous form of ghoul that prefers to feast on the already dead, but will attack if its meal is disturbed.",
         "stats": {
-          "Might": 4,
-          "Agility": 4,
-          "Mind": 1,
-          "Spirit": 2
+          "might": 4,
+          "agility": 4,
+          "mind": 1,
+          "spirit": 2
         },
         "resources": {
           "vitality": 19
@@ -1000,10 +1000,10 @@
         "type": "Plant",
         "description": "A wise-looking nut person who can channel the magic of the forest.",
         "stats": {
-          "Might": 1,
-          "Agility": 3,
-          "Mind": 4,
-          "Spirit": 3
+          "might": 1,
+          "agility": 3,
+          "mind": 4,
+          "spirit": 3
         },
         "resources": {
           "vitality": 16
@@ -1021,10 +1021,10 @@
         "type": "Plant",
         "description": "A nut person armed with a bow made from a bent twig.",
         "stats": {
-          "Might": 2,
-          "Agility": 4,
-          "Mind": 3,
-          "Spirit": 2
+          "might": 2,
+          "agility": 4,
+          "mind": 3,
+          "spirit": 2
         },
         "resources": {
           "vitality": 17
@@ -1042,10 +1042,10 @@
         "type": "Beast",
         "description": "A wolf native to the Glacial Maw, with a coat of pure white and breath that mists with cold.",
         "stats": {
-          "Might": 4,
-          "Agility": 5,
-          "Mind": 3,
-          "Spirit": 3
+          "might": 4,
+          "agility": 5,
+          "mind": 3,
+          "spirit": 3
         },
         "resources": {
           "vitality": 24
@@ -1063,10 +1063,10 @@
         "type": "Humanoid",
         "description": "A powerful lizard-like warrior from Stonegard who fights with their bare fists.",
         "stats": {
-          "Might": 6,
-          "Agility": 3,
-          "Mind": 2,
-          "Spirit": 3
+          "might": 6,
+          "agility": 3,
+          "mind": 2,
+          "spirit": 3
         },
         "resources": {
           "vitality": 26
@@ -1084,10 +1084,10 @@
         "type": "Fiend",
         "description": "A monstrous dog wreathed in flames that hunts for souls.",
         "stats": {
-          "Might": 5,
-          "Agility": 5,
-          "Mind": 3,
-          "Spirit": 3
+          "might": 5,
+          "agility": 5,
+          "mind": 3,
+          "spirit": 3
         },
         "resources": {
           "vitality": 30
@@ -1105,10 +1105,10 @@
         "type": "Undead",
         "description": "A massive undead worm that burrows through graveyards, consuming corpses and growing ever larger.",
         "stats": {
-          "Might": 5,
-          "Agility": 2,
-          "Mind": 1,
-          "Spirit": 2
+          "might": 5,
+          "agility": 2,
+          "mind": 1,
+          "spirit": 2
         },
         "resources": {
           "vitality": 30
