@@ -1,0 +1,176 @@
+{
+  "lineage_name": "Ice",
+  "description": "Dual paths of freezing control (Glacier) and shattering offense (Avalanche).",
+  "abilities": [
+    {
+      "name": "Ice Veil",
+      "playstyle": "Glacier",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "+2 to resist attacks for 1 round.",
+      "check": "Essence + Level vs. DC 11",
+      "bloodburn": "-2 Agility",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Frost Lance",
+      "playstyle": "Avalanche",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Hurl a lance of ice dealing 1d10 cold damage and slowing the target.",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-2 Mind",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Frost Armor",
+      "playstyle": "Glacier",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "As a bonus action, coat your armor in frost. The next time you are hit with a melee attack, the attacker takes 1d6 cold damage.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Ice Shard",
+      "playstyle": "Avalanche",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Hurl a shard of magical ice, dealing 1d8 cold damage. This ability has a lower DC.",
+      "check": "Essence + Level vs. DC 10",
+      "bloodburn": "-1 Agility",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Chilling Touch",
+      "playstyle": "Avalanche",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Touch a creature. They must make a Might DC 12 check or have their movement speed halved for their next turn.",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-1 Spirit",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Frozen Ground",
+      "playstyle": "Glacier",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "As a bonus action, freeze the 5-foot square you are standing on. It is difficult terrain for enemies, and you gain +2 to resist being moved.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Shatter",
+      "playstyle": "Avalanche",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Target a frozen or slowed enemy, dealing 2d6 physical damage and ending the effect.",
+      "check": "Essence + Level vs. DC 13",
+      "bloodburn": "-2 Might",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Hoarfrost",
+      "playstyle": "Glacier",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Cover a 15-foot square in slick ice. It is difficult terrain, and creatures entering must make an Agility DC 12 check or fall prone.",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-2 Agility",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Hailstones",
+      "playstyle": "Avalanche",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Pelt a 15-foot radius area with magical hailstones, dealing 2d8 cold damage to all creatures.",
+      "check": "Essence + Level vs. DC 13",
+      "bloodburn": "-2 Mind",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Rime Veil",
+      "playstyle": "Glacier",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Enhances Ice Veil. While Ice Veil is active, you also gain resistance to Fire damage.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": "N/A"
+    },
+    {
+      "name": "Glacial Wall",
+      "playstyle": "Glacier",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Raise a 5-foot-high, 15-foot-long wall of solid ice. The wall provides cover and has 20 Vitality.",
+      "check": "Essence + Level vs. DC 13",
+      "bloodburn": "-2 Might",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Frozen Prison",
+      "playstyle": "Glacier",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Encase a single target in ice. The target must make a Might DC 14 check or become 'Incapacitated' for up to 3 rounds, re-attempting the check each turn.",
+      "check": "Essence + Level vs. DC 14",
+      "bloodburn": "-3 Spirit",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Avalanche",
+      "playstyle": "Avalanche",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Enhances Shatter. When you use Shatter to defeat an enemy, creatures adjacent to the target take half of the damage dealt.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": "N/A"
+    },
+    {
+      "name": "Absolute Zero",
+      "playstyle": "Glacier",
+      "rank": "Master",
+      "level_requirement": 15,
+      "effect": "Drastically lower the temperature in a 30-foot radius. Enemies have their movement speed reduced to 0 and have disadvantage on Agility checks for 2 rounds.",
+      "check": "Essence + Level vs. DC 16",
+      "bloodburn": "-3 Mind",
+      "resolve_cost": 15
+    },
+    {
+      "name": "Blizzard",
+      "playstyle": "Avalanche",
+      "rank": "Master",
+      "level_requirement": 15,
+      "effect": "Create a 25-foot radius storm of ice and snow for 3 rounds. The area is heavily obscured. Deals 3d10 initial cold damage, then 2d10 cold damage to enemies who start their turn inside.",
+      "check": "Essence + Level vs. DC 16",
+      "bloodburn": "-3 Spirit",
+      "resolve_cost": 15
+    },
+    {
+      "name": "Glacial Tomb",
+      "playstyle": "Glacier",
+      "rank": "Archon",
+      "level_requirement": 20,
+      "effect": "Entomb one creature in impenetrable ice for up to 1 minute. The creature is 'Incapacitated' and cannot be targeted or damaged. Usable once per day.",
+      "check": "Essence + Level vs. DC 18",
+      "bloodburn": "-4 Essence",
+      "resolve_cost": 20
+    },
+    {
+      "name": "Comet",
+      "playstyle": "Avalanche",
+      "rank": "Archon",
+      "level_requirement": 20,
+      "effect": "Summon a comet of ice to crash down, dealing 6d12 cold damage to all creatures in a 20-foot radius. The area becomes difficult terrain. Usable once per day.",
+      "check": "Essence + Level vs. DC 18",
+      "bloodburn": "-4 Essence",
+      "resolve_cost": 20
+    }
+  ]
+}
