@@ -27,42 +27,6 @@
     ],
     "chosen_playstyle": "Path of the Shepherd"
   },
-  "current_status": {
-    "age": 19,
-    "level": 1,
-    "current_resources": {
-      "vitality": 14,
-      "resolve": 22
-    },
-    "insight_points": {
-      "current": 0,
-      "spent": 0,
-      "total_earned": 0
-    },
-    "inventory": {
-      "equipped": [
-        "Staff",
-        "Gambeson"
-      ],
-      "unequipped": []
-    },
-    "active_effects": [],
-    "stats": {
-      "Might": 2,
-      "Agility": 3,
-      "Mind": 5,
-      "Spirit": 6
-    },
-    "skills": {
-      "Lore": 3,
-      "Arcana": 4,
-      "Diplomacy": 4,
-      "Survival": 1
-    },
-    "bond_level": 1,
-    "bond_points": "0/5",
-    "is_awakened": false
-  },
   "playstyles": [
     {
       "path_name": "Path of the Shepherd",
@@ -139,7 +103,7 @@
         }
       ]
     },
-    "path_of_the_zealot": {
+    {
       "path_name": "Path of the Zealot",
       "description": "This path focuses on Selra's fervent faith, allowing her to smite foes with divine magic and act as a front-line holy warrior.",
       "abilities": [
@@ -206,5 +170,5 @@
         }
       ]
     }
-  }
+  ]
 }
