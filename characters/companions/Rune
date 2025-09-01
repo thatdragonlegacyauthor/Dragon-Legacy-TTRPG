@@ -129,7 +129,7 @@
         }
       ]
     },
-    "path_of_the_engineer": {
+    {
       "path_name": "Path of the Engineer",
       "description": "This path focuses on Rune's forgotten intellect, allowing it to use its arcane knowledge to support allies and manipulate the battlefield.",
       "abilities": [
