@@ -28,42 +28,39 @@
     "chosen_playstyle": "Path of the Shepherd"
   },
   "current_status": {
-    "level": 2,
+    "age": 19,
+    "level": 1,
     "current_resources": {
-      "vitality": 24,
-      "resolve": 23
+      "vitality": 14,
+      "resolve": 22
     },
     "insight_points": {
-      "current": 1,
-      "spent": 9,
-      "total_earned": 10
+      "current": 0,
+      "spent": 0,
+      "total_earned": 0
     },
     "inventory": {
       "equipped": [
-        "Aegis Staff",
-        "Leather Armor",
-        "Sunken King's Crown",
-        "Aegis of the Elder Wyrm"
+        "Staff",
+        "Gambeson"
       ],
-      "unequipped": [
-        "Glyphs for spells"
-      ]
+      "unequipped": []
     },
     "active_effects": [],
     "stats": {
       "Might": 2,
       "Agility": 3,
       "Mind": 5,
-      "Spirit": 9
+      "Spirit": 6
     },
     "skills": {
-      "Lore": 5,
-      "Arcana": 5,
+      "Lore": 3,
+      "Arcana": 4,
       "Diplomacy": 4,
-      "Survival": 2
+      "Survival": 1
     },
-    "bond_level": 2,
-    "bond_points": "8/10",
+    "bond_level": 1,
+    "bond_points": "0/5",
     "is_awakened": false
   },
   "playstyles": [
