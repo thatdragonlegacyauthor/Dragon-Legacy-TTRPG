@@ -95,7 +95,7 @@
         }
       ]
     },
-    "path_of_the_grove": {
+    {
       "path_name": "Path of the Grove",
       "description": "This path is inspired by Spar's connection to nature and support magic. It focuses on healing, restorative abilities, and powerful utility through the manipulation of plant life.",
       "abilities": [
