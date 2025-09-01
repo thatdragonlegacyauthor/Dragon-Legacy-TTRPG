@@ -95,6 +95,73 @@
           ]
         }
       ]
+    },
+    {
+      "path_name": "Path of the Betrayed Blade",
+      "description": "This path focuses on the martial prowess Garrick possessed in life as a Champion of Order, now twisted by his wraith-like state. It emphasizes ghostly swordplay, tactical positioning, and punishing enemies for their mistakes, turning him into a spectral duelist.",
+      "abilities": [
+        {
+          "tier": "Novice (Level 1+)",
+          "talents": [
+            {
+              "name": "Spectral Parry (Reaction)",
+              "effect": "When an enemy targets you with a melee attack, you can use your Reaction to impose a -2 penalty on their attack roll."
+            },
+            {
+              "name": "Champion's Focus",
+              "effect": "As a bonus action, you analyze an enemy's defenses. Your next attack roll against that target before the end of your turn is made with Advantage."
+            }
+          ]
+        },
+        {
+          "tier": "Adept (Level 5+)",
+          "talents": [
+            {
+              "name": "Incorporeal Feint",
+              "effect": "As a bonus action, you can feint an attack, forcing an enemy within 5 feet to make a Mind DC 13 check. On a failure, their next attack roll has a -2 penalty, and your next attack against them has a +2 bonus. This costs 5 Resolve."
+            },
+            {
+              "name": "Blade Dance (Passive)",
+              "effect": "When you hit a creature with a melee attack, your movement does not provoke an Attack of Opportunity from that creature for the rest of your turn."
+            }
+          ]
+        },
+        {
+          "tier": "Expert (Level 10+)",
+          "talents": [
+            {
+              "name": "Executioner's Strike",
+              "effect": "As a major action, you make a single melee attack against a creature suffering from a negative status effect (e.g., Frightened, Poisoned, Stunned). This attack deals an additional 2d10 necrotic damage. This costs 10 Resolve."
+            },
+            {
+              "name": "Vengeful Riposte (Modifies Spectral Parry)",
+              "effect": "When you successfully use Spectral Parry to cause an enemy's attack to miss, you can immediately make one melee attack against them as part of the same Reaction."
+            }
+          ]
+        },
+        {
+          "tier": "Master (Level 15+)",
+          "talents": [
+            {
+              "name": "Order's Downfall",
+              "effect": "As a major action, you make a single, precise strike against an enemy. This attack ignores all non-magical Damage Reduction. This costs 15 Resolve."
+            },
+            {
+              "name": "Phase Shift (Reaction)",
+              "effect": "Once per combat, when you would take damage from an attack, you can use your Reaction to become incorporeal for a moment, taking no damage from that attack."
+            }
+          ]
+        },
+        {
+          "tier": "Archon (Level 20)",
+          "talents": [
+            {
+              "name": "Duelist's Requiem (Ultimate)",
+              "effect": "As a major action, you can mark a single enemy as your sworn foe for 1 minute. For the duration, all of your attacks against that target deal an additional 1d12 necrotic damage, and the target's attack rolls against you are made with Disadvantage. This can only be used once per day and costs 20 Resolve."
+            }
+          ]
+        }
+      ]
     }
   ]
 }
