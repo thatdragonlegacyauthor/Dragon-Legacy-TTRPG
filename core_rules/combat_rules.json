@@ -110,7 +110,7 @@
     "weapon_properties": [
       {
         "name": "Finesse",
-        "description": "When making an attack with a finesse weapon, you can choose to use your Agility attribute instead of your Might attribute for the attack and damage roll."
+        "description": "When making an attack with this weapon, you can choose to use your Agility attribute instead of your Might attribute for the attack and damage roll."
       },
       {
         "name": "Versatile",
@@ -118,7 +118,75 @@
       },
       {
         "name": "Heavy",
-        "description": "A large weapon is larger and requires two hands to use. Characters with a Might score below 3 have a -2 penalty on attack rolls with a heavy weapon."
+        "description": "This weapon is larger and requires two hands to use. Characters with a Might score below 3 have a -2 penalty on attack rolls with a heavy weapon."
+      },
+      {
+        "name": "Sunder",
+        "description": "Attacks with this weapon reduce a target's Damage Reduction by 2 for 1 round."
+      },
+      {
+        "name": "Bleed",
+        "description": "On a critical hit with this weapon, the target gains the 'Bleeding' status effect."
+      },
+      {
+        "name": "Momentum",
+        "description": "If you move at least 15 feet in a straight line before making an attack with this weapon, you gain a +2 bonus to the damage roll."
+      },
+      {
+        "name": "Relentless",
+        "description": "When you defeat an enemy with this weapon, you can immediately use a bonus action to move up to 10 feet."
+      },
+      {
+        "name": "Concussive",
+        "description": "On a successful hit with this weapon, the target must make a Might check (DC 13) or be pushed back 5 feet."
+      },
+      {
+        "name": "Grapple",
+        "description": "On a successful hit with this weapon, you can choose to forgo damage to attempt to Grapple the target as a bonus action."
+      },
+      {
+        "name": "Disarm",
+        "description": "When you critically hit with this weapon, the target must make a Might check or drop one item they are holding."
+      },
+      {
+        "name": "Returning",
+        "description": "If this weapon is thrown, it automatically returns to the wielder's hand at the end of the turn."
+      },
+      {
+        "name": "Point-Blank",
+        "description": "This ranged weapon does not have disadvantage on attack rolls when used within 5 feet of an enemy."
+      },
+      {
+        "name": "Siege",
+        "description": "This weapon deals double damage to objects, structures, and constructs."
+      },
+      {
+        "name": "Reach",
+        "description": "Allows the wielder to make melee attacks against targets up to 10 feet away."
+      },
+      {
+        "name": "Paired",
+        "description": "If you are wielding two of these weapons, you can add your Agility modifier to the damage of the second attack."
+      },
+      {
+        "name": "Channel",
+        "description": "When you hit a creature with this weapon, you can use a bonus action to cast a cantrip or a Novice-tier ability."
+      },
+      {
+        "name": "Rally",
+        "description": "When you score a critical hit with this weapon, one ally within 15 feet of you gains temporary Vitality equal to your Spirit attribute."
+      },
+      {
+        "name": "Overwhelm",
+        "description": "When you make an attack with this weapon, you can choose to take a -2 penalty to the attack roll. If the attack hits, the target has a -2 penalty to their next defensive roll."
+      },
+      {
+        "name": "Execute",
+        "description": "This weapon deals an additional 1d8 damage against any creature that is suffering from a negative status effect."
+      },
+      {
+        "name": "Improvised",
+        "description": "This weapon can be thrown using the `Martial (Agility)` profile (Range 20/60). It is not designed for throwing and may be damaged or lost."
       }
     ]
   }
