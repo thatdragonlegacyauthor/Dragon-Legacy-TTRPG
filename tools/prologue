@@ -2,6 +2,104 @@
   "prologue": {
     "title": "The Festival of First Flames",
     "description": "The hero's journey begins in the tranquil village of Windmark, but is shattered by a sudden, violent attack that awakens Rya's latent draconic power and sets the party on a path of survival and self-discovery.",
+    "new_game_protocol": {
+      "title": "Protocol for initiating a new campaign from the prologue.",
+      "instructions": [
+        "1. Full System Reset: Erase all current 'party_status' and 'campaign_state' data.",
+        "2. Run Character Generation: Guide the player through creating the hero, Rya, using the rules from Core_Rules/Core_System.txt.",
+        "3. Initialize Party Status: Create a new campaign_state/Party_Status.txt file using the new_game_party_status_template.",
+        "4. Initialize Campaign State: Create a new campaign_state/Campaign_State.txt file using the new_game_campaign_state_template.",
+        "5. Begin Prologue: Start the Primary_Game_Loop with the newly generated files, following the 'prologue_guiding_stones' chronologically."
+      ],
+      "new_game_campaign_state_template": {
+        "last_updated": null,
+        "session_number": 0,
+        "current_location": "Windmark Village",
+        "party_power_level": 1,
+        "active_prompt": "The annual Festival of First Flames is only a few days away... What do you do?",
+        "world_history": {
+          "chronicle": "Rya and Zael are youths living under the care of Elder Elara in the peaceful hamlet of Windmark Village...",
+          "guiding_stones": [
+            {
+              "part": 1,
+              "name": "A Simple Errand"
+            }
+          ]
+        },
+        "quests": {
+          "active_quests": [
+            {
+              "name": "A Simple Errand",
+              "type": "Prologue Quest",
+              "description": "Elder Elara has asked Rya and Zael to find a Sun-Kissed Petal..."
+            }
+          ],
+          "completed_quests": []
+        },
+        "world_flags": {
+          "windmark_destroyed": false
+        }
+      },
+      "new_game_party_status_template": [
+        {
+          "name": "Rya",
+          "age": 14,
+          "level": 1,
+          "unlocked_aspects": [],
+          "aspect_abilities": [],
+          "current_resources": {
+            "vitality": 35,
+            "resolve": 25,
+            "legacy_points": 3
+          },
+          "insight_points": {
+            "current": 0,
+            "spent": 0,
+            "total_earned": 0
+          },
+          "inventory": {
+            "equipped": [],
+            "unequipped": [
+              "Adventurer's kit",
+              "Sword"
+            ]
+          },
+          "stats": {
+            "Might": 3,
+            "Agility": 3,
+            "Mind": 3,
+            "Spirit": 3,
+            "Essence": 3
+          },
+          "skills": {
+            "Combat": 2,
+            "Lore": 2,
+            "Athletics": 2,
+            "Survival": 2,
+            "Arcana": 2,
+            "Stealth": 2,
+            "Diplomacy": 2
+          },
+          "abilities": []
+        },
+        {
+          "name": "Zael",
+          "age": 15,
+          "level": 1,
+          "unlocked_aspects": [],
+          "aspect_abilities": [],
+          "abilities": []
+        },
+        {
+          "name": "Selra",
+          "age": 19,
+          "level": 1,
+          "unlocked_aspects": [],
+          "aspect_abilities": [],
+          "abilities": []
+        }
+      ]
+    },
     "chapters": [
       {
         "part": 1,
