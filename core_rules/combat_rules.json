@@ -1,5 +1,39 @@
 {
   "combat_rules": {
+    "attack_roll_profiles": [
+      {
+        "name": "Martial (Might)",
+        "formula": "1d10 + Might + Combat Skill"
+      },
+      {
+        "name": "Martial (Agility)",
+        "formula": "1d10 + Agility + Athletics Skill"
+      },
+      {
+        "name": "Mystic (Mind)",
+        "formula": "1d10 + Mind + Arcana Skill"
+      },
+      {
+        "name": "Mystic (Spirit)",
+        "formula": "1d10 + Spirit + Arcana Skill"
+      },
+      {
+        "name": "Survivor",
+        "formula": "1d10 + Mind + Survival Skill"
+      },
+      {
+        "name": "Assassin",
+        "formula": "1d10 + Agility + Stealth Skill"
+      },
+      {
+        "name": "Enforcer",
+        "formula": "1d10 + Might + Diplomacy (Intimidation) Skill"
+      },
+      {
+        "name": "Protector",
+        "formula": "1d10 + Spirit + Empathy Skill"
+      }
+    ],
     "initiative_system": {
       "name": "Streamlined Initiative",
       "setup": "At the beginning of a combat encounter, each combatant declares their stance. Then, each character rolls a d10 and adds their Agility attribute. The results are sorted from highest to lowest to create the initiative queue. Ties are resolved by the combatant with the highest Agility score."
@@ -47,7 +81,7 @@
     },
     "unified_defense_roll": {
       "description": "When a creature is targeted by a physical attack, the attacker and defender make opposed rolls.",
-      "attack_roll": "1d10 + Attack Attribute + Combat Skill. The Attack Attribute is determined by the weapon (Might for heavy, Agility for light).",
+      "attack_roll": "Determined by the weapon's 'attack_profile' property. See 'attack_roll_profiles' for formulas.",
       "defense_roll": {
         "might_based": "If Might >= Agility: 1d10 + Might + Combat Skill. (Flavor: Block/Parry)",
         "agility_based": "If Agility > Might: 1d10 + Agility + Athletics Skill. (Flavor: Dodge/Weave)"
