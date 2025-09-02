@@ -1,75 +1,23 @@
 {
   "campaign_state": {
-    "last_updated": "2025-08-31T17:06:27-08:00",
-    "session_number": 19,
-    "current_location": "The Shattered Lands",
-    "party_power_level": 7,
-    "active_prompt": "Having attuned to the Void and calmed the whispers in Zael's mind, you have emerged from the chasm into the desolate expanse of the Shattered Lands. The air is heavy with dust and chaotic magic, and the horizon shimmers with an unnatural haze. Your immediate goal is complete, but the larger threats of the Champions of Order and the Arcane Dominion still loom. What is your next move?",
+    "last_updated": null,
+    "session_number": null,
+    "current_location": null,
+    "party_power_level": null,
+    "active_prompt": null,
     "world_history": {
-      "chronicle": "The party's journey began in Windmark Village, which was destroyed by the Champions of Order, leading to the death of Elder Elara and forcing Rya, Zael, and the newly met Selra to flee into the Whispering Woods. They found sanctuary in Tanglewood Reach, eventually cleansing the forest's corruption by defeating the Gloomwood Heart. Their path then led them to Wyndia for the first time, an expedition that ended in a chaotic escape. During the escape, Rya's Earth lineage was violently awakened, but Zael was captured and left behind. After earning the trust of the Stonekin, they mounted a second, successful rescue mission to Wyndia, freeing Zael from the Elysian Grand Cathedral's detention block. Their quest for power led them to the Void Chasm, where Rya successfully attuned to the Void lineage, a process which had the unexpected side effect of silencing the chaotic whispers that had been plaguing Zael's mind. They now stand at the edge of the Shattered Lands, their purpose solidified."
+      "chronicle": null
     },
     "quests": {
-      "active_quests": [
-        {
-          "name": "A Dragon's Legacy",
-          "type": "Main Narrative Quest",
-          "description": "Grand Inquisitor Valerius and the Champions of Order are a looming threat. The party must find a way to counter their growing influence, uncover the truth of the Shattering, and protect Rya from being captured."
-        },
-        {
-          "name": "The Nature of the Void",
-          "type": "Companion Quest (Zael)",
-          "description": "The whispers in Zael's mind have been silenced by Rya's attunement, but he now knows the Void itself is not evil. He is determined to discover what force is corrupting its pure energy and to learn the truth of his own origins."
-        },
-        {
-          "name": "Selra's Faith",
-          "type": "Companion Quest (Selra)",
-          "description": "After witnessing the events in the Void Chasm and Rya's challenge to her beliefs, Selra is deeply conflicted. She must reconcile the goodness of her faith with the cruel actions of the Champions of Order and decide where her true loyalties lie."
-        }
-      ],
-      "completed_quests": [
-        {
-          "name": "The Sun-Kissed Petal",
-          "description": "Retrieved the petal for Elder Elara."
-        },
-        {
-          "name": "A Light in the Woods",
-          "description": "Defeated the Gloomwood Heart and restored balance to the Whispering Woods."
-        },
-        {
-          "name": "The Crystal-back Crawler",
-          "description": "Killed the beast in the Gemstone Crevice to earn the trust of the Stonekin."
-        },
-        {
-          "name": "Bones of the Past",
-          "description": "Retrieved a sacred dragon bone from the Dragon's Graveyard for the Stonekin smith."
-        },
-        {
-          "name": "The Gonghead's Toll",
-          "description": "Defeated the Gonghead terrorizing the path through the Shattered Lands."
-        },
-        {
-          "name": "Zael's Rescue",
-          "description": "Successfully infiltrated the Elysian Grand Cathedral and rescued Zael."
-        },
-        {
-          "name": "Heart of the Void",
-          "description": "Rya successfully navigated the Void Chasm and attuned to the Void draconic lineage."
-        }
-      ]
+      "active_quests": [],
+      "completed_quests": []
     },
-    "world_flags": {
-      "windmark_destroyed": true,
-      "zael_rescued": true,
-      "stonekin_trust_earned": true,
-      "elysia_influence_level": 3,
-      "rya_attuned_void": true,
-      "selra_faith_challenged": true
-    },
+    "world_flags": {},
     "maps": {
       "world_map": {
-        "name": "Eryndor",
-        "description": "A comprehensive, text-based map of the known world.",
-        "content": "                                      ▲ Glacial Maw (Frostfang Den)\n                                      |\n                                      |\n▲ Sky-Reach Aerie --- ▲ Mount Dragnor --- The Shattered Lands --- The Void Chasm\n(Skyveil People)    | (Fire Temple)     | (Ruined Citadel)    (Zael's Lineage)\n        |           |                   |                     /\n        |           |                   |                    /\n Wyndia ----- Stonegard --------- Dragon's Graveyard --------\n(Ember Concord) | (Scalebound Clans)    (Earth Lineage)\n           |           |\n           |---- Stonekin Outpost\n           |\n      Port Myria --- The Azure Steppes --- Whispering Woods --- Tanglewood Reach\n(Ember Concord) | (Windmark Village)      (Gloomwood Heart)\n                |\n                |----------------------- The Well of Souls\n                           |\n  Elysian Grand Cathedral --- Sunken City of Astora\n  (Champions of Order)       (Tide Lineage)"
+        "name": null,
+        "description": null,
+        "content": null
       }
     }
   }
