@@ -257,6 +257,46 @@
         ]
       },
       {
+        "file_name": "characters/draconic_abilities/chrono.json",
+        "purpose": "Details the abilities of the Chrono draconic lineage.",
+        "key_objects": [
+          "lineage_name",
+          "abilities"
+        ]
+      },
+      {
+        "file_name": "characters/draconic_abilities/cosmic.json",
+        "purpose": "Details the abilities of the Cosmic draconic lineage.",
+        "key_objects": [
+          "lineage_name",
+          "abilities"
+        ]
+      },
+      {
+        "file_name": "characters/draconic_abilities/duskveil.json",
+        "purpose": "Details the abilities of the Duskveil draconic lineage.",
+        "key_objects": [
+          "lineage_name",
+          "abilities"
+        ]
+      },
+      {
+        "file_name": "characters/draconic_abilities/metal.json",
+        "purpose": "Details the abilities of the Metal draconic lineage.",
+        "key_objects": [
+          "lineage_name",
+          "abilities"
+        ]
+      },
+      {
+        "file_name": "characters/draconic_abilities/psionic.json",
+        "purpose": "Details the abilities of the Psionic draconic lineage.",
+        "key_objects": [
+          "lineage_name",
+          "abilities"
+        ]
+      },
+      {
         "file_name": "characters/hero_template",
         "purpose": "The base template for the hero character, Rya.",
         "key_objects": [
@@ -282,6 +322,13 @@
         "purpose": "This file. Provides a manifest of all other core files in the project.",
         "key_objects": [
           "master_index"
+        ]
+      },
+      {
+        "file_name": "tools/newgame_prologue",
+        "purpose": "The protocol for starting a new game and running the prologue chapter.",
+        "key_objects": [
+          "newgame_prologue"
         ]
       },
       {
