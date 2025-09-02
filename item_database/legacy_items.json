@@ -4,26 +4,66 @@
       "name": "Dragon's Soul Brand",
       "type": "Sword",
       "rarity": "Legacy",
-      "description": "A blade forged around the heart of a Draconic Lord of Light who fell during the Dragonfall War. In its dormant state, it is a beautifully crafted sword of an unknown metal, but its true power is sealed within, waiting for a worthy heir.",
       "wielder": "Rya",
+      "description": "A blade forged around the heart of a Draconic Lord of Light. Its properties shift and change to match the draconic lineage of its wielder, making it a living extension of Rya's power.",
+      "attack_profile": "Dynamic (Based on Lineage Affinity)",
+      "lineage_affinities": [
+        {
+          "lineage": "Fire",
+          "attack_profile": "Martial (Might)",
+          "stat_boost": "+1 to Might"
+        },
+        {
+          "lineage": "Earth",
+          "attack_profile": "Martial (Might)",
+          "stat_boost": "+1 to Might"
+        },
+        {
+          "lineage": "Ice",
+          "attack_profile": "Martial (Agility)",
+          "stat_boost": "+1 to Agility"
+        },
+        {
+          "lineage": "Storm",
+          "attack_profile": "Martial (Agility)",
+          "stat_boost": "+1 to Agility"
+        },
+        {
+          "lineage": "Tide",
+          "attack_profile": "Mystic (Spirit)",
+          "stat_boost": "+1 to Spirit"
+        },
+        {
+          "lineage": "Light",
+          "attack_profile": "Mystic (Spirit)",
+          "stat_boost": "+1 to Spirit"
+        },
+        {
+          "lineage": "Duskveil",
+          "attack_profile": "Mystic (Mind)",
+          "stat_boost": "+1 to Mind"
+        },
+        {
+          "lineage": "Psionic",
+          "attack_profile": "Mystic (Mind)",
+          "stat_boost": "+1 to Mind"
+        }
+      ],
       "progression": [
         {
           "state": "Dormant (Acquired)",
           "unlock_condition": "Found in the Dragon's Graveyard after completing a trial of the Scalebound Clans. Rya must be Level 10 or higher to begin this trial.",
-          "effect": "A powerful magical sword that deals 2d8 physical damage. Grants a +1 bonus to the Essence attribute."
+          "effect": "A powerful magical sword that deals 2d8 physical damage. Grants a +1 bonus to the Essence attribute. The 'lineage_affinities' are now active."
         },
         {
           "state": "Awakened",
           "unlock_condition": "Master the Kaiser Manifestation for the first time.",
-          "effect": "The sword's damage increases to 2d10 physical damage. It now also deals an additional 1d8 elemental damage, with the element matching Rya's most recently used Draconic Aspect (Fire, Earth, Void, etc.). Grants a +2 bonus to the Essence attribute."
+          "effect": "The sword's damage increases to 2d10 physical damage. It now also deals an additional 1d8 elemental damage, with the element matching Rya's most recently used Draconic Aspect (Fire, Earth, Void, etc.). The bonus to Essence increases to +2, and all 'lineage_affinities' now grant a +2 bonus to their respective stat."
         },
         {
           "state": "Ascended",
           "unlock_condition": "Confront the truth of the Shattering and accept the full weight of the draconic legacy.",
-          "effect": "The sword's damage becomes 2d12 physical and 1d10 elemental. Grants a +3 bonus to the Essence attribute. Unlocks the 'Primal Echo' ability: Once per day, as a major action, Rya can unleash a 30-foot cone of pure energy from the blade, dealing 6d10 damage."
-        }
-      ]
-    },
+          "effect": "The sword's damage becomes 2d12 physical and 1d10 elemental. The bonus to Essence increases to +3, and all 'lineage_affinities' now grant a +3 bonus to their respective stat. Unlocks the 'Primal Echo' ability: Once per day, as a major action, Rya can unleash a 30-foot cone of pure energy from the blade, dealing 6d10 damage."
     {
       "name": "Whispering Parallax",
       "type": "Dagger",
