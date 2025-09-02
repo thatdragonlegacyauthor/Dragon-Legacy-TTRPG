@@ -1,0 +1,126 @@
+{
+  "lineage_name": "Psionic",
+  "description": "Dual paths of mental offense (Telekinesis) and mind manipulation (Clairvoyance).",
+  "abilities": [
+    {
+      "name": "Mental Strike",
+      "playstyle": "Telekinesis",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "A bolt of pure thought deals 1d10 psychic damage to a single target.",
+      "check": "Essence + Level vs. DC 11",
+      "bloodburn": "-2 Might",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Psychic Wall",
+      "playstyle": "Clairvoyance",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Create a 15-foot long, 5-foot high psychic wall. The wall provides half cover and creatures who pass through it must make a Mind DC 12 check or take 1d4 psychic damage.",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-2 Mind",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Mental Shield",
+      "playstyle": "Clairvoyance",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "As a bonus action, you can grant yourself or an adjacent ally a temporary shield that absorbs up to 5 psychic damage.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Psionic Push",
+      "playstyle": "Telekinesis",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "As a bonus action after a successful attack, you can push a target up to 5 feet away.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Crush",
+      "playstyle": "Telekinesis",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Target a single creature. They take 2d8 psychic damage. This ability ignores all armor and magical defenses. This costs 5 Resolve.",
+      "check": "Essence + Level vs. DC 13",
+      "bloodburn": "-2 Might",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Mind Reading",
+      "playstyle": "Clairvoyance",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "As a major action, you can touch a creature and read its surface thoughts. This lasts for 1 round. This costs 5 Resolve.",
+      "check": "Essence + Level vs. DC 13",
+      "bloodburn": "-2 Mind",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Mental Storm",
+      "playstyle": "Telekinesis",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Unleash a wave of psionic energy in a 20-foot radius. All enemies in the area take 3d10 psychic damage and must make a Mind DC 14 check or be Stunned for 1 round. This costs 10 Resolve.",
+      "check": "Essence + Level vs. DC 15",
+      "bloodburn": "-3 Might",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Telekinesis",
+      "playstyle": "Clairvoyance",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "As a major action, you can lift or move an object up to 500 lbs within 30 feet. This lasts for 3 rounds. This costs 10 Resolve.",
+      "check": "Essence + Level vs. DC 14",
+      "bloodburn": "-3 Mind",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Mind Blast",
+      "playstyle": "Telekinesis",
+      "rank": "Master",
+      "level_requirement": 15,
+      "effect": "Unleash a devastating psychic blast in a 30-foot cone. Enemies in the area take 4d10 psychic damage and are knocked prone. This costs 15 Resolve.",
+      "check": "Essence + Level vs. DC 16",
+      "bloodburn": "-3 Might",
+      "resolve_cost": 15
+    },
+    {
+      "name": "Mind Control",
+      "playstyle": "Clairvoyance",
+      "rank": "Master",
+      "level_requirement": 15,
+      "effect": "You can possess a single humanoid target. They must make a Spirit DC 16 check or you control their next turn. This can only be attempted once per creature per combat. This costs 15 Resolve.",
+      "check": "Essence + Level vs. DC 16",
+      "bloodburn": "-3 Mind",
+      "resolve_cost": 15
+    },
+    {
+      "name": "Erase Mind",
+      "playstyle": "Telekinesis",
+      "rank": "Archon",
+      "level_requirement": 20,
+      "effect": "You can erase a single creature's memory of the last 10 minutes. The creature is completely disoriented and unable to fight for 1 round. This can only be used once per day.",
+      "check": "Essence + Level vs. DC 18",
+      "bloodburn": "-4 Essence",
+      "resolve_cost": 20
+    },
+    {
+      "name": "Psionic Prison",
+      "playstyle": "Clairvoyance",
+      "rank": "Archon",
+      "level_requirement": 20,
+      "effect": "You create a prison of pure thought around a single enemy. The enemy is trapped and cannot act or move for 3 rounds. This can only be used once per day.",
+      "check": "Essence + Level vs. DC 18",
+      "bloodburn": "-4 Essence",
+      "resolve_cost": 20
+    }
+  ]
+}
