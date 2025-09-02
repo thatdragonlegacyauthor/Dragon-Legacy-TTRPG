@@ -8,7 +8,7 @@
   "weapon_proficiency": {
     "favored_types": [
       "Dagger",
-      "Sword"
+      "Runeblade"
     ],
     "bonus_effect": "+1 to Attack Rolls with favored weapon types.",
     "penalty_effect": "-2 to Attack Rolls with non-favored weapon types."
@@ -26,7 +26,7 @@
       "Lore"
     ],
     "chosen_playstyle": "Path of the Void-Touched (Pre-Awakening)"
-  },
+  }
   "playstyles": [
     {
       "path_name": "Path of the Void-Touched (Pre-Awakening)",
