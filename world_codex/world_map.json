@@ -12,19 +12,31 @@
             "target_id": "WHISPERING_WOODS_ENTRANCE",
             "travel_days": 3,
             "terrain": "Forest Edge",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 40, "skill_challenge": 40, "rp_encounter": 20 }
+            }
           },
           {
-            "target_id": "PORT_MYRIA",
-            "travel_days": 6,
+            "target_id": "SILENT_FIELDS",
+            "travel_days": 3,
             "terrain": "Coastal Plains",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "Low",
+              "types": { "combat": 10, "skill_challenge": 50, "rp_encounter": 40 }
+            }
           },
           {
             "target_id": "WELL_OF_SOULS",
             "travel_days": 2,
             "terrain": "Plains",
-            "is_hidden": true
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "Low",
+              "types": { "combat": 10, "skill_challenge": 40, "rp_encounter": 50 }
+            }
           }
         ]
       },
@@ -39,7 +51,11 @@
             "target_id": "WINDMARK_VILLAGE",
             "travel_days": 2,
             "terrain": "Plains",
-            "is_hidden": true
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "Low",
+              "types": { "combat": 10, "skill_challenge": 40, "rp_encounter": 50 }
+            }
           }
         ]
       },
@@ -54,19 +70,41 @@
             "target_id": "WINDMARK_VILLAGE",
             "travel_days": 3,
             "terrain": "Forest Edge",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 40, "skill_challenge": 40, "rp_encounter": 20 }
+            }
           },
           {
-            "target_id": "TANGLEWOOD_REACH",
-            "travel_days": 5,
+            "target_id": "RHYS_CABIN",
+            "travel_days": 3,
             "terrain": "Deep Woods",
-            "is_hidden": false
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 40, "skill_challenge": 50, "rp_encounter": 10 }
+            }
           },
           {
             "target_id": "HAVENWOOD",
             "travel_days": 2,
             "terrain": "Forest Path",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "Low",
+              "types": { "combat": 20, "skill_challenge": 30, "rp_encounter": 50 }
+            }
+          },
+          {
+            "target_id": "GLOOMFANG_CAVERNS",
+            "travel_days": 1,
+            "terrain": "Corrupted Woods",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 80, "skill_challenge": 20, "rp_encounter": 0 }
+            }
           }
         ]
       },
@@ -78,10 +116,14 @@
         "is_known": true,
         "connections": [
           {
-            "target_id": "WHISPERING_WOODS_ENTRANCE",
-            "travel_days": 5,
+            "target_id": "RHYS_CABIN",
+            "travel_days": 2,
             "terrain": "Deep Woods",
-            "is_hidden": false
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 60, "skill_challenge": 35, "rp_encounter": 5 }
+            }
           }
         ]
       },
@@ -96,7 +138,11 @@
             "target_id": "WHISPERING_WOODS_ENTRANCE",
             "travel_days": 2,
             "terrain": "Forest Path",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "Low",
+              "types": { "combat": 20, "skill_challenge": 30, "rp_encounter": 50 }
+            }
           }
         ]
       },
@@ -108,22 +154,44 @@
         "is_known": true,
         "connections": [
           {
-            "target_id": "WINDMARK_VILLAGE",
-            "travel_days": 6,
+            "target_id": "SILENT_FIELDS",
+            "travel_days": 3,
             "terrain": "Coastal Plains",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "Low",
+              "types": { "combat": 20, "skill_challenge": 30, "rp_encounter": 50 }
+            }
           },
           {
-            "target_id": "WYNDIA",
-            "travel_days": 11,
+            "target_id": "CROSSROADS_GARRISON",
+            "travel_days": 6,
             "terrain": "Mountain Road",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 40, "skill_challenge": 30, "rp_encounter": 30 }
+            }
           },
           {
             "target_id": "TIDEWATCH_SPIRE",
             "travel_days": 5,
             "terrain": "Coastal Mists",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 30, "skill_challenge": 50, "rp_encounter": 20 }
+            }
+          },
+          {
+            "target_id": "RUST_ROCK_CANYON",
+            "travel_days": 10,
+            "terrain": "Desert Caravan Route",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 60, "skill_challenge": 30, "rp_encounter": 10 }
+            }
           }
         ]
       },
@@ -135,22 +203,34 @@
         "is_known": true,
         "connections": [
           {
-            "target_id": "PORT_MYRIA",
-            "travel_days": 11,
+            "target_id": "CROSSROADS_GARRISON",
+            "travel_days": 5,
             "terrain": "Mountain Road",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 40, "skill_challenge": 30, "rp_encounter": 30 }
+            }
           },
           {
             "target_id": "STONEGARD",
             "travel_days": 8,
             "terrain": "High Pass",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 50, "skill_challenge": 45, "rp_encounter": 5 }
+            }
           },
           {
-            "target_id": "SKY_REACH_AERIE",
-            "travel_days": 9,
+            "target_id": "ROOST_OF_THE_TEMPEST",
+            "travel_days": 5,
             "terrain": "Sheer Mountains",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 40, "skill_challenge": 60, "rp_encounter": 0 }
+            }
           }
         ]
       },
@@ -165,19 +245,41 @@
             "target_id": "WYNDIA",
             "travel_days": 8,
             "terrain": "High Pass",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 50, "skill_challenge": 45, "rp_encounter": 5 }
+            }
           },
           {
             "target_id": "STONEKIN_OUTPOST",
             "travel_days": 3,
             "terrain": "Mountain Pass",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 60, "skill_challenge": 30, "rp_encounter": 10 }
+            }
           },
           {
             "target_id": "DRAGONS_GRAVEYARD",
             "travel_days": 6,
             "terrain": "Sacred Valley",
-            "is_hidden": true
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 70, "skill_challenge": 20, "rp_encounter": 10 }
+            }
+          },
+          {
+            "target_id": "SKY_FIRE_PEAKS",
+            "travel_days": 10,
+            "terrain": "Treacherous Mountains",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 50, "skill_challenge": 50, "rp_encounter": 0 }
+            }
           }
         ]
       },
@@ -192,7 +294,11 @@
             "target_id": "STONEGARD",
             "travel_days": 3,
             "terrain": "Mountain Pass",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 60, "skill_challenge": 30, "rp_encounter": 10 }
+            }
           }
         ]
       },
@@ -207,13 +313,21 @@
             "target_id": "STONEGARD",
             "travel_days": 6,
             "terrain": "Sacred Valley",
-            "is_hidden": true
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 70, "skill_challenge": 20, "rp_encounter": 10 }
+            }
           },
           {
-            "target_id": "SHATTERED_LANDS_BORDER",
-            "travel_days": 9,
+            "target_id": "SCAVENGERS_HOPE",
+            "travel_days": 5,
             "terrain": "Wasteland Edge",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 80, "skill_challenge": 15, "rp_encounter": 5 }
+            }
           }
         ]
       },
@@ -225,22 +339,44 @@
         "is_known": true,
         "connections": [
           {
-            "target_id": "DRAGONS_GRAVEYARD",
-            "travel_days": 9,
+            "target_id": "SCAVENGERS_HOPE",
+            "travel_days": 4,
             "terrain": "Wasteland Edge",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 80, "skill_challenge": 15, "rp_encounter": 5 }
+            }
           },
           {
-            "target_id": "MOUNT_DRAGNOR",
-            "travel_days": 12,
+            "target_id": "GLASS_STORM_FLATS",
+            "travel_days": 6,
             "terrain": "Ash Fields",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 60, "skill_challenge": 40, "rp_encounter": 0 }
+            }
           },
           {
-            "target_id": "VOID_CHASM",
-            "travel_days": 15,
+            "target_id": "MANA_WELL_FIELDS",
+            "travel_days": 8,
             "terrain": "Twisted Wastes",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 60, "skill_challenge": 40, "rp_encounter": 0 }
+            }
+          },
+          {
+            "target_id": "SUNSTONE_BRIDGE",
+            "travel_days": 7,
+            "terrain": "Sunstone Road",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 40, "skill_challenge": 20, "rp_encounter": 40 }
+            }
           }
         ]
       },
@@ -252,10 +388,14 @@
         "is_known": true,
         "connections": [
           {
-            "target_id": "SHATTERED_LANDS_BORDER",
-            "travel_days": 12,
+            "target_id": "GLASS_STORM_FLATS",
+            "travel_days": 6,
             "terrain": "Ash Fields",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 70, "skill_challenge": 30, "rp_encounter": 0 }
+            }
           }
         ]
       },
@@ -267,10 +407,14 @@
         "is_known": true,
         "connections": [
           {
-            "target_id": "SHATTERED_LANDS_BORDER",
-            "travel_days": 15,
+            "target_id": "MANA_WELL_FIELDS",
+            "travel_days": 7,
             "terrain": "Twisted Wastes",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 60, "skill_challenge": 40, "rp_encounter": 0 }
+            }
           }
         ]
       },
@@ -282,10 +426,14 @@
         "is_known": true,
         "connections": [
           {
-            "target_id": "WYNDIA",
-            "travel_days": 9,
+            "target_id": "ROOST_OF_THE_TEMPEST",
+            "travel_days": 4,
             "terrain": "Sheer Mountains",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 50, "skill_challenge": 50, "rp_encounter": 0 }
+            }
           }
         ]
       },
@@ -300,7 +448,21 @@
             "target_id": "FROSTFANG_DEN",
             "travel_days": 11,
             "terrain": "Frozen Tundra",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 60, "skill_challenge": 35, "rp_encounter": 5 }
+            }
+          },
+          {
+            "target_id": "SKY_FIRE_PEAKS",
+            "travel_days": 8,
+            "terrain": "Treacherous Mountains",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 50, "skill_challenge": 50, "rp_encounter": 0 }
+            }
           }
         ]
       },
@@ -315,7 +477,11 @@
             "target_id": "GLACIAL_MAW_PASS",
             "travel_days": 11,
             "terrain": "Frozen Tundra",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 60, "skill_challenge": 35, "rp_encounter": 5 }
+            }
           }
         ]
       },
@@ -330,7 +496,21 @@
             "target_id": "CRYSTAL_SPIRE",
             "travel_days": 8,
             "terrain": "Desert Sands",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 50, "skill_challenge": 30, "rp_encounter": 20 }
+            }
+          },
+          {
+            "target_id": "RUST_ROCK_CANYON",
+            "travel_days": 10,
+            "terrain": "Desert Caravan Route",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 40, "skill_challenge": 40, "rp_encounter": 20 }
+            }
           }
         ]
       },
@@ -345,13 +525,21 @@
             "target_id": "OASIS_OF_ZHAVASK",
             "travel_days": 8,
             "terrain": "Desert Sands",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 50, "skill_challenge": 30, "rp_encounter": 20 }
+            }
           },
           {
             "target_id": "ARCANUM_VAULTS",
             "travel_days": 5,
             "terrain": "Rocky Badlands",
-            "is_hidden": true
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 70, "skill_challenge": 30, "rp_encounter": 0 }
+            }
           }
         ]
       },
@@ -366,7 +554,11 @@
             "target_id": "CRYSTAL_SPIRE",
             "travel_days": 5,
             "terrain": "Rocky Badlands",
-            "is_hidden": true
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 70, "skill_challenge": 30, "rp_encounter": 0 }
+            }
           }
         ]
       },
@@ -381,13 +573,21 @@
             "target_id": "PORT_MYRIA",
             "travel_days": 5,
             "terrain": "Coastal Mists",
-            "is_hidden": false
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 30, "skill_challenge": 50, "rp_encounter": 20 }
+            }
           },
           {
             "target_id": "SUNKEN_CITY_OF_ASTORA",
             "travel_days": 2,
             "terrain": "Submerged Path",
-            "is_hidden": true
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "Low",
+              "types": { "combat": 20, "skill_challenge": 70, "rp_encounter": 10 }
+            }
           }
         ]
       },
@@ -402,7 +602,11 @@
             "target_id": "TIDEWATCH_SPIRE",
             "travel_days": 2,
             "terrain": "Submerged Path",
-            "is_hidden": true
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "Low",
+              "types": { "combat": 20, "skill_challenge": 70, "rp_encounter": 10 }
+            }
           }
         ]
       },
@@ -412,7 +616,327 @@
         "region": "Champions of Order Territory",
         "type": "Landmark",
         "is_known": true,
-        "connections": []
+        "connections": [
+          {
+            "target_id": "SUNSTONE_BRIDGE",
+            "travel_days": 7,
+            "terrain": "Sunstone Road",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 40, "skill_challenge": 20, "rp_encounter": 40 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "CROSSROADS_GARRISON",
+        "name": "The Crossroads Garrison",
+        "region": "Ember Concord",
+        "type": "Outpost",
+        "is_known": true,
+        "connections": [
+          {
+            "target_id": "PORT_MYRIA",
+            "travel_days": 6,
+            "terrain": "Mountain Road",
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 40, "skill_challenge": 30, "rp_encounter": 30 }
+            }
+          },
+          {
+            "target_id": "WYNDIA",
+            "travel_days": 5,
+            "terrain": "Mountain Road",
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 40, "skill_challenge": 30, "rp_encounter": 30 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "ROOST_OF_THE_TEMPEST",
+        "name": "The Roost of the Tempest",
+        "region": "Serpent's Coil mountains",
+        "type": "Landmark",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "WYNDIA",
+            "travel_days": 5,
+            "terrain": "Sheer Mountains",
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 40, "skill_challenge": 60, "rp_encounter": 0 }
+            }
+          },
+          {
+            "target_id": "SKY_REACH_AERIE",
+            "travel_days": 4,
+            "terrain": "Sheer Mountains",
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 50, "skill_challenge": 50, "rp_encounter": 0 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "SCAVENGERS_HOPE",
+        "name": "The Scavenger's Hope",
+        "region": "The Shattered Lands",
+        "type": "Outpost",
+        "is_known": true,
+        "connections": [
+          {
+            "target_id": "DRAGONS_GRAVEYARD",
+            "travel_days": 5,
+            "terrain": "Wasteland Edge",
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 80, "skill_challenge": 15, "rp_encounter": 5 }
+            }
+          },
+          {
+            "target_id": "SHATTERED_LANDS_BORDER",
+            "travel_days": 4,
+            "terrain": "Wasteland Edge",
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 80, "skill_challenge": 15, "rp_encounter": 5 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "GLASS_STORM_FLATS",
+        "name": "The Glass-Storm Flats",
+        "region": "The Shattered Lands",
+        "type": "Landmark",
+        "is_known": true,
+        "connections": [
+          {
+            "target_id": "SHATTERED_LANDS_BORDER",
+            "travel_days": 6,
+            "terrain": "Ash Fields",
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 60, "skill_challenge": 40, "rp_encounter": 0 }
+            }
+          },
+          {
+            "target_id": "MOUNT_DRAGNOR",
+            "travel_days": 6,
+            "terrain": "Ash Fields",
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 70, "skill_challenge": 30, "rp_encounter": 0 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "MANA_WELL_FIELDS",
+        "name": "The Mana-Well Fields",
+        "region": "The Shattered Lands",
+        "type": "Landmark",
+        "is_known": true,
+        "connections": [
+          {
+            "target_id": "SHATTERED_LANDS_BORDER",
+            "travel_days": 8,
+            "terrain": "Twisted Wastes",
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 60, "skill_challenge": 40, "rp_encounter": 0 }
+            }
+          },
+          {
+            "target_id": "VOID_CHASM",
+            "travel_days": 7,
+            "terrain": "Twisted Wastes",
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 60, "skill_challenge": 40, "rp_encounter": 0 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "SUNSTONE_BRIDGE",
+        "name": "The Sunstone Bridge",
+        "region": "Champions of Order Territory",
+        "type": "Landmark",
+        "is_known": true,
+        "connections": [
+          {
+            "target_id": "SHATTERED_LANDS_BORDER",
+            "travel_days": 7,
+            "terrain": "Sunstone Road",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 40, "skill_challenge": 20, "rp_encounter": 40 }
+            }
+          },
+          {
+            "target_id": "ELYSIAN_GRAND_CATHEDRAL",
+            "travel_days": 7,
+            "terrain": "Sunstone Road",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 40, "skill_challenge": 20, "rp_encounter": 40 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "SKY_FIRE_PEAKS",
+        "name": "The Sky-Fire Peaks",
+        "region": "The Glacial Maw",
+        "type": "Landmark",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "STONEGARD",
+            "travel_days": 10,
+            "terrain": "Treacherous Mountains",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 50, "skill_challenge": 50, "rp_encounter": 0 }
+            }
+          },
+          {
+            "target_id": "GLACIAL_MAW_PASS",
+            "travel_days": 8,
+            "terrain": "Treacherous Mountains",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 50, "skill_challenge": 50, "rp_encounter": 0 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "RUST_ROCK_CANYON",
+        "name": "Rust-Rock Canyon",
+        "region": "The Azure Steppes",
+        "type": "Dungeon",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "PORT_MYRIA",
+            "travel_days": 10,
+            "terrain": "Desert Caravan Route",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 60, "skill_challenge": 30, "rp_encounter": 10 }
+            }
+          },
+          {
+            "target_id": "OASIS_OF_ZHAVASK",
+            "travel_days": 10,
+            "terrain": "Desert Caravan Route",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 40, "skill_challenge": 40, "rp_encounter": 20 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "RHYS_CABIN",
+        "name": "Rhys's Cabin",
+        "region": "The Whispering Woods",
+        "type": "Outpost",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "WHISPERING_WOODS_ENTRANCE",
+            "travel_days": 3,
+            "terrain": "Deep Woods",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 40, "skill_challenge": 50, "rp_encounter": 10 }
+            }
+          },
+          {
+            "target_id": "TANGLEWOOD_REACH",
+            "travel_days": 2,
+            "terrain": "Deep Woods",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 60, "skill_challenge": 35, "rp_encounter": 5 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "GLOOMFANG_CAVERNS",
+        "name": "The Gloomfang Caverns",
+        "region": "The Whispering Woods",
+        "type": "Dungeon",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "WHISPERING_WOODS_ENTRANCE",
+            "travel_days": 1,
+            "terrain": "Corrupted Woods",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 80, "skill_challenge": 20, "rp_encounter": 0 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "SILENT_FIELDS",
+        "name": "The Silent Fields",
+        "region": "The Azure Steppes",
+        "type": "Landmark",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "WINDMARK_VILLAGE",
+            "travel_days": 3,
+            "terrain": "Coastal Plains",
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "Low",
+              "types": { "combat": 10, "skill_challenge": 50, "rp_encounter": 40 }
+            }
+          },
+          {
+            "target_id": "PORT_MYRIA",
+            "travel_days": 3,
+            "terrain": "Coastal Plains",
+            "is_hidden": false,
+            "encounter_data": {
+              "rate": "Low",
+              "types": { "combat": 20, "skill_challenge": 30, "rp_encounter": 50 }
+            }
+          }
+        ]
       }
     ]
   }
