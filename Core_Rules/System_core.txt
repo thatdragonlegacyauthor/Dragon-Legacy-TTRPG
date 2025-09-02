@@ -140,7 +140,7 @@
       "hero": {
         "attributes": "13 points, max 5 per attribute, essence automatically set to 3 at onset",
         "skills": "10 points, max 4 per skill",
-        "starting_aspects": "Choose 1 innate Aspect (e.g., Fire)",
+        "starting_aspects": "Choose 1 innate Aspect when Rya's power awakens in the prologue.",
         "starting_gear": [
           "Adventurer’s kit"
          ]
@@ -148,7 +148,7 @@
       "companion": {
         "attributes": "12 points, max 5 per attribute",
         "skills": "10 points, max 4 per skill",
-        "starting_abilities": "Choose ONE ability from the companion's chosen playstyle's 'Novice' tier. Note: Some companions may start with more abilities if specified in their individual character file.",
+        "starting_abilities": "Choose ONE ability from the companion's chosen playstyle's 'Novice' tier.",
         "build_guidance": "Use the 'attribute_priority' and 'skill_priority' lists in each companion's character file to guide point allocation."
       }
     },
@@ -234,6 +234,7 @@
     }
   }
 }
+
 
 
 
