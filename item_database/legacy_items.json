@@ -92,6 +92,7 @@
       "type": "Dagger",
       "rarity": "Legacy",
       "attack_profile": "Mystic (Mind)",
+      "properties": ["Execute", "Channel"],
       "description": "A blade that seems carved from a tear in reality, absorbing light at its edges. It feels both empty and full, and hums with the silent, pure energy of the Void. It is a reflection of Zael's own soul.",
       "wielder": "Zael",
       "progression": [
@@ -117,7 +118,8 @@
       "type": "Staff",
       "rarity": "Legacy",
       "attack_profile": "Mystic (Spirit)",
-      "description": "A staff crafted from the heartwood of a pre-Shattering Elderwood tree, capped with a flawless, light-infused crystal blessed by an Elysian high priest. It was meant to be a symbol of perfect, unyielding order imposed upon the chaos of nature.",
+      "properties": ["Channel", "Rally"],
+      "description": "A staff crafted from the heartwood of a pre-Shattering Elderwood tree, capped with a flawless, light-infused crystal blessed by an Elysian high priest.",
       "wielder": "Selra",
       "progression": [
         {
@@ -142,7 +144,8 @@
       "type": "Absorbed Artifact",
       "rarity": "Legacy",
       "attack_profile": "Martial (Might)",
-      "description": "A petrified seed, warm to the touch, that predates the Shattering. It is a remnant of the original, world-spanning forest that existed before the Dragonfall War, containing the purest essence of natural life. It cannot be wielded, only absorbed by a being of true nature.",
+      "properties": ["Concussive"],
+      "description": "A petrified seed that contains the purest essence of natural life. It cannot be wielded, only absorbed by a being of true nature.",
       "wielder": "Sprout",
       "progression": [
         {
@@ -167,7 +170,8 @@
       "type": "Warhammer",
       "rarity": "Legacy",
       "attack_profile": "Martial (Might)",
-      "description": "The masterwork hammer Torr has spent his life trying to create. It is forged from the heart of a fallen star and quenched with the essence of the mountain itself. It is not merely a weapon, but the embodiment of the Armadillian people's resilience.",
+      "properties": ["Two-Handed", "Heavy", "Sunder", "Siege"],
+      "description": "The masterwork hammer Torr has spent his life trying to create, forged from the heart of a fallen star.",
       "wielder": "Torr",
       "progression": [
         {
@@ -192,8 +196,9 @@
       "type": "Spear",
       "rarity": "Legacy",
       "attack_profile": "Martial (Agility)",
-      "description": "An ancient spear crafted from the fang of a colossal, prehistoric tundra beast. It is the traditional weapon of the Frostfang Alpha, passed down through generations, and it hums with the cold, predatory spirit of the pack.",
-      "wielder": "Kael",
+      "properties": ["Reach", "Versatile", "Momentum", "Bleed"],
+      "description": "An ancient spear crafted from the fang of a colossal, prehistoric tundra beast. The traditional weapon of the Frostfang Alpha.",
+      "wielder": "Kei",
       "progression": [
         {
           "state": "Dormant (Reclaimed)",
@@ -217,7 +222,8 @@
       "type": "Sword",
       "rarity": "Legacy",
       "attack_profile": "Assassin",
-      "description": "A blade of solidified shadow and malice, coalesced from Garrick's own undying thirst for revenge against the Champions of Order. It has no physical substance, phasing through armor as if it were smoke, yet its edge cuts the soul itself.",
+      "properties": ["Relentless", "Execute"],
+      "description": "A blade of solidified shadow and malice, coalesced from Garrick's own undying thirst for revenge.",
       "wielder": "Garrick",
       "progression": [
         {
@@ -242,7 +248,8 @@
       "type": "Longbow",
       "rarity": "Legacy",
       "attack_profile": "Survivor",
-      "description": "Crafted from the heartwood of a sky-reaching ironwood tree and strung with a cord of spun wind-magic, this bow is a legend among the Skyveil people. It is said its arrows never miss their mark and fly with the speed of a striking falcon.",
+      "properties": ["Ranged (225/900)", "Ammunition", "Heavy"],
+      "description": "A legendary bow of the Skyveil people, said to make arrows fly with the speed of a striking falcon.",
       "wielder": "Talia",
       "progression": [
         {
@@ -267,7 +274,8 @@
       "type": "Soul Core",
       "rarity": "Legacy",
       "attack_profile": "Protector",
-      "description": "This is not a piece of hardware, but a crystalline lattice that formed around the original human soul's most powerful memory—the desperate need to protect something. It resonates with emotion and willpower, allowing Zykar to channel the forgotten strengths of the person he once was.",
+      "properties": ["Rally"],
+      "description": "A crystalline lattice formed around a human soul's most powerful memory—the desperate need to protect.",
       "wielder": "Zykar",
       "progression": [
         {
@@ -292,7 +300,8 @@
       "type": "Cloak/Accessory",
       "rarity": "Legacy",
       "attack_profile": "Mystic (Spirit)",
-      "description": "A tattered, ghostly shroud that seems woven from solidified mist and lost memories. It is a remnant of the ancient tribe Eldra belonged to, worn by their oracles to see beyond the veil of life and death. It constantly whispers with the voices of the past.",
+      "properties": ["Channel"],
+      "description": "A tattered, ghostly shroud that seems woven from solidified mist and lost memories, worn by the ancient oracles.",
       "wielder": "Eldra",
       "progression": [
         {
@@ -317,7 +326,8 @@
       "type": "Whip",
       "rarity": "Legacy",
       "attack_profile": "Mystic (Mind)",
-      "description": "A living tendril taken from the very heart of the Whispering Woods. It is a conduit to the raw, untamed life force of Eryndor, capable of lashing out with the fury of a storm or ensnaring foes with the unyielding strength of ancient roots.",
+      "properties": ["Reach", "Grapple"],
+      "description": "A living tendril taken from the very heart of the Whispering Woods, a conduit to the raw life force of Eryndor.",
       "wielder": "Veridia",
       "progression": [
         {
@@ -342,7 +352,8 @@
       "type": "Dagger (Pair)",
       "rarity": "Legacy",
       "attack_profile": "Assassin",
-      "description": "A pair of perfectly balanced, jet-black daggers that seem to absorb the light around them. Forged with shadow magic by the founder of a legendary assassins' guild, they are said to be able to sever a target's shadow.",
+      "properties": ["Finesse", "Light", "Bleed", "Execute", "Paired"],
+      "description": "A pair of perfectly balanced, jet-black daggers that seem to absorb the light around them.",
       "wielder": "Lirien",
       "progression": [
         {
@@ -367,7 +378,8 @@
       "type": "Runic Core (Absorbed Artifact)",
       "rarity": "Legacy",
       "attack_profile": "Mystic (Mind)",
-      "description": "This is not a physical item to be held, but the masterwork power core that houses the fragmented soul of Rune's creator. Forged with lost pre-Shattering technology, it was designed to resonate with and amplify both arcane energy and the wielder's own willpower. As Rune recovers his memories and defines his purpose, the core's true potential can be unlocked.",
+      "properties": ["Channel"],
+      "description": "The masterwork power core that houses the fragmented soul of Rune's creator, designed to resonate with and amplify arcane energy.",
       "wielder": "Rune",
       "progression": [
         {
