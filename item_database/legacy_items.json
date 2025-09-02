@@ -47,6 +47,26 @@
           "lineage": "Psionic",
           "attack_profile": "Mystic (Mind)",
           "stat_boost": "+1 to Mind"
+        },
+        {
+          "lineage": "Cosmic",
+          "attack_profile": "Mystic (Mind)",
+          "stat_boost": "+1 to Mind"
+        },
+        {
+          "lineage": "Chrono",
+          "attack_profile": "Mystic (Mind)",
+          "stat_boost": "+1 to Mind"
+        },
+        {
+          "lineage": "Metal",
+          "attack_profile": "Martial (Might)",
+          "stat_boost": "+1 to Might"
+        },
+        {
+          "lineage": "Mist",
+          "attack_profile": "Martial (Agility)",
+          "stat_boost": "+1 to Agility"
         }
       ],
       "progression": [
@@ -58,16 +78,20 @@
         {
           "state": "Awakened",
           "unlock_condition": "Master the Kaiser Manifestation for the first time.",
-          "effect": "The sword's damage increases to 2d10 physical damage. It now also deals an additional 1d8 elemental damage, with the element matching Rya's most recently used Draconic Aspect (Fire, Earth, Void, etc.). The bonus to Essence increases to +2, and all 'lineage_affinities' now grant a +2 bonus to their respective stat."
+          "effect": "The sword's damage increases to 2d10 physical damage. It now also deals an additional 1d8 elemental damage, with the element matching Rya's most recently used Draconic Aspect. The bonus to Essence increases to +2, and all 'lineage_affinities' now grant a +2 bonus to their respective stat."
         },
         {
           "state": "Ascended",
           "unlock_condition": "Confront the truth of the Shattering and accept the full weight of the draconic legacy.",
           "effect": "The sword's damage becomes 2d12 physical and 1d10 elemental. The bonus to Essence increases to +3, and all 'lineage_affinities' now grant a +3 bonus to their respective stat. Unlocks the 'Primal Echo' ability: Once per day, as a major action, Rya can unleash a 30-foot cone of pure energy from the blade, dealing 6d10 damage."
+        }
+      ]
+    },
     {
       "name": "Whispering Parallax",
       "type": "Dagger",
       "rarity": "Legacy",
+      "attack_profile": "Mystic (Mind)",
       "description": "A blade that seems carved from a tear in reality, absorbing light at its edges. It feels both empty and full, and hums with the silent, pure energy of the Void. It is a reflection of Zael's own soul.",
       "wielder": "Zael",
       "progression": [
@@ -92,6 +116,7 @@
       "name": "Heartwood Scepter",
       "type": "Staff",
       "rarity": "Legacy",
+      "attack_profile": "Mystic (Spirit)",
       "description": "A staff crafted from the heartwood of a pre-Shattering Elderwood tree, capped with a flawless, light-infused crystal blessed by an Elysian high priest. It was meant to be a symbol of perfect, unyielding order imposed upon the chaos of nature.",
       "wielder": "Selra",
       "progression": [
@@ -116,6 +141,7 @@
       "name": "Heartseed of the First Forest",
       "type": "Absorbed Artifact",
       "rarity": "Legacy",
+      "attack_profile": "Martial (Might)",
       "description": "A petrified seed, warm to the touch, that predates the Shattering. It is a remnant of the original, world-spanning forest that existed before the Dragonfall War, containing the purest essence of natural life. It cannot be wielded, only absorbed by a being of true nature.",
       "wielder": "Sprout",
       "progression": [
@@ -140,6 +166,7 @@
       "name": "Forgeheart",
       "type": "Warhammer",
       "rarity": "Legacy",
+      "attack_profile": "Martial (Might)",
       "description": "The masterwork hammer Torr has spent his life trying to create. It is forged from the heart of a fallen star and quenched with the essence of the mountain itself. It is not merely a weapon, but the embodiment of the Armadillian people's resilience.",
       "wielder": "Torr",
       "progression": [
@@ -164,6 +191,7 @@
       "name": "Alpha's Fang",
       "type": "Spear",
       "rarity": "Legacy",
+      "attack_profile": "Martial (Agility)",
       "description": "An ancient spear crafted from the fang of a colossal, prehistoric tundra beast. It is the traditional weapon of the Frostfang Alpha, passed down through generations, and it hums with the cold, predatory spirit of the pack.",
       "wielder": "Kael",
       "progression": [
@@ -188,6 +216,7 @@
       "name": "Spiteblade",
       "type": "Sword",
       "rarity": "Legacy",
+      "attack_profile": "Assassin",
       "description": "A blade of solidified shadow and malice, coalesced from Garrick's own undying thirst for revenge against the Champions of Order. It has no physical substance, phasing through armor as if it were smoke, yet its edge cuts the soul itself.",
       "wielder": "Garrick",
       "progression": [
@@ -212,6 +241,7 @@
       "name": "Wind-Piercer",
       "type": "Longbow",
       "rarity": "Legacy",
+      "attack_profile": "Survivor",
       "description": "Crafted from the heartwood of a sky-reaching ironwood tree and strung with a cord of spun wind-magic, this bow is a legend among the Skyveil people. It is said its arrows never miss their mark and fly with the speed of a striking falcon.",
       "wielder": "Talia",
       "progression": [
@@ -236,6 +266,7 @@
       "name": "The Aegis of Memory",
       "type": "Soul Core",
       "rarity": "Legacy",
+      "attack_profile": "Protector",
       "description": "This is not a piece of hardware, but a crystalline lattice that formed around the original human soul's most powerful memory—the desperate need to protect something. It resonates with emotion and willpower, allowing Zykar to channel the forgotten strengths of the person he once was.",
       "wielder": "Zykar",
       "progression": [
@@ -260,6 +291,7 @@
       "name": "Shroud of Echoes",
       "type": "Cloak/Accessory",
       "rarity": "Legacy",
+      "attack_profile": "Mystic (Spirit)",
       "description": "A tattered, ghostly shroud that seems woven from solidified mist and lost memories. It is a remnant of the ancient tribe Eldra belonged to, worn by their oracles to see beyond the veil of life and death. It constantly whispers with the voices of the past.",
       "wielder": "Eldra",
       "progression": [
@@ -284,6 +316,7 @@
       "name": "World-Root Tendril",
       "type": "Whip",
       "rarity": "Legacy",
+      "attack_profile": "Mystic (Mind)",
       "description": "A living tendril taken from the very heart of the Whispering Woods. It is a conduit to the raw, untamed life force of Eryndor, capable of lashing out with the fury of a storm or ensnaring foes with the unyielding strength of ancient roots.",
       "wielder": "Veridia",
       "progression": [
@@ -308,6 +341,7 @@
       "name": "The Ghost Panther's Claws",
       "type": "Dagger (Pair)",
       "rarity": "Legacy",
+      "attack_profile": "Assassin",
       "description": "A pair of perfectly balanced, jet-black daggers that seem to absorb the light around them. Forged with shadow magic by the founder of a legendary assassins' guild, they are said to be able to sever a target's shadow.",
       "wielder": "Lirien",
       "progression": [
@@ -332,6 +366,7 @@
       "name": "The Resonance Core",
       "type": "Runic Core (Absorbed Artifact)",
       "rarity": "Legacy",
+      "attack_profile": "Mystic (Mind)",
       "description": "This is not a physical item to be held, but the masterwork power core that houses the fragmented soul of Rune's creator. Forged with lost pre-Shattering technology, it was designed to resonate with and amplify both arcane energy and the wielder's own willpower. As Rune recovers his memories and defines his purpose, the core's true potential can be unlocked.",
       "wielder": "Rune",
       "progression": [
