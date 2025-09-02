@@ -1,0 +1,126 @@
+{
+  "lineage_name": "Metal",
+  "description": "Dual paths of impenetrable defense (Aegis) and calculated strikes (Artifice).",
+  "abilities": [
+    {
+      "name": "Metal Plating",
+      "playstyle": "Aegis",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Gain a temporary shield that absorbs up to 10 physical damage.",
+      "check": "Essence + Level vs. DC 11",
+      "bloodburn": "-2 Spirit",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Geared Strike",
+      "playstyle": "Artifice",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Hurl a shrapnel shard at a single target, dealing 1d10 physical damage. This attack ignores 1 point of Damage Reduction.",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-2 Mind",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Reinforce",
+      "playstyle": "Aegis",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "As a bonus action, grant an adjacent ally a +1 bonus to their Damage Reduction for 1 round.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Pressure Vent",
+      "playstyle": "Artifice",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "As a bonus action after a successful attack, you can release a cloud of hot steam. The target must make a Might DC 12 check or have a -1 penalty on their next roll.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Steel Skin",
+      "playstyle": "Aegis",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Gain resistance to all physical damage for 1 round.",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-2 Might",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Wrecking Ball",
+      "playstyle": "Artifice",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Hurl a heavy, chain-linked sphere at a target, dealing 2d8 physical damage and forcing a Might DC 13 check to avoid being knocked prone.",
+      "check": "Essence + Level vs. DC 13",
+      "bloodburn": "-2 Agility",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Resonance Field",
+      "playstyle": "Aegis",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Create a 15-foot radius field. Allies inside gain +2 to their Damage Reduction. The field lasts for 3 rounds. This costs 10 Resolve.",
+      "check": "Essence + Level vs. DC 14",
+      "bloodburn": "-2 Mind",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Shattering Punch",
+      "playstyle": "Artifice",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Make a single, devastating melee attack that ignores all of the target's non-magical Damage Reduction. This costs 10 Resolve.",
+      "check": "Essence + Level vs. DC 15",
+      "bloodburn": "-3 Might",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Juggernaut Form",
+      "playstyle": "Aegis",
+      "rank": "Master",
+      "level_requirement": 15,
+      "effect": "Temporarily grow in size, gaining immunity to effects that would move you, a +4 bonus to your Damage Reduction, and Advantage on all Might checks for 3 rounds. This costs 15 Resolve.",
+      "check": "Essence + Level vs. DC 16",
+      "bloodburn": "-3 Might",
+      "resolve_cost": 15
+    },
+    {
+      "name": "System Shock",
+      "playstyle": "Artifice",
+      "rank": "Master",
+      "level_requirement": 15,
+      "effect": "You overload a target's senses with a burst of arcane energy. The target takes 3d10 lightning damage and must make a Mind DC 16 check or be Stunned for 1 round. This costs 15 Resolve.",
+      "check": "Essence + Level vs. DC 16",
+      "bloodburn": "-3 Mind",
+      "resolve_cost": 15
+    },
+    {
+      "name": "The Perfect Machine",
+      "playstyle": "Aegis",
+      "rank": "Archon",
+      "level_requirement": 20,
+      "effect": "For 3 rounds, you are immune to all non-magical damage and cannot be moved or targeted by mind-altering effects. Adjacent allies gain a +2 bonus to their Damage Reduction. Usable once per day.",
+      "check": "Essence + Level vs. DC 18",
+      "bloodburn": "-4 Spirit",
+      "resolve_cost": 20
+    },
+    {
+      "name": "Annihilation Protocol",
+      "playstyle": "Artifice",
+      "rank": "Archon",
+      "level_requirement": 20,
+      "effect": "You unleash a torrent of devastating force. Deals 6d12 physical damage to a single target. All of its abilities are considered to be on cooldown for 1 round. Usable once per day.",
+      "check": "Essence + Level vs. DC 18",
+      "bloodburn": "-4 Essence",
+      "resolve_cost": 20
+    }
+  ]
+}
