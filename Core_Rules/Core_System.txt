@@ -61,7 +61,7 @@
           "attribute": "Mind"
         }
       ],
-      "checks": "1d10 + Attribute + Skill vs. DC. The DC is determined by a six-tier framework (Trivial 8, Easy 12, Moderate 14, Hard 18, Very Hard 24, Almost Impossible 30).",
+      "checks": "1d10 + Attribute + Skill vs. DC. The DC is determined by a six-tier framework (Trivial 8, Easy 10, Moderate 14, Hard 18, Very Hard 23, Almost Impossible 30).",
       "outcome_thresholds": {
         "name": "Outcome Thresholds for Skill Checks",
         "tiers": [
@@ -234,6 +234,7 @@
     }
   }
 }
+
 
 
 
