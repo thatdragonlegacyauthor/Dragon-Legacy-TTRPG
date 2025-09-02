@@ -119,7 +119,7 @@
     {
       "name": "The Void Chasm",
       "type": "Region",
-      "description": "A bottomless abyss that tears through the Shattered Lands. Reality is thin here, and creatures touched by entropy and shadow are drawn to its palpable silence. The 'Heart of the Void' at its center is the nexus of the Duskveil lineage, where one must pass the 'Trial of the Echo' by confronting and accepting their own inner darkness to attune."
+      "description": "A bottomless abyss that tears through the Shattered Lands. Reality is thin here, and creatures touched by entropy and shadow are drawn to its palpable silence. The 'Heart of the Void' at its center is the nexus of the Void lineage, where one must pass the 'Trial of the Echo' by confronting and accepting their own inner darkness to attune."
     },
     {
       "name": "The Glacial Maw",
@@ -170,7 +170,14 @@
     {
       "name": "The Arcanum Vaults",
       "type": "Dungeon",
-      "description": "A vast, pre-Shattering ruin in the Dominion's territory, filled with dangerous automated defenses and lost technology. A hidden enclave of the Runeforge Remnants has taken up residence here. The 'Heart of the Master Forge' at its core is the nexus of the Metal lineage. To attune, one must pass the 'Trial of Artifice' by reactivating the forge and withstanding its pure, molten energies to temper their own spirit."
+      "description": "A vast, pre-Shattering ruin in the Dominion's territory, filled with dangerous automated defenses and lost technology. A hidden enclave of the Runeforge Remnants has taken up residence here.",
+      "key_characters": [
+        {
+          "name": "Archivist Elara",
+          "char_id": "RUNEFORGE_ELARA",
+          "description": "The sharp-witted leader of the local Runeforge Remnant enclave. She seeks to reactivate a massive machine in the vaults and sees Rune as a priceless key to her research."
+        }
+      ]
     },
     {
       "name": "The Well of Souls",
@@ -263,7 +270,7 @@
     {
       "name": "The Titan's Crossing",
       "type": "Landmark",
-      "description": "A massive, petrified skeleton of a colossal, unknown creature from before the Shattering, so large that it forms a natural bridge over the Azure River. The 'Orbital Heart,' a mysterious artifact within its heart, is the nexus of the Cosmic lineage. To attune, one must pass the 'Trial of Gravity' by withstanding immense cosmic forces, proving they can command space without being torn apart."
+      "description": "A massive, petrified skeleton of a colossal, unknown creature from before the Shattering, so large that it forms a natural bridge over the Azure River. The bones are covered in ancient, weathered carvings. Local legends say the spirit of the beast still lingers, and strange magical phenomena are common near the Crossing."
     },
     {
       "name": "The Rust-Rock Canyon",
@@ -280,7 +287,7 @@
     {
       "name": "The Silent Fields",
       "type": "Landmark",
-      "description": "A large, circular plain of grassland where no sound can be made. At its center is a single, perfectly smooth obsidian monolith, the 'Mindstone,' which is the nexus of the Psionic lineage. To attune, one must pass the 'Trial of Stillness' by entering a deep trance and mastering a manifestation of their own self-doubt."
+      "description": "A large, circular plain of grassland where no sound can be made. All noise, from the wind to a shout, is magically silenced within its borders. At the very center of the field is a single, perfectly smooth obsidian monolith that hums with a palpable, silent energy. It is a place of meditation for some, and a source of dread for others."
     },
     {
       "name": "The Elderwood Grove",
@@ -310,7 +317,7 @@
     {
       "name": "The Ruined Citadel of the Dragon Lords",
       "type": "Dungeon",
-      "description": "The skeletal remains of the pre-Shattering capital city. At its apex is the 'Timeless Locus,' a chamber where time itself is fractured, serving as the nexus of the Chrono lineage. To attune, one must pass the 'Trial of Moments' by navigating the chaotic temporal energies and stabilizing a critical moment in time."
+      "description": "The skeletal remains of the pre-Shattering capital city, a place of immense power where the Dragon Lords once ruled. Now, it is a sprawling, high-level dungeon of shattered towers, crystalline overgrowth, and powerful, corrupted magical echoes. It is guarded by ancient, automated defenses and haunted by the twisted spirits of its last inhabitants."
     },
     {
       "name": "The Glass-Storm Flats",
@@ -432,6 +439,28 @@
           "description": "The ancient guardian of the glade, a powerful forest spirit fighting to save her home from the Arcane Dominion's corruption."
         }
       ]
+    },
+    {
+      "name": "Rhys's Cabin",
+      "type": "Outpost",
+      "description": "An isolated, expertly-built cabin tucked away in a hidden part of the Whispering Woods. The area is clean, well-tended, and surrounded by numerous traps for game and intruders. A steady plume of smoke rises from its chimney. This is the home of Rhys, a reclusive and grizzled hunter who wants nothing more than to be left alone.",
+      "key_characters": [
+        {
+          "name": "Rhys",
+          "char_id": "HERMIT_RHYS",
+          "description": "A master survivalist and former Champion of Order who abandoned the faction after witnessing their brutal methods. He is gruff, paranoid, and deeply cynical, but possesses invaluable knowledge of the Champions' tactics and weaknesses. He might be persuaded to help the party if they can prove they are not a threat and that their cause is just."
+        }
+      ]
+    },
+    {
+      "name": "The Gloomfang Caverns",
+      "type": "Dungeon",
+      "description": "A dark, web-choked network of caves that serves as the primary lair for the vicious Gloomfang Wolves and monstrous Giant Spiders. The caverns are a source of the creeping corruption that once plagued the forest, and valuable alchemical ingredients can be harvested from the dangerous fauna within."
+    },
+    {
+      "name": "The Silent Fields",
+      "type": "Landmark",
+      "description": "A large, circular plain of grassland where no sound can be made. All noise, from the wind to a shout, is magically silenced within its borders. At the very center of the field is a single, perfectly smooth obsidian monolith that hums with a palpable, silent energy. It is a place of meditation for some, and a source of dread for others."
     }
   ]
 }
