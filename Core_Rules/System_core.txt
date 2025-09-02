@@ -34,31 +34,58 @@
       "skills": [
         {
           "name": "Combat",
-          "attribute": "Might"
+          "attribute": "Might",
+          "description": "Used for physical attacks and Might-based defenses."
         },
         {
           "name": "Stealth",
-          "attribute": "Agility"
+          "attribute": "Agility",
+          "description": "Used for hiding, moving silently, and remaining unseen."
+        },
+        {
+          "name": "Acrobatics",
+          "attribute": "Agility",
+          "description": "Used for feats of balance, escaping grapples, and complex physical maneuvers."
         },
         {
           "name": "Arcana",
-          "attribute": "Mind"
+          "attribute": "Mind",
+          "description": "Used for knowledge of magic, identifying spells, and using magical items."
         },
         {
-          "name": "Diplomacy",
-          "attribute": "Spirit"
+          "name": "Diplomacy (Persuasion)",
+          "attribute": "Spirit",
+          "description": "Using reason and logic to influence others."
+        },
+        {
+          "name": "Diplomacy (Intimidation)",
+          "attribute": "Might / Spirit",
+          "description": "Using presence and will to coerce or frighten others. Can be based on Might or Spirit."
+        },
+        {
+          "name": "Empathy",
+          "attribute": "Spirit",
+          "description": "A new skill used to sense emotions and read intentions. Key to the Bond Level System with companions."
         },
         {
           "name": "Lore",
-          "attribute": "Mind"
+          "attribute": "Mind",
+          "description": "General knowledge of history, cultures, and the world."
         },
         {
           "name": "Athletics",
-          "attribute": "Agility"
+          "attribute": "Agility",
+          "description": "Used for feats of raw physical prowess, such as running, jumping, or climbing, and for Agility-based defenses."
         },
         {
-          "name": "Survival",
-          "attribute": "Mind"
+          "name": "Survival (General)",
+          "attribute": "Mind",
+          "description": "Used for navigating the wilds, hunting, and foraging."
+        },
+        {
+          "name": "Survival (Terrain Specific)",
+          "attribute": "Mind",
+          "description": "Specialized knowledge of a specific region. Gained through narrative progression or spending an IP."
         }
       ],
       "checks": "1d10 + Attribute + Skill vs. DC. The DC is determined by a six-tier framework (Trivial 8, Easy 10, Moderate 14, Hard 18, Very Hard 23, Almost Impossible 30).",
@@ -234,8 +261,3 @@
     }
   }
 }
-
-
-
-
-
