@@ -1,0 +1,126 @@
+{
+  "lineage_name": "Chrono",
+  "description": "Dual paths of hastening (Alacrity) and temporal decay (Stasis).",
+  "abilities": [
+    {
+      "name": "Haste",
+      "playstyle": "Alacrity",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "Grant a single ally an additional movement action on their next turn.",
+      "check": "Essence + Level vs. DC 11",
+      "bloodburn": "-2 Mind",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Slow",
+      "playstyle": "Stasis",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "A single target must make a Mind DC 12 check or their movement speed is halved for 1 round.",
+      "check": "Essence + Level vs. DC 12",
+      "bloodburn": "-2 Agility",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Time Slip",
+      "playstyle": "Alacrity",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "As a reaction when you or an ally is hit, you can briefly 'slip' out of time, forcing the attacker to re-roll the attack.",
+      "check": "Essence + Level vs. DC 11",
+      "bloodburn": "-2 Spirit",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Temporal Anchor",
+      "playstyle": "Stasis",
+      "rank": "Novice",
+      "level_requirement": 1,
+      "effect": "As a bonus action, place a temporal anchor on an enemy. Their movement speed is halved for 1 round.",
+      "check": "N/A",
+      "bloodburn": "N/A",
+      "resolve_cost": 1
+    },
+    {
+      "name": "Time Stop",
+      "playstyle": "Stasis",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Target a single creature. They must make a Mind DC 13 check or be unable to take an action for 1 round. This costs 5 Resolve.",
+      "check": "Essence + Level vs. DC 13",
+      "bloodburn": "-2 Might",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Time Shift",
+      "playstyle": "Alacrity",
+      "rank": "Adept",
+      "level_requirement": 5,
+      "effect": "Teleport up to 30 feet in any direction. This movement does not provoke attacks of opportunity. This costs 5 Resolve.",
+      "check": "Essence + Level vs. DC 13",
+      "bloodburn": "-2 Agility",
+      "resolve_cost": 5
+    },
+    {
+      "name": "Chrono Shift",
+      "playstyle": "Alacrity",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "Grant all allies within 30 feet an additional major action for their next turn. This costs 10 Resolve.",
+      "check": "Essence + Level vs. DC 14",
+      "bloodburn": "-2 Mind",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Age",
+      "playstyle": "Stasis",
+      "rank": "Expert",
+      "level_requirement": 10,
+      "effect": "A single target must make a Mind DC 15 check or their Armor Class and Damage Reduction are reduced by 2 for 3 rounds. This costs 10 Resolve.",
+      "check": "Essence + Level vs. DC 15",
+      "bloodburn": "-3 Might",
+      "resolve_cost": 10
+    },
+    {
+      "name": "Temporal Echo",
+      "playstyle": "Alacrity",
+      "rank": "Master",
+      "level_requirement": 15,
+      "effect": "Create a time-displaced echo of yourself. The echo lasts for 1 round and can take one major action. The echo uses your stats but has 1 Vitality. This costs 15 Resolve.",
+      "check": "Essence + Level vs. DC 16",
+      "bloodburn": "-3 Spirit",
+      "resolve_cost": 15
+    },
+    {
+      "name": "Temporal Rift",
+      "playstyle": "Stasis",
+      "rank": "Master",
+      "level_requirement": 15,
+      "effect": "Create a 20-foot radius area of disrupted time. Any creature that ends their turn inside must make a Mind DC 16 check or lose their next bonus action and reaction. This costs 15 Resolve.",
+      "check": "Essence + Level vs. DC 16",
+      "bloodburn": "-3 Mind",
+      "resolve_cost": 15
+    },
+    {
+      "name": "Rewind",
+      "playstyle": "Alacrity",
+      "rank": "Archon",
+      "level_requirement": 20,
+      "effect": "You can rewind time for 1 minute. You and all allies can re-roll a single d10 roll that they make. This can only be used once per day.",
+      "check": "Essence + Level vs. DC 18",
+      "bloodburn": "-4 Essence",
+      "resolve_cost": 20
+    },
+    {
+      "name": "Freeze Time",
+      "playstyle": "Stasis",
+      "rank": "Archon",
+      "level_requirement": 20,
+      "effect": "You stop time for 1 round for all creatures you can see. You can take any action you want, but you can only attack one creature. Usable once per day.",
+      "check": "Essence + Level vs. DC 18",
+      "bloodburn": "-4 Essence",
+      "resolve_cost": 20
+    }
+  ]
+}
