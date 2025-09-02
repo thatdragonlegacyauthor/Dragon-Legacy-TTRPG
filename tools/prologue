@@ -11,7 +11,7 @@
         "key_event": "You and Zael locate a hidden grotto in the Azure Steppes where the Sun-Kissed Petals grow. However, the area is guarded by a pair of docile but territorial **Goo Balls**. Upon defeating them, you find the petals in a shimmering pool. This combat encounter serves as the player's introduction to the core combat mechanics. Upon returning to the village, the festival is in full swing.",
         "quest_completion": {
           "name": "The Sun-Kissed Petal",
-          "status": "completed"
+          "status": null
         }
       },
       {
@@ -27,7 +27,8 @@
         "name": "The Champion's Arrival",
         "setting": "Windmark Village",
         "objective": "An unexpected force arrives at the festival and disrupts the peace, forcing Rya to confront a new, dangerous power.",
-        "key_event": "Grand Inquisitor Valerius and the Champions of Order arrive, denouncing the festival as a chaotic heresy. Elder Elara attempts to protect the village and the children, but she is killed. In a moment of panic and rage, Rya's latent draconic powers violently manifest for the first time, giving her a burst of power. This event unlocks Rya's first innate ancestry aspect. Selra, horrified by the brutality, has the opportunity to join the party here, choosing compassion over blind obedience.",
+        "key_event": "Grand Inquisitor Valerius and the Champions of Order arrive, denouncing the festival as a chaotic heresy. Elder Elara attempts to protect the village and the children, but she is killed. In a moment of panic and rage, Rya's latent draconic powers violently manifest for the first time, giving her a burst of power.",
+        "player_choice": "The game master will now present you with a choice of your first innate draconic lineage. Will your power be that of **Fire**, **Earth**, **Mist**, **Ice**, or another element that feels right in the moment?",
         "quest_completion": null
       },
       {
@@ -35,14 +36,9 @@
         "name": "A Light in the Woods",
         "setting": "The Whispering Woods",
         "objective": "The party must flee the ruined village and find a new sanctuary, battling their way through the corrupted forest.",
-        "key_event": "Escaping the destroyed Windmark Village, Rya, Zael, and the newly met companion Selra are forced to flee into the Whispering Woods. As they press deeper into the forest, the corruption from the Gloomwood Heart becomes more apparent, manifesting as a series of hostile creatures. The party must face several encounters before finding the path to Tanglewood Reach. The journey includes:
-          - **Encounter 1 (Easy):** A group of **Thorn Creepers** and **Sporelings**, mutated plant life that uses debilitating spores and ensnaring vines.
-          - **Encounter 2 (Medium):** A pack of **Gloomfang Wolves**, feral beasts with venomous fangs.
-          - **Encounter 3 (Medium):** A **Nut Mage** and a **Nut Trooper**, organized plant creatures that defend their territory with crude magic and brute force.
-          - **Boss Encounter (Hard):** The party must confront the **Blightoad**, a monstrous toad-fiend whose presence is a direct result of Rya's awakened draconic power. It is the final obstacle blocking the path to the sanctuary of Tanglewood Reach.",
+        "key_event": "Escaping the destroyed Windmark Village, Rya, Zael, and the newly met companion Selra are forced to flee into the Whispering Woods. As they press deeper into the forest, the corruption from the Gloomwood Heart becomes more apparent, manifesting as a series of hostile creatures. The party must face several encounters before finding the path to Tanglewood Reach. The journey includes: - **Encounter 1 (Easy):** A group of **Thorn Creepers** and **Sporelings**, mutated plant life that uses debilitating spores and ensnaring vines. - **Encounter 2 (Medium):** A pack of **Gloomfang Wolves**, feral beasts with venomous fangs. - **Encounter 3 (Medium):** A **Nut Mage** and a **Nut Trooper**, organized plant creatures that defend their territory with crude magic and brute force. - **Boss Encounter (Hard):** The party must confront the **Blightoad**, a monstrous toad-fiend whose presence is a direct result of Rya's awakened draconic power. It is the final obstacle blocking the path to the sanctuary of Tanglewood Reach.",
         "quest_completion": null
       }
     ]
   }
 }
-
