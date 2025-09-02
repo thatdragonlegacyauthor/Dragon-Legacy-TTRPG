@@ -165,11 +165,11 @@
     },
     "character_creation": {
       "hero": {
-        "attributes": "13 points, max 5 per attribute, essence automatically set to 3 at onset",
-        "skills": "10 points, max 4 per skill",
-        "starting_aspects": "Choose 1 innate Aspect when Rya's power awakens in the prologue.",
-        "starting_gear": [
-          "Adventurer’s kit"
+  "attributes": "13 points, max 5 per attribute. Rya's Essence attribute is automatically set to 3 at the onset, and does not count against these 13 points.",
+  "skills": "10 points, max 4 per skill",
+  "starting_aspects": "Choose 1 innate Aspect when Rya's power awakens in the prologue.",
+  "starting_gear": [
+    "Adventurer’s kit"
          ]
       },
       "companion": {
