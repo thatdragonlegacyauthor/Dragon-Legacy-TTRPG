@@ -220,13 +220,13 @@
           {
             "level": 2,
             "title": "Trusted Friend",
-            "bp_required": 5,
+            "bp_required": 10,
             "benefit": "Unlocks a unique passive Bond Synergy."
           },
           {
             "level": 3,
             "title": "Confidant",
-            "bp_required": 10,
+            "bp_required": 30,
             "benefit": "Unlocks the ability to use Draconic Unity."
           }
         ]
@@ -234,5 +234,6 @@
     }
   }
 }
+
 
 
