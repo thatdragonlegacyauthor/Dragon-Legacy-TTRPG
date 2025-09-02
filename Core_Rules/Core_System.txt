@@ -138,12 +138,10 @@
     },
     "character_creation": {
       "hero": {
-        "attributes": "20 points, max 8 per attribute, Essence >= 3",
-        "skills": "15 points, max 5 per skill",
+        "attributes": "13 points, max 5 per attribute, essence automatically set to 3 at onset",
+        "skills": "10 points, max 4 per skill",
         "starting_aspects": "Choose 1 innate Aspect (e.g., Fire)",
         "starting_gear": [
-          "One weapon",
-          "One set of armor",
           "Adventurer’s kit"
         ]
       }
@@ -230,3 +228,4 @@
     }
   }
 }
+
