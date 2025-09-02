@@ -10,7 +10,7 @@
         "connections": [
           {
             "target_id": "WHISPERING_WOODS_ENTRANCE",
-            "travel_days": 3,
+            "travel_days": 2,
             "terrain": "Forest Edge",
             "is_hidden": false,
             "encounter_data": {
@@ -30,7 +30,7 @@
           },
           {
             "target_id": "WELL_OF_SOULS",
-            "travel_days": 2,
+            "travel_days": 0.5,
             "terrain": "Plains",
             "is_hidden": true,
             "encounter_data": {
@@ -49,7 +49,7 @@
         "connections": [
           {
             "target_id": "WINDMARK_VILLAGE",
-            "travel_days": 2,
+            "travel_days": 0.5,
             "terrain": "Plains",
             "is_hidden": true,
             "encounter_data": {
@@ -78,7 +78,7 @@
           },
           {
             "target_id": "RHYS_CABIN",
-            "travel_days": 3,
+            "travel_days": 2,
             "terrain": "Deep Woods",
             "is_hidden": true,
             "encounter_data": {
@@ -117,7 +117,7 @@
         "connections": [
           {
             "target_id": "RHYS_CABIN",
-            "travel_days": 2,
+            "travel_days": 3,
             "terrain": "Deep Woods",
             "is_hidden": true,
             "encounter_data": {
@@ -136,7 +136,7 @@
         "connections": [
           {
             "target_id": "WHISPERING_WOODS_ENTRANCE",
-            "travel_days": 2,
+            "travel_days": 1,
             "terrain": "Forest Path",
             "is_hidden": false,
             "encounter_data": {
@@ -214,7 +214,7 @@
           },
           {
             "target_id": "STONEGARD",
-            "travel_days": 8,
+            "travel_days": 9,
             "terrain": "High Pass",
             "is_hidden": false,
             "encounter_data": {
@@ -446,7 +446,7 @@
         "connections": [
           {
             "target_id": "FROSTFANG_DEN",
-            "travel_days": 11,
+            "travel_days": 6,
             "terrain": "Frozen Tundra",
             "is_hidden": false,
             "encounter_data": {
@@ -475,7 +475,7 @@
         "connections": [
           {
             "target_id": "GLACIAL_MAW_PASS",
-            "travel_days": 11,
+            "travel_days": 6,
             "terrain": "Frozen Tundra",
             "is_hidden": false,
             "encounter_data": {
