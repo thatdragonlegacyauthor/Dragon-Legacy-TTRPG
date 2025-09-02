@@ -128,24 +128,63 @@
             "windmark_destroyed": false
           }
         },
-        "new_game_party_status_template": [
-          {
-            "name": "Rya",
-            "age": 14,
-            "level": 1
-          },
-          {
-            "name": "Zael",
-            "age": 15,
-            "level": 1
-          },
-          {
-            "name": "Selra",
-            "age": 19,
-            "level": 1
-          }
+  "new_game_party_status_template": [
+    {
+      "name": "Rya",
+      "age": 14,
+      "level": 1,
+      "unlocked_aspects": [],
+      "aspect_abilities": [],
+      "current_resources": {
+        "vitality": 35,
+        "resolve": 25,
+        "legacy_points": 3
+      },
+      "insight_points": {
+        "current": 0,
+        "spent": 0,
+        "total_earned": 0
+      },
+      "inventory": {
+        "equipped": [],
+        "unequipped": [
+          "Adventurer's kit",
+          "Sword"
         ]
-      }
+      },
+      "stats": {
+        "Might": 3,
+        "Agility": 3,
+        "Mind": 3,
+        "Spirit": 3,
+        "Essence": 3
+      },
+      "skills": {
+        "Combat": 2,
+        "Lore": 2,
+        "Athletics": 2,
+        "Survival": 2,
+        "Arcana": 2,
+        "Stealth": 2,
+        "Diplomacy": 2
+      },
+      "abilities": []
+    },
+    {
+      "name": "Zael",
+      "age": 15,
+      "level": 1,
+      "unlocked_aspects": [],
+      "aspect_abilities": [],
+      "abilities": []
+    },
+    {
+      "name": "Selra",
+      "age": 19,
+      "level": 1,
+      "unlocked_aspects": [],
+      "aspect_abilities": [],
+      "abilities": []
     }
-  }
+  ]
 }
