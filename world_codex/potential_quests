@@ -1,0 +1,213 @@
+{
+  "potential_quests": {
+    "main_quests": [
+      {
+        "name": "A Dragon's Legacy",
+        "type": "Main Narrative",
+        "description": "Grand Inquisitor Valerius and the Champions of Order are a looming threat. The party must find a way to counter their growing influence, uncover the truth of the Shattering, and protect Rya from being captured.",
+        "trigger": "Ongoing from the prologue.",
+        "relevant_files": [
+          "world_codex/factions.json",
+          "world_codex/lore.json"
+        ]
+      },
+      {
+        "name": "The Unwritten Axiom",
+        "type": "Main Narrative / Legacy",
+        "description": "Loremaster Oris has revealed a prophecy that offers a single hope against Elysia's absolute power: to forge an artifact of pure possibility by gathering three conceptual 'echoes' from across Eryndor.",
+        "trigger": "Party reaches Level 15 and confronts Loremaster Oris about Elysia.",
+        "relevant_files": [
+          "world_codex/npcs.json",
+          "world_codex/locations.json"
+        ]
+      }
+    ],
+    "companion_quests": [
+      {
+        "name": "The Nature of the Void",
+        "type": "Companion (Zael)",
+        "description": "The whispers in Zael's mind have been silenced, but he now knows the Void itself is not evil. He is determined to discover what force is corrupting its pure energy and to learn the truth of his own origins.",
+        "trigger": "Activated after Rya attunes to the Void lineage.",
+        "relevant_files": [
+          "world_codex/characters/companions/zael.json"
+        ]
+      },
+      {
+        "name": "Selra's Faith",
+        "type": "Companion (Selra)",
+        "description": "After witnessing the events in the Void Chasm, Selra is deeply conflicted. She must reconcile the goodness of her faith with the cruel actions of the Champions of Order and decide where her true loyalties lie.",
+        "trigger": "Activated after the party escapes the Elysian Grand Cathedral.",
+        "relevant_files": [
+          "world_codex/characters/companions/selra.json"
+        ]
+      },
+      {
+        "name": "The Price of Vengeance",
+        "type": "Companion (Garrick)",
+        "description": "Garrick was betrayed by Grand Inquisitor Valerius. He seeks Rya's power as a weapon against the man who made him a monster and will stop at nothing to see Valerius pay.",
+        "trigger": "Garrick joins the party.",
+        "relevant_files": [
+          "world_codex/characters/companions/garrick.json"
+        ]
+      },
+      {
+        "name": "A Stolen Past, A Stolen Future",
+        "type": "Companion (Lirien)",
+        "description": "Lirien stole a powerful relic to disrupt an Arcane Dominion ritual. Now, pursuers led by a rival thief frequently ambush the party, forcing Lirien to confront his past.",
+        "trigger": "Lirien joins the party.",
+        "relevant_files": [
+          "world_codex/characters/companions/lirien.json"
+        ]
+      },
+      {
+        "name": "The Soul Within",
+        "type": "Companion (Zykar)",
+        "description": "Hunted by the Arcane Dominion, Zykar seeks to understand the human soul trapped within his construct body. The fragmented memories it holds may contain clues about the Shattering.",
+        "trigger": "Zykar joins the party.",
+        "relevant_files": [
+          "world_codex/characters/companions/zykar.json"
+        ]
+      },
+      {
+        "name": "The Weight of the Crown",
+        "type": "Companion (Nina)",
+        "description": "Torn between her royal duties and a desire for freedom, Princess Nina must navigate the political machinations of the Ember Concord and her father's strict expectations.",
+        "trigger": "Nina joins the party.",
+        "relevant_files": [
+          "world_codex/characters/companions/nina.json"
+        ]
+      },
+      {
+        "name": "The Stolen Forge-Relics",
+        "type": "Companion (Torr)",
+        "description": "The Champions of Order have stolen sacred relics from Torr's clan. He aims to recover them and craft a legendary weapon to defeat the Order.",
+        "trigger": "Torr joins the party.",
+        "relevant_files": [
+          "world_codex/characters/companions/torr.json"
+        ]
+      },
+      {
+        "name": "A Hunter's Mark",
+        "type": "Companion (Talia)",
+        "description": "Talia is on a personal quest to track down a notorious Arcane Dominion captain who shot her down and left her for dead. This captain is a recurring antagonist who holds a valuable relic the party needs.",
+        "trigger": "Talia joins the party.",
+        "relevant_files": [
+          "world_codex/characters/companions/talia.json"
+        ]
+      },
+      {
+        "name": "The Blighted Glade",
+        "type": "Companion (Veridia)",
+        "description": "The encroaching magical pollution from the Arcane Dominion's excavations is poisoning Veridia's sacred grove. She must find allies to help her save it.",
+        "trigger": "Veridia joins the party.",
+        "relevant_files": [
+          "world_codex/characters/companions/veridia.json"
+        ]
+      },
+      {
+        "name": "The Usurper's Reign",
+        "type": "Companion (Kei)",
+        "description": "Framed for a crime against his people, Kei was exiled by a rival who allied with the Arcane Dominion. He must expose the conspiracy to protect his pack.",
+        "trigger": "Kei joins the party.",
+        "relevant_files": [
+          "world_codex/characters/companions/kei.json"
+        ]
+      },
+      {
+        "name": "The Abomination's Purpose",
+        "type": "Companion (Rune)",
+        "description": "Hunted by a faction of lore-keepers who believe a souled construct is an abomination, Rune seeks to understand his creator's fragmented memories and his purpose in this new world.",
+        "trigger": "Rune joins the party.",
+        "relevant_files": [
+          "world_codex/characters/companions/rune.json"
+        ]
+      },
+      {
+        "name": "The Oracle's Burden",
+        "type": "Companion (Eldra)",
+        "description": "As the ghostly remnant of an ancient oracle, Eldra is bound to uncover the true history of the Shattering, but her spectral presence attracts other spirits, some benevolent, some malevolent.",
+        "trigger": "Eldra joins the party.",
+        "relevant_files": [
+          "world_codex/characters/companions/eldra.json"
+        ]
+      }
+    ],
+    "side_quests": [
+      {
+        "name": "The Sun-Kissed Petal",
+        "type": "Side Quest / Prologue",
+        "description": "Elder Elara has asked Rya and Zael to find a rare Sun-Kissed Petal, a vital component for the Festival of First Flames.",
+        "trigger": "Begins the prologue.",
+        "relevant_files": [
+          "tools/newgame_prologue.json"
+        ]
+      },
+      {
+        "name": "A Light in the Woods",
+        "type": "Side Quest / Prologue",
+        "description": "After the destruction of Windmark Village, the party must find a way to cleanse the corruption of the Gloomwood Heart to reach the sanctuary of Tanglewood Reach.",
+        "trigger": "After fleeing Windmark Village.",
+        "relevant_files": [
+          "bestiary/bosses_and_legends.json"
+        ]
+      },
+      {
+        "name": "The Crystal-back Crawler",
+        "type": "Side Quest",
+        "description": "The party must kill a dangerous beast in the Gemstone Crevice to earn the trust of the Stonekin of Stonegard.",
+        "trigger": "Arriving at Stonegard.",
+        "relevant_files": [
+          "world_codex/locations.json"
+        ]
+      },
+      {
+        "name": "Bones of the Past",
+        "type": "Side Quest",
+        "description": "Karrus, the Master Smith of Stonegard, requires a sacred dragon bone from the Dragon's Graveyard to forge a powerful item.",
+        "trigger": "Gaining the trust of the Stonekin.",
+        "relevant_files": [
+          "world_codex/npcs.json"
+        ]
+      },
+      {
+        "name": "The Gonghead's Toll",
+        "type": "Side Quest",
+        "description": "A powerful Gonghead construct is terrorizing the path through the Shattered Lands, disrupting supply lines for the Scavenger's Hope outpost.",
+        "trigger": "Traveling through the Shattered Lands.",
+        "relevant_files": [
+          "bestiary/monsters.json"
+        ]
+      },
+      {
+        "name": "The Corrupted Quarry",
+        "type": "Side Quest",
+        "description": "The Sunstone Quarry, vital to the Scalebound Clans, has been overrun by burrowing Rock Serpents and Crystal Entities, cutting the clan off from their sacred resource.",
+        "trigger": "Speaking with Karrus or Hekla in Stonegard.",
+        "relevant_files": [
+          "world_codex/locations.json",
+          "world_codex/npcs.json"
+        ]
+      },
+      {
+        "name": "The Hermit of the Woods",
+        "type": "Side Quest",
+        "description": "A reclusive hunter named Rhys, a former Champion of Order, lives deep within the Whispering Woods. He possesses invaluable knowledge of the Champions' tactics and weaknesses, but is deeply paranoid.",
+        "trigger": "Finding his cabin or hearing rumors in Tanglewood Reach.",
+        "relevant_files": [
+          "world_codex/locations.json",
+          "world_codex/npcs.json"
+        ]
+      },
+      {
+        "name": "The Runeforge Remnants",
+        "type": "Side Quest",
+        "description": "Archivist Linnea of the Runeforge Remnants seeks to reactivate a massive machine in the Arcanum Vaults and sees Rune as a priceless key to her research.",
+        "trigger": "Discovering the Arcanum Vaults.",
+        "relevant_files": [
+          "world_codex/locations.json",
+          "world_codex/npcs.json"
+        ]
+      }
+    ]
+  }
+}
