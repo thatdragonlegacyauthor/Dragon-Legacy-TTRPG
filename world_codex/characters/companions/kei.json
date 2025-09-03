@@ -3,7 +3,11 @@
   "char_id": "FROSTFANG_KEI",
   "type": "Frostfang (Wolf-like humanoid)",
   "role": "Skirmisher",
-  "background": "A proud scout from a pack within the Glacial Maw. He was framed for a crime against his people by a rival who sought to seize control of the pack by allying with the Arcane Dominion. Exiled and hunted, he joins the hero to protect his people from the Dominion's influence.",
+  "physical_description": "A proud scout with a strong, athletic build. His fur is a pristine white, but scarred from countless hunts, giving him a grizzled and defiant look. His piercing, icy blue eyes betray a fierce and unyielding loyalty. He wears the rugged hides and furs of his people and carries a long, serrated spear, a traditional weapon of the Frostfang.",
+  "background": "Kei was once considered an ideal heir to his pack's leadership in the frozen Glacial Maw, but a rival, Vargus, framed him for a crime against his people. In his lust for power, Vargus allied himself with the technologically advanced Arcane Dominion, an unforgivable betrayal. Exiled and hunted, Kei now travels with the party, his knowledge of the unforgiving tundra invaluable. His quest is to expose the conspiracy and reclaim his honor.",
+  "voice": "A quiet, low tenor that is used to speaking in hushed tones, but can become a defiant bark when angered.",
+  "quirk": "He has a habit of sharpening his claws on any available surface when agitated.",
+  "relationships": "His rival, Vargus, actively hunts him with the help of the Arcane Dominion. Elder Lyraka is a trusted mentor and leader of the traditionalist faction of the Frostfang.",
   "narrative_hook": "Kei's rival actively uses Arcane Dominion agents to hunt the party, leading to ambushes and tense tracking sequences in the wild. Kei's knowledge of the tundra is essential for finding hidden ruins and navigating the treacherous Glacial Maw.",
   "weapon_proficiency": {
     "favored_types": [
@@ -147,4 +151,20 @@
             },
             {
               "name": "Pack Tactics (Passive)",
-              "effect": "You gain a +2 bonus on your
+              "effect": "You gain a +2 bonus on your attack rolls against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated."
+            }
+          ]
+        },
+        {
+          "tier": "Archon (Level 20)",
+          "talents": [
+            {
+              "name": "Call the Hunt (Ultimate)",
+              "effect": "As a major action, you can mark a single target as the pack's prey for 1 minute. For the duration, all allies within 60 feet of the target can move up to their full speed towards the target as a Reaction whenever the target is hit by an attack. This can only be used once per day and costs 20 Resolve."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
