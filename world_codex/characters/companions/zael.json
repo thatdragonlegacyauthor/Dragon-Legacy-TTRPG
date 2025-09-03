@@ -3,7 +3,11 @@
   "char_id": "VOID_ZAEL",
   "type": "Human (Void-touched)",
   "role": "Mystic/Illusionist",
-  "background": "A mysterious foundling raised alongside Rya in Windmark Village, his true origins are tied to the Void Chasm. He is a source of wisdom with no memory of his past, but his powers risk a slow corruption from Elysia's whispers, amplified by the nearby Elysian Grand Cathedral.",
+  "physical_description": "A striking, almost ethereal figure with a youthful face often shadowed by a quiet intensity. His hair is a shock of pure white. His most unnerving feature is his eyes—dark and seemingly bottomless—that appear to absorb the light around them.",
+  "background": "Zael was a foundling discovered near the Void Chasm. He grew up alongside Rya in Windmark Village, a quiet and observant boy with the strange ability to instinctively sense the emotions of others. He is tormented by the beautiful, comforting whispers of Elysia, a tempting voice that promises peace at the cost of his free will. He now believes confronting his connection to the Void is the only way to protect his friends and his peaceful past.",
+  "voice": "A low, thoughtful baritone, often trailing off as if listening to a distant whisper only he can hear.",
+  "quirk": "He unconsciously traces intricate, void-like patterns in the dust or sand when lost in thought.",
+  "relationships": "Deeply bonded with Rya from their shared past. He respects Selra's compassion but is wary of her faith in Elysia due to the whispers he hears.",
   "narrative_hook": "His presence attracts attention from the Champions of Order. Elysia's whispers constantly echo in his mind, a tempting voice promising him the strength to protect his friends if only he would submit to her perfect, unchaotic order.",
   "weapon_proficiency": {
     "favored_types": [
@@ -67,7 +71,7 @@
           "talents": [
             {
               "name": "Mental Echo",
-              "effect": "As a major action, you can touch a creature and make a Mind DC 15 check against them. On a success, you learn one of their surface thoughts or a single important memory. This can be used once per day and costs 10 Resolve."
+              "effect": "As a major action, you can touch a creature and make a Mind DC 15 check against them. On a success, you can read their surface thoughts or a single important memory. This can be used once per day and costs 10 Resolve."
             },
             {
               "name": "Flickering Image (Modifies Shadow Veil)",
