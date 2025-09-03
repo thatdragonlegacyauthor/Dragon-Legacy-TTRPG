@@ -3,7 +3,11 @@
   "char_id": "RUNEFORGE_ZYKAR",
   "type": "Soul-bound construct",
   "role": "Tank/Soul Engine",
-  "background": "A construct with a human soul, crafted in a secret lab beneath the Arcane Dominion's Crystal Spire. He escaped and now seeks to understand the soul within him.",
+  "physical_description": "Zykar is a hulking, magically-created golem of black iron and pulsating crystals, standing eight feet tall. His body is a fusion of a war construct and a biomechanical experiment, with his armor plating showing signs of arcane modifications and his joints crackling with contained magical energy. His head is a perfectly polished, featureless mask, devoid of emotion, and his single, crystalline eye glows with a piercing red light.",
+  "background": "Zykar was a prototype construct designed by the Arcane Dominion as a bodyguard. During a containment breach, a human soul was accidentally transferred into his chassis, awakening him with sentience. He escaped, a walking contradiction of his purpose: a machine with a heart. Now, relentlessly hunted by his former masters, Zykar roams the land, searching for clues to his past life and a fierce, unspoken need to protect something he can’t quite remember.",
+  "voice": "A low, resonant baritone that sounds like two pieces of metal grinding together, lacking any natural inflection.",
+  "quirk": "He will often freeze in place for a moment, as if listening to a distant sound, a side effect of the fragmented memories of the soul within him.",
+  "relationships": "The Arcane Dominion are his primary antagonists, hunting him to reclaim their lost experiment. His central conflict is understanding the identity of the human soul trapped within him.",
   "narrative_hook": "Dominion hunters pursue Zykar relentlessly. The fragmented memories of the soul within him contain clues about the Shattering.",
   "weapon_proficiency": {
     "favored_types": [
