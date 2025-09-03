@@ -937,6 +937,530 @@
             }
           }
         ]
+      },
+      {
+        "id": "FORGE_CITIES",
+        "name": "The Forge-Cities",
+        "region": "The Iron Peaks",
+        "type": "Town",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "STONEGARD",
+            "travel_days": 5,
+            "terrain": "Mountain Pass",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 70, "skill_challenge": 25, "rp_encounter": 5 }
+            }
+          },
+          {
+            "target_id": "GLACIAL_MAW_PASS",
+            "travel_days": 8,
+            "terrain": "Glacial Foothills",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 70, "skill_challenge": 30, "rp_encounter": 0 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "SERPENTS_MAW_JUNGLE",
+        "name": "The Serpent's Maw Jungle",
+        "region": "Southern Wilds",
+        "type": "Region",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "OASIS_OF_ZHAVASK",
+            "travel_days": 10,
+            "terrain": "Jungle Edge",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 50, "skill_challenge": 30, "rp_encounter": 20 }
+            }
+          },
+          {
+            "target_id": "SUNSTONE_GLADE",
+            "travel_days": 15,
+            "terrain": "Deep Jungle",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 70, "skill_challenge": 30, "rp_encounter": 0 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "MISTWOOD_VALE",
+        "name": "The Mistwood Vale",
+        "region": "Western Coast",
+        "type": "Region",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "TIDEWATCH_SPIRE",
+            "travel_days": 5,
+            "terrain": "Coastal Mists",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 30, "skill_challenge": 50, "rp_encounter": 20 }
+            }
+          },
+          {
+            "target_id": "SUNKEN_CITY_OF_ASTORA",
+            "travel_days": 2,
+            "terrain": "Submerged Path",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "Low",
+              "types": { "combat": 20, "skill_challenge": 70, "rp_encounter": 10 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "SUNKEN_TEMPLE_AHNQOTL",
+        "name": "The Sunken Temple of Ahn'Qotl",
+        "region": "The Serpent's Maw Jungle",
+        "type": "Dungeon",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "SERPENTS_MAW_JUNGLE",
+            "travel_days": 1,
+            "terrain": "Jungle Swamp",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 80, "skill_challenge": 20, "rp_encounter": 0 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "BLACK_TUSK_GROTTO",
+        "name": "Black-Tusk Grotto",
+        "region": "Southern Wilds",
+        "type": "Outpost",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "SERPENTS_MAW_JUNGLE",
+            "travel_days": 3,
+            "terrain": "Jungle Caves",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 30, "skill_challenge": 40, "rp_encounter": 30 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "HANGING_GARDENS",
+        "name": "The Hanging Gardens",
+        "region": "The Serpent's Maw Jungle",
+        "type": "Landmark",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "SERPENTS_MAW_JUNGLE",
+            "travel_days": 2,
+            "terrain": "Vertical Jungle",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 60, "skill_challenge": 40, "rp_encounter": 0 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "RUINS_OF_SILVERWOOD",
+        "name": "The Ruins of Silverwood",
+        "region": "The Mistwood Vale",
+        "type": "Village (Ruined)",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "MISTWOOD_VALE",
+            "travel_days": 3,
+            "terrain": "Fog-shrouded Ruins",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 70, "skill_challenge": 20, "rp_encounter": 10 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "WEEPING_BARROWS",
+        "name": "The Weeping Barrows",
+        "region": "The Mistwood Vale",
+        "type": "Dungeon",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "RUINS_OF_SILVERWOOD",
+            "travel_days": 1,
+            "terrain": "Haunted Burial Grounds",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 80, "skill_challenge": 20, "rp_encounter": 0 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "STILLWATER_SHRINE",
+        "name": "The Stillwater Shrine",
+        "region": "The Mistwood Vale",
+        "type": "Landmark",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "RUINS_OF_SILVERWOOD",
+            "travel_days": 2,
+            "terrain": "Sacred Grove",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "Low",
+              "types": { "combat": 10, "skill_challenge": 50, "rp_encounter": 40 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "TITANS_CROSSING",
+        "name": "The Titan's Crossing",
+        "region": "The Azure Steppes",
+        "type": "Landmark",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "WINDMARK_VILLAGE",
+            "travel_days": 2,
+            "terrain": "River Crossing",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 30, "skill_challenge": 40, "rp_encounter": 30 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "SILKEN_MARKET",
+        "name": "The Silken Market",
+        "region": "Ember Concord",
+        "type": "Landmark",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "PORT_MYRIA",
+            "travel_days": 0,
+            "terrain": "City Alleyways",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "Low",
+              "types": { "combat": 10, "skill_challenge": 20, "rp_encounter": 70 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "PINNACLE_OF_THE_GALE",
+        "name": "The Pinnacle of the Gale",
+        "region": "Ember Concord",
+        "type": "Landmark",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "WYNDIA",
+            "travel_days": 0,
+            "terrain": "Floating City",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "Low",
+              "types": { "combat": 0, "skill_challenge": 50, "rp_encounter": 50 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "RUINED_CITADEL_DRAGON_LORDS",
+        "name": "The Ruined Citadel of the Dragon Lords",
+        "region": "The Shattered Lands",
+        "type": "Dungeon",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "SHATTERED_LANDS_BORDER",
+            "travel_days": 10,
+            "terrain": "Corrupted Wastes",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 80, "skill_challenge": 15, "rp_encounter": 5 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "MAW_OF_THE_SAND_WORM",
+        "name": "The Maw of the Sand Worm",
+        "region": "Arcane Dominion Territory",
+        "type": "Lair",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "OASIS_OF_ZHAVASK",
+            "travel_days": 5,
+            "terrain": "Desert Sands",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 70, "skill_challenge": 30, "rp_encounter": 0 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "TRIAL_OF_SCALES",
+        "name": "The Trial of Scales",
+        "region": "Scalebound Clans Territory",
+        "type": "Landmark",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "STONEGARD",
+            "travel_days": 1,
+            "terrain": "Mountain Cliff",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 10, "skill_challenge": 80, "rp_encounter": 10 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "SUNSTONE_QUARRY",
+        "name": "The Sunstone Quarry",
+        "region": "Scalebound Clans Territory",
+        "type": "Dungeon",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "STONEGARD",
+            "travel_days": 2,
+            "terrain": "Rocky Canyon",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 90, "skill_challenge": 10, "rp_encounter": 0 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "BIO_ARCANE_PENS",
+        "name": "The Bio-Arcane Pens",
+        "region": "Arcane Dominion Territory",
+        "type": "Dungeon",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "CRYSTAL_SPIRE",
+            "travel_days": 3,
+            "terrain": "Experimental Zone",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 90, "skill_challenge": 10, "rp_encounter": 0 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "SCORCH_STONE_MINES",
+        "name": "The Scorch-Stone Mines",
+        "region": "Arcane Dominion Territory",
+        "type": "Dungeon",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "CRYSTAL_SPIRE",
+            "travel_days": 4,
+            "terrain": "Strip Mine",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 80, "skill_challenge": 20, "rp_encounter": 0 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "BOREAN_SHELF",
+        "name": "The Borean Shelf",
+        "region": "The Glacial Maw",
+        "type": "Landmark",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "FROSTFANG_DEN",
+            "travel_days": 7,
+            "terrain": "Frozen Coastline",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 60, "skill_challenge": 40, "rp_encounter": 0 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "SUNKEN_LAIR_FROST_WYRM",
+        "name": "The Sunken Lair of the Frost Wyrm",
+        "region": "The Glacial Maw",
+        "type": "Dungeon",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "FROSTFANG_DEN",
+            "travel_days": 3,
+            "terrain": "Ice Caves",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 90, "skill_challenge": 10, "rp_encounter": 0 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "ANCESTRAL_HUNTING_GROUNDS",
+        "name": "The Ancestral Hunting Grounds",
+        "region": "The Glacial Maw",
+        "type": "Landmark",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "FROSTFANG_DEN",
+            "travel_days": 4,
+            "terrain": "Snow-swept Valley",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 50, "skill_challenge": 40, "rp_encounter": 10 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "SUNKEN_SOLARIUM",
+        "name": "The Sunken Solarium",
+        "region": "Champions of Order Territory",
+        "type": "Dungeon",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "ELYSIAN_GRAND_CATHEDRAL",
+            "travel_days": 5,
+            "terrain": "Submerged Temple",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 70, "skill_challenge": 30, "rp_encounter": 0 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "SHIFTING_ATOLL",
+        "name": "The Shifting Atoll",
+        "region": "The Mistwood Vale",
+        "type": "Dungeon",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "MISTWOOD_VALE",
+            "travel_days": 4,
+            "terrain": "Floating Islands",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 60, "skill_challenge": 40, "rp_encounter": 0 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "SILVERWOOD_GARRISON",
+        "name": "The Silverwood Garrison",
+        "region": "Champions of Order Territory",
+        "type": "Outpost",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "ELYSIAN_GRAND_CATHEDRAL",
+            "travel_days": 2,
+            "terrain": "Fortified Plains",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "Medium",
+              "types": { "combat": 50, "skill_challenge": 20, "rp_encounter": 30 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "VALLEY_OF_PENANCE",
+        "name": "The Valley of Penance",
+        "region": "Champions of Order Territory",
+        "type": "Village",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "ELYSIAN_GRAND_CATHEDRAL",
+            "travel_days": 1,
+            "terrain": "Cathedral Foothills",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "Low",
+              "types": { "combat": 10, "skill_challenge": 30, "rp_encounter": 60 }
+            }
+          }
+        ]
+      },
+      {
+        "id": "CHAMBER_OF_PURIFICATION",
+        "name": "The Chamber of Purification",
+        "region": "Champions of Order Territory",
+        "type": "Dungeon",
+        "is_known": false,
+        "connections": [
+          {
+            "target_id": "ELYSIAN_GRAND_CATHEDRAL",
+            "travel_days": 0,
+            "terrain": "Cathedral Underground",
+            "is_hidden": true,
+            "encounter_data": {
+              "rate": "High",
+              "types": { "combat": 90, "skill_challenge": 10, "rp_encounter": 0 }
+            }
+          }
+        ]
       }
     ]
   }
