@@ -3,7 +3,11 @@
   "char_id": "SEEDLING_SPROUT",
   "type": "Verdant Seedling",
   "role": "Tank/Healer",
-  "background": "A newly awakened forest guardian from the now-corrupted Whispering Woods. It communicates through simple gestures and empathic feelings. It has imprinted on Rya, sensing a primal connection to her draconic power.",
+  "physical_description": "Sprout's body is a fusion of living wood and verdant moss, constantly growing and changing. It has two large, muscular arms, made of solid roots and bark, and a surprisingly agile, low-to-the-ground body. Its head is a single, hard-shelled seed, and its face is a simple, childlike carving in the wood. It communicates through gestures and the subtle rustling of the leaves and glowing flowers that grow from its body.",
+  "background": "Sprout is a newly awakened forest guardian that emerged from the heart of the corrupted Whispering Woods. It has no memory of its past life, only an instinctive sense of dread at the corruption that plagues the world and a primal connection to Rya's draconic power. It is an empathic creature that communicates through simple gestures and feelings. As it grows, it may gain the power to purify corrupted locations, healing the world one step at a time.",
+  "voice": "Does not speak, but communicates through a series of empathic feelings, simple gestures, and the rustling of its leaves.",
+  "quirk": "It instinctively seeks out sources of sunlight or pure mana, a remnant of its nature as a forest guardian.",
+  "relationships": "Its existence is directly tied to the party's efforts to heal the world, and it has imprinted on Rya, sensing a primal connection to her draconic power.",
   "narrative_hook": "Sprout is a key to understanding the deep corruption spreading through the land. Its growth and evolution are directly tied to the party's efforts to heal the world, and it may be able to purify corrupted locations.",
   "weapon_proficiency": {
     "favored_types": [
