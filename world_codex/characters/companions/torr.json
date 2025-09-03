@@ -3,7 +3,11 @@
   "char_id": "PANGOLIN_TORR",
   "type": "Pangolin-kin",
   "role": "Tank/Craftsman",
-  "background": "An exiled blacksmith from the Forge-Cities of the Iron Peaks. He aims to craft a legendary weapon to defeat the Order and joins after Rya recovers stolen clan relics.",
+  "physical_description": "Torr's body is broad and immense, a hulking Pangolin-kin figure covered in overlapping, hardened scales that resemble plates of forged iron. His arms are thick with muscle from years of blacksmithing, and he often carries a massive, hand-forged warhammer. His face is stoic, with a low, rumbling voice.",
+  "background": "An exiled blacksmith of the Pangolin-kin, a people of resilient craftsmen who carve their immense Forge-Cities into the heart of the Iron Peaks. He aims to craft a legendary weapon to defeat the Champions of Order who have stolen sacred relics from his clan and to forge a new legacy for himself.",
+  "voice": "A deep, resonant baritone that carries the rhythmic quality of a smith's hammer, often punctuated with a low grunt.",
+  "quirk": "He unconsciously taps his fingers or hammer against a hard surface, as if listening for a rhythm only he can hear.",
+  "relationships": "The Champions of Order are his primary antagonists. He respects the legendary smiths of the Stonekin, such as Karrus.",
   "narrative_hook": "The Champions of Order have stolen relics from Torr's clan, which the party must recover. His crafting skills can be used to repair or upgrade the party's gear throughout the campaign.",
   "weapon_proficiency": {
     "favored_types": [
