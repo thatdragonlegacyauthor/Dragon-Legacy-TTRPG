@@ -3,8 +3,12 @@
   "char_id": "SHADOWPELT_LIRIEN",
   "type": "Panther-like humanoid",
   "role": "Infiltrator/Assassin",
-  "background": "A master thief from the secretive communities in the Serpent's Maw Jungle. He stole a powerful relic from an Arcane Dominion expedition to disrupt their rituals and now joins the hero to evade the assassins sent after him.",
-  "narrative_hook": "Arcane Dominion pursuers, led by a rival thief, frequently ambush the party. His intimate knowledge of the jungle can uncover hidden paths and lost ruins.",
+  "physical_description": "Lirien embodies the spirit of a jungle stalker. Her wiry, athletic body is covered in sleek, midnight-black fur, and a distinctive scar from a past hunt runs over her left eye. She is adorned with necklaces of sharp, polished teeth and wears a prominent, feathered earring that marks her as a master hunter. She wears simple, tightly bound clothing that doesn’t hinder her movement, and her hands are rarely far from the pair of perfectly balanced daggers tucked into her belt.",
+  "background": "Lirien was born among the secretive Shadowpelt communities that live high in the trees of the Serpent's Maw Jungle. Her people survive by their wits, stealing from passing travelers and remaining unseen in the dense canopy. Lirien quickly proved herself a natural, learning to move silently through the trees and strike with a speed and precision that earned her the title of “Ghost Panther.” She lived her life without question until an Arcane Dominion expedition threatened to defile a sacred grove of her people. In an act of defiance, she stole a powerful, magical relic from them, hoping to sabotage their ritual. Now, hunted by the Dominion’s assassins and betrayed by a rival thief seeking to curry favor, Lirien has fled her home. Her journey is a desperate bid for survival, and the relic she carries may be the only way to save her people.",
+  "voice": "A quick, sly alto that can change in a flash from a conspiratorial whisper to a charming, persuasive tone.",
+  "quirk": "She constantly fidgets with a small, unadorned stone she keeps in her hand, a remnant of a simple life she longs for.",
+  "relationships": "The Arcane Dominion are her primary antagonists. 'Mama' Kiri is a pragmatic protector and mentor from her past.",
+  "narrative_hook": "Arcane Dominion pursuers, led by a rival thief, frequently ambush the party. Her intimate knowledge of the jungle can uncover hidden paths and lost ruins.",
   "weapon_proficiency": {
     "favored_types": [
       "Dagger",
@@ -31,7 +35,7 @@
   "playstyles": [
     {
       "path_name": "Path of the Ghost Panther",
-      "description": "This path is for the pure assassin. It focuses on maximizing Lirien's stealth and burst damage, allowing him to eliminate key targets from the shadows before they even know he's there.",
+      "description": "This path is for the pure assassin. It focuses on maximizing Lirien's stealth and burst damage, allowing her to eliminate key targets from the shadows before they even know she's there.",
       "abilities": [
         {
           "tier": "Novice (Level 1+)",
@@ -98,7 +102,7 @@
     },
     {
       "path_name": "Path of the Rooftop Runner",
-      "description": "This path focuses on Lirien's incredible acrobatics and environmental awareness. He becomes a master of mobility, debuffs, and control, using his speed and cunning to outmaneuver foes and turn the battlefield to his advantage.",
+      "description": "This path focuses on Lirien's incredible acrobatics and environmental awareness. She becomes a master of mobility, debuffs, and control, using her speed and cunning to outmaneuver foes and turn the battlefield to her advantage.",
       "abilities": [
         {
           "tier": "Novice (Level 1+)",
