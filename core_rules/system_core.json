@@ -1,11 +1,11 @@
 {
   "project_name": "Dragon Legacy TTRPG",
-  "version": "2.9.7",
-  "last_updated": "2025-09-01T09:53:37-08:00",
+  "version": "3.0.0",
+  "last_updated": "2025-09-02T19:29:00-08:00",
   "system_core": {
     "system_info": {
       "system": "Dragon's Legacy TTRPG",
-      "version": "2.9.7"
+      "version": "3.0.0"
     },
     "core_mechanics": {
       "dice": "d10-based",
@@ -115,9 +115,19 @@
         ]
       },
       "resources": {
-        "vitality_formula": "10 + Might × 2",
-        "resolve_formula": "10 + Spirit × 2",
+        "vitality_formula": "10 + (Might * 2 * Character_Level)",
+        "resolve_formula": "10 + (Spirit * 2 * Character_Level)",
         "resolve_cost": "Magical abilities and Aspect Abilities have a Resolve cost, typically ranging from 1 (minor) to 10+ (major)."
+      },
+      "magical_defense": {
+        "name": "Magical Defense",
+        "description": "A character's ability to resist and mitigate the effects of hostile magic is governed by their Mind attribute. This represents a combination of willpower, pattern recognition, and an innate understanding of arcane energies.",
+        "derived_stat": {
+          "name": "Magical Damage Reduction (MDR)",
+          "formula": "A character's MDR is equal to their Mind attribute divided by 3, rounded down.",
+          "latex_formula": "\\lfloor \\frac{\\text{Mind Attribute}}{3} \\rfloor",
+          "effect": "When a character takes damage from a magical source (e.g., a spell, a draconic ability, an elemental attack), they reduce the incoming damage by their MDR value. This reduction is applied after all other modifiers."
+        }
       },
       "legacy_points": {
         "start": 3,
@@ -165,12 +175,12 @@
     },
     "character_creation": {
       "hero": {
-  "attributes": "13 points, max 5 per attribute. Rya's Essence attribute is automatically set to 3 at the onset, and does not count against these 13 points.",
-  "skills": "10 points, max 4 per skill",
-  "starting_aspects": "Choose 1 innate Aspect when Rya's power awakens in the prologue.",
-  "starting_gear": [
-    "Adventurer’s kit"
-         ]
+        "attributes": "13 points, max 5 per attribute. Rya's Essence attribute is automatically set to 3 at the onset, and does not count against these 13 points.",
+        "skills": "10 points, max 4 per skill",
+        "starting_aspects": "Choose 1 innate Aspect when Rya's power awakens in the prologue.",
+        "starting_gear": [
+          "Adventurer’s kit"
+        ]
       },
       "companion": {
         "attributes": "12 points, max 5 per attribute",
@@ -182,10 +192,6 @@
     "progression": {
       "currency": "Insight Points (IP)",
       "leveling_rule": "A character gains a level for every 6 Insight Points spent.",
-      "leveling_benefits": [
-        "Upon gaining a level, a character's maximum vitality increases by 5 points.",
-        "Upon gaining a level, a character's maximum Resolve increases by 5 points."
-      ],
       "attribute_cap_rule": "A character's maximum score in any single attribute cannot exceed 4 + (Character Level / 2, rounded down). This does not apply during initial character creation.",
       "threat_level_ip_awards": {
         "description": "IP is awarded based on the threat level of the overcome challenge.",
