@@ -1,10 +1,10 @@
-{
+e{
   "lineage_name": "Cosmic",
-  "description": "Dual paths of gravitational control (Void) and stellar destruction (Constellation).",
+  "description": "Dual paths of gravitational control (Singularity) and stellar destruction (Constellation).",
   "abilities": [
     {
       "name": "Gravity Well",
-      "playstyle": "Void",
+      "playstyle": "Singularity",
       "rank": "Novice",
       "level_requirement": 1,
       "effect": "Pull all enemies within a 15-foot cone 10 feet toward you.",
@@ -15,7 +15,7 @@
     },
     {
       "name": "Weightless Step",
-      "playstyle": "Void",
+      "playstyle": "Singularity",
       "rank": "Novice",
       "level_requirement": 1,
       "effect": "As a bonus action, you can move up to 10 feet in any direction, including vertically, without provoking attacks of opportunity.",
@@ -26,7 +26,7 @@
     },
     {
       "name": "Gravity Pulse",
-      "playstyle": "Void",
+      "playstyle": "Singularity",
       "rank": "Novice",
       "level_requirement": 1,
       "effect": "You unleash a pulse of gravitational energy in a 10-foot radius. All enemies in the area must make a Might DC 12 check or be pushed back 5 feet.",
@@ -37,7 +37,7 @@
     },
     {
       "name": "Space-Time Slip",
-      "playstyle": "Void",
+      "playstyle": "Singularity",
       "rank": "Novice",
       "level_requirement": 1,
       "effect": "As a reaction, when an ally within 30 feet takes damage, you can briefly bend space, reducing the damage they take by 1d6.",
@@ -48,7 +48,7 @@
     },
     {
       "name": "Vacuum",
-      "playstyle": "Void",
+      "playstyle": "Singularity",
       "rank": "Novice",
       "level_requirement": 1,
       "effect": "As a major action, you create a localized vacuum around a single enemy. The enemy is silenced and cannot cast spells with a verbal component for 1 round.",
@@ -59,7 +59,7 @@
     },
     {
       "name": "Zero-G Field",
-      "playstyle": "Void",
+      "playstyle": "Singularity",
       "rank": "Novice",
       "level_requirement": 1,
       "effect": "As a bonus action, you can create a 5-foot radius field of zero gravity. Creatures who enter the field or start their turn there must make a Might DC 12 check or become 'Floating', making them unable to make melee attacks.",
@@ -70,7 +70,7 @@
     },
     {
       "name": "Singularity",
-      "playstyle": "Void",
+      "playstyle": "Singularity",
       "rank": "Adept",
       "level_requirement": 5,
       "effect": "Create a point of zero gravity in a 10-foot radius. Enemies in the area are Restrained and cannot take reactions. This costs 5 Resolve.",
@@ -81,7 +81,7 @@
     },
     {
       "name": "Gravitational Pull",
-      "playstyle": "Void",
+      "playstyle": "Singularity",
       "rank": "Adept",
       "level_requirement": 5,
       "effect": "You can target a single enemy and pull them 30 feet toward you. They must make a Might DC 13 check or be knocked prone. This costs 5 Resolve.",
@@ -91,8 +91,8 @@
       "duration": "Instantaneous"
     },
     {
-      "name": "Void Step",
-      "playstyle": "Void",
+      "name": "Singularity Step",
+      "playstyle": "Singularity",
       "rank": "Adept",
       "level_requirement": 5,
       "effect": "You can teleport up to 30 feet to an unoccupied space you can see. This costs 5 Resolve.",
@@ -103,7 +103,7 @@
     },
     {
       "name": "Warp Strike",
-      "playstyle": "Void",
+      "playstyle": "Singularity",
       "rank": "Adept",
       "level_requirement": 5,
       "effect": "As a major action, you can teleport to an adjacent enemy, making a melee attack with Advantage. This costs 5 Resolve.",
@@ -114,7 +114,7 @@
     },
     {
       "name": "Time Slip",
-      "playstyle": "Void",
+      "playstyle": "Singularity",
       "rank": "Adept",
       "level_requirement": 5,
       "effect": "The damage reduction is now equal to 1d8 + your Essence attribute.",
@@ -125,7 +125,7 @@
     },
     {
       "name": "Event Horizon",
-      "playstyle": "Void",
+      "playstyle": "Singularity",
       "rank": "Expert",
       "level_requirement": 10,
       "effect": "Create a powerful pull in a 20-foot radius. All enemies are pulled to the center and take 3d8 physical damage. This costs 10 Resolve.",
@@ -136,7 +136,7 @@
     },
     {
       "name": "Galactic Shift",
-      "playstyle": "Void",
+      "playstyle": "Singularity",
       "rank": "Expert",
       "level_requirement": 10,
       "effect": "Swap places with an ally or enemy within 60 feet. This ability can be used once per combat. This costs 15 Resolve.",
@@ -147,7 +147,7 @@
     },
     {
       "name": "Black Hole (Mini)",
-      "playstyle": "Void",
+      "playstyle": "Singularity",
       "rank": "Expert",
       "level_requirement": 10,
       "effect": "You summon a miniature black hole at a point within 60 feet. For 3 rounds, all enemies within a 15-foot radius must make a Might DC 14 check at the end of their turn or be pulled 10 feet towards the center. This costs 10 Resolve.",
@@ -158,7 +158,7 @@
     },
     {
       "name": "Cosmic Anchor",
-      "playstyle": "Void",
+      "playstyle": "Singularity",
       "rank": "Expert",
       "level_requirement": 10,
       "effect": "As a major action, you can temporarily 'bind' a target to a point in space. They cannot be moved for 3 rounds on a failed Might DC 15 check. This costs 10 Resolve.",
@@ -169,7 +169,7 @@
     },
     {
       "name": "Black Hole",
-      "playstyle": "Void",
+      "playstyle": "Singularity",
       "rank": "Master",
       "level_requirement": 15,
       "effect": "Summon a miniature black hole that consumes all enemies in a 60-foot radius, dealing 8d12 force damage. The area is heavily obscured for 3 rounds. Usable once per day and costs 20 Resolve.",
@@ -180,7 +180,7 @@
     },
     {
       "name": "Quantum Lock",
-      "playstyle": "Void",
+      "playstyle": "Singularity",
       "rank": "Master",
       "level_requirement": 15,
       "effect": "As a major action, you can trap a single enemy in a localized time dilation field for 3 rounds. The enemy's speed is reduced to 0 and all attacks against them have a +2 bonus. This costs 15 Resolve.",
@@ -190,8 +190,8 @@
       "duration": "3 rounds"
     },
     {
-      "name": "Void Prison",
-      "playstyle": "Void",
+      "name": "Singularity Prison",
+      "playstyle": "Singularity",
       "rank": "Master",
       "level_requirement": 15,
       "effect": "You create a prison of pure force around a single enemy. The enemy is trapped and cannot act or move for 3 rounds. The prison has 50 Vitality and can be destroyed. This costs 15 Resolve.",
@@ -202,7 +202,7 @@
     },
     {
       "name": "The Great Filter",
-      "playstyle": "Void",
+      "playstyle": "Singularity",
       "rank": "Archon",
       "level_requirement": 20,
       "effect": "As a major action, you can instantly remove one enemy from the battlefield for the remainder of the combat. The enemy must be of a lower CR than your character level and must fail a Might DC 18 check. This can only be used once per day and costs 20 Resolve.",
@@ -213,10 +213,10 @@
     },
     {
       "name": "Universal Collapse",
-      "playstyle": "Void",
+      "playstyle": "Singularity",
       "rank": "Archon",
       "level_requirement": 20,
-      "effect": "You create a massive gravitational singularity that pulls all enemies within 60 feet to the center. They are then crushed, taking 10d12 force damage. This can only be used once per day and costs 20 Resolve.",
+      "effect": "You create a massive gravitational Singularity that pulls all enemies within 60 feet to the center. They are then crushed, taking 10d12 force damage. This can only be used once per day and costs 20 Resolve.",
       "check": "Essence + Level vs. DC 18",
       "bloodburn": "-4 Might",
       "resolve_cost": 20,
