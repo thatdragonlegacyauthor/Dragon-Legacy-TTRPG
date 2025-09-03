@@ -3,7 +3,11 @@
   "char_id": "ELYSIAN_SELRA",
   "type": "Human",
   "role": "Healer/Support",
-  "background": "A compassionate healer from the devout village of Havenwood, a town heavily influenced by the Champions of Order. She believes in harmony and the protection of the innocent, but is forced to question her faith when she witnesses the brutality of the Champions firsthand.",
+  "physical_description": "A gentle and serene figure. Her long, dark hair is often tied back with a simple rope, and she wears worn but meticulously clean robes. Her hands are calloused from a life spent tending to the sick. A delicate, silver amulet with the Elysian symbol hangs from her neck.",
+  "background": "A healer raised in Havenwood, a village that worships Elysia as a benevolent goddess of order. Selra’s faith was shattered when she witnessed the Champions of Order's brutal attack on Windmark. The cruelty of their purge was a direct contradiction to everything she had ever believed. Now, traveling with Rya, she is a lost pilgrim, struggling to reconcile her faith with the injustice she has seen. Her personal quest is to redefine what true compassion and order mean for herself.",
+  "voice": "A soft, melodic soprano that is gentle and soothing, but can become sharp and commanding when she speaks of her faith or injustice.",
+  "quirk": "She unconsciously clasps the silver Elysian symbol she wears around her neck when she is concerned or praying.",
+  "relationships": "Views Rya as a test of her beliefs. She is curious and sympathetic to Zael's struggles but sees his connection to the void as something that needs to be cleansed.",
   "narrative_hook": "Selra is torn between her deeply held faith in Elysia's goodness and the increasingly cruel actions of the Champions. Her personal quest is to find a balance between order and compassion, and to define her own faith.",
   "weapon_proficiency": {
     "favored_types": [
