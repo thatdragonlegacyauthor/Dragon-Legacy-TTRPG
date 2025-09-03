@@ -204,7 +204,7 @@
       },
       "detention_block_main": {
         "name": "Main Detention Block",
-        "description": "The air here is frigid and filled with despair. A long, grim corridor is lined with magically reinforced cells. Beings deemed 'chaotic'—from simple beastfolk to captured mages—huddle in the darkness, their spirits broken by the absolute, soul-crushing order of this place. This is where Zael was once held.",
+        "description": "The air here is frigid and filled with despair. A long, grim corridor is lined with magically reinforced cells. Beings deemed 'chaotic'—from simple beastfolk to captured mages—huddle in the darkness, their spirits broken by the absolute, soul-crushing order of this place.",
         "exits": [
           {
             "direction": "Back to Reliquary",
