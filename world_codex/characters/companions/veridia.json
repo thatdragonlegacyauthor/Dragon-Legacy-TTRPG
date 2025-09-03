@@ -3,7 +3,11 @@
   "char_id": "SPIRIT_VERIDIA",
   "type": "Forest Spirit",
   "role": "Elemental Mage/Control Mage",
-  "background": "A forest spirit and the ancient guardian of the 'Sunstone Glade,' a sacred grove deep within the Serpent's Maw Jungle. The encroaching magical pollution from the Arcane Dominion's nearby excavations is poisoning her home, forcing her to seek allies to save it.",
+  "physical_description": "Veridia is a living embodiment of the jungle's raw power. Her skin is a mottled mosaic of soft bark and phosphorescent moss, and her hair is a cascade of thick, vibrant green vines that are constantly in motion. She is adorned with garlands of exotic, glowing flowers and her eyes, the color of fresh sprouts, radiate a calm, protective energy.",
+  "background": "An ancient guardian of a sacred grove deep within the Serpent's Maw Jungle, Veridia has watched over her home for centuries. A new, insidious corruption from the Arcane Dominion's magical excavations is poisoning the land, and Veridia feels its pain in her own soul. For the first time in her long life, she has been forced to leave her home, seeking allies to help her save it. Her ancient knowledge is invaluable to the party, but her presence also draws the attention of the Dominion, who see her as a powerful test subject.",
+  "voice": "A soft, resonant contralto that sounds like the rustling of leaves and the gentle flow of a stream.",
+  "quirk": "When she is in a new place, she will instinctively reach out and touch the nearest living plant, communing with its energy.",
+  "relationships": "The Arcane Dominion is a direct threat to her home. She shares a deep, spiritual bond with Elder Briar of Tanglewood Reach.",
   "narrative_hook": "Veridia is the key to navigating the deepest parts of the Serpent's Maw Jungle. Her ancient knowledge provides an advantage, but her presence draws the attention of the Arcane Dominion, who see her as a powerful potential test subject.",
   "weapon_proficiency": {
     "favored_types": [
