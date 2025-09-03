@@ -1,7 +1,7 @@
 {
   "name": "Torr",
-  "char_id": "ARMADILLIAN_TORR",
-  "type": "Armadillian",
+  "char_id": "PANGOLIN_TORR",
+  "type": "Pangolin-kin",
   "role": "Tank/Craftsman",
   "background": "An exiled blacksmith from the Forge-Cities of the Iron Peaks. He aims to craft a legendary weapon to defeat the Order and joins after Rya recovers stolen clan relics.",
   "narrative_hook": "The Champions of Order have stolen relics from Torr's clan, which the party must recover. His crafting skills can be used to repair or upgrade the party's gear throughout the campaign.",
@@ -30,7 +30,7 @@
   "playstyles": [
     {
       "path_name": "Path of the Iron Shell",
-      "description": "This path focuses on Torr's Armadillian heritage and his peerless armor. It turns him into a true bastion of defense, absorbing immense punishment, controlling the battlefield, and punishing foes who dare to strike him.",
+      "description": "This path focuses on Torr's Pangolin-kin heritage and his peerless keratin scales. It turns him into a true bastion of defense, absorbing immense punishment, controlling the battlefield, and punishing foes who dare to strike his nigh-impenetrable hide.",
       "abilities": [
         {
           "tier": "Novice (Level 1+)",
@@ -41,7 +41,7 @@
             },
             {
               "name": "Defensive Curl",
-              "effect": "As a bonus action, you can curl into a defensive ball. You gain an additional +2 bonus to Damage Reduction, but your movement speed is reduced to 0 for 1 round."
+              "effect": "As a bonus action, you can curl into a defensive ball of overlapping scales. You gain an additional +2 bonus to Damage Reduction, but your movement speed is reduced to 0 for 1 round."
             }
           ]
         },
@@ -50,11 +50,11 @@
           "talents": [
             {
               "name": "Spiked Rebuke (Passive)",
-              "effect": "Your armor is fitted with defensive spikes. Whenever an enemy hits you with a melee attack, they take physical damage equal to your Might attribute."
+              "effect": "Your scales are fitted with defensive spikes. Whenever an enemy hits you with a melee attack, they take physical damage equal to your Might attribute."
             },
             {
               "name": "Ricochet Shell",
-              "effect": "As a reaction when you are missed by a ranged physical attack, you can angle your armor to deflect the shot. Force the attacker to re-roll their attack against a different enemy within 10 feet of you. This costs 5 Resolve."
+              "effect": "As a reaction when you are missed by a ranged physical attack, you can angle your scales to deflect the shot. Force the attacker to re-roll their attack against a different enemy within 10 feet of you. This costs 5 Resolve."
             }
           ]
         },
@@ -67,7 +67,7 @@
             },
             {
               "name": "Goading Challenge",
-              "effect": "As a major action, you bang your hammer against your shell, forcing all enemies in a 15-foot cone to make a Spirit DC 14 check or have disadvantage on attack rolls that do not target you for 1 round. This costs 10 Resolve."
+              "effect": "As a major action, you bang your hammer against your scaled body, forcing all enemies in a 15-foot cone to make a Spirit DC 14 check or have disadvantage on attack rolls that do not target you for 1 round. This costs 10 Resolve."
             }
           ]
         },
