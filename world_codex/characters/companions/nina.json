@@ -3,7 +3,11 @@
   "char_id": "WYNDIA_NINA",
   "type": "Wyndian (Winged Humanoid)",
   "role": "Swordsmage/Support",
-  "background": "The beloved princess of the floating city of Wyndia. Torn between her royal duties and a desire for a life of adventure, Nina is a skilled duelist who has also inherited her family's innate command over wind magic. She is graceful, determined, and deeply compassionate.",
+  "physical_description": "Nina's physical form exudes Wyndian royalty. She possesses a lithe, graceful body and a pair of magnificent, feathery wings. Her elegant face is framed by flowing silver hair and sharp, intelligent eyes, and she is often seen in fine, silken robes. She carries a ceremonial sword at her side.",
+  "background": "The beloved princess of the floating city of Wyndia, Nina was born to a life of duty and political machinations. She is a skilled duelist and a powerful wind mage, but she feels trapped by her royal duties. She joins the party seeking the freedom to forge her own path, but her royal status brings both powerful connections and dangerous political enemies.",
+  "voice": "A clear, confident mezzo-soprano, but one that occasionally cracks with the strain of her political burdens.",
+  "quirk": "She unconsciously adjusts her posture to appear more regal, a habit from her royal upbringing.",
+  "relationships": "Her father, Lord Aerion, is a source of constant conflict due to his strict expectations. Her childhood friend, Captain Faelan, views the party as a chaotic and dangerous influence.",
   "narrative_hook": "Nina is burdened by the political machinations of the Ember Concord and her father's strict expectations. She joins the party seeking the freedom to forge her own path, but her royal status brings both powerful connections and dangerous political enemies.",
   "weapon_proficiency": {
     "favored_types": [
