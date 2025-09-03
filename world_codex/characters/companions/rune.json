@@ -3,7 +3,11 @@
   "char_id": "ANCIENT_RUNE",
   "type": "Soul-bound construct",
   "role": "Tank/Artificer",
-  "background": "A powerful, ancient golem discovered inert in the Arcanum Vaults, a forgotten pre-Shattering ruin. He contains the soul of his creator, a master artificer, and awakens with fragmented memories and a deep sense of purpose he can't quite grasp.",
+  "physical_description": "Rune’s form is a patchwork of salvaged parts and ancient ingenuity. He is a rugged golem with a chassis of cracked and repaired steel, crudely welded together but undeniably strong. Glowing blue runes pulse across his body, a sign of the sentient soul within. His head is a single, unblinking crystalline lens, and his movements are stiff but deliberate.",
+  "background": "Rune is a relic of a forgotten age, a powerful golem that lay inert in the Arcanum Vaults for centuries. When he awoke, it was not with a blank slate, but with the fragmented memories of his creator, a master artificer who lived and died before the Shattering. Rune feels a deep sense of purpose he can't quite grasp, a call to a mission lost to time. He is now hunted by a faction of lore-keepers who view a souled construct as an abomination against nature. His journey is one of self-discovery, piecing together the memories of his creator to find his own true purpose.",
+  "voice": "A deep, mechanical hum that modulates to form words, often speaking in a formal, slightly archaic manner.",
+  "quirk": "He occasionally makes a small, 'whirring' noise when he is thinking or processing information.",
+  "relationships": "He is a priceless discovery for the Runeforge Remnants. He is hunted by a faction of lore-keepers who believe a souled construct is an abomination.",
   "narrative_hook": "Rune's fragmented memories contain key information about the Shattering and the locations of other ancient technologies. He is hunted by a faction of lore-keepers who believe a souled construct is an abomination and wish to see him decommissioned.",
   "weapon_proficiency": {
     "favored_types": [
