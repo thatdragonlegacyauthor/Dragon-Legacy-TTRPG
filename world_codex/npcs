@@ -1,6 +1,184 @@
 {
   "npcs": [
     {
+      "name": "Magister Vorlag",
+      "char_id": "DOMINION_VORLAG",
+      "role": "Chief Bio-Arcanist",
+      "description": "A gaunt, cold-eyed man with ink-stained fingers and a perpetually weary expression. He oversees the horrific experiments in the Bio-Arcane Pens, viewing the creatures not as living beings, but as complex equations to be solved. His brilliance is matched only by his complete lack of empathy.",
+      "voice": "A dry, clinical monotone that betrays no emotion, even when describing the most horrific of his creations.",
+      "quirk": "He keeps a detailed, leather-bound journal filled with anatomical sketches and arcane formulae, which he updates with obsessive precision after every experiment.",
+      "relationships": [
+        {
+          "target_char_id": "DOMINION_MALAKOR",
+          "relationship_type": "Subordinate. He is a key researcher under Malakor's command, but his ambition may one day make him a rival."
+        },
+        {
+          "target_char_id": "FROSTFANG_VARGUS",
+          "relationship_type": "Supplier. He is the one who designed and installed Vargus's crude cybernetic enhancements."
+        }
+      ]
+    },
+    {
+      "name": "The Incarcerator",
+      "char_id": "DOMINION_INCARCERATOR",
+      "role": "Magical Enforcer",
+      "description": "A hulking, magically-created golem of black iron and pulsating crystals. It serves as a field agent for the Arcane Dominion, tasked with capturing magical creatures and eliminating threats with brutal, unthinking efficiency. It does not speak, but communicates in a series of low, ominous hums.",
+      "voice": "A low, resonant hum that seems to vibrate in your very bones.",
+      "quirk": "Its crystalline eye glows with a different color depending on its current directive: red for combat, blue for observation, and purple for containment.",
+      "relationships": [
+        {
+          "target_char_id": "DOMINION_MALAKOR",
+          "relationship_type": "Creation/Servant. It is bound to the will of the Archon."
+        }
+      ]
+    },
+    {
+      "name": "Elder Lyraka",
+      "char_id": "FROSTFANG_LYRAKA",
+      "role": "Pack Shaman",
+      "description": "An ancient Frostfang whose white fur is as pure as the driven snow. She is the spiritual leader of the pack and a staunch traditionalist who views Vargus's alliance with the Arcane Dominion as a betrayal of their ancestral ways. She is a powerful shaman who communes with the spirits of the Glacial Maw.",
+      "voice": "A low, raspy whisper that carries the weight of a hundred winters.",
+      "quirk": "She reads the future in the patterns of the aurora that dance in the northern sky, and her prophecies are said to be unnervingly accurate.",
+      "relationships": [
+        {
+          "target_char_id": "FROSTFANG_KEI",
+          "relationship_type": "Ally/Mentor. She was a mentor to Kei and supports his claim to leadership."
+        },
+        {
+          "target_char_id": "FROSTFANG_VARGUS",
+          "relationship_type": "Political Opponent. She is the leader of the traditionalist faction that opposes his rule."
+        }
+      ]
+    },
+    {
+      "name": "Fenrir",
+      "char_id": "FROSTFANG_FENRIR",
+      "role": "Young Hunter",
+      "description": "A young, hot-headed Frostfang hunter who is fiercely loyal to Kei. He is a skilled tracker and a formidable warrior who chafes under Vargus's oppressive rule.",
+      "voice": "A young, energetic tenor that is often raised in a defiant bark.",
+      "quirk": "He has a habit of sharpening his claws on any available surface when agitated, a clear sign of his barely-contained aggression.",
+      "relationships": [
+        {
+          "target_char_id": "FROSTFANG_KEI",
+          "relationship_type": "Loyal Follower. He is Kei's most ardent supporter and would follow him into any battle."
+        },
+        {
+          "target_char_id": "FROSTFANG_VARGUS",
+          "relationship_type": "Antagonist. He openly defies Vargus's rule and is a constant thorn in his side."
+        }
+      ]
+    },
+    {
+      "name": "Master Valya",
+      "char_id": "RUNEFORGE_VALYA",
+      "role": "Wandering Scholar",
+      "description": "A seasoned and well-traveled member of the Runeforge Remnants. She is a master of identifying and disabling ancient traps and security systems. She is a valuable source of information on pre-Shattering ruins, but her services always come at a price.",
+      "voice": "A calm, academic alto that is used to explaining complex mechanical concepts with ease.",
+      "quirk": "She has a collection of rare and ancient keys from all over the world, each with a unique story that she is happy to share.",
+      "relationships": [
+        {
+          "target_char_id": "RUNEFORGE_LINNEA",
+          "relationship_type": "Professional Rival. They share a mutual respect for each other's work, but are often in competition for the same rare artifacts and knowledge."
+        }
+      ]
+    },
+    {
+      "name": "Rico",
+      "char_id": "GILDEDPAW_RICO",
+      "role": "Master of Disguise",
+      "description": "A chameleon-like beastman who is a master of infiltration and espionage for the Gilded Paw. He is a theatrical and flamboyant personality, but beneath the surface, he is a cold and calculating spy who can blend into any environment.",
+      "voice": "A master of mimicry, able to perfectly replicate the voice and mannerisms of almost anyone he has met.",
+      "quirk": "He is a collector of rare and exotic masks, each one a memento from a successful infiltration.",
+      "relationships": [
+        {
+          "target_char_id": "GILDEDPAW_FARAH",
+          "relationship_type": "Subordinate. He is one of Farah's most trusted and effective field agents."
+        }
+      ]
+    },
+    {
+      "name": "Jaxx",
+      "char_id": "GILDEDPAW_JAXX",
+      "role": "Quartermaster",
+      "description": "A large, powerfully built lion-like beastman who manages the logistics of the Gilded Paw's smuggling operations. He is a man of few words, but his loyalty to Farah is absolute. He is a formidable opponent in a fight, but prefers to work behind the scenes.",
+      "voice": "A low, rumbling baritone that is rarely raised above a quiet growl.",
+      "quirk": "He is a connoisseur of rare and exotic teas, a surprising and refined habit for a man in his line of work.",
+      "relationships": [
+        {
+          "target_char_id": "GILDEDPAW_FARAH",
+          "relationship_type": "Right-hand Man. He is Farah's most trusted subordinate and the enforcer of her will."
+        }
+      ]
+    },
+    {
+      "name": "The Ashen Priest",
+      "char_id": "BROOD_ASHEN_PRIEST",
+      "role": "Cult Leader",
+      "description": "The charismatic and fanatical leader of the Brood of Dragnor. His face is hidden behind a mask of obsidian, and his robes are perpetually covered in a fine layer of volcanic ash. He preaches a doctrine of nihilistic destruction, believing that the world must be cleansed in fire to pave the way for a new age of dragons.",
+      "voice": "A passionate, booming baritone that can incite a crowd to a religious frenzy.",
+      "quirk": "He has a habit of running his fingers through a bowl of hot coals as he preaches, a sign of his fanatical devotion and his immunity to pain.",
+      "relationships": [
+        {
+          "target_char_id": "BROOD_KILGORE",
+          "relationship_type": "Superior. Kilgore is his chosen champion and the instrument of his will."
+        }
+      ]
+    },
+    {
+      "name": "Kilgore, the Cinder-Clad",
+      "char_id": "BROOD_KILGORE",
+      "role": "Cult Champion",
+      "description": "A massive, heavily armored warrior who has been granted a sliver of draconic power through the Brood's dark rituals. His armor is fused to his flesh, and his eyes glow with a malevolent, fiery light. He is the unstoppable will of the Ashen Priest made manifest.",
+      "voice": "A deep, guttural roar that sounds like the grinding of tectonic plates.",
+      "quirk": "His armor is constantly venting smoke and embers, a sign of the barely-contained draconic power that rages within him.",
+      "relationships": [
+        {
+          "target_char_id": "BROOD_ASHEN_PRIEST",
+          "relationship_type": "Subordinate. He is the fanatically loyal champion of the Ashen Priest."
+        }
+      ]
+    },
+    {
+      "name": "Ignis",
+      "char_id": "BROOD_IGNIS",
+      "role": "Flame-Blessed Assassin",
+      "description": "A lithe and terrifyingly silent assassin whose body is covered in ritualistic burn scars. She moves with an unnatural speed, her daggers glowing with a faint, malevolent heat. She is one of the Ashen Priest's most trusted agents, sent to eliminate those who would oppose the Brood's rise.",
+      "voice": "A soft, chilling whisper that is often punctuated by the faint hiss of cooling embers.",
+      "quirk": "She is fascinated by fire in all its forms and can often be found staring into a flame, her expression a mixture of reverence and madness.",
+      "relationships": [
+        {
+          "target_char_id": "BROOD_ASHEN_PRIEST",
+          "relationship_type": "Devoted Follower. She sees the Ashen Priest as a prophet and his will as her own."
+        }
+      ]
+    },
+    {
+      "name": "Pyra",
+      "char_id": "BROOD_PYRA",
+      "role": "Magma-Witch",
+      "description": "A powerful sorceress whose magic is drawn from the molten heart of Mount Dragnor. Her skin is cracked and glowing like cooling lava, and her eyes burn with an inner fire. She is a master of destructive fire magic, but her power is volatile and has twisted her mind, making her dangerously unpredictable.",
+      "voice": "A low, bubbling hiss that sounds like magma cooling on stone.",
+      "quirk": "She is prone to sudden, violent mood swings, her calm demeanor erupting into a fiery rage with little to no warning.",
+      "relationships": [
+        {
+          "target_char_id": "BROOD_ASHEN_PRIEST",
+          "relationship_type": "High Priestess. She is a key figure in the cult's rituals, channeling the power of the volcano for their dark purposes."
+        }
+      ]
+    },
+    {
+      "name": "Cinderclaw",
+      "char_id": "BROOD_CINDERCLAW",
+      "role": "Corrupted Beast",
+      "description": "Once a great cave bear, this creature has been captured by the Brood and twisted by their dark magic into a monstrous engine of destruction. Its fur is perpetually smoldering, and its claws are superheated to a dull, cherry-red glow. It is a beast of pure, unthinking rage, loyal only to the commands of its masters.",
+      "voice": "A deafening roar that is a mixture of animalistic fury and the sound of a raging forest fire.",
+      "quirk": "It has a deep, instinctual hatred for the cold, and will fly into a blind rage at the sight of ice or the touch of a cold wind.",
+      "relationships": [
+        {
+          "target_char_id": "BROOD_KILGORE",
+          "relationship_type": "Beast of War. It is often unleashed alongside Kilgore in battle, a living siege weapon to break enemy lines."
+        }
+    {
       "name": "Lord Aerion",
       "char_id": "WYNDIA_AERION",
       "role": "Ruler of Wyndia",
