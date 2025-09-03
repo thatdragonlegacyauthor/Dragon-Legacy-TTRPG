@@ -1,0 +1,636 @@
+{
+  "npcs": [
+    {
+      "name": "Lord Aerion",
+      "char_id": "WYNDIA_AERION",
+      "role": "Ruler of Wyndia",
+      "description": "A tall, severe man whose movements are as precise and economical as his words. He dresses in impeccably tailored but unadorned white robes, and his silver hair is pulled back in a tight, formal queue. He values order and stability above all, viewing unchecked power as a threat to his city's delicate peace.",
+      "voice": "A calm, measured baritone that rarely rises in volume, but carries an unmistakable weight of authority.",
+      "quirk": "He is never seen without a perfectly polished silver locket, the contents of which are a closely guarded secret.",
+      "relationships": [
+        {
+          "target_char_id": "WYNDIA_NINA",
+          "relationship_type": "Father. His strict expectations clash with his daughter's desire for freedom."
+        },
+        {
+          "target_char_id": "WYNDIA_FAELAN",
+          "relationship_type": "Superior. He is Faelan's lord and commander."
+        },
+        {
+          "target_char_id": "WYNDIA_SOLANUS",
+          "relationship_type": "Political Ally. Solanus is a key advisor to his rule."
+        },
+        {
+          "target_char_id": "WYNDIA_ZYLPHIA",
+          "relationship_type": "Political Rival. Zylphia seeks to undermine his family's rule."
+        }
+      ]
+    },
+    {
+      "name": "Grak, the Gatewarden",
+      "char_id": "SCALEBOUND_GRAK",
+      "role": "Gatewarden",
+      "description": "A stout, powerfully built Stonekin with slate-grey scales and a stubborn set to his jaw. His armor is functional and well-maintained, but covered in countless small scratches and dents. He is fiercely protective of his post and deeply suspicious of outsiders.",
+      "voice": "A low, gravelly rumble, as if his throat is lined with loose stones.",
+      "quirk": "He has a habit of tapping his spear on the ground three times before speaking, a nervous tic from his harsh training.",
+      "relationships": [
+        {
+          "target_char_id": "SCALEBOUND_GRORN",
+          "relationship_type": "Subordinate/Trainee. His stubbornness is a result of Grorn's harsh training."
+        },
+        {
+          "target_char_id": "SCALEBOUND_VEK",
+          "relationship_type": "Superior. He is Vek's direct commander at the outpost."
+        }
+      ]
+    },
+    {
+      "name": "Karrus, the Master Smith",
+      "char_id": "SCALEBOUND_KARRUS",
+      "role": "Master Smith",
+      "description": "A scarred and ancient Stonekin whose scales are the color of cooling iron. One of his horns has been broken and capped with a runic-etched piece of steel. He has a deep respect for powerful materials and takes a strong interest in Rya's draconic power, seeing it as a source of potential for forging legendary gear.",
+      "voice": "A deep, resonant baritone that carries the rhythmic quality of a smith's hammer.",
+      "quirk": "He will often test the quality of a metal by the sound it makes when struck, and can identify a blade's origin by its unique 'song'.",
+      "relationships": [
+        {
+          "target_char_id": "ARMADILLIAN_TORR",
+          "relationship_type": "Professional Respect (by reputation). He has likely heard tales of the legendary Armadillian smiths."
+        }
+      ]
+    },
+    {
+      "name": "Elder Briar",
+      "char_id": "TANGLEWOOD_BRIAR",
+      "role": "Village Leader",
+      "description": "A wizened old man whose skin is as wrinkled and tough as the bark of the tree his hut is built in. He leans heavily on a gnarled staff that seems to be a living part of the forest. He is deeply suspicious of Rya's draconic power, seeing it as a destructive, unnatural force.",
+      "voice": "A slow, creaking voice, like the sound of old branches groaning in the wind.",
+      "quirk": "He is constantly whittling small, intricate animal figurines, which he leaves as offerings to the forest spirits.",
+      "relationships": [
+        {
+          "target_char_id": "TANGLEWOOD_LYSSA",
+          "relationship_type": "Colleague. Works with Lyssa to lead and protect Tanglewood."
+        },
+        {
+          "target_char_id": "SPIRIT_VERIDIA",
+          "relationship_type": "Shared Concern. As a guardian of the woods, he shares Veridia's concern over the world's corruption."
+        }
+      ]
+    },
+    {
+      "name": "Kaelen",
+      "char_id": "TANGLEWOOD_KAELEN",
+      "role": "Lead Scout",
+      "description": "A young, skilled hunter with sharp eyes and a lean, muscular build. His clothes are a practical patchwork of woven leaves and animal hides. He is one of the few to venture to the forest floor and is curious about the outside world, making him a potential ally.",
+      "voice": "A quiet, low tenor that is used to speaking in hushed tones.",
+      "quirk": "He communicates with a series of complex bird calls, a secret language known only to the Tanglewood scouts.",
+      "relationships": [
+        {
+          "target_char_id": "HAVENWOOD_FINN",
+          "relationship_type": "Fellow Hunter. They have likely crossed paths in the Whispering Woods and share a professional respect."
+        }
+      ]
+    },
+    {
+      "name": "Lyssa",
+      "char_id": "TANGLEWOOD_LYSSA",
+      "role": "Apothecary and Spirit-Speaker",
+      "description": "A woman with long, braided hair woven with glowing moss and flowers. Her movements are graceful and silent, and she speaks in a soft, melodic voice. As the village's healer and spiritual guide, she communes with the forest's spirits and has knowledge of ancient lore.",
+      "voice": "A gentle, melodic soprano that sounds like the rustling of leaves.",
+      "quirk": "She believes that every plant has a unique song, and she can often be found humming to her herbs as she works.",
+      "relationships": [
+        {
+          "target_char_id": "TANGLEWOOD_BRIAR",
+          "relationship_type": "Colleague. The spiritual counterpart to Briar's practical leadership."
+        }
+      ]
+    },
+    {
+      "name": "Archon Malakor",
+      "char_id": "DOMINION_MALAKOR",
+      "role": "Leader of the Arcane Dominion",
+      "description": "An enigmatic, ancient mage whose face is always partially obscured by a swirling cowl of magical energy. His hands are covered in intricate, glowing tattoos, and his voice carries an unnerving, magical resonance. He views morality as a limitation to the pursuit of ultimate knowledge and power.",
+      "voice": "A smooth, sibilant tenor that seems to echo from multiple directions at once.",
+      "quirk": "He is never seen without a small, levitating crystal that slowly orbits his head, its color shifting based on his mood.",
+      "relationships": [
+        {
+          "target_char_id": "WYNDIA_SOLANUS",
+          "relationship_type": "Academic Rival. They represent opposing philosophies of magic and hold each other in professional contempt."
+        },
+        {
+          "target_char_id": "FROSTFANG_VARGUS",
+          "relationship_type": "Patron. Malakor supplies Vargus with power and technology to maintain control of the Frostfang, giving the Dominion a foothold in the Glacial Maw."
+        },
+        {
+          "target_char_id": "CHAMPIONS_VALERIUS",
+          "relationship_type": "Ideological Rival. He views Valerius's faith as a foolish obstacle to true power."
+        }
+      ]
+    },
+    {
+      "name": "Grand Inquisitor Valerius",
+      "char_id": "CHAMPIONS_VALERIUS",
+      "role": "Grand Inquisitor",
+      "description": "A relentless and high-ranking commander of the Champions of Order. His silver armor is polished to a mirror shine, and his gaze is as cold and unforgiving as a winter morning. He believes Rya's power is a plague that must be purged from the world for the good of all.",
+      "voice": "A sharp, commanding baritone that cuts through any other sound.",
+      "quirk": "He is never seen to blink, giving him an unnerving, statue-like intensity.",
+      "relationships": [
+        {
+          "target_char_id": "SPIRIT_ELARA",
+          "relationship_type": "Antagonist; Murderer. He is responsible for her death."
+        },
+        {
+          "target_char_id": "VOID_GARRICK",
+          "relationship_type": "Betrayer. He betrayed Garrick and cast him into the Void."
+        },
+        {
+          "target_char_id": "HERMIT_RHYS",
+          "relationship_type": "Former Superior; Object of Contempt. Represents the fanaticism Rhys abandoned."
+        },
+        {
+          "target_char_id": "CHAMPIONS_ISOLDE",
+          "relationship_type": "Superior Officer. Priestess Isolde operates under his command structure."
+        }
+      ]
+    },
+    {
+      "name": "Loremaster Oris",
+      "char_id": "ASTORAN_ORIS",
+      "role": "Loremaster",
+      "description": "An ancient Astoran whose bioluminescent scales have faded to a pale, ghostly white. He moves with a slow, deliberate grace, and his large, dark eyes seem to hold the weight of centuries. As the keeper of prophecies, he may offer the party cryptic guidance in exchange for recovering lost Astorani artifacts.",
+      "voice": "A soft, raspy whisper, like the sound of sand shifting in the deep ocean.",
+      "quirk": "He speaks in prophecies and riddles, believing that a direct answer can alter the course of fate for the worse.",
+      "relationships": [
+        {
+          "target_char_id": "ASTORAN_ORIN",
+          "relationship_type": "Colleague. Oris is the keeper of secrets, while Orin is the guardian of them."
+        },
+        {
+          "target_char_id": "ASTORAN_LYRA",
+          "relationship_type": "Mentor. He is Lyra's teacher in the history and lore of the Astorans."
+        },
+        {
+          "target_char_id": "SCALEBOUND_HESH",
+          "relationship_type": "Counterpart. As spiritual leaders of ancient races, they are aware of each other through lore and prophecy, sharing a deeper understanding of the world's history."
+        }
+      ]
+    },
+    {
+      "name": "Farah, the 'Caravan Master'",
+      "char_id": "GILDEDPAW_FARAH",
+      "role": "Caravan Master",
+      "description": "A cunning and charismatic fox-like beastwoman with a perpetual, knowing smirk. Her movements are quick and her laughter is a sharp, musical bark. She can procure nearly any item or piece of intelligence for the right price, but her loyalty is always to profit.",
+      "voice": "A smooth, persuasive alto with a hint of a playful purr.",
+      "quirk": "She has a habit of cleaning her already immaculate nails with a small, jewel-encrusted dagger when negotiating.",
+      "relationships": [
+        {
+          "target_char_id": "GROTTO_KIRI",
+          "relationship_type": "Business Contact. They likely share information and use each other's networks."
+        },
+        {
+          "target_char_id": "PORTMYRIA_THORNE",
+          "relationship_type": "Asset. She has the Harbormaster on her payroll."
+        },
+        {
+          "target_char_id": "GILDEDPAW_SILAS",
+          "relationship_type": "Superior. Silas is one of her field agents."
+        }
+      ]
+    },
+    {
+      "name": "Vargus, the Iron-Fang",
+      "char_id": "FROSTFANG_VARGUS",
+      "role": "Usurper Chieftain",
+      "description": "A large, brutish Frostfang with dark, matted fur and crude, sparking cybernetic enhancements grafted onto his body. He believes tradition makes his people weak and has allied with the Arcane Dominion for power.",
+      "voice": "A low, guttural growl, often punctuated by the whirring of his cybernetics.",
+      "quirk": "His cybernetic eye occasionally twitches and sparks, a sign of his unstable and barely-controlled power.",
+      "relationships": [
+        {
+          "target_char_id": "FROSTFANG_KEI",
+          "relationship_type": "Rival/Usurper. He framed Kei and seized control of the pack."
+        },
+        {
+          "target_char_id": "DOMINION_MALAKOR",
+          "relationship_type": "Client/Pawn. He receives power and tech from the Arcane Dominion in exchange for influence in the Glacial Maw."
+        }
+      ]
+    },
+    {
+      "name": "Archivist Linnea",
+      "char_id": "RUNEFORGE_LINNEA",
+      "role": "Archivist",
+      "description": "A sharp-witted woman with spectacles perched on her nose and her hair in a tight, practical bun. She is always covered in a light dusting of ancient stone and metal filings. She seeks to reactivate a massive machine in the Arcanum Vaults and sees Rune as a priceless key to her research.",
+      "voice": "A quick, sharp alto that is used to barking orders and reciting complex technical data.",
+      "quirk": "She has a habit of muttering to herself, debating complex arcane theories out loud as if in a conversation with an invisible colleague.",
+      "relationships": [
+        {
+          "target_char_id": "ANCIENT_RUNE",
+          "relationship_type": "Researcher and Subject. She sees Rune as a key to her research, a relationship that could be either collaborative or exploitative."
+        }
+      ]
+    },
+    {
+      "name": "The Echo of Elara",
+      "char_id": "SPIRIT_ELARA",
+      "role": "Spirit",
+      "description": "The lingering, translucent spirit of Rya's adoptive mother. She appears as she did in life, but her form is wreathed in a soft, sorrowful blue light. She is bound to the Well of Souls by her violent death and her connection to Rya's heritage.",
+      "voice": "A soft, gentle whisper that seems to carry on the wind.",
+      "quirk": "Her form occasionally flickers, showing a brief, silent vision of her final moments.",
+      "relationships": [
+        {
+          "target_char_id": "CHAMPIONS_VALERIUS",
+          "relationship_type": "Victim. He is the one who killed her."
+        }
+      ]
+    },
+    {
+      "name": "Elder Vasha",
+      "char_id": "SKYVEIL_VASHA",
+      "role": "Matriarch",
+      "description": "The matriarch of the Skyveil, her feathers a regal silver-grey and her eyes as sharp as a hawk's. She is fiercely protective of her people's independence and may become an ally if the party can prove their goals align with protecting the Aerie.",
+      "voice": "A strong, clear alto that carries with the authority of a leader used to being heard over the howling winds of the peaks.",
+      "quirk": "She believes the direction of the wind carries omens, and will often pause to read the currents before making a decision.",
+      "relationships": [
+        {
+          "target_char_id": "SKYVEIL_TALIA",
+          "relationship_type": "Mentor. She was Talia's teacher and leader."
+        }
+      ]
+    },
+    {
+      "name": "Mayor Theron",
+      "char_id": "HAVENWOOD_THERON",
+      "role": "Mayor",
+      "description": "A kind-faced man with a warm smile and a slightly stooped posture from years of leaning over ledgers. He has been convinced by a visiting Elysian priestess that a 'chaotic beast' is the source of his village's recent misfortunes and will hire the party to destroy it.",
+      "voice": "A gentle, slightly bumbling baritone.",
+      "quirk": "He has a habit of wringing his hands when nervous, which is most of the time.",
+      "relationships": [
+        {
+          "target_char_id": "CHAMPIONS_ISOLDE",
+          "relationship_type": "Manipulated. He trusts Priestess Isolde implicitly and is being used by her."
+        }
+      ]
+    },
+    {
+      "name": "'Mama' Kiri",
+      "char_id": "GROTTO_KIRI",
+      "role": "Tavern Owner",
+      "description": "A shrewd, elderly panther-like woman whose sleek black fur is streaked with grey. She has a soft spot for Lirien but will sell information on him to the highest bidder if it means keeping her community safe.",
+      "voice": "A low, smoky purr of a voice that can turn into a sharp hiss in an instant.",
+      "quirk": "She is an expert at a complex shell game, which she uses to fleece unsuspecting travelers and test the wits of potential business partners.",
+      "relationships": [
+        {
+          "target_char_id": "SHADOWPELT_LIRIEN",
+          "relationship_type": "Protector/Mentor. She has a soft spot for Lirien but her pragmatism comes first."
+        },
+        {
+          "target_char_id": "GILDEDPAW_FARAH",
+          "relationship_type": "Business Contact. They are rivals in the information trade but likely have a working relationship."
+        }
+      ]
+    },
+    {
+      "name": "'One-Eye' Joric",
+      "char_id": "BANDIT_JORIC",
+      "role": "Bandit Leader",
+      "description": "The pragmatic and ruthless leader of the Rust-Rock bandits, distinguished by the crude leather patch over his missing eye. He's not purely evil, but he is a survivor who will do what's necessary to protect his crew and their territory.",
+      "voice": "A rough, gravelly baritone that is used to shouting orders over the canyon winds.",
+      "quirk": "He has a surprisingly well-cared-for pet lizard that is almost always perched on his shoulder, which he talks to as if it were his first mate.",
+      "relationships": []
+    },
+    {
+      "name": "'Scrap-Heap' Anya",
+      "char_id": "SCAVENGER_ANYA",
+      "role": "Engineer and Leader",
+      "description": "A pragmatic and tough-as-nails engineer whose clothes are a patchwork of leather and salvaged metal. She is a member of the Runeforge Remnants and is obsessed with recovering lost technology from the surrounding ruins.",
+      "voice": "A sharp, no-nonsense alto, often accompanied by the sound of her tinkering with some salvaged gadget.",
+      "quirk": "She has a habit of naming her custom-built turrets and treating them like beloved, if temperamental, pets.",
+      "relationships": [
+        {
+          "target_char_id": "PORTMYRIA_EVA",
+          "relationship_type": "Client. She hires Captain Eva to smuggle rare tech and personnel out of the Shattered Lands."
+        }
+      ]
+    },
+    {
+      "name": "Warden Tiberius",
+      "char_id": "CHAMPIONS_TIBERIUS",
+      "role": "Warden",
+      "description": "The seemingly compassionate administrator of the Valley of Penance, with a warm, fatherly smile that doesn't quite reach his cold, calculating eyes. He uses a network of informants to enforce the Order's will and quell any dissent.",
+      "voice": "A warm, gentle baritone that is disarmingly pleasant.",
+      "quirk": "He keeps a small, perfectly manicured garden of poisonous flowers, which he tends to with loving care.",
+      "relationships": []
+    },
+    {
+      "name": "Rhys",
+      "char_id": "HERMIT_RHYS",
+      "role": "Hermit/Hunter",
+      "description": "A master survivalist and former Champion of Order who abandoned the faction after witnessing their brutal methods. He is gruff, paranoid, and deeply cynical, but possesses invaluable knowledge of the Champions' tactics and weaknesses.",
+      "voice": "A low, gruff baritone that is little more than a reluctant growl.",
+      "quirk": "He carves a notch into the wall of his cabin for every day he has survived alone in the woods, a silent testament to his resilience and his isolation.",
+      "relationships": [
+        {
+          "target_char_id": "CHAMPIONS_VALERIUS",
+          "relationship_type": "Former Subordinate; Despised Figure. He holds Valerius in contempt for his fanaticism."
+        },
+        {
+          "target_char_id": "GARRISON_GARRAN",
+          "relationship_type": "Former Comrade. They may have served together in a joint operation, giving them a shared history."
+        }
+      ]
+    },
+    {
+      "name": "Elysia, the Silent Goddess",
+      "char_id": "GODDESS_ELYSIA",
+      "role": "The Silent Goddess",
+      "description": "A being of pure, conceptual energy who seeks to 'correct' the heroes by erasing their free will.",
+      "voice": "Silence. Her will is communicated through a feeling of profound, absolute certainty that is broadcast directly into the minds of her followers.",
+      "quirk": "Her presence causes all sound in a wide radius to become muted and indistinct, a chilling prelude to the perfect silence she desires.",
+      "relationships": []
+    },
+    {
+      "name": "Master Alistair Thorne",
+      "char_id": "PORTMYRIA_THORNE",
+      "role": "Harbormaster",
+      "description": "A well-dressed, overly officious man who controls all official trade coming in and out of Port Myria. He is secretly on the Gilded Paw Caravan's payroll, skimming profits and ensuring their illicit goods pass through customs without inspection.",
+      "voice": "A nasal, bureaucratic tenor that is used to quoting regulations and demanding bribes in the same breath.",
+      "quirk": "He is pathologically obsessed with keeping his pristine white gloves perfectly clean, and will change them multiple times a day.",
+      "relationships": [
+        {
+          "target_char_id": "GILDEDPAW_FARAH",
+          "relationship_type": "Corrupt Asset. He works for the Gilded Paw in exchange for wealth."
+        },
+        {
+          "target_char_id": "GILDEDPAW_SILAS",
+          "relationship_type": "Contact. Silas is likely his direct handler in the Gilded Paw."
+        },
+        {
+          "target_char_id": "PORTMYRIA_EVA",
+          "relationship_type": "Antagonistic. Captain Eva knows he is corrupt and must deal with his greed to operate."
+        }
+      ]
+    },
+    {
+      "name": "Priestess Isolde",
+      "char_id": "CHAMPIONS_ISOLDE",
+      "role": "Visiting Elysian Emissary",
+      "description": "A beautiful and charismatic priestess who has been stationed in Havenwood. While she seems kind, she is a devout zealot and a skilled manipulator, subtly turning the town against any who question the Champions of Order.",
+      "voice": "A beautiful, melodic soprano that can soothe the troubled or incite a mob with equal ease.",
+      "quirk": "She has a habit of touching the silver Elysian symbol she wears around her neck when telling a particularly egregious lie, a subconscious tell that a keen observer might notice.",
+      "relationships": [
+        {
+          "target_char_id": "HAVENWOOD_THERON",
+          "relationship_type": "Manipulator. She is using the mayor's naivety to control Havenwood."
+        },
+        {
+          "target_char_id": "HAVENWOOD_BRENNA",
+          "relationship_type": "Ideological Foe. She sees Brenna's skepticism as a threat to be silenced."
+        },
+        {
+          "target_char_id": "CHAMPIONS_VALERIUS",
+          "relationship_type": "Subordinate. She is an agent of the Champions of Order, serving their larger cause."
+        }
+      ]
+    },
+    {
+      "name": "Lyra",
+      "char_id": "ASTORAN_LYRA",
+      "role": "Astoran Acolyte",
+      "description": "A young, curious Astoran whose bioluminescent scales are still bright and vibrant. Unlike the ancient Loremaster Oris, Lyra is fascinated by the surface world and may be willing to trade secrets in defiance of the Conclave's strict isolationism.",
+      "voice": "A bright, bubbly soprano that is filled with an infectious curiosity.",
+      "quirk": "Her bioluminescent scales change color based on her emotions, a trait she has not yet learned to control, making her an open book to those who pay attention.",
+      "relationships": [
+        {
+          "target_char_id": "ASTORAN_ORIS",
+          "relationship_type": "Student. She learns the ancient lore from him but questions the isolationist dogma."
+        },
+        {
+          "target_char_id": "ASTORAN_ORIN",
+          "relationship_type": "Ward. She respects Orin's strength but finds his silence and rigidity frustrating."
+        }
+      ]
+    },
+    {
+      "name": "Commander Garran",
+      "char_id": "GARRISON_GARRAN",
+      "role": "Garrison Commander",
+      "description": "A grizzled, weary veteran who has served tours for both Wyndia and Port Myria. He is the current commander of the jointly-operated garrison and is sick of the political games. He values action over words and might be impressed by the party's deeds.",
+      "voice": "A tired, gravelly baritone that has given one too many orders.",
+      "quirk": "He is a master at a complex, chess-like board game, which he uses to size up the strategic minds of his officers and any intriguing visitors.",
+      "relationships": [
+        {
+          "target_char_id": "HERMIT_RHYS",
+          "relationship_type": "Former Comrade. He may have served with Rhys in the past and knows his skills, making him a potential link to the hermit."
+        }
+      ]
+    },
+    {
+      "name": "Captain Faelan",
+      "char_id": "WYNDIA_FAELAN",
+      "role": "Captain of the Royal Guard",
+      "description": "A fiercely loyal and disciplined warrior, and a childhood friend of Nina. He is absolutely devoted to Lord Aerion and the protection of Wyndia. He views the party as a dangerous and chaotic influence on the princess.",
+      "voice": "A sharp, clear tenor that is used to barking orders and giving formal reports.",
+      "quirk": "He has a habit of checking and re-checking the alignment of his uniform and armor, a manifestation of his rigid, orderly worldview.",
+      "relationships": [
+        {
+          "target_char_id": "WYNDIA_AERION",
+          "relationship_type": "Loyal Subordinate. He is utterly devoted to the ruler of Wyndia."
+        },
+        {
+          "target_char_id": "WYNDIA_NINA",
+          "relationship_type": "Childhood Friend/Protector. His duty and his friendship are often in conflict."
+        }
+      ]
+    },
+    {
+      "name": "Elder Hesh",
+      "char_id": "SCALEBOUND_HESH",
+      "role": "Stonekin Spirit-Caller",
+      "description": "An ancient, wizened Stonekin whose scales are the color of pale river stone. He is the clan's spiritual leader, communing with the spirits of the ancestors in the Dragon's Graveyard. He is less concerned with outsiders and more with the spiritual health of his people.",
+      "voice": "A low, resonant chant that seems to vibrate with the power of the earth.",
+      "quirk": "He can often be seen tracing the patterns in the stone around him, which he believes tell the story of the world's past and future.",
+      "relationships": [
+        {
+          "target_char_id": "ASTORAN_ORIS",
+          "relationship_type": "Counterpart. As spiritual leaders of ancient races, they are aware of each other through lore and prophecy, sharing a deeper understanding of the world's history."
+        }
+      ]
+    },
+    {
+      "name": "Vek",
+      "char_id": "SCALEBOUND_VEK",
+      "role": "Young Warrior",
+      "description": "A young, eager Stonekin warrior serving under Grak at the outpost. While he respects Grak's authority, he is more curious than suspicious of the outside world. He could be a potential ally within the outpost.",
+      "voice": "A young, enthusiastic tenor that hasn't yet been hardened by battle.",
+      "quirk": "He is secretly fascinated by the stories of the outside world and will eagerly trade information for a good tale of adventure.",
+      "relationships": [
+        {
+          "target_char_id": "SCALEBOUND_GRAK",
+          "relationship_type": "Subordinate. He serves under Grak's command but has a more open mind."
+        }
+      ]
+    },
+    {
+      "name": "Grorn",
+      "char_id": "SCALEBOUND_GRORN",
+      "role": "Barracks Master",
+      "description": "A massive, one-eyed Stonekin whose scales are chipped and scarred from a hundred battles. Grorn is the unforgiving master of Stonegard's training grounds. He respects strength and nothing else.",
+      "voice": "A deafening roar of a voice that is used to being obeyed without question.",
+      "quirk": "He has a collection of teeth from the most formidable beasts he has slain, which he proudly displays on a necklace.",
+      "relationships": [
+        {
+          "target_char_id": "SCALEBOUND_GRAK",
+          "relationship_type": "Mentor/Trainer. He is responsible for Grak's rigid discipline."
+        },
+        {
+          "target_char_id": "SCALEBOUND_HEKLA",
+          "relationship_type": "Colleague. He constantly demands more supplies from Hekla for his warriors."
+        }
+      ]
+    },
+    {
+      "name": "Hekla",
+      "char_id": "SCALEBOUND_HEKLA",
+      "role": "Quartermaster",
+      "description": "A wiry and perpetually stressed Stonekin who manages the logistics for Stonegard's warriors. She knows the true state of the Scalebound Clans' resources and is deeply concerned about the growing schism within the clans.",
+      "voice": "A quick, hurried alto that is used to rattling off inventory lists and complaints in the same breath.",
+      "quirk": "She is a notorious hoarder of seemingly useless trinkets, which she claims might be 'useful one day'.",
+      "relationships": [
+        {
+          "target_char_id": "SCALEBOUND_GRORN",
+          "relationship_type": "Colleague. She is often frustrated by Grorn's constant demands on her limited resources."
+        }
+      ]
+    },
+    {
+      "name": "Archmage Solanus",
+      "char_id": "WYNDIA_SOLANUS",
+      "role": "Headmaster of the Pinnacle of the Gale",
+      "description": "The ancient and revered headmaster of Wyndia's magic academy. He views Rya's innate draconic power with intense academic curiosity rather than fear, seeing it as a rare phenomenon to be studied.",
+      "voice": "A gentle, grandfatherly tenor that is used to delivering long, complex lectures with ease.",
+      "quirk": "He has a habit of absentmindedly causing small, harmless gusts of wind to swirl around him when deep in thought.",
+      "relationships": [
+        {
+          "target_char_id": "WYNDIA_AERION",
+          "relationship_type": "Advisor. He provides magical and political counsel to Wyndia's ruler."
+        },
+        {
+          "target_char_id": "DOMINION_MALAKOR",
+          "relationship_type": "Academic Rival. They are ideological opposites in the study and application of magic."
+        }
+      ]
+    },
+    {
+      "name": "Lady Zylphia",
+      "char_id": "WYNDIA_ZYLPHIA",
+      "role": "Noble Socialite",
+      "description": "An influential Wyndian noble known for hosting lavish parties and trading in secrets. She is a rival to Nina's family and would gladly use the party's presence in Wyndia to create a scandal.",
+      "voice": "A sultry, conspiratorial alto that is used to sharing secrets and spreading rumors.",
+      "quirk": "She is never seen without her pet, a small, feathered serpent that is rumored to be a powerful magical familiar.",
+      "relationships": [
+        {
+          "target_char_id": "WYNDIA_AERION",
+          "relationship_type": "Political Rival. She seeks to increase her own family's power at the expense of the royal line."
+        },
+        {
+          "target_char_id": "GILDEDPAW_SILAS",
+          "relationship_type": "Information Source. She uses the Gilded Paw's network to gather intelligence for her political games."
+        }
+      ]
+    },
+    {
+      "name": "Orin",
+      "char_id": "ASTORAN_ORIN",
+      "role": "Spire Sentinel",
+      "description": "A silent, imposing Astoran warrior clad in armor of sharpened coral and enchanted shells. While Loremaster Oris is the keeper of prophecies, Orin is the physical guardian of the Tidewatch Spire.",
+      "voice": "Silence. He communicates only in a series of complex, formal gestures.",
+      "quirk": "He is a master of a silent, meditative martial art that mimics the movements of deep-sea creatures.",
+      "relationships": [
+        {
+          "target_char_id": "ASTORAN_ORIS",
+          "relationship_type": "Colleague. He is the martial guardian to Oris's spiritual guardianship."
+        }
+      ]
+    },
+    {
+      "name": "Brenna",
+      "char_id": "HAVENWOOD_BRENNA",
+      "role": "Skeptical Villager",
+      "description": "The daughter of Havenwood's blacksmith. Brenna is sharp, observant, and secretly doubts the sermons of Priestess Isolde. She believes the troubles facing the village are rooted in the forest's corruption, not some 'chaotic beast'.",
+      "voice": "A sharp, questioning alto that is not afraid to speak her mind.",
+      "quirk": "She has a talent for finding four-leaf clovers, a small act of rebellion against the rigid, humorless doctrine of the Champions.",
+      "relationships": [
+        {
+          "target_char_id": "CHAMPIONS_ISOLDE",
+          "relationship_type": "Skeptic/Antagonist. She does not trust the priestess and seeks to expose her."
+        },
+        {
+          "target_char_id": "HAVENWOOD_FINN",
+          "relationship_type": "Potential Ally. She may seek out the hunter to confirm her suspicions about the woods."
+        }
+      ]
+    },
+    {
+      "name": "Finn",
+      "char_id": "HAVENWOOD_FINN",
+      "role": "Local Hunter",
+      "description": "A quiet and capable hunter who knows the Whispering Woods better than anyone. He has seen the corrupted creatures firsthand and avoids the village's politics, trusting only what he sees with his own eyes.",
+      "voice": "A quiet, low baritone that is used to the silence of the forest.",
+      "quirk": "He can perfectly mimic the calls of almost any bird or beast in the woods, a skill he uses for both hunting and avoiding trouble.",
+      "relationships": [
+        {
+          "target_char_id": "TANGLEWOOD_KAELEN",
+          "relationship_type": "Fellow Hunter. They have likely met in the wilderness and share a mutual respect."
+        }
+      ]
+    },
+    {
+      "name": "Captain Eva 'Storm-Eye' Rostova",
+      "char_id": "PORTMYRIA_EVA",
+      "role": "Ship Captain",
+      "description": "A hardened sea captain with a magical, glowing prosthetic eye that she claims can see through any fog. Her ship, 'The Serpent's Kiss,' is one of the fastest on the coast. She's always looking for her next big score.",
+      "voice": "A hearty, boisterous alto that has been weathered by salt and sea.",
+      "quirk": "She believes it is bad luck to set sail without first feeding a biscuit to the gulls, a ritual she performs with almost religious solemnity.",
+      "relationships": [
+        {
+          "target_char_id": "PORTMYRIA_THORNE",
+          "relationship_type": "Antagonistic. She despises his corruption but must deal with him to do business."
+        },
+        {
+          "target_char_id": "SCAVENGER_ANYA",
+          "relationship_type": "Client. She is Anya's preferred captain for smuggling sensitive cargo out of the Shattered Lands."
+        }
+      ]
+    },
+    {
+      "name": "Old Man Hemlock",
+      "char_id": "PORTMYRIA_HEMLOCK",
+      "role": "Fisherman",
+      "description": "A grizzled old fisherman who spends more time drinking at the docks than out on the water. He's a font of local sea legends, superstitions, and rumors, including tales of the Sunken City of Astora.",
+      "voice": "A slurred, rambling baritone that smells faintly of cheap ale and pickled fish.",
+      "quirk": "He claims to have a lucky fishing lure that was carved from the tooth of a kraken, and will tell the story of how he got it to anyone who will buy him a drink.",
+      "relationships": []
+    },
+    {
+      "name": "'Silas'",
+      "char_id": "GILDEDPAW_SILAS",
+      "role": "Information Broker",
+      "description": "A sly, fox-like Gilded Paw agent who operates out of a quiet corner in Port Myria's 'Silken Market'. He deals in whispers and secrets, and can provide the party with sensitive information on almost any faction.",
+      "voice": "A soft, conspiratorial whisper that is barely audible over the din of the market.",
+      "quirk": "He is a master of sleight-of-hand, and his hands are never still, constantly shuffling a deck of worn, unmarked cards.",
+      "relationships": [
+        {
+          "target_char_id": "GILDEDPAW_FARAH",
+          "relationship_type": "Subordinate Agent. He reports to Farah."
+        },
+        {
+          "target_char_id": "PORTMYRIA_THORNE",
+          "relationship_type": "Handler. He manages the corrupt harbormaster for the Gilded Paw."
+        },
+        {
+          "target_char_id": "WYNDIA_ZYLPHIA",
+          "relationship_type": "Information Source. Lady Zylphia is one of his high-paying clients."
+        }
+      ]
+    }
+  ]
+}
