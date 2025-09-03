@@ -3,7 +3,7 @@
     "description": "The master index for all core campaign and system data files. This file serves as the primary reference for locating information and understanding the purpose of each data file.",
     "files": [
       {
-        "file_name": "Core_Rules/Core_System.txt",
+        "file_name": "core_rules/system_core.json",
         "purpose": "The foundational rules and mechanics for the game system.",
         "key_objects": [
           "system_core",
@@ -13,63 +13,63 @@
         ]
       },
       {
-        "file_name": "Core_Rules/Status_effects",
+        "file_name": "core_rules/status_effects.json",
         "purpose": "A glossary of all status effects and their mechanical impacts.",
         "key_objects": [
           "status_effects"
         ]
       },
       {
-        "file_name": "Core_Rules/combat_rules",
+        "file_name": "core_rules/combat_rules.json",
         "purpose": "Detailed rules governing combat encounters.",
         "key_objects": [
           "combat_rules"
         ]
       },
       {
-        "file_name": "Item_Database/core_items",
+        "file_name": "item_database/core_items.json",
         "purpose": "A comprehensive list of all mundane and magical items in the world.",
         "key_objects": [
           "core_items"
         ]
       },
       {
-        "file_name": "Item_Database/legacy_items",
+        "file_name": "item_database/legacy_items.json",
         "purpose": "A list of powerful, evolving legacy items tied to specific characters.",
         "key_objects": [
           "legacy_items"
         ]
       },
       {
-        "file_name": "bestiary/bosses_and_legends",
+        "file_name": "bestiary/bosses_and_legends.json",
         "purpose": "A collection of powerful boss monsters and legendary creatures.",
         "key_objects": [
           "bosses_and_legends"
         ]
       },
       {
-        "file_name": "bestiary/monsters",
+        "file_name": "bestiary/monsters.json",
         "purpose": "A monster manual containing stats and abilities for all common creatures.",
         "key_objects": [
           "monsters"
         ]
       },
       {
-        "file_name": "campaign_state/Campaign_State.txt",
+        "file_name": "campaign_state/campaign_state.json",
         "purpose": "The narrative log of the campaign, including quests, world flags, and history.",
         "key_objects": [
           "campaign_state"
         ]
       },
       {
-        "file_name": "campaign_state/Party_Status.txt",
+        "file_name": "campaign_state/Party_Status.json",
         "purpose": "The active 'save file' tracking the party's current state, inventory, and resources.",
         "key_objects": [
           "party_status"
         ]
       },
       {
-        "file_name": "characters/companions/Eldra",
+        "file_name": "world_codex/characters/companions/eldra.json",
         "purpose": "Character template and progression path for the companion Eldra.",
         "key_objects": [
           "name",
@@ -78,7 +78,7 @@
         ]
       },
       {
-        "file_name": "characters/companions/Garrick",
+        "file_name": "world_codex/characters/companions/garrick.json",
         "purpose": "Character template and progression path for the companion Garrick.",
         "key_objects": [
           "name",
@@ -87,7 +87,7 @@
         ]
       },
       {
-        "file_name": "characters/companions/Kei",
+        "file_name": "world_codex/characters/companions/kei.json",
         "purpose": "Character template and progression path for the companion Kei.",
         "key_objects": [
           "name",
@@ -96,7 +96,7 @@
         ]
       },
       {
-        "file_name": "characters/companions/Lirien",
+        "file_name": "world_codex/characters/companions/lirien.json",
         "purpose": "Character template and progression path for the companion Lirien.",
         "key_objects": [
           "name",
@@ -105,7 +105,7 @@
         ]
       },
       {
-        "file_name": "characters/companions/Nina",
+        "file_name": "world_codex/characters/companions/nina.json",
         "purpose": "Character template and progression path for the companion Nina.",
         "key_objects": [
           "name",
@@ -114,7 +114,7 @@
         ]
       },
       {
-        "file_name": "characters/companions/Rune",
+        "file_name": "world_codex/characters/companions/rune.json",
         "purpose": "Character template and progression path for the companion Rune.",
         "key_objects": [
           "name",
@@ -123,7 +123,7 @@
         ]
       },
       {
-        "file_name": "characters/companions/Selra",
+        "file_name": "world_codex/characters/companions/selra.json",
         "purpose": "Character template and progression path for the companion Selra.",
         "key_objects": [
           "name",
@@ -132,7 +132,7 @@
         ]
       },
       {
-        "file_name": "characters/companions/Sprout",
+        "file_name": "world_codex/characters/companions/sprout.json",
         "purpose": "Character template and progression path for the companion Sprout.",
         "key_objects": [
           "name",
@@ -141,7 +141,7 @@
         ]
       },
       {
-        "file_name": "characters/companions/Talia",
+        "file_name": "world_codex/characters/companions/talia.json",
         "purpose": "Character template and progression path for the companion Talia.",
         "key_objects": [
           "name",
@@ -150,7 +150,7 @@
         ]
       },
       {
-        "file_name": "characters/companions/Torr",
+        "file_name": "world_codex/characters/companions/torr.json",
         "purpose": "Character template and progression path for the companion Torr.",
         "key_objects": [
           "name",
@@ -159,7 +159,7 @@
         ]
       },
       {
-        "file_name": "characters/companions/Veridia",
+        "file_name": "world_codex/characters/companions/veridia.json",
         "purpose": "Character template and progression path for the companion Veridia.",
         "key_objects": [
           "name",
@@ -168,7 +168,7 @@
         ]
       },
       {
-        "file_name": "characters/companions/Zael",
+        "file_name": "world_codex/characters/companions/zael.json",
         "purpose": "Character template and progression path for the companion Zael.",
         "key_objects": [
           "name",
@@ -177,7 +177,7 @@
         ]
       },
       {
-        "file_name": "characters/companions/Zykar",
+        "file_name": "world_codex/characters/companions/zykar.json",
         "purpose": "Character template and progression path for the companion Zykar.",
         "key_objects": [
           "name",
@@ -186,14 +186,14 @@
         ]
       },
       {
-        "file_name": "characters/draconic_abilities/Draconic_Powers.txt",
+        "file_name": "world_codex/characters/draconic_abilities/Draconic_Powers.json",
         "purpose": "The complete system for the hero's draconic abilities, lineages, and transformations.",
         "key_objects": [
           "draconic_powers"
         ]
       },
       {
-        "file_name": "characters/draconic_abilities/Earth",
+        "file_name": "world_codex/characters/draconic_abilities/earth.json",
         "purpose": "Details the abilities of the Earth draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -201,7 +201,7 @@
         ]
       },
       {
-        "file_name": "characters/draconic_abilities/Fire",
+        "file_name": "world_codex/characters/draconic_abilities/fire.json",
         "purpose": "Details the abilities of the Fire draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -209,7 +209,7 @@
         ]
       },
       {
-        "file_name": "characters/draconic_abilities/Ice",
+        "file_name": "world_codex/characters/draconic_abilities/ice.json",
         "purpose": "Details the abilities of the Ice draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -217,7 +217,7 @@
         ]
       },
       {
-        "file_name": "characters/draconic_abilities/Light",
+        "file_name": "world_codex/characters/draconic_abilities/light.json",
         "purpose": "Details the abilities of the Light draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -225,7 +225,7 @@
         ]
       },
       {
-        "file_name": "characters/draconic_abilities/Mist",
+        "file_name": "world_codex/characters/draconic_abilities/mist.json",
         "purpose": "Details the abilities of the Mist draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -233,7 +233,7 @@
         ]
       },
       {
-        "file_name": "characters/draconic_abilities/Storm",
+        "file_name": "world_codex/characters/draconic_abilities/storm.json",
         "purpose": "Details the abilities of the Storm draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -241,7 +241,7 @@
         ]
       },
       {
-        "file_name": "characters/draconic_abilities/Tide",
+        "file_name": "world_codex/characters/draconic_abilities/tide.json",
         "purpose": "Details the abilities of the Tide draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -249,7 +249,7 @@
         ]
       },
       {
-        "file_name": "characters/draconic_abilities/Void",
+        "file_name": "world_codex/characters/draconic_abilities/void.json",
         "purpose": "Details the abilities of the Void draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -257,7 +257,7 @@
         ]
       },
       {
-        "file_name": "characters/draconic_abilities/chrono.json",
+        "file_name": "world_codex/characters/draconic_abilities/chrono.json",
         "purpose": "Details the abilities of the Chrono draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -265,7 +265,7 @@
         ]
       },
       {
-        "file_name": "characters/draconic_abilities/cosmic.json",
+        "file_name": "world_codex/characters/draconic_abilities/cosmic.json",
         "purpose": "Details the abilities of the Cosmic draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -273,15 +273,7 @@
         ]
       },
       {
-        "file_name": "characters/draconic_abilities/duskveil.json",
-        "purpose": "Details the abilities of the Duskveil draconic lineage.",
-        "key_objects": [
-          "lineage_name",
-          "abilities"
-        ]
-      },
-      {
-        "file_name": "characters/draconic_abilities/metal.json",
+        "file_name": "world_codex/characters/draconic_abilities/metal.json",
         "purpose": "Details the abilities of the Metal draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -289,7 +281,7 @@
         ]
       },
       {
-        "file_name": "characters/draconic_abilities/psionic.json",
+        "file_name": "world_codex/characters/draconic_abilities/psionic.json",
         "purpose": "Details the abilities of the Psionic draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -297,91 +289,91 @@
         ]
       },
       {
-        "file_name": "characters/hero_template",
+        "file_name": "world_codex/characters/hero_template.json",
         "purpose": "The base template for the hero character, Rya.",
         "key_objects": [
           "hero_template"
         ]
       },
       {
-        "file_name": "characters/newfound_talents",
+        "file_name": "world_codex/characters/newfound_talents.json",
         "purpose": "A database of general talents available for character progression.",
         "key_objects": [
           "newfound_talents"
         ]
       },
       {
-        "file_name": "tools/GMAI_Tools.txt",
+        "file_name": "tools/gmai_tools.json",
         "purpose": "The operational logic and directives for running the game as the GM/AI partner.",
         "key_objects": [
           "gm_ai_tools"
         ]
       },
       {
-        "file_name": "tools/Master_Index.txt",
+        "file_name": "tools/master_index.json",
         "purpose": "This file. Provides a manifest of all other core files in the project.",
         "key_objects": [
           "master_index"
         ]
       },
       {
-        "file_name": "tools/newgame_prologue",
+        "file_name": "tools/newgame_prologue.json",
         "purpose": "The protocol for starting a new game and running the prologue chapter.",
         "key_objects": [
           "newgame_prologue"
         ]
       },
       {
-        "file_name": "world_codex/Explorable_Areas/Elysian-Grand-Cathedral.txt",
+        "file_name": "world_codex/explorable_areas/elysian_grand_cathedral.json",
         "purpose": "A detailed map of the Elysian Grand Cathedral.",
         "key_objects": [
           "elysian_grand_cathedral"
         ]
       },
       {
-        "file_name": "world_codex/Explorable_Areas/Tanglewood-reach.txt",
+        "file_name": "world_codex/explorable_areas/tanglewood_reach.json",
         "purpose": "A detailed map of Tanglewood Reach.",
         "key_objects": [
           "tanglewood_reach"
         ]
       },
       {
-        "file_name": "world_codex/Explorable_Areas/Void-Chasm.txt",
+        "file_name": "world_codex/explorable_areas/void_chasm.json",
         "purpose": "A detailed map of the Void Chasm.",
         "key_objects": [
           "void_chasm"
         ]
       },
       {
-        "file_name": "world_codex/Explorable_Areas/Wyndia_city.txt",
+        "file_name": "world_codex/explorable_areas/wyndia_city.json",
         "purpose": "A detailed map of the city of Wyndia.",
         "key_objects": [
           "wyndia_city"
         ]
       },
       {
-        "file_name": "world_codex/Factions",
+        "file_name": "world_codex/factions.json",
         "purpose": "Detailed information on the various factions within Eryndor.",
         "key_objects": [
           "factions"
         ]
       },
       {
-        "file_name": "world_codex/Locations",
+        "file_name": "world_codex/locations.json",
         "purpose": "A comprehensive list of all locations in the world of Eryndor.",
         "key_objects": [
           "locations"
         ]
       },
       {
-        "file_name": "world_codex/World_map.txt",
+        "file_name": "world_codex/world_map.json",
         "purpose": "A text-based representation of the world map with points of interest.",
         "key_objects": [
           "world_map"
         ]
       },
       {
-        "file_name": "world_codex/lore.txt",
+        "file_name": "world_codex/lore.json",
         "purpose": "The lore bible for Eryndor, detailing its public history and secret truths.",
         "key_objects": [
           "world_codex"
