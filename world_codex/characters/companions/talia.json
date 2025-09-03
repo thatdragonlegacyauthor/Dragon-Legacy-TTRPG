@@ -95,6 +95,73 @@
           ]
         }
       ]
+    },
+    {
+      "path_name": "Path of the Wind-Rider",
+      "description": "This path focuses on Talia's aerial superiority, emphasizing swift movements, battlefield control, and hit-and-run tactics, reminiscent of the swirling gusts of the Sky-Reach Aerie.",
+      "abilities": [
+        {
+          "tier": "Novice (Level 1+)",
+          "talents": [
+            {
+              "name": "Feather Fall",
+              "effect": "As a Reaction when you or an ally within 30 feet are falling, you can negate the falling damage."
+            },
+            {
+              "name": "Gust",
+              "effect": "As a bonus action, you can unleash a small gust of wind at an adjacent enemy, pushing them 5 feet away. This does not deal damage."
+            }
+          ]
+        },
+        {
+          "tier": "Adept (Level 5+)",
+          "talents": [
+            {
+              "name": "Talon Dive",
+              "effect": "As a bonus action, if you are currently flying, you can choose a single target below you. Your next melee attack against them has Advantage and deals an additional 1d8 damage. This costs 5 Resolve."
+            },
+            {
+              "name": "Wind-Splitter Shot",
+              "effect": "When you make a ranged attack, you can channel the wind to add an extra 1d6 physical damage to your attack roll. This costs 5 Resolve."
+            }
+          ]
+        },
+        {
+          "tier": "Expert (Level 10+)",
+          "talents": [
+            {
+              "name": "Aerial Supremacy (Passive)",
+              "effect": "While flying, all of your ranged attacks gain a +2 bonus to their attack roll."
+            },
+            {
+              "name": "Hurricane Kick",
+              "effect": "As a major action, you make a melee attack. If it hits, the target is pushed back 15 feet. This movement does not provoke an Attack of Opportunity. This costs 10 Resolve."
+            }
+          ]
+        },
+        {
+          "tier": "Master (Level 15+)",
+          "talents": [
+            {
+              "name": "Ride the Wind",
+              "effect": "For 1 minute, you gain a flying speed of 60 feet and the ability to hover. This costs 15 Resolve."
+            },
+            {
+              "name": "Redirecting Winds (Reaction)",
+              "effect": "When a ranged attack is made against an ally within 30 feet, you can use your Reaction to force a new attack roll with a -2 penalty against a different enemy within 15 feet of the original target. This costs 15 Resolve."
+            }
+          ]
+        },
+        {
+          "tier": "Archon (Level 20)",
+          "talents": [
+            {
+              "name": "Tornado (Ultimate)",
+              "effect": "As a major action, you summon a swirling tornado that lasts for 3 rounds. As a bonus action on each of your turns, you can move the tornado up to 30 feet. Any creature whose space the tornado enters must make a Might DC 18 check or be picked up, thrown 40 feet in a random direction, and take 5d10 bludgeoning damage. This can only be used once per day and costs 20 Resolve."
+            }
+          ]
+        }
+      ]
     }
   ]
 }
