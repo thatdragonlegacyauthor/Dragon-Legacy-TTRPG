@@ -3,7 +3,11 @@
   "char_id": "VOID_GARRICK",
   "type": "Human (Wraith)",
   "role": "Glass Cannon/Debuffer",
-  "background": "A former high-ranking Champion of Order, betrayed and cast into the Void Chasm. His will for vengeance bound his spirit to the world as a wraith. He is bitter and struggles with his new, unholy existence.",
+  "physical_description": "Garrick exists as a tattered, spectral echo of his former self. His body is a swirling vortex of shadowy energy, vaguely humanoid in shape, and clad in the phantom image of his blessed, silver Champion armor, now twisted and broken. His face is a grim, skull-like mask with two pinpricks of burning, hateful red light where his eyes should be.",
+  "background": "Once a decorated Champion of Order, Garrick was a relentless knight who investigated his superior, Grand Inquisitor Valerius, for using void energy to create fanatical soldiers. For his loyalty to the truth, Garrick was betrayed and cast into the Void Chasm. His absolute will for vengeance bound his spirit to the world as a wraith. He despises his new, unholy existence but sees his monstrous form as a necessary evil, a tool to be used against the man who made him a monster.",
+  "voice": "A cold, raspy whisper that is rarely raised above a low growl.",
+  "quirk": "He recoils at the touch of holy objects.",
+  "relationships": "His primary motivation is vengeance against Grand Inquisitor Valerius. He sees Rya as a weapon to be pointed at his betrayer.",
   "narrative_hook": "He was betrayed by Grand Inquisitor Valerius himself, after discovering Valerius was using void energy to create fanatical soldiers. He seeks Rya's power as a weapon against the man who made him a monster.",
   "weapon_proficiency": {
     "favored_types": [
