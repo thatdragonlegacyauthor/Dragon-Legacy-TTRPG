@@ -1,0 +1,108 @@
+{
+  "settlement_system": {
+    "system_name": "Legacy's Rest",
+    "description": "A settlement-building system inspired by the Breath of Fire series, allowing the player to rebuild a town, recruit unique tenants, and manage its growth through a hands-on community system.",
+    "unlock_condition": "The quest to establish Legacy's Rest will not become available until the party has grown to a total of at least five active members (Rya plus four companions).",
+    "location": "The ruins of Windmark Village.",
+    "community_management": {
+      "description": "A hands-on management layer inspired by Breath of Fire 3's Faerie Village. During Downtime, the player can assign the general populace (Settlers) to tasks that develop the town's core attributes.",
+      "community_attributes": [
+        {
+          "name": "Industry",
+          "description": "Represents the town's crafting and building efficiency. A higher score can reduce construction costs, improve crafted item quality, and generate income."
+        },
+        {
+          "name": "Diligence",
+          "description": "Reflects the town's resource-gathering and exploration efforts. A higher score increases resource yields and the chance of discovering new opportunities."
+        },
+        {
+          "name": "Culture",
+          "description": "Measures the town's morale, artistic development, and appeal. A higher score can generate passive income, provide party-wide buffs, and attract unique artisans."
+        }
+      ],
+      "settlement_actions": [
+        {
+          "name": "Gather Resources",
+          "description": "Assign settlers to a nearby resource node (e.g., forest, quarry) to gather base materials. The outcome is determined by a check using the town's 'Diligence' attribute."
+        },
+        {
+          "name": "Assist Construction",
+          "description": "Assign settlers to help the Master Builder, reducing the time or material cost of a current building project. The effectiveness is based on the 'Industry' attribute."
+        },
+        {
+          "name": "Develop Land",
+          "description": "Clear ruins or prepare new plots of land for future construction, making more building sites available."
+        },
+        {
+          "name": "Scout the Region",
+          "description": "Send out scouting parties to search for new resource nodes, hidden locations, or potential new residents."
+        },
+        {
+          "name": "Hold a Festival",
+          "description": "Organize a town event to boost morale and attract travelers. This is a check using the 'Culture' attribute to determine its success and rewards."
+        }
+      ]
+    },
+    "master_builder_framework": {
+      "description": "The choice of a Master Builder determines the architectural style, focus, and unique capstone building of Legacy's Rest. This framework includes pre-defined characters and a flexible system for player-recruited NPCs.",
+      "pre_defined_builders": [
+        {
+          "name": "Torr",
+          "char_id": "ARMADILLIAN_TORR",
+          "architectural_style": "Stalwart Armadillian",
+          "focus": "Defense & Industry",
+          "capstone_building": {
+            "name": "The Great Forge",
+            "description": "A legendary forge built over a volcanic vent, allowing for the crafting of Legacy-tier equipment and providing a town-wide boost to the 'Industry' attribute."
+          }
+        },
+        {
+          "name": "Archivist Elara",
+          "char_id": "RUNEFORGE_ELARA",
+          "architectural_style": "Arcane-Mechanical",
+          "focus": "Efficiency & Arcana",
+          "capstone_building": {
+            "name": "Aetherium Conduit",
+            "description": "A miniature version of the Crystal Spire that provides clean power to the whole town, granting a massive boost to the 'Diligence' attribute and a unique buff to magical abilities."
+          }
+        },
+        {
+          "name": "Elder Briar",
+          "char_id": "TANGLEWOOD_BRIAR",
+          "architectural_style": "Verdant Harmony",
+          "focus": "Nature & Sustainability",
+          "capstone_building": {
+            "name": "The Heartwood Grove",
+            "description": "A sacred grove grown at the center of town that provides a town-wide boost to the 'Culture' attribute and allows the party to craft unique, powerful healing items."
+          }
+        }
+      ],
+      "player_choice_philosophies": [
+        {
+          "philosophy_name": "Fortress",
+          "description": "Focuses on defense, martial strength, and resilience. Creates a safe and secure settlement.",
+          "attribute_bonus": "+10 Industry",
+          "capstone_building": "Barracks & Training Grounds: Allows the training of town guards and provides a combat-related buff for the party."
+        },
+        {
+          "philosophy_name": "Ingenuity",
+          "description": "Focuses on magic, technology, efficiency, and knowledge. Creates an advanced and enlightened settlement.",
+          "attribute_bonus": "+10 Diligence",
+          "capstone_building": "Arcane Athenaeum: A grand library and workshop that unlocks new crafting recipes and allows for powerful item enchanting."
+        },
+        {
+          "philosophy_name": "Community",
+          "description": "Focuses on trade, diplomacy, and the arts. Creates a prosperous and happy settlement.",
+          "attribute_bonus": "+10 Culture",
+          "capstone_building": "Grand Bazaar: A large, permanent marketplace that generates significant passive income and attracts traveling merchants with rare goods."
+        },
+        {
+          "philosophy_name": "Harmony",
+          "description": "Focuses on nature, spirituality, and sustainability. Creates a peaceful and spiritually attuned settlement.",
+          "attribute_bonus": "+5 Diligence, +5 Culture",
+          "capstone_building": "Sanctuary of the Spirits: A shrine that deepens the connection to the natural world, revealing hidden locations on the world map and offering unique spiritual boons."
+        }
+      ]
+    }
+  }
+}
