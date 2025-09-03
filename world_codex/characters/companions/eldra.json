@@ -3,7 +3,11 @@
   "char_id": "MISTWRAITH_ELDRA",
   "type": "Spectral humanoid",
   "role": "Oracle/Controller",
-  "background": "The ghostly remnant of an ancient oracle from the Mistwood Vale, a tribe that lived near the Sunken City of Astora. Bound by a powerful ritual, she joins the hero to uncover the true history of the Shattering.",
+  "physical_description": "Eldra is a ghostly, ephemeral figure. Her physical form is translucent and wispy, and the ancient robes she wears are constantly shifting and fading. Her eyes, filled with an ancient and sorrowful light, are the only constant in her ever-shifting form.",
+  "background": "The ghostly remnant of an ancient oracle from the Mistwood Vale, Eldra's spirit was bound to the world in a powerful ritual meant to preserve the truth of the Shattering. Now, as a spectral humanoid, she is drawn to Rya's power, sensing a kinship with her draconic lineage. Her presence attracts other spirits, some benevolent, others malevolent. She joins the hero to uncover the true history of the world and to find her place in it.",
+  "voice": "A soft, chilling whisper that seems to carry on the wind, with an unnerving cadence that suggests she is speaking to someone only she can see.",
+  "quirk": "Her form occasionally flickers, showing a brief, silent vision of her final moments.",
+  "relationships": "The spirits of the past are drawn to her power. She is drawn to Rya, sensing a kinship with her draconic power.",
   "narrative_hook": "Her spectral presence attracts other spirits who are drawn to her power, some seeking aid, others seeking to consume her. Her ancient knowledge can guide the party to forgotten ruins and artifacts.",
   "weapon_proficiency": {
     "favored_types": [
