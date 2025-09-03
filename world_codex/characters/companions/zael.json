@@ -26,7 +26,7 @@
       "Lore"
     ],
     "chosen_playstyle": "Path of the Void-Touched (Pre-Awakening)"
-  }
+  },
   "playstyles": [
     {
       "path_name": "Path of the Void-Touched (Pre-Awakening)",
@@ -67,7 +67,7 @@
           "talents": [
             {
               "name": "Mental Echo",
-              "effect": "As a major action, you can touch a creature and make a Mind DC 15 check against them. On a success, you can read their surface thoughts or a single important memory. This can be used once per day and costs 10 Resolve."
+              "effect": "As a major action, you can touch a creature and make a Mind DC 15 check against them. On a success, you learn one of their surface thoughts or a single important memory. This can be used once per day and costs 10 Resolve."
             },
             {
               "name": "Flickering Image (Modifies Shadow Veil)",
