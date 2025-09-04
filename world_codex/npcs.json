@@ -178,6 +178,8 @@
           "target_char_id": "BROOD_KILGORE",
           "relationship_type": "Beast of War. It is often unleashed alongside Kilgore in battle, a living siege weapon to break enemy lines."
         }
+      ]
+    },
     {
       "name": "Lord Aerion",
       "char_id": "WYNDIA_AERION",
@@ -807,6 +809,43 @@
         {
           "target_char_id": "WYNDIA_ZYLPHIA",
           "relationship_type": "Information Source. Lady Zylphia is one of his high-paying clients."
+        }
+      ]
+    },
+    {
+      "name": "Brother Caius",
+      "char_id": "HEALER_CAIUS",
+      "role": "Wandering Medic",
+      "description": "A quiet, unassuming man in the simple, travel-stained robes of a wandering healer. His face is kind but etched with the weariness of one who has seen too much suffering. He travels the roads between settlements, offering his services not for coin, but for a shared meal and a safe place to rest. He believes that every life is worth saving, regardless of faction or creed.",
+      "voice": "A calm, gentle baritone that is used to soothing the fearful and the pained.",
+      "quirk": "He keeps a detailed journal, not of his travels, but of the unique injuries he has treated and the herbal remedies he has discovered.",
+      "relationships": []
+    },
+    {
+      "name": "General Aris (Retired)",
+      "char_id": "WYNDIA_ARIS",
+      "role": "Retired General",
+      "description": "A once-legendary general of the Wyndian forces, now a man enjoying a peaceful retirement in the city's common areas. He carries himself with a quiet dignity, his sharp eyes missing no detail. Though his armor is long since polished and stored away, he still possesses one of the keenest strategic minds in Eryndor.",
+      "voice": "A clear, measured baritone that still carries a hint of command, though softened by age.",
+      "quirk": "He is a master at a complex, chess-like board game, which he often plays with other retirees on the Commons Walkway, and will often use its pieces to explain complex tactical concepts.",
+      "relationships": [
+        {
+          "target_char_id": "WYNDIA_AERION",
+          "relationship_type": "Former Colleague. He served under Aerion's father and has a deep, abiding respect for the royal family."
+        }
+      ]
+    },
+    {
+      "name": "Fenris, the Silent Stalker",
+      "char_id": "HERMIT_FENRIS",
+      "role": "Master Hunter and Trapper",
+      "description": "A man who seems more a part of the wilderness than a visitor to it. His face is weathered and bearded, his eyes are the color of a winter sky, and he moves with a silence that is unnerving. He lives a solitary life in the harshest parts of the Glacial Maw, believing that the true test of a person is not how they fight, but how they survive when everything is trying to kill them.",
+      "voice": "A low, gravelly whisper that sounds like stones grinding under a glacier. He speaks in short, clipped sentences, wasting no words.",
+      "quirk": "He is constantly observing his surroundings, his head tilting to catch the faintest sound on the wind, like a wolf testing the air.",
+      "relationships": [
+        {
+          "target_char_id": "FROSTFANG_KEI",
+          "relationship_type": "Mutual Respect. As a fellow hunter, Fenris respects Kei's skills, but sees his pack loyalty as a weakness."
         }
       ]
     }
