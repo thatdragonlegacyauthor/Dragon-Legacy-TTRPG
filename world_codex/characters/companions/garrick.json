@@ -42,7 +42,8 @@
           "talents": [
             {
               "name": "Life Drain",
-              "effect": "As a major action, make a melee attack that deals 1d10 necrotic damage. Garrick heals for half of the damage dealt.",
+              "effect": "As a major action, make a melee attack using the Martial (Agility) profile that deals 1d10 necrotic damage. Garrick heals for half of the damage dealt.",
+              "attack_profile": "Martial (Agility)",
               "resolve_cost": 5,
               "duration": "Instantaneous",
               "range": "Melee"
@@ -90,6 +91,7 @@
             {
               "name": "Phantom Pain",
               "effect": "You project your own suffering into the mind of a target. The target takes 2d10 psychic damage and has disadvantage on their next attack roll.",
+              "attack_profile": "Mystic (Spirit)",
               "resolve_cost": 10,
               "duration": "1 Roll",
               "range": "30 feet"
@@ -130,6 +132,7 @@
             {
               "name": "Unravel Soul",
               "effect": "As a major action, Garrick makes a powerful, targeted attack on a creature's soul. The target takes 3d12 necrotic damage and must succeed on a Spirit DC 14 check or become 'Stunned' for 1 round.",
+              "attack_profile": "Mystic (Spirit)",
               "resolve_cost": 15,
               "duration": "1 Round",
               "range": "Melee"
@@ -156,6 +159,7 @@
             {
                 "name": "Deathly Chill",
                 "effect": "As a major action, you create a 20-foot radius sphere of intense cold and despair. Enemies in the area take 4d8 cold damage and cannot regain Vitality for 3 rounds.",
+                "attack_profile": "Mystic (Spirit)",
                 "resolve_cost": 15,
                 "duration": "3 Rounds",
                 "range": "60 feet"
@@ -163,6 +167,7 @@
             {
                 "name": "Soul Siphon",
                 "effect": "As a major action, you drain the will of a target. They take 4d8 psychic damage, and you gain Resolve equal to half the damage dealt.",
+                "attack_profile": "Mystic (Spirit)",
                 "resolve_cost": 0,
                 "duration": "Instantaneous",
                 "range": "30 feet"
@@ -175,6 +180,7 @@
             {
               "name": "Final Vengeance (Ultimate)",
               "effect": "As a major action, Garrick unleashes a torrent of soul-shattering energy in a 30-foot radius. All enemies in the area take 6d12 necrotic damage. This deals double damage to Grand Inquisitor Valerius if he is within the radius. This can only be used once per day.",
+              "attack_profile": "Mystic (Spirit)",
               "resolve_cost": 20,
               "duration": "Instantaneous",
               "range": "30-foot radius"
@@ -220,7 +226,8 @@
             },
             {
                 "name": "Ghostly Strike",
-                "effect": "As a major action, make a melee attack. This attack's damage is necrotic instead of physical.",
+                "effect": "As a major action, make a melee attack using the Martial (Agility) profile. This attack's damage is necrotic instead of physical.",
+                "attack_profile": "Martial (Agility)",
                 "resolve_cost": 1,
                 "duration": "Instantaneous",
                 "range": "Melee"
@@ -260,7 +267,8 @@
             },
             {
                 "name": "Order's Downfall",
-                "effect": "As a major action, you make a single, precise strike against an enemy. This attack ignores all non-magical Damage Reduction.",
+                "effect": "As a major action, you make a single, precise strike against an enemy using the Martial (Agility) profile. This attack ignores all non-magical Damage Reduction.",
+                "attack_profile": "Martial (Agility)",
                 "resolve_cost": 15,
                 "duration": "Instantaneous",
                 "range": "Melee"
@@ -272,7 +280,8 @@
           "talents": [
             {
               "name": "Executioner's Strike",
-              "effect": "As a major action, you make a single melee attack against a creature suffering from a negative status effect (e.g., Frightened, Poisoned, Stunned). This attack deals an additional 2d10 necrotic damage.",
+              "effect": "As a major action, you make a single melee attack using the Martial (Agility) profile against a creature suffering from a negative status effect (e.g., Frightened, Poisoned, Stunned). This attack deals an additional 2d10 necrotic damage.",
+              "attack_profile": "Martial (Agility)",
               "resolve_cost": 10,
               "duration": "Instantaneous",
               "range": "Melee"
@@ -293,7 +302,8 @@
             },
             {
                 "name": "Break the Line",
-                "effect": "As a major action, you can move up to your speed in a straight line, making one melee attack against every enemy you pass. This movement provokes attacks of opportunity.",
+                "effect": "As a major action, you can move up to your speed in a straight line, making one melee attack using the Martial (Agility) profile against every enemy you pass. This movement provokes attacks of opportunity.",
+                "attack_profile": "Martial (Agility)",
                 "resolve_cost": 10,
                 "duration": "Instantaneous",
                 "range": "Self"
@@ -338,7 +348,8 @@
             },
             {
                 "name": "Final Judgment (Ultimate)",
-                "effect": "As a major action, you make a single melee attack against Grand Inquisitor Valerius. This attack automatically hits, is a guaranteed critical hit, and deals maximum possible damage. If this ability is used against any other target, it functions as a normal melee attack. This can only be used once per day.",
+                "effect": "As a major action, you make a single melee attack using the Martial (Agility) profile against Grand Inquisitor Valerius. This attack automatically hits, is a guaranteed critical hit, and deals maximum possible damage. If this ability is used against any other target, it functions as a normal melee attack. This can only be used once per day.",
+                "attack_profile": "Martial (Agility)",
                 "resolve_cost": 20,
                 "duration": "Instantaneous",
                 "range": "Melee"
