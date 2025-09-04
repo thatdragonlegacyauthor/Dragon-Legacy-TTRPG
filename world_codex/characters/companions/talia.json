@@ -56,7 +56,8 @@
             },
             {
               "name": "Sunder Arrow",
-              "effect": "As a major action, you fire a specialized arrowhead at a target. The attack deals normal damage, and the target's Damage Reduction is reduced by 2 for 1 round.",
+              "effect": "As a major action, you fire a specialized arrowhead at a target using the Survivor profile. The attack deals normal damage, and the target's Damage Reduction is reduced by 2 for 1 round.",
+              "attack_profile": "Survivor",
               "resolve_cost": 1,
               "duration": "1 Round",
               "range": "Weapon"
@@ -82,7 +83,8 @@
           "talents": [
             {
               "name": "Pinning Shot",
-              "effect": "As a major action, you fire a special arrow at a target. The attack deals normal damage, and the target must make a Might DC 13 check or have their movement speed reduced to 0 for 1 round.",
+              "effect": "As a major action, you fire a special arrow at a target using the Survivor profile. The attack deals normal damage, and the target must make a Might DC 13 check or have their movement speed reduced to 0 for 1 round.",
+              "attack_profile": "Survivor",
               "resolve_cost": 5,
               "duration": "1 Round",
               "range": "Weapon"
@@ -148,14 +150,15 @@
           "talents": [
             {
               "name": "Piercing Shot",
-              "effect": "As a major action, you fire an arrow that passes through enemies. Make a single attack roll against all enemies in a 30-foot line.",
+              "effect": "As a major action, you fire an arrow that passes through enemies. Make a single attack roll using the Survivor profile against all enemies in a 30-foot line.",
+              "attack_profile": "Survivor",
               "resolve_cost": 15,
               "duration": "Instantaneous",
               "range": "30-foot line"
             },
             {
               "name": "Hail of Arrows",
-              "effect": "As a major action, you can fire a volley of arrows into the sky. Choose a point within 120 feet. All creatures in a 20-foot radius of that point take 4d8 physical damage.",
+              "effect": "As a major action, you can fire a volley of arrows into the sky. Choose a point within 120 feet. All creatures in a 20-foot radius of that point must make an Agility DC 16 check or take 4d8 physical damage.",
               "resolve_cost": 15,
               "duration": "Instantaneous",
               "range": "120 feet"
@@ -240,6 +243,7 @@
             {
               "name": "Talon Dive",
               "effect": "As a bonus action, if you are currently flying, you can choose a single target below you. Your next melee attack against them has Advantage and deals an additional 1d8 damage.",
+              "attack_profile": "Martial (Agility)",
               "resolve_cost": 5,
               "duration": "1 Attack",
               "range": "Self"
@@ -279,7 +283,8 @@
             },
             {
               "name": "Hurricane Kick",
-              "effect": "As a major action, you make a melee attack. If it hits, the target is pushed back 15 feet. This movement does not provoke an Attack of Opportunity.",
+              "effect": "As a major action, you make a melee attack using the Martial (Agility) profile. If it hits, the target is pushed back 15 feet. This movement does not provoke an Attack of Opportunity.",
+              "attack_profile": "Martial (Agility)",
               "resolve_cost": 10,
               "duration": "Instantaneous",
               "range": "Melee"
