@@ -42,15 +42,38 @@
           "talents": [
             {
               "name": "Aegis Protocol (Reaction)",
-              "effect": "When an ally is hit by an attack that deals elemental damage, you can grant them resistance to that damage type for that one attack."
+              "effect": "When an ally is hit by an attack that deals elemental damage, you can grant them resistance to that damage type for that one attack.",
+              "resolve_cost": 1,
+              "duration": "Instantaneous",
+              "range": "30 feet"
             },
             {
               "name": "Intercession Protocol",
-              "effect": "As a bonus action, you can 'mark' one ally for 1 round. The next time that ally is targeted by an attack, the attack targets you instead."
+              "effect": "As a bonus action, you can 'mark' one ally for 1 round. The next time that ally is targeted by an attack, the attack targets you instead.",
+              "resolve_cost": 1,
+              "duration": "1 Round",
+              "range": "30 feet"
             },
             {
               "name": "Rune Crash",
-              "effect": "A powerful melee attack dealing 2d10 physical damage."
+              "effect": "A powerful melee attack dealing 2d10 physical damage.",
+              "resolve_cost": 0,
+              "duration": "Instantaneous",
+              "range": "Melee"
+            },
+            {
+              "name": "Taunting Strike",
+              "effect": "As a major action, make a melee attack. If it hits, the target has disadvantage on attack rolls against any creature other than you until your next turn.",
+              "resolve_cost": 5,
+              "duration": "1 Round",
+              "range": "Melee"
+            },
+            {
+              "name": "Guardian Stance",
+              "effect": "As a major action, you brace yourself, gaining a +2 bonus to your defensive rolls for one round.",
+              "resolve_cost": 1,
+              "duration": "1 Round",
+              "range": "Self"
             }
           ]
         },
@@ -59,11 +82,31 @@
           "talents": [
             {
               "name": "Kinetic Redirection",
-              "effect": "When you are hit by a melee attack, you can use your Reaction to absorb part of the blow. Your next successful melee attack deals an additional 1d10 physical damage and the target must make a Might DC 13 check or be knocked prone. This costs 5 Resolve."
+              "effect": "When you are hit by a melee attack, you can use your Reaction to absorb part of the blow. Your next successful melee attack deals an additional 1d10 physical damage and the target must make a Might DC 13 check or be knocked prone.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "Self"
             },
             {
               "name": "Adamant Plating (Passive)",
-              "effect": "Your chassis is exceptionally durable. You gain a permanent +1 bonus to your Damage Reduction."
+              "effect": "Your chassis is exceptionally durable. You gain a permanent +1 bonus to your Damage Reduction.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
+            },
+            {
+              "name": "Overload Protocol",
+              "effect": "As a bonus action, you can divert power to your servos, gaining a +2 bonus to Might for 3 rounds. When this effect ends, you suffer 'System Strain' (-2 to all attribute checks for 1 round).",
+              "resolve_cost": 10,
+              "duration": "3 Rounds",
+              "range": "Self"
+            },
+            {
+              "name": "Bulwark",
+              "effect": "As a bonus action, you can grant an adjacent ally a +1 bonus to their Damage Reduction for 1 round.",
+              "resolve_cost": 1,
+              "duration": "1 Round",
+              "range": "5 feet"
             }
           ]
         },
@@ -72,11 +115,31 @@
           "talents": [
             {
               "name": "Containment Field",
-              "effect": "As a major action, project a shimmering field of energy around a creature within 30 feet for 3 rounds. If targeting an ally, they gain a +2 bonus to their defensive rolls. If targeting an enemy, their movement speed is halved. This costs 10 Resolve."
+              "effect": "As a major action, project a shimmering field of energy around a creature within 30 feet for 3 rounds. If targeting an ally, they gain a +2 bonus to their defensive rolls. If targeting an enemy, their movement speed is halved.",
+              "resolve_cost": 10,
+              "duration": "3 Rounds",
+              "range": "30 feet"
             },
             {
-              "name": "Overload Protocol",
-              "effect": "As a bonus action, you can divert power to your servos, gaining a +2 bonus to Might for 3 rounds. When this effect ends, you suffer 'System Strain' (-2 to all attribute checks for 1 round). This costs 10 Resolve."
+              "name": "Unbreakable Stance (Passive)",
+              "effect": "You gain a permanent +2 bonus to any check to resist being pushed, moved, or knocked prone.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
+            },
+            {
+              "name": "Retributive Guard (Passive)",
+              "effect": "When an enemy hits you with a melee attack, they take physical damage equal to your Might attribute.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Melee"
+            },
+            {
+              "name": "Seismic Plating (Reaction)",
+              "effect": "When hit by an attack, you can absorb the impact. The attacker must make an Agility DC 14 check or be knocked prone.",
+              "resolve_cost": 10,
+              "duration": "Instantaneous",
+              "range": "Melee"
             }
           ]
         },
@@ -85,11 +148,24 @@
           "talents": [
             {
               "name": "Bastion Mode",
-              "effect": "As a major action, you can root yourself to the spot, reducing your movement to 0. For 3 rounds, you project a 10-foot aura that grants adjacent allies a +2 bonus to their Damage Reduction."
+              "effect": "As a major action, you can root yourself to the spot, reducing your movement to 0. For 3 rounds, you project a 10-foot aura that grants adjacent allies a +2 bonus to their Damage Reduction.",
+              "resolve_cost": 15,
+              "duration": "3 Rounds",
+              "range": "10-foot radius"
             },
             {
               "name": "Final Guard (Reaction)",
-              "effect": "Once per day, when an attack would reduce you to 0 Vitality, you can choose to be reduced to 1 Vitality instead."
+              "effect": "Once per day, when an attack would reduce you to 0 Vitality, you can choose to be reduced to 1 Vitality instead.",
+              "resolve_cost": 0,
+              "duration": "Instantaneous",
+              "range": "Self"
+            },
+            {
+              "name": "Juggernaut Form",
+              "effect": "Temporarily grow in size, gaining immunity to effects that would move you, a +4 bonus to your Damage Reduction, and Advantage on all Might checks for 3 rounds.",
+              "resolve_cost": 15,
+              "duration": "3 Rounds",
+              "range": "Self"
             }
           ]
         },
@@ -98,7 +174,17 @@
           "talents": [
             {
               "name": "Sacrifice Protocol (Ultimate)",
-              "effect": "As a major action, you designate yourself as the sole target for all enemies for 1 round. You absorb all damage taken during this round into your core. On your next turn, you can unleash the stored energy as a beam, dealing total damage equal to the amount absorbed to a single target. This can only be used once per day and costs 20 Resolve."
+              "effect": "As a major action, you designate yourself as the sole target for all enemies for 1 round. You absorb all damage taken during this round into your core. On your next turn, you can unleash the stored energy as a beam, dealing total damage equal to the amount absorbed to a single target. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "1 Round",
+              "range": "Self"
+            },
+            {
+              "name": "The Perfect Machine (Ultimate)",
+              "effect": "For 3 rounds, you are immune to all non-magical damage and cannot be moved or targeted by mind-altering effects. Adjacent allies gain a +2 bonus to their Damage Reduction. Usable once per day.",
+              "resolve_cost": 20,
+              "duration": "3 Rounds",
+              "range": "Self"
             }
           ]
         }
@@ -113,11 +199,38 @@
           "talents": [
             {
               "name": "Soul Pulse",
-              "effect": "Channel your inner will. Gain Advantage on Mind checks made to resist fear and illusion effects."
+              "effect": "Channel your inner will. Gain Advantage on Mind checks made to resist fear and illusion effects.",
+              "resolve_cost": 1,
+              "duration": "1 Check",
+              "range": "Self"
             },
             {
               "name": "Soul Burn",
-              "effect": "As a major action, make a melee attack that deals 1d8 necrotic damage. The target must make a Spirit DC 12 check or have their Resolve reduced by 1d6."
+              "effect": "As a major action, make a melee attack that deals 1d8 necrotic damage. The target must make a Spirit DC 12 check or have their Resolve reduced by 1d6.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "Melee"
+            },
+            {
+              "name": "Mental Strike",
+              "effect": "A bolt of pure thought deals 1d10 psychic damage to a single target.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "60 feet"
+            },
+            {
+              "name": "Mind Link",
+              "effect": "You can telepathically communicate with an ally within 60 feet.",
+              "resolve_cost": 0,
+              "duration": "Until end of combat",
+              "range": "60 feet"
+            },
+            {
+              "name": "Psychic Wave",
+              "effect": "You unleash a wave of psionic energy in a 15-foot cone. All enemies in the area must make a Mind DC 12 check or take 1d6 psychic damage.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "15-foot cone"
             }
           ]
         },
@@ -126,11 +239,31 @@
           "talents": [
             {
               "name": "Ectoplasmic Chains",
-              "effect": "As a major action, you lash out with tendrils of spiritual energy at a target within 30 feet. They must make an Agility DC 13 check or become 'Restrained' for up to 3 rounds. The target can use its action to attempt to break free. This costs 5 Resolve."
+              "effect": "As a major action, you lash out with tendrils of spiritual energy at a target within 30 feet. They must make an Agility DC 13 check or become 'Restrained' for up to 3 rounds. The target can use its action to attempt to break free.",
+              "resolve_cost": 5,
+              "duration": "Up to 3 Rounds",
+              "range": "30 feet"
             },
             {
               "name": "Psychic Static (Passive)",
-              "effect": "Your tormented soul leaks a constant stream of psychic noise. Enemies within 5 feet of you have a -1 penalty on all Mind and Spirit checks."
+              "effect": "Your tormented soul leaks a constant stream of psychic noise. Enemies within 5 feet of you have a -1 penalty on all Mind and Spirit checks.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "5-foot radius"
+            },
+            {
+              "name": "Phantom Pain",
+              "effect": "You project your own suffering into the mind of a target. The target takes 2d10 psychic damage and has disadvantage on their next attack roll.",
+              "resolve_cost": 10,
+              "duration": "1 Roll",
+              "range": "30 feet"
+            },
+            {
+              "name": "Telekinetic Shield (Reaction)",
+              "effect": "When an ally within 30 feet is hit by a ranged attack, you can conjure a shield of force that grants a +2 bonus to their defensive roll.",
+              "resolve_cost": 5,
+              "duration": "1 Roll",
+              "range": "30 feet"
             }
           ]
         },
@@ -139,11 +272,31 @@
           "talents": [
             {
               "name": "Volatile Vent",
-              "effect": "As a major action, you vent raw soul energy from your core. You take 1d6 irreducible damage, and all enemies within a 10-foot radius take 3d8 necrotic damage. This costs 10 Resolve."
+              "effect": "As a major action, you vent raw soul energy from your core. You take 1d6 irreducible damage, and all enemies within a 10-foot radius take 3d8 necrotic damage.",
+              "resolve_cost": 10,
+              "duration": "Instantaneous",
+              "range": "10-foot radius"
             },
             {
-              "name": "Phantom Pain",
-              "effect": "You project your own suffering into the mind of a target. The target takes 2d10 psychic damage and has disadvantage on their next attack roll. This costs 10 Resolve."
+              "name": "Suggestion",
+              "effect": "You implant a suggestion in a single target's mind. The target must make a Spirit DC 13 check. On a failure, they will attempt to follow a reasonable command from you on their next turn.",
+              "resolve_cost": 5,
+              "duration": "1 Round",
+              "range": "30 feet"
+            },
+            {
+              "name": "Aura of Dread",
+              "effect": "You project a 15-foot aura of fear for 3 rounds. Any enemy who enters or starts their turn in the aura must make a Spirit DC 14 check or become 'Frightened' for 1 round.",
+              "resolve_cost": 10,
+              "duration": "3 Rounds",
+              "range": "15-foot radius"
+            },
+            {
+              "name": "Mind Blast",
+              "effect": "Unleash a devastating psychic blast in a 30-foot cone. Enemies in the area take 4d10 psychic damage and are knocked prone.",
+              "resolve_cost": 15,
+              "duration": "Instantaneous",
+              "range": "30-foot cone"
             }
           ]
         },
@@ -152,11 +305,24 @@
           "talents": [
             {
               "name": "Reclaim Essence (Reaction)",
-              "effect": "When a non-construct enemy dies within 30 feet of you, you can use your Reaction to draw in a fragment of its departing spirit, restoring 2d8 of your own Vitality."
+              "effect": "When a non-construct enemy dies within 30 feet of you, you can use your Reaction to draw in a fragment of its departing spirit, restoring 2d8 of your own Vitality.",
+              "resolve_cost": 0,
+              "duration": "Instantaneous",
+              "range": "30 feet"
             },
             {
               "name": "Weight of Conscience",
-              "effect": "As a major action, you force an enemy to confront the weight of their actions. They must make a Spirit DC 16 check or become 'Stunned' for 1 round as they are paralyzed by visions. This costs 15 Resolve."
+              "effect": "As a major action, you force an enemy to confront the weight of their actions. They must make a Spirit DC 16 check or become 'Stunned' for 1 round as they are paralyzed by visions.",
+              "resolve_cost": 15,
+              "duration": "1 Round",
+              "range": "30 feet"
+            },
+            {
+              "name": "Mass Confusion",
+              "effect": "You create a powerful psychic wave. All enemies in a 30-foot radius must make a Mind DC 16 check or become 'Confused' for 1 round.",
+              "resolve_cost": 15,
+              "duration": "1 Round",
+              "range": "30-foot radius"
             }
           ]
         },
@@ -165,7 +331,17 @@
           "talents": [
             {
               "name": "Soul Detonation (Ultimate)",
-              "effect": "You overclock your soul core to its absolute limit. As a major action, you unleash a massive explosion of necrotic energy in a 30-foot radius. It deals 8d12 necrotic damage to all enemies. However, the strain shatters your systems, causing you to take 4d12 irreducible damage and become 'Stunned' for 1 round. This can only be used once per day and costs 20 Resolve."
+              "effect": "You overclock your soul core to its absolute limit. As a major action, you unleash a massive explosion of necrotic energy in a 30-foot radius. It deals 8d12 necrotic damage to all enemies. However, the strain shatters your systems, causing you to take 4d12 irreducible damage and become 'Stunned' for 1 round. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "Instantaneous",
+              "range": "30-foot radius"
+            },
+            {
+              "name": "Psionic Apocalypse (Ultimate)",
+              "effect": "You unleash the full might of your psionic power. For 1 minute, all enemies you can see take 6d12 psychic damage and must make a Mind DC 18 check or be stunned for 1 round. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "1 Minute",
+              "range": "Sight"
             }
           ]
         }
