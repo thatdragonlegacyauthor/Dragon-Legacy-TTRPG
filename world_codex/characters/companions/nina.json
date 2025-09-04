@@ -49,6 +49,7 @@
             {
               "name": "Tempest Blade",
               "effect": "A basic, single-target ability that deals 1d10 physical damage and can knock the target back 5 feet.",
+              "attack_profile": "Martial (Agility)",
               "resolve_cost": 0,
               "duration": "Instantaneous",
               "range": "Melee"
@@ -56,6 +57,7 @@
             {
               "name": "Cutting Gale",
               "effect": "As a major action, you launch a blade of wind at a single target, dealing 1d8 physical damage.",
+              "attack_profile": "Mystic (Spirit)",
               "resolve_cost": 5,
               "duration": "Instantaneous",
               "range": "30 feet"
@@ -155,6 +157,7 @@
             {
               "name": "Tempest Barrage",
               "effect": "As a major action, you unleash a flurry of wind-infused sword strikes on a single target, dealing 4d8 physical damage.",
+              "attack_profile": "Martial (Agility)",
               "resolve_cost": 15,
               "duration": "Instantaneous",
               "range": "Melee"
