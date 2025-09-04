@@ -4,11 +4,11 @@
   "type": "Human (Void-touched)",
   "role": "Mystic/Illusionist",
   "physical_description": "A striking, almost ethereal figure with a youthful face often shadowed by a quiet intensity. His hair is a shock of pure white. His most unnerving feature is his eyes—dark and seemingly bottomless—that appear to absorb the light around them.",
-  "background": "Zael was a foundling discovered near the Void Chasm. He grew up alongside Rya in Windmark Village, a quiet and observant boy with the strange ability to instinctively sense the emotions of others. He is tormented by the beautiful, comforting whispers of Elysia, a tempting voice that promises peace at the cost of his free will. He now believes confronting his connection to the Void is the only way to protect his friends and his peaceful past.",
+  "background": "Zael was a foundling discovered near the Void Chasm. He grew up alongside Rya in Windmark Village, a quiet and observant boy with the strange ability to instinctively sense the emotions of others. He is tormented by beautiful, comforting whispers from an unknown source, a tempting voice that promises peace at the cost of his free will. He now believes confronting his connection to the Void is the only way to protect his friends and his peaceful past.",
   "voice": "A low, thoughtful baritone, often trailing off as if listening to a distant whisper only he can hear.",
   "quirk": "He unconsciously traces intricate, void-like patterns in the dust or sand when lost in thought.",
-  "relationships": "Deeply bonded with Rya from their shared past. He respects Selra's compassion but is wary of her faith in Elysia due to the whispers he hears.",
-  "narrative_hook": "His presence attracts attention from the Champions of Order. Elysia's whispers constantly echo in his mind, a tempting voice promising him the strength to protect his friends if only he would submit to her perfect, unchaotic order.",
+  "relationships": "Deeply bonded with Rya from their shared past. He respects Selra's compassion but is wary of her faith due to the whispers he hears, which seem to offer a twisted version of the 'order' she reveres.",
+  "narrative_hook": "His presence attracts attention from the Champions of Order. Mysterious whispers constantly echo in his mind, a tempting voice promising him the strength to protect his friends if only he would submit to a perfect, unchaotic order.",
   "weapon_proficiency": {
     "favored_types": [
       "Dagger",
