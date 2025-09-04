@@ -57,13 +57,15 @@
             {
               "name": "Rune Crash",
               "effect": "A powerful melee attack dealing 2d10 physical damage.",
+              "attack_profile": "Martial (Might)",
               "resolve_cost": 0,
               "duration": "Instantaneous",
               "range": "Melee"
             },
             {
               "name": "Taunting Strike",
-              "effect": "As a major action, make a melee attack. If it hits, the target has disadvantage on attack rolls against any creature other than you until your next turn.",
+              "effect": "As a major action, make a melee attack using the Martial (Might) profile. If it hits, the target has disadvantage on attack rolls against any creature other than you until your next turn.",
+              "attack_profile": "Martial (Might)",
               "resolve_cost": 5,
               "duration": "1 Round",
               "range": "Melee"
@@ -206,7 +208,8 @@
             },
             {
               "name": "Soul Burn",
-              "effect": "As a major action, make a melee attack that deals 1d8 necrotic damage. The target must make a Spirit DC 12 check or have their Resolve reduced by 1d6.",
+              "effect": "As a major action, make a melee attack using the Mystic (Spirit) profile that deals 1d8 necrotic damage. The target must make a Spirit DC 12 check or have their Resolve reduced by 1d6.",
+              "attack_profile": "Mystic (Spirit)",
               "resolve_cost": 5,
               "duration": "Instantaneous",
               "range": "Melee"
@@ -214,6 +217,7 @@
             {
               "name": "Mental Strike",
               "effect": "A bolt of pure thought deals 1d10 psychic damage to a single target.",
+              "attack_profile": "Mystic (Mind)",
               "resolve_cost": 5,
               "duration": "Instantaneous",
               "range": "60 feet"
@@ -228,6 +232,7 @@
             {
               "name": "Psychic Wave",
               "effect": "You unleash a wave of psionic energy in a 15-foot cone. All enemies in the area must make a Mind DC 12 check or take 1d6 psychic damage.",
+              "attack_profile": "Mystic (Mind)",
               "resolve_cost": 5,
               "duration": "Instantaneous",
               "range": "15-foot cone"
@@ -254,6 +259,7 @@
             {
               "name": "Phantom Pain",
               "effect": "You project your own suffering into the mind of a target. The target takes 2d10 psychic damage and has disadvantage on their next attack roll.",
+              "attack_profile": "Mystic (Spirit)",
               "resolve_cost": 10,
               "duration": "1 Roll",
               "range": "30 feet"
@@ -294,6 +300,7 @@
             {
               "name": "Mind Blast",
               "effect": "Unleash a devastating psychic blast in a 30-foot cone. Enemies in the area take 4d10 psychic damage and are knocked prone.",
+              "attack_profile": "Mystic (Mind)",
               "resolve_cost": 15,
               "duration": "Instantaneous",
               "range": "30-foot cone"
@@ -339,6 +346,7 @@
             {
               "name": "Psionic Apocalypse (Ultimate)",
               "effect": "You unleash the full might of your psionic power. For 1 minute, all enemies you can see take 6d12 psychic damage and must make a Mind DC 18 check or be stunned for 1 round. This can only be used once per day.",
+              "attack_profile": "Mystic (Mind)",
               "resolve_cost": 20,
               "duration": "1 Minute",
               "range": "Sight"
