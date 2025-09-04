@@ -1,82 +1,66 @@
 {
   "newfound_talents": {
+    "description": "This is a comprehensive glossary of all talents that can be learned from Masters throughout the world of Eryndor. These are no longer purchased with Advancement Points.",
     "combat": [
-      {
-        "name": "Opportunist",
-        "effect": "Once per round, you can make an Attack of Opportunity without expending your Reaction."
-      },
-      {
-        "name": "Follow Through",
-        "effect": "When you defeat an enemy with a melee attack, you may immediately use your movement action."
-      },
-      {
-        "name": "Precise Strike",
-        "effect": "You can choose to forgo your movement action for the turn to gain Advantage on your next attack roll."
-      },
-      {
-        "name": "Brawler",
-        "effect": "Your unarmed strikes now deal 1d4 bludgeoning damage instead of 1."
-      },
-      {
-        "name": "Heavy Hitter",
-        "effect": "When you make an attack with a Heavy weapon, you can choose to take a -2 penalty to the attack roll. If the attack hits, you deal an additional +4 damage."
-      },
-      {
-        "name": "Riposte",
-        "effect": "When an enemy misses you with a melee attack, you can use your Reaction to make one melee attack against them."
-      }
+      { "name": "Ambusher", "effect": "You have Advantage on attack rolls against any creature you have surprised." },
+      { "name": "Brawler", "effect": "Your unarmed strikes now deal 1d4 bludgeoning damage instead of 1." },
+      { "name": "Brute Force", "effect": "You have Advantage on Might checks made to break or destroy objects." },
+      { "name": "Coordinated Charge", "effect": "When an ally moves into melee range of an enemy, you can use your Reaction to move up to 10 feet towards that same enemy." },
+      { "name": "Follow Through", "effect": "When you defeat an enemy with a melee attack, you may immediately use your movement action." },
+      { "name": "Heavy Hitter", "effect": "When you make an attack with a Heavy weapon, you can choose to take a -2 penalty to the attack roll. If the attack hits, you deal an additional +4 damage." },
+      { "name": "Intimidating Presence", "effect": "You can use your Might attribute instead of your Spirit attribute when making Diplomacy (Intimidation) checks." },
+      { "name": "Lead from the Front", "effect": "When you are the first to enter a combat zone, you gain a +2 bonus to your initiative roll." },
+      { "name": "Opportunist", "effect": "Once per round, you can make an Attack of Opportunity without expending your Reaction." },
+      { "name": "Phalanx Fighter", "effect": "When you are adjacent to an ally who also has this talent, you both gain a +1 bonus to your defensive rolls." },
+      { "name": "Precise Strike", "effect": "You can choose to forgo your movement action for the turn to gain Advantage on your next attack roll." },
+      { "name": "Press the Advantage", "effect": "If you hit a creature that is suffering from a negative status effect, you deal an additional +2 damage." },
+      { "name": "Quick Reflexes", "effect": "You gain a +2 bonus to all initiative rolls." },
+      { "name": "Riposte", "effect": "When an enemy misses you with a melee attack, you can use your Reaction to make one melee attack against them." },
+      { "name": "Strategic Withdrawal", "effect": "You can use your major action to allow all allies within 30 feet to use their Reaction to move up to half their movement speed away from an enemy." },
+      { "name": "Warcry", "effect": "As a major action, you can let out a fearsome cry. All enemies within 30 feet who can hear you must make a Spirit DC 14 check or become 'Frightened' for 1 round." }
     ],
     "support": [
-      {
-        "name": "Coordinated Maneuver",
-        "effect": "As a major action, grant one ally an immediate free movement action."
-      },
-      {
-        "name": "Medic",
-        "effect": "When you use a Healing Salve on an ally, it restores an additional 1d6 Vitality."
-      },
-      {
-        "name": "Intercede",
-        "effect": "When an enemy attacks an ally who is within 5 feet of you, you can use your Reaction to move between them and declare yourself the new target of the attack."
-      },
-      {
-        "name": "Tactician",
-        "effect": "After you succeed on a Mind (Lore) check to identify a creature's weakness, you can grant one ally Advantage on their first attack roll against that creature."
-      },
-      {
-        "name": "Stand Your Ground",
-        "effect": "As a major action, you can grant an ally within 10 feet temporary Vitality equal to your Spirit attribute. This temporary Vitality lasts for 1 minute."
-      },
-      {
-        "name": "Warning Cry",
-        "effect": "When you roll for Initiative, you can choose to take the last position in the turn order. If you do, you and all allies within 30 feet of you gain a +1 bonus to their first defensive roll of the combat."
-      }
+      { "name": "Battlefield Medic", "effect": "You can use your movement action to move towards a wounded ally without provoking attacks of opportunity." },
+      { "name": "Body Language Expert", "effect": "You have Advantage on checks made to determine if a creature is lying." },
+      { "name": "Coordinated Maneuver", "effect": "As a major action, grant one ally an immediate free movement action." },
+      { "name": "Demoralizing Taunt", "effect": "As a major action, you can force a single enemy to make a Spirit DC 14 check or have a -2 penalty on their next attack roll." },
+      { "name": "Guardian's Resilience", "effect": "When you are reduced to 0 Vitality, you can use your Reaction to remain at 1 Vitality instead. This can only be used once per day." },
+      { "name": "Healer's Touch", "effect": "You can use a major action to stabilize a creature that is Downed without needing to make a check." },
+      { "name": "Hold the Line", "effect": "Enemies you are in melee with cannot use the Disengage action to move away from you." },
+      { "name": "Inspiring Word", "effect": "As a bonus action, you can grant an ally within 30 feet 5 temporary Resolve. This can only be used on a creature once per combat." },
+      { "name": "Intercede", "effect": "When an enemy attacks an ally who is within 5 feet of you, you can use your Reaction to move between them and declare yourself the new target of the attack." },
+      { "name": "Medic", "effect": "When you use a Healing Salve on an ally, it restores an additional 1d6 Vitality." },
+      { "name": "Shield Master", "effect": "When you take the Defend action with a shield, you can add the shield's bonus to your defensive rolls against both physical and magical attacks for that round." },
+      { "name": "Stand Your Ground", "effect": "As a major action, you can grant an ally within 10 feet temporary Vitality equal to your Spirit attribute. This temporary Vitality lasts for 1 minute." },
+      { "name": "Tactician", "effect": "After you succeed on a Mind (Lore) check to identify a creature's weakness, you can grant one ally Advantage on their first attack roll against that creature." },
+      { "name": "Triage Expert", "effect": "As a bonus action, you can determine the exact Vitality of any creature you can see." },
+      { "name": "Warning Cry", "effect": "When you roll for Initiative, you can choose to take the last position in the turn order. If you do, you and all allies within 30 feet of you gain a +1 bonus to their first defensive roll of the combat." }
     ],
     "utility": [
-      {
-        "name": "Resourceful",
-        "effect": "Once per session, you can produce a common, non-magical item from your pack."
-      },
-      {
-        "name": "Dungeon Delver",
-        "effect": "You have Advantage on Mind checks made to spot or disarm traps."
-      },
-      {
-        "name": "Animal Empathy",
-        "effect": "You have Advantage on Spirit checks made to calm, influence, or understand the intent of non-magical beasts."
-      },
-      {
-        "name": "Streetwise",
-        "effect": "You have Advantage on checks made to gather common rumors or navigate bustling city streets."
-      },
-      {
-        "name": "Expert Haggler",
-        "effect": "You have Advantage on Spirit (Diplomacy) checks made to negotiate prices for goods and services."
-      },
-      {
-        "name": "Arcane Dabbler",
-        "effect": "You learn one minor magical cantrip (a simple, at-will spell that costs no Resolve, like creating a small light, a puff of wind, or a minor sound). The specific cantrip is determined with the GM."
-      }
+      { "name": "Animal Empathy", "effect": "You have Advantage on Spirit checks made to calm, influence, or understand the intent of non-magical beasts." },
+      { "name": "Appraiser", "effect": "You can accurately determine the value of non-magical art objects and gemstones." },
+      { "name": "Arcane Dabbler", "effect": "You learn one minor magical cantrip (a simple, at-will spell that costs no Resolve, like creating a small light, a puff of wind, or a minor sound). The specific cantrip is determined with the GM." },
+      { "name": "Arcanist's Insight", "effect": "When you identify a magical item, you also learn one of its hidden properties, if it has any." },
+      { "name": "Camouflage", "effect": "You can attempt to hide even when you are only lightly obscured by natural foliage, heavy rain, falling snow, mist, or other natural phenomena." },
+      { "name": "Connections", "effect": "Once per session, you can declare that you 'know a guy' in a settlement, allowing you to find a black market, a fence, or a source of information." },
+      { "name": "Dungeon Delver", "effect": "You have Advantage on Mind checks made to spot or disarm traps." },
+      { "name": "Expert Haggler", "effect": "You have Advantage on Spirit (Diplomacy) checks made to negotiate prices for goods and services." },
+      { "name": "Forager", "effect": "When you make a Mind (Survival) check to forage for food and water, you find twice as much as you normally would." },
+      { "name": "Guerilla Tactics", "effect": "You have Advantage on Stealth checks when you are in a natural environment (forest, jungle, mountains, etc.)." },
+      { "name": "Herbalist", "effect": "You have Advantage on checks made to identify and gather medicinal plants." },
+      { "name": "Historian", "effect": "You have Advantage on Mind (Lore) checks related to the history of the world and the Shattering." },
+      { "name": "Keen Eye", "effect": "You have Advantage on checks made to find hidden doors or compartments." },
+      { "name": "Linguist", "effect": "You learn two additional languages of your choice." },
+      { "name": "Lip Reader", "effect": "You can understand spoken language by reading lips." },
+      { "name": "Master of Disguise", "effect": "You gain proficiency with the Disguise Kit." },
+      { "name": "Poisoner's Kit Proficiency", "effect": "You gain proficiency with the Poisoner's Kit, allowing you to craft basic poisons from natural ingredients during a long rest." },
+      { "name": "Resourceful", "effect": "Once per session, you can produce a common, non-magical item from your pack." },
+      { "name": "Ritual Caster", "effect": "You can cast a spell as a ritual, taking 10 minutes to cast it. If you do, it does not cost any Resolve." },
+      { "name": "Scroll Savant", "effect": "You have Advantage on checks made to cast a spell from a scroll." },
+      { "name": "Spell Slinger", "effect": "When you cast a spell that requires an attack roll, you gain a +1 bonus to that roll." },
+      { "name": "Streetwise", "effect": "You have Advantage on checks made to gather common rumors or navigate bustling city streets." },
+      { "name": "Survivalist", "effect": "You can go for twice as long without food or water before suffering exhaustion." },
+      { "name": "Trap Expert", "effect": "You gain proficiency with Thieves' Tools, but only for the purpose of disarming and creating traps." }
     ]
   }
 }
