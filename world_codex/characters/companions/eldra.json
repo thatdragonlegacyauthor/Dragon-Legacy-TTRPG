@@ -1,78 +1,78 @@
 {
-  "name": "Eldra",
-  "char_id": "MISTWRAITH_ELDRA",
-  "type": "Spectral humanoid",
-  "role": "Oracle/Controller",
-  "physical_description": "Eldra is a ghostly, ephemeral figure. Her physical form is translucent and wispy, and the ancient robes she wears are constantly shifting and fading. Her eyes, filled with an ancient and sorrowful light, are the only constant in her ever-shifting form.",
-  "background": "The ghostly remnant of an ancient oracle from the Mistwood Vale, Eldra's spirit was bound to the world in a powerful ritual meant to preserve the truth of the Shattering. Now, as a spectral humanoid, she is drawn to Rya's power, sensing a kinship with her draconic lineage. Her presence attracts other spirits, some benevolent, others malevolent. She joins the hero to uncover the true history of the world and to find her place in it.",
-  "voice": "A soft, chilling whisper that seems to carry on the wind, with an unnerving cadence that suggests she is speaking to someone only she can see.",
-  "quirk": "Her form occasionally flickers, showing a brief, silent vision of her final moments.",
-  "relationships": "The spirits of the past are drawn to her power. She is drawn to Rya, sensing a kinship with her draconic power.",
-  "narrative_hook": "Her spectral presence attracts other spirits who are drawn to her power, some seeking aid, others seeking to consume her. Her ancient knowledge can guide the party to forgotten ruins and artifacts.",
+  "name": "Sprout",
+  "char_id": "SEEDLING_SPROUT",
+  "type": "Verdant Seedling",
+  "role": "Tank/Healer",
+  "physical_description": "Sprout's body is a fusion of living wood and verdant moss, constantly growing and changing. It has two large, muscular arms, made of solid roots and bark, and a surprisingly agile, low-to-the-ground body. Its head is a single, hard-shelled seed, and its face is a simple, childlike carving in the wood. It communicates through gestures and the subtle rustling of the leaves and glowing flowers that grow from its body.",
+  "background": "Sprout is a newly awakened forest guardian that emerged from the heart of the corrupted Whispering Woods. It has no memory of its past life, only an instinctive sense of dread at the corruption that plagues the world and a primal connection to Rya's draconic power. It is an empathic creature that communicates through simple gestures and feelings. As it grows, it may gain the power to purify corrupted locations, healing the world one step at a time.",
+  "voice": "Does not speak, but communicates through a series of empathic feelings, simple gestures, and the rustling of its leaves.",
+  "quirk": "It instinctively seeks out sources of sunlight or pure mana, a remnant of its nature as a forest guardian.",
+  "relationships": "Its existence is directly tied to the party's efforts to heal the world, and it has imprinted on Rya, sensing a primal connection to her draconic power.",
+  "narrative_hook": "Sprout is a key to understanding the deep corruption spreading through the land. Its growth and evolution are directly tied to the party's efforts to heal the world, and it may be able to purify corrupted locations.",
   "weapon_proficiency": {
     "favored_types": [
-      "Ring"
+      "Gauntlets",
+      "Unarmed"
     ],
     "bonus_effect": "+1 to Attack Rolls with favored weapon types.",
     "penalty_effect": "-2 to Attack Rolls with non-favored weapon types."
   },
   "progression_path": {
     "attribute_priority": [
-      "Mind",
+      "Might",
       "Spirit",
-      "Agility",
-      "Might"
+      "Mind",
+      "Agility"
     ],
     "skill_priority": [
-      "Arcana",
-      "Lore",
-      "Diplomacy"
+      "Survival",
+      "Combat",
+      "Athletics"
     ],
-    "chosen_playstyle": "Path of the Oracle"
+    "chosen_playstyle": "Path of the Grove"
   },
-  "progression_type": "Static",
   "playstyles": [
     {
-      "path_name": "Path of the Oracle",
-      "description": "This path focuses on Eldra's connection to the spirits of the past, allowing her to act as a battlefield clairvoyant. She manipulates fate, reveals enemy weaknesses, and cripples foes with debilitating curses and prophecies of ruin.",
+      "path_name": "Path of the Earthshaker",
+      "description": "This path is inspired by Peco's incredible physical might and ability to shake the ground. It focuses on raw physical power, battlefield control, and unparalleled durability.",
       "abilities": [
         {
           "tier": "Novice (Level 1+)",
           "talents": [
             {
-              "name": "Fateful Glimpse",
-              "effect": "As a bonus action, grant one ally Advantage or one enemy Disadvantage on their very next d10 roll.",
-              "resolve_cost": 1,
-              "duration": "1 Roll",
-              "range": "60 feet"
+              "name": "Slam",
+              "effect": "As a major action, Sprout slams its body into a single target. It deals 1d10 physical damage and has a chance to knock the target prone on a failed Might DC 12 check.",
+              "resolve_cost": 0,
+              "duration": "Instantaneous",
+              "range": "Melee"
             },
             {
-              "name": "Whispers of the Fallen",
-              "effect": "Eldra channels the voices of the dead, forcing a target to make a Spirit DC 13 check or become 'Frightened' for 1 round.",
-              "resolve_cost": 5,
-              "duration": "1 Round",
-              "range": "30 feet"
-            },
-            {
-              "name": "Precognition (Passive)",
-              "effect": "You cannot be surprised.",
+              "name": "Photosynthesis (Passive)",
+              "effect": "At the start of Sprout's turn, if it is in an area with at least dim light (sunlight or equivalent), it passively regenerates 2 points of Vitality.",
               "resolve_cost": 0,
               "duration": "Passive",
               "range": "Self"
             },
             {
-              "name": "Mind Spike",
-              "effect": "As a major action, you drive a spike of psychic energy into a target's mind, dealing 1d10 psychic damage.",
+              "name": "Iron Bark",
+              "effect": "As a bonus action, Sprout hardens its bark, gaining a +2 bonus to its damage reduction for 1 round.",
               "resolve_cost": 1,
-              "duration": "Instantaneous",
-              "range": "60 feet"
+              "duration": "1 Round",
+              "range": "Self"
             },
             {
-              "name": "Augury",
-              "effect": "As a major action outside of combat, you can ask the spirits for guidance on a specific course of action, receiving an omen of weal or woe.",
-              "resolve_cost": 1,
+              "name": "Taunt",
+              "effect": "As a major action, you challenge a single enemy who can see you. They must make a Spirit DC 12 check or have disadvantage on attack rolls that do not target you for 1 round.",
+              "resolve_cost": 5,
+              "duration": "1 Round",
+              "range": "30 feet"
+            },
+            {
+              "name": "Crushing Vines",
+              "effect": "As a major action, Sprout commands a tangle of vines to attack an enemy, dealing 2d8 physical damage.",
+              "resolve_cost": 5,
               "duration": "Instantaneous",
-              "range": "Self"
+              "range": "30 feet"
             }
           ]
         },
@@ -80,32 +80,32 @@
           "tier": "Adept (Level 5+)",
           "talents": [
             {
-              "name": "Commune with Spirits",
-              "effect": "As a major action, you can make a Mind (Lore) DC 14 check against a single enemy. On a success, you learn one of their resistances or vulnerabilities, which is then revealed to the party.",
+              "name": "Seismic Roar (Modifies Slam)",
+              "effect": "When you use Slam, all enemies in a 10-foot radius around the target must make an Agility DC 14 check or be knocked prone.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
+            },
+            {
+              "name": "Roots of the Mountain (Passive)",
+              "effect": "While planted on the ground, Sprout is immune to all effects that would move or knock it prone.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
+            },
+            {
+              "name": "Overgrowth",
+              "effect": "As a major action, Sprout causes a 20-foot radius area to become overgrown with thorny vines. The area is considered difficult terrain.",
               "resolve_cost": 5,
-              "duration": "Instantaneous",
+              "duration": "1 Minute",
               "range": "60 feet"
             },
             {
-              "name": "Weight of Ages",
-              "effect": "As a major action, you curse a target with a vision of their own demise. They must make a Spirit DC 13 check or have their movement speed halved and deal 2 less damage on all attacks for 3 rounds.",
+              "name": "Bulwark",
+              "effect": "As a major action, you grant an adjacent ally a +1 bonus to their Damage Reduction for 3 rounds.",
               "resolve_cost": 5,
               "duration": "3 Rounds",
-              "range": "60 feet"
-            },
-            {
-              "name": "Spirit Ward",
-              "effect": "You create a 15-foot radius circle of shimmering energy for 3 rounds. Allies inside are immune to the 'Frightened' condition, and any Undead creature that enters the area takes 2d8 light damage.",
-              "resolve_cost": 10,
-              "duration": "3 Rounds",
-              "range": "30 feet"
-            },
-            {
-              "name": "Twist Fate (Reaction)",
-              "effect": "As a reaction when an enemy you can see makes an attack roll, you can force them to re-roll. They must use the new result.",
-              "resolve_cost": 10,
-              "duration": "Instantaneous",
-              "range": "Sight"
+              "range": "5 feet"
             }
           ]
         },
@@ -113,32 +113,32 @@
           "tier": "Expert (Level 10+)",
           "talents": [
             {
-              "name": "Echoes of the Shattering",
-              "effect": "As a major action, you unleash a psychic echo of the world-breaking cataclysm in a 15-foot radius. Enemies in the area must make a Spirit DC 14 check or suffer a -2 penalty on all of their rolls for 1 round.",
-              "resolve_cost": 10,
-              "duration": "1 Round",
-              "range": "60 feet"
-            },
-            {
-              "name": "Binding Oath",
-              "effect": "You place a powerful curse on a single enemy for 3 rounds. If that enemy attacks any creature other than you, they immediately take 3d10 psychic damage.",
+              "name": "Gaea's Embrace",
+              "effect": "As a major action, Sprout causes the ground beneath a single target to become a sinkhole. The target must make a Might DC 16 check or be restrained and take 2d10 bludgeoning damage at the start of each of their turns.",
               "resolve_cost": 15,
               "duration": "3 Rounds",
               "range": "60 feet"
             },
             {
-              "name": "Visions of Ruin (Modifies Fateful Glimpse)",
-              "effect": "When you successfully use Fateful Glimpse to give an enemy Disadvantage, they also become Vulnerable to the next source of damage they take.",
-              "resolve_cost": "N/A",
-              "duration": "N/A",
-              "range": "N/A"
+              "name": "Earthshatter",
+              "effect": "As a major action, create a shockwave in a 20-foot radius. All creatures on the ground take 4d8 physical damage and are knocked prone.",
+              "resolve_cost": 10,
+              "duration": "Instantaneous",
+              "range": "20-foot radius"
             },
             {
-              "name": "Sever Magic",
-              "effect": "As a major action, target one creature. They must make a Spirit DC 15 check or be unable to use any magical abilities or spend Resolve for 1 round.",
+              "name": "Thorned Body (Passive)",
+              "effect": "Whenever an enemy hits you with a melee attack, they take physical damage equal to your Might attribute.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Melee"
+            },
+            {
+              "name": "Living Wall",
+              "effect": "As a major action, you can move up to half your speed. Any space you move through can become a wall of dense thorns up to 10 feet high, providing total cover.",
               "resolve_cost": 10,
-              "duration": "1 Round",
-              "range": "60 feet"
+              "duration": "3 Rounds",
+              "range": "Self"
             }
           ]
         },
@@ -146,25 +146,25 @@
           "tier": "Master (Level 15+)",
           "talents": [
             {
-              "name": "Glimpse the End",
-              "effect": "As a major action, you force a target to witness their own death. They must make a Spirit DC 16 check or take 5d10 psychic damage and become 'Stunned' for 1 round. On a success, they take half damage and are not stunned.",
-              "resolve_cost": 15,
+              "name": "Earth's Grasp",
+              "effect": "As a major action, you cause roots to erupt from the ground in a 15-foot radius. All enemies in the area must make an Agility DC 16 check or become 'Restrained' for 1 round.",
+              "resolve_cost": 10,
               "duration": "1 Round",
               "range": "60 feet"
             },
             {
-              "name": "Prophecy of Failure",
-              "effect": "As a major action, you mark one enemy. For 1 minute, whenever that enemy misses an attack, one ally of your choice within 30 feet may use their Reaction to make a single weapon attack against them.",
-              "resolve_cost": 15,
-              "duration": "1 Minute",
-              "range": "Sight"
+              "name": "Primal Guardian (Passive)",
+              "effect": "You gain resistance to all physical damage from non-magical sources.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
             },
             {
-              "name": "Unravel",
-              "effect": "As a major action, you target a single enemy. They must make a Spirit DC 16 check or become Vulnerable to all damage types for 3 rounds.",
-              "resolve_cost": 15,
+              "name": "Colossus Form",
+              "effect": "As a major action, you temporarily grow in size, granting you a +2 bonus to Might and a +2 bonus to your damage reduction for 3 rounds.",
+              "resolve_cost": 10,
               "duration": "3 Rounds",
-              "range": "60 feet"
+              "range": "Self"
             }
           ]
         },
@@ -172,63 +172,63 @@
           "tier": "Archon (Level 20)",
           "talents": [
             {
-              "name": "Oracle's Decree (Ultimate)",
-              "effect": "For 3 rounds, you can see moments into the future. At the start of each of your turns, you can grant all allies a choice: their next attack roll is automatically a success, OR the next attack roll against them is automatically a failure. This can only be used once per day.",
+              "name": "Worldshaker (Ultimate)",
+              "effect": "As a major action, Sprout channels its full power into the ground, causing a massive earthquake in a 60-foot radius. All enemies in the area take 6d12 physical damage and are knocked prone. This can only be used once per day.",
               "resolve_cost": 20,
-              "duration": "3 Rounds",
-              "range": "Self"
+              "duration": "Instantaneous",
+              "range": "60-foot radius"
             },
             {
-              "name": "Chains of Fate (Ultimate)",
-              "effect": "As a major action, you bind up to three enemies you can see together with spectral chains. For 1 minute, whenever one of the chained enemies takes damage, the other two also take half of that damage. This can only be used once per day.",
+              "name": "One with the World (Ultimate)",
+              "effect": "As a major action, Sprout can become a conduit for the life force of Eryndor for 3 rounds. While active, allies within 60 feet cannot be reduced below 1 Vitality, and they are healed for 3d10 Vitality at the start of each of Sprout's turns. This can only be used once per day.",
               "resolve_cost": 20,
-              "duration": "1 Minute",
-              "range": "Sight"
+              "duration": "3 Rounds",
+              "range": "60-foot radius"
             }
           ]
         }
       ]
     },
     {
-      "path_name": "Path of the Mistwraith",
-      "description": "This path focuses on Eldra's ghostly form and her control over the ethereal mists. She becomes a master of battlefield repositioning and control, phasing through attacks, creating disorienting fog, and ensnaring foes with spectral energy.",
+      "path_name": "Path of the Grove",
+      "description": "This path is inspired by Spar's connection to nature and support magic. It focuses on healing, restorative abilities, and powerful utility through the manipulation of plant life.",
       "abilities": [
         {
           "tier": "Novice (Level 1+)",
           "talents": [
             {
-              "name": "Incorporeal Phase (Reaction)",
-              "effect": "When hit by a physical attack, you can use your reaction to briefly become ethereal, halving the damage taken.",
+              "name": "Healing Spores",
+              "effect": "As a major action, Sprout releases a cloud of restorative spores in a 10-foot radius. All allies within the area (including Sprout) are healed for 1d8 Vitality.",
               "resolve_cost": 5,
               "duration": "Instantaneous",
-              "range": "Self"
+              "range": "10-foot radius"
             },
             {
-              "name": "Misty Step",
-              "effect": "As a bonus action, you can teleport up to 30 feet to an unoccupied space you can see.",
+              "name": "Thorn Whip",
+              "effect": "As a major action, Sprout can extend a thorny vine up to 30 feet to grapple an enemy, dealing 1d6 piercing damage.",
+              "resolve_cost": 1,
+              "duration": "Instantaneous",
+              "range": "30 feet"
+            },
+            {
+              "name": "Mending Touch",
+              "effect": "As a major action, restore 2d6 Vitality to a single ally you can touch.",
               "resolve_cost": 5,
               "duration": "Instantaneous",
-              "range": "Self"
+              "range": "Touch"
             },
             {
-              "name": "Chilling Touch",
-              "effect": "As a major action, make a melee attack that deals 1d8 cold damage. The target's movement speed is halved for 1 round.",
-              "resolve_cost": 1,
-              "duration": "1 Round",
-              "range": "Melee"
+              "name": "Purify",
+              "effect": "As a major action, touch a target and remove one minor negative status effect (e.g., Blinded, Slowed).",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "Touch"
             },
             {
-              "name": "Mist Veil",
-              "effect": "As a bonus action, wreathe yourself in a shimmering mist. Ranged attacks against you have a -2 penalty for 1 round.",
-              "resolve_cost": 1,
-              "duration": "1 Round",
-              "range": "Self"
-            },
-            {
-              "name": "Silent Veil (Passive)",
-              "effect": "You make no sound when you move, granting Advantage on Stealth checks related to moving silently.",
+              "name": "Goodberry",
+              "effect": "Once per day, you can create 1d4 magical berries that each heal 1 Vitality when eaten as a bonus action.",
               "resolve_cost": 0,
-              "duration": "Passive",
+              "duration": "24 Hours",
               "range": "Self"
             }
           ]
@@ -237,32 +237,32 @@
           "tier": "Adept (Level 5+)",
           "talents": [
             {
-              "name": "Disorienting Fog",
-              "effect": "As a major action, you create a 20-foot radius sphere of dense fog that is heavily obscured. Enemies inside the fog cannot take Reactions.",
+              "name": "Cleansing Bloom",
+              "effect": "As a major action, Sprout purifies the air around an ally, removing one negative status effect.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "30 feet"
+            },
+            {
+              "name": "Sunbeam",
+              "effect": "As a bonus action, Sprout can summon a ray of sunlight on a single ally, restoring 2d8 Vitality.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "60 feet"
+            },
+            {
+              "name": "Healing Bloom (Modifies Healing Spores)",
+              "effect": "When you use Healing Spores, the healing is increased to 2d8 Vitality.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
+            },
+            {
+              "name": "Wall of Thorns",
+              "effect": "Sprout creates a 20-foot long, 5-foot high wall of thorny vines. Any creature passing through it takes 1d8 piercing damage.",
               "resolve_cost": 5,
               "duration": "3 Rounds",
               "range": "60 feet"
-            },
-            {
-              "name": "Phase Strike",
-              "effect": "As a major action, you make a melee attack dealing 2d8 cold damage. Whether you hit or miss, you can immediately teleport to an empty space on the opposite side of the target.",
-              "resolve_cost": 5,
-              "duration": "Instantaneous",
-              "range": "Melee"
-            },
-            {
-              "name": "Grasp of the Grave",
-              "effect": "As a major action, ethereal hands erupt from the ground in a 15-foot radius. Enemies in the area must make an Agility DC 14 check or become 'Restrained' for 1 round.",
-              "resolve_cost": 10,
-              "duration": "1 Round",
-              "range": "60 feet"
-            },
-            {
-              "name": "Wraith Walk",
-              "effect": "As a major action, you become incorporeal and move up to your speed. You can move through enemies, and each enemy you pass through takes 1d10 cold damage.",
-              "resolve_cost": 10,
-              "duration": "Instantaneous",
-              "range": "Self"
             }
           ]
         },
@@ -270,32 +270,32 @@
           "tier": "Expert (Level 10+)",
           "talents": [
             {
-              "name": "Ethereal Form",
-              "effect": "As a major action, you become fully incorporeal for 1 round. You are immune to physical damage, can move through creatures and objects as if they were difficult terrain, but you cannot attack or use an ability.",
+              "name": "Forest's Embrace",
+              "effect": "As a major action, Sprout can entangle an enemy with thick vines, forcing a Might DC 14 check. On a failure, the enemy is Restrained and cannot take reactions for 3 rounds.",
               "resolve_cost": 10,
-              "duration": "1 Round",
-              "range": "Self"
+              "duration": "3 Rounds",
+              "range": "30 feet"
             },
             {
-              "name": "Suffocating Mist (Modifies Disorienting Fog)",
-              "effect": "Enemies that end their turn inside your Disorienting Fog now also take 2d6 cold damage.",
+              "name": "Nature's Vigor (Modifies Healing Spores)",
+              "effect": "When you use Healing Spores, it also removes the Poisoned status effect from all affected allies.",
               "resolve_cost": "N/A",
               "duration": "N/A",
               "range": "N/A"
             },
             {
-              "name": "Mirror Image",
-              "effect": "Create 1d4 illusory duplicates of yourself that last for 1 minute. Each time you are attacked, roll to see if the attack targets a duplicate instead.",
-              "resolve_cost": 5,
-              "duration": "1 Minute",
-              "range": "Self"
+              "name": "Regrowth",
+              "effect": "As a major action, you touch an ally. For the next 3 rounds, they regain 1d8 Vitality at the start of their turn.",
+              "resolve_cost": 10,
+              "duration": "3 Rounds",
+              "range": "Touch"
             },
             {
-              "name": "Blink",
-              "effect": "At the end of each of your turns, you can choose to teleport up to 10 feet to an unoccupied space you can see.",
-              "resolve_cost": 0,
-              "duration": "Passive",
-              "range": "Self"
+              "name": "Mass Cleanse",
+              "effect": "As a major action, you can remove one negative status effect from all allies within a 15-foot radius.",
+              "resolve_cost": 10,
+              "duration": "Instantaneous",
+              "range": "15-foot radius"
             }
           ]
         },
@@ -303,25 +303,25 @@
           "tier": "Master (Level 15+)",
           "talents": [
             {
-              "name": "Possession",
-              "effect": "As a major action, you attempt to possess a single humanoid target. The target must make a Spirit DC 16 check. On a failure, you control their next turn completely. This can only be attempted once per creature per combat.",
+              "name": "Verdant Rebirth",
+              "effect": "Once per day, as a major action, Sprout can plant a seed on an ally who is Downed. The seed immediately brings the ally back to life with 1 Vitality and a Stable status.",
               "resolve_cost": 15,
-              "duration": "1 Round",
+              "duration": "Instantaneous",
               "range": "Touch"
             },
             {
-              "name": "Mist Form",
-              "effect": "As a major action, you can transform into a cloud of mist for up to 10 minutes. You gain resistance to all physical damage, can fly, and can pass through small cracks.",
-              "resolve_cost": 15,
-              "duration": "10 Minutes",
-              "range": "Self"
-            },
-            {
-              "name": "Chill to the Bone (Passive)",
-              "effect": "Enemies hit by your Chilling Touch or Phase Strike are also 'Slowed' for 1 round.",
+              "name": "Font of Life (Passive)",
+              "effect": "Sprout's Photosynthesis ability now affects all allies within 10 feet of it.",
               "resolve_cost": 0,
               "duration": "Passive",
-              "range": "Melee"
+              "range": "10-foot radius"
+            },
+            {
+              "name": "Sanctuary",
+              "effect": "As a major action, create a 20-foot radius sphere of calming natural energy for 3 rounds. Allies inside are immune to the 'Frightened' condition, and any enemy that enters the area must make a Spirit DC 16 check or lose their will to fight, ending their turn.",
+              "resolve_cost": 15,
+              "duration": "3 Rounds",
+              "range": "60 feet"
             }
           ]
         },
@@ -329,18 +329,18 @@
           "tier": "Archon (Level 20)",
           "talents": [
             {
-              "name": "Spirit Tornado (Ultimate)",
-              "effect": "You dissolve into a swirling vortex of mist and screaming spirits in a 30-foot radius for 3 rounds. The area is heavily obscured. Enemies who start their turn inside the vortex take 4d10 cold damage and have their movement speed reduced to 0 for that turn. As a bonus action, you can teleport to any unoccupied space within the vortex. This can only be used once per day.",
+              "name": "Genesis Bloom (Ultimate)",
+              "effect": "As a major action, Sprout channels the very essence of life into the battlefield. For 3 rounds, at the start of each of your turns, all allies in a 60-foot radius are healed for 4d10 Vitality. Additionally, any ally who would be reduced to 0 Vitality is instead reduced to 1 Vitality. This can only be used once per day.",
               "resolve_cost": 20,
               "duration": "3 Rounds",
-              "range": "Self"
+              "range": "60-foot radius"
             },
             {
-              "name": "Etherealness (Ultimate)",
-              "effect": "As a major action, you and all allies within 30 feet become ethereal for 3 rounds. While ethereal, you can only be damaged by magical attacks and abilities. This can only be used once per day.",
+              "name": "World Tree (Ultimate)",
+              "effect": "As a major action, you summon a massive, spectral tree at the center of the battlefield for the duration of the combat. At the start of each of your turns, you can choose one of two effects: 'Golden Apples' (all allies regain 3d10 Vitality) or 'Ironbark Roots' (all enemies are 'Restrained' for 1 round, Agility DC 18 avoids). This can only be used once per day.",
               "resolve_cost": 20,
-              "duration": "3 Rounds",
-              "range": "30-foot radius"
+              "duration": "Entire Combat",
+              "range": "Battlefield"
             }
           ]
         }
