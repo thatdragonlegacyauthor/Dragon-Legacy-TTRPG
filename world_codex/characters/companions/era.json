@@ -1,14 +1,14 @@
 {
-  "name": "Lyra",
-  "char_id": "ASTORAN_LYRA",
+  "name": "Era",
+  "char_id": "ASTORAN_Era",
   "type": "Astoran",
   "role": "Tidal Scrivener (Blue Mage)",
-  "physical_description": "A young, curious Astoran whose bioluminescent scales are still bright and vibrant, shifting in color with her emotions. Unlike the ancient Loremaster Oris, Lyra is fascinated by the surface world. Her large, dark eyes are wide with a thirst for knowledge, and she carries a waterproof satchel filled with meticulously organized scrolls and inks.",
-  "background": "Lyra was a student of Loremaster Oris, tasked with chronicling the history and prophecies of the Astoran people. However, her insatiable curiosity led her to study not just the past, but the living present. Believing that the creatures of the world were a living extension of its history, she began to secretly document their abilities, developing a unique form of magic that allowed her to replicate the skills she observed. Viewing this as a deviation from their isolationist traditions, the Astoran Conclave censured her. Now, she has ventured to the surface, seeking to compile a complete codex of Eryndor's creatures, proving to her elders that the world is a library, and every monster a book.",
+  "physical_description": "A young, curious Astoran whose bioluminescent scales are still bright and vibrant, shifting in color with her emotions. Unlike the ancient Loremaster Oris, Era is fascinated by the surface world. Her large, dark eyes are wide with a thirst for knowledge, and she carries a waterproof satchel filled with meticulously organized scrolls and inks.",
+  "background": "Era was a student of Loremaster Oris, tasked with chronicling the history and prophecies of the Astoran people. However, her insatiable curiosity led her to study not just the past, but the living present. Believing that the creatures of the world were a living extension of its history, she began to secretly document their abilities, developing a unique form of magic that allowed her to replicate the skills she observed. Viewing this as a deviation from their isolationist traditions, the Astoran Conclave censured her. Now, she has ventured to the surface, seeking to compile a complete codex of Eryndor's creatures, proving to her elders that the world is a library, and every monster a book.",
   "voice": "A bright, bubbly soprano that is filled with an infectious curiosity and a rapid, almost breathless pace when she is explaining a new discovery.",
   "quirk": "Her bioluminescent scales change color based on her emotions—a trait she has not yet learned to control, making her an open book to those who pay attention. She is also constantly taking notes, sketching creatures, and muttering observations to herself.",
   "relationships": "She is the former student of Loremaster Oris, whom she respects but disagrees with on matters of tradition. She views Orin as a stoic, unreadable guardian and is fascinated by the outside world, making her a potential ally to any who can show her something new.",
-  "narrative_hook": "Lyra's quest to document the world's creatures puts her at odds with factions who would rather see them exploited or exterminated, such as the Arcane Dominion. Her unique magical abilities may also attract unwanted attention from those who see her as a threat or a tool.",
+  "narrative_hook": "Era's quest to document the world's creatures puts her at odds with factions who would rather see them exploited or exterminated, such as the Arcane Dominion. Her unique magical abilities may also attract unwanted attention from those who see her as a threat or a tool.",
   "weapon_proficiency": {
     "favored_types": [
       "Staff",
@@ -34,14 +34,14 @@
   "playstyles": [
     {
       "path_name": "Path of the Tidal Scrivener",
-      "description": "This path focuses on Lyra's unique ability to learn and replicate the skills of monsters. She is a versatile and unpredictable spellcaster who can adapt to any situation by drawing upon the power of the creatures she has studied.",
+      "description": "This path focuses on Era's unique ability to learn and replicate the skills of monsters. She is a versatile and unpredictable spellcaster who can adapt to any situation by drawing upon the power of the creatures she has studied.",
       "abilities": [
         {
           "tier": "Core Mechanic",
           "talents": [
             {
               "name": "Monster Codex (Core Mechanic)",
-              "effect": "When Lyra witnesses a monster use a non-ultimate special ability, she can spend her next major action and make a Mind (Arcana) check against a DC determined by the monster's CR (DC 10 + CR). On a success, she successfully transcribes a version of that ability into her codex. She can have a number of transcribed abilities equal to her Mind attribute. During a long rest, she can choose which transcribed abilities to 'prepare' for the day, up to a maximum of her character level divided by 4 (rounded up)."
+              "effect": "When Era witnesses a monster use a non-ultimate special ability, she can spend her next major action and make a Mind (Arcana) check against a DC determined by the monster's CR (DC 10 + CR). On a success, she successfully transcribes a version of that ability into her codex. She can have a number of transcribed abilities equal to her Mind attribute. During a long rest, she can choose which transcribed abilities to 'prepare' for the day, up to a maximum of her character level divided by 4 (rounded up)."
             }
           ]
         },
@@ -50,7 +50,7 @@
           "talents": [
             {
               "name": "Analyze",
-              "effect": "As a major action, Lyra can make a Mind (Lore) check against a single enemy (DC 10 + CR). On a success, she learns one of the target's resistances, vulnerabilities, or a single passive ability.",
+              "effect": "As a major action, Era can make a Mind (Lore) check against a single enemy (DC 10 + CR). On a success, she learns one of the target's resistances, vulnerabilities, or a single passive ability.",
               "resolve_cost": 1,
               "duration": "Instantaneous",
               "range": "60 feet"
@@ -90,7 +90,7 @@
           "talents": [
             {
               "name": "Rapid Transcription (Modifies Monster Codex)",
-              "effect": "Lyra can now use her Reaction to make the Mind (Arcana) check to transcribe an ability, allowing her to act on the same turn.",
+              "effect": "Era can now use her Reaction to make the Mind (Arcana) check to transcribe an ability, allowing her to act on the same turn.",
               "resolve_cost": "N/A",
               "duration": "N/A",
               "range": "N/A"
@@ -123,7 +123,7 @@
           "talents": [
             {
               "name": "Adaptive Mimicry",
-              "effect": "Once per combat, after successfully transcribing an ability, Lyra can immediately use that ability as a bonus action, even if it is not prepared. This ability is then forgotten at the end of combat unless she prepares it during a long rest.",
+              "effect": "Once per combat, after successfully transcribing an ability, Era can immediately use that ability as a bonus action, even if it is not prepared. This ability is then forgotten at the end of combat unless she prepares it during a long rest.",
               "resolve_cost": 10,
               "duration": "Instantaneous",
               "range": "Varies by ability"
@@ -156,7 +156,7 @@
           "talents": [
             {
               "name": "Perfected Memory (Modifies Monster Codex)",
-              "effect": "The number of abilities Lyra can have in her codex is now equal to twice her Mind attribute.",
+              "effect": "The number of abilities Era can have in her codex is now equal to twice her Mind attribute.",
               "resolve_cost": "N/A",
               "duration": "N/A",
               "range": "N/A"
@@ -182,7 +182,7 @@
           "talents": [
             {
               "name": "Primal Echo (Ultimate)",
-              "effect": "As a major action, Lyra can choose one transcribed ability she has prepared and use it with its effects doubled (damage, duration, targets, etc.). This can only be used once per day.",
+              "effect": "As a major action, Era can choose one transcribed ability she has prepared and use it with its effects doubled (damage, duration, targets, etc.). This can only be used once per day.",
               "resolve_cost": 20,
               "duration": "Instantaneous",
               "range": "Varies by ability"
@@ -200,7 +200,7 @@
     },
     {
       "path_name": "Path of the Abyssal Seer",
-      "description": "This path focuses on Lyra's innate Astoran connection to the tides and prophecy. She becomes a powerful support caster who heals allies with restorative waters, controls the battlefield with crushing pressure, and offers glimpses into the future to turn the tide of battle.",
+      "description": "This path focuses on Era's innate Astoran connection to the tides and prophecy. She becomes a powerful support caster who heals allies with restorative waters, controls the battlefield with crushing pressure, and offers glimpses into the future to turn the tide of battle.",
       "abilities": [
         {
           "tier": "Novice (Level 1+)",
