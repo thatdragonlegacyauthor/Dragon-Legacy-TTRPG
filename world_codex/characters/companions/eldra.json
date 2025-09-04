@@ -63,6 +63,7 @@
             {
               "name": "Mind Spike",
               "effect": "As a major action, you drive a spike of psychic energy into a target's mind, dealing 1d10 psychic damage.",
+              "attack_profile": "Mystic (Mind)",
               "resolve_cost": 1,
               "duration": "Instantaneous",
               "range": "60 feet"
@@ -148,6 +149,7 @@
             {
               "name": "Glimpse the End",
               "effect": "As a major action, you force a target to witness their own death. They must make a Spirit DC 16 check or take 5d10 psychic damage and become 'Stunned' for 1 round. On a success, they take half damage and are not stunned.",
+              "attack_profile": "Mystic (Spirit)",
               "resolve_cost": 15,
               "duration": "1 Round",
               "range": "60 feet"
@@ -212,7 +214,8 @@
             },
             {
               "name": "Chilling Touch",
-              "effect": "As a major action, make a melee attack that deals 1d8 cold damage. The target's movement speed is halved for 1 round.",
+              "effect": "As a major action, make a melee attack using the Mystic (Spirit) profile that deals 1d8 cold damage. The target's movement speed is halved for 1 round.",
+              "attack_profile": "Mystic (Spirit)",
               "resolve_cost": 1,
               "duration": "1 Round",
               "range": "Melee"
@@ -245,7 +248,8 @@
             },
             {
               "name": "Phase Strike",
-              "effect": "As a major action, you make a melee attack dealing 2d8 cold damage. Whether you hit or miss, you can immediately teleport to an empty space on the opposite side of the target.",
+              "effect": "As a major action, you make a melee attack using the Mystic (Spirit) profile dealing 2d8 cold damage. Whether you hit or miss, you can immediately teleport to an empty space on the opposite side of the target.",
+              "attack_profile": "Mystic (Spirit)",
               "resolve_cost": 5,
               "duration": "Instantaneous",
               "range": "Melee"
