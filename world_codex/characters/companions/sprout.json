@@ -41,7 +41,8 @@
           "talents": [
             {
               "name": "Slam",
-              "effect": "As a major action, Sprout slams its body into a single target. It deals 1d10 physical damage and has a chance to knock the target prone on a failed Might DC 12 check."
+              "effect": "As a major action, Sprout slams its body into a single target. It deals 1d10 physical damage and has a chance to knock the target prone on a failed Might DC 12 check.",
+              "attack_profile": "Martial (Might)"
             },
             {
               "name": "Photosynthesis (Passive)",
@@ -54,7 +55,8 @@
           "talents": [
             {
               "name": "Crushing Vines",
-              "effect": "As a major action, Sprout commands a tangle of vines to attack an enemy within 30 feet, dealing 2d8 physical damage. On a successful hit, the target's movement speed is halved for 1 round. This costs 5 Resolve."
+              "effect": "As a major action, Sprout commands a tangle of vines to attack an enemy within 30 feet, dealing 2d8 physical damage. On a successful hit, the target's movement speed is halved for 1 round. This costs 5 Resolve.",
+              "attack_profile": "Mystic (Spirit)"
             },
             {
               "name": "Iron Bark",
@@ -112,7 +114,8 @@
             },
             {
               "name": "Thorn Whip",
-              "effect": "As a major action, Sprout can extend a thorny vine up to 30 feet to grapple an enemy, dealing 1d6 piercing damage."
+              "effect": "As a major action, Sprout can extend a thorny vine up to 30 feet to attack a target using the Mystic (Spirit) profile, dealing 1d6 piercing damage.",
+              "attack_profile": "Mystic (Spirit)"
             }
           ]
         },
