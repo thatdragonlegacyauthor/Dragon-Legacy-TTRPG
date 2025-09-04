@@ -199,6 +199,7 @@
             {
               "name": "Sacred Strike",
               "effect": "As a major action, you make a melee attack imbued with light magic, dealing 1d8 light damage instead of physical. This attack uses your Spirit attribute.",
+              "attack_profile": "Mystic (Spirit)",
               "resolve_cost": 0,
               "duration": "Instantaneous",
               "range": "Melee"
@@ -213,6 +214,7 @@
             {
               "name": "Searing Bolt",
               "effect": "Hurl a bolt of light at a single target, dealing 1d10 light damage.",
+              "attack_profile": "Mystic (Spirit)",
               "resolve_cost": 5,
               "duration": "Instantaneous",
               "range": "60 feet"
@@ -270,4 +272,60 @@
           "tier": "Expert (Level 10+)",
           "talents": [
             {
-              "name": "S
+                "name": "Sanctified Smite",
+                "effect": "As a major action, you make a single attack with your weapon, which deals an additional 2d10 light damage. This attack ignores all of the target's non-magical Damage Reduction.",
+                "resolve_cost": 10,
+                "duration": "Instantaneous",
+                "range": "Melee"
+            },
+            {
+                "name": "Pillar of Dawn",
+                "effect": "As a major action, you call down a pillar of light in a 10-foot radius. Enemies in the area take 3d8 light damage, and allies are healed for 2d8 Vitality.",
+                "resolve_cost": 10,
+                "duration": "Instantaneous",
+                "range": "60 feet"
+            },
+            {
+                "name": "Aura of Censure",
+                "effect": "As a major action, you project a 15-foot aura of divine power for 3 rounds. Any enemy that starts their turn inside the aura takes 1d10 light damage.",
+                "resolve_cost": 10,
+                "duration": "3 Rounds",
+                "range": "15-foot radius"
+            }
+          ]
+        },
+        {
+          "tier": "Master (Level 15+)",
+          "talents": [
+            {
+                "name": "Divine Judgment",
+                "effect": "As a major action, you can call down a beam of searing light on a single target, dealing 4d12 light damage. The target must also make a Spirit DC 16 check or be 'Stunned' for 1 round.",
+                "resolve_cost": 15,
+                "duration": "1 Round",
+                "range": "60 feet"
+            },
+            {
+                "name": "Angel's Mercy (Reaction)",
+                "effect": "When an ally is reduced to 0 Vitality, you can use your Reaction to instantly heal them for 3d10 Vitality. This can only be used once per combat.",
+                "resolve_cost": 10,
+                "duration": "Instantaneous",
+                "range": "60 feet"
+            }
+          ]
+        },
+        {
+          "tier": "Archon (Level 20)",
+          "talents": [
+            {
+              "name": "Wrath of the Heavens (Ultimate)",
+              "effect": "As a major action, you call down a storm of holy fire in a 30-foot radius. All enemies in the area take 6d12 light damage and are 'Blinded' for 1 minute. Usable once per day.",
+              "resolve_cost": 20,
+              "duration": "Instantaneous",
+              "range": "60 feet"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
