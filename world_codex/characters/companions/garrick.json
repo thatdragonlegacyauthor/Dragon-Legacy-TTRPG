@@ -44,19 +44,36 @@
               "name": "Life Drain",
               "effect": "As a major action, make a melee attack that deals 1d10 necrotic damage. Garrick heals for half of the damage dealt.",
               "resolve_cost": 5,
-              "duration": "Instantaneous"
+              "duration": "Instantaneous",
+              "range": "Melee"
             },
             {
               "name": "Incorporeal Movement (Passive)",
               "effect": "Garrick can move through other creatures and objects as if they were difficult terrain. If he ends his turn inside an object, he is shunted to the nearest open space and takes 1d6 force damage.",
               "resolve_cost": 0,
-              "duration": "Passive"
+              "duration": "Passive",
+              "range": "Self"
             },
             {
               "name": "Whispers of Dread",
               "effect": "As a major action, force a single enemy within 30 feet to make a Spirit DC 12 check or become 'Frightened' for 1 round.",
               "resolve_cost": 5,
-              "duration": "1 Round"
+              "duration": "1 Round",
+              "range": "30 feet"
+            },
+            {
+                "name": "Withering Touch",
+                "effect": "As a major action, Garrick touches a creature, forcing them to make a Mind DC 12 check. On a failure, they deal 1 less damage on all attacks for 3 rounds.",
+                "resolve_cost": 1,
+                "duration": "3 Rounds",
+                "range": "Touch"
+            },
+            {
+                "name": "Shadow Step",
+                "effect": "As a bonus action, you can teleport up to 15 feet to a shadowed or unlit area.",
+                "resolve_cost": 5,
+                "duration": "Instantaneous",
+                "range": "Self"
             }
           ]
         },
@@ -64,22 +81,32 @@
           "tier": "Adept (Level 5+)",
           "talents": [
             {
-              "name": "Withering Touch",
-              "effect": "As a major action, Garrick touches a creature, forcing them to make a Mind DC 13 check. On a failure, they deal 2 less damage on all attacks for 3 rounds.",
-              "resolve_cost": 5,
-              "duration": "3 Rounds"
-            },
-            {
-              "name": "Shadow Step (Modifies Incorporeal Movement)",
-              "effect": "Garrick can now teleport up to 15 feet to a shadowed or unlit area as a bonus action, even when a direct path is blocked by a creature or object.",
+              "name": "Improved Withering Touch (Modifies Withering Touch)",
+              "effect": "The damage reduction from Withering Touch increases from 1 to 2.",
               "resolve_cost": "N/A",
-              "duration": "N/A"
+              "duration": "N/A",
+              "range": "N/A"
             },
             {
               "name": "Phantom Pain",
               "effect": "You project your own suffering into the mind of a target. The target takes 2d10 psychic damage and has disadvantage on their next attack roll.",
               "resolve_cost": 10,
-              "duration": "1 Roll"
+              "duration": "1 Roll",
+              "range": "30 feet"
+            },
+            {
+                "name": "Wraith's Fury (Modifies Life Drain)",
+                "effect": "On a critical hit with Life Drain, the target's Vitality maximum is reduced by 1d10 until they take a long rest.",
+                "resolve_cost": "N/A",
+                "duration": "N/A",
+                "range": "N/A"
+            },
+            {
+                "name": "Ectoplasmic Chains",
+                "effect": "As a major action, you lash out with tendrils of spiritual energy at a target within 30 feet. They must make an Agility DC 13 check or become 'Restrained' for up to 3 rounds.",
+                "resolve_cost": 5,
+                "duration": "Up to 3 Rounds",
+                "range": "30 feet"
             }
           ]
         },
@@ -90,19 +117,29 @@
               "name": "Possess",
               "effect": "As a major action, Garrick can attempt to possess a single humanoid target. The target must make a Spirit DC 16 check. On a failure, Garrick can control their actions for one turn. This can only be attempted once per creature per combat.",
               "resolve_cost": 10,
-              "duration": "1 Round"
+              "duration": "1 Round",
+              "range": "Touch"
             },
             {
-              "name": "Wraith's Fury (Modifies Life Drain)",
-              "effect": "On a critical hit with Life Drain, the target's Vitality maximum is reduced by 1d10 until they take a long rest.",
-              "resolve_cost": "N/A",
-              "duration": "N/A"
+                "name": "Vengeful Echo (Passive)",
+                "effect": "Whenever an ally is reduced to 0 Vitality within 30 feet of Garrick, he can use his Reaction to make an immediate, free attack with Life Drain against the creature that downed his ally.",
+                "resolve_cost": 0,
+                "duration": "Passive",
+                "range": "30 feet"
             },
             {
-              "name": "Ectoplasmic Chains",
-              "effect": "As a major action, you lash out with tendrils of spiritual energy at a target within 30 feet. They must make an Agility DC 13 check or become 'Restrained' for up to 3 rounds.",
-              "resolve_cost": 5,
-              "duration": "Up to 3 Rounds"
+              "name": "Unravel Soul",
+              "effect": "As a major action, Garrick makes a powerful, targeted attack on a creature's soul. The target takes 3d12 necrotic damage and must succeed on a Spirit DC 14 check or become 'Stunned' for 1 round.",
+              "resolve_cost": 15,
+              "duration": "1 Round",
+              "range": "Melee"
+            },
+            {
+                "name": "Aura of Dread",
+                "effect": "You project a 15-foot aura of fear for 3 rounds. Any enemy who enters or starts their turn in the aura must make a Spirit DC 14 check or become 'Frightened' for 1 round.",
+                "resolve_cost": 10,
+                "duration": "3 Rounds",
+                "range": "15-foot radius"
             }
           ]
         },
@@ -110,16 +147,25 @@
           "tier": "Master (Level 15+)",
           "talents": [
             {
-              "name": "Unravel Soul",
-              "effect": "As a major action, Garrick makes a powerful, targeted attack on a creature's soul. The target takes 3d12 necrotic damage and must succeed on a Spirit DC 16 check or become 'Stunned' for 1 round.",
-              "resolve_cost": 15,
-              "duration": "1 Round"
+                "name": "Curse of the Void",
+                "effect": "Place a curse on one enemy. On a failed Spirit DC 16 check, they become Vulnerable to all damage types for 3 rounds.",
+                "resolve_cost": 15,
+                "duration": "3 Rounds",
+                "range": "60 feet"
             },
             {
-              "name": "Vengeful Echo (Passive)",
-              "effect": "Whenever an ally is reduced to 0 Vitality within 30 feet of Garrick, he can use his Reaction to make an immediate, free attack with Life Drain against the creature that downed his ally.",
-              "resolve_cost": 0,
-              "duration": "Passive"
+                "name": "Deathly Chill",
+                "effect": "As a major action, you create a 20-foot radius sphere of intense cold and despair. Enemies in the area take 4d8 cold damage and cannot regain Vitality for 3 rounds.",
+                "resolve_cost": 15,
+                "duration": "3 Rounds",
+                "range": "60 feet"
+            },
+            {
+                "name": "Soul Siphon",
+                "effect": "As a major action, you drain the will of a target. They take 4d8 psychic damage, and you gain Resolve equal to half the damage dealt.",
+                "resolve_cost": 0,
+                "duration": "Instantaneous",
+                "range": "30 feet"
             }
           ]
         },
@@ -130,7 +176,15 @@
               "name": "Final Vengeance (Ultimate)",
               "effect": "As a major action, Garrick unleashes a torrent of soul-shattering energy in a 30-foot radius. All enemies in the area take 6d12 necrotic damage. This deals double damage to Grand Inquisitor Valerius if he is within the radius. This can only be used once per day.",
               "resolve_cost": 20,
-              "duration": "Instantaneous"
+              "duration": "Instantaneous",
+              "range": "30-foot radius"
+            },
+            {
+                "name": "Reaper's Gaze (Ultimate)",
+                "effect": "As a major action, you can mark a single target. If that target is reduced to 0 Vitality within the next minute, its soul is consumed, and it cannot be resurrected by any means short of a divine intervention. This can only be used once per day.",
+                "resolve_cost": 20,
+                "duration": "1 Minute",
+                "range": "Sight"
             }
           ]
         }
@@ -147,13 +201,36 @@
               "name": "Spectral Parry (Reaction)",
               "effect": "When an enemy targets you with a melee attack, you can use your Reaction to impose a -2 penalty on their attack roll.",
               "resolve_cost": 1,
-              "duration": "1 Roll"
+              "duration": "1 Roll",
+              "range": "Self"
             },
             {
               "name": "Champion's Focus",
               "effect": "As a bonus action, you analyze an enemy's defenses. Your next attack roll against that target before the end of your turn is made with Advantage.",
               "resolve_cost": 1,
-              "duration": "1 Roll"
+              "duration": "1 Roll",
+              "range": "Self"
+            },
+            {
+                "name": "Blade Dance (Passive)",
+                "effect": "When you hit a creature with a melee attack, your movement does not provoke an Attack of Opportunity from that creature for the rest of your turn.",
+                "resolve_cost": 0,
+                "duration": "Passive",
+                "range": "Self"
+            },
+            {
+                "name": "Ghostly Strike",
+                "effect": "As a major action, make a melee attack. This attack's damage is necrotic instead of physical.",
+                "resolve_cost": 1,
+                "duration": "Instantaneous",
+                "range": "Melee"
+            },
+            {
+                "name": "Vengeful Mark",
+                "effect": "As a bonus action, you mark an enemy. Your attacks deal an additional 1d4 damage to that enemy.",
+                "resolve_cost": 1,
+                "duration": "1 Minute",
+                "range": "30 feet"
             }
           ]
         },
@@ -164,13 +241,29 @@
               "name": "Incorporeal Feint",
               "effect": "As a bonus action, you can feint an attack, forcing an enemy within 5 feet to make a Mind DC 13 check. On a failure, their next attack roll has a -2 penalty, and your next attack against them has a +2 bonus.",
               "resolve_cost": 5,
-              "duration": "1 Round"
+              "duration": "1 Round",
+              "range": "5 feet"
             },
             {
-              "name": "Blade Dance (Passive)",
-              "effect": "When you hit a creature with a melee attack, your movement does not provoke an Attack of Opportunity from that creature for the rest of your turn.",
-              "resolve_cost": 0,
-              "duration": "Passive"
+              "name": "Vengeful Riposte (Modifies Spectral Parry)",
+              "effect": "When you successfully use Spectral Parry to cause an enemy's attack to miss, you can immediately make one melee attack against them as part of the same Reaction.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
+            },
+            {
+                "name": "Phase Shift (Reaction)",
+                "effect": "When you would take damage from an attack, you can use your Reaction to become incorporeal for a moment, taking no damage from that attack.",
+                "resolve_cost": 10,
+                "duration": "Instantaneous",
+                "range": "Self"
+            },
+            {
+                "name": "Order's Downfall",
+                "effect": "As a major action, you make a single, precise strike against an enemy. This attack ignores all non-magical Damage Reduction.",
+                "resolve_cost": 15,
+                "duration": "Instantaneous",
+                "range": "Melee"
             }
           ]
         },
@@ -181,13 +274,29 @@
               "name": "Executioner's Strike",
               "effect": "As a major action, you make a single melee attack against a creature suffering from a negative status effect (e.g., Frightened, Poisoned, Stunned). This attack deals an additional 2d10 necrotic damage.",
               "resolve_cost": 10,
-              "duration": "Instantaneous"
+              "duration": "Instantaneous",
+              "range": "Melee"
             },
             {
-              "name": "Vengeful Riposte (Modifies Spectral Parry)",
-              "effect": "When you successfully use Spectral Parry to cause an enemy's attack to miss, you can immediately make one melee attack against them as part of the same Reaction.",
-              "resolve_cost": "N/A",
-              "duration": "N/A"
+                "name": "Duelist's Advance",
+                "effect": "After an enemy misses you with a melee attack, you can use your Reaction to move up to 10 feet towards them.",
+                "resolve_cost": 1,
+                "duration": "Instantaneous",
+                "range": "Self"
+            },
+            {
+                "name": "Flowing Strikes (Passive)",
+                "effect": "When you defeat an enemy with a melee attack, you can immediately use a bonus action to move up to 10 feet.",
+                "resolve_cost": 0,
+                "duration": "Passive",
+                "range": "Self"
+            },
+            {
+                "name": "Break the Line",
+                "effect": "As a major action, you can move up to your speed in a straight line, making one melee attack against every enemy you pass. This movement provokes attacks of opportunity.",
+                "resolve_cost": 10,
+                "duration": "Instantaneous",
+                "range": "Self"
             }
           ]
         },
@@ -195,16 +304,25 @@
           "tier": "Master (Level 15+)",
           "talents": [
             {
-              "name": "Order's Downfall",
-              "effect": "As a major action, you make a single, precise strike against an enemy. This attack ignores all non-magical Damage Reduction.",
-              "resolve_cost": 15,
-              "duration": "Instantaneous"
+                "name": "Parry and Riposte (Passive, Modifies Spectral Parry)",
+                "effect": "Your Spectral Parry now imposes a -3 penalty. When it causes an attack to miss, your Vengeful Riposte deals an additional 1d10 damage.",
+                "resolve_cost": "N/A",
+                "duration": "N/A",
+                "range": "N/A"
             },
             {
-              "name": "Phase Shift (Reaction)",
-              "effect": "Once per combat, when you would take damage from an attack, you can use your Reaction to become incorporeal for a moment, taking no damage from that attack.",
-              "resolve_cost": 10,
-              "duration": "Instantaneous"
+                "name": "Isolate",
+                "effect": "As a major action, you can teleport an enemy you are in melee with up to 30 feet to an unoccupied space. You teleport to an adjacent space.",
+                "resolve_cost": 15,
+                "duration": "Instantaneous",
+                "range": "Melee"
+            },
+            {
+                "name": "Unyielding Vengeance (Passive)",
+                "effect": "You have advantage on death saving throws.",
+                "resolve_cost": 0,
+                "duration": "Passive",
+                "range": "Self"
             }
           ]
         },
@@ -215,7 +333,15 @@
               "name": "Duelist's Requiem (Ultimate)",
               "effect": "As a major action, you can mark a single enemy as your sworn foe for 1 minute. For the duration, all of your attacks against that target deal an additional 1d12 necrotic damage, and the target's attack rolls against you are made with Disadvantage. This can only be used once per day.",
               "resolve_cost": 20,
-              "duration": "1 Minute"
+              "duration": "1 Minute",
+              "range": "60 feet"
+            },
+            {
+                "name": "Final Judgment (Ultimate)",
+                "effect": "As a major action, you make a single melee attack against Grand Inquisitor Valerius. This attack automatically hits, is a guaranteed critical hit, and deals maximum possible damage. If this ability is used against any other target, it functions as a normal melee attack. This can only be used once per day.",
+                "resolve_cost": 20,
+                "duration": "Instantaneous",
+                "range": "Melee"
             }
           ]
         }
