@@ -43,6 +43,7 @@
             {
               "name": "Shadow Strike",
               "effect": "Deals 1d10 damage. If Lirien is hidden from the target, this attack deals an additional 1d10 damage.",
+              "attack_profile": "Assassin",
               "resolve_cost": 0,
               "duration": "Instantaneous",
               "range": "Melee"
@@ -163,6 +164,7 @@
             {
               "name": "Death Strike",
               "effect": "As a major action, you make a single, precise strike against a target. If the attack hits, the target must make a Might DC 16 check. On a failure, they take an additional 5d10 necrotic damage. On a success, they take half as much.",
+              "attack_profile": "Assassin",
               "resolve_cost": 15,
               "duration": "Instantaneous",
               "range": "Melee"
@@ -240,6 +242,7 @@
             {
               "name": "Ricochet Shot",
               "effect": "As a major action, you can throw a dagger and have it ricochet off a surface. This allows you to make a ranged attack against a target that is in total cover, as long as you can trace a path for the ricochet.",
+              "attack_profile": "Assassin",
               "resolve_cost": 5,
               "duration": "Instantaneous",
               "range": "Weapon"
