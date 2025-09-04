@@ -42,11 +42,38 @@
           "talents": [
             {
               "name": "Shadow Strike",
-              "effect": "Deals 1d10 damage. If Lirien is hidden from the target, this attack deals an additional 1d10 damage and the target gains the 'Bleeding' status effect (1d4 damage at the start of their turn until healed)."
+              "effect": "Deals 1d10 damage. If Lirien is hidden from the target, this attack deals an additional 1d10 damage.",
+              "resolve_cost": 0,
+              "duration": "Instantaneous",
+              "range": "Melee"
             },
             {
-              "name": "Night Prowl",
-              "effect": "Gain Advantage on Stealth checks in low light."
+              "name": "Night Prowl (Passive)",
+              "effect": "Gain Advantage on Stealth checks in dim light or darkness.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
+            },
+            {
+              "name": "Poisoned Blade",
+              "effect": "As a bonus action, you can apply a fast-acting toxin to one of your weapons. The next successful attack with that weapon forces the target to make a Might DC 12 check or become 'Poisoned' for 1 minute.",
+              "resolve_cost": 1,
+              "duration": "Until next hit",
+              "range": "Self"
+            },
+            {
+              "name": "Sleight of Hand",
+              "effect": "As a bonus action, you can attempt to lift a small item (a key, a pouch, a potion) from a target within 5 feet. This requires an Agility (Stealth) check opposed by the target's Mind check.",
+              "resolve_cost": 1,
+              "duration": "Instantaneous",
+              "range": "5 feet"
+            },
+            {
+              "name": "Distract",
+              "effect": "As a bonus action, you can throw a rock or create a noise to draw an enemy's attention. Make an Agility (Stealth) check vs the enemy's Mind check. On a success, the enemy is distracted, and your next attack against them has Advantage.",
+              "resolve_cost": 1,
+              "duration": "1 Roll",
+              "range": "30 feet"
             }
           ]
         },
@@ -54,12 +81,32 @@
           "tier": "Adept (Level 5+)",
           "talents": [
             {
-              "name": "Sleight of Hand",
-              "effect": "As a bonus action, you can attempt to lift a small item (a key, a pouch, a potion) from a target within 5 feet. This requires an Agility (Stealth) check opposed by the target's Mind check."
+              "name": "Venomous Strike (Modifies Poisoned Blade)",
+              "effect": "The toxin from your Poisoned Blade ability now deals an additional 1d6 poison damage when the attack hits.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
             },
             {
-              "name": "Poisoned Blade",
-              "effect": "As a bonus action, you can apply a fast-acting toxin to your weapon. Your next successful Shadow Strike forces the target to make a Might DC 13 check or become 'Poisoned' for 1 minute. This costs 5 Resolve."
+              "name": "Gloom",
+              "effect": "As a major action, you can create a 15-foot radius sphere of magical darkness that lasts for 3 rounds. You can see normally within this darkness.",
+              "resolve_cost": 5,
+              "duration": "3 Rounds",
+              "range": "60 feet"
+            },
+            {
+              "name": "Expose Weakness",
+              "effect": "As a bonus action, you can analyze a target's defenses. Your next attack against that target ignores 3 points of their Damage Reduction.",
+              "resolve_cost": 5,
+              "duration": "1 Attack",
+              "range": "30 feet"
+            },
+            {
+              "name": "Silent Takedown (Passive)",
+              "effect": "When you attack a surprised creature from stealth and reduce it to 0 Vitality, you do not break stealth.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
             }
           ]
         },
@@ -68,11 +115,31 @@
           "talents": [
             {
               "name": "Vanish",
-              "effect": "If you are in dim light or darkness, you can use a major action to become invisible until the end of your next turn, or until you attack or use an ability. This costs 10 Resolve."
+              "effect": "If you are in dim light or darkness, you can use a major action to become invisible until the end of your next turn, or until you attack or use an ability.",
+              "resolve_cost": 10,
+              "duration": "1 Round",
+              "range": "Self"
             },
             {
               "name": "Opportunist (Passive)",
-              "effect": "You can make an Attack of Opportunity without expending your Reaction, once per round."
+              "effect": "You can make an Attack of Opportunity without expending your Reaction, once per round.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
+            },
+            {
+              "name": "Garrote",
+              "effect": "If you are hidden and behind a humanoid target, you can attempt to silence them. The target must make a Might DC 14 check or be unable to speak or cast spells with verbal components for 1 minute.",
+              "resolve_cost": 10,
+              "duration": "1 Minute",
+              "range": "Melee"
+            },
+            {
+              "name": "Deepening Shadows (Modifies Gloom)",
+              "effect": "Enemies that start their turn inside your Gloom must make a Spirit DC 14 check or become 'Frightened' for 1 round.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
             }
           ]
         },
@@ -80,12 +147,25 @@
           "tier": "Master (Level 15+)",
           "talents": [
             {
-              "name": "Assassinate",
-              "effect": "If you hit a surprised creature with Shadow Strike, the attack is automatically a critical hit."
+              "name": "Assassinate (Passive)",
+              "effect": "If you hit a surprised creature with Shadow Strike, the attack is automatically a critical hit.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
             },
             {
               "name": "Killing Blow (Modifies Shadow Strike)",
-              "effect": "The bonus damage dice for attacking from hidden with Shadow Strike increases from 1d10 to 2d10."
+              "effect": "The bonus damage dice for attacking from hidden with Shadow Strike increases from 1d10 to 2d10.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
+            },
+            {
+              "name": "Death Strike",
+              "effect": "As a major action, you make a single, precise strike against a target. If the attack hits, the target must make a Might DC 16 check. On a failure, they take an additional 5d10 necrotic damage. On a success, they take half as much.",
+              "resolve_cost": 15,
+              "duration": "Instantaneous",
+              "range": "Melee"
             }
           ]
         },
@@ -94,7 +174,17 @@
           "talents": [
             {
               "name": "One with the Shadow (Ultimate)",
-              "effect": "As a major action, you can perfectly meld with the shadows for 1 minute. While this is active, your Vanish ability can be used as a bonus action, and the invisibility does not break after you attack. This can only be used once per day and costs 20 Resolve."
+              "effect": "As a major action, you can perfectly meld with the shadows for 1 minute. While this is active, your Vanish ability can be used as a bonus action, and the invisibility does not break after you attack. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "1 Minute",
+              "range": "Self"
+            },
+            {
+              "name": "Execute (Ultimate)",
+              "effect": "As a major action, you can target a single creature that you can see. If the creature's current Vitality is 50 or lower, they must make a Might DC 18 check or be instantly reduced to 0 Vitality. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "Instantaneous",
+              "range": "Sight"
             }
           ]
         }
@@ -109,11 +199,38 @@
           "talents": [
             {
               "name": "Acrobatic Movement (Passive)",
-              "effect": "You have a natural climbing speed equal to your walking speed. Additionally, you take no damage from the first 20 feet of a fall."
+              "effect": "You have a natural climbing speed equal to your walking speed. Additionally, you take no damage from the first 20 feet of a fall.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
             },
             {
               "name": "Disengage",
-              "effect": "As a bonus action, you can move up to your full movement speed without provoking any Attacks of Opportunity."
+              "effect": "As a bonus action, you can move up to your full movement speed without provoking any Attacks of Opportunity.",
+              "resolve_cost": 1,
+              "duration": "1 Turn",
+              "range": "Self"
+            },
+            {
+              "name": "Dirty Fighting",
+              "effect": "As a bonus action after hitting a creature with a melee attack, you can throw pocket sand in their eyes. The target has a -2 penalty on their next attack roll.",
+              "resolve_cost": 1,
+              "duration": "1 Roll",
+              "range": "5 feet"
+            },
+            {
+              "name": "Tumble",
+              "effect": "You can use a bonus action to make an Agility (Athletics) check to move through an enemy's space without provoking an Attack of Opportunity.",
+              "resolve_cost": 1,
+              "duration": "1 Turn",
+              "range": "Self"
+            },
+            {
+              "name": "Vault",
+              "effect": "As part of your movement, you can vault over an obstacle or creature of your size or smaller, treating it as 5 feet of movement.",
+              "resolve_cost": 0,
+              "duration": "Instantaneous",
+              "range": "Self"
             }
           ]
         },
@@ -122,11 +239,31 @@
           "talents": [
             {
               "name": "Ricochet Shot",
-              "effect": "As a major action, you can throw a dagger and have it ricochet off a surface. This allows you to make a ranged attack against a target that is in total cover, as long as you can trace a path for the ricochet."
+              "effect": "As a major action, you can throw a dagger and have it ricochet off a surface. This allows you to make a ranged attack against a target that is in total cover, as long as you can trace a path for the ricochet.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "Weapon"
             },
             {
-              "name": "Dirty Fighting",
-              "effect": "As a bonus action after hitting a creature with a melee attack, you can throw pocket sand in their eyes. The target has a -2 penalty on their next attack roll."
+              "name": "Trip Wire",
+              "effect": "As a bonus action, you can quickly set a tripwire between two points within 5 feet of each other. The first enemy to pass through the wire must make an Agility DC 13 check or be knocked prone.",
+              "resolve_cost": 5,
+              "duration": "Until Triggered",
+              "range": "5 feet"
+            },
+            {
+              "name": "Smoke Bomb",
+              "effect": "As a major action, you can throw a smoke bomb, creating a 15-foot cube of smoke that heavily obscures the area for 3 rounds.",
+              "resolve_cost": 5,
+              "duration": "3 Rounds",
+              "range": "30 feet"
+            },
+            {
+              "name": "Skirmisher's Advance (Modifies Disengage)",
+              "effect": "After you use the Disengage ability, your movement speed is increased by 10 feet for that turn.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
             }
           ]
         },
@@ -134,12 +271,32 @@
           "tier": "Expert (Level 10+)",
           "talents": [
             {
-              "name": "Wall Run",
-              "effect": "As part of your movement, you can run horizontally along vertical surfaces for a distance up to your movement speed."
+              "name": "Wall Run (Passive)",
+              "effect": "As part of your movement, you can run horizontally along vertical surfaces for a distance up to your movement speed.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
             },
             {
-              "name": "Trip Wire",
-              "effect": "As a major action, you can quickly set a tripwire between two points within 5 feet of each other. The first enemy to pass through the wire must make an Agility DC 14 check or be knocked prone. This costs 10 Resolve."
+              "name": "Grappling Hook",
+              "effect": "As a major action, you can fire a grappling hook up to 60 feet and pull yourself to that location. This movement does not provoke attacks of opportunity.",
+              "resolve_cost": 10,
+              "duration": "Instantaneous",
+              "range": "60 feet"
+            },
+            {
+              "name": "Mobile Target (Passive)",
+              "effect": "If you have moved at least 15 feet this turn, all ranged attacks against you have a -2 penalty until the start of your next turn.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
+            },
+            {
+              "name": "Shove",
+              "effect": "When you hit a creature with a melee attack, you can use your bonus action to attempt to shove them 5 feet away. If the target would be pushed into a hazard or off a ledge, you have Advantage on the check.",
+              "resolve_cost": 1,
+              "duration": "Instantaneous",
+              "range": "Melee"
             }
           ]
         },
@@ -148,11 +305,24 @@
           "talents": [
             {
               "name": "Uncanny Dodge (Reaction)",
-              "effect": "When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
+              "effect": "When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "Self"
             },
             {
-              "name": "Mobile Target (Passive)",
-              "effect": "If you have moved at least 15 feet this turn, all ranged attacks against you have a -2 penalty until the start of your next turn."
+              "name": "Redirect (Reaction)",
+              "effect": "When an enemy misses you with a melee attack, you can use your Reaction to force them to repeat the attack against another creature of your choice within 5 feet of them.",
+              "resolve_cost": 10,
+              "duration": "Instantaneous",
+              "range": "5 feet"
+            },
+            {
+              "name": "Evasion (Passive)",
+              "effect": "When you are subjected to an effect that allows you to make an Agility check to take only half damage, you instead take no damage if you succeed on the check, and only half damage if you fail.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
             }
           ]
         },
@@ -161,7 +331,17 @@
           "talents": [
             {
               "name": "Perfect Freedom (Ultimate)",
-              "effect": "For 1 minute, your body moves with impossible grace. You are immune to the 'Restrained', 'Paralyzed', and 'Grappled' conditions, your movement does not provoke Attacks of Opportunity, and you can use your Disengage ability as a free action once per turn. This can only be used once per day and costs 20 Resolve."
+              "effect": "For 1 minute, your body moves with impossible grace. You are immune to the 'Restrained', 'Paralyzed', and 'Grappled' conditions, your movement does not provoke Attacks of Opportunity, and you can use your Disengage ability as a free action once per turn. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "1 Minute",
+              "range": "Self"
+            },
+            {
+              "name": "Ghost of the Jungle (Ultimate)",
+              "effect": "As a major action, you become a blur of motion. You can instantly teleport to any unoccupied space you can see within 120 feet. Upon arrival, you can make a single Shadow Strike attack with Advantage. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "Instantaneous",
+              "range": "120 feet"
             }
           ]
         }
