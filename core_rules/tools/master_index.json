@@ -27,28 +27,28 @@
         ]
       },
       {
-        "file_name": "item_database/core_items.json",
+        "file_name": "core_rules/item_database/core_items.json",
         "purpose": "A comprehensive list of all mundane and magical items in the world.",
         "key_objects": [
           "core_items"
         ]
       },
       {
-        "file_name": "item_database/legacy_items.json",
+        "file_name": "core_rules/item_database/legacy_items.json",
         "purpose": "A list of powerful, evolving legacy items tied to specific characters.",
         "key_objects": [
           "legacy_items"
         ]
       },
       {
-        "file_name": "bestiary/bosses_and_legends.json",
+        "file_name": "world_codex/bestiary/bosses_and_legends.json",
         "purpose": "A collection of powerful boss monsters and legendary creatures.",
         "key_objects": [
           "bosses_and_legends"
         ]
       },
       {
-        "file_name": "bestiary/monsters.json",
+        "file_name": "world_codex/bestiary/monsters.json",
         "purpose": "A monster manual containing stats and abilities for all common creatures.",
         "key_objects": [
           "monsters"
@@ -62,7 +62,7 @@
         ]
       },
       {
-        "file_name": "campaign_state/Party_Status.json",
+        "file_name": "campaign_state/party_status.json",
         "purpose": "The active 'save file' tracking the party's current state, inventory, and resources.",
         "key_objects": [
           "party_status"
@@ -186,14 +186,14 @@
         ]
       },
       {
-        "file_name": "world_codex/characters/draconic_abilities/Draconic_Powers.json",
+        "file_name": "core_rules/draconic_abilities/Draconic_Powers.json",
         "purpose": "The complete system for the hero's draconic abilities, lineages, and transformations.",
         "key_objects": [
           "draconic_powers"
         ]
       },
       {
-        "file_name": "world_codex/characters/draconic_abilities/earth.json",
+        "file_name": "core_rules/draconic_abilities/earth.json",
         "purpose": "Details the abilities of the Earth draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -201,7 +201,7 @@
         ]
       },
       {
-        "file_name": "world_codex/characters/draconic_abilities/fire.json",
+        "file_name": "core_rules/draconic_abilities/fire.json",
         "purpose": "Details the abilities of the Fire draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -209,7 +209,7 @@
         ]
       },
       {
-        "file_name": "world_codex/characters/draconic_abilities/ice.json",
+        "file_name": "core_rules/draconic_abilities/ice.json",
         "purpose": "Details the abilities of the Ice draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -217,7 +217,7 @@
         ]
       },
       {
-        "file_name": "world_codex/characters/draconic_abilities/light.json",
+        "file_name": "core_rules/draconic_abilities/light.json",
         "purpose": "Details the abilities of the Light draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -225,7 +225,7 @@
         ]
       },
       {
-        "file_name": "world_codex/characters/draconic_abilities/mist.json",
+        "file_name": "core_rules/draconic_abilities/mist.json",
         "purpose": "Details the abilities of the Mist draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -233,7 +233,7 @@
         ]
       },
       {
-        "file_name": "world_codex/characters/draconic_abilities/storm.json",
+        "file_name": "core_rules/draconic_abilities/storm.json",
         "purpose": "Details the abilities of the Storm draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -241,7 +241,7 @@
         ]
       },
       {
-        "file_name": "world_codex/characters/draconic_abilities/tide.json",
+        "file_name": "core_rules/draconic_abilities/tide.json",
         "purpose": "Details the abilities of the Tide draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -249,7 +249,7 @@
         ]
       },
       {
-        "file_name": "world_codex/characters/draconic_abilities/void.json",
+        "file_name": "core_rules/draconic_abilities/void.json",
         "purpose": "Details the abilities of the Void draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -257,7 +257,7 @@
         ]
       },
       {
-        "file_name": "world_codex/characters/draconic_abilities/chrono.json",
+        "file_name": "core_rules/draconic_abilities/chrono.json",
         "purpose": "Details the abilities of the Chrono draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -265,7 +265,7 @@
         ]
       },
       {
-        "file_name": "world_codex/characters/draconic_abilities/cosmic.json",
+        "file_name": "core_rules/draconic_abilities/cosmic.json",
         "purpose": "Details the abilities of the Cosmic draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -273,7 +273,7 @@
         ]
       },
       {
-        "file_name": "world_codex/characters/draconic_abilities/metal.json",
+        "file_name": "core_rules/draconic_abilities/metal.json",
         "purpose": "Details the abilities of the Metal draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -281,7 +281,7 @@
         ]
       },
       {
-        "file_name": "world_codex/characters/draconic_abilities/psionic.json",
+        "file_name": "core_rules/draconic_abilities/psionic.json",
         "purpose": "Details the abilities of the Psionic draconic lineage.",
         "key_objects": [
           "lineage_name",
@@ -289,35 +289,35 @@
         ]
       },
       {
-        "file_name": "world_codex/characters/hero_template.json",
+        "file_name": "core_rules/hero_template.json",
         "purpose": "The base template for the hero character, Rya.",
         "key_objects": [
           "hero_template"
         ]
       },
       {
-        "file_name": "world_codex/characters/newfound_talents.json",
-        "purpose": "A database of general talents available for character progression.",
+        "file_name": "core_rules/newfound_talents.json",
+        "purpose": "A glossary of all talents that can be learned from Masters.",
         "key_objects": [
           "newfound_talents"
         ]
       },
       {
-        "file_name": "tools/gmai_tools.json",
+        "file_name": "core_rules/tools/gmai_tools.json",
         "purpose": "The operational logic and directives for running the game as the GM/AI partner.",
         "key_objects": [
           "gm_ai_tools"
         ]
       },
       {
-        "file_name": "tools/master_index.json",
+        "file_name": "core_rules/tools/master_index.json",
         "purpose": "This file. Provides a manifest of all other core files in the project.",
         "key_objects": [
           "master_index"
         ]
       },
       {
-        "file_name": "tools/newgame_prologue.json",
+        "file_name": "core_rules/tools/newgame_prologue.json",
         "purpose": "The protocol for starting a new game and running the prologue chapter.",
         "key_objects": [
           "newgame_prologue"
@@ -377,6 +377,27 @@
         "purpose": "The lore bible for Eryndor, detailing its public history and secret truths.",
         "key_objects": [
           "world_codex"
+        ]
+      },
+      {
+        "file_name": "world_codex/npcs.json",
+        "purpose": "A comprehensive list of all non-player characters in the world.",
+        "key_objects": [
+          "npcs"
+        ]
+      },
+      {
+        "file_name": "world_codex/masters.json",
+        "purpose": "A list of Masters who can teach talents to the party.",
+        "key_objects": [
+          "masters"
+        ]
+      },
+      {
+        "file_name": "world_codex/potential_quests.json",
+        "purpose": "A list of potential quests to be used in the campaign.",
+        "key_objects": [
+          "potential_quests"
         ]
       }
     ]
