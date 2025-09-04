@@ -559,7 +559,7 @@
       "relationships": [
         {
           "target_char_id": "HAVENWOOD_THERON",
-          "relationship_type": "Manipulator. She is using the mayor's naivety to control Havenwood."
+          "relationship_type": "Manipulated. She is using the mayor's naivety to control Havenwood."
         },
         {
           "target_char_id": "HAVENWOOD_BRENNA",
