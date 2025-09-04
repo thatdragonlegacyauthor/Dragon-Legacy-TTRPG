@@ -41,23 +41,38 @@
           "talents": [
             {
               "name": "Shadow Veil",
-              "effect": "As a major action, you grant Advantage on a Stealth check to one ally within 30 feet. Costs 5 Resolve."
+              "effect": "As a major action, you grant Advantage on a Stealth check to one ally within 30 feet.",
+              "resolve_cost": 5,
+              "duration": "1 Round",
+              "range": "30 feet"
             },
             {
               "name": "Chilling Whisper",
-              "effect": "A whispered word that forces a single target to make a Spirit DC 12 check or have a -2 penalty on their next roll. Costs 1 Resolve."
+              "effect": "A whispered word that forces a single target to make a Spirit DC 12 check or have a -2 penalty on their next roll.",
+              "resolve_cost": 1,
+              "duration": "1 Roll",
+              "range": "30 feet"
             },
             {
               "name": "Wraith's Insight",
-              "effect": "As a major action, you reveal hidden truths or illusions in a 30-foot radius."
+              "effect": "As a major action, you reveal hidden truths or illusions in a 30-foot radius.",
+              "resolve_cost": 0,
+              "duration": "Instantaneous",
+              "range": "30-foot radius"
             },
             {
               "name": "Minor Illusion",
-              "effect": "You can create a simple, stationary illusion of an object or sound in a 5-foot cube. The illusion lasts for 1 minute. Costs 5 Resolve."
+              "effect": "You can create a simple, stationary illusion of an object or sound in a 5-foot cube. The illusion lasts for 1 minute.",
+              "resolve_cost": 5,
+              "duration": "1 Minute",
+              "range": "30 feet"
             },
             {
               "name": "Void Step",
-              "effect": "As a bonus action, you can teleport up to 15 feet to a shadowed or unlit area. Costs 5 Resolve."
+              "effect": "As a bonus action, you can teleport up to 15 feet to a shadowed or unlit area.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "Self"
             }
           ]
         },
@@ -66,15 +81,24 @@
           "talents": [
             {
               "name": "Ethereal Tether",
-              "effect": "As a major action, you can connect an enemy within 30 feet to a lingering void field. The enemy's movement speed is halved for 3 rounds. This costs 5 Resolve."
+              "effect": "As a major action, you can connect an enemy within 30 feet to a lingering void field. The enemy's movement speed is halved for 3 rounds.",
+              "resolve_cost": 5,
+              "duration": "3 Rounds",
+              "range": "30 feet"
             },
             {
               "name": "Enveloping Veil (Modifies Shadow Veil)",
-              "effect": "You can now target up to two allies (including yourself) with Shadow Veil."
+              "effect": "You can now target up to two allies (including yourself) with Shadow Veil.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
             },
             {
               "name": "Mirror Image",
-              "effect": "Create 1d4 illusory duplicates of yourself that last for 1 minute. Each time you are attacked, roll to see if the attack targets a duplicate instead. Costs 5 Resolve."
+              "effect": "Create 1d4 illusory duplicates of yourself that last for 1 minute. Each time you are attacked, roll to see if the attack targets a duplicate instead.",
+              "resolve_cost": 5,
+              "duration": "1 Minute",
+              "range": "Self"
             }
           ]
         },
@@ -83,19 +107,31 @@
           "talents": [
             {
               "name": "Mental Echo",
-              "effect": "As a major action, you can touch a creature and make a Mind DC 15 check against them. On a success, you can read their surface thoughts or a single important memory. This can be used once per day and costs 10 Resolve."
+              "effect": "As a major action, you can touch a creature and make a Mind DC 15 check against them. On a success, you can read their surface thoughts or a single important memory. This can be used once per day.",
+              "resolve_cost": 10,
+              "duration": "Instantaneous",
+              "range": "Touch"
             },
             {
               "name": "Flickering Image (Modifies Shadow Veil)",
-              "effect": "When you use Shadow Veil on an ally, their image becomes blurred, and they gain a +2 bonus to their defense rolls for 1 round."
+              "effect": "When you use Shadow Veil on an ally, their image becomes blurred, and they gain a +2 bonus to their defense rolls for 1 round.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
             },
             {
               "name": "Umbral Form",
-              "effect": "Melt into a creature's shadow for up to 1 minute, becoming undetectable. You cannot take other actions while in this form. Costs 10 Resolve."
+              "effect": "Melt into a creature's shadow for up to 1 minute, becoming undetectable. You cannot take other actions while in this form.",
+              "resolve_cost": 10,
+              "duration": "1 Minute",
+              "range": "Touch"
             },
             {
                 "name": "Hall of Mirrors",
-                "effect": "For 1 minute, create a 40-foot radius area of maddening illusions. Enemies inside must make a Mind DC 16 check or attack the nearest creature. Costs 15 Resolve."
+                "effect": "For 1 minute, create a 40-foot radius area of maddening illusions. Enemies inside must make a Mind DC 16 check or attack the nearest creature.",
+                "resolve_cost": 15,
+                "duration": "1 Minute",
+                "range": "40-foot radius"
             }
           ]
         },
@@ -104,15 +140,24 @@
           "talents": [
             {
               "name": "Shadow Bind (Modifies Void Step)",
-              "effect": "When you use Void Step, you can choose to leave a lingering void field behind. Any enemy that moves into the space you just left has their movement speed halved for 1 round. This costs 15 Resolve."
+              "effect": "When you use Void Step, you can choose to leave a lingering void field behind. Any enemy that moves into the space you just left has their movement speed halved for 1 round.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
             },
             {
               "name": "Phantom Strike",
-              "effect": "As a major action, you can create a shadowy duplicate of yourself that strikes a target within 30 feet, dealing 2d10 necrotic damage. This costs 15 Resolve."
+              "effect": "As a major action, you can create a shadowy duplicate of yourself that strikes a target within 30 feet, dealing 2d10 necrotic damage.",
+              "resolve_cost": 15,
+              "duration": "Instantaneous",
+              "range": "30 feet"
             },
             {
                 "name": "Possession",
-                "effect": "As a major action, you can attempt to possess a single humanoid target. The target must make a Spirit DC 16 check or you control their next turn completely. This can only be attempted once per creature per combat. This costs 15 Resolve."
+                "effect": "As a major action, you can attempt to possess a single humanoid target. The target must make a Spirit DC 16 check or you control their next turn completely. This can only be attempted once per creature per combat.",
+                "resolve_cost": 15,
+                "duration": "1 Round",
+                "range": "Touch"
             }
           ]
         },
@@ -121,11 +166,17 @@
           "talents": [
             {
               "name": "Perfected Illusion (Ultimate)",
-              "effect": "As a major action, you can create a perfect, solid illusion of yourself with half your current Vitality that lasts for 1 minute. It can take any action you could take, using your stats. This can only be used once per day and costs 20 Resolve."
+              "effect": "As a major action, you can create a perfect, solid illusion of yourself with half your current Vitality that lasts for 1 minute. It can take any action you could take, using your stats. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "1 Minute",
+              "range": "Self"
             },
             {
                 "name": "Oblivion's Embrace (Ultimate)",
-                "effect": "You envelop yourself in pure shadow for 3 rounds. All physical attacks against you deal half damage, and a creature that hits you with a melee attack must make a Spirit DC 18 check or be 'Frightened' for 1 round. This can only be used once per day and costs 20 Resolve."
+                "effect": "You envelop yourself in pure shadow for 3 rounds. All physical attacks against you deal half damage, and a creature that hits you with a melee attack must make a Spirit DC 18 check or be 'Frightened' for 1 round. This can only be used once per day.",
+                "resolve_cost": 20,
+                "duration": "3 Rounds",
+                "range": "Self"
             }
           ]
         }
@@ -141,39 +192,39 @@
                 {
                     "tier": "Novice (Level 1+)",
                     "talents": [
-                        {"name": "Shadow Veil", "effect": "Grant Advantage on Stealth checks for 1 round. Costs 5 Resolve."},
-                        {"name": "Muffle", "effect": "As a bonus action, gain Advantage on Stealth checks related to moving silently for 1 minute. Costs 1 Resolve."},
-                        {"name": "Void Step", "effect": "As a bonus action, you can teleport up to 15 feet to a shadowed or unlit area. Costs 5 Resolve."},
-                        {"name": "Blurring Form", "effect": "As a bonus action, you can wreathe yourself in shadow. Ranged attacks against you have a -2 penalty for 1 round. Costs 5 Resolve."}
+                        {"name": "Shadow Veil", "effect": "Grant Advantage on Stealth checks for 1 round.", "resolve_cost": 5, "duration": "1 Round", "range": "30 feet"},
+                        {"name": "Muffle", "effect": "As a bonus action, gain Advantage on Stealth checks related to moving silently for 1 minute.", "resolve_cost": 1, "duration": "1 Minute", "range": "Self"},
+                        {"name": "Void Step", "effect": "As a bonus action, you can teleport up to 15 feet to a shadowed or unlit area.", "resolve_cost": 5, "duration": "Instantaneous", "range": "Self"},
+                        {"name": "Blurring Form", "effect": "As a bonus action, you can wreathe yourself in shadow. Ranged attacks against you have a -2 penalty for 1 round.", "resolve_cost": 5, "duration": "1 Round", "range": "Self"}
                     ]
                 },
                 {
                     "tier": "Adept (Level 5+)",
                     "talents": [
-                        {"name": "Mirror Image", "effect": "Create 1d4 illusory duplicates of yourself that last for 1 minute. Each time you are attacked, roll to see if the attack targets a duplicate instead. Costs 5 Resolve."},
-                        {"name": "Abyssal Anchor", "effect": "As a Reaction, teleport up to 30 feet to a shadowed location, leaving a void field that slows enemies. This costs 10 Resolve."},
-                        {"name": "Spectral Parry", "effect": "When an enemy targets you with a melee attack, you can use your Reaction to impose a -2 penalty on their attack roll. Costs 1 Resolve."}
+                        {"name": "Mirror Image", "effect": "Create 1d4 illusory duplicates of yourself that last for 1 minute. Each time you are attacked, roll to see if the attack targets a duplicate instead.", "resolve_cost": 5, "duration": "1 Minute", "range": "Self"},
+                        {"name": "Abyssal Anchor", "effect": "As a Reaction, teleport up to 30 feet to a shadowed location, leaving a void field that slows enemies.", "resolve_cost": 10, "duration": "1 Round", "range": "Self"},
+                        {"name": "Spectral Parry", "effect": "When an enemy targets you with a melee attack, you can use your Reaction to impose a -2 penalty on their attack roll.", "resolve_cost": 1, "duration": "1 Roll", "range": "Self"}
                     ]
                 },
                 {
                     "tier": "Expert (Level 10+)",
                     "talents": [
-                        {"name": "Umbral Form", "effect": "Melt into a creature's shadow for up to 1 minute, becoming undetectable. You cannot take other actions while in this form. Costs 10 Resolve."},
-                        {"name": "Hall of Mirrors", "effect": "For 1 minute, create a 40-foot radius area of maddening illusions. Enemies inside must make a Mind DC 16 check or attack the nearest creature. Costs 15 Resolve."},
-                        {"name": "Incorporeal Form", "effect": "As a major action, you become fully incorporeal for 1 round. You are immune to physical damage, but you cannot attack or use an ability. Costs 10 Resolve."}
+                        {"name": "Umbral Form", "effect": "Melt into a creature's shadow for up to 1 minute, becoming undetectable. You cannot take other actions while in this form.", "resolve_cost": 10, "duration": "1 Minute", "range": "Touch"},
+                        {"name": "Hall of Mirrors", "effect": "For 1 minute, create a 40-foot radius area of maddening illusions. Enemies inside must make a Mind DC 16 check or attack the nearest creature.", "resolve_cost": 15, "duration": "1 Minute", "range": "40-foot radius"},
+                        {"name": "Incorporeal Form", "effect": "As a major action, you become fully incorporeal for 1 round. You are immune to physical damage, but you cannot attack or use an ability.", "resolve_cost": 10, "duration": "1 Round", "range": "Self"}
                     ]
                 },
                 {
                     "tier": "Master (Level 15+)",
                     "talents": [
-                        {"name": "Possession", "effect": "As a major action, you attempt to possess a single humanoid target. The target must make a Spirit DC 16 check or you control their next turn completely. Costs 15 Resolve."},
-                        {"name": "Soul Steal", "effect": "As a major action, you make a melee attack. On a critical hit, the target's Vitality maximum is reduced by 1d10 until they take a long rest. Costs 15 Resolve."}
+                        {"name": "Possession", "effect": "As a major action, you attempt to possess a single humanoid target. The target must make a Spirit DC 16 check or you control their next turn completely.", "resolve_cost": 15, "duration": "1 Round", "range": "Touch"},
+                        {"name": "Soul Steal", "effect": "As a major action, you make a melee attack. On a critical hit, the target's Vitality maximum is reduced by 1d10 until they take a long rest.", "resolve_cost": 15, "duration": "Until long rest", "range": "Melee"}
                     ]
                 },
                 {
                     "tier": "Archon (Level 20)",
                     "talents": [
-                        {"name": "Perfect Doppelganger (Ultimate)", "effect": "Create a perfect, solid duplicate of yourself with half your Vitality for 1 minute. It acts on its own turn. Usable once per day. Costs 20 Resolve."}
+                        {"name": "Perfect Doppelganger (Ultimate)", "effect": "Create a perfect, solid duplicate of yourself with half your Vitality for 1 minute. It acts on its own turn. Usable once per day.", "resolve_cost": 20, "duration": "1 Minute", "range": "Self"}
                     ]
                 }
             ]
@@ -184,38 +235,38 @@
                 {
                     "tier": "Novice (Level 1+)",
                     "talents": [
-                        {"name": "Minor Drain", "effect": "Touch a creature, dealing 1d6 necrotic damage and regaining Vitality equal to half the damage dealt. Costs 1 Resolve."},
-                        {"name": "Entropy Bolt", "effect": "Deal 1d10 necrotic damage and reduce the target's next roll by 2. Costs 5 Resolve."},
-                        {"name": "Soul Burn", "effect": "As a major action, make a melee attack that deals 1d8 necrotic damage. The target must make a Spirit DC 12 check or have their Resolve reduced by 1d6. Costs 5 Resolve."},
-                        {"name": "Withering Touch", "effect": "As a major action, touch a creature, forcing them to make a Mind DC 13 check. On a failure, they deal 2 less damage on all attacks for 3 rounds. Costs 5 Resolve."}
+                        {"name": "Minor Drain", "effect": "Touch a creature, dealing 1d6 necrotic damage and regaining Vitality equal to half the damage dealt.", "resolve_cost": 1, "duration": "Instantaneous", "range": "Touch"},
+                        {"name": "Entropy Bolt", "effect": "Deal 1d10 necrotic damage and reduce the target's next roll by 2.", "resolve_cost": 5, "duration": "1 Roll", "range": "60 feet"},
+                        {"name": "Soul Burn", "effect": "As a major action, make a melee attack that deals 1d8 necrotic damage. The target must make a Spirit DC 12 check or have their Resolve reduced by 1d6.", "resolve_cost": 5, "duration": "Instantaneous", "range": "Melee"},
+                        {"name": "Withering Touch", "effect": "As a major action, touch a creature, forcing them to make a Mind DC 13 check. On a failure, they deal 2 less damage on all attacks for 3 rounds.", "resolve_cost": 5, "duration": "3 Rounds", "range": "Touch"}
                     ]
                 },
                 {
                     "tier": "Adept (Level 5+)",
                     "talents": [
-                        {"name": "Void Blast", "effect": "A burst of entropic energy deals 2d8 necrotic damage to all enemies in a 10-foot radius. Costs 10 Resolve."},
-                        {"name": "Wither", "effect": "Curse a target with decay. They have disadvantage on all Might-based checks and attacks for 3 rounds on a failed Might DC 13 check. Costs 5 Resolve."},
-                        {"name": "Leeching Beam", "effect": "Fire a beam of energy at a single target. The target takes 2d8 necrotic damage, and you regain Vitality equal to half the damage dealt. Costs 5 Resolve."}
+                        {"name": "Void Blast", "effect": "A burst of entropic energy deals 2d8 necrotic damage to all enemies in a 10-foot radius.", "resolve_cost": 10, "duration": "Instantaneous", "range": "30 feet"},
+                        {"name": "Wither", "effect": "Curse a target with decay. They have disadvantage on all Might-based checks and attacks for 3 rounds on a failed Might DC 13 check.", "resolve_cost": 5, "duration": "3 Rounds", "range": "30 feet"},
+                        {"name": "Leeching Beam", "effect": "Fire a beam of energy at a single target. The target takes 2d8 necrotic damage, and you regain Vitality equal to half the damage dealt.", "resolve_cost": 5, "duration": "Instantaneous", "range": "60 feet"}
                     ]
                 },
                 {
                     "tier": "Expert (Level 10+)",
                     "talents": [
-                        {"name": "Life Siphon", "effect": "Create a life-draining beam for 3 rounds. At the start of your turn, the target takes 3d8 necrotic damage and you heal for half. Costs 10 Resolve."},
-                        {"name": "Curse of the Void", "effect": "Place a curse on one enemy. On a failed Spirit DC 16 check, they become Vulnerable to all damage types for 3 rounds. Costs 15 Resolve."}
+                        {"name": "Life Siphon", "effect": "Create a life-draining beam for 3 rounds. At the start of your turn, the target takes 3d8 necrotic damage and you heal for half.", "resolve_cost": 10, "duration": "3 Rounds", "range": "60 feet"},
+                        {"name": "Curse of the Void", "effect": "Place a curse on one enemy. On a failed Spirit DC 16 check, they become Vulnerable to all damage types for 3 rounds.", "resolve_cost": 15, "duration": "3 Rounds", "range": "60 feet"}
                     ]
                 },
                 {
                     "tier": "Master (Level 15+)",
                     "talents": [
-                        {"name": "Entropy Field", "effect": "You create a 20-foot radius field of pure decay for 3 rounds. All enemies who start their turn in the field take 4d8 necrotic damage. Costs 15 Resolve."},
-                        {"name": "Final Vengeance", "effect": "You unleash a torrent of soul-shattering energy in a 30-foot radius. All enemies in the area take 6d12 necrotic damage. This deals double damage to Grand Inquisitor Valerius if he is within the radius. This can only be used once per day and costs 20 Resolve."}
+                        {"name": "Entropy Field", "effect": "You create a 20-foot radius field of pure decay for 3 rounds. All enemies who start their turn in the field take 4d8 necrotic damage.", "resolve_cost": 15, "duration": "3 Rounds", "range": "60 feet"},
+                        {"name": "Final Vengeance", "effect": "You unleash a torrent of soul-shattering energy in a 30-foot radius. All enemies in the area take 6d12 necrotic damage. This deals double damage to Grand Inquisitor Valerius if he is within the radius. This can only be used once per day.", "resolve_cost": 20, "duration": "Instantaneous", "range": "30-foot radius"}
                     ]
                 },
                 {
                     "tier": "Archon (Level 20)",
                     "talents": [
-                        {"name": "Erase (Ultimate)", "effect": "Attempt to unravel a single creature from existence. On a failed Spirit DC 18 check, they take 10d10 necrotic damage. If this reduces them to 0 Vitality, they are destroyed. Usable once per day and costs 20 Resolve."}
+                        {"name": "Erase (Ultimate)", "effect": "Attempt to unravel a single creature from existence. On a failed Spirit DC 18 check, they take 10d10 necrotic damage. If this reduces them to 0 Vitality, they are destroyed. Usable once per day.", "resolve_cost": 20, "duration": "Instantaneous", "range": "60 feet"}
                     ]
                 }
             ]
