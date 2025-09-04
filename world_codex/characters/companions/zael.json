@@ -148,6 +148,7 @@
             {
               "name": "Phantom Strike",
               "effect": "As a major action, you can create a shadowy duplicate of yourself that strikes a target within 30 feet, dealing 2d10 necrotic damage.",
+              "attack_profile": "Mystic (Mind)",
               "resolve_cost": 15,
               "duration": "Instantaneous",
               "range": "30 feet"
