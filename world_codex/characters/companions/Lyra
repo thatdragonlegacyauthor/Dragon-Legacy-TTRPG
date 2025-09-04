@@ -1,0 +1,359 @@
+{
+  "name": "Lyra",
+  "char_id": "ASTORAN_LYRA",
+  "type": "Astoran",
+  "role": "Tidal Scrivener (Blue Mage)",
+  "physical_description": "A young, curious Astoran whose bioluminescent scales are still bright and vibrant, shifting in color with her emotions. Unlike the ancient Loremaster Oris, Lyra is fascinated by the surface world. Her large, dark eyes are wide with a thirst for knowledge, and she carries a waterproof satchel filled with meticulously organized scrolls and inks.",
+  "background": "Lyra was a student of Loremaster Oris, tasked with chronicling the history and prophecies of the Astoran people. However, her insatiable curiosity led her to study not just the past, but the living present. Believing that the creatures of the world were a living extension of its history, she began to secretly document their abilities, developing a unique form of magic that allowed her to replicate the skills she observed. Viewing this as a deviation from their isolationist traditions, the Astoran Conclave censured her. Now, she has ventured to the surface, seeking to compile a complete codex of Eryndor's creatures, proving to her elders that the world is a library, and every monster a book.",
+  "voice": "A bright, bubbly soprano that is filled with an infectious curiosity and a rapid, almost breathless pace when she is explaining a new discovery.",
+  "quirk": "Her bioluminescent scales change color based on her emotions—a trait she has not yet learned to control, making her an open book to those who pay attention. She is also constantly taking notes, sketching creatures, and muttering observations to herself.",
+  "relationships": "She is the former student of Loremaster Oris, whom she respects but disagrees with on matters of tradition. She views Orin as a stoic, unreadable guardian and is fascinated by the outside world, making her a potential ally to any who can show her something new.",
+  "narrative_hook": "Lyra's quest to document the world's creatures puts her at odds with factions who would rather see them exploited or exterminated, such as the Arcane Dominion. Her unique magical abilities may also attract unwanted attention from those who see her as a threat or a tool.",
+  "weapon_proficiency": {
+    "favored_types": [
+      "Staff",
+      "Whip"
+    ],
+    "bonus_effect": "+1 to Attack Rolls with favored weapon types.",
+    "penalty_effect": "-2 to Attack Rolls with non-favored weapon types."
+  },
+  "progression_path": {
+    "attribute_priority": [
+      "Mind",
+      "Spirit",
+      "Agility",
+      "Might"
+    ],
+    "skill_priority": [
+      "Arcana",
+      "Lore",
+      "Survival"
+    ],
+    "chosen_playstyle": "Path of the Tidal Scrivener"
+  },
+  "playstyles": [
+    {
+      "path_name": "Path of the Tidal Scrivener",
+      "description": "This path focuses on Lyra's unique ability to learn and replicate the skills of monsters. She is a versatile and unpredictable spellcaster who can adapt to any situation by drawing upon the power of the creatures she has studied.",
+      "abilities": [
+        {
+          "tier": "Core Mechanic",
+          "talents": [
+            {
+              "name": "Monster Codex (Core Mechanic)",
+              "effect": "When Lyra witnesses a monster use a non-ultimate special ability, she can spend her next major action and make a Mind (Arcana) check against a DC determined by the monster's CR (DC 10 + CR). On a success, she successfully transcribes a version of that ability into her codex. She can have a number of transcribed abilities equal to her Mind attribute. During a long rest, she can choose which transcribed abilities to 'prepare' for the day, up to a maximum of her character level divided by 4 (rounded up)."
+            }
+          ]
+        },
+        {
+          "tier": "Novice (Level 1+)",
+          "talents": [
+            {
+              "name": "Analyze",
+              "effect": "As a major action, Lyra can make a Mind (Lore) check against a single enemy (DC 10 + CR). On a success, she learns one of the target's resistances, vulnerabilities, or a single passive ability.",
+              "resolve_cost": 1,
+              "duration": "Instantaneous",
+              "range": "60 feet"
+            },
+            {
+              "name": "Eidetic Memory (Passive)",
+              "effect": "Your memory is flawless. You can keep one additional monster ability prepared beyond your normal limit.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
+            },
+            {
+              "name": "Creature Compendium",
+              "effect": "As a major action outside of combat, you can make a Mind (Lore) check about a specific creature you have seen. On a success, the GM will tell you a piece of lore about its habits, habitat, or nature.",
+              "resolve_cost": 0,
+              "duration": "Instantaneous",
+              "range": "Self"
+            },
+            {
+              "name": "Exploit Weakness",
+              "effect": "As a bonus action, after successfully using 'Analyze' on a creature, you can grant one ally Advantage on their next attack roll against that creature.",
+              "resolve_cost": 1,
+              "duration": "1 Roll",
+              "range": "60 feet"
+            },
+            {
+              "name": "Field Scribe",
+              "effect": "If you have access to a magical scroll, you can spend a short rest and make a Mind (Arcana) check (DC 15) to attempt to copy it into your own book, consuming the scroll in the process.",
+              "resolve_cost": 0,
+              "duration": "Short Rest",
+              "range": "Touch"
+            }
+          ]
+        },
+        {
+          "tier": "Adept (Level 5+)",
+          "talents": [
+            {
+              "name": "Rapid Transcription (Modifies Monster Codex)",
+              "effect": "Lyra can now use her Reaction to make the Mind (Arcana) check to transcribe an ability, allowing her to act on the same turn.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
+            },
+            {
+              "name": "Arcane Syntax (Passive)",
+              "effect": "You have learned to refine the abilities you transcribe. The DC for any checks an enemy has to make against your transcribed abilities is increased by 2.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
+            },
+            {
+              "name": "Weak Point Analysis (Modifies Analyze)",
+              "effect": "When you successfully use 'Analyze', you now learn all of the target's resistances and vulnerabilities, in addition to one passive ability.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
+            },
+            {
+              "name": "Quick Study",
+              "effect": "Once per combat, you can use a major action to swap one of your prepared monster abilities with another ability from your codex that is not prepared.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "Self"
+            }
+          ]
+        },
+        {
+          "tier": "Expert (Level 10+)",
+          "talents": [
+            {
+              "name": "Adaptive Mimicry",
+              "effect": "Once per combat, after successfully transcribing an ability, Lyra can immediately use that ability as a bonus action, even if it is not prepared. This ability is then forgotten at the end of combat unless she prepares it during a long rest.",
+              "resolve_cost": 10,
+              "duration": "Instantaneous",
+              "range": "Varies by ability"
+            },
+            {
+              "name": "Instinctive Mimicry (Reaction)",
+              "effect": "When an enemy casts a spell or uses a magical ability that targets an ally, you can use your reaction to immediately attempt to transcribe it with your Monster Codex ability.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "Sight"
+            },
+            {
+              "name": "Overwhelm Defenses (Modifies Exploit Weakness)",
+              "effect": "When you use 'Exploit Weakness', the targeted ally's next attack also ignores all of the target's Damage Reduction.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
+            },
+            {
+              "name": "Master Scribe (Passive)",
+              "effect": "You gain a +2 bonus to your Mind (Arcana) checks when using 'Monster Codex' to transcribe an ability.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
+            }
+          ]
+        },
+        {
+          "tier": "Master (Level 15+)",
+          "talents": [
+            {
+              "name": "Perfected Memory (Modifies Monster Codex)",
+              "effect": "The number of abilities Lyra can have in her codex is now equal to twice her Mind attribute.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
+            },
+            {
+              "name": "Arcane Synthesis",
+              "effect": "As a major action, you can cast two prepared monster abilities that are 'Novice' or 'Adept' tier at the same time. This expends the Resolve cost for both.",
+              "resolve_cost": 15,
+              "duration": "Instantaneous",
+              "range": "Varies by ability"
+            },
+            {
+              "name": "Perfect Recall (Passive)",
+              "effect": "The number of monster abilities you can have prepared at one time is now equal to your character level divided by 2 (rounded up).",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
+            }
+          ]
+        },
+        {
+          "tier": "Archon (Level 20)",
+          "talents": [
+            {
+              "name": "Primal Echo (Ultimate)",
+              "effect": "As a major action, Lyra can choose one transcribed ability she has prepared and use it with its effects doubled (damage, duration, targets, etc.). This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "Instantaneous",
+              "range": "Varies by ability"
+            },
+            {
+              "name": "Aspect Mimicry (Ultimate)",
+              "effect": "As a major action, you can perfectly replicate one of Rya's currently attuned Draconic Aspect abilities (up to Master tier) that you have seen her use. You can use this ability once. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "Instantaneous",
+              "range": "Varies by ability"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path_name": "Path of the Abyssal Seer",
+      "description": "This path focuses on Lyra's innate Astoran connection to the tides and prophecy. She becomes a powerful support caster who heals allies with restorative waters, controls the battlefield with crushing pressure, and offers glimpses into the future to turn the tide of battle.",
+      "abilities": [
+        {
+          "tier": "Novice (Level 1+)",
+          "talents": [
+            {
+              "name": "Mending Tide",
+              "effect": "As a major action, restore 1d10 Vitality to a single ally you can touch.",
+              "resolve_cost": 3,
+              "duration": "Instantaneous",
+              "range": "Touch"
+            },
+            {
+              "name": "Pressure Spike",
+              "effect": "As a major action, launch a lance of high-pressure water at a single target, dealing 1d10 physical damage.",
+              "resolve_cost": 3,
+              "duration": "Instantaneous",
+              "range": "60 feet"
+            },
+            {
+              "name": "Foresight",
+              "effect": "As a bonus action, grant an ally within 30 feet a +1 bonus to their next defensive roll.",
+              "resolve_cost": 1,
+              "duration": "1 Roll",
+              "range": "30 feet"
+            },
+            {
+              "name": "Tidal Pull",
+              "effect": "As a bonus action, you pull a single enemy 10 feet toward you. This provokes no checks from the target.",
+              "resolve_cost": 1,
+              "duration": "Instantaneous",
+              "range": "30 feet"
+            },
+            {
+              "name": "Water Whip",
+              "effect": "As a major action, you create a whip of water that you can use to make a melee attack against a target up to 15 feet away, dealing 1d8 bludgeoning damage.",
+              "resolve_cost": 1,
+              "duration": "Instantaneous",
+              "range": "15 feet"
+            }
+          ]
+        },
+        {
+          "tier": "Adept (Level 5+)",
+          "talents": [
+            {
+              "name": "Riptide",
+              "effect": "As a major action, create a 15-foot cone of turbulent water. Enemies in the area must make a Might DC 13 check or be pulled 10 feet toward you.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "15-foot cone"
+            },
+            {
+              "name": "Clarity",
+              "effect": "As a major action, you touch an ally to end one 'Confused' or 'Frightened' status effect on them.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "Touch"
+            },
+            {
+              "name": "Geyser",
+              "effect": "As a major action, cause a geyser of high-pressure water to erupt from the ground beneath an enemy. The target takes 2d8 bludgeoning damage and must make an Agility DC 13 check or be knocked prone.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "60 feet"
+            },
+            {
+              "name": "Soothing Mist",
+              "effect": "As a major action, you create a 10-foot radius cloud of restorative mist. Allies who start their turn in the mist regain 1d6 Vitality. The mist lasts for 3 rounds.",
+              "resolve_cost": 10,
+              "duration": "3 Rounds",
+              "range": "30 feet"
+            }
+          ]
+        },
+        {
+          "tier": "Expert (Level 10+)",
+          "talents": [
+            {
+              "name": "Mass Mending",
+              "effect": "As a major action, you create a gentle current of restorative water. All allies in a 30-foot radius regain 2d8 Vitality.",
+              "resolve_cost": 10,
+              "duration": "Instantaneous",
+              "range": "30-foot radius"
+            },
+            {
+              "name": "Whirlpool",
+              "effect": "As a major action, create a 15-foot radius whirlpool. The area becomes difficult terrain and creatures starting their turn inside are pulled 10 feet toward the center on a failed Might DC 14 check.",
+              "resolve_cost": 10,
+              "duration": "3 Rounds",
+              "range": "60 feet"
+            },
+            {
+              "name": "Crushing Depths",
+              "effect": "As a major action, you target a single enemy with the immense pressure of the deep ocean. The target takes 3d10 bludgeoning damage and suffers a -2 penalty to their Damage Reduction for 3 rounds.",
+              "resolve_cost": 10,
+              "duration": "3 Rounds",
+              "range": "30 feet"
+            },
+            {
+              "name": "Scry",
+              "effect": "Once per day, you can spend 10 minutes meditating to scry on a location or person you are familiar with, seeing and hearing as if you were there.",
+              "resolve_cost": 0,
+              "duration": "10 Minutes",
+              "range": "Self"
+            }
+          ]
+        },
+        {
+          "tier": "Master (Level 15+)",
+          "talents": [
+            {
+              "name": "Prophetic Vision",
+              "effect": "As a major action, you grant one ally a vision of their immediate future. For 3 rounds, that ally can re-roll any single d10 they roll each turn, but must use the new result.",
+              "resolve_cost": 15,
+              "duration": "3 Rounds",
+              "range": "30 feet"
+            },
+            {
+              "name": "Abyssal Grasp",
+              "effect": "As a major action, spectral tentacles erupt from a point on the ground. Enemies within a 20-foot radius take 4d8 cold damage and must make a Might DC 16 check or be 'Restrained' for 1 round.",
+              "resolve_cost": 15,
+              "duration": "1 Round",
+              "range": "60 feet"
+            },
+            {
+              "name": "Font of Life",
+              "effect": "As a major action, create a 20-foot radius spring of healing water. Allies who end their turn in the spring's pool regain 2d8 Vitality. The spring lasts for 3 rounds.",
+              "resolve_cost": 15,
+              "duration": "3 Rounds",
+              "range": "30 feet"
+            }
+          ]
+        },
+        {
+          "tier": "Archon (Level 20)",
+          "talents": [
+            {
+              "name": "Tidal Rebirth (Ultimate)",
+              "effect": "As a major action, you can restore a single 'Downed' ally to full Vitality and grant them resistance to all damage types for 1 round. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "Instantaneous",
+              "range": "60 feet"
+            },
+            {
+              "name": "Tsunami (Ultimate)",
+              "effect": "As a major action, you summon a massive wave in a 60-foot cone. All creatures in the area take 6d12 bludgeoning damage and are pushed 60 feet away on a failed Might DC 18 check (half damage and no push on success). This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "Instantaneous",
+              "range": "60-foot cone"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
