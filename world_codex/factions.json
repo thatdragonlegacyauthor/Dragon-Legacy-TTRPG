@@ -2,11 +2,15 @@
   "factions": [
     {
       "name": "The Champions of Order",
-      "description": "Devout followers of Goddess Elysia, subtly working to suppress chaotic forces and impose order on the world. They believe draconic powers are a dangerous, uncontrollable threat. Their faith is absolute; they do not see their actions as propaganda, but as the righteous work of guiding a chaotic world toward what they consider salvation. From the lowest acolyte to the highest inquisitor, they genuinely believe the rewritten history that casts Elysia as a savior and see powers like Rya's not as a personal trait, but as a dangerous plague to be purged for the good of all."
+      "homeland": "The Champions' power is centralized in their holy territory, dominated by the magnificent Elysian Grand Cathedral. Their influence extends to the nearby Silverwood Garrison for training and the Valley of Penance for 'reformed' heretics.",
+      "culture_ideology": "The Champions are a holy military order devoted to the goddess Elysia. Their core doctrine teaches that free will is the source of all chaos and suffering. They seek to bring about a 'Sacred Silence,' a world of perfect, unwavering order where personal choice is eliminated for the greater good. They believe the draconic powers are the ultimate expression of this chaotic will and must be purged from the world.",
+      "appearance": "The Champions are defined by their pristine, silver-plated armor, which is polished to a mirror shine. Their aesthetic is one of cold, perfect, and imposing order. High-ranking members like Grand Inquisitor Valerius are known for their cold, unforgiving gaze and statue-like intensity."
     },
     {
       "name": "Scalebound Clans",
-      "description": "A collection of tribal warriors, primarily the lizard-like Stonekin, bound by a sacred oath to guard the draconic relics and holy sites like the Dragon's Graveyard. Their society, centered in Stonegard, is built on honor and a deep-seated distrust of outsiders. However, a painful schism now grows within the clans, between traditionalists who protect their people and zealots who have begun prioritizing ancient relics over the safety of its people."
+      "homeland": "Their society is centered in the fortress-town of Stonegard, which is carved directly into a mountain face. Their most sacred site is the Dragon's Graveyard, a desolate valley littered with the bones of colossal dragons.",
+      "culture_ideology": "A tribal society of warriors, primarily the Stonekin, bound by a sacred oath to guard draconic holy sites. Their culture is built on honor, strength, and a deep-seated distrust of outsiders. They are currently facing a cultural civil war between the Ancestral Wardens, who prioritize protecting their people, and the Stone-Forged Zealots, who wish to weaponize the relics they guard.",
+      "appearance": "The Stonekin are a race of powerful, lizard-like humanoids. Their scales are the color of natural stone, ranging from slate-grey to cooling iron, and are often scarred from countless battles. They are typically powerfully built, as exemplified by warriors like Grak and Grorn."
     },
     {
       "name": "The Ancestral Wardens",
@@ -26,7 +30,9 @@
     },
     {
       "name": "Arcane Dominion",
-      "description": "A powerful mageocracy that governs its territory through the ruthless pursuit of knowledge, exploiting draconic artifacts often unethically. Led by Archon Malakor, the Dominion sees the world as a laboratory, capturing magical creatures and harnessing ancient power sources like The Crystal Spire. They present themselves as bringers of progress, but their ambition leaves a trail of depleted lands and twisted creatures in its wake."
+      "homeland": "The Dominion controls a vast territory in the southern deserts, with their seat of power at The Crystal Spire, a massive monolith they've converted into a power source. Their influence is maintained through sites like the horrific Bio-Arcane Pens and the industrial Scorch-Stone Mines.",
+      "culture_ideology": "The Dominion is a ruthless mageocracy built on the principle of 'Unfettered Progress.' They believe morality is a limitation to the pursuit of knowledge and power. The world and its inhabitants are seen as a laboratory, and its resources—from magical minerals to living creatures—are simply raw materials to be exploited for their unethical experiments.",
+      "appearance": "The mages of the Dominion often bear physical marks of their research; Magister Vorlag is gaunt and ink-stained, while Archon Malakor's face is perpetually hidden by a cowl of swirling magical energy. Their soldiers are often powerful constructs of black iron and pulsating crystal."
     },
     {
       "name": "The Chronoclasts",
@@ -41,19 +47,23 @@
       "description": "A fragile political alliance of city-states seeking unity, formed after The Shattering for mutual defense and trade. While it presents a united front, the Concord is deeply divided by politics, with its most powerful members, the floating city of Wyndia and the trade hub of Port Myria, locked in a cold war of influence. Officially neutral, many factions within the Concord secretly deal with all sides to gain an advantage."
     },
     {
-        "name": "The Royal Court of Wyndia",
-        "parent_faction": "Ember Concord",
-        "description": "The ruling political body of the floating city of Wyndia. Their primary goal is maintaining Wyndia's supremacy within the Ember Concord through diplomacy, tradition, and arcane superiority. They view Port Myria as a useful but unruly tool and the other factions with a general air of civilized disdain.",
-        "key_figures": [
-            "WYNDIA_AERION",
-            "WYNDIA_NINA",
-            "WYNDIA_SOLANUS",
-            "WYNDIA_ZYLPHIA"
-        ]
+      "name": "The Royal Court of Wyndia",
+      "parent_faction": "Ember Concord",
+      "homeland": "The majestic floating city of Wyndia, the jewel of the Ember Concord.",
+      "culture_ideology": "The ruling body of Wyndia, a society built on order, tradition, and a belief in their own cultural and arcane supremacy. Their politics are a delicate dance of diplomacy and intrigue, aimed at maintaining their city's leadership within the Ember Concord. They view unchecked power as a threat and are masters of statecraft and wind magic.",
+      "appearance": "The Wyndian nobility are a fae-like people with graceful, lithe bodies and magnificent, feathery wings. They dress in fine, silken robes and carry ceremonial blades, exuding an air of royalty and ancient lineage.",
+      "key_figures": [
+        "WYNDIA_AERION",
+        "WYNDIA_NINA",
+        "WYNDIA_SOLANUS",
+        "WYNDIA_ZYLPHIA"
+      ]
     },
     {
       "name": "The Frostfang Packs",
-      "description": "Native to the vast, frozen tundra of the Glacial Maw, the Frostfang are wolf-like humanoids who live in tight-knit, traditionalist packs. They are master hunters and survivalists who are deeply suspicious of outsiders, especially the Arcane Dominion, whose expeditions they see as a desecration of their sacred hunting grounds."
+      "homeland": "The vast, frozen tundra of The Glacial Maw in the far north. Their primary settlement is the Frostfang Den, a fortified community carved into the ice of a massive, moving glacier.",
+      "culture_ideology": "The Frostfang are wolf-like humanoids who live in tight-knit, traditionalist packs. Their culture is centered on the hunt, survival against the harsh elements, and reverence for the spirits of their sacred hunting grounds. They are deeply suspicious of outsiders, especially the Arcane Dominion, whom they see as a desecrating force.",
+      "appearance": "They are powerful, wolf-like humanoids with thick fur, often scarred from their hunts. The usurper chieftain, Vargus, is distinguished by crude cybernetic enhancements grafted onto his body—a gift from his Dominion allies."
     },
     {
       "name": "The Runeforge Remnants",
@@ -77,75 +87,91 @@
     },
     {
       "name": "The Astoran Conclave",
-      "description": "A reclusive society of amphibious, fish-like humanoids who are the last descendants of the pre-Shattering inhabitants of the Sunken City of Astora. They are patient scholars and powerful mystics who guard the secrets of the oceans and the Tide draconic lineage."
+      "homeland": "The Conclave's true home is the Sunken City of Astora, a magnificent pre-Shattering metropolis now lost beneath the waves. Their sole point of contact with the surface world is the Tidewatch Spire, a lone, coral-encrusted tower on a remote coast from which they patiently observe the affairs of the land-dwellers.",
+      "culture_ideology": "The Astorani are the last living descendants of a civilization that witnessed the Shattering firsthand. This cataclysm shaped their entire philosophy, transforming them into a reclusive society of patient scholars and mystics. Their core belief is non-interference. They see the struggles of the surface world as 'changing tides' and believe their role is to be keepers of prophecy and guardians of ancient secrets—most importantly, the secrets of the Tide draconic lineage.",
+      "appearance": "They are amphibious, fish-like humanoids with bioluminescent scales that shift in color and brightness. These scales can be vibrant in youth, as with the acolyte Lyra, or fade to a pale, ghostly white in old age, like Loremaster Oris.",
+      "key_figures": [
+        "ASTORAN_ORIS",
+        "ASTORAN_ORIN",
+        "ASTORAN_LYRA"
+      ]
     },
     {
       "name": "The Gilded Paw Caravan",
-      "description": "A sprawling, nomadic merchant guild comprised of various cat-like and fox-like beastfolk. Publicly neutral, their leaders operate one of the most extensive spy networks in the world, selling information to the highest bidder."
+      "homeland": "As a nomadic guild, they have no single home, but their unofficial capital and primary hub of operations is The Oasis of Zha'Vask in the southern deserts. Their influence is felt most strongly in the black markets, like The Silken Market of Port Myria.",
+      "culture_ideology": "The Gilded Paw operates as a sprawling merchant guild, but their true business is information. They run one of the most extensive spy networks in the world, selling secrets to the highest bidder. Their only loyalty is to profit, and their public neutrality allows them to deal with all sides of a conflict.",
+      "appearance": "The Caravan is composed of various cat-like and fox-like beastfolk. Their leader, Farah, is a cunning and charismatic fox-like woman, while her agents range from chameleon-like masters of disguise to powerful, lion-like enforcers."
     },
     {
       "name": "The Brood of Dragnor",
-      "description": "A fanatical and nihilistic cult of mortals who inhabit the scorched slopes of Mount Dragnor. They worship the memory of the defeated Draconic Lords of Darkness and seek to unleash chaotic forces to bring about a new age of fire."
+      "homeland": "The scorched and inhospitable slopes of the dormant volcano, Mount Dragnor, located in the heart of the Shattered Lands.",
+      "culture_ideology": "The Brood is a fanatical and nihilistic death cult. They worship the memory of the defeated Draconic Lords of Darkness and believe the world must be 'cleansed' in a torrent of fire and chaos to pave the way for a new age of dragons. Their doctrine is one of pure destruction.",
+      "appearance": "Members of the cult are often covered in volcanic ash and ritualistic burn scars. Their leaders, like The Ashen Priest, wear masks of obsidian, while their champions, like Kilgore, have had armor fused directly to their flesh through dark rituals."
     },
     {
       "name": "The Wardens of the Wilds",
-      "description": "A loose, unofficial alliance of hermits, master hunters, and powerful nature spirits who have chosen to live outside the corrupting influence of the major powers. They are the sworn protectors of Eryndor's natural and spiritual balance, opposing both the Champions' unnatural 'Order' and the Dominion's rapacious 'Progress'.",
-      "key_figures": [
-        "HERMIT_RHYS",
-        "HERMIT_FENRIS",
-        "SPIRIT_VERIDIA"
-      ]
+      "homeland": "The Wardens have no single nation, claiming the untamed places of the world as their territory. Their influence is strongest in the ancient places of power, such as the Whispering Woods, the sacred groves of the Serpent's Maw Jungle, and the harshest parts of the Glacial Maw. They often make their homes in isolated, hidden locations like Rhys's Cabin.",
+      "culture_ideology": "This is a loose alliance of individuals bound by a shared philosophy rather than a formal hierarchy. They believe the world's natural and spiritual balance is paramount and that the ambitions of the great nations are a corrupting plague. They see the Champions' 'Order' as a sterile perversion of nature and the Dominion's 'Progress' as a parasitic blight. Their members act as guardians, protecting ancient places and creatures from those who would exploit or exterminate them.",
+      "appearance": "The Wardens are as varied as the wilds they protect. They include grizzled, cynical hermits like Rhys, who wears the tattered remnants of his old Champion armor, master survivalists like Fenris, who seems more a part of the wilderness than a man, and even powerful nature spirits like Veridia, whose form is a living embodiment of the jungle itself."
     },
     {
       "name": "The Scavenger Union",
-      "description": "The hardened, pragmatic survivors who call the desolate Shattered Lands their home. Based in the outpost of Scavenger's Hope, they are a collection of exiles, engineers, and treasure hunters united by a single principle: survival. They value resourcefulness above all and adhere to a strict internal code to protect their community.",
-      "key_figures": [
-        "SCAVENGER_ANYA"
-      ]
+      "homeland": "Their heartland is the desolate and dangerous Shattered Lands. They are based in The Scavenger's Hope, a fortified outpost built into the fossilized shell of a colossal beast, which serves as the only reliable point of trade and safety for hundreds of miles.",
+      "culture_ideology": "The Union is a society forged in desperation, a collection of exiles, engineers, and treasure hunters united by the principle of survival. Their culture is one of pure pragmatism; resourcefulness and reliability are the most valued traits. They adhere to a strict internal code that ensures the survival of their community against the mutated beasts of the wasteland and the encroaching ambitions of the major factions. They have a symbiotic relationship with the Runeforge Remnants, particularly the radical Reclaimers, who seek to weaponize the lost technology the Union uncovers.",
+      "appearance": "The Scavengers are defined by their practicality. Their clothing and gear are a patchwork of leather and salvaged metal plates. Their leader, 'Scrap-Heap' Anya, embodies this aesthetic, valuing function over form. They are tough, resilient, and often bear the scars of their dangerous profession."
     },
     {
       "name": "The Free Captains of Myria",
-      "description": "A powerful, unofficial guild of ship captains, smugglers, and sailors based in Port Myria. They control the city's unofficial trade and transport, operating in the grey areas of the Ember Concord's laws. Their core values are freedom and fortune, and they resent the control of Wyndia's nobility and corrupt officials.",
+      "homeland": "Their power base is the bustling, chaotic port city of Port Myria, specifically its sprawling docks and the shadowy back alleys of the Silken Market. The open sea is their true territory.",
+      "culture_ideology": "The Free Captains are an unofficial guild of smugglers, merchants, and sailors who operate outside the strict laws of the Ember Concord. Their core values are freedom and fortune. They resent the control of Wyndia's nobility and the corruption of officials like Harbormaster Thorne, who they must constantly bribe or outwit. They are not pirates, but they are fiercely independent and will transport any cargo for the right price, making them a vital, if risky, service for anyone needing to move goods or people discreetly.",
+      "appearance": "The Captains are as varied as the ships they command. They are hardened seafarers, often with weathered skin and practical, travel-stained clothes. A prime example is Captain Eva 'Storm-Eye' Rostova, a tough, boisterous woman with a magical, glowing prosthetic eye that she claims can see through any fog."
+    },
+    {
+      "name": "The Pangolin-kin of the Iron Peaks",
+      "homeland": "The Pangolin-kin inhabit the harsh, mineral-rich Iron Peaks. They do not build cities on the mountains, but rather carve immense, geode-like Forge-Cities into the mountainsides, centered around volcanic vents that serve as their Great Forges.",
+      "culture_ideology": "Their society is defined by resilience, peerless craftsmanship, and a deep-seated isolationism. They are master blacksmiths who view their craft as a sacred art, capable of forging legendary weapons. Their distrust of outsiders has only deepened since the Champions of Order stole sacred relics from their clan.",
+      "appearance": "They are a people of broad, immense Pangolin-kin covered in overlapping, hardened scales that resemble plates of forged iron. Their arms are thick with muscle from a life spent at the forge.",
       "key_figures": [
-        "PORTMYRIA_EVA"
+        "PANGOLIN_TORR"
       ]
     },
     {
-        "name": "The Armadillians of the Iron Peaks",
-        "description": "A proud and reclusive society of Pangolin-kin who inhabit massive Forge-Cities carved into the mountains. Their culture is defined by resilience, peerless craftsmanship, and a deep-seated isolationism. They are master blacksmiths who guard the secrets of their unique forging techniques with fierce determination.",
-        "key_figures": [
-            "PANGOLIN_TORR"
-        ]
+      "name": "The Skyveil of the Aerie",
+      "homeland": "The Skyveil's ancestral home is the Sky-Reach Aerie, a city of vertical towers carved into the highest, most treacherous peaks of the Serpent's Coil mountains.",
+      "culture_ideology": "The Skyveil are a proud, independent, and isolationist people who value freedom above all else. Their culture is centered around the hunt and mastery of the sky. They are led by a matriarchal elder, and their wisdom often comes from observing the subtle shifts in the wind, which they believe carry omens.",
+      "appearance": "They are a race of falcon-like humanoids. Their features are sharp and predatory, with hawk-like beaks and eyes the color of a clear winter sky. Their hair is often styled into crests of vibrant colors, like the crimson and black of our companion, Talia.",
+      "key_figures": [
+        "SKYVEIL_TALIA",
+        "SKYVEIL_VASHA"
+      ]
     },
     {
-        "name": "The Skyveil of the Aerie",
-        "description": "A society of falcon-like humanoids who live in the Sky-Reach Aerie, a city carved into the highest peaks of the Serpent's Coil mountains. They are proud, independent hunters who value freedom above all else and are masters of aerial combat and scouting.",
-        "key_figures": [
-            "SKYVEIL_TALIA",
-            "SKYVEIL_VASHA"
-        ]
+      "name": "The Shadowpelt Tribes",
+      "homeland": "The Shadowpelt are masters of the high canopies in the treacherous Serpent's Maw Jungle, living in secretive communities built among the colossal trees.",
+      "culture_ideology": "Their society is built on stealth, cunning, and survival. They remain unseen, preying on travelers and outsiders who trespass into their sacred groves. They operate with a pragmatic and often ruthless code, but are fiercely protective of their own people and their jungle home from threats like the Arcane Dominion.",
+      "appearance": "They are a wiry and athletic people, panther-like humanoids covered in sleek, midnight-black fur that allows them to blend into the shadows of the jungle canopy. They often adorn themselves with trophies from their hunts, such as necklaces of sharp, polished teeth.",
+      "key_figures": [
+        "SHADOWPELT_LIRIEN"
+      ]
     },
     {
-        "name": "The Shadowpelt Tribes",
-        "description": "Secretive communities of panther-like humanoids who live in the high canopies of the Serpent's Maw Jungle. Their society is built on stealth, cunning, and survival, using the jungle's natural defenses to remain hidden from the outside world while preying on any who trespass.",
-        "key_figures": [
-            "SHADOWPELT_LIRIEN"
-        ]
+      "name": "The Keepers of the True Flame",
+      "homeland": "This secret society has no homeland. They are a scattered network of individuals hidden within other cultures, from the libraries of Wyndia to the back alleys of Port Myria.",
+      "culture_ideology": "The Keepers are bound by a single, sacred duty: to preserve the 'secret truth' of the Shattering—that the heroic Dragon Lords sacrificed themselves to imprison the tyrannical goddess Elysia. They work from the shadows, watching for signs of Elysia's influence and waiting for a new dragon heir who can finally reveal the truth to the world. They are the sworn enemies of the Champions of Order's doctrine.",
+      "appearance": "They are visually indistinguishable from the populations they hide within. Their only tell is a secret symbol, a stylized flame within a circle, often hidden on a personal item or as a subtle tattoo.",
+      "key_figures": []
     },
     {
-        "name": "The Keepers of the True Flame",
-        "description": "A secret society composed of the descendants of those who fought alongside the heroic Dragon Lords of Light. They have passed down the 'secret truth' of the Shattering for generations, working from the shadows to preserve the true history of the world and watch for the coming of a new dragon heir.",
-        "key_figures": []
-    },
-    {
-        "name": "The Neutrality Pact",
-        "description": "A secret alliance of convenience between the pragmatic leaders of various independent factions. Their primary goal is to ensure their own survival and prosperity by playing the major powers against each other, trading information, and controlling the flow of goods and services in the spaces between the great nations.",
-        "key_figures": [
-            "GILDEDPAW_FARAH",
-            "SCAVENGER_ANYA",
-            "GARRISON_GARRAN",
-            "PORTMYRIA_EVA"
-        ]
+      "name": "The Neutrality Pact",
+      "homeland": "This alliance has no central location, but its influence is most strongly felt in the neutral territories and hubs of trade, such as Port Myria, The Crossroads Garrison, and Scavenger's Hope.",
+      "culture_ideology": "This is not a culture, but a secret alliance of convenience. Its members are united by a pragmatic belief in survival and profit above all else. They see the great wars not as a moral crusade, but as a business opportunity. They trade information, goods, and favors to ensure their own factions remain independent and prosperous, playing the major powers against each other.",
+      "appearance": "The Pact is composed of a diverse group of individuals from various races and backgrounds, from the fox-like Farah to the human veteran Garran. Their only common trait is a sharp, calculating look in their eyes.",
+      "key_figures": [
+        "GILDEDPAW_FARAH",
+        "SCAVENGER_ANYA",
+        "GARRISON_GARRAN",
+        "PORTMYRIA_EVA"
+      ]
     }
   ]
 }
