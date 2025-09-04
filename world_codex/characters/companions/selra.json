@@ -42,7 +42,7 @@
             {
               "name": "Heal",
               "effect": "As a major action, restore 1d10 Vitality to a single ally within 30 feet.",
-              "resolve_cost": 5,
+              "resolve_cost": 3,
               "duration": "Instantaneous",
               "range": "30 feet"
             },
@@ -270,81 +270,4 @@
           "tier": "Expert (Level 10+)",
           "talents": [
             {
-              "name": "Searing Light",
-              "effect": "As a major action, you unleash a bolt of pure energy at a single target, dealing 3d10 light damage.",
-              "resolve_cost": 10,
-              "duration": "Instantaneous",
-              "range": "60 feet"
-            },
-            {
-              "name": "Aura of Censure",
-              "effect": "For 3 rounds, you project a 15-foot aura. Any enemy that starts their turn inside the aura takes 1d10 light damage.",
-              "resolve_cost": 10,
-              "duration": "3 Rounds",
-              "range": "15-foot radius"
-            },
-            {
-              "name": "Pillar of Judgment",
-              "effect": "As a major action, you call down a pillar of searing light from the heavens on a single target. It deals 4d10 light damage.",
-              "resolve_cost": 15,
-              "duration": "Instantaneous",
-              "range": "90 feet"
-            },
-            {
-              "name": "Sanctified Smite (Modifies Sacred Strike)",
-              "effect": "When you use Sacred Strike, you can expend 5 Resolve to deal an additional 2d8 light damage.",
-              "resolve_cost": "N/A",
-              "duration": "N/A",
-              "range": "N/A"
-            }
-          ]
-        },
-        {
-          "tier": "Master (Level 15+)",
-          "talents": [
-            {
-              "name": "Righteous Vengeance (Reaction)",
-              "effect": "When an enemy reduces an ally to 0 Vitality, you can use your reaction to make an immediate Sacred Strike against that enemy with advantage.",
-              "resolve_cost": 5,
-              "duration": "Instantaneous",
-              "range": "Melee"
-            },
-            {
-              "name": "Angel's Wings",
-              "effect": "As a bonus action, you can manifest wings of pure light, gaining a flying speed of 60 feet for 1 minute.",
-              "resolve_cost": 15,
-              "duration": "1 Minute",
-              "range": "Self"
-            },
-            {
-              "name": "Divine Judgment",
-              "effect": "A searing beam deals 2d10 radiant damage to a target and prevents them from taking a reaction until your next turn.",
-              "resolve_cost": 10,
-              "duration": "1 Round",
-              "range": "60 feet"
-            }
-          ]
-        },
-        {
-          "tier": "Archon (Level 20)",
-          "talents": [
-            {
-              "name": "Smite the Unholy (Ultimate)",
-              "effect": "As a major action, you unleash a torrent of holy judgment. This deals 6d12 light damage to all enemies you can see, and they must succeed on a Spirit DC 18 check or be Stunned for 1 round. This can only be used once per day.",
-              "resolve_cost": 20,
-              "duration": "Instantaneous",
-              "range": "Sight"
-            },
-            {
-              "name": "Avatar of Order (Ultimate)",
-              "effect": "As a major action, you become a conduit for pure order. For 1 minute, you are immune to all damage from 'chaotic' or 'draconic' sources, and your weapon attacks deal an additional 2d10 light damage. This can only be used once per day.",
-              "resolve_cost": 20,
-              "duration": "1 Minute",
-              "range": "Self"
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
+              "name": "S
