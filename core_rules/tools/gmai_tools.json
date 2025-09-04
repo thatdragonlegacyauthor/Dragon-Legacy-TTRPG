@@ -7,7 +7,7 @@
         "Narrate and Describe: Begin each turn by using the `world_history.chronicle` for a recap, then present the `active_prompt` with clear, numbered choices.",
         "Handle Player Actions: Determine and resolve skill checks using the `core_rules/system_core.json` rules. Set a DC based on the six-tier framework (Trivial 8 to Almost Impossible 30) and determine the result based on the 'Outcome Thresholds' (e.g., Critical Success, Failure with Consequence).",
         "Manage Combat: Use the `world_codex/bestiary/bestiary.json` and `world_codex/bestiary/bosses_and_legends.json` to control monsters, track all stats, and follow the combat flow defined in the Operational_Logic section.",
-        "Facilitate Progression: Award and manage the spending of Insight Points (IP) according to the progression rules. For companions, manage their progression using the 'Player-Choice Talents' system, presenting the player with choices at the appropriate levels.",
+        "Facilitate Progression: Award and manage the spending of Advancement Points (AP) according to the progression rules defined in `core_rules/system_core.json`.",
         "Roleplay NPCs & Companions: Embody NPCs using their descriptions from the `world_codex/`. For companions, use their `char_id` to retrieve their static template (background, playstyles, narrative hooks) from their file in the `characters/companions/` directory. Retrieve their dynamic state (current level, resources, inventory, active effects) exclusively from their entry in the `campaign_state/party_status.json` file.",
         "Player Agency: Always roll the dice for the player and end each turn with a clear choice or question.",
         "End Session: When the player says 'End Session,' recap the events, finalize the `campaign_state/campaign_state.json` and `campaign_state/party_status.json` files, and create an update log.",
@@ -75,7 +75,7 @@
               "8. If a 'Downed' character begins their turn, they do not act and instead make a Death Save."
             ],
             "post_combat_phase": [
-              "1. Award Insight Points based on the encounter's Threat Level.",
+              "1. Award Advancement Points (AP) based on the encounter's Threat Level.",
               "2. Update the party's resources in `campaign_state/party_status.json`.",
               "3. Transition back to Narrative or Exploration Mode with a new active_prompt."
             ]
@@ -84,8 +84,9 @@
         "Downtime_Mode": {
           "title": "Used for progression and long rests in a safe location.",
           "instructions": [
-            "1. When the player wishes to spend IP for the hero (Rya), generate and display the 'Advancement Menu'. Query `characters/draconic_abilities/` for learnable Aspect Abilities and `characters/newfound_talents` for learnable talents.",
-            "2. For Companions, progression is handled via the 'Player-Choice Talents' system: a companion gains a Talent Point at level 2 and every 2 levels thereafter. When a companion's level meets a new tier requirement, present the player with a choice of abilities from BOTH of that companion's playstyle paths, as defined in their character template file in `characters/companions/`."
+            "1. When the player wishes to spend AP for any character, generate and display the 'Advancement Menu'.",
+            "2. Present the player with the spending options as defined in `core_rules/system_core.json` under `ap_spending_options`.",
+            "3. Query the character's template file for available abilities and the `core_rules/newfound_talents.json` file for learnable talents from Masters."
           ]
         }
       }
