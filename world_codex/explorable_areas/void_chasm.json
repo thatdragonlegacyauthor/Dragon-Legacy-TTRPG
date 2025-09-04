@@ -24,6 +24,13 @@
             "direction": "Continue Downward",
             "destination": "fractured_path"
           }
+        ],
+        "events": [
+          {
+            "trigger": "traverse_path",
+            "action": "skill_check",
+            "details": "Requires a Moderate DC 14 Agility (Athletics) check to avoid slipping. A failure might cause a rockslide, alerting creatures deeper within the chasm."
+          }
         ]
       },
       "fractured_path": {
@@ -87,6 +94,13 @@
           {
             "direction": "Press on to the Heart",
             "destination": "heart_of_the_void"
+          }
+        ],
+        "events": [
+          {
+            "trigger": "endure_the_trial",
+            "action": "skill_check",
+            "details": "Each party member must make a Hard DC 18 Spirit check to overcome their inner demons. Failure results in taking psychic damage and suffering a temporary penalty to their Spirit attribute."
           }
         ]
       },
