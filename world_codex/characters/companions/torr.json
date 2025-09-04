@@ -41,11 +41,38 @@
           "talents": [
             {
               "name": "Stone Guard",
-              "effect": "As a major action, gain a +3 bonus to your Damage Reduction for 1 round."
+              "effect": "As a major action, gain a +3 bonus to your Damage Reduction for 1 round.",
+              "resolve_cost": 5,
+              "duration": "1 Round",
+              "range": "Self"
             },
             {
               "name": "Defensive Curl",
-              "effect": "As a bonus action, you can curl into a defensive ball of overlapping scales. You gain an additional +2 bonus to Damage Reduction, but your movement speed is reduced to 0 for 1 round."
+              "effect": "As a bonus action, you can curl into a defensive ball of overlapping scales. You gain an additional +2 bonus to Damage Reduction, but your movement speed is reduced to 0 for 1 round.",
+              "resolve_cost": 1,
+              "duration": "1 Round",
+              "range": "Self"
+            },
+            {
+              "name": "Taunting Strike",
+              "effect": "As a major action, make a melee attack. If it hits, the target has disadvantage on attack rolls against any creature other than you until your next turn.",
+              "resolve_cost": 5,
+              "duration": "1 Round",
+              "range": "Melee"
+            },
+            {
+              "name": "Bodyguard (Reaction)",
+              "effect": "When an ally within 5 feet of you is targeted by an attack, you can use your Reaction to become the new target of the attack.",
+              "resolve_cost": 1,
+              "duration": "Instantaneous",
+              "range": "5 feet"
+            },
+            {
+              "name": "Brace",
+              "effect": "As a Reaction when hit by an effect that would move you, reduce the distance moved by 10 feet.",
+              "resolve_cost": 1,
+              "duration": "Instantaneous",
+              "range": "Self"
             }
           ]
         },
@@ -54,11 +81,31 @@
           "talents": [
             {
               "name": "Spiked Rebuke (Passive)",
-              "effect": "Your scales are fitted with defensive spikes. Whenever an enemy hits you with a melee attack, they take physical damage equal to your Might attribute."
+              "effect": "Your scales are fitted with defensive spikes. Whenever an enemy hits you with a melee attack, they take physical damage equal to your Might attribute.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Melee"
             },
             {
-              "name": "Ricochet Shell",
-              "effect": "As a reaction when you are missed by a ranged physical attack, you can angle your scales to deflect the shot. Force the attacker to re-roll their attack against a different enemy within 10 feet of you. This costs 5 Resolve."
+              "name": "Ricochet Shell (Reaction)",
+              "effect": "When you are missed by a ranged physical attack, you can angle your scales to deflect the shot. Force the attacker to re-roll their attack against a different enemy within 10 feet of you.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "10 feet"
+            },
+            {
+              "name": "Goading Challenge",
+              "effect": "As a major action, you bang your hammer against your scaled body, forcing all enemies in a 15-foot cone to make a Spirit DC 14 check or have disadvantage on attack rolls that do not target you for 1 round.",
+              "resolve_cost": 10,
+              "duration": "1 Round",
+              "range": "15-foot cone"
+            },
+            {
+              "name": "Unbreakable Stance (Passive)",
+              "effect": "You gain a permanent +2 bonus to any check to resist being pushed, moved, or knocked prone.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
             }
           ]
         },
@@ -67,11 +114,31 @@
           "talents": [
             {
               "name": "Rolling Charge",
-              "effect": "As a major action, you can curl into a ball and move up to your full movement speed in a straight line. Any enemy you move through must make an Agility DC 14 check or be knocked prone and take 2d8 bludgeoning damage. This costs 10 Resolve."
+              "effect": "As a major action, you can curl into a ball and move up to your full movement speed in a straight line. Any enemy you move through must make an Agility DC 14 check or be knocked prone and take 2d8 bludgeoning damage.",
+              "resolve_cost": 10,
+              "duration": "Instantaneous",
+              "range": "Self"
             },
             {
-              "name": "Goading Challenge",
-              "effect": "As a major action, you bang your hammer against your scaled body, forcing all enemies in a 15-foot cone to make a Spirit DC 14 check or have disadvantage on attack rolls that do not target you for 1 round. This costs 10 Resolve."
+              "name": "Living Fortress (Passive)",
+              "effect": "Your presence on the battlefield is a bastion of safety. Adjacent allies are considered to have half cover, granting them a +1 bonus to their defensive rolls.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "5-foot radius"
+            },
+            {
+              "name": "Seismic Plating (Reaction)",
+              "effect": "When hit by an attack, you can absorb the impact. The attacker must make an Agility DC 14 check or be knocked prone.",
+              "resolve_cost": 10,
+              "duration": "Instantaneous",
+              "range": "Melee"
+            },
+            {
+              "name": "Bulwark Aura",
+              "effect": "You project a 15-foot aura of defensive energy for 3 rounds. Any ranged attack that passes into or out of the aura has a -2 penalty to the attack roll.",
+              "resolve_cost": 10,
+              "duration": "3 Rounds",
+              "range": "15-foot radius"
             }
           ]
         },
@@ -79,12 +146,25 @@
           "tier": "Master (Level 15+)",
           "talents": [
             {
-              "name": "Living Fortress (Passive)",
-              "effect": "Your presence on the battlefield is a bastion of safety. Adjacent allies are considered to have half cover, granting them a +1 bonus to their defensive rolls."
+              "name": "Unbreakable (Reaction)",
+              "effect": "Once per combat, when you would take damage, you can use your Reaction to reduce that damage to 0.",
+              "resolve_cost": 10,
+              "duration": "Instantaneous",
+              "range": "Self"
             },
             {
-              "name": "Unbreakable",
-              "effect": "Once per combat, when you would take damage, you can use your Reaction to reduce that damage to 0."
+              "name": "Juggernaut Form",
+              "effect": "As a major action, you temporarily grow in size, gaining immunity to effects that would move you, a +4 bonus to your Damage Reduction, and Advantage on all Might checks for 3 rounds.",
+              "resolve_cost": 15,
+              "duration": "3 Rounds",
+              "range": "Self"
+            },
+            {
+              "name": "Resonant Pulse",
+              "effect": "As a major action, you release a wave of concussive energy. All enemies in a 20-foot radius take 3d8 thunder damage and must make a Might DC 16 check or be knocked prone.",
+              "resolve_cost": 15,
+              "duration": "Instantaneous",
+              "range": "20-foot radius"
             }
           ]
         },
@@ -93,7 +173,17 @@
           "talents": [
             {
               "name": "Juggernaut's Rebuke (Ultimate)",
-              "effect": "As a major action, you adopt a legendary defensive stance for 3 rounds. Your movement speed becomes 0, you gain resistance to all damage, and any enemy that deals damage to you takes half of that damage in return. This can only be used once per day and costs 20 Resolve."
+              "effect": "As a major action, you adopt a legendary defensive stance for 3 rounds. Your movement speed becomes 0, you gain resistance to all damage, and any enemy that deals damage to you takes half of that damage in return. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "3 Rounds",
+              "range": "Self"
+            },
+            {
+              "name": "Immovable Object (Ultimate)",
+              "effect": "You transform into a mountain of pure metal. For 1 minute, your size becomes Large, you gain Damage Reduction 15, and you are immune to being moved. All allies within 30 feet gain cover from ranged attacks. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "1 Minute",
+              "range": "30-foot radius"
             }
           ]
         }
@@ -108,11 +198,38 @@
           "talents": [
             {
               "name": "Hammer Swing",
-              "effect": "A powerful melee attack that deals 2d10 bludgeoning damage."
+              "effect": "A powerful melee attack that deals 2d10 bludgeoning damage.",
+              "resolve_cost": 0,
+              "duration": "Instantaneous",
+              "range": "Melee"
             },
             {
               "name": "Forge Fire",
-              "effect": "Once per day, as a bonus action, you can superheat your weapon, dealing an additional 1d6 fire damage on your next successful attack."
+              "effect": "As a bonus action, you can superheat your weapon, dealing an additional 1d6 fire damage on your next successful attack.",
+              "resolve_cost": 1,
+              "duration": "1 Attack",
+              "range": "Self"
+            },
+            {
+              "name": "Sunder Armor",
+              "effect": "When you hit a target with an attack, their Damage Reduction is reduced by 2 for 1 round.",
+              "resolve_cost": 1,
+              "duration": "1 Round",
+              "range": "Melee"
+            },
+            {
+              "name": "Field Repair",
+              "effect": "As a major action, you can repair a damaged piece of armor or a weapon, removing the 'Broken' status effect.",
+              "resolve_cost": 1,
+              "duration": "Instantaneous",
+              "range": "Touch"
+            },
+            {
+              "name": "Appraise (Passive)",
+              "effect": "You have Advantage on Mind (Lore) checks to determine the quality, history, and magical properties of weapons and armor.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
             }
           ]
         },
@@ -120,12 +237,32 @@
           "tier": "Adept (Level 5+)",
           "talents": [
             {
-              "name": "Sunder Armor (Modifies Hammer Swing)",
-              "effect": "When you hit a target with Hammer Swing, their Damage Reduction is reduced by 2 for 1 round."
+              "name": "Field Temper",
+              "effect": "As a major action, you can strike an ally's weapon with a refining hammer blow. For the next 3 rounds, that weapon deals an additional +2 damage.",
+              "resolve_cost": 5,
+              "duration": "3 Rounds",
+              "range": "Touch"
             },
             {
-              "name": "Field Temper",
-              "effect": "As a major action, you can strike an ally's weapon with a refining hammer blow. For the next 3 rounds, that weapon deals an additional +2 damage. This costs 5 Resolve."
+              "name": "Armor Reinforcement",
+              "effect": "As a major action, you can apply a rapid-forged patch to an ally's armor, granting them temporary Vitality equal to twice your Mind attribute.",
+              "resolve_cost": 5,
+              "duration": "1 Minute",
+              "range": "Touch"
+            },
+            {
+              "name": "Shattering Blow (Modifies Sunder Armor)",
+              "effect": "The Damage Reduction penalty from your Sunder Armor ability increases from 2 to 3.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
+            },
+            {
+              "name": "Siege Strike (Passive)",
+              "effect": "Your attacks with heavy weapons deal double damage to objects, structures, and constructs.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Melee"
             }
           ]
         },
@@ -134,11 +271,31 @@
           "talents": [
             {
               "name": "Seismic Slam",
-              "effect": "As a major action, you slam your hammer into the ground, creating a shockwave. All enemies in a 15-foot cone take 3d8 bludgeoning damage and must make a Might DC 14 check or be 'Stunned' for 1 round. This costs 10 Resolve."
+              "effect": "As a major action, you slam your hammer into the ground, creating a shockwave. All enemies in a 15-foot cone take 3d8 bludgeoning damage and must make a Might DC 14 check or be 'Stunned' for 1 round.",
+              "resolve_cost": 10,
+              "duration": "Instantaneous",
+              "range": "15-foot cone"
             },
             {
-              "name": "Masterwork Reinforcement",
-              "effect": "As a major action, you can apply a rapid-forged patch to an ally's armor, granting them temporary Vitality equal to twice your Mind attribute. This costs 10 Resolve."
+              "name": "Rune of Warding",
+              "effect": "As a major action, you can etch a temporary rune onto an ally's armor or shield. Choose Fire, Ice, or Lightning; the ally gains resistance to that damage type for the duration of the combat.",
+              "resolve_cost": 15,
+              "duration": "Entire Combat",
+              "range": "Touch"
+            },
+            {
+              "name": "Masterwork Reinforcement (Modifies Armor Reinforcement)",
+              "effect": "The temporary Vitality granted by your Armor Reinforcement ability now equals three times your Mind attribute.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
+            },
+            {
+              "name": "Focused Strike",
+              "effect": "As a major action, you can make a single, precise strike against an enemy. This attack ignores all non-magical Damage Reduction.",
+              "resolve_cost": 10,
+              "duration": "Instantaneous",
+              "range": "Melee"
             }
           ]
         },
@@ -146,12 +303,25 @@
           "tier": "Master (Level 15+)",
           "talents": [
             {
-              "name": "Rune of Warding",
-              "effect": "As a major action, you can etch a temporary rune onto an ally's armor or shield. Choose Fire, Ice, or Lightning; the ally gains resistance to that damage type for the duration of the combat. This costs 15 Resolve."
+              "name": "Shattering Blow",
+              "effect": "You make a single, devastating melee attack that deals 3d12 bludgeoning damage. If the target is using a shield, the shield is destroyed. If not, their armor is damaged, and their base Damage Reduction is permanently halved (until repaired).",
+              "resolve_cost": 15,
+              "duration": "Instantaneous",
+              "range": "Melee"
             },
             {
-              "name": "Shattering Blow",
-              "effect": "You make a single, devastating melee attack that deals 3d12 bludgeoning damage. If the target is using a shield, the shield is destroyed. If not, their armor is damaged, and their base Damage Reduction is permanently halved (until repaired). This costs 15 Resolve."
+              "name": "Rune of Power",
+              "effect": "As a major action, you can etch a temporary rune onto an ally's weapon. For 1 minute, that weapon's attacks are considered magical and deal an additional 1d8 damage.",
+              "resolve_cost": 15,
+              "duration": "1 Minute",
+              "range": "Touch"
+            },
+            {
+              "name": "Unmaking Strike",
+              "effect": "As a major action, you make a single attack against a construct. On a hit, the construct takes an additional 4d12 lightning damage and must make a Mind DC 16 check or be 'Stunned' for 1 round.",
+              "resolve_cost": 15,
+              "duration": "Instantaneous",
+              "range": "Melee"
             }
           ]
         },
@@ -160,7 +330,17 @@
           "talents": [
             {
               "name": "Forge of Legends (Ultimate)",
-              "effect": "As a major action, you unleash the ultimate smithing secret. For 3 rounds, the weapons of all allies within 30 feet are wreathed in flame and emit a heroic aura. All their weapon attacks deal an additional 1d10 fire damage and are considered magical. This can only be used once per day and costs 20 Resolve."
+              "effect": "As a major action, you unleash the ultimate smithing secret. For 3 rounds, the weapons of all allies within 30 feet are wreathed in flame and emit a heroic aura. All their weapon attacks deal an additional 1d10 fire damage and are considered magical. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "3 Rounds",
+              "range": "30-foot radius"
+            },
+            {
+              "name": "Masterpiece (Ultimate)",
+              "effect": "You can spend a full day of downtime to permanently upgrade one non-legacy weapon or armor for an ally, granting it a permanent +1 bonus to its primary function (e.g., +1 damage, +1 Damage Reduction). This can only be done once per character.",
+              "resolve_cost": 0,
+              "duration": "Permanent",
+              "range": "Touch"
             }
           ]
         }
