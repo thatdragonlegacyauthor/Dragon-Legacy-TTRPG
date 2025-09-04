@@ -43,25 +43,36 @@
               "name": "Heal",
               "effect": "As a major action, restore 1d10 Vitality to a single ally within 30 feet.",
               "resolve_cost": 5,
-              "duration": "Instantaneous"
+              "duration": "Instantaneous",
+              "range": "30 feet"
             },
             {
               "name": "Inspire",
               "effect": "As a major action, grant an ally within 30 feet a +2 bonus to their next roll.",
               "resolve_cost": 1,
-              "duration": "1 Roll"
+              "duration": "1 Roll",
+              "range": "30 feet"
             },
             {
               "name": "Divine Ward (Reaction)",
               "effect": "Grants a temporary shield that absorbs up to 5 points of magical damage for 1 round.",
               "resolve_cost": 1,
-              "duration": "1 Round"
+              "duration": "1 Round",
+              "range": "Self"
             },
             {
               "name": "Respite",
               "effect": "As a major action, you create a comforting aura. One ally within 15 feet regains 5 + 1d6 Resolve.",
               "resolve_cost": 5,
-              "duration": "Instantaneous"
+              "duration": "Instantaneous",
+              "range": "15 feet"
+            },
+            {
+              "name": "Cleansing Touch",
+              "effect": "As a major action, you touch a target and remove one minor negative status effect (e.g., Blinded, Slowed).",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "Touch"
             }
           ]
         },
@@ -72,25 +83,29 @@
               "name": "Soothing Presence (Modifies Inspire)",
               "effect": "When you use Inspire, it now restores 1d4 Resolve to the affected ally in addition to its other effects.",
               "resolve_cost": "N/A",
-              "duration": "N/A"
+              "duration": "N/A",
+              "range": "N/A"
             },
             {
               "name": "Shield of the Faithful (Modifies Divine Ward)",
               "effect": "Your Divine Ward now absorbs up to 8 points of magical damage.",
               "resolve_cost": "N/A",
-              "duration": "N/A"
-            },
-            {
-              "name": "Cleansing Touch",
-              "effect": "As a major action, you touch a target and remove one minor negative status effect (e.g., Blinded, Slowed). This can be used once per short rest.",
-              "resolve_cost": 0,
-              "duration": "Instantaneous"
+              "duration": "N/A",
+              "range": "N/A"
             },
             {
               "name": "Mass Healing Word",
               "effect": "As a major action, all allies within 15 feet of you regain 2d6 Vitality.",
               "resolve_cost": 10,
-              "duration": "Instantaneous"
+              "duration": "Instantaneous",
+              "range": "15-foot radius"
+            },
+            {
+              "name": "Beacon of Hope",
+              "effect": "Create a stationary beacon of light for 3 rounds. Allies who start their turn within 15 feet of it are immune to the 'Frightened' condition.",
+              "resolve_cost": 10,
+              "duration": "3 Rounds",
+              "range": "30 feet"
             }
           ]
         },
@@ -101,19 +116,29 @@
               "name": "Mending Light (Modifies Heal)",
               "effect": "Your Heal ability now restores an additional 1d10 Vitality.",
               "resolve_cost": "N/A",
-              "duration": "N/A"
+              "duration": "N/A",
+              "range": "N/A"
             },
             {
               "name": "Mass Cleansing",
               "effect": "As a major action, you can remove one negative status effect from all allies within a 15-foot radius.",
               "resolve_cost": 10,
-              "duration": "Instantaneous"
+              "duration": "Instantaneous",
+              "range": "15-foot radius"
             },
             {
-              "name": "Beacon of Hope",
-              "effect": "Create a stationary beacon of light for 3 rounds. Allies who start their turn within 15 feet of it are immune to the 'Frightened' condition and regain 1d8 Resolve.",
-              "resolve_cost": 10,
-              "duration": "3 Rounds"
+              "name": "Guardian Spirit",
+              "effect": "Summon a spirit to protect an ally for 3 rounds. The first time that ally would be reduced to 0 Vitality, the attack is negated and they are healed for 4d10 Vitality.",
+              "resolve_cost": 15,
+              "duration": "3 Rounds",
+              "range": "30 feet"
+            },
+            {
+              "name": "Unwavering Faith",
+              "effect": "When you successfully heal an ally, they also gain a temporary shield that absorbs up to 10 points of damage until the end of the next round.",
+              "resolve_cost": 15,
+              "duration": "1 Round",
+              "range": "30 feet"
             }
           ]
         },
@@ -122,21 +147,24 @@
           "talents": [
             {
               "name": "Elysian Aegis (Modifies Divine Ward)",
-              "effect": "You can choose to expend 5 points of your own Resolve to use your Divine Ward ability on two allies simultaneously.",
-              "resolve_cost": 5,
-              "duration": "N/A"
+              "effect": "You can now use your Divine Ward on any ally within 30 feet.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
             },
             {
-              "name": "Unwavering Faith",
-              "effect": "When you successfully heal an ally, they also gain a temporary shield that absorbs up to 5 points of damage until the end of the next round.",
+              "name": "Greater Restoration",
+              "effect": "As a major action, you touch an ally and can end one of the following effects: one level of exhaustion, one curse, or any reduction to one of their attribute scores.",
               "resolve_cost": 15,
-              "duration": "1 Round"
+              "duration": "Instantaneous",
+              "range": "Touch"
             },
             {
-              "name": "Guardian Spirit",
-              "effect": "Summon a spirit to protect an ally for 3 rounds. The first time that ally would be reduced to 0 Vitality, the attack is negated and they are healed for 4d10 Vitality.",
+              "name": "Revivify",
+              "effect": "Once per day, as a major action, you can touch an ally who has died within the last minute. They return to life with 1 Vitality.",
               "resolve_cost": 15,
-              "duration": "3 Rounds"
+              "duration": "Instantaneous",
+              "range": "Touch"
             }
           ]
         },
@@ -145,15 +173,17 @@
           "talents": [
             {
               "name": "Sanctified Ground (Ultimate)",
-              "effect": "As a major action, you consecrate a 10-foot radius area for the duration of the combat. All allies within this area gain a +1 bonus to their Spirit and their Resolve is restored by 1 point at the start of each of their turns. This ability can be used once per day.",
+              "effect": "As a major action, you consecrate a 10-foot radius area for the duration of the combat. All allies within this area gain a +1 bonus to their Spirit and their Resolve is restored by 1d4 at the start of each of their turns. This ability can be used once per day.",
               "resolve_cost": 20,
-              "duration": "Entire Combat"
+              "duration": "Entire Combat",
+              "range": "30 feet"
             },
             {
               "name": "Divine Intervention (Ultimate)",
               "effect": "You restore the Vitality of all allies within 60 feet to full and cleanse all negative status effects. The effect is instantaneous and usable once per day.",
               "resolve_cost": 20,
-              "duration": "Instantaneous"
+              "duration": "Instantaneous",
+              "range": "60-foot radius"
             }
           ]
         }
@@ -170,25 +200,36 @@
               "name": "Sacred Strike",
               "effect": "As a major action, you make a melee attack imbued with light magic, dealing 1d8 light damage instead of physical. This attack uses your Spirit attribute.",
               "resolve_cost": 0,
-              "duration": "Instantaneous"
+              "duration": "Instantaneous",
+              "range": "Melee"
             },
             {
               "name": "Divine Barrier",
               "effect": "As a reaction when you are attacked, you can create a temporary shield of holy energy that grants you a +2 bonus to your defense roll.",
               "resolve_cost": 1,
-              "duration": "1 Roll"
+              "duration": "1 Roll",
+              "range": "Self"
             },
             {
               "name": "Searing Bolt",
               "effect": "Hurl a bolt of light at a single target, dealing 1d10 light damage.",
               "resolve_cost": 5,
-              "duration": "Instantaneous"
+              "duration": "Instantaneous",
+              "range": "60 feet"
             },
             {
               "name": "Weapon of Faith",
               "effect": "As a bonus action, imbue a weapon with divine light. For 3 rounds, the weapon deals an additional 1d6 light damage on a successful hit.",
               "resolve_cost": 1,
-              "duration": "3 Rounds"
+              "duration": "3 Rounds",
+              "range": "Touch"
+            },
+            {
+              "name": "Resolute Will (Passive)",
+              "effect": "You have Advantage on checks to resist being 'Frightened'.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
             }
           ]
         },
@@ -197,21 +238,31 @@
           "talents": [
             {
               "name": "Aura of Retribution",
-              "effect": "As a major action, you create an aura of divine judgment. Any enemy that hits you with a melee attack takes 1d6 light damage.",
+              "effect": "As a major action, you create an aura of divine judgment. For 3 rounds, any enemy that hits you with a melee attack takes 1d6 light damage.",
               "resolve_cost": 5,
-              "duration": "3 Rounds"
-            },
-            {
-              "name": "Resolute Will",
-              "effect": "You have Advantage on checks to resist mind-altering or possession effects, especially those from chaotic or draconic sources.",
-              "resolve_cost": 0,
-              "duration": "Passive"
+              "duration": "3 Rounds",
+              "range": "Self"
             },
             {
               "name": "Radiant Burst",
               "effect": "Release a burst of light. All creatures in a 15-foot radius around you take 2d6 light damage and have a -2 penalty to their next attack roll.",
               "resolve_cost": 5,
-              "duration": "1 Roll"
+              "duration": "1 Roll",
+              "range": "15-foot radius"
+            },
+            {
+              "name": "Turn the Unholy",
+              "effect": "As a major action, each Undead or Fiend that can see or hear you within 30 feet of you must make a Spirit DC 13 check. If the creature fails, it is turned for 1 minute or until it takes damage.",
+              "resolve_cost": 10,
+              "duration": "1 Minute",
+              "range": "30 feet"
+            },
+            {
+              "name": "Blinding Light",
+              "effect": "As a major action, you unleash a flash of light. Enemies in a 15-foot cone must make a Mind DC 13 check or be 'Blinded' for 1 round.",
+              "resolve_cost": 5,
+              "duration": "1 Round",
+              "range": "15-foot cone"
             }
           ]
         },
@@ -219,22 +270,32 @@
           "tier": "Expert (Level 10+)",
           "talents": [
             {
-              "name": "Blinding Light (Modifies Sacred Strike)",
-              "effect": "Your Sacred Strike now has a chance to blind the target. On a successful hit, the target must make a Mind DC 14 check or be Blinded for 1 round.",
-              "resolve_cost": 10,
-              "duration": "1 Round"
-            },
-            {
               "name": "Searing Light",
               "effect": "As a major action, you unleash a bolt of pure energy at a single target, dealing 3d10 light damage.",
               "resolve_cost": 10,
-              "duration": "Instantaneous"
+              "duration": "Instantaneous",
+              "range": "60 feet"
             },
             {
               "name": "Aura of Censure",
               "effect": "For 3 rounds, you project a 15-foot aura. Any enemy that starts their turn inside the aura takes 1d10 light damage.",
               "resolve_cost": 10,
-              "duration": "3 Rounds"
+              "duration": "3 Rounds",
+              "range": "15-foot radius"
+            },
+            {
+              "name": "Pillar of Judgment",
+              "effect": "As a major action, you call down a pillar of searing light from the heavens on a single target. It deals 4d10 light damage.",
+              "resolve_cost": 15,
+              "duration": "Instantaneous",
+              "range": "90 feet"
+            },
+            {
+              "name": "Sanctified Smite (Modifies Sacred Strike)",
+              "effect": "When you use Sacred Strike, you can expend 5 Resolve to deal an additional 2d8 light damage.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
             }
           ]
         },
@@ -242,22 +303,25 @@
           "tier": "Master (Level 15+)",
           "talents": [
             {
-              "name": "Pillar of Judgment",
-              "effect": "As a major action, you call down a pillar of searing light from the heavens. All enemies in a 15-foot radius take 4d10 light damage.",
-              "resolve_cost": 15,
-              "duration": "Instantaneous"
-            },
-            {
-              "name": "Righteous Vengeance",
+              "name": "Righteous Vengeance (Reaction)",
               "effect": "When an enemy reduces an ally to 0 Vitality, you can use your reaction to make an immediate Sacred Strike against that enemy with advantage.",
-              "resolve_cost": 0,
-              "duration": "Instantaneous"
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "Melee"
             },
             {
-              "name": "Sanctified Smite",
-              "effect": "As a major action, you make a single attack with a bonus of 3d10 light damage. This attack automatically hits and ignores all of the target's non-magical Damage Reduction.",
+              "name": "Angel's Wings",
+              "effect": "As a bonus action, you can manifest wings of pure light, gaining a flying speed of 60 feet for 1 minute.",
               "resolve_cost": 15,
-              "duration": "Instantaneous"
+              "duration": "1 Minute",
+              "range": "Self"
+            },
+            {
+              "name": "Divine Judgment",
+              "effect": "A searing beam deals 2d10 radiant damage to a target and prevents them from taking a reaction until your next turn.",
+              "resolve_cost": 10,
+              "duration": "1 Round",
+              "range": "60 feet"
             }
           ]
         },
@@ -268,13 +332,15 @@
               "name": "Smite the Unholy (Ultimate)",
               "effect": "As a major action, you unleash a torrent of holy judgment. This deals 6d12 light damage to all enemies you can see, and they must succeed on a Spirit DC 18 check or be Stunned for 1 round. This can only be used once per day.",
               "resolve_cost": 20,
-              "duration": "Instantaneous"
+              "duration": "Instantaneous",
+              "range": "Sight"
             },
             {
-              "name": "Wrath of the Heavens (Ultimate)",
-              "effect": "Deals 6d12 light damage to all enemies you can see and they must make a Spirit DC 18 check or be 'Stunned' for 1 round. Usable once per day.",
+              "name": "Avatar of Order (Ultimate)",
+              "effect": "As a major action, you become a conduit for pure order. For 1 minute, you are immune to all damage from 'chaotic' or 'draconic' sources, and your weapon attacks deal an additional 2d10 light damage. This can only be used once per day.",
               "resolve_cost": 20,
-              "duration": "Instantaneous"
+              "duration": "1 Minute",
+              "range": "Self"
             }
           ]
         }
