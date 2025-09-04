@@ -171,14 +171,14 @@
           "tier": "Archon (Level 20)",
           "talents": [
             {
-              "name": "Hurricane (Ultimate)",
-              "effect": "As a major action, you summon a massive hurricane in a 40-foot radius that lasts for 3 rounds. When cast, enemies take 4d10 bludgeoning damage and are pushed 20 feet from the center. At the start of your subsequent turns, you can call down lightning on any single target within the storm, dealing an additional 4d10 lightning damage. This can only be used once per day.",
+              "name": "Verdant Tempest (Ultimate)",
+              "effect": "As a major action, you summon a massive hurricane of leaves and thorns in a 40-foot radius that lasts for 3 rounds. When cast, enemies take 4d10 bludgeoning damage and are pushed 20 feet from the center. At the start of your subsequent turns, you can call down lightning on any single target within the storm, dealing an additional 4d10 lightning damage. This can only be used once per day.",
               "resolve_cost": 20,
               "duration": "3 Rounds",
               "range": "120 feet"
             },
             {
-              "name": "Cataclysm (Ultimate)",
+              "name": "Wrath of the Wilds (Ultimate)",
               "effect": "For 1 minute, you create an aura of chaotic elemental energy in a 40-foot radius around you. At the start of each of your turns, all enemies in the aura take 3d10 damage (type chosen by you each turn) and all allies regain 1d10 Vitality. This can only be used once per day.",
               "resolve_cost": 20,
               "duration": "1 Minute",
