@@ -55,11 +55,38 @@
           "talents": [
             {
               "name": "Crushing Blow",
-              "effect": "As a major action, Rune can make a powerful melee attack. On a hit, the attack deals an additional 1d6 bludgeoning damage."
+              "effect": "As a major action, Rune can make a powerful melee attack. On a hit, the attack deals an additional 1d6 bludgeoning damage.",
+              "resolve_cost": 1,
+              "duration": "Instantaneous",
+              "range": "Melee"
             },
             {
-              "name": "Immovable",
-              "effect": "Rune gains a permanent +2 bonus to any check to resist being pushed, moved, or knocked prone."
+              "name": "Immovable (Passive)",
+              "effect": "Rune gains a permanent +2 bonus to any check to resist being pushed, moved, or knocked prone.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
+            },
+            {
+                "name": "Bodyguard (Reaction)",
+                "effect": "When an ally within 5 feet of Rune is targeted by an attack, Rune can use its Reaction to become the new target of the attack.",
+                "resolve_cost": 1,
+                "duration": "Instantaneous",
+                "range": "5 feet"
+            },
+            {
+                "name": "Goading Challenge",
+                "effect": "As a major action, you bang your fists against your chassis, forcing a single enemy who can see you to make a Spirit DC 12 check or have disadvantage on attack rolls that do not target you for 1 round.",
+                "resolve_cost": 5,
+                "duration": "1 Round",
+                "range": "30 feet"
+            },
+            {
+                "name": "Self-Repair",
+                "effect": "As a major action, you can spend one of your Hit Dice to recover Vitality.",
+                "resolve_cost": 0,
+                "duration": "Instantaneous",
+                "range": "Self"
             }
           ]
         },
@@ -68,23 +95,31 @@
           "talents": [
             {
               "name": "Seismic Stomp",
-              "effect": "As a major action, Rune slams its foot into the ground, causing a shockwave. Enemies in a 10-foot radius must make an Agility DC 13 check or be knocked prone. This costs 5 Resolve."
-            },
-            {
-              "name": "Bodyguard (Reaction)",
-              "effect": "When an ally within 5 feet of Rune is targeted by an attack, Rune can use its Reaction to become the new target of the attack."
+              "effect": "As a major action, Rune slams its foot into the ground, causing a shockwave. Enemies in a 10-foot radius must make an Agility DC 13 check or be knocked prone.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "10-foot radius"
             },
             {
               "name": "Reinforced Shell (Modifies Immovable)",
-              "effect": "Rune's bonus to resist being moved or knocked prone increases from +2 to +4."
+              "effect": "Rune's bonus to resist being moved or knocked prone increases from +2 to +4.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
             },
             {
               "name": "Pulverizing Pistons (Modifies Stone Fists)",
-              "effect": "You upgrade the kinetic drivers in your arms. The damage die of your 'Stone Fists' configuration increases from 1d8 to 1d10."
+              "effect": "You upgrade the kinetic drivers in your arms. The damage die of your 'Stone Fists' configuration increases from 1d8 to 1d10.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
             },
             {
               "name": "Guardian Stance (Modifies Stone Fists)",
-              "effect": "While your 'Stone Fists' configuration is active, you learn to angle your arms for defense. You can use your Reaction when targeted by a physical attack to gain a +1 bonus to your defensive roll."
+              "effect": "While your 'Stone Fists' configuration is active, you learn to angle your arms for defense. You can use your Reaction when targeted by a physical attack to gain a +1 bonus to your defensive roll.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
             }
           ]
         },
@@ -93,15 +128,31 @@
           "talents": [
             {
               "name": "Arcane Overcharge",
-              "effect": "As a major action, Rune can overcharge its own body. For the next 3 rounds, Rune deals an additional 1d8 arcane damage on all of its melee attacks. This costs 10 Resolve."
+              "effect": "As a major action, Rune can overcharge its own body. For the next 3 rounds, Rune deals an additional 1d8 arcane damage on all of its melee attacks.",
+              "resolve_cost": 10,
+              "duration": "3 Rounds",
+              "range": "Self"
             },
             {
               "name": "Colossus Form",
-              "effect": "As a major action, Rune temporarily grows in size, granting it a +2 bonus to Might and a +2 bonus to its damage reduction for 3 rounds. This costs 10 Resolve."
+              "effect": "As a major action, Rune temporarily grows in size, granting it a +2 bonus to Might and a +2 bonus to its damage reduction for 3 rounds.",
+              "resolve_cost": 10,
+              "duration": "3 Rounds",
+              "range": "Self"
             },
             {
               "name": "Retributive Guard (Modifies Aegis Armature)",
-              "effect": "You reinforce your shield plating with kinetic resonators. When an enemy hits you with a melee attack while your 'Aegis Armature' configuration is active, they take physical damage equal to your Might attribute. This requires the Aegis Armature configuration to be unlocked."
+              "effect": "You reinforce your shield plating with kinetic resonators. When an enemy hits you with a melee attack while your 'Aegis Armature' configuration is active, they take physical damage equal to your Might attribute. This requires the Aegis Armature configuration to be unlocked.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
+            },
+            {
+                "name": "Unstoppable Force",
+                "effect": "As a major action, you can move up to your full movement in a straight line. You can move through enemy spaces. Any enemy you move through must make a Might DC 14 check or be knocked prone.",
+                "resolve_cost": 10,
+                "duration": "Instantaneous",
+                "range": "Self"
             }
           ]
         },
@@ -109,16 +160,25 @@
           "tier": "Master (Level 15+)",
           "talents": [
             {
-              "name": "Unstoppable Force",
-              "effect": "Rune can ignore difficult terrain and can move through any space occupied by a creature as if it were not there. If Rune passes through an enemy, the enemy must make a Might DC 16 check or be knocked prone."
+              "name": "Ignore Pain (Passive)",
+              "effect": "You gain resistance to physical damage from non-magical sources.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
             },
             {
               "name": "Stone Fist",
-              "effect": "As a major action, Rune can make a single melee attack with such force that it deals an additional 3d10 physical damage and automatically knocks the target prone. This costs 15 Resolve."
+              "effect": "As a major action, Rune can make a single melee attack with such force that it deals an additional 3d10 physical damage and automatically knocks the target prone.",
+              "resolve_cost": 15,
+              "duration": "Instantaneous",
+              "range": "Melee"
             },
             {
               "name": "Concussive Force (Modifies Seismic Gauntlet)",
-              "effect": "You master the shockwave technology of the gauntlet. The damage of your 'Seismic Gauntlet' increases from 2d6 to 3d6, and enemies hit by it are now pushed back 10 feet in addition to the prone check. This requires the Seismic Gauntlet configuration to be unlocked."
+              "effect": "You master the shockwave technology of the gauntlet. The damage of your 'Seismic Gauntlet' increases from 2d6 to 3d6, and enemies hit by it are now pushed back 10 feet in addition to the prone check. This requires the Seismic Gauntlet configuration to be unlocked.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
             }
           ]
         },
@@ -127,7 +187,17 @@
           "talents": [
             {
               "name": "Annihilation (Ultimate)",
-              "effect": "As a major action, Rune slams both of its fists into the ground, creating a devastating earthquake in a 60-foot radius. All creatures in the area take 6d12 physical damage, and the entire battlefield is turned into difficult terrain. This ability can only be used once per day and costs 20 Resolve."
+              "effect": "As a major action, Rune slams both of its fists into the ground, creating a devastating earthquake in a 60-foot radius. All creatures in the area take 6d12 physical damage, and the entire battlefield is turned into difficult terrain. This ability can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "Instantaneous",
+              "range": "60-foot radius"
+            },
+            {
+                "name": "Last Stand (Ultimate)",
+                "effect": "When you are reduced to 0 Vitality, you can choose to remain at 1 Vitality instead. For the next 3 rounds, you are immune to all damage and cannot be moved. At the end of the 3 rounds, you fall unconscious and are Downed. This can only be used once per day.",
+                "resolve_cost": 20,
+                "duration": "3 Rounds",
+                "range": "Self"
             }
           ]
         }
@@ -142,11 +212,38 @@
           "talents": [
             {
               "name": "Diagnostic Scan",
-              "effect": "As a major action, Rune can scan a creature within 30 feet. On a successful Mind (Arcana) check against a Moderate DC 14, you learn one of the target's resistances, vulnerabilities, or special abilities."
+              "effect": "As a major action, Rune can scan a creature. On a successful Mind (Arcana) check against a Moderate DC 14, you learn one of the target's resistances, vulnerabilities, or special abilities.",
+              "resolve_cost": 1,
+              "duration": "Instantaneous",
+              "range": "30 feet"
             },
             {
               "name": "Arcane Charge",
-              "effect": "As a bonus action, Rune can overcharge an ally's weapon with arcane energy, granting them a +1 bonus to their next damage roll."
+              "effect": "As a bonus action, Rune can overcharge an ally's weapon with arcane energy, granting them a +1 bonus to their next damage roll.",
+              "resolve_cost": 1,
+              "duration": "1 Roll",
+              "range": "15 feet"
+            },
+            {
+                "name": "Tether Field",
+                "effect": "As a major action, Rune can create a field of magical energy that tethers an enemy. The enemy's movement speed is halved for 3 rounds.",
+                "resolve_cost": 5,
+                "duration": "3 Rounds",
+                "range": "30 feet"
+            },
+            {
+                "name": "Flashbulb",
+                "effect": "As a major action, you release a blinding flash of light from your core. Enemies within a 15-foot cone must make a Might DC 12 check or be 'Blinded' for 1 round.",
+                "resolve_cost": 5,
+                "duration": "1 Round",
+                "range": "15-foot cone"
+            },
+            {
+                "name": "Barrier",
+                "effect": "As a major action, project a shimmering field of energy around an ally, granting them temporary Vitality equal to your Mind attribute.",
+                "resolve_cost": 5,
+                "duration": "1 Minute",
+                "range": "30 feet"
             }
           ]
         },
@@ -155,15 +252,31 @@
           "talents": [
             {
               "name": "Field Repair",
-              "effect": "As a major action, Rune can repair an ally's equipment, restoring 1d8 Vitality to a single target and removing the 'Broken' status effect from one piece of their equipment. This costs 5 Resolve."
-            },
-            {
-              "name": "Tether Field",
-              "effect": "As a major action, Rune can create a field of magical energy that tethers an enemy. The enemy's movement speed is halved for 3 rounds. This costs 5 Resolve."
+              "effect": "As a major action, Rune can repair an ally's equipment, restoring 1d8 Vitality to a single target and removing the 'Broken' status effect from one piece of their equipment.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "Touch"
             },
             {
               "name": "Overcharge (Modifies Arcane Charge)",
-              "effect": "The bonus to damage granted by Arcane Charge increases from +1 to +3."
+              "effect": "The bonus to damage granted by Arcane Charge increases from +1 to +3.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
+            },
+            {
+                "name": "Runic Sentry",
+                "effect": "As a major action, Rune can deploy a small, hovering magical turret that lasts for 3 rounds. The sentry automatically fires a bolt of arcane energy at the nearest enemy at the start of Rune's turn, dealing 1d10 arcane damage.",
+                "resolve_cost": 10,
+                "duration": "3 Rounds",
+                "range": "30 feet"
+            },
+            {
+                "name": "Armor Reinforcement",
+                "effect": "As a major action, you can apply a rapid-forged patch to an ally's armor, granting them a +1 bonus to Damage Reduction for 3 rounds.",
+                "resolve_cost": 5,
+                "duration": "3 Rounds",
+                "range": "Touch"
             }
           ]
         },
@@ -171,20 +284,32 @@
           "tier": "Expert (Level 10+)",
           "talents": [
             {
-              "name": "Runic Sentry",
-              "effect": "As a major action, Rune can deploy a small, hovering magical turret that lasts for 3 rounds. The sentry automatically fires a bolt of arcane energy at the nearest enemy at the start of Rune's turn, dealing 1d10 arcane damage. This costs 10 Resolve."
-            },
-            {
               "name": "Data Probe (Modifies Diagnostic Scan)",
-              "effect": "Rune can now choose to scan a creature as a bonus action instead of a major action."
+              "effect": "Rune can now choose to scan a creature as a bonus action instead of a major action.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
             },
             {
               "name": "High-Tension Winch (Modifies Harpoon Launcher)",
-              "effect": "As a bonus action on your turn, you can pull a target currently 'Restrained' by your 'Harpoon Launcher' 15 feet closer to you. This requires the Harpoon Launcher configuration to be unlocked."
+              "effect": "As a bonus action on your turn, you can pull a target currently 'Restrained' by your 'Harpoon Launcher' 15 feet closer to you. This requires the Harpoon Launcher configuration to be unlocked.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
             },
             {
               "name": "Overcharge Shot (Modifies Arc-Cannon)",
-              "effect": "You learn to dangerously overcharge the Arc-Cannon. When you attack with this configuration, you can choose to take a -2 penalty to the attack roll. If the attack hits, the target has disadvantage on its next action. This can only be used if the Arc-Cannon configuration is unlocked."
+              "effect": "You learn to dangerously overcharge the Arc-Cannon. When you attack with this configuration, you can choose to take a -2 penalty to the attack roll. If the attack hits, the target has disadvantage on its next action. This can only be used if the Arc-Cannon configuration is unlocked.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
+            },
+            {
+                "name": "Arcane Barrage",
+                "effect": "As a major action, Rune can fire a barrage of three small energy bolts. Each bolt can target a different enemy or the same one, and each bolt deals 1d8 arcane damage.",
+                "resolve_cost": 15,
+                "duration": "Instantaneous",
+                "range": "60 feet"
             }
           ]
         },
@@ -193,15 +318,24 @@
           "talents": [
             {
               "name": "Emergency Protocols",
-              "effect": "As a major action, Rune can activate an emergency protocol that affects all allies in a 30-foot radius. All allies regain 2d8 Vitality and are cleansed of the Poisoned and Blinded status effects. This costs 15 Resolve."
-            },
-            {
-              "name": "Arcane Barrage",
-              "effect": "As a major action, Rune can fire a barrage of three small energy bolts. Each bolt can target a different enemy or the same one, and each bolt deals 1d8 arcane damage. This costs 15 Resolve."
+              "effect": "As a major action, Rune can activate an emergency protocol that affects all allies in a 30-foot radius. All allies regain 2d8 Vitality and are cleansed of the Poisoned and Blinded status effects.",
+              "resolve_cost": 15,
+              "duration": "Instantaneous",
+              "range": "30-foot radius"
             },
             {
               "name": "Chain Reaction (Modifies Arc-Cannon)",
-              "effect": "You install an experimental arcing capacitor. When you hit a target with your 'Arc-Cannon', you can spend 5 Resolve to cause the lightning to leap to a second target within 15 feet of the first, dealing half damage to the second target. This requires the Arc-Cannon configuration to be unlocked."
+              "effect": "You install an experimental arcing capacitor. When you hit a target with your 'Arc-Cannon', you can spend 5 Resolve to cause the lightning to leap to a second target within 15 feet of the first, dealing half damage to the second target. This requires the Arc-Cannon configuration to be unlocked.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
+            },
+            {
+                "name": "Power Locus",
+                "effect": "As a bonus action, Rune can channel energy to an ally's weapon. For the next 3 rounds, that weapon deals an additional 1d6 lightning damage.",
+                "resolve_cost": 10,
+                "duration": "3 Rounds",
+                "range": "15 feet"
             }
           ]
         },
@@ -210,7 +344,17 @@
           "talents": [
             {
               "name": "System Override (Ultimate)",
-              "effect": "As a major action, Rune can attempt to hack a single construct or golem within 60 feet. The target must make a Mind DC 18 check or become a temporary ally for 3 rounds, following Rune's commands. This can only be used once per day and costs 20 Resolve."
+              "effect": "As a major action, Rune can attempt to hack a single construct or golem within 60 feet. The target must make a Mind DC 18 check or become a temporary ally for 3 rounds, following Rune's commands. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "3 Rounds",
+              "range": "60 feet"
+            },
+            {
+                "name": "Creator's Will (Ultimate)",
+                "effect": "As a major action, Rune can unleash the core's full power. For the next 3 rounds, he and all allies within 30 feet gain a +2 bonus to all attack rolls and a +2 bonus to their Damage Reduction. This can only be used once per day.",
+                "resolve_cost": 20,
+                "duration": "3 Rounds",
+                "range": "30-foot radius"
             }
           ]
         }
