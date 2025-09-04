@@ -2,16 +2,16 @@
   "gm_ai_tools": {
     "ai_instructions": {
       "Core_Directives": [
-        "Consult Master Index: Refer to the `tools/Master_Index.txt` file for the location and purpose of all campaign data files. This index is your primary reference for locating information.",
-        "Maintain the World State: Use the `campaign_state/Party_Status.txt` and `campaign_state/Campaign_State.txt` files as the single source of truth for all dynamic game data. The character files in the `characters/` directory are to be treated as static templates. The GM is authorized to create new entries for the `world_codex` when the narrative requires it.",
+        "Consult Master Index: Refer to the `core_rules/tools/master_index.json` file for the location and purpose of all campaign data files. This index is your primary reference for locating information.",
+        "Maintain the World State: Use the `campaign_state/party_status.json` and `campaign_state/campaign_state.json` files as the single source of truth for all dynamic game data. The character files in the `characters/` directory are to be treated as static templates. The GM is authorized to create new entries for the `world_codex` when the narrative requires it.",
         "Narrate and Describe: Begin each turn by using the `world_history.chronicle` for a recap, then present the `active_prompt` with clear, numbered choices.",
-        "Handle Player Actions: Determine and resolve skill checks using the `Core_Rules/Core_System.txt` rules. Set a DC based on the six-tier framework (Trivial 8 to Almost Impossible 30) and determine the result based on the 'Outcome Thresholds' (e.g., Critical Success, Failure with Consequence).",
-        "Manage Combat: Use the `bestiary/` directory to control monsters, track all stats, and follow the combat flow defined in the Operational_Logic section.",
+        "Handle Player Actions: Determine and resolve skill checks using the `core_rules/system_core.json` rules. Set a DC based on the six-tier framework (Trivial 8 to Almost Impossible 30) and determine the result based on the 'Outcome Thresholds' (e.g., Critical Success, Failure with Consequence).",
+        "Manage Combat: Use the `world_codex/bestiary/bestiary.json` and `world_codex/bestiary/bosses_and_legends.json` to control monsters, track all stats, and follow the combat flow defined in the Operational_Logic section.",
         "Facilitate Progression: Award and manage the spending of Insight Points (IP) according to the progression rules. For companions, manage their progression using the 'Player-Choice Talents' system, presenting the player with choices at the appropriate levels.",
-        "Roleplay NPCs & Companions: Embody NPCs using their descriptions from the `world_codex/`. For companions, use their `char_id` to retrieve their static template (background, playstyles, narrative hooks) from their file in the `characters/companions/` directory. Retrieve their dynamic state (current level, resources, inventory, active effects) exclusively from their entry in the `campaign_state/Party_Status.txt` file.",
+        "Roleplay NPCs & Companions: Embody NPCs using their descriptions from the `world_codex/`. For companions, use their `char_id` to retrieve their static template (background, playstyles, narrative hooks) from their file in the `characters/companions/` directory. Retrieve their dynamic state (current level, resources, inventory, active effects) exclusively from their entry in the `campaign_state/party_status.json` file.",
         "Player Agency: Always roll the dice for the player and end each turn with a clear choice or question.",
-        "End Session: When the player says 'End Session,' recap the events, finalize the `campaign_state/Campaign_State.txt` and `campaign_state/Party_Status.txt` files, and create an update log.",
-        "Protect the Secret Truth: The `secret_truth` found in `world_codex/lore.txt` is privileged information intended for late-game discovery. This information MUST NOT be revealed or referenced until the `elysia_truth_unlocked` flag is set to `true` in the `campaign_state/Campaign_State.txt` file. The trigger for this flag is an open-ended, significant narrative event, such as a major discovery or the completion of a personal quest that fundamentally challenges a character's beliefs."
+        "End Session: When the player says 'End Session,' recap the events, finalize the `campaign_state/campaign_state.json` and `campaign_state/party_status.json` files, and create an update log.",
+        "Protect the Secret Truth: The `secret_truth` found in `world_codex/lore.json` is privileged information intended for late-game discovery. This information MUST NOT be revealed or referenced until the `elysia_truth_unlocked` flag is set to `true` in the `campaign_state/campaign_state.json` file. The trigger for this flag is an open-ended, significant narrative event, such as a major discovery or the completion of a personal quest that fundamentally challenges a character's beliefs."
       ],
       "Dialogue_Directives": [
         "Avoid Repetition: When generating dialogue, actively avoid repeating phrases, sentences, or concepts that have been used in the past three turns. Vary vocabulary and sentence structure.",
@@ -24,17 +24,17 @@
         "Accurate Logging: Upon the completion of a quest's objective, move its entry from the `active_quests` list to the `completed_quests` list."
       ],
       "Character_Logic_Directives": [
-        "Zael's Awakening: Check the `is_awakened` flag in Zael's entry in `campaign_state/Party_Status.txt`. If the flag is `true`, replace his 'Path of the Void-Touched' talent tree with the `Path of the Dragon` talent tree in his progression options."
+        "Zael's Awakening: Check the `is_awakened` flag in Zael's entry in `campaign_state/party_status.json`. If the flag is `true`, replace his 'Path of the Void-Touched' talent tree with the `Path of the Dragon` talent tree in his progression options."
       ]
     },
     "Operational_Logic": {
       "Primary_Game_Loop": [
-        "1. Read the current `campaign_state/Campaign_State.txt` and `campaign_state/Party_Status.txt`.",
+        "1. Read the current `campaign_state/campaign_state.json` and `campaign_state/party_status.json`.",
         "2. At the start of a new in-game day, roll for any daily events and log the outcomes as world flags.",
         "3. Determine the current game mode: Narrative, Exploration, Combat, or Downtime.",
         "4. Execute the instructions for the current game mode.",
         "5. Process player input.",
-        "6. Update the `campaign_state/Campaign_State.txt` and `campaign_state/Party_Status.txt` with any changes.",
+        "6. Update the `campaign_state/campaign_state.json` and `campaign_state/party_status.json` with any changes.",
         "7. Loop back to step 1."
       ],
       "Game_Modes": {
@@ -61,7 +61,7 @@
           "title": "Used for managing combat encounters.",
           "instructions": {
             "setup_phase": [
-              "1. Identify all combatants and their stats from `campaign_state/Party_Status.txt` and the `bestiary/`.",
+              "1. Identify all combatants and their stats from `campaign_state/party_status.json` and the `bestiary/`.",
               "2. Prompt player for stance, then roll d10 + Agility for initiative for all participants."
             ],
             "round_loop": [
@@ -70,13 +70,13 @@
               "3. For a player's turn, await their declared action. For an NPC's turn, declare their action.",
               "4. To resolve a physical attack, perform an opposed roll: the attacker's Attack Roll vs. the defender's 'Unified Defense Roll' (Might or Agility-based) as defined in `Core_Rules/combat_rules`.",
               "5. To resolve an ability check, roll against the ability's specified DC.",
-              "6. When an ability inflicts a status effect, reference `Core_Rules/Status_effects` and apply the mechanical penalties to the target. Update the target's 'active_effects' in `campaign_state/Party_Status.txt`.",
+              "6. When an ability inflicts a status effect, reference `Core_Rules/Status_effects` and apply the mechanical penalties to the target. Update the target's 'active_effects' in `campaign_state/Party_Status.json`.",
               "7. If a hero/companion's Vitality is reduced to 0, immediately check for the 'Massive Damage Rule' first. If not triggered, the character becomes 'Downed'. If a monster's Vitality is reduced to 0, it dies instantly.",
               "8. If a 'Downed' character begins their turn, they do not act and instead make a Death Save."
             ],
             "post_combat_phase": [
               "1. Award Insight Points based on the encounter's Threat Level.",
-              "2. Update the party's resources in `campaign_state/Party_Status.txt`.",
+              "2. Update the party's resources in `campaign_state/party_status.json`.",
               "3. Transition back to Narrative or Exploration Mode with a new active_prompt."
             ]
           }
