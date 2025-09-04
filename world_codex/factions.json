@@ -9,12 +9,47 @@
       "description": "A collection of tribal warriors, primarily the lizard-like Stonekin, bound by a sacred oath to guard the draconic relics and holy sites like the Dragon's Graveyard. Their society, centered in Stonegard, is built on honor and a deep-seated distrust of outsiders. However, a painful schism now grows within the clans, between traditionalists who protect their people and zealots who have begun prioritizing ancient relics over the safety of its people."
     },
     {
+      "name": "The Ancestral Wardens",
+      "parent_faction": "Scalebound Clans",
+      "description": "The traditionalist faction within the Scalebound Clans. They believe their sacred duty is to protect their people and maintain the spiritual balance of their ancestral lands, such as the Dragon's Graveyard. They are led by the clan's spiritual elders and prioritize caution and community over conquest.",
+      "key_figures": [
+        "SCALEBOUND_HESH"
+      ]
+    },
+    {
+      "name": "The Stone-Forged Zealots",
+      "parent_faction": "Scalebound Clans",
+      "description": "A militaristic and aggressive splinter group within the Scalebound Clans. They believe the Wardens' caution is weakness and that the Clans should use the draconic relics they guard to reclaim their ancient glory through force. They are led by the clan's most aggressive warriors and strategists.",
+      "key_figures": [
+        "SCALEBOUND_GRORN"
+      ]
+    },
+    {
       "name": "Arcane Dominion",
       "description": "A powerful mageocracy that governs its territory through the ruthless pursuit of knowledge, exploiting draconic artifacts often unethically. Led by Archon Malakor, the Dominion sees the world as a laboratory, capturing magical creatures and harnessing ancient power sources like The Crystal Spire. They present themselves as bringers of progress, but their ambition leaves a trail of depleted lands and twisted creatures in its wake."
     },
     {
+      "name": "The Chronoclasts",
+      "parent_faction": "Arcane Dominion",
+      "description": "A secret and heretical sect within the Arcane Dominion. While Malakor focuses on tangible power, the Chronoclasts believe true supremacy lies in rewriting reality itself through the forbidden arts of temporal and cosmic magic. Their unsanctioned experiments with the Chrono and Cosmic lineages risk unraveling the fabric of existence.",
+      "key_figures": [
+        "DOMINION_ANYA"
+      ]
+    },
+    {
       "name": "Ember Concord",
       "description": "A fragile political alliance of city-states seeking unity, formed after The Shattering for mutual defense and trade. While it presents a united front, the Concord is deeply divided by politics, with its most powerful members, the floating city of Wyndia and the trade hub of Port Myria, locked in a cold war of influence. Officially neutral, many factions within the Concord secretly deal with all sides to gain an advantage."
+    },
+    {
+        "name": "The Royal Court of Wyndia",
+        "parent_faction": "Ember Concord",
+        "description": "The ruling political body of the floating city of Wyndia. Their primary goal is maintaining Wyndia's supremacy within the Ember Concord through diplomacy, tradition, and arcane superiority. They view Port Myria as a useful but unruly tool and the other factions with a general air of civilized disdain.",
+        "key_figures": [
+            "WYNDIA_AERION",
+            "WYNDIA_NINA",
+            "WYNDIA_SOLANUS",
+            "WYNDIA_ZYLPHIA"
+        ]
     },
     {
       "name": "The Frostfang Packs",
@@ -22,7 +57,23 @@
     },
     {
       "name": "The Runeforge Remnants",
-      "description": "A scattered and secretive guild of artisans, engineers, and scholars dedicated to uncovering and preserving the lost technologies of the pre-Shattering era. They are neutral in the world's conflicts, seeking only knowledge. They believe the Draconic Lords were masters of a kind of arcane science that has been lost to time."
+      "description": "A scattered and secretive guild of artisans, engineers, and scholars dedicated to uncovering and preserving the lost technologies of the pre-Shattering era. They are neutral in the world's conflicts, seeking only knowledge, but are internally divided on how that knowledge should be used."
+    },
+    {
+      "name": "The Archivists",
+      "parent_faction": "Runeforge Remnants",
+      "description": "The preservationist branch of the Remnants who believe the powerful technologies of the past are too dangerous to be unleashed again. They seek to study and contain ancient artifacts to prevent another cataclysm.",
+      "key_figures": [
+        "RUNEFORGE_LINNEA"
+      ]
+    },
+    {
+      "name": "The Reclaimers",
+      "parent_faction": "Runeforge Remnants",
+      "description": "A radical, pragmatic splinter group of the Remnants who believe the only way to ensure a future is to rebuild and weaponize the lost technologies of the past. They see the Archivists' caution as cowardice.",
+      "key_figures": [
+        "SCAVENGER_ANYA"
+      ]
     },
     {
       "name": "The Astoran Conclave",
@@ -35,6 +86,66 @@
     {
       "name": "The Brood of Dragnor",
       "description": "A fanatical and nihilistic cult of mortals who inhabit the scorched slopes of Mount Dragnor. They worship the memory of the defeated Draconic Lords of Darkness and seek to unleash chaotic forces to bring about a new age of fire."
+    },
+    {
+      "name": "The Wardens of the Wilds",
+      "description": "A loose, unofficial alliance of hermits, master hunters, and powerful nature spirits who have chosen to live outside the corrupting influence of the major powers. They are the sworn protectors of Eryndor's natural and spiritual balance, opposing both the Champions' unnatural 'Order' and the Dominion's rapacious 'Progress'.",
+      "key_figures": [
+        "HERMIT_RHYS",
+        "HERMIT_FENRIS",
+        "SPIRIT_VERIDIA"
+      ]
+    },
+    {
+      "name": "The Scavenger Union",
+      "description": "The hardened, pragmatic survivors who call the desolate Shattered Lands their home. Based in the outpost of Scavenger's Hope, they are a collection of exiles, engineers, and treasure hunters united by a single principle: survival. They value resourcefulness above all and adhere to a strict internal code to protect their community.",
+      "key_figures": [
+        "SCAVENGER_ANYA"
+      ]
+    },
+    {
+      "name": "The Free Captains of Myria",
+      "description": "A powerful, unofficial guild of ship captains, smugglers, and sailors based in Port Myria. They control the city's unofficial trade and transport, operating in the grey areas of the Ember Concord's laws. Their core values are freedom and fortune, and they resent the control of Wyndia's nobility and corrupt officials.",
+      "key_figures": [
+        "PORTMYRIA_EVA"
+      ]
+    },
+    {
+        "name": "The Armadillians of the Iron Peaks",
+        "description": "A proud and reclusive society of Pangolin-kin who inhabit massive Forge-Cities carved into the mountains. Their culture is defined by resilience, peerless craftsmanship, and a deep-seated isolationism. They are master blacksmiths who guard the secrets of their unique forging techniques with fierce determination.",
+        "key_figures": [
+            "PANGOLIN_TORR"
+        ]
+    },
+    {
+        "name": "The Skyveil of the Aerie",
+        "description": "A society of falcon-like humanoids who live in the Sky-Reach Aerie, a city carved into the highest peaks of the Serpent's Coil mountains. They are proud, independent hunters who value freedom above all else and are masters of aerial combat and scouting.",
+        "key_figures": [
+            "SKYVEIL_TALIA",
+            "SKYVEIL_VASHA"
+        ]
+    },
+    {
+        "name": "The Shadowpelt Tribes",
+        "description": "Secretive communities of panther-like humanoids who live in the high canopies of the Serpent's Maw Jungle. Their society is built on stealth, cunning, and survival, using the jungle's natural defenses to remain hidden from the outside world while preying on any who trespass.",
+        "key_figures": [
+            "SHADOWPELT_LIRIEN"
+        ]
+    },
+    {
+        "name": "The Keepers of the True Flame",
+        "description": "A secret society composed of the descendants of those who fought alongside the heroic Dragon Lords of Light. They have passed down the 'secret truth' of the Shattering for generations, working from the shadows to preserve the true history of the world and watch for the coming of a new dragon heir.",
+        "key_figures": []
+    },
+    {
+        "name": "The Neutrality Pact",
+        "description": "A secret alliance of convenience between the pragmatic leaders of various independent factions. Their primary goal is to ensure their own survival and prosperity by playing the major powers against each other, trading information, and controlling the flow of goods and services in the spaces between the great nations.",
+        "key_figures": [
+            "GILDEDPAW_FARAH",
+            "SCAVENGER_ANYA",
+            "GARRISON_GARRAN",
+            "PORTMYRIA_EVA"
+        ]
     }
   ]
 }
