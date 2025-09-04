@@ -41,7 +41,8 @@
           "talents": [
             {
               "name": "Frost Claw",
-              "effect": "Deals 1d10 physical damage. This attack deals an additional 1d10 damage if the target is within 5 feet of one of Kei's allies."
+              "effect": "Deals 1d10 physical damage. This attack deals an additional 1d10 damage if the target is within 5 feet of one of Kei's allies.",
+              "attack_profile": "Martial (Agility)"
             },
             {
               "name": "Hunter's Guile",
@@ -58,7 +59,8 @@
             },
             {
               "name": "Ambush",
-              "effect": "If you attack an enemy that has not yet taken a turn in combat, your first attack against them is made with Advantage and deals an extra 1d8 damage. This costs 5 Resolve."
+              "effect": "If you attack an enemy that has not yet taken a turn in combat, your first attack against them is made with Advantage and deals an extra 1d8 damage. This costs 5 Resolve.",
+              "attack_profile": "Martial (Agility)"
             }
           ]
         },
@@ -71,7 +73,8 @@
             },
             {
               "name": "Hamstring",
-              "effect": "You make a targeted strike at an enemy's legs. The attack deals normal damage, and the target must make a Might DC 14 check or have their movement speed halved for 3 rounds. This costs 10 Resolve."
+              "effect": "You make a targeted strike at an enemy's legs using the Martial (Agility) profile. The attack deals normal damage, and the target must make a Might DC 14 check or have their movement speed halved for 3 rounds. This costs 10 Resolve.",
+              "attack_profile": "Martial (Agility)"
             }
           ]
         },
@@ -112,7 +115,8 @@
             },
             {
               "name": "Harrier's Strike",
-              "effect": "As a major action, you make a melee attack. If it hits, the next attack made by an ally against that same target before your next turn is made with Advantage."
+              "effect": "As a major action, you make a melee attack using the Martial (Agility) profile. If it hits, the next attack made by an ally against that same target before your next turn is made with Advantage.",
+              "attack_profile": "Martial (Agility)"
             }
           ]
         },
