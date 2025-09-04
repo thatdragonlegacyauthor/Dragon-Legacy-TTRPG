@@ -3,7 +3,11 @@
   "char_id": "SKYVEIL_TALIA",
   "type": "Skyveil (Falcon-like humanoid)",
   "role": "Scout/Archer",
-  "background": "A young, hot-headed scout from the Sky-Reach Aerie. She left her isolationist home seeking adventure and to prove her worth. She is fiercely independent but loyal to those who earn her respect.",
+  "physical_description": "Talia's heritage as a Skyveil is evident in her every feature. Her sharp, predatory eyes, the color of a clear winter sky, sit above a prominent, hawk-like beak. Her hair is styled to resemble a falcon's crest, a vibrant shock of crimson and black. Her clothing is practical, a patchwork of leathers and furs that blend seamlessly into the mountain peaks.",
+  "background": "Talia was born on the highest peak of the Serpent's Coil Mountains, home to the proud, independent Skyveil people. She left her isolationist home seeking adventure and to track down a notorious Arcane Dominion captain who shot her down and left her for dead. Her personal quest for vengeance is intertwined with the fate of the world. She is fiercely independent and loyal to those who earn her respect.",
+  "voice": "A brisk, sharp alto that is used to giving orders and is rarely hesitant.",
+  "quirk": "When she is focused on a distant object, her head will unconsciously tilt to the side.",
+  "relationships": "She is on a personal quest for vengeance against an Arcane Dominion captain. She is a former student of Elder Vasha, the matriarch of the Skyveil.",
   "narrative_hook": "Talia is on a personal quest to track down a notorious Arcane Dominion captain who shot her down and left her for dead. This captain is a recurring antagonist who holds a valuable relic the party needs.",
   "weapon_proficiency": {
     "favored_types": [
@@ -38,11 +42,38 @@
           "talents": [
             {
               "name": "Called Shot",
-              "effect": "As a bonus action, you can take a -2 penalty to your next ranged attack roll. If the attack hits, you deal an additional 1d8 damage."
+              "effect": "As a bonus action, you can take a -2 penalty to your next ranged attack roll. If the attack hits, you deal an additional 1d8 damage.",
+              "resolve_cost": 1,
+              "duration": "1 Roll",
+              "range": "Weapon"
             },
             {
               "name": "Eagle Eye (Passive)",
-              "effect": "You do not suffer disadvantage on ranged attack rolls due to long range."
+              "effect": "You do not suffer disadvantage on ranged attack rolls due to long range.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
+            },
+            {
+              "name": "Sunder Arrow",
+              "effect": "As a major action, you fire a specialized arrowhead at a target. The attack deals normal damage, and the target's Damage Reduction is reduced by 2 for 1 round.",
+              "resolve_cost": 1,
+              "duration": "1 Round",
+              "range": "Weapon"
+            },
+            {
+              "name": "Hunter's Mark",
+              "effect": "As a bonus action, you can mark a creature you can see. You deal an additional 1d4 damage to the target whenever you hit it with a weapon attack.",
+              "resolve_cost": 1,
+              "duration": "1 Minute",
+              "range": "120 feet"
+            },
+            {
+              "name": "Keen Senses (Passive)",
+              "effect": "You have Advantage on Mind checks that rely on sight.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
             }
           ]
         },
@@ -51,11 +82,31 @@
           "talents": [
             {
               "name": "Pinning Shot",
-              "effect": "As a major action, you fire a special arrow at a target. The attack deals normal damage, and the target must make a Might DC 13 check or have their movement speed reduced to 0 for 1 round. This costs 5 Resolve."
+              "effect": "As a major action, you fire a special arrow at a target. The attack deals normal damage, and the target must make a Might DC 13 check or have their movement speed reduced to 0 for 1 round.",
+              "resolve_cost": 5,
+              "duration": "1 Round",
+              "range": "Weapon"
             },
             {
               "name": "Find the Mark (Modifies Called Shot)",
-              "effect": "The bonus damage from your Called Shot ability increases from 1d8 to 1d10."
+              "effect": "The bonus damage from your Called Shot ability increases from 1d8 to 1d10.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
+            },
+            {
+              "name": "Multi-shot",
+              "effect": "As a major action, you can make two ranged attacks at once. You can target the same creature or two different ones. Both attacks are made with a -1 penalty.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "Weapon"
+            },
+            {
+              "name": "Arcing Shot (Passive)",
+              "effect": "You can make ranged attacks against targets that are behind half or three-quarters cover by arcing your shot over the obstacle.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Weapon"
             }
           ]
         },
@@ -63,12 +114,32 @@
           "tier": "Expert (Level 10+)",
           "talents": [
             {
-              "name": "Arcing Shot",
-              "effect": "You can make ranged attacks against targets that are behind half or three-quarters cover by arcing your shot over the obstacle."
+              "name": "Rapid Fire",
+              "effect": "As a major action, you can make two ranged attacks instead of one, but both are made with a -2 penalty.",
+              "resolve_cost": 10,
+              "duration": "Instantaneous",
+              "range": "Weapon"
             },
             {
-              "name": "Rapid Fire",
-              "effect": "As a major action, you can make two ranged attacks instead of one, but both are made with a -2 penalty. This costs 10 Resolve."
+              "name": "Deadeye (Passive)",
+              "effect": "Your ranged attacks now score a critical hit on a roll of 9 or 10.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
+            },
+            {
+              "name": "Ricochet Shot",
+              "effect": "You can use your Reaction to redirect a missed ranged attack to a new target within 15 feet of the original. Make a new attack roll with a -2 penalty against the new target.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "15 feet"
+            },
+            {
+              "name": "Disarming Shot",
+              "effect": "When you critically hit with this weapon, the target must make a Might DC 14 check or drop one item they are holding.",
+              "resolve_cost": 0,
+              "duration": "Instantaneous",
+              "range": "Weapon"
             }
           ]
         },
@@ -76,12 +147,25 @@
           "tier": "Master (Level 15+)",
           "talents": [
             {
-              "name": "Deadeye (Passive)",
-              "effect": "Your ranged attacks now score a critical hit on a roll of 9 or 10."
+              "name": "Piercing Shot",
+              "effect": "As a major action, you fire an arrow that passes through enemies. Make a single attack roll against all enemies in a 30-foot line.",
+              "resolve_cost": 15,
+              "duration": "Instantaneous",
+              "range": "30-foot line"
             },
             {
-              "name": "Ricochet Shot",
-              "effect": "You can use your Reaction to redirect a missed ranged attack to a new target within 15 feet of the original. Make a new attack roll with a -2 penalty against the new target."
+              "name": "Hail of Arrows",
+              "effect": "As a major action, you can fire a volley of arrows into the sky. Choose a point within 120 feet. All creatures in a 20-foot radius of that point take 4d8 physical damage.",
+              "resolve_cost": 15,
+              "duration": "Instantaneous",
+              "range": "120 feet"
+            },
+            {
+              "name": "Overwatch (Reaction)",
+              "effect": "You can use your Reaction to make a ranged attack against an enemy that moves more than 10 feet within your weapon's range.",
+              "resolve_cost": 10,
+              "duration": "Until your next turn",
+              "range": "Weapon"
             }
           ]
         },
@@ -90,7 +174,17 @@
           "talents": [
             {
               "name": "True Shot (Ultimate)",
-              "effect": "As a major action, you can make a single, perfect shot. This attack automatically hits, is a guaranteed critical hit, and deals maximum possible damage. This can only be used once per day and costs 20 Resolve."
+              "effect": "As a major action, you can make a single, perfect shot. This attack automatically hits, is a guaranteed critical hit, and deals maximum possible damage. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "Instantaneous",
+              "range": "Weapon"
+            },
+            {
+              "name": "Death from Above (Ultimate)",
+              "effect": "As a major action, you can mark a 30-foot radius area you can see. At the start of your next turn, a devastating volley of arrows rains down, dealing 8d10 physical damage to all enemies within it. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "1 Round",
+              "range": "Sight"
             }
           ]
         }
@@ -104,12 +198,39 @@
           "tier": "Novice (Level 1+)",
           "talents": [
             {
-              "name": "Feather Fall",
-              "effect": "As a Reaction when you or an ally within 30 feet are falling, you can negate the falling damage."
+              "name": "Feather Fall (Reaction)",
+              "effect": "When you or an ally within 30 feet are falling, you can negate the falling damage.",
+              "resolve_cost": 1,
+              "duration": "Instantaneous",
+              "range": "30 feet"
             },
             {
               "name": "Gust",
-              "effect": "As a bonus action, you can unleash a small gust of wind at an adjacent enemy, pushing them 5 feet away. This does not deal damage."
+              "effect": "As a bonus action, you can unleash a small gust of wind at an adjacent enemy, pushing them 5 feet away. This does not deal damage.",
+              "resolve_cost": 1,
+              "duration": "Instantaneous",
+              "range": "5 feet"
+            },
+            {
+              "name": "Wing Buffet",
+              "effect": "As a major action, you beat your wings, creating a powerful gust. Enemies in a 15-foot cone must make a Might DC 12 check or be pushed back 10 feet.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "15-foot cone"
+            },
+            {
+              "name": "Sky-Dancer (Passive)",
+              "effect": "You gain a permanent flying speed equal to your walking speed. You must end your turn on a solid surface or fall.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
+            },
+            {
+              "name": "Updraft",
+              "effect": "As a bonus action, your jump height and distance are tripled for your turn.",
+              "resolve_cost": 1,
+              "duration": "1 Round",
+              "range": "Self"
             }
           ]
         },
@@ -118,11 +239,31 @@
           "talents": [
             {
               "name": "Talon Dive",
-              "effect": "As a bonus action, if you are currently flying, you can choose a single target below you. Your next melee attack against them has Advantage and deals an additional 1d8 damage. This costs 5 Resolve."
+              "effect": "As a bonus action, if you are currently flying, you can choose a single target below you. Your next melee attack against them has Advantage and deals an additional 1d8 damage.",
+              "resolve_cost": 5,
+              "duration": "1 Attack",
+              "range": "Self"
             },
             {
               "name": "Wind-Splitter Shot",
-              "effect": "When you make a ranged attack, you can channel the wind to add an extra 1d6 physical damage to your attack roll. This costs 5 Resolve."
+              "effect": "When you make a ranged attack, you can channel the wind to add an extra 1d6 physical damage to your attack roll.",
+              "resolve_cost": 5,
+              "duration": "1 Roll",
+              "range": "Weapon"
+            },
+            {
+              "name": "Aerial Dodge (Reaction)",
+              "effect": "While flying, if you are targeted by an attack, you can use your Reaction to impose a -2 penalty on the attack roll.",
+              "resolve_cost": 1,
+              "duration": "1 Roll",
+              "range": "Self"
+            },
+            {
+              "name": "Ride the Current",
+              "effect": "Move yourself and up to two allies up to 30 feet in a straight line without provoking Attacks of Opportunity.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "Self"
             }
           ]
         },
@@ -131,11 +272,31 @@
           "talents": [
             {
               "name": "Aerial Supremacy (Passive)",
-              "effect": "While flying, all of your ranged attacks gain a +2 bonus to their attack roll."
+              "effect": "While flying, all of your ranged attacks gain a +2 bonus to their attack roll.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
             },
             {
               "name": "Hurricane Kick",
-              "effect": "As a major action, you make a melee attack. If it hits, the target is pushed back 15 feet. This movement does not provoke an Attack of Opportunity. This costs 10 Resolve."
+              "effect": "As a major action, you make a melee attack. If it hits, the target is pushed back 15 feet. This movement does not provoke an Attack of Opportunity.",
+              "resolve_cost": 10,
+              "duration": "Instantaneous",
+              "range": "Melee"
+            },
+            {
+              "name": "Wall of Wind",
+              "effect": "Create a 30-foot long, 10-foot high wall of wind. The wall provides cover and a -4 penalty to ranged attacks that pass through it.",
+              "resolve_cost": 10,
+              "duration": "3 Rounds",
+              "range": "60 feet"
+            },
+            {
+              "name": "Hover (Passive, Modifies Sky-Dancer)",
+              "effect": "You can now hover, allowing you to end your turn in the air without falling.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
             }
           ]
         },
@@ -144,11 +305,24 @@
           "talents": [
             {
               "name": "Ride the Wind",
-              "effect": "For 1 minute, you gain a flying speed of 60 feet and the ability to hover. This costs 15 Resolve."
+              "effect": "For 1 minute, you gain a flying speed of 60 feet and the ability to hover.",
+              "resolve_cost": 15,
+              "duration": "1 Minute",
+              "range": "Self"
             },
             {
               "name": "Redirecting Winds (Reaction)",
-              "effect": "When a ranged attack is made against an ally within 30 feet, you can use your Reaction to force a new attack roll with a -2 penalty against a different enemy within 15 feet of the original target. This costs 15 Resolve."
+              "effect": "When a ranged attack is made against an ally within 30 feet, you can use your Reaction to force a new attack roll with a -2 penalty against a different enemy within 15 feet of the original target.",
+              "resolve_cost": 15,
+              "duration": "Instantaneous",
+              "range": "30 feet"
+            },
+            {
+              "name": "Cyclone",
+              "effect": "As a major action, create a 15-foot radius cyclone. The area is difficult terrain and ranged attacks through it have a -2 penalty.",
+              "resolve_cost": 5,
+              "duration": "3 rounds",
+              "range": "60 feet"
             }
           ]
         },
@@ -157,7 +331,17 @@
           "talents": [
             {
               "name": "Tornado (Ultimate)",
-              "effect": "As a major action, you summon a swirling tornado that lasts for 3 rounds. As a bonus action on each of your turns, you can move the tornado up to 30 feet. Any creature whose space the tornado enters must make a Might DC 18 check or be picked up, thrown 40 feet in a random direction, and take 5d10 bludgeoning damage. This can only be used once per day and costs 20 Resolve."
+              "effect": "As a major action, you summon a swirling tornado that lasts for 3 rounds. As a bonus action on each of your turns, you can move the tornado up to 30 feet. Any creature whose space the tornado enters must make a Might DC 18 check or be picked up, thrown 40 feet in a random direction, and take 5d10 bludgeoning damage. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "3 Rounds",
+              "range": "120 feet"
+            },
+            {
+              "name": "Eye of the Storm (Ultimate)",
+              "effect": "As a major action, you create a 30-foot radius storm that moves with you. The storm is heavily obscured. You can see and attack normally within the storm. Enemies within the storm have disadvantage on attack rolls. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "3 Rounds",
+              "range": "Self"
             }
           ]
         }
