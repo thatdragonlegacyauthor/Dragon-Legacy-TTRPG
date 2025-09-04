@@ -152,6 +152,18 @@
         ]
       },
       {
+        "name": "The Whispers on the Wind",
+        "type": "Side Quest",
+        "description": "Following the destruction of Windmark Village, the party finds refuge in Tanglewood Reach. Their brief respite is shattered by news of a crashed Wyndian airship in the nearby mountains. The party must race against opportunistic Champions of Order patrols to reach the crash site, where they will encounter a princess seeking freedom and a hunter seeking revenge.",
+        "trigger": "After arriving in Tanglewood Reach and speaking with the village elders.",
+        "relevant_files": [
+          "world_codex/locations.json",
+          "world_codex/characters/companions/nina.json",
+          "world_codex/characters/companions/talia.json",
+          "world_codex/factions.json"
+        ]
+      },
+      {
         "name": "The Crystal-back Crawler",
         "type": "Side Quest",
         "description": "The party must kill a dangerous beast in the Gemstone Crevice to earn the trust of the Stonekin of Stonegard.",
