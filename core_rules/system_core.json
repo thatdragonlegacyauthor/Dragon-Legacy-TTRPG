@@ -10,108 +10,33 @@
     "core_mechanics": {
       "dice": "d10-based",
       "attributes": [
-        {
-          "name": "Might",
-          "description": "Strength and endurance"
-        },
-        {
-          "name": "Agility",
-          "description": "Speed and precision"
-        },
-        {
-          "name": "Mind",
-          "description": "Intelligence and perception"
-        },
-        {
-          "name": "Spirit",
-          "description": "Charisma and willpower"
-        },
-        {
-          "name": "Essence",
-          "description": "Draconic vitality (hero only)"
-        }
+        { "name": "Might", "description": "Strength and endurance" },
+        { "name": "Agility", "description": "Speed and precision" },
+        { "name": "Mind", "description": "Intelligence and perception" },
+        { "name": "Spirit", "description": "Charisma and willpower" },
+        { "name": "Essence", "description": "Draconic vitality (hero only)" }
       ],
       "skills": [
-        {
-          "name": "Combat",
-          "attribute": "Might",
-          "description": "Used for physical attacks and Might-based defenses."
-        },
-        {
-          "name": "Stealth",
-          "attribute": "Agility",
-          "description": "Used for hiding, moving silently, and remaining unseen."
-        },
-        {
-          "name": "Acrobatics",
-          "attribute": "Agility",
-          "description": "Used for feats of balance, escaping grapples, and complex physical maneuvers."
-        },
-        {
-          "name": "Arcana",
-          "attribute": "Mind",
-          "description": "Used for knowledge of magic, identifying spells, and using magical items."
-        },
-        {
-          "name": "Diplomacy (Persuasion)",
-          "attribute": "Spirit",
-          "description": "Using reason and logic to influence others."
-        },
-        {
-          "name": "Diplomacy (Intimidation)",
-          "attribute": "Might / Spirit",
-          "description": "Using presence and will to coerce or frighten others. Can be based on Might or Spirit."
-        },
-        {
-          "name": "Empathy",
-          "attribute": "Spirit",
-          "description": "A new skill used to sense emotions and read intentions. Key to the Bond Level System with companions."
-        },
-        {
-          "name": "Lore",
-          "attribute": "Mind",
-          "description": "General knowledge of history, cultures, and the world."
-        },
-        {
-          "name": "Athletics",
-          "attribute": "Agility",
-          "description": "Used for feats of raw physical prowess, such as running, jumping, or climbing, and for Agility-based defenses."
-        },
-        {
-          "name": "Survival (General)",
-          "attribute": "Mind",
-          "description": "Used for navigating the wilds, hunting, and foraging."
-        },
-        {
-          "name": "Survival (Terrain Specific)",
-          "attribute": "Mind",
-          "description": "Specialized knowledge of a specific region. Gained through narrative progression or spending an IP."
-        }
+        { "name": "Combat", "attribute": "Might", "description": "Used for physical attacks and Might-based defenses." },
+        { "name": "Stealth", "attribute": "Agility", "description": "Used for hiding, moving silently, and remaining unseen." },
+        { "name": "Acrobatics", "attribute": "Agility", "description": "Used for feats of balance, escaping grapples, and complex physical maneuvers." },
+        { "name": "Arcana", "attribute": "Mind", "description": "Used for knowledge of magic, identifying spells, and using magical items." },
+        { "name": "Diplomacy (Persuasion)", "attribute": "Spirit", "description": "Using reason and logic to influence others." },
+        { "name": "Diplomacy (Intimidation)", "attribute": "Might / Spirit", "description": "Using presence and will to coerce or frighten others. Can be based on Might or Spirit." },
+        { "name": "Empathy", "attribute": "Spirit", "description": "A new skill used to sense emotions and read intentions. Key to the Bond Level System with companions." },
+        { "name": "Lore", "attribute": "Mind", "description": "General knowledge of history, cultures, and the world." },
+        { "name": "Athletics", "attribute": "Agility", "description": "Used for feats of raw physical prowess, such as running, jumping, or climbing, and for Agility-based defenses." },
+        { "name": "Survival (General)", "attribute": "Mind", "description": "Used for navigating the wilds, hunting, and foraging." },
+        { "name": "Survival (Terrain Specific)", "attribute": "Mind", "description": "Specialized knowledge of a specific region. Gained through narrative progression or spending an IP." }
       ],
       "checks": "1d10 + Attribute + Skill vs. DC. The DC is determined by a six-tier framework (Trivial 8, Easy 10, Moderate 14, Hard 18, Very Hard 23, Almost Impossible 30).",
       "outcome_thresholds": {
         "name": "Outcome Thresholds for Skill Checks",
         "tiers": [
-          {
-            "name": "Critical Success",
-            "condition": "Result beats DC by 6 or more.",
-            "effect": "The action succeeds with an additional benefit."
-          },
-          {
-            "name": "Success",
-            "condition": "Result beats DC by 0 to 5.",
-            "effect": "The action succeeds as intended."
-          },
-          {
-            "name": "Failure",
-            "condition": "Result misses DC by 1 to 5.",
-            "effect": "The action fails without additional consequence."
-          },
-          {
-            "name": "Failure with Consequence",
-            "condition": "Result misses DC by 6 or more.",
-            "effect": "The action fails and a negative consequence occurs."
-          }
+          { "name": "Critical Success", "condition": "Result beats DC by 6 or more.", "effect": "The action succeeds with an additional benefit." },
+          { "name": "Success", "condition": "Result beats DC by 0 to 5.", "effect": "The action succeeds as intended." },
+          { "name": "Failure", "condition": "Result misses DC by 1 to 5.", "effect": "The action fails without additional consequence." },
+          { "name": "Failure with Consequence", "condition": "Result misses DC by 6 or more.", "effect": "The action fails and a negative consequence occurs." }
         ]
       },
       "resources": {
@@ -145,31 +70,11 @@
         "description": "A downtime activity to gather resources. Rare fishing spots can be found throughout the world, offering unique catches.",
         "check": "Mind (Survival)",
         "sample_catch_table": [
-          {
-            "roll": "1-3",
-            "item": "Minnow",
-            "effect": "A simple bait fish."
-          },
-          {
-            "roll": "4-6",
-            "item": "Azure Trout",
-            "effect": "Restores 1d6 Vitality when cooked."
-          },
-          {
-            "roll": "7-8",
-            "item": "Whiskerfish",
-            "effect": "Sells for 25 Zenny."
-          },
-          {
-            "roll": "9",
-            "item": "Man-o'-War",
-            "effect": "A rare, aggressive fish used in alchemy."
-          },
-          {
-            "roll": "10",
-            "item": "Waterlogged Chest",
-            "effect": "Contains a random common magic item or other treasure."
-          }
+          { "roll": "1-3", "item": "Minnow", "effect": "A simple bait fish." },
+          { "roll": "4-6", "item": "Azure Trout", "effect": "Restores 1d6 Vitality when cooked." },
+          { "roll": "7-8", "item": "Whiskerfish", "effect": "Sells for 25 Zenny." },
+          { "roll": "9", "item": "Man-o'-War", "effect": "A rare, aggressive fish used in alchemy." },
+          { "roll": "10", "item": "Waterlogged Chest", "effect": "Contains a random common magic item or other treasure." }
         ]
       }
     },
@@ -231,11 +136,6 @@
           "rules": "A character's maximum score in any single skill cannot exceed 3 + floor(Character Level / 3)."
         },
         {
-          "name": "Learn a Newfound Talent",
-          "cost": 2,
-          "effect": "Choose a new talent from the newfound_talents.json file."
-        },
-        {
           "name": "Increase an Attribute",
           "cost": 3,
           "effect": "Increase any one attribute by +1.",
@@ -258,24 +158,9 @@
           "Team-up maneuver in major combat (+1 BP)"
         ],
         "levels": [
-          {
-            "level": 1,
-            "title": "Ally",
-            "bp_required": 0,
-            "benefit": "Starting level."
-          },
-          {
-            "level": 2,
-            "title": "Trusted Friend",
-            "bp_required": 10,
-            "benefit": "Unlocks a unique passive Bond Synergy."
-          },
-          {
-            "level": 3,
-            "title": "Confidant",
-            "bp_required": 30,
-            "benefit": "Unlocks the ability to use Draconic Unity."
-          }
+          { "level": 1, "title": "Ally", "bp_required": 0, "benefit": "Starting level." },
+          { "level": 2, "title": "Trusted Friend", "bp_required": 10, "benefit": "Unlocks a unique passive Bond Synergy." },
+          { "level": 3, "title": "Confidant", "bp_required": 30, "benefit": "Unlocks the ability to use Draconic Unity." }
         ]
       }
     }
