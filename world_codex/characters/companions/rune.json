@@ -83,7 +83,7 @@
             },
             {
                 "name": "Self-Repair",
-                "effect": "As a major action, you can spend one of your Hit Dice to recover Vitality.",
+                "effect": "Once per combat, as a major action, Rune can reroute emergency power, restoring 2d8 of his own Vitality.",
                 "resolve_cost": 0,
                 "duration": "Instantaneous",
                 "range": "Self"
