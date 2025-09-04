@@ -41,11 +41,38 @@
           "talents": [
             {
               "name": "Wind's Favor",
-              "effect": "As a bonus action, you grant yourself a gust of wind, increasing your movement speed by 15 feet for your current turn."
+              "effect": "As a bonus action, you grant yourself a gust of wind, increasing your movement speed by 15 feet for your current turn.",
+              "resolve_cost": 1,
+              "duration": "1 Turn",
+              "range": "Self"
             },
             {
               "name": "Tempest Blade",
-              "effect": "A basic, single-target ability that deals 1d10 physical damage and can knock the target back 5 feet."
+              "effect": "A basic, single-target ability that deals 1d10 physical damage and can knock the target back 5 feet.",
+              "resolve_cost": 0,
+              "duration": "Instantaneous",
+              "range": "Melee"
+            },
+            {
+              "name": "Cutting Gale",
+              "effect": "As a major action, you launch a blade of wind at a single target, dealing 1d8 physical damage.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "30 feet"
+            },
+            {
+              "name": "Updraft",
+              "effect": "As a bonus action, your jump height and distance are tripled for your turn.",
+              "resolve_cost": 1,
+              "duration": "1 Round",
+              "range": "Self"
+            },
+            {
+              "name": "Feather Fall (Reaction)",
+              "effect": "When you or an ally within 30 feet are falling, you can negate the falling damage.",
+              "resolve_cost": 1,
+              "duration": "Instantaneous",
+              "range": "30 feet"
             }
           ]
         },
@@ -54,15 +81,31 @@
           "talents": [
             {
               "name": "Wind-Splitter Shot",
-              "effect": "When you make a ranged attack, you can channel the wind to add an extra 1d6 physical damage to your attack roll. This costs 5 Resolve."
+              "effect": "When you make a ranged attack, you can channel the wind to add an extra 1d6 physical damage to your attack roll.",
+              "resolve_cost": 5,
+              "duration": "1 Roll",
+              "range": "Weapon"
             },
             {
               "name": "Aerial Supremacy (Passive)",
-              "effect": "While in the air, your ranged attacks gain a +1 bonus to their attack roll."
+              "effect": "While in the air, your ranged attacks gain a +1 bonus to their attack roll.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
             },
             {
               "name": "Soaring Blade (Modifies Tempest Blade)",
-              "effect": "Your Tempest Blade's knockback effect increases from 5 feet to 10 feet."
+              "effect": "Your Tempest Blade's knockback effect increases from 5 feet to 10 feet.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
+            },
+            {
+              "name": "Gust of Wind",
+              "effect": "You can release a strong gust of wind in a 30-foot line. Enemies in the line must make a Might DC 13 check or be pushed back 15 feet.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "30-foot line"
             }
           ]
         },
@@ -71,11 +114,31 @@
           "talents": [
             {
               "name": "Cyclone",
-              "effect": "As a major action, you create a 15-foot radius cyclone of howling wind at a point within 60 feet that lasts for 3 rounds. The area is difficult terrain, and all ranged attacks that pass through it have a -2 penalty. This costs 10 Resolve."
+              "effect": "As a major action, you create a 15-foot radius cyclone of howling wind at a point that lasts for 3 rounds. The area is difficult terrain, and all ranged attacks that pass through it have a -2 penalty.",
+              "resolve_cost": 10,
+              "duration": "3 Rounds",
+              "range": "60 feet"
             },
             {
               "name": "Storm Gust (Modifies Wind's Favor)",
-              "effect": "When you use Wind's Favor, you can now push one adjacent enemy 10 feet away as part of the movement."
+              "effect": "When you use Wind's Favor, you can now push one adjacent enemy 10 feet away as part of the movement.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
+            },
+            {
+              "name": "Wall of Wind",
+              "effect": "Create a 30-foot long, 10-foot high wall of wind. The wall provides cover and a -4 penalty to ranged attacks that pass through it.",
+              "resolve_cost": 10,
+              "duration": "3 Rounds",
+              "range": "60 feet"
+            },
+            {
+              "name": "Redirecting Winds (Reaction)",
+              "effect": "When a ranged attack is made against an ally within 30 feet, you can use your Reaction to force a new attack roll with a -2 penalty against a different enemy within 15 feet of the original target.",
+              "resolve_cost": 10,
+              "duration": "Instantaneous",
+              "range": "30 feet"
             }
           ]
         },
@@ -84,11 +147,24 @@
           "talents": [
             {
               "name": "Ride the Wind",
-              "effect": "For 1 minute, you can turn your lower body into a vortex of mist, granting you a flying speed of 60 feet and the ability to hover. This costs 15 Resolve."
+              "effect": "For 1 minute, you gain a flying speed of 60 feet and the ability to hover.",
+              "resolve_cost": 15,
+              "duration": "1 Minute",
+              "range": "Self"
             },
             {
               "name": "Tempest Barrage",
-              "effect": "As a major action, you unleash a flurry of wind-infused sword strikes on a single target, dealing 2d6 physical damage. This ability can be used once per combat. This costs 15 Resolve."
+              "effect": "As a major action, you unleash a flurry of wind-infused sword strikes on a single target, dealing 4d8 physical damage.",
+              "resolve_cost": 15,
+              "duration": "Instantaneous",
+              "range": "Melee"
+            },
+            {
+              "name": "Perfected Flight (Passive, Modifies Ride the Wind)",
+              "effect": "Your flight speed from Ride the Wind is increased to 90 feet and you gain a +2 bonus to all Agility checks while flying.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
             }
           ]
         },
@@ -97,7 +173,17 @@
           "talents": [
             {
               "name": "Tornado (Ultimate)",
-              "effect": "As a major action, you summon a swirling tornado that lasts for 3 rounds. As a bonus action on each of your turns, you can move the tornado up to 30 feet. Any creature whose space the tornado enters must make a Might DC 18 check or be picked up, thrown 40 feet in a random direction, and take 5d10 bludgeoning damage. This can only be used once per day and costs 20 Resolve."
+              "effect": "As a major action, you summon a swirling tornado that lasts for 3 rounds. As a bonus action on each of your turns, you can move the tornado up to 30 feet. Any creature whose space the tornado enters must make a Might DC 18 check or be picked up, thrown 40 feet in a random direction, and take 5d10 bludgeoning damage. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "3 Rounds",
+              "range": "120 feet"
+            },
+            {
+              "name": "Hurricane (Ultimate)",
+              "effect": "Summon a 40-foot radius hurricane that lasts for 3 rounds. Enemies are pushed 20 feet from the center, and moving toward the center costs triple movement. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "3 Rounds",
+              "range": "120 feet"
             }
           ]
         }
@@ -112,11 +198,38 @@
           "talents": [
             {
               "name": "Royal Edict",
-              "effect": "As a major action, you can issue an inspiring command to an ally within 30 feet. That ally can immediately use their Reaction to move up to 10 feet."
+              "effect": "As a major action, you can issue an inspiring command to an ally within 30 feet. That ally can immediately use their Reaction to move up to 10 feet.",
+              "resolve_cost": 1,
+              "duration": "Instantaneous",
+              "range": "30 feet"
             },
             {
               "name": "Gale Shield",
-              "effect": "As a major action, you create a shield of wind around an ally, granting them a +2 bonus to their defense for one round."
+              "effect": "As a major action, you create a shield of wind around an ally, granting them a +2 bonus to their defense for one round.",
+              "resolve_cost": 5,
+              "duration": "1 Round",
+              "range": "30 feet"
+            },
+            {
+                "name": "Minor Heal",
+                "effect": "As a major action, restore 1d8 Vitality to a single ally you can touch.",
+                "resolve_cost": 5,
+                "duration": "Instantaneous",
+                "range": "Touch"
+            },
+            {
+                "name": "Inspire",
+                "effect": "As a major action, grant an ally within 30 feet a +2 bonus to their next roll.",
+                "resolve_cost": 1,
+                "duration": "1 Roll",
+                "range": "30 feet"
+            },
+            {
+                "name": "Tailwind",
+                "effect": "As a bonus action, grant an ally within 10 feet a gust of wind, increasing their movement speed by 10 feet for their turn.",
+                "resolve_cost": 1,
+                "duration": "1 Turn",
+                "range": "10 feet"
             }
           ]
         },
@@ -124,16 +237,32 @@
           "tier": "Adept (Level 5+)",
           "talents": [
             {
-              "name": "Diplomatic Immunity",
-              "effect": "Once per day, you can use a bonus action to grant an ally a +2 bonus on their next Diplomacy check."
+              "name": "Diplomatic Immunity (Passive)",
+              "effect": "You have advantage on all Diplomacy checks made to reason with or influence creatures who hold a rank or title (e.g., a city guard, a noble, an officer).",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
             },
             {
               "name": "Beacon of Hope",
-              "effect": "As a major action, you project a beacon of reassuring light. All allies within a 15-foot radius regain 1d8 Resolve. This costs 5 Resolve."
+              "effect": "As a major action, you project a beacon of reassuring light. All allies within a 15-foot radius regain 1d8 Resolve.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "15-foot radius"
             },
             {
               "name": "Gale Ward (Modifies Gale Shield)",
-              "effect": "Your Gale Shield now grants a +3 bonus to an ally's defense for one round."
+              "effect": "Your Gale Shield now grants a +3 bonus to an ally's defense for one round.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
+            },
+            {
+                "name": "Coordinated Maneuver",
+                "effect": "As a major action, grant one ally an immediate free movement action.",
+                "resolve_cost": 5,
+                "duration": "Instantaneous",
+                "range": "30 feet"
             }
           ]
         },
@@ -141,12 +270,32 @@
           "tier": "Expert (Level 10+)",
           "talents": [
             {
-              "name": "Unwavering Authority (Passive)",
-              "effect": "You have advantage on all Diplomacy checks made to reason with or influence creatures who hold a rank or title (e.g., a city guard, a noble, an officer)."
+              "name": "Shield of the Zephyr (Reaction)",
+              "effect": "When you or an ally within 30 feet is hit by an attack, you can create a vortex of wind that reduces the damage taken by 1d10 + your Spirit attribute.",
+              "resolve_cost": 10,
+              "duration": "Instantaneous",
+              "range": "30 feet"
             },
             {
-              "name": "Shield of the Zephyr",
-              "effect": "As a Reaction when you or an ally within 30 feet is hit by an attack, you can create a vortex of wind that reduces the damage taken by 1d10 + your Spirit attribute. This costs 10 Resolve."
+                "name": "Mass Mending",
+                "effect": "As a major action, you can create a gentle current of air around all allies in a 30-foot radius. All affected allies regain 2d8 Vitality.",
+                "resolve_cost": 10,
+                "duration": "Instantaneous",
+                "range": "30-foot radius"
+            },
+            {
+                "name": "Rallying Cry",
+                "effect": "As a major action, you can bolster your allies. All allies who can hear you gain temporary Vitality equal to your Spirit attribute.",
+                "resolve_cost": 10,
+                "duration": "1 Minute",
+                "range": "60 feet"
+            },
+            {
+                "name": "Inspiring Presence (Modifies Inspire)",
+                "effect": "When you use Inspire, the bonus increases to +3.",
+                "resolve_cost": "N/A",
+                "duration": "N/A",
+                "range": "N/A"
             }
           ]
         },
@@ -154,12 +303,25 @@
           "tier": "Master (Level 15+)",
           "talents": [
             {
-              "name": "Mending Current",
-              "effect": "As a major action, you can create a gentle current of air around all allies in a 30-foot radius. All affected allies regain 1d10 Vitality. This costs 15 Resolve."
+              "name": "Grand Decree",
+              "effect": "As a major action, you can issue a powerful decree to all allies within 60 feet. For the next 3 rounds, allies gain a +1 bonus to their attack rolls and damage rolls.",
+              "resolve_cost": 15,
+              "duration": "3 Rounds",
+              "range": "60 feet"
             },
             {
-              "name": "Grand Decree",
-              "effect": "As a major action, you can issue a powerful decree to all allies within 60 feet. For the next 3 rounds, allies gain a +1 bonus to their attack rolls and damage rolls. This costs 15 Resolve."
+                "name": "Sanctuary",
+                "effect": "As a major action, you create a 20-foot radius sphere of calming wind for 3 rounds. Allies inside are immune to the 'Frightened' condition, and any enemy that enters the area must make a Spirit DC 16 check or lose their will to fight, ending their turn.",
+                "resolve_cost": 15,
+                "duration": "3 Rounds",
+                "range": "60 feet"
+            },
+            {
+                "name": "Aura of Courage (Passive)",
+                "effect": "You and all allies within 15 feet of you are immune to being 'Frightened'.",
+                "resolve_cost": 0,
+                "duration": "Passive",
+                "range": "15-foot radius"
             }
           ]
         },
@@ -168,7 +330,17 @@
           "talents": [
             {
               "name": "Perfected Leadership (Ultimate)",
-              "effect": "As a major action, you tap into your full potential as a leader. For 3 rounds, you and all allies within 60 feet are granted immunity to the Stunned and Frightened status effects, and your attack rolls can no longer have disadvantage. This can only be used once per day and costs 20 Resolve."
+              "effect": "As a major action, you tap into your full potential as a leader. For 3 rounds, you and all allies within 60 feet are granted immunity to the Stunned and Frightened status effects, and your attack rolls can no longer have disadvantage. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "3 Rounds",
+              "range": "60 feet"
+            },
+            {
+                "name": "Mass Heal (Ultimate)",
+                "effect": "As a major action, you channel a powerful restorative wind, healing all allies within 60 feet for 5d10 Vitality and removing all negative status effects. This can only be used once per day.",
+                "resolve_cost": 20,
+                "duration": "Instantaneous",
+                "range": "60 feet"
             }
           ]
         }
