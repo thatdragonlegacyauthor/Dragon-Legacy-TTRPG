@@ -5,401 +5,92 @@
       {
         "file_name": "core_rules/system_core.json",
         "purpose": "The foundational rules and mechanics for the game system.",
-        "key_objects": [
-          "system_core",
-          "core_mechanics",
-          "character_creation",
-          "progression"
-        ]
+        "key_objects": [ "system_core", "core_mechanics", "character_creation", "progression" ]
       },
       {
         "file_name": "core_rules/status_effects.json",
         "purpose": "A glossary of all status effects and their mechanical impacts.",
-        "key_objects": [
-          "status_effects"
-        ]
+        "key_objects": [ "status_effects" ]
       },
       {
         "file_name": "core_rules/combat_rules.json",
         "purpose": "Detailed rules governing combat encounters.",
-        "key_objects": [
-          "combat_rules"
-        ]
+        "key_objects": [ "combat_rules" ]
       },
       {
         "file_name": "core_rules/item_database/core_items.json",
         "purpose": "A comprehensive list of all mundane and magical items in the world.",
-        "key_objects": [
-          "core_items"
-        ]
+        "key_objects": [ "core_items" ]
       },
       {
         "file_name": "core_rules/item_database/legacy_items.json",
         "purpose": "A list of powerful, evolving legacy items tied to specific characters.",
-        "key_objects": [
-          "legacy_items"
-        ]
+        "key_objects": [ "legacy_items" ]
       },
       {
-        "file_name": "world_codex/bestiary/bosses_and_legends.json",
-        "purpose": "A collection of powerful boss monsters and legendary creatures.",
-        "key_objects": [
-          "bosses_and_legends"
-        ]
-      },
-      {
-        "file_name": "world_codex/bestiary/monsters.json",
-        "purpose": "A monster manual containing stats and abilities for all common creatures.",
-        "key_objects": [
-          "monsters"
-        ]
+        "file_name": "world_codex/bestiary/bestiary.json",
+        "purpose": "A consolidated monster manual for all common and legendary creatures.",
+        "key_objects": [ "bestiary", "bosses_and_legends" ]
       },
       {
         "file_name": "campaign_state/campaign_state.json",
         "purpose": "The narrative log of the campaign, including quests, world flags, and history.",
-        "key_objects": [
-          "campaign_state"
-        ]
+        "key_objects": [ "campaign_state" ]
       },
       {
         "file_name": "campaign_state/party_status.json",
         "purpose": "The active 'save file' tracking the party's current state, inventory, and resources.",
-        "key_objects": [
-          "party_status"
-        ]
+        "key_objects": [ "party_status" ]
       },
-      {
-        "file_name": "world_codex/characters/companions/eldra.json",
-        "purpose": "Character template and progression path for the companion Eldra.",
-        "key_objects": [
-          "name",
-          "char_id",
-          "playstyles"
-        ]
-      },
-      {
-        "file_name": "world_codex/characters/companions/garrick.json",
-        "purpose": "Character template and progression path for the companion Garrick.",
-        "key_objects": [
-          "name",
-          "char_id",
-          "playstyles"
-        ]
-      },
-      {
-        "file_name": "world_codex/characters/companions/kei.json",
-        "purpose": "Character template and progression path for the companion Kei.",
-        "key_objects": [
-          "name",
-          "char_id",
-          "playstyles"
-        ]
-      },
-      {
-        "file_name": "world_codex/characters/companions/lirien.json",
-        "purpose": "Character template and progression path for the companion Lirien.",
-        "key_objects": [
-          "name",
-          "char_id",
-          "playstyles"
-        ]
-      },
-      {
-        "file_name": "world_codex/characters/companions/nina.json",
-        "purpose": "Character template and progression path for the companion Nina.",
-        "key_objects": [
-          "name",
-          "char_id",
-          "playstyles"
-        ]
-      },
-      {
-        "file_name": "world_codex/characters/companions/rune.json",
-        "purpose": "Character template and progression path for the companion Rune.",
-        "key_objects": [
-          "name",
-          "char_id",
-          "playstyles"
-        ]
-      },
-      {
-        "file_name": "world_codex/characters/companions/selra.json",
-        "purpose": "Character template and progression path for the companion Selra.",
-        "key_objects": [
-          "name",
-          "char_id",
-          "playstyles"
-        ]
-      },
-      {
-        "file_name": "world_codex/characters/companions/sprout.json",
-        "purpose": "Character template and progression path for the companion Sprout.",
-        "key_objects": [
-          "name",
-          "char_id",
-          "playstyles"
-        ]
-      },
-      {
-        "file_name": "world_codex/characters/companions/talia.json",
-        "purpose": "Character template and progression path for the companion Talia.",
-        "key_objects": [
-          "name",
-          "char_id",
-          "playstyles"
-        ]
-      },
-      {
-        "file_name": "world_codex/characters/companions/torr.json",
-        "purpose": "Character template and progression path for the companion Torr.",
-        "key_objects": [
-          "name",
-          "char_id",
-          "playstyles"
-        ]
-      },
-      {
-        "file_name": "world_codex/characters/companions/veridia.json",
-        "purpose": "Character template and progression path for the companion Veridia.",
-        "key_objects": [
-          "name",
-          "char_id",
-          "playstyles"
-        ]
-      },
-      {
-        "file_name": "world_codex/characters/companions/zael.json",
-        "purpose": "Character template and progression path for the companion Zael.",
-        "key_objects": [
-          "name",
-          "char_id",
-          "playstyles"
-        ]
-      },
-      {
-        "file_name": "world_codex/characters/companions/zykar.json",
-        "purpose": "Character template and progression path for the companion Zykar.",
-        "key_objects": [
-          "name",
-          "char_id",
-          "playstyles"
-        ]
-      },
-      {
-        "file_name": "core_rules/draconic_abilities/Draconic_Powers.json",
-        "purpose": "The complete system for the hero's draconic abilities, lineages, and transformations.",
-        "key_objects": [
-          "draconic_powers"
-        ]
-      },
-      {
-        "file_name": "core_rules/draconic_abilities/earth.json",
-        "purpose": "Details the abilities of the Earth draconic lineage.",
-        "key_objects": [
-          "lineage_name",
-          "abilities"
-        ]
-      },
-      {
-        "file_name": "core_rules/draconic_abilities/fire.json",
-        "purpose": "Details the abilities of the Fire draconic lineage.",
-        "key_objects": [
-          "lineage_name",
-          "abilities"
-        ]
-      },
-      {
-        "file_name": "core_rules/draconic_abilities/ice.json",
-        "purpose": "Details the abilities of the Ice draconic lineage.",
-        "key_objects": [
-          "lineage_name",
-          "abilities"
-        ]
-      },
-      {
-        "file_name": "core_rules/draconic_abilities/light.json",
-        "purpose": "Details the abilities of the Light draconic lineage.",
-        "key_objects": [
-          "lineage_name",
-          "abilities"
-        ]
-      },
-      {
-        "file_name": "core_rules/draconic_abilities/mist.json",
-        "purpose": "Details the abilities of the Mist draconic lineage.",
-        "key_objects": [
-          "lineage_name",
-          "abilities"
-        ]
-      },
-      {
-        "file_name": "core_rules/draconic_abilities/storm.json",
-        "purpose": "Details the abilities of the Storm draconic lineage.",
-        "key_objects": [
-          "lineage_name",
-          "abilities"
-        ]
-      },
-      {
-        "file_name": "core_rules/draconic_abilities/tide.json",
-        "purpose": "Details the abilities of the Tide draconic lineage.",
-        "key_objects": [
-          "lineage_name",
-          "abilities"
-        ]
-      },
-      {
-        "file_name": "core_rules/draconic_abilities/void.json",
-        "purpose": "Details the abilities of the Void draconic lineage.",
-        "key_objects": [
-          "lineage_name",
-          "abilities"
-        ]
-      },
-      {
-        "file_name": "core_rules/draconic_abilities/chrono.json",
-        "purpose": "Details the abilities of the Chrono draconic lineage.",
-        "key_objects": [
-          "lineage_name",
-          "abilities"
-        ]
-      },
-      {
-        "file_name": "core_rules/draconic_abilities/cosmic.json",
-        "purpose": "Details the abilities of the Cosmic draconic lineage.",
-        "key_objects": [
-          "lineage_name",
-          "abilities"
-        ]
-      },
-      {
-        "file_name": "core_rules/draconic_abilities/metal.json",
-        "purpose": "Details the abilities of the Metal draconic lineage.",
-        "key_objects": [
-          "lineage_name",
-          "abilities"
-        ]
-      },
-      {
-        "file_name": "core_rules/draconic_abilities/psionic.json",
-        "purpose": "Details the abilities of the Psionic draconic lineage.",
-        "key_objects": [
-          "lineage_name",
-          "abilities"
-        ]
-      },
-      {
-        "file_name": "core_rules/hero_template.json",
-        "purpose": "The base template for the hero character, Rya.",
-        "key_objects": [
-          "hero_template"
-        ]
-      },
-      {
-        "file_name": "core_rules/newfound_talents.json",
-        "purpose": "A glossary of all talents that can be learned from Masters.",
-        "key_objects": [
-          "newfound_talents"
-        ]
-      },
-      {
-        "file_name": "core_rules/tools/gmai_tools.json",
-        "purpose": "The operational logic and directives for running the game as the GM/AI partner.",
-        "key_objects": [
-          "gm_ai_tools"
-        ]
-      },
-      {
-        "file_name": "core_rules/tools/master_index.json",
-        "purpose": "This file. Provides a manifest of all other core files in the project.",
-        "key_objects": [
-          "master_index"
-        ]
-      },
-      {
-        "file_name": "core_rules/tools/newgame_prologue.json",
-        "purpose": "The protocol for starting a new game and running the prologue chapter.",
-        "key_objects": [
-          "newgame_prologue"
-        ]
-      },
-      {
-        "file_name": "world_codex/explorable_areas/elysian_grand_cathedral.json",
-        "purpose": "A detailed map of the Elysian Grand Cathedral.",
-        "key_objects": [
-          "elysian_grand_cathedral"
-        ]
-      },
-      {
-        "file_name": "world_codex/explorable_areas/tanglewood_reach.json",
-        "purpose": "A detailed map of Tanglewood Reach.",
-        "key_objects": [
-          "tanglewood_reach"
-        ]
-      },
-      {
-        "file_name": "world_codex/explorable_areas/void_chasm.json",
-        "purpose": "A detailed map of the Void Chasm.",
-        "key_objects": [
-          "void_chasm"
-        ]
-      },
-      {
-        "file_name": "world_codex/explorable_areas/wyndia_city.json",
-        "purpose": "A detailed map of the city of Wyndia.",
-        "key_objects": [
-          "wyndia_city"
-        ]
-      },
-      {
-        "file_name": "world_codex/factions.json",
-        "purpose": "Detailed information on the various factions within Eryndor.",
-        "key_objects": [
-          "factions"
-        ]
-      },
-      {
-        "file_name": "world_codex/locations.json",
-        "purpose": "A comprehensive list of all locations in the world of Eryndor.",
-        "key_objects": [
-          "locations"
-        ]
-      },
-      {
-        "file_name": "world_codex/world_map.json",
-        "purpose": "A text-based representation of the world map with points of interest.",
-        "key_objects": [
-          "world_map"
-        ]
-      },
-      {
-        "file_name": "world_codex/lore.json",
-        "purpose": "The lore bible for Eryndor, detailing its public history and secret truths.",
-        "key_objects": [
-          "world_codex"
-        ]
-      },
-      {
-        "file_name": "world_codex/npcs.json",
-        "purpose": "A comprehensive list of all non-player characters in the world.",
-        "key_objects": [
-          "npcs"
-        ]
-      },
-      {
-        "file_name": "world_codex/masters.json",
-        "purpose": "A list of Masters who can teach talents to the party.",
-        "key_objects": [
-          "masters"
-        ]
-      },
-      {
-        "file_name": "world_codex/potential_quests.json",
-        "purpose": "A list of potential quests to be used in the campaign.",
-        "key_objects": [
-          "potential_quests"
-        ]
-      }
+      { "file_name": "world_codex/characters/companions/eldra.json", "purpose": "Character template and progression path for the companion Eldra.", "key_objects": [ "name", "char_id", "playstyles" ] },
+      { "file_name": "world_codex/characters/companions/garrick.json", "purpose": "Character template and progression path for the companion Garrick.", "key_objects": [ "name", "char_id", "playstyles" ] },
+      { "file_name": "world_codex/characters/companions/kei.json", "purpose": "Character template and progression path for the companion Kei.", "key_objects": [ "name", "char_id", "playstyles" ] },
+      { "file_name": "world_codex/characters/companions/lirien.json", "purpose": "Character template and progression path for the companion Lirien.", "key_objects": [ "name", "char_id", "playstyles" ] },
+      { "file_name": "world_codex/characters/companions/lyra.json", "purpose": "Character template and progression path for the companion Lyra.", "key_objects": [ "name", "char_id", "playstyles" ] },
+      { "file_name": "world_codex/characters/companions/nina.json", "purpose": "Character template and progression path for the companion Nina.", "key_objects": [ "name", "char_id", "playstyles" ] },
+      { "file_name": "world_codex/characters/companions/rune.json", "purpose": "Character template and progression path for the companion Rune.", "key_objects": [ "name", "char_id", "playstyles" ] },
+      { "file_name": "world_codex/characters/companions/selra.json", "purpose": "Character template and progression path for the companion Selra.", "key_objects": [ "name", "char_id", "playstyles" ] },
+      { "file_name": "world_codex/characters/companions/sprout.json", "purpose": "Character template and progression path for the companion Sprout.", "key_objects": [ "name", "char_id", "playstyles" ] },
+      { "file_name": "world_codex/characters/companions/talia.json", "purpose": "Character template and progression path for the companion Talia.", "key_objects": [ "name", "char_id", "playstyles" ] },
+      { "file_name": "world_codex/characters/companions/torr.json", "purpose": "Character template and progression path for the companion Torr.", "key_objects": [ "name", "char_id", "playstyles" ] },
+      { "file_name": "world_codex/characters/companions/veridia.json", "purpose": "Character template and progression path for the companion Veridia.", "key_objects": [ "name", "char_id", "playstyles" ] },
+      { "file_name": "world_codex/characters/companions/zael.json", "purpose": "Character template and progression path for the companion Zael.", "key_objects": [ "name", "char_id", "playstyles" ] },
+      { "file_name": "world_codex/characters/companions/zykar.json", "purpose": "Character template and progression path for the companion Zykar.", "key_objects": [ "name", "char_id", "playstyles" ] },
+      { "file_name": "core_rules/draconic_abilities/Draconic_Powers.json", "purpose": "The complete system for the hero's draconic abilities, lineages, and transformations.", "key_objects": [ "draconic_powers" ] },
+      { "file_name": "core_rules/draconic_abilities/earth.json", "purpose": "Details the abilities of the Earth draconic lineage.", "key_objects": [ "lineage_name", "abilities" ] },
+      { "file_name": "core_rules/draconic_abilities/fire.json", "purpose": "Details the abilities of the Fire draconic lineage.", "key_objects": [ "lineage_name", "abilities" ] },
+      { "file_name": "core_rules/draconic_abilities/ice.json", "purpose": "Details the abilities of the Ice draconic lineage.", "key_objects": [ "lineage_name", "abilities" ] },
+      { "file_name": "core_rules/draconic_abilities/light.json", "purpose": "Details the abilities of the Light draconic lineage.", "key_objects": [ "lineage_name", "abilities" ] },
+      { "file_name": "core_rules/draconic_abilities/mist.json", "purpose": "Details the abilities of the Mist draconic lineage.", "key_objects": [ "lineage_name", "abilities" ] },
+      { "file_name": "core_rules/draconic_abilities/storm.json", "purpose": "Details the abilities of the Storm draconic lineage.", "key_objects": [ "lineage_name", "abilities" ] },
+      { "file_name": "core_rules/draconic_abilities/tide.json", "purpose": "Details the abilities of the Tide draconic lineage.", "key_objects": [ "lineage_name", "abilities" ] },
+      { "file_name": "core_rules/draconic_abilities/void.json", "purpose": "Details the abilities of the Void draconic lineage.", "key_objects": [ "lineage_name", "abilities" ] },
+      { "file_name": "core_rules/draconic_abilities/chrono.json", "purpose": "Details the abilities of the Chrono draconic lineage.", "key_objects": [ "lineage_name", "abilities" ] },
+      { "file_name": "core_rules/draconic_abilities/cosmic.json", "purpose": "Details the abilities of the Cosmic draconic lineage.", "key_objects": [ "lineage_name", "abilities" ] },
+      { "file_name": "core_rules/draconic_abilities/metal.json", "purpose": "Details the abilities of the Metal draconic lineage.", "key_objects": [ "lineage_name", "abilities" ] },
+      { "file_name": "core_rules/draconic_abilities/psionic.json", "purpose": "Details the abilities of the Psionic draconic lineage.", "key_objects": [ "lineage_name", "abilities" ] },
+      { "file_name": "core_rules/hero_template.json", "purpose": "The base template for the hero character, Rya.", "key_objects": [ "hero_template" ] },
+      { "file_name": "core_rules/newfound_talents.json", "purpose": "A glossary of all talents that can be learned from Masters.", "key_objects": [ "newfound_talents" ] },
+      { "file_name": "core_rules/tools/gmai_tools.json", "purpose": "The operational logic and directives for running the game as the GM/AI partner.", "key_objects": [ "gm_ai_tools" ] },
+      { "file_name": "core_rules/tools/master_index.json", "purpose": "This file. Provides a manifest of all other core files in the project.", "key_objects": [ "master_index" ] },
+      { "file_name": "core_rules/tools/newgame_prologue.json", "purpose": "The protocol for starting a new game and running the prologue chapter.", "key_objects": [ "newgame_prologue" ] },
+      { "file_name": "world_codex/explorable_areas/crossroads_garrison.json", "purpose": "A detailed map of the Crossroads Garrison.", "key_objects": [ "crossroads_garrison" ] },
+      { "file_name": "world_codex/explorable_areas/elysian_grand_cathedral.json", "purpose": "A detailed map of the Elysian Grand Cathedral.", "key_objects": [ "elysian_grand_cathedral" ] },
+      { "file_name": "world_codex/explorable_areas/fallen_sky_ship.json", "purpose": "A detailed map of the Fallen Sky Ship.", "key_objects": [ "fallen_sky_ship" ] },
+      { "file_name": "world_codex/explorable_areas/port_myria.json", "purpose": "A detailed map of Port Myria.", "key_objects": [ "port_myria" ] },
+      { "file_name": "world_codex/explorable_areas/roost_of_the_tempest.json", "purpose": "A detailed map of the Roost of the Tempest.", "key_objects": [ "roost_of_the_tempest" ] },
+      { "file_name": "world_codex/explorable_areas/serpents_coil_pass.json", "purpose": "A detailed map of the Serpent's Coil Pass.", "key_objects": [ "serpents_coil_pass" ] },
+      { "file_name": "world_codex/explorable_areas/sky_reach_aerie.json", "purpose": "A detailed map of the Sky-Reach Aerie.", "key_objects": [ "sky_reach_aerie" ] },
+      { "file_name": "world_codex/explorable_areas/tanglewood_reach.json", "purpose": "A detailed map of Tanglewood Reach.", "key_objects": [ "tanglewood_reach" ] },
+      { "file_name": "world_codex/explorable_areas/void_chasm.json", "purpose": "A detailed map of the Void Chasm.", "key_objects": [ "void_chasm" ] },
+      { "file_name": "world_codex/explorable_areas/wyndia_city.json", "purpose": "A detailed map of the city of Wyndia.", "key_objects": [ "wyndia_city" ] },
+      { "file_name": "world_codex/factions.json", "purpose": "Detailed information on the various factions within Eryndor.", "key_objects": [ "factions" ] },
+      { "file_name": "world_codex/locations.json", "purpose": "A comprehensive list of all locations in the world of Eryndor.", "key_objects": [ "locations" ] },
+      { "file_name": "world_codex/world_map.json", "purpose": "A text-based representation of the world map with points of interest.", "key_objects": [ "world_map" ] },
+      { "file_name": "world_codex/lore.json", "purpose": "The lore bible for Eryndor, detailing its public history and secret truths.", "key_objects": [ "world_codex" ] },
+      { "file_name": "world_codex/npcs.json", "purpose": "A comprehensive list of all non-player characters in the world.", "key_objects": [ "npcs" ] },
+      { "file_name": "world_codex/masters.json", "purpose": "A list of Masters who can teach talents to the party.", "key_objects": [ "masters" ] },
+      { "file_name": "world_codex/potential_quests.json", "purpose": "A list of potential quests to be used in the campaign.", "key_objects": [ "potential_quests" ] }
     ]
   }
 }
