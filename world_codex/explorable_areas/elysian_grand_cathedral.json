@@ -56,6 +56,13 @@
             "direction": "Back to West Processional",
             "destination": "west_processional"
           }
+        ],
+        "events": [
+          {
+            "trigger": "speak_with_healers",
+            "action": "story_beat",
+            "details": "A successful Spirit (Diplomacy) check might allow the party to learn about the 'special cases' that are taken deeper into the Cathedral, to the 'Chamber of Purification', for treatment of spiritual maladies."
+          }
         ]
       },
       "east_scriptorium_hall": {
@@ -84,6 +91,13 @@
             "direction": "Hidden Stairwell",
             "destination": "hidden_servants_stairwell",
             "status": "Hidden"
+          }
+        ],
+        "events": [
+          {
+            "trigger": "search_the_archives",
+            "action": "skill_check",
+            "details": "A very difficult Mind (Lore) check (DC 23) could uncover a discrepancy between an older, unredacted text and the modern scripture, hinting at the 'secret truth' of the Shattering."
           }
         ]
       },
@@ -146,6 +160,13 @@
         ],
         "key_characters": [
           "Grand Inquisitor Valerius"
+        ],
+        "events": [
+          {
+            "trigger": "study_the_map",
+            "action": "skill_check",
+            "details": "A successful Mind (Lore) check could reveal the Champions' next strategic target or the location of a hidden garrison."
+          }
         ]
       },
       "inquisitors_quarters": {
