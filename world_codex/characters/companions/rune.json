@@ -55,7 +55,8 @@
           "talents": [
             {
               "name": "Crushing Blow",
-              "effect": "As a major action, Rune can make a powerful melee attack. On a hit, the attack deals an additional 1d6 bludgeoning damage.",
+              "effect": "As a major action, Rune can make a powerful melee attack using the Martial (Might) profile. On a hit, the attack deals an additional 1d6 bludgeoning damage.",
+              "attack_profile": "Martial (Might)",
               "resolve_cost": 1,
               "duration": "Instantaneous",
               "range": "Melee"
@@ -169,6 +170,7 @@
             {
               "name": "Stone Fist",
               "effect": "As a major action, Rune can make a single melee attack with such force that it deals an additional 3d10 physical damage and automatically knocks the target prone.",
+              "attack_profile": "Martial (Might)",
               "resolve_cost": 15,
               "duration": "Instantaneous",
               "range": "Melee"
@@ -307,6 +309,7 @@
             {
                 "name": "Arcane Barrage",
                 "effect": "As a major action, Rune can fire a barrage of three small energy bolts. Each bolt can target a different enemy or the same one, and each bolt deals 1d8 arcane damage.",
+                "attack_profile": "Mystic (Mind)",
                 "resolve_cost": 15,
                 "duration": "Instantaneous",
                 "range": "60 feet"
