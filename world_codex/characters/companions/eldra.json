@@ -40,12 +40,39 @@
           "tier": "Novice (Level 1+)",
           "talents": [
             {
-              "name": "Whispers of the Fallen",
-              "effect": "Eldra channels the voices of the dead, forcing a target to make a Spirit DC 13 check or become 'Frightened' for 1 round."
+              "name": "Fateful Glimpse",
+              "effect": "As a bonus action, grant one ally Advantage or one enemy Disadvantage on their very next d10 roll.",
+              "resolve_cost": 1,
+              "duration": "1 Roll",
+              "range": "60 feet"
             },
             {
-              "name": "Fateful Glimpse",
-              "effect": "As a bonus action, grant one ally Advantage or one enemy Disadvantage on their very next d10 roll."
+              "name": "Whispers of the Fallen",
+              "effect": "Eldra channels the voices of the dead, forcing a target to make a Spirit DC 13 check or become 'Frightened' for 1 round.",
+              "resolve_cost": 5,
+              "duration": "1 Round",
+              "range": "30 feet"
+            },
+            {
+              "name": "Precognition (Passive)",
+              "effect": "You cannot be surprised.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
+            },
+            {
+              "name": "Mind Spike",
+              "effect": "As a major action, you drive a spike of psychic energy into a target's mind, dealing 1d10 psychic damage.",
+              "resolve_cost": 1,
+              "duration": "Instantaneous",
+              "range": "60 feet"
+            },
+            {
+              "name": "Augury",
+              "effect": "As a major action outside of combat, you can ask the spirits for guidance on a specific course of action, receiving an omen of weal or woe.",
+              "resolve_cost": 1,
+              "duration": "Instantaneous",
+              "range": "Self"
             }
           ]
         },
@@ -54,11 +81,31 @@
           "talents": [
             {
               "name": "Commune with Spirits",
-              "effect": "As a major action, you can make a Mind (Lore) DC 14 check against a single enemy. On a success, you learn one of their resistances or vulnerabilities, which is then revealed to the party. This costs 5 Resolve."
+              "effect": "As a major action, you can make a Mind (Lore) DC 14 check against a single enemy. On a success, you learn one of their resistances or vulnerabilities, which is then revealed to the party.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "60 feet"
             },
             {
               "name": "Weight of Ages",
-              "effect": "As a major action, you curse a target with a vision of their own demise. They must make a Spirit DC 13 check or have their movement speed halved and deal 2 less damage on all attacks for 3 rounds. This costs 5 Resolve."
+              "effect": "As a major action, you curse a target with a vision of their own demise. They must make a Spirit DC 13 check or have their movement speed halved and deal 2 less damage on all attacks for 3 rounds.",
+              "resolve_cost": 5,
+              "duration": "3 Rounds",
+              "range": "60 feet"
+            },
+            {
+              "name": "Spirit Ward",
+              "effect": "You create a 15-foot radius circle of shimmering energy for 3 rounds. Allies inside are immune to the 'Frightened' condition, and any Undead creature that enters the area takes 2d8 light damage.",
+              "resolve_cost": 10,
+              "duration": "3 Rounds",
+              "range": "30 feet"
+            },
+            {
+              "name": "Twist Fate (Reaction)",
+              "effect": "As a reaction when an enemy you can see makes an attack roll, you can force them to re-roll. They must use the new result.",
+              "resolve_cost": 10,
+              "duration": "Instantaneous",
+              "range": "Sight"
             }
           ]
         },
@@ -67,11 +114,31 @@
           "talents": [
             {
               "name": "Echoes of the Shattering",
-              "effect": "As a major action, you unleash a psychic echo of the world-breaking cataclysm in a 15-foot radius. Enemies in the area must make a Spirit DC 14 check or suffer a -2 penalty on all of their rolls for 1 round. This costs 10 Resolve."
+              "effect": "As a major action, you unleash a psychic echo of the world-breaking cataclysm in a 15-foot radius. Enemies in the area must make a Spirit DC 14 check or suffer a -2 penalty on all of their rolls for 1 round.",
+              "resolve_cost": 10,
+              "duration": "1 Round",
+              "range": "60 feet"
             },
             {
-              "name": "Spirit Ward",
-              "effect": "You create a 15-foot radius circle of shimmering energy for 3 rounds. Allies inside are immune to the 'Frightened' condition, and any Undead creature that enters the area takes 2d8 light damage. This costs 10 Resolve."
+              "name": "Binding Oath",
+              "effect": "You place a powerful curse on a single enemy for 3 rounds. If that enemy attacks any creature other than you, they immediately take 3d10 psychic damage.",
+              "resolve_cost": 15,
+              "duration": "3 Rounds",
+              "range": "60 feet"
+            },
+            {
+              "name": "Visions of Ruin (Modifies Fateful Glimpse)",
+              "effect": "When you successfully use Fateful Glimpse to give an enemy Disadvantage, they also become Vulnerable to the next source of damage they take.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
+            },
+            {
+              "name": "Sever Magic",
+              "effect": "As a major action, target one creature. They must make a Spirit DC 15 check or be unable to use any magical abilities or spend Resolve for 1 round.",
+              "resolve_cost": 10,
+              "duration": "1 Round",
+              "range": "60 feet"
             }
           ]
         },
@@ -79,12 +146,25 @@
           "tier": "Master (Level 15+)",
           "talents": [
             {
-              "name": "Binding Oath",
-              "effect": "You place a powerful curse on a single enemy for 3 rounds. If that enemy attacks any creature other than you, they immediately take 3d10 psychic damage. This costs 15 Resolve."
+              "name": "Glimpse the End",
+              "effect": "As a major action, you force a target to witness their own death. They must make a Spirit DC 16 check or take 5d10 psychic damage and become 'Stunned' for 1 round. On a success, they take half damage and are not stunned.",
+              "resolve_cost": 15,
+              "duration": "1 Round",
+              "range": "60 feet"
             },
             {
-              "name": "Visions of Ruin (Modifies Fateful Glimpse)",
-              "effect": "When you successfully use Fateful Glimpse to give an enemy Disadvantage, they also become Vulnerable to the next source of damage they take."
+              "name": "Prophecy of Failure",
+              "effect": "As a major action, you mark one enemy. For 1 minute, whenever that enemy misses an attack, one ally of your choice within 30 feet may use their Reaction to make a single weapon attack against them.",
+              "resolve_cost": 15,
+              "duration": "1 Minute",
+              "range": "Sight"
+            },
+            {
+              "name": "Unravel",
+              "effect": "As a major action, you target a single enemy. They must make a Spirit DC 16 check or become Vulnerable to all damage types for 3 rounds.",
+              "resolve_cost": 15,
+              "duration": "3 Rounds",
+              "range": "60 feet"
             }
           ]
         },
@@ -93,7 +173,17 @@
           "talents": [
             {
               "name": "Oracle's Decree (Ultimate)",
-              "effect": "For 3 rounds, you can see moments into the future. At the start of each of your turns, you can grant all allies a choice: their next attack roll is automatically a success, OR the next attack roll against them is automatically a failure. This can only be used once per day and costs 20 Resolve."
+              "effect": "For 3 rounds, you can see moments into the future. At the start of each of your turns, you can grant all allies a choice: their next attack roll is automatically a success, OR the next attack roll against them is automatically a failure. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "3 Rounds",
+              "range": "Self"
+            },
+            {
+              "name": "Chains of Fate (Ultimate)",
+              "effect": "As a major action, you bind up to three enemies you can see together with spectral chains. For 1 minute, whenever one of the chained enemies takes damage, the other two also take half of that damage. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "1 Minute",
+              "range": "Sight"
             }
           ]
         }
@@ -108,11 +198,38 @@
           "talents": [
             {
               "name": "Incorporeal Phase (Reaction)",
-              "effect": "When hit by a physical attack, you can use your reaction to briefly become ethereal, halving the damage taken."
+              "effect": "When hit by a physical attack, you can use your reaction to briefly become ethereal, halving the damage taken.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "Self"
             },
             {
               "name": "Misty Step",
-              "effect": "As a bonus action, you can teleport up to 30 feet to an unoccupied space you can see."
+              "effect": "As a bonus action, you can teleport up to 30 feet to an unoccupied space you can see.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "Self"
+            },
+            {
+              "name": "Chilling Touch",
+              "effect": "As a major action, make a melee attack that deals 1d8 cold damage. The target's movement speed is halved for 1 round.",
+              "resolve_cost": 1,
+              "duration": "1 Round",
+              "range": "Melee"
+            },
+            {
+              "name": "Mist Veil",
+              "effect": "As a bonus action, wreathe yourself in a shimmering mist. Ranged attacks against you have a -2 penalty for 1 round.",
+              "resolve_cost": 1,
+              "duration": "1 Round",
+              "range": "Self"
+            },
+            {
+              "name": "Silent Veil (Passive)",
+              "effect": "You make no sound when you move, granting Advantage on Stealth checks related to moving silently.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
             }
           ]
         },
@@ -121,11 +238,31 @@
           "talents": [
             {
               "name": "Disorienting Fog",
-              "effect": "As a major action, you create a 20-foot radius sphere of dense fog that is heavily obscured. Enemies inside the fog cannot take Reactions. This lasts for 3 rounds and costs 5 Resolve."
+              "effect": "As a major action, you create a 20-foot radius sphere of dense fog that is heavily obscured. Enemies inside the fog cannot take Reactions.",
+              "resolve_cost": 5,
+              "duration": "3 Rounds",
+              "range": "60 feet"
             },
             {
               "name": "Phase Strike",
-              "effect": "As a major action, you make a melee attack dealing 2d8 cold damage. Whether you hit or miss, you can immediately teleport to an empty space on the opposite side of the target. This costs 5 Resolve."
+              "effect": "As a major action, you make a melee attack dealing 2d8 cold damage. Whether you hit or miss, you can immediately teleport to an empty space on the opposite side of the target.",
+              "resolve_cost": 5,
+              "duration": "Instantaneous",
+              "range": "Melee"
+            },
+            {
+              "name": "Grasp of the Grave",
+              "effect": "As a major action, ethereal hands erupt from the ground in a 15-foot radius. Enemies in the area must make an Agility DC 14 check or become 'Restrained' for 1 round.",
+              "resolve_cost": 10,
+              "duration": "1 Round",
+              "range": "60 feet"
+            },
+            {
+              "name": "Wraith Walk",
+              "effect": "As a major action, you become incorporeal and move up to your speed. You can move through enemies, and each enemy you pass through takes 1d10 cold damage.",
+              "resolve_cost": 10,
+              "duration": "Instantaneous",
+              "range": "Self"
             }
           ]
         },
@@ -133,12 +270,32 @@
           "tier": "Expert (Level 10+)",
           "talents": [
             {
-              "name": "Grasp of the Grave",
-              "effect": "As a major action, ethereal hands erupt from the ground in a 15-foot radius. Enemies in the area must make an Agility DC 14 check or become 'Restrained' for 1 round. This costs 10 Resolve."
+              "name": "Ethereal Form",
+              "effect": "As a major action, you become fully incorporeal for 1 round. You are immune to physical damage, can move through creatures and objects as if they were difficult terrain, but you cannot attack or use an ability.",
+              "resolve_cost": 10,
+              "duration": "1 Round",
+              "range": "Self"
             },
             {
-              "name": "Ethereal Form",
-              "effect": "As a major action, you become fully incorporeal for 1 round. You are immune to physical damage, can move through creatures and objects as if they were difficult terrain, but you cannot attack or use an ability. This costs 10 Resolve."
+              "name": "Suffocating Mist (Modifies Disorienting Fog)",
+              "effect": "Enemies that end their turn inside your Disorienting Fog now also take 2d6 cold damage.",
+              "resolve_cost": "N/A",
+              "duration": "N/A",
+              "range": "N/A"
+            },
+            {
+              "name": "Mirror Image",
+              "effect": "Create 1d4 illusory duplicates of yourself that last for 1 minute. Each time you are attacked, roll to see if the attack targets a duplicate instead.",
+              "resolve_cost": 5,
+              "duration": "1 Minute",
+              "range": "Self"
+            },
+            {
+              "name": "Blink",
+              "effect": "At the end of each of your turns, you can choose to teleport up to 10 feet to an unoccupied space you can see.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Self"
             }
           ]
         },
@@ -147,11 +304,24 @@
           "talents": [
             {
               "name": "Possession",
-              "effect": "As a major action, you attempt to possess a single humanoid target. The target must make a Spirit DC 16 check. On a failure, you control their next turn completely. This can only be attempted once per creature per combat. This costs 15 Resolve."
+              "effect": "As a major action, you attempt to possess a single humanoid target. The target must make a Spirit DC 16 check. On a failure, you control their next turn completely. This can only be attempted once per creature per combat.",
+              "resolve_cost": 15,
+              "duration": "1 Round",
+              "range": "Touch"
             },
             {
-              "name": "Suffocating Mist (Modifies Disorienting Fog)",
-              "effect": "Enemies that end their turn inside your Disorienting Fog now also take 2d6 cold damage."
+              "name": "Mist Form",
+              "effect": "As a major action, you can transform into a cloud of mist for up to 10 minutes. You gain resistance to all physical damage, can fly, and can pass through small cracks.",
+              "resolve_cost": 15,
+              "duration": "10 Minutes",
+              "range": "Self"
+            },
+            {
+              "name": "Chill to the Bone (Passive)",
+              "effect": "Enemies hit by your Chilling Touch or Phase Strike are also 'Slowed' for 1 round.",
+              "resolve_cost": 0,
+              "duration": "Passive",
+              "range": "Melee"
             }
           ]
         },
@@ -160,7 +330,17 @@
           "talents": [
             {
               "name": "Spirit Tornado (Ultimate)",
-              "effect": "You dissolve into a swirling vortex of mist and screaming spirits in a 30-foot radius for 3 rounds. The area is heavily obscured. Enemies who start their turn inside the vortex take 4d10 cold damage and have their movement speed reduced to 0 for that turn. As a bonus action, you can teleport to any unoccupied space within the vortex. This can only be used once per day and costs 20 Resolve."
+              "effect": "You dissolve into a swirling vortex of mist and screaming spirits in a 30-foot radius for 3 rounds. The area is heavily obscured. Enemies who start their turn inside the vortex take 4d10 cold damage and have their movement speed reduced to 0 for that turn. As a bonus action, you can teleport to any unoccupied space within the vortex. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "3 Rounds",
+              "range": "Self"
+            },
+            {
+              "name": "Etherealness (Ultimate)",
+              "effect": "As a major action, you and all allies within 30 feet become ethereal for 3 rounds. While ethereal, you can only be damaged by magical attacks and abilities. This can only be used once per day.",
+              "resolve_cost": 20,
+              "duration": "3 Rounds",
+              "range": "30-foot radius"
             }
           ]
         }
