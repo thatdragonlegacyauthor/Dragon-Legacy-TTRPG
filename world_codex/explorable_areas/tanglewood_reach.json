@@ -45,6 +45,13 @@
             "destination": "gloomwood_path",
             "status": "Guarded"
           }
+        ],
+        "events": [
+          {
+            "trigger": "talk_to_villagers",
+            "action": "story_beat",
+            "details": "The party can make a Spirit (Diplomacy) check to gather rumors. The villagers are wary of outsiders but might share information about the corrupted Gloomwood, the strange behavior of the forest spirits, or the reclusive hermit who lives deeper in the woods (Rhys)."
+          }
         ]
       },
       "elders_hut": {
@@ -57,7 +64,7 @@
           }
         ],
         "key_characters": [
-          "Elder Briar"
+          "TANGLEWOOD_BRIAR"
         ]
       },
       "apothecarys_nook": {
@@ -70,7 +77,7 @@
           }
         ],
         "key_characters": [
-          "Lyssa"
+          "TANGLEWOOD_LYSSA"
         ]
       },
       "scouts_perch": {
@@ -83,7 +90,7 @@
           }
         ],
         "key_characters": [
-          "Kaelen"
+          "TANGLEWOOD_KAELEN"
         ]
       },
       "weavers_den": {
