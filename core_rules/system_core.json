@@ -1,7 +1,7 @@
 {
   "project_name": "Dragon Legacy TTRPG",
   "version": "3.0.0",
-  "last_updated": "2025-09-02T19:29:00-08:00",
+  "last_updated": "2025-09-03T20:56:00-08:00",
   "system_core": {
     "system_info": {
       "system": "Dragon's Legacy TTRPG",
@@ -190,52 +190,66 @@
       }
     },
     "progression": {
-      "currency": "Insight Points (IP)",
-      "leveling_rule": "A character gains a level for every 6 Insight Points spent.",
-      "attribute_cap_rule": "A character's maximum score in any single attribute cannot exceed 4 + (Character Level / 2, rounded down). This does not apply during initial character creation.",
-      "threat_level_ip_awards": {
-        "description": "IP is awarded based on the threat level of the overcome challenge.",
-        "tiers": [
+      "system_name": "Path of the Dragon",
+      "experience_points": {
+        "description": "Characters gain Experience Points (XP) for overcoming challenges.",
+        "xp_awards": [
           {
-            "level": "Minor Threat",
-            "ip_reward": 0
+            "source": "Combat Encounters",
+            "awards": [
+              { "threat": "Minor", "xp": 5 },
+              { "threat": "Standard", "xp": 10 },
+              { "threat": "Major", "xp": 20 },
+              { "threat": "Boss", "xp": 50 }
+            ]
           },
           {
-            "level": "Standard Threat",
-            "ip_reward": 1
+            "source": "Quest Completion",
+            "awards": [
+              { "type": "Side Quest", "xp": 30 },
+              { "type": "Companion Quest", "xp": 50 },
+              { "type": "Main Quest Milestone", "xp": 100 }
+            ]
           },
           {
-            "level": "Major Threat",
-            "ip_reward": 2
-          },
-          {
-            "level": "Crucial Milestone",
-            "ip_reward": 3
+            "source": "Roleplaying & Discovery",
+            "awards": [
+              { "description": "Bonus XP for clever problem-solving, significant character development, or discovering secret locations.", "xp": "5-10" }
+            ]
           }
         ]
       },
-      "spending_options": [
+      "level_up_mechanics": {
+        "ap_per_level": 12,
+        "description": "Upon leveling up, a character gains 12 Advancement Points (AP) to spend on improvements."
+      },
+      "ap_spending_options": [
         {
-          "name": "Skill Mastery",
+          "name": "Increase a Skill",
           "cost": 1,
-          "effect": "Increase any one skill by +1."
+          "effect": "Increase any one skill by +1.",
+          "rules": "A character's maximum score in any single skill cannot exceed 3 + floor(Character Level / 3)."
         },
         {
-          "name": "Attribute Boost",
+          "name": "Learn a Newfound Talent",
           "cost": 2,
-          "effect": "Increase any one attribute by +1."
+          "effect": "Choose a new talent from the newfound_talents.json file."
         },
         {
-          "name": "Newfound Talent",
-          "cost": 2,
-          "effect": "Learn a new talent from the talent list."
-        },
-        {
-          "name": "Learn Aspect Ability",
+          "name": "Increase an Attribute",
           "cost": 3,
-          "effect": "Learn a new ability from an unlocked Aspect."
+          "effect": "Increase any one attribute by +1.",
+          "rules": "A character's maximum score in any single attribute cannot exceed 4 + floor(Character Level / 2)."
+        },
+        {
+          "name": "Learn a New Ability",
+          "cost": 3,
+          "effect": "For Companions or Rya. The character must meet the ability's level requirement."
         }
       ],
+      "master_system": {
+        "description": "Inspired by the Breath of Fire series, certain powerful or unique abilities can only be learned by seeking out and training under Masters found throughout the world. This progression is narrative-driven and does not cost AP."
+      },
       "bond_level_system": {
         "description": "Bonds are forged through actions, unlocking benefits at each level.",
         "earning_bp": [
