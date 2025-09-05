@@ -5,6 +5,10 @@
         "has_joined": true,
         "is_active": true,
         "level": 2,
+        "experience": {
+            "current_xp": 40,
+            "xp_to_next_level": 200
+        },
         "current_resources": {
             "vitality": 44,
             "resolve": 20,
@@ -55,6 +59,10 @@
         "has_joined": true,
         "is_active": true,
         "level": 2,
+        "experience": {
+            "current_xp": 40,
+            "xp_to_next_level": 200
+        },
         "current_resources": {
             "vitality": 38,
             "resolve": 26
@@ -91,6 +99,10 @@
         "has_joined": true,
         "is_active": true,
         "level": 2,
+        "experience": {
+            "current_xp": 40,
+            "xp_to_next_level": 200
+        },
         "current_resources": {
             "vitality": 32,
             "resolve": 34
@@ -127,12 +139,18 @@
         "has_joined": true,
         "is_active": true,
         "level": 2,
+        "experience": {
+            "current_xp": 40,
+            "xp_to_next_level": 200
+        },
         "current_resources": {
             "vitality": 36,
             "resolve": 30
         },
         "inventory": {
-            "equipped": ["Sword"],
+            "equipped": [
+                "Sword"
+            ],
             "unequipped": []
         },
         "active_effects": [],
@@ -149,8 +167,13 @@
         },
         "bond_level": 1,
         "bond_points": 0,
-        "echoes_of_fate": { "current_ep": 3, "total_ep": 3 },
-        "abilities": ["Tempest Blade"]
+        "echoes_of_fate": {
+            "current_ep": 0,
+            "total_ep_earned": 0
+        },
+        "abilities": [
+            "Tempest Blade"
+        ]
     },
     {
         "name": "Talia",
@@ -158,12 +181,18 @@
         "has_joined": true,
         "is_active": true,
         "level": 2,
+        "experience": {
+            "current_xp": 40,
+            "xp_to_next_level": 200
+        },
         "current_resources": {
             "vitality": 34,
             "resolve": 24
         },
         "inventory": {
-            "equipped": ["Longbow"],
+            "equipped": [
+                "Longbow"
+            ],
             "unequipped": []
         },
         "active_effects": [],
@@ -180,7 +209,12 @@
         },
         "bond_level": 1,
         "bond_points": 0,
-        "echoes_of_fate": { "current_ep": 4, "total_ep": 4 },
-        "abilities": ["Called Shot"]
+        "echoes_of_fate": {
+            "current_ep": 0,
+            "total_ep_earned": 0
+        },
+        "abilities": [
+            "Called Shot"
+        ]
     }
 ]
