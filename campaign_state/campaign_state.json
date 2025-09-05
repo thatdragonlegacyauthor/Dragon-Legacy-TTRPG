@@ -1,22 +1,35 @@
 {
   "campaign_state": {
-    "last_updated": null,
-    "session_number": null,
-    "current_location": null,
-    "party_power_level": null,
-    "active_prompt": null,
+    "last_updated": "2025-09-04T21:29:23-08:00",
+    "session_number": 1,
+    "current_location": "Tanglewood Reach",
+    "party_power_level": 1,
+    "active_prompt": "Exhausted and wounded, you stagger into the light of Tanglewood Reach. Villagers with clothes of woven leaves and bark stare at you with suspicion and concern. What do you do?",
     "world_history": {
-      "chronicle": null
+      "chronicle": "After a peaceful start in Windmark Village, Rya's latent draconic power manifested during a brutal attack by the Champions of Order, which resulted in the death of Elder Elara and the destruction of the village. Fleeing with her friend Zael and a new ally, the healer Selra, Rya fought through the corrupted Whispering Woods, defeating a monstrous Blightoad before finally finding sanctuary in the treetop village of Tanglewood Reach."
     },
     "quests": {
-      "active_quests": [],
-      "completed_quests": []
+      "active_quests": [
+        {
+          "name": "The Whispers on the Wind",
+          "type": "Side Quest",
+          "description": "After finding refuge in Tanglewood Reach, the party's respite may be shattered by news of a crashed Wyndian airship in the nearby mountains, presenting a race against opportunistic Champions of Order patrols.",
+          "trigger": "After arriving in Tanglewood Reach and speaking with the village elders."
+        }
+      ],
+      "completed_quests": [
+        "A Simple Errand",
+        "A Light in the Woods"
+      ]
     },
-    "world_flags": {},
+    "world_flags": {
+      "windmark_destroyed": true,
+      "elysia_truth_unlocked": false
+    },
     "maps": {
       "world_map": {
-        "name": null,
-        "description": null,
+        "name": "Eryndor",
+        "description": "A continent of diverse landscapes, from the Azure Steppes to the frozen Glacial Maw, still bearing the scars of the cataclysmic Shattering.",
         "content": null
       }
     }
