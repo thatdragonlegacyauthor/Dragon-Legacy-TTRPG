@@ -136,6 +136,17 @@
         "objective": "The party must flee the ruined village and find a new sanctuary, battling their way through the corrupted forest.",
         "key_event": "Escaping the destroyed Windmark Village, Rya, Zael, and the newly met companion Selra are forced to flee into the Whispering Woods. As they press deeper into the forest, the corruption from the Gloomwood Heart becomes more apparent, manifesting as a series of hostile creatures. The party must face several encounters before finding the path to Tanglewood Reach. The journey includes: - **Encounter 1 (Easy):** A group of **Thorn Creepers** and **Sporelings**, mutated plant life that uses debilitating spores and ensnaring vines. - **Encounter 2 (Medium):** A pack of **Gloomfang Wolves**, feral beasts with venomous fangs. - **Encounter 3 (Medium):** A **Nut Mage** and a **Nut Trooper**, organized plant creatures that defend their territory with crude magic and brute force. - **Boss Encounter (Hard):** The party must confront the **Blightoad**, a monstrous toad-fiend whose presence is a direct result of Rya's awakened draconic power. It is the final obstacle blocking the path to the sanctuary of Tanglewood Reach.",
         "quest_completion": null
+      },
+      {
+        "part": 5,
+        "name": "The Tanglewood Truce",
+        "setting": "Tanglewood Reach",
+        "objective": "After the harrowing events in the Whispering Woods, the party finally arrives at the sanctuary of Tanglewood Reach. This section will serve as a cinematic break, establishing their new home and the relationships they forge over the next four years.",
+        "key_event": "The party, exhausted and wounded, is brought before the village elders. **Elder Briar**, suspicious of Rya's power, is hesitant to grant them refuge. However, **Lyssa**, the village's spirit-speaker, senses a purity in their hearts and convinces him to let them stay. The party is introduced to the key figures of Tanglewood Reach, including **Kaelen**, the lead scout. A four-year time skip will be narrated, showing Rya learning to control her abilities, Zael studying with Lyssa, and Selra finding her purpose as the village healer. The prologue ends here, with the party more experienced and ready to face the world.",
+        "quest_completion": {
+          "name": "A Light in the Woods",
+          "status": "Completed"
+        }
       }
     ]
   }
