@@ -6,8 +6,8 @@
         "is_active": true,
         "level": 1,
         "current_resources": {
-            "vitality": 16,
-            "resolve": 16,
+            "vitality": 1,
+            "resolve": 1,
             "legacy_points": 3
         },
         "insight_points": {
@@ -16,32 +16,37 @@
             "total_earned": 0
         },
         "inventory": {
-            "equipped": [],
-            "unequipped": [
-                "Adventurer's kit",
+            "equipped": [
                 "Sword"
+            ],
+            "unequipped": [
+                "Adventurer's kit"
             ]
         },
         "active_effects": [],
         "stats": {
             "Might": 3,
-            "Agility": 3,
+            "Agility": 5,
             "Mind": 3,
-            "Spirit": 3,
+            "Spirit": 2,
             "Essence": 3
         },
         "skills": {
             "Combat": 2,
-            "Lore": 2,
-            "Athletics": 2,
+            "Lore": 1,
+            "Athletics": 0,
             "Survival": 2,
-            "Arcana": 2,
+            "Arcana": 3,
             "Stealth": 2,
-            "Diplomacy": 2
+            "Diplomacy": 0,
+            "Empathy": 0
         },
-        "unlocked_aspects": [],
-        "aspect_abilities": [],
-        "abilities": []
+        "unlocked_aspects": [
+            "Mist"
+        ],
+        "aspect_abilities": [
+            "Mist Veil"
+        ]
     },
     {
         "name": "Zael",
@@ -50,350 +55,69 @@
         "is_active": true,
         "level": 1,
         "current_resources": {
-            "vitality": null,
-            "resolve": null
-        },
-        "insight_points": {
-            "current": null,
-            "spent": null,
-            "total_earned": null
+            "vitality": 2,
+            "resolve": 18
         },
         "inventory": {
-            "equipped": [],
+            "equipped": [
+                "Dagger"
+            ],
             "unequipped": []
         },
         "active_effects": [],
         "stats": {
-            "Might": null,
-            "Agility": null,
-            "Mind": null,
-            "Spirit": null
+            "Might": 1,
+            "Agility": 3,
+            "Mind": 4,
+            "Spirit": 4
         },
         "skills": {
-            "Arcana": null,
-            "Lore": null,
-            "Stealth": null,
-            "Combat": null
+            "Arcana": 4,
+            "Lore": 3,
+            "Stealth": 3
         },
-        "bond_level": null,
-        "bond_points": null,
-        "is_awakened": null,
-        "abilities": []
+        "bond_level": 1,
+        "bond_points": 0,
+        "is_awakened": false,
+        "abilities": [
+            "Chilling Whisper"
+        ]
     },
     {
         "name": "Selra",
         "char_id": "ELYSIAN_SELRA",
-        "has_joined": false,
-        "is_active": false,
+        "has_joined": true,
+        "is_active": true,
         "level": 1,
         "current_resources": {
-            "vitality": null,
-            "resolve": null
-        },
-        "insight_points": {
-            "current": null,
-            "spent": null,
-            "total_earned": null
+            "vitality": 8,
+            "resolve": 9
         },
         "inventory": {
-            "equipped": [],
+            "equipped": [
+                "Staff"
+            ],
             "unequipped": []
         },
-        "active_effects": [],
+        "active_effects": [
+            "Poisoned"
+        ],
         "stats": {
-            "Might": null,
-            "Agility": null,
-            "Mind": null,
-            "Spirit": null
+            "Might": 1,
+            "Agility": 2,
+            "Mind": 4,
+            "Spirit": 5
         },
         "skills": {
-            "Lore": null,
-            "Arcana": null,
-            "Diplomacy": null,
-            "Survival": null
+            "Lore": 3,
+            "Arcana": 3,
+            "Diplomacy": 4
         },
-        "bond_level": null,
-        "bond_points": null,
-        "abilities": []
-    },
-    {
-        "name": "Garrick",
-        "char_id": "VOID_GARRICK",
-        "has_joined": false,
-        "is_active": false,
-        "level": null,
-        "current_resources": {
-            "vitality": null,
-            "resolve": null
-        },
-        "insight_points": {
-            "current": null,
-            "spent": null,
-            "total_earned": null
-        },
-        "inventory": {
-            "equipped": [],
-            "unequipped": []
-        },
-        "active_effects": [],
-        "stats": {
-            "Might": null,
-            "Agility": null,
-            "Mind": null,
-            "Spirit": null
-        },
-        "skills": {
-            "Stealth": null,
-            "Arcana": null,
-            "Lore": null
-        },
-        "bond_level": null,
-        "bond_points": null,
-        "abilities": []
-    },
-    {
-        "name": "Lirien",
-        "char_id": "SHADOWPELT_LIRIEN",
-        "has_joined": false,
-        "is_active": false,
-        "level": null,
-        "current_resources": {
-            "vitality": null,
-            "resolve": null
-        },
-        "insight_points": {
-            "current": null,
-            "spent": null,
-            "total_earned": null
-        },
-        "inventory": {
-            "equipped": [],
-            "unequipped": []
-        },
-        "active_effects": [],
-        "stats": {
-            "Agility": null,
-            "Might": null,
-            "Mind": null,
-            "Spirit": null
-        },
-        "skills": {
-            "Stealth": null,
-            "Athletics": null,
-            "Survival": null
-        },
-        "bond_level": null,
-        "bond_points": null,
-        "abilities": []
-    },
-    {
-        "name": "Zykar",
-        "char_id": "RUNEFORGE_ZYKAR",
-        "has_joined": false,
-        "is_active": false,
-        "level": null,
-        "current_resources": {
-            "vitality": null,
-            "resolve": null
-        },
-        "insight_points": {
-            "current": null,
-            "spent": null,
-            "total_earned": null
-        },
-        "inventory": {
-            "equipped": [],
-            "unequipped": []
-        },
-        "active_effects": [],
-        "stats": {
-            "Might": null,
-            "Mind": null,
-            "Spirit": null,
-            "Agility": null
-        },
-        "skills": {
-            "Combat": null,
-            "Arcana": null,
-            "Athletics": null
-        },
-        "bond_level": null,
-        "bond_points": null,
-        "abilities": []
-    },
-    {
-        "name": "Rune",
-        "char_id": "ANCIENT_RUNE",
-        "has_joined": false,
-        "is_active": false,
-        "level": null,
-        "current_resources": {
-            "vitality": null,
-            "resolve": null
-        },
-        "insight_points": {
-            "current": null,
-            "spent": null,
-            "total_earned": null
-        },
-        "inventory": {
-            "equipped": [],
-            "unequipped": []
-        },
-        "active_effects": [],
-        "stats": {
-            "Might": null,
-            "Agility": null,
-            "Mind": null,
-            "Spirit": null
-        },
-        "skills": {
-            "Lore": null,
-            "Arcana": null,
-            "Combat": null
-        },
-        "bond_level": null,
-        "bond_points": null,
-        "abilities": []
-    },
-    {
-        "name": "Talia",
-        "char_id": "SKYVEIL_TALIA",
-        "has_joined": false,
-        "is_active": false,
-        "level": null,
-        "current_resources": {
-            "vitality": null,
-            "resolve": null
-        },
-        "insight_points": {
-            "current": null,
-            "spent": null,
-            "total_earned": null
-        },
-        "inventory": {
-            "equipped": [],
-            "unequipped": []
-        },
-        "active_effects": [],
-        "stats": {
-            "Agility": null,
-            "Mind": null,
-            "Might": null,
-            "Spirit": null
-        },
-        "skills": {
-            "Survival": null,
-            "Athletics": null,
-            "Stealth": null
-        },
-        "bond_level": null,
-        "bond_points": null,
-        "abilities": []
-    },
-    {
-        "name": "Veridia",
-        "char_id": "SPIRIT_VERIDIA",
-        "has_joined": false,
-        "is_active": false,
-        "level": null,
-        "current_resources": {
-            "vitality": null,
-            "resolve": null
-        },
-        "insight_points": {
-            "current": null,
-            "spent": null,
-            "total_earned": null
-        },
-        "inventory": {
-            "equipped": [],
-            "unequipped": []
-        },
-        "active_effects": [],
-        "stats": {
-            "Mind": null,
-            "Spirit": null,
-            "Might": null,
-            "Agility": null
-        },
-        "skills": {
-            "Arcana": null,
-            "Survival": null,
-            "Combat": null
-        },
-        "bond_level": null,
-        "bond_points": null,
-        "abilities": []
-    },
-    {
-        "name": "Nina",
-        "char_id": "WYNDIA_NINA",
-        "has_joined": false,
-        "is_active": false,
-        "level": null,
-        "current_resources": {
-            "vitality": null,
-            "resolve": null
-        },
-        "insight_points": {
-            "current": null,
-            "spent": null,
-            "total_earned": null
-        },
-        "inventory": {
-            "equipped": [],
-            "unequipped": []
-        },
-        "active_effects": [],
-        "stats": {
-            "Agility": null,
-            "Spirit": null,
-            "Mind": null,
-            "Might": null
-        },
-        "skills": {
-            "Diplomacy": null,
-            "Combat": null,
-            "Arcana": null
-        },
-        "bond_level": null,
-        "bond_points": null,
-        "abilities": []
-    },
-    {
-        "name": "Torr",
-        "char_id": "PANGOLIN_TORR",
-        "has_joined": false,
-        "is_active": false,
-        "level": null,
-        "current_resources": {
-            "vitality": null,
-            "resolve": null
-        },
-        "insight_points": {
-            "current": null,
-            "spent": null,
-            "total_earned": null
-        },
-        "inventory": {
-            "equipped": [],
-            "unequipped": []
-        },
-        "active_effects": [],
-        "stats": {
-            "Might": null,
-            "Spirit": null,
-            "Mind": null,
-            "Agility": null
-        },
-        "skills": {
-            "Combat": null,
-            "Lore": null,
-            "Survival": null
-        },
-        "bond_level": null,
-        "bond_points": null,
-        "abilities": []
+        "bond_level": 1,
+        "bond_points": 0,
+        "abilities": [
+            "Heal",
+            "Cleansing Touch"
+        ]
     }
 ]
